@@ -618,3 +618,17 @@
 [2024-05-26 01:24:44] INFO root fetch - processPackages [degenbot]: Remove: archive file [/home/abi/fetcher/tmp/degenbot-0.2.3.tar.gz]
 [2024-05-26 01:24:44] INFO root fetch - main [MainThread]: End processing [degenbot]: success
 [2024-05-26 01:24:44] INFO root fetch - main [MainThread]: Store serial: [23378422]
+[2024-05-26 01:26:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378422]
+[2024-05-26 01:26:53] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 01:28:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378422]
+[2024-05-26 01:28:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pref-voting
+[2024-05-26 01:28:58] INFO root fetch - processPackages [pref-voting]: New version: [1.3.7] Old Version: [1.3.6]
+[2024-05-26 01:28:58] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/b3/c6/ff4f3e78b59f9d8effde3b92f3e45654929f3252b8abdcd4908221641437/pref_voting-1.3.6.tar.gz
+[2024-05-26 01:28:58] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/f8/85/2ffde9e362aada65b68fd1cca102ff3516d2e02b019eb36c201e5f2a7122/pref_voting-1.3.7.tar.gz
+[2024-05-26 01:28:59] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2024-05-26 01:28:59] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-1.3.6.tar.gz tmp/pref_voting-1.3.7.tar.gz --markdown 20240526/p/pref-voting/1.3.6-1.3.7/README.md --exclude *.pyd
+[2024-05-26 01:28:59] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.3.6.tar.gz]
+[2024-05-26 01:28:59] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.3.7.tar.gz]
+[2024-05-26 01:28:59] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2024-05-26 01:28:59] INFO root fetch - main [MainThread]: Store serial: [23378425]
