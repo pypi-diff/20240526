@@ -485,3 +485,27 @@
 [2024-05-26 01:05:20] INFO root fetch - processPackages [asyncflows]: Remove: archive file [/home/abi/fetcher/tmp/asyncflows-0.1.5.tar.gz]
 [2024-05-26 01:05:20] INFO root fetch - main [MainThread]: End processing [asyncflows]: success
 [2024-05-26 01:05:20] INFO root fetch - main [MainThread]: Store serial: [23378369]
+[2024-05-26 01:07:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378369]
+[2024-05-26 01:07:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 01:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2024-05-26 01:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adelie
+[2024-05-26 01:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hzutil
+[2024-05-26 01:07:28] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240525] Old Version: [0.7.52b20240524]
+[2024-05-26 01:07:28] INFO root fetch - processPackages [adelie]: New version: [1.1.32.dev1] Old Version: [1.1.32]
+[2024-05-26 01:07:28] WARNING root fetch - processPackages [hzutil]: Skipping, unable to determine old version
+[2024-05-26 01:07:28] INFO root fetch - main [MainThread]: End processing [hzutil] error
+[2024-05-26 01:07:28] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/3a/cb/fac9d500e71e12c85537399ff3abe16464085154fa557c69841786d560e3/tmnt-0.7.52b20240524.tar.gz
+[2024-05-26 01:07:29] INFO root fetch - processPackages [adelie]: Downloading https://files.pythonhosted.org/packages/a2/98/6eb5b82282f10a50f60a4d4606f975cf42e400ec5add318c2ff1eb18a97e/adelie-1.1.32.tar.gz
+[2024-05-26 01:07:29] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/fd/96/24be65a7877eaabf4c80a18583f202423a0a02e3aa1720a36dec20bc671d/tmnt-0.7.52b20240525.tar.gz
+[2024-05-26 01:07:29] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-05-26 01:07:29] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240524.tar.gz tmp/tmnt-0.7.52b20240525.tar.gz --markdown 20240526/t/tmnt/0.7.52b20240524-0.7.52b20240525/README.md --exclude *.pyd
+[2024-05-26 01:07:29] INFO root fetch - processPackages [adelie]: Downloading https://files.pythonhosted.org/packages/07/25/25560075051b0acff29708d08e19ef8629e9095697f9fedc2423e9987fc5/adelie-1.1.32.dev1.tar.gz
+[2024-05-26 01:07:29] INFO root fetch - processPackages [adelie]: executing diffoscope
+[2024-05-26 01:07:29] INFO root fetch - processPackages [adelie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adelie-1.1.32.tar.gz tmp/adelie-1.1.32.dev1.tar.gz --markdown 20240526/a/adelie/1.1.32-1.1.32.dev1/README.md --exclude *.pyd
+[2024-05-26 01:07:30] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240524.tar.gz]
+[2024-05-26 01:07:30] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240525.tar.gz]
+[2024-05-26 01:07:30] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-05-26 01:07:32] INFO root fetch - processPackages [adelie]: Remove: archive file [/home/abi/fetcher/tmp/adelie-1.1.32.tar.gz]
+[2024-05-26 01:07:32] INFO root fetch - processPackages [adelie]: Remove: archive file [/home/abi/fetcher/tmp/adelie-1.1.32.dev1.tar.gz]
+[2024-05-26 01:07:32] INFO root fetch - main [MainThread]: End processing [adelie]: success
+[2024-05-26 01:07:32] INFO root fetch - main [MainThread]: Store serial: [23378391]
