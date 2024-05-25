@@ -263,3 +263,24 @@
 [2024-05-26 00:37:15] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.2.3.tar.gz]
 [2024-05-26 00:37:15] INFO root fetch - main [MainThread]: End processing [djpress]: success
 [2024-05-26 00:37:15] INFO root fetch - main [MainThread]: Store serial: [23378316]
+[2024-05-26 00:39:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378316]
+[2024-05-26 00:39:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 00:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nostr-dvm
+[2024-05-26 00:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DodonaCLI
+[2024-05-26 00:39:23] INFO root fetch - processPackages [nostr-dvm]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-05-26 00:39:23] INFO root fetch - processPackages [DodonaCLI]: New version: [2024.5.26] Old Version: [2024.5.20]
+[2024-05-26 00:39:23] INFO root fetch - processPackages [nostr-dvm]: Downloading https://files.pythonhosted.org/packages/e1/cf/37977112dcfff82dca368e8d9d7a637162bb120941b61ff954396f254bad/nostr_dvm-0.4.7.tar.gz
+[2024-05-26 00:39:23] INFO root fetch - processPackages [DodonaCLI]: Downloading https://files.pythonhosted.org/packages/3f/2d/1ed9434213d2277423eea857bbdc5652d63a4281221ca11ab6a18af85029/dodonacli-2024.5.20.tar.gz
+[2024-05-26 00:39:23] INFO root fetch - processPackages [nostr-dvm]: Downloading https://files.pythonhosted.org/packages/8e/79/aa990beddce7b4123d11012eeabd73a7d90c4b400d8f7720f068b9a70bd5/nostr_dvm-0.4.8.tar.gz
+[2024-05-26 00:39:24] INFO root fetch - processPackages [DodonaCLI]: Downloading https://files.pythonhosted.org/packages/80/b7/1399e211f68508291060cf0a0bfc3dff0e3c43d1ef75b14993274889c56d/dodonacli-2024.5.26.tar.gz
+[2024-05-26 00:39:24] INFO root fetch - processPackages [nostr-dvm]: executing diffoscope
+[2024-05-26 00:39:24] INFO root fetch - processPackages [nostr-dvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nostr_dvm-0.4.7.tar.gz tmp/nostr_dvm-0.4.8.tar.gz --markdown 20240526/n/nostr-dvm/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-05-26 00:39:24] INFO root fetch - processPackages [DodonaCLI]: executing diffoscope
+[2024-05-26 00:39:24] INFO root fetch - processPackages [DodonaCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dodonacli-2024.5.20.tar.gz tmp/dodonacli-2024.5.26.tar.gz --markdown 20240526/D/DodonaCLI/2024.5.20-2024.5.26/README.md --exclude *.pyd
+[2024-05-26 00:39:24] INFO root fetch - processPackages [DodonaCLI]: Remove: archive file [/home/abi/fetcher/tmp/dodonacli-2024.5.20.tar.gz]
+[2024-05-26 00:39:24] INFO root fetch - processPackages [DodonaCLI]: Remove: archive file [/home/abi/fetcher/tmp/dodonacli-2024.5.26.tar.gz]
+[2024-05-26 00:39:24] INFO root fetch - main [MainThread]: End processing [DodonaCLI]: success
+[2024-05-26 00:39:24] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.4.7.tar.gz]
+[2024-05-26 00:39:24] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.4.8.tar.gz]
+[2024-05-26 00:39:24] INFO root fetch - main [MainThread]: End processing [nostr-dvm]: success
+[2024-05-26 00:39:24] INFO root fetch - main [MainThread]: Store serial: [23378322]
