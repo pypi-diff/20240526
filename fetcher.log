@@ -594,3 +594,15 @@
 [2024-05-26 01:20:24] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.5.tar.gz]
 [2024-05-26 01:20:24] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
 [2024-05-26 01:20:24] INFO root fetch - main [MainThread]: Store serial: [23378416]
+[2024-05-26 01:22:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378416]
+[2024-05-26 01:22:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:22:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-26 01:22:32] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.330] Old Version: [0.0.329]
+[2024-05-26 01:22:32] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/3f/5b/adace7d443fd3f4fe02a238db3b8895fc5ec1d193e588e445af6fb4cec3a/database_mysql_local-0.0.329.tar.gz
+[2024-05-26 01:22:32] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/22/69/22dfc32982ab08c51d6aeec19ba725bfe7729736853394cccb45b90a8d2d/database_mysql_local-0.0.330.tar.gz
+[2024-05-26 01:22:33] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 01:22:33] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.329.tar.gz tmp/database_mysql_local-0.0.330.tar.gz --markdown 20240526/d/database-mysql-local/0.0.329-0.0.330/README.md --exclude *.pyd
+[2024-05-26 01:22:33] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.329.tar.gz]
+[2024-05-26 01:22:33] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.330.tar.gz]
+[2024-05-26 01:22:33] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 01:22:33] INFO root fetch - main [MainThread]: Store serial: [23378419]
