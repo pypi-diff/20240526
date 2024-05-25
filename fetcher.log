@@ -179,3 +179,33 @@
 [2024-05-26 00:28:32] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.99.tar.gz]
 [2024-05-26 00:28:32] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
 [2024-05-26 00:28:32] INFO root fetch - main [MainThread]: Store serial: [23378294]
+[2024-05-26 00:30:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378294]
+[2024-05-26 00:30:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 00:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gadapt
+[2024-05-26 00:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygeomag
+[2024-05-26 00:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shadowsocks-manager
+[2024-05-26 00:30:40] INFO root fetch - processPackages [pygeomag]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 00:30:40] INFO root fetch - processPackages [shadowsocks-manager]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 00:30:40] INFO root fetch - processPackages [gadapt]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-26 00:30:40] INFO root fetch - processPackages [pygeomag]: Downloading https://files.pythonhosted.org/packages/47/6b/b6058f894ea32e5bb052c5c2a7e0986d29b693d011dd803d4c513843f6eb/pygeomag-1.0.1.tar.gz
+[2024-05-26 00:30:40] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/18/68/ec9b06192b62b296a42ae493441214b393543f31ba3c655792125045c26a/gadapt-0.4.8.tar.gz
+[2024-05-26 00:30:41] INFO root fetch - processPackages [shadowsocks-manager]: Downloading https://files.pythonhosted.org/packages/8e/5a/437ebba93b3e7c2bef6f4a2943901874ae3ed89ea8360836cd384d33442e/shadowsocks_manager-0.1.8.tar.gz
+[2024-05-26 00:30:41] INFO root fetch - processPackages [pygeomag]: Downloading https://files.pythonhosted.org/packages/98/eb/4465dd53c663a7158c54ab99fbde5c71c4f5e291ce337375916b0d023a52/pygeomag-1.0.2.tar.gz
+[2024-05-26 00:30:41] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/f6/55/43ef5a77fb2ffd368ecb1d7fb86383148ea58ebf4c50b797c7c8bb94e9fa/gadapt-0.4.9.tar.gz
+[2024-05-26 00:30:41] INFO root fetch - processPackages [shadowsocks-manager]: Downloading https://files.pythonhosted.org/packages/5e/87/dd033ea2df308b68951d584575fe0c7d32b0220a8c1b87a0236235391075/shadowsocks_manager-0.1.9.tar.gz
+[2024-05-26 00:30:41] INFO root fetch - processPackages [pygeomag]: executing diffoscope
+[2024-05-26 00:30:41] INFO root fetch - processPackages [pygeomag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeomag-1.0.1.tar.gz tmp/pygeomag-1.0.2.tar.gz --markdown 20240526/p/pygeomag/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 00:30:41] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-05-26 00:30:41] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.4.8.tar.gz tmp/gadapt-0.4.9.tar.gz --markdown 20240526/g/gadapt/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-26 00:30:41] INFO root fetch - processPackages [shadowsocks-manager]: executing diffoscope
+[2024-05-26 00:30:41] INFO root fetch - processPackages [shadowsocks-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shadowsocks_manager-0.1.8.tar.gz tmp/shadowsocks_manager-0.1.9.tar.gz --markdown 20240526/s/shadowsocks-manager/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 00:30:42] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.8.tar.gz]
+[2024-05-26 00:30:42] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.9.tar.gz]
+[2024-05-26 00:30:42] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-05-26 00:30:42] INFO root fetch - processPackages [pygeomag]: Remove: archive file [/home/abi/fetcher/tmp/pygeomag-1.0.1.tar.gz]
+[2024-05-26 00:30:42] INFO root fetch - processPackages [pygeomag]: Remove: archive file [/home/abi/fetcher/tmp/pygeomag-1.0.2.tar.gz]
+[2024-05-26 00:30:42] INFO root fetch - main [MainThread]: End processing [pygeomag]: success
+[2024-05-26 00:30:42] INFO root fetch - processPackages [shadowsocks-manager]: Remove: archive file [/home/abi/fetcher/tmp/shadowsocks_manager-0.1.8.tar.gz]
+[2024-05-26 00:30:42] INFO root fetch - processPackages [shadowsocks-manager]: Remove: archive file [/home/abi/fetcher/tmp/shadowsocks_manager-0.1.9.tar.gz]
+[2024-05-26 00:30:42] INFO root fetch - main [MainThread]: End processing [shadowsocks-manager]: success
+[2024-05-26 00:30:42] INFO root fetch - main [MainThread]: Store serial: [23378302]
