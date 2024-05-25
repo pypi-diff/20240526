@@ -70,3 +70,18 @@
 [2024-05-26 00:11:18] INFO root fetch - processPackages [ctube]: Remove: archive file [/home/abi/fetcher/tmp/ctube-0.0.5.tar.gz]
 [2024-05-26 00:11:18] INFO root fetch - main [MainThread]: End processing [ctube]: success
 [2024-05-26 00:11:18] INFO root fetch - main [MainThread]: Store serial: [23378248]
+[2024-05-26 00:13:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378248]
+[2024-05-26 00:13:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 00:13:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydeltaobfuscator
+[2024-05-26 00:13:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: powerpathfinder-models
+[2024-05-26 00:13:27] INFO root fetch - processPackages [powerpathfinder-models]: New version: [2.0.0] Old Version: [0.0.2]
+[2024-05-26 00:13:27] WARNING root fetch - processPackages [pydeltaobfuscator]: Skipping, unable to determine old version
+[2024-05-26 00:13:27] INFO root fetch - main [MainThread]: End processing [pydeltaobfuscator] error
+[2024-05-26 00:13:27] INFO root fetch - processPackages [powerpathfinder-models]: Downloading https://files.pythonhosted.org/packages/02/2c/ec5a68eac89c44c859087339614f86463e02dec2009cf0f3c71014ff85cf/powerpathfinder_models-0.0.2.tar.gz
+[2024-05-26 00:13:28] INFO root fetch - processPackages [powerpathfinder-models]: Downloading https://files.pythonhosted.org/packages/ba/e5/4d0381b50edeb91c49a0a626a7693a9740c79499c0a0e7305f2cd48f64a8/powerpathfinder_models-2.0.0.tar.gz
+[2024-05-26 00:13:28] INFO root fetch - processPackages [powerpathfinder-models]: executing diffoscope
+[2024-05-26 00:13:28] INFO root fetch - processPackages [powerpathfinder-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/powerpathfinder_models-0.0.2.tar.gz tmp/powerpathfinder_models-2.0.0.tar.gz --markdown 20240526/p/powerpathfinder-models/0.0.2-2.0.0/README.md --exclude *.pyd
+[2024-05-26 00:13:28] INFO root fetch - processPackages [powerpathfinder-models]: Remove: archive file [/home/abi/fetcher/tmp/powerpathfinder_models-0.0.2.tar.gz]
+[2024-05-26 00:13:28] INFO root fetch - processPackages [powerpathfinder-models]: Remove: archive file [/home/abi/fetcher/tmp/powerpathfinder_models-2.0.0.tar.gz]
+[2024-05-26 00:13:28] INFO root fetch - main [MainThread]: End processing [powerpathfinder-models]: success
+[2024-05-26 00:13:28] INFO root fetch - main [MainThread]: Store serial: [23378258]
