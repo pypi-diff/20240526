@@ -730,3 +730,15 @@
 [2024-05-26 01:50:35] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.6.4.tar.gz]
 [2024-05-26 01:50:35] INFO root fetch - main [MainThread]: End processing [Red-Web-Dashboard]: success
 [2024-05-26 01:50:35] INFO root fetch - main [MainThread]: Store serial: [23378489]
+[2024-05-26 01:52:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378489]
+[2024-05-26 01:52:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kvalchemy
+[2024-05-26 01:52:43] INFO root fetch - processPackages [kvalchemy]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 01:52:43] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/16/fa/515131be9c69a7eb83265422f544e0a5a0857512b2386b01d7805a3bf973/kvalchemy-0.0.7.tar.gz
+[2024-05-26 01:52:44] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/f4/df/b5d232c04b26e5751f941aff7201403e391934089acc2716153d19493332/kvalchemy-0.0.8.tar.gz
+[2024-05-26 01:52:44] INFO root fetch - processPackages [kvalchemy]: executing diffoscope
+[2024-05-26 01:52:44] INFO root fetch - processPackages [kvalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvalchemy-0.0.7.tar.gz tmp/kvalchemy-0.0.8.tar.gz --markdown 20240526/k/kvalchemy/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 01:52:44] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.7.tar.gz]
+[2024-05-26 01:52:44] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.8.tar.gz]
+[2024-05-26 01:52:44] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
+[2024-05-26 01:52:44] INFO root fetch - main [MainThread]: Store serial: [23378492]
