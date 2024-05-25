@@ -85,3 +85,15 @@
 [2024-05-26 00:13:28] INFO root fetch - processPackages [powerpathfinder-models]: Remove: archive file [/home/abi/fetcher/tmp/powerpathfinder_models-2.0.0.tar.gz]
 [2024-05-26 00:13:28] INFO root fetch - main [MainThread]: End processing [powerpathfinder-models]: success
 [2024-05-26 00:13:28] INFO root fetch - main [MainThread]: Store serial: [23378258]
+[2024-05-26 00:15:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378258]
+[2024-05-26 00:15:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 00:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: synthetic-home
+[2024-05-26 00:15:38] INFO root fetch - processPackages [synthetic-home]: New version: [2.1.0] Old Version: [2.0.1]
+[2024-05-26 00:15:38] INFO root fetch - processPackages [synthetic-home]: Downloading https://files.pythonhosted.org/packages/c3/fc/6d44fb41317e8ff0452fcc1750d671a50c9ad99ec8c829a271c995ae2475/synthetic_home-2.0.1.tar.gz
+[2024-05-26 00:15:39] INFO root fetch - processPackages [synthetic-home]: Downloading https://files.pythonhosted.org/packages/6c/7e/027cb629e27874ef50512deec01514736ab1102e79bf78949dc768cead1f/synthetic_home-2.1.0.tar.gz
+[2024-05-26 00:15:39] INFO root fetch - processPackages [synthetic-home]: executing diffoscope
+[2024-05-26 00:15:39] INFO root fetch - processPackages [synthetic-home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthetic_home-2.0.1.tar.gz tmp/synthetic_home-2.1.0.tar.gz --markdown 20240526/s/synthetic-home/2.0.1-2.1.0/README.md --exclude *.pyd
+[2024-05-26 00:15:39] INFO root fetch - processPackages [synthetic-home]: Remove: archive file [/home/abi/fetcher/tmp/synthetic_home-2.0.1.tar.gz]
+[2024-05-26 00:15:39] INFO root fetch - processPackages [synthetic-home]: Remove: archive file [/home/abi/fetcher/tmp/synthetic_home-2.1.0.tar.gz]
+[2024-05-26 00:15:39] INFO root fetch - main [MainThread]: End processing [synthetic-home]: success
+[2024-05-26 00:15:39] INFO root fetch - main [MainThread]: Store serial: [23378261]
