@@ -314,3 +314,24 @@
 [2024-05-26 00:41:36] INFO root fetch - processPackages [HiFT]: Remove: archive file [/home/abi/fetcher/tmp/HiFT-0.0.5.tar.gz]
 [2024-05-26 00:41:36] INFO root fetch - main [MainThread]: End processing [HiFT]: success
 [2024-05-26 00:41:36] INFO root fetch - main [MainThread]: Store serial: [23378328]
+[2024-05-26 00:43:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378328]
+[2024-05-26 00:43:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 00:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aipkgs-requests
+[2024-05-26 00:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arch-flow
+[2024-05-26 00:43:44] INFO root fetch - processPackages [aipkgs-requests]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-26 00:43:44] INFO root fetch - processPackages [arch-flow]: New version: [0.1.8.5] Old Version: [0.1.8.4]
+[2024-05-26 00:43:44] INFO root fetch - processPackages [aipkgs-requests]: Downloading https://files.pythonhosted.org/packages/34/06/108bc7d1b86a34f872a4c2e9991c193fe33ce387680064e5dba180ae2192/aipkgs_requests-1.0.2.tar.gz
+[2024-05-26 00:43:44] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/6c/94/2f4d596752ea3da14b80b1bf1fc2c3e7a40c7fdb294b635abd8657352532/arch_flow-0.1.8.4.tar.gz
+[2024-05-26 00:43:44] INFO root fetch - processPackages [aipkgs-requests]: Downloading https://files.pythonhosted.org/packages/2c/28/e364cc2751b083437f53b9cfca1c63ef63c0a9d42c47a936d3d06f51eb03/aipkgs_requests-1.0.3.tar.gz
+[2024-05-26 00:43:45] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/9b/db/34e4090b76e5324f58738d9bd07e31467d6086be187270ea57e033950482/arch_flow-0.1.8.5.tar.gz
+[2024-05-26 00:43:45] INFO root fetch - processPackages [aipkgs-requests]: executing diffoscope
+[2024-05-26 00:43:45] INFO root fetch - processPackages [aipkgs-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_requests-1.0.2.tar.gz tmp/aipkgs_requests-1.0.3.tar.gz --markdown 20240526/a/aipkgs-requests/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-26 00:43:45] INFO root fetch - processPackages [arch-flow]: executing diffoscope
+[2024-05-26 00:43:45] INFO root fetch - processPackages [arch-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arch_flow-0.1.8.4.tar.gz tmp/arch_flow-0.1.8.5.tar.gz --markdown 20240526/a/arch-flow/0.1.8.4-0.1.8.5/README.md --exclude *.pyd
+[2024-05-26 00:43:45] INFO root fetch - processPackages [aipkgs-requests]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_requests-1.0.2.tar.gz]
+[2024-05-26 00:43:45] INFO root fetch - processPackages [aipkgs-requests]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_requests-1.0.3.tar.gz]
+[2024-05-26 00:43:45] INFO root fetch - main [MainThread]: End processing [aipkgs-requests]: success
+[2024-05-26 00:43:45] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.8.4.tar.gz]
+[2024-05-26 00:43:45] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.8.5.tar.gz]
+[2024-05-26 00:43:45] INFO root fetch - main [MainThread]: End processing [arch-flow]: success
+[2024-05-26 00:43:45] INFO root fetch - main [MainThread]: Store serial: [23378333]
