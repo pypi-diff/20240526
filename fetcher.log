@@ -221,3 +221,15 @@
 [2024-05-26 00:32:54] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-26 00:32:54] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-26 00:32:54] INFO root fetch - main [MainThread]: Store serial: [23378305]
+[2024-05-26 00:34:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378305]
+[2024-05-26 00:35:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 00:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-ulid
+[2024-05-26 00:35:03] INFO root fetch - processPackages [python-ulid]: New version: [2.6.0] Old Version: [2.5.0]
+[2024-05-26 00:35:03] INFO root fetch - processPackages [python-ulid]: Downloading https://files.pythonhosted.org/packages/ad/41/0c28964763497d0c6220dd1a8cc48023a5471b9a0a73bd8f6f95bcafae52/python_ulid-2.5.0.tar.gz
+[2024-05-26 00:35:04] INFO root fetch - processPackages [python-ulid]: Downloading https://files.pythonhosted.org/packages/dc/15/8c945a034be6c5e295512c247321b3a56ac87b8f12a1200d265aab57a1c6/python_ulid-2.6.0.tar.gz
+[2024-05-26 00:35:04] INFO root fetch - processPackages [python-ulid]: executing diffoscope
+[2024-05-26 00:35:04] INFO root fetch - processPackages [python-ulid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_ulid-2.5.0.tar.gz tmp/python_ulid-2.6.0.tar.gz --markdown 20240526/p/python-ulid/2.5.0-2.6.0/README.md --exclude *.pyd
+[2024-05-26 00:35:04] INFO root fetch - processPackages [python-ulid]: Remove: archive file [/home/abi/fetcher/tmp/python_ulid-2.5.0.tar.gz]
+[2024-05-26 00:35:04] INFO root fetch - processPackages [python-ulid]: Remove: archive file [/home/abi/fetcher/tmp/python_ulid-2.6.0.tar.gz]
+[2024-05-26 00:35:04] INFO root fetch - main [MainThread]: End processing [python-ulid]: success
+[2024-05-26 00:35:04] INFO root fetch - main [MainThread]: Store serial: [23378308]
