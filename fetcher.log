@@ -398,3 +398,15 @@
 [2024-05-26 00:50:15] INFO root fetch - processPackages [duckduckgo-search]: Remove: archive file [/home/abi/fetcher/tmp/duckduckgo_search-6.1.1.tar.gz]
 [2024-05-26 00:50:15] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
 [2024-05-26 00:50:15] INFO root fetch - main [MainThread]: Store serial: [23378350]
+[2024-05-26 00:52:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378350]
+[2024-05-26 00:52:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 00:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dansplotcore
+[2024-05-26 00:52:23] INFO root fetch - processPackages [dansplotcore]: New version: [6.6.0] Old Version: [6.5.0]
+[2024-05-26 00:52:23] INFO root fetch - processPackages [dansplotcore]: Downloading https://files.pythonhosted.org/packages/bd/2f/5b4ca48ecdc51a80a83f3ffe1d9b8818c02ffdd4f0ed97a4057cc5d5b1f3/dansplotcore-6.5.0.tar.gz
+[2024-05-26 00:52:24] INFO root fetch - processPackages [dansplotcore]: Downloading https://files.pythonhosted.org/packages/5e/65/5f0230e4a96efdd89d5c1e8f75d93cae09a4a3bc53102ea2d3cb165ae86b/dansplotcore-6.6.0.tar.gz
+[2024-05-26 00:52:24] INFO root fetch - processPackages [dansplotcore]: executing diffoscope
+[2024-05-26 00:52:24] INFO root fetch - processPackages [dansplotcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dansplotcore-6.5.0.tar.gz tmp/dansplotcore-6.6.0.tar.gz --markdown 20240526/d/dansplotcore/6.5.0-6.6.0/README.md --exclude *.pyd
+[2024-05-26 00:52:24] INFO root fetch - processPackages [dansplotcore]: Remove: archive file [/home/abi/fetcher/tmp/dansplotcore-6.5.0.tar.gz]
+[2024-05-26 00:52:24] INFO root fetch - processPackages [dansplotcore]: Remove: archive file [/home/abi/fetcher/tmp/dansplotcore-6.6.0.tar.gz]
+[2024-05-26 00:52:24] INFO root fetch - main [MainThread]: End processing [dansplotcore]: success
+[2024-05-26 00:52:24] INFO root fetch - main [MainThread]: Store serial: [23378352]
