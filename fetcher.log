@@ -113,3 +113,18 @@
 [2024-05-26 00:22:00] INFO root fetch - processPackages [gdpc]: Remove: archive file [/home/abi/fetcher/tmp/gdpc-7.2.0.tar.gz]
 [2024-05-26 00:22:00] INFO root fetch - main [MainThread]: End processing [gdpc]: success
 [2024-05-26 00:22:00] INFO root fetch - main [MainThread]: Store serial: [23378264]
+[2024-05-26 00:24:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378264]
+[2024-05-26 00:24:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 00:24:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-otel-smtp-backend
+[2024-05-26 00:24:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-05-26 00:24:08] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-26 00:24:08] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-26 00:24:08] WARNING root fetch - processPackages [django-otel-smtp-backend]: Skipping, unable to determine old version
+[2024-05-26 00:24:08] INFO root fetch - main [MainThread]: End processing [django-otel-smtp-backend] error
+[2024-05-26 00:24:09] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-26 00:24:09] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-26 00:24:09] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240526/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-26 00:24:10] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-26 00:24:10] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-26 00:24:10] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-26 00:24:10] INFO root fetch - main [MainThread]: Store serial: [23378271]
