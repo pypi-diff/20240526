@@ -377,3 +377,24 @@
 [2024-05-26 00:48:06] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.5.25.tar.gz]
 [2024-05-26 00:48:06] INFO root fetch - main [MainThread]: End processing [getblocks]: success
 [2024-05-26 00:48:06] INFO root fetch - main [MainThread]: Store serial: [23378344]
+[2024-05-26 00:50:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378344]
+[2024-05-26 00:50:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 00:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: b3fileparser
+[2024-05-26 00:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: duckduckgo-search
+[2024-05-26 00:50:14] INFO root fetch - processPackages [b3fileparser]: New version: [0.2.0] Old Version: [0.1.6]
+[2024-05-26 00:50:14] INFO root fetch - processPackages [duckduckgo-search]: New version: [6.1.1] Old Version: [6.1.0]
+[2024-05-26 00:50:14] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/8e/8a/ade60a32f96daf4745c92d2e9d6c36767dc114b1681c2c8a8818e4eb6056/duckduckgo_search-6.1.0.tar.gz
+[2024-05-26 00:50:14] INFO root fetch - processPackages [b3fileparser]: Downloading https://files.pythonhosted.org/packages/95/f3/0811fe74a70d0552d5d747551b9ae988308c2d02ff514873499e33f2b42b/b3fileparser-0.1.6.tar.gz
+[2024-05-26 00:50:14] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/3d/26/fc789f9b65ad218a13b6155fb626df2f41b34360d6d2d5c0d313f9db8e3a/duckduckgo_search-6.1.1.tar.gz
+[2024-05-26 00:50:14] INFO root fetch - processPackages [b3fileparser]: Downloading https://files.pythonhosted.org/packages/7e/2e/46203a2db3ba418d8f2e09287586d271ca8a3a9b0e25ace9e8be7cce4447/b3fileparser-0.2.0.tar.gz
+[2024-05-26 00:50:14] INFO root fetch - processPackages [b3fileparser]: executing diffoscope
+[2024-05-26 00:50:14] INFO root fetch - processPackages [b3fileparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/b3fileparser-0.1.6.tar.gz tmp/b3fileparser-0.2.0.tar.gz --markdown 20240526/b/b3fileparser/0.1.6-0.2.0/README.md --exclude *.pyd
+[2024-05-26 00:50:14] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2024-05-26 00:50:14] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-6.1.0.tar.gz tmp/duckduckgo_search-6.1.1.tar.gz --markdown 20240526/d/duckduckgo-search/6.1.0-6.1.1/README.md --exclude *.pyd
+[2024-05-26 00:50:15] INFO root fetch - processPackages [b3fileparser]: Remove: archive file [/home/abi/fetcher/tmp/b3fileparser-0.1.6.tar.gz]
+[2024-05-26 00:50:15] INFO root fetch - processPackages [b3fileparser]: Remove: archive file [/home/abi/fetcher/tmp/b3fileparser-0.2.0.tar.gz]
+[2024-05-26 00:50:15] INFO root fetch - main [MainThread]: End processing [b3fileparser]: success
+[2024-05-26 00:50:15] INFO root fetch - processPackages [duckduckgo-search]: Remove: archive file [/home/abi/fetcher/tmp/duckduckgo_search-6.1.0.tar.gz]
+[2024-05-26 00:50:15] INFO root fetch - processPackages [duckduckgo-search]: Remove: archive file [/home/abi/fetcher/tmp/duckduckgo_search-6.1.1.tar.gz]
+[2024-05-26 00:50:15] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2024-05-26 00:50:15] INFO root fetch - main [MainThread]: Store serial: [23378350]
