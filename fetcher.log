@@ -448,3 +448,19 @@
 [2024-05-26 00:56:47] INFO root fetch - processPackages [WhiskiWrap]: Remove: archive file [/home/abi/fetcher/tmp/WhiskiWrap-1.1.9.tar.gz]
 [2024-05-26 00:56:47] INFO root fetch - main [MainThread]: End processing [WhiskiWrap]: success
 [2024-05-26 00:56:47] INFO root fetch - main [MainThread]: Store serial: [23378364]
+[2024-05-26 00:58:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378364]
+[2024-05-26 00:58:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 01:00:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378364]
+[2024-05-26 01:01:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 01:03:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378364]
+[2024-05-26 01:03:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QTPYGUI
+[2024-05-26 01:03:07] INFO root fetch - processPackages [QTPYGUI]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 01:03:07] INFO root fetch - processPackages [QTPYGUI]: Downloading https://files.pythonhosted.org/packages/f1/ce/74f9d9e24c04477d6f4ce1797fb791008118fdff7efc24b752c6c47236ea/QTPYGUI-1.0.1-py3-none-any.whl
+[2024-05-26 01:03:08] INFO root fetch - processPackages [QTPYGUI]: Downloading https://files.pythonhosted.org/packages/4c/7f/37fafe3b69a073725ee73f75b3ba7e147aadebdc37be430cf588ba251bc4/QTPYGUI-1.0.2-py3-none-any.whl
+[2024-05-26 01:03:08] INFO root fetch - processPackages [QTPYGUI]: executing diffoscope
+[2024-05-26 01:03:08] INFO root fetch - processPackages [QTPYGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QTPYGUI-1.0.1-py3-none-any.whl.zip tmp/QTPYGUI-1.0.2-py3-none-any.whl.zip --markdown 20240526/Q/QTPYGUI/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 01:03:09] INFO root fetch - processPackages [QTPYGUI]: Remove: archive file [/home/abi/fetcher/tmp/QTPYGUI-1.0.1-py3-none-any.whl.zip]
+[2024-05-26 01:03:09] INFO root fetch - processPackages [QTPYGUI]: Remove: archive file [/home/abi/fetcher/tmp/QTPYGUI-1.0.2-py3-none-any.whl.zip]
+[2024-05-26 01:03:09] INFO root fetch - main [MainThread]: End processing [QTPYGUI]: success
+[2024-05-26 01:03:09] INFO root fetch - main [MainThread]: Store serial: [23378366]
