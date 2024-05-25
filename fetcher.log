@@ -529,3 +529,17 @@
 [2024-05-26 01:11:50] INFO root fetch - processPackages [eva-shell]: Remove: archive file [/home/abi/fetcher/tmp/eva-shell-0.2.9.tar.gz]
 [2024-05-26 01:11:50] INFO root fetch - main [MainThread]: End processing [eva-shell]: success
 [2024-05-26 01:11:50] INFO root fetch - main [MainThread]: Store serial: [23378396]
+[2024-05-26 01:13:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378396]
+[2024-05-26 01:13:58] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 01:15:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378396]
+[2024-05-26 01:16:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gemini-webapi
+[2024-05-26 01:16:04] INFO root fetch - processPackages [gemini-webapi]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-05-26 01:16:04] INFO root fetch - processPackages [gemini-webapi]: Downloading https://files.pythonhosted.org/packages/06/7b/615decd7d2f23298cffe3d105c5a2507580b29c2f7cb76b1fce40523ad4b/gemini_webapi-1.4.0.tar.gz
+[2024-05-26 01:16:04] INFO root fetch - processPackages [gemini-webapi]: Downloading https://files.pythonhosted.org/packages/b8/e7/da378369550a8de470f6347e1f391867ec2277cbf6f4294b6a4e5c8b9257/gemini_webapi-1.4.1.tar.gz
+[2024-05-26 01:16:04] INFO root fetch - processPackages [gemini-webapi]: executing diffoscope
+[2024-05-26 01:16:04] INFO root fetch - processPackages [gemini-webapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini_webapi-1.4.0.tar.gz tmp/gemini_webapi-1.4.1.tar.gz --markdown 20240526/g/gemini-webapi/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-05-26 01:16:05] INFO root fetch - processPackages [gemini-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gemini_webapi-1.4.0.tar.gz]
+[2024-05-26 01:16:05] INFO root fetch - processPackages [gemini-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gemini_webapi-1.4.1.tar.gz]
+[2024-05-26 01:16:05] INFO root fetch - main [MainThread]: End processing [gemini-webapi]: success
+[2024-05-26 01:16:05] INFO root fetch - main [MainThread]: Store serial: [23378399]
