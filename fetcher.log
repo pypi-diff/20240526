@@ -668,3 +668,24 @@
 [2024-05-26 01:41:51] WARNING root fetch - processPackages [maestro-compose]: Skipping, unable to determine old version
 [2024-05-26 01:41:51] INFO root fetch - main [MainThread]: End processing [maestro-compose] error
 [2024-05-26 01:41:51] INFO root fetch - main [MainThread]: Store serial: [23378466]
+[2024-05-26 01:43:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378466]
+[2024-05-26 01:43:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 01:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osmdiff
+[2024-05-26 01:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: getblocks
+[2024-05-26 01:43:59] INFO root fetch - processPackages [getblocks]: New version: [2024.5.27] Old Version: [2024.5.26]
+[2024-05-26 01:44:00] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/4f/52/3820c5023b9c17229c330786ae67f2e7f398ea2dd4a9d84c52e4290a38d5/getblocks-2024.5.26.tar.gz
+[2024-05-26 01:44:00] INFO root fetch - processPackages [osmdiff]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-05-26 01:44:00] INFO root fetch - processPackages [osmdiff]: Downloading https://files.pythonhosted.org/packages/8d/cd/33689a92b94c6095e474b587100e6ec82331f7034fb48d7c008b7b2f7cf0/osmdiff-0.3.2.tar.gz
+[2024-05-26 01:44:00] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/8a/55/e3ec09e085013e2b95fe20dd3f633df75617d92a52bba3c6ad11bafa37f3/getblocks-2024.5.27.tar.gz
+[2024-05-26 01:44:00] INFO root fetch - processPackages [getblocks]: executing diffoscope
+[2024-05-26 01:44:00] INFO root fetch - processPackages [getblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getblocks-2024.5.26.tar.gz tmp/getblocks-2024.5.27.tar.gz --markdown 20240526/g/getblocks/2024.5.26-2024.5.27/README.md --exclude *.pyd
+[2024-05-26 01:44:00] INFO root fetch - processPackages [osmdiff]: Downloading https://files.pythonhosted.org/packages/bc/3f/b1b632f891d11e1682fdbf40f7da89587fa88ebf0a0c4a6234e558f351ae/osmdiff-0.4.0.tar.gz
+[2024-05-26 01:44:00] INFO root fetch - processPackages [osmdiff]: executing diffoscope
+[2024-05-26 01:44:00] INFO root fetch - processPackages [osmdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osmdiff-0.3.2.tar.gz tmp/osmdiff-0.4.0.tar.gz --markdown 20240526/o/osmdiff/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-05-26 01:44:00] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.5.26.tar.gz]
+[2024-05-26 01:44:00] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.5.27.tar.gz]
+[2024-05-26 01:44:00] INFO root fetch - main [MainThread]: End processing [getblocks]: success
+[2024-05-26 01:44:06] INFO root fetch - processPackages [osmdiff]: Remove: archive file [/home/abi/fetcher/tmp/osmdiff-0.3.2.tar.gz]
+[2024-05-26 01:44:06] INFO root fetch - processPackages [osmdiff]: Remove: archive file [/home/abi/fetcher/tmp/osmdiff-0.4.0.tar.gz]
+[2024-05-26 01:44:06] INFO root fetch - main [MainThread]: End processing [osmdiff]: success
+[2024-05-26 01:44:06] INFO root fetch - main [MainThread]: Store serial: [23378472]
