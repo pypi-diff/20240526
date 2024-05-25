@@ -742,3 +742,33 @@
 [2024-05-26 01:52:44] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.8.tar.gz]
 [2024-05-26 01:52:44] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
 [2024-05-26 01:52:44] INFO root fetch - main [MainThread]: Store serial: [23378492]
+[2024-05-26 01:54:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378492]
+[2024-05-26 01:54:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 01:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gguf-connector
+[2024-05-26 01:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pluralkit
+[2024-05-26 01:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twitch-archiver
+[2024-05-26 01:54:52] INFO root fetch - processPackages [gguf-connector]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-26 01:54:52] INFO root fetch - processPackages [pluralkit]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-26 01:54:52] INFO root fetch - processPackages [twitch-archiver]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 01:54:53] INFO root fetch - processPackages [gguf-connector]: Downloading https://files.pythonhosted.org/packages/4e/c2/08f2cd0b156a16296c2279074113989e3762b7ef1ae47820fc4326010569/gguf_connector-0.7.8.tar.gz
+[2024-05-26 01:54:53] INFO root fetch - processPackages [pluralkit]: Downloading https://files.pythonhosted.org/packages/8b/dc/7f7691a107a3814633c5f5d7a46d3afd8c9c4d2255e52a089a6b20ce4d63/pluralkit-1.1.6.tar.gz
+[2024-05-26 01:54:53] INFO root fetch - processPackages [twitch-archiver]: Downloading https://files.pythonhosted.org/packages/a3/2f/1b9422342fcf89544ca9b0f7661c3e7f9933b84bd6e997de47295c20ca85/twitch_archiver-4.0.8.tar.gz
+[2024-05-26 01:54:53] INFO root fetch - processPackages [gguf-connector]: Downloading https://files.pythonhosted.org/packages/c5/93/ebcc584e4eb599309af430b8b5eaa29ee085f7ae6cfb7134ca4789e27778/gguf_connector-0.7.9.tar.gz
+[2024-05-26 01:54:53] INFO root fetch - processPackages [twitch-archiver]: Downloading https://files.pythonhosted.org/packages/9d/b9/727acc132b5e6604064c488865e52a4b7a78bf7fa659d07f5397005fc1ef/twitch_archiver-4.0.9.tar.gz
+[2024-05-26 01:54:53] INFO root fetch - processPackages [pluralkit]: Downloading https://files.pythonhosted.org/packages/01/b4/c2ee8c09c3462cb75ca5697682a5cffc041eed55658af20c0b2b694253c4/pluralkit-1.1.7.tar.gz
+[2024-05-26 01:54:53] INFO root fetch - processPackages [gguf-connector]: executing diffoscope
+[2024-05-26 01:54:53] INFO root fetch - processPackages [gguf-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gguf_connector-0.7.8.tar.gz tmp/gguf_connector-0.7.9.tar.gz --markdown 20240526/g/gguf-connector/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-26 01:54:53] INFO root fetch - processPackages [twitch-archiver]: executing diffoscope
+[2024-05-26 01:54:53] INFO root fetch - processPackages [twitch-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitch_archiver-4.0.8.tar.gz tmp/twitch_archiver-4.0.9.tar.gz --markdown 20240526/t/twitch-archiver/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 01:54:53] INFO root fetch - processPackages [pluralkit]: executing diffoscope
+[2024-05-26 01:54:53] INFO root fetch - processPackages [pluralkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluralkit-1.1.6.tar.gz tmp/pluralkit-1.1.7.tar.gz --markdown 20240526/p/pluralkit/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-26 01:54:54] INFO root fetch - processPackages [gguf-connector]: Remove: archive file [/home/abi/fetcher/tmp/gguf_connector-0.7.8.tar.gz]
+[2024-05-26 01:54:54] INFO root fetch - processPackages [gguf-connector]: Remove: archive file [/home/abi/fetcher/tmp/gguf_connector-0.7.9.tar.gz]
+[2024-05-26 01:54:54] INFO root fetch - main [MainThread]: End processing [gguf-connector]: success
+[2024-05-26 01:54:54] INFO root fetch - processPackages [twitch-archiver]: Remove: archive file [/home/abi/fetcher/tmp/twitch_archiver-4.0.8.tar.gz]
+[2024-05-26 01:54:54] INFO root fetch - processPackages [twitch-archiver]: Remove: archive file [/home/abi/fetcher/tmp/twitch_archiver-4.0.9.tar.gz]
+[2024-05-26 01:54:54] INFO root fetch - main [MainThread]: End processing [twitch-archiver]: success
+[2024-05-26 01:54:54] INFO root fetch - processPackages [pluralkit]: Remove: archive file [/home/abi/fetcher/tmp/pluralkit-1.1.6.tar.gz]
+[2024-05-26 01:54:54] INFO root fetch - processPackages [pluralkit]: Remove: archive file [/home/abi/fetcher/tmp/pluralkit-1.1.7.tar.gz]
+[2024-05-26 01:54:54] INFO root fetch - main [MainThread]: End processing [pluralkit]: success
+[2024-05-26 01:54:54] INFO root fetch - main [MainThread]: Store serial: [23378501]
