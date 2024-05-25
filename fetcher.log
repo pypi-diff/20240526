@@ -582,3 +582,15 @@
 [2024-05-26 01:18:15] INFO root fetch - processPackages [mddatasetbuilder]: Remove: archive file [/home/abi/fetcher/tmp/mddatasetbuilder-1.3.9.tar.gz]
 [2024-05-26 01:18:15] INFO root fetch - main [MainThread]: End processing [mddatasetbuilder]: success
 [2024-05-26 01:18:15] INFO root fetch - main [MainThread]: Store serial: [23378413]
+[2024-05-26 01:20:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378413]
+[2024-05-26 01:20:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:20:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: espy-contact
+[2024-05-26 01:20:23] INFO root fetch - processPackages [espy-contact]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-05-26 01:20:23] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/a2/6a/ee73a96b3e75005ef1a3ba6cf65face488e511dc30fe360fc80a023074f3/espy_contact-2.0.4.tar.gz
+[2024-05-26 01:20:23] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/22/9b/9ab0314c904de69349d3cd7cdc67b23fb95d24f0eada632453285e6fffdc/espy_contact-2.0.5.tar.gz
+[2024-05-26 01:20:23] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-05-26 01:20:23] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.4.tar.gz tmp/espy_contact-2.0.5.tar.gz --markdown 20240526/e/espy-contact/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-05-26 01:20:24] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.4.tar.gz]
+[2024-05-26 01:20:24] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.5.tar.gz]
+[2024-05-26 01:20:24] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-05-26 01:20:24] INFO root fetch - main [MainThread]: Store serial: [23378416]
