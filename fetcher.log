@@ -517,3 +517,15 @@
 [2024-05-26 01:09:40] WARNING root fetch - processPackages [viswaternet]: Skipping package: exceeds size limit 13978512>=10485760
 [2024-05-26 01:09:40] INFO root fetch - main [MainThread]: End processing [viswaternet] error
 [2024-05-26 01:09:40] INFO root fetch - main [MainThread]: Store serial: [23378394]
+[2024-05-26 01:11:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378394]
+[2024-05-26 01:11:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eva-shell
+[2024-05-26 01:11:49] INFO root fetch - processPackages [eva-shell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 01:11:49] INFO root fetch - processPackages [eva-shell]: Downloading https://files.pythonhosted.org/packages/0f/00/955d31c6f8ea07b74b16e88dfc99ecb847017590abb0eede2e1296ae114d/eva-shell-0.2.8.tar.gz
+[2024-05-26 01:11:49] INFO root fetch - processPackages [eva-shell]: Downloading https://files.pythonhosted.org/packages/f3/a3/4bba45b044742c2c426c1fc97e77b5c50cc9c096c2f4958a1dbeac0d4cdd/eva-shell-0.2.9.tar.gz
+[2024-05-26 01:11:49] INFO root fetch - processPackages [eva-shell]: executing diffoscope
+[2024-05-26 01:11:49] INFO root fetch - processPackages [eva-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eva-shell-0.2.8.tar.gz tmp/eva-shell-0.2.9.tar.gz --markdown 20240526/e/eva-shell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 01:11:50] INFO root fetch - processPackages [eva-shell]: Remove: archive file [/home/abi/fetcher/tmp/eva-shell-0.2.8.tar.gz]
+[2024-05-26 01:11:50] INFO root fetch - processPackages [eva-shell]: Remove: archive file [/home/abi/fetcher/tmp/eva-shell-0.2.9.tar.gz]
+[2024-05-26 01:11:50] INFO root fetch - main [MainThread]: End processing [eva-shell]: success
+[2024-05-26 01:11:50] INFO root fetch - main [MainThread]: Store serial: [23378396]
