@@ -660,3 +660,11 @@
 [2024-05-26 01:37:37] INFO root fetch - processPackages [aurum-hikari]: Remove: archive file [/home/abi/fetcher/tmp/aurum_hikari-0.1.5.4.tar.gz]
 [2024-05-26 01:37:37] INFO root fetch - main [MainThread]: End processing [aurum-hikari]: success
 [2024-05-26 01:37:37] INFO root fetch - main [MainThread]: Store serial: [23378461]
+[2024-05-26 01:39:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378461]
+[2024-05-26 01:39:45] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 01:41:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378461]
+[2024-05-26 01:41:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:41:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maestro-compose
+[2024-05-26 01:41:51] WARNING root fetch - processPackages [maestro-compose]: Skipping, unable to determine old version
+[2024-05-26 01:41:51] INFO root fetch - main [MainThread]: End processing [maestro-compose] error
+[2024-05-26 01:41:51] INFO root fetch - main [MainThread]: Store serial: [23378466]
