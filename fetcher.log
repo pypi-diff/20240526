@@ -54,3 +54,19 @@
 [2024-05-26 00:04:58] INFO root fetch - processPackages [zetascale]: Remove: archive file [/home/abi/fetcher/tmp/zetascale-2.5.1.tar.gz]
 [2024-05-26 00:04:58] INFO root fetch - main [MainThread]: End processing [zetascale]: success
 [2024-05-26 00:04:58] INFO root fetch - main [MainThread]: Store serial: [23378243]
+[2024-05-26 00:07:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378243]
+[2024-05-26 00:07:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 00:09:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378244]
+[2024-05-26 00:09:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 00:11:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378244]
+[2024-05-26 00:11:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 00:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctube
+[2024-05-26 00:11:17] INFO root fetch - processPackages [ctube]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 00:11:17] INFO root fetch - processPackages [ctube]: Downloading https://files.pythonhosted.org/packages/c1/2d/469f415bfde5410d88b4e45d1561478ade1d54a4b89ba6b115f96aa6693b/ctube-0.0.4.tar.gz
+[2024-05-26 00:11:17] INFO root fetch - processPackages [ctube]: Downloading https://files.pythonhosted.org/packages/3a/47/475f0b578a81f367684128d057fb658531e37f7e9dcb32df99dedfc7c4bf/ctube-0.0.5.tar.gz
+[2024-05-26 00:11:17] INFO root fetch - processPackages [ctube]: executing diffoscope
+[2024-05-26 00:11:17] INFO root fetch - processPackages [ctube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctube-0.0.4.tar.gz tmp/ctube-0.0.5.tar.gz --markdown 20240526/c/ctube/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 00:11:18] INFO root fetch - processPackages [ctube]: Remove: archive file [/home/abi/fetcher/tmp/ctube-0.0.4.tar.gz]
+[2024-05-26 00:11:18] INFO root fetch - processPackages [ctube]: Remove: archive file [/home/abi/fetcher/tmp/ctube-0.0.5.tar.gz]
+[2024-05-26 00:11:18] INFO root fetch - main [MainThread]: End processing [ctube]: success
+[2024-05-26 00:11:18] INFO root fetch - main [MainThread]: Store serial: [23378248]
