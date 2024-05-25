@@ -233,3 +233,33 @@
 [2024-05-26 00:35:04] INFO root fetch - processPackages [python-ulid]: Remove: archive file [/home/abi/fetcher/tmp/python_ulid-2.6.0.tar.gz]
 [2024-05-26 00:35:04] INFO root fetch - main [MainThread]: End processing [python-ulid]: success
 [2024-05-26 00:35:04] INFO root fetch - main [MainThread]: Store serial: [23378308]
+[2024-05-26 00:37:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378308]
+[2024-05-26 00:37:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 00:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlpx
+[2024-05-26 00:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geolysis
+[2024-05-26 00:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: djpress
+[2024-05-26 00:37:13] INFO root fetch - processPackages [djpress]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 00:37:13] INFO root fetch - processPackages [nlpx]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-26 00:37:13] INFO root fetch - processPackages [djpress]: Downloading https://files.pythonhosted.org/packages/37/da/2cfde45421c4e328df9345882ba2377cdbdf06b8efccec349843ccb83768/djpress-0.2.2.tar.gz
+[2024-05-26 00:37:13] INFO root fetch - processPackages [geolysis]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-26 00:37:13] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/e8/29/e4b65613bcc97cefa4fa64835f1e0f59679c3eee86472fe72e2a51625142/nlpx-1.1.4.tar.gz
+[2024-05-26 00:37:13] INFO root fetch - processPackages [geolysis]: Downloading https://files.pythonhosted.org/packages/c9/7a/d1dae8b936a6810c997526f46299b2fb36428abf66ccb23ed073c8c1baae/geolysis-0.2.0.tar.gz
+[2024-05-26 00:37:14] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/c8/65/2e17704a863906a83fd5d97799c163f62d6cedbc4d954b7044a41e930973/nlpx-1.1.5.tar.gz
+[2024-05-26 00:37:14] INFO root fetch - processPackages [geolysis]: Downloading https://files.pythonhosted.org/packages/39/75/f57dc266495db1ef34a254ff6c78b50cb74236da4e2c95d54e42ccf03aef/geolysis-0.3.0.tar.gz
+[2024-05-26 00:37:14] INFO root fetch - processPackages [djpress]: Downloading https://files.pythonhosted.org/packages/bf/23/53a821d8a4c8222a71a618a01d74a3cad64df992ce6340994db621d77eec/djpress-0.2.3.tar.gz
+[2024-05-26 00:37:14] INFO root fetch - processPackages [geolysis]: executing diffoscope
+[2024-05-26 00:37:14] INFO root fetch - processPackages [geolysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geolysis-0.2.0.tar.gz tmp/geolysis-0.3.0.tar.gz --markdown 20240526/g/geolysis/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-26 00:37:14] INFO root fetch - processPackages [nlpx]: executing diffoscope
+[2024-05-26 00:37:14] INFO root fetch - processPackages [nlpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpx-1.1.4.tar.gz tmp/nlpx-1.1.5.tar.gz --markdown 20240526/n/nlpx/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-26 00:37:14] INFO root fetch - processPackages [djpress]: executing diffoscope
+[2024-05-26 00:37:14] INFO root fetch - processPackages [djpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djpress-0.2.2.tar.gz tmp/djpress-0.2.3.tar.gz --markdown 20240526/d/djpress/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 00:37:15] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.4.tar.gz]
+[2024-05-26 00:37:15] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.5.tar.gz]
+[2024-05-26 00:37:15] INFO root fetch - main [MainThread]: End processing [nlpx]: success
+[2024-05-26 00:37:15] INFO root fetch - processPackages [geolysis]: Remove: archive file [/home/abi/fetcher/tmp/geolysis-0.2.0.tar.gz]
+[2024-05-26 00:37:15] INFO root fetch - processPackages [geolysis]: Remove: archive file [/home/abi/fetcher/tmp/geolysis-0.3.0.tar.gz]
+[2024-05-26 00:37:15] INFO root fetch - main [MainThread]: End processing [geolysis]: success
+[2024-05-26 00:37:15] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.2.2.tar.gz]
+[2024-05-26 00:37:15] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.2.3.tar.gz]
+[2024-05-26 00:37:15] INFO root fetch - main [MainThread]: End processing [djpress]: success
+[2024-05-26 00:37:15] INFO root fetch - main [MainThread]: Store serial: [23378316]
