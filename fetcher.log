@@ -712,3 +712,21 @@
 [2024-05-26 01:48:23] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.3.7.tar.gz]
 [2024-05-26 01:48:23] INFO root fetch - main [MainThread]: End processing [eras]: success
 [2024-05-26 01:48:23] INFO root fetch - main [MainThread]: Store serial: [23378480]
+[2024-05-26 01:50:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378480]
+[2024-05-26 01:50:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 01:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maestro-compose
+[2024-05-26 01:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Red-Web-Dashboard
+[2024-05-26 01:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maestro-compose
+[2024-05-26 01:50:31] WARNING root fetch - processPackages [maestro-compose]: Skipping, unable to determine old version
+[2024-05-26 01:50:31] WARNING root fetch - processPackages [maestro-compose]: Skipping, unable to determine old version
+[2024-05-26 01:50:31] INFO root fetch - main [MainThread]: End processing [maestro-compose] error
+[2024-05-26 01:50:31] INFO root fetch - main [MainThread]: End processing [maestro-compose] error
+[2024-05-26 01:50:32] INFO root fetch - processPackages [Red-Web-Dashboard]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-05-26 01:50:32] INFO root fetch - processPackages [Red-Web-Dashboard]: Downloading https://files.pythonhosted.org/packages/65/c7/e48f9b7ec2023baf2302acc826a5bc0559dbd0dffb5e46382150901a3112/red_web_dashboard-1.6.3.tar.gz
+[2024-05-26 01:50:32] INFO root fetch - processPackages [Red-Web-Dashboard]: Downloading https://files.pythonhosted.org/packages/57/30/7c9a406a8cd5ed272766b793c58b2f9d156b94aad68aa8391f6fe3672f2d/red_web_dashboard-1.6.4.tar.gz
+[2024-05-26 01:50:33] INFO root fetch - processPackages [Red-Web-Dashboard]: executing diffoscope
+[2024-05-26 01:50:33] INFO root fetch - processPackages [Red-Web-Dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/red_web_dashboard-1.6.3.tar.gz tmp/red_web_dashboard-1.6.4.tar.gz --markdown 20240526/R/Red-Web-Dashboard/1.6.3-1.6.4/README.md --exclude *.pyd
+[2024-05-26 01:50:35] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.6.3.tar.gz]
+[2024-05-26 01:50:35] INFO root fetch - processPackages [Red-Web-Dashboard]: Remove: archive file [/home/abi/fetcher/tmp/red_web_dashboard-1.6.4.tar.gz]
+[2024-05-26 01:50:35] INFO root fetch - main [MainThread]: End processing [Red-Web-Dashboard]: success
+[2024-05-26 01:50:35] INFO root fetch - main [MainThread]: Store serial: [23378489]
