@@ -648,3 +648,15 @@
 [2024-05-26 01:35:26] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz]
 [2024-05-26 01:35:26] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
 [2024-05-26 01:35:26] INFO root fetch - main [MainThread]: Store serial: [23378458]
+[2024-05-26 01:37:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378458]
+[2024-05-26 01:37:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:37:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aurum-hikari
+[2024-05-26 01:37:36] INFO root fetch - processPackages [aurum-hikari]: New version: [0.1.5.4] Old Version: [0.1.5.3]
+[2024-05-26 01:37:36] INFO root fetch - processPackages [aurum-hikari]: Downloading https://files.pythonhosted.org/packages/31/cb/fc7d21e53f649401dc3a5e5e2391d539b1ec1a85127e1a1cee0410de52d4/aurum_hikari-0.1.5.3.tar.gz
+[2024-05-26 01:37:36] INFO root fetch - processPackages [aurum-hikari]: Downloading https://files.pythonhosted.org/packages/dc/8f/555dfa9385bdfbb404d91165aa1ddbf1e94074ae40ffce14cb12c941c716/aurum_hikari-0.1.5.4.tar.gz
+[2024-05-26 01:37:36] INFO root fetch - processPackages [aurum-hikari]: executing diffoscope
+[2024-05-26 01:37:36] INFO root fetch - processPackages [aurum-hikari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aurum_hikari-0.1.5.3.tar.gz tmp/aurum_hikari-0.1.5.4.tar.gz --markdown 20240526/a/aurum-hikari/0.1.5.3-0.1.5.4/README.md --exclude *.pyd
+[2024-05-26 01:37:37] INFO root fetch - processPackages [aurum-hikari]: Remove: archive file [/home/abi/fetcher/tmp/aurum_hikari-0.1.5.3.tar.gz]
+[2024-05-26 01:37:37] INFO root fetch - processPackages [aurum-hikari]: Remove: archive file [/home/abi/fetcher/tmp/aurum_hikari-0.1.5.4.tar.gz]
+[2024-05-26 01:37:37] INFO root fetch - main [MainThread]: End processing [aurum-hikari]: success
+[2024-05-26 01:37:37] INFO root fetch - main [MainThread]: Store serial: [23378461]
