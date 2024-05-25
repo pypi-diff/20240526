@@ -427,3 +427,24 @@
 [2024-05-26 00:54:34] INFO root fetch - processPackages [criteria-local]: Remove: archive file [/home/abi/fetcher/tmp/criteria-local-0.0.8.tar.gz]
 [2024-05-26 00:54:34] INFO root fetch - main [MainThread]: End processing [criteria-local]: success
 [2024-05-26 00:54:34] INFO root fetch - main [MainThread]: Store serial: [23378358]
+[2024-05-26 00:56:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378358]
+[2024-05-26 00:56:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 00:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: WhiskiWrap
+[2024-05-26 00:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: espy-contact
+[2024-05-26 00:56:42] INFO root fetch - processPackages [espy-contact]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-05-26 00:56:42] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/73/3f/48d2720d6166cc176e8dc9d86f115dc35eb9a40e9fff8a170730bf80b476/espy_contact-2.0.3.tar.gz
+[2024-05-26 00:56:42] INFO root fetch - processPackages [WhiskiWrap]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-26 00:56:42] INFO root fetch - processPackages [WhiskiWrap]: Downloading https://files.pythonhosted.org/packages/68/84/e2e8f00b3c60e5afbabd26d23c3c84a1a7d5dfa3e9e51f7ea2ae990f0588/WhiskiWrap-1.1.8.tar.gz
+[2024-05-26 00:56:43] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/a2/6a/ee73a96b3e75005ef1a3ba6cf65face488e511dc30fe360fc80a023074f3/espy_contact-2.0.4.tar.gz
+[2024-05-26 00:56:43] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-05-26 00:56:43] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.3.tar.gz tmp/espy_contact-2.0.4.tar.gz --markdown 20240526/e/espy-contact/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-05-26 00:56:43] INFO root fetch - processPackages [WhiskiWrap]: Downloading https://files.pythonhosted.org/packages/39/9e/4dabdadb214d1bb67c57ac2303971051fee2e3620e63aa12135c4ce84624/WhiskiWrap-1.1.9.tar.gz
+[2024-05-26 00:56:43] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.3.tar.gz]
+[2024-05-26 00:56:43] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.4.tar.gz]
+[2024-05-26 00:56:43] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-05-26 00:56:43] INFO root fetch - processPackages [WhiskiWrap]: executing diffoscope
+[2024-05-26 00:56:43] INFO root fetch - processPackages [WhiskiWrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WhiskiWrap-1.1.8.tar.gz tmp/WhiskiWrap-1.1.9.tar.gz --markdown 20240526/W/WhiskiWrap/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-26 00:56:47] INFO root fetch - processPackages [WhiskiWrap]: Remove: archive file [/home/abi/fetcher/tmp/WhiskiWrap-1.1.8.tar.gz]
+[2024-05-26 00:56:47] INFO root fetch - processPackages [WhiskiWrap]: Remove: archive file [/home/abi/fetcher/tmp/WhiskiWrap-1.1.9.tar.gz]
+[2024-05-26 00:56:47] INFO root fetch - main [MainThread]: End processing [WhiskiWrap]: success
+[2024-05-26 00:56:47] INFO root fetch - main [MainThread]: Store serial: [23378364]
