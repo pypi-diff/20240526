@@ -97,3 +97,19 @@
 [2024-05-26 00:15:39] INFO root fetch - processPackages [synthetic-home]: Remove: archive file [/home/abi/fetcher/tmp/synthetic_home-2.1.0.tar.gz]
 [2024-05-26 00:15:39] INFO root fetch - main [MainThread]: End processing [synthetic-home]: success
 [2024-05-26 00:15:39] INFO root fetch - main [MainThread]: Store serial: [23378261]
+[2024-05-26 00:17:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378261]
+[2024-05-26 00:17:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 00:19:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378261]
+[2024-05-26 00:19:53] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 00:21:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378261]
+[2024-05-26 00:21:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 00:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gdpc
+[2024-05-26 00:21:59] INFO root fetch - processPackages [gdpc]: New version: [7.2.0] Old Version: [7.1.0]
+[2024-05-26 00:21:59] INFO root fetch - processPackages [gdpc]: Downloading https://files.pythonhosted.org/packages/99/eb/5770d1f76817a350049bfe766ebb1acc1122ad7e47bd21075c93e8b3fbbd/gdpc-7.1.0.tar.gz
+[2024-05-26 00:22:00] INFO root fetch - processPackages [gdpc]: Downloading https://files.pythonhosted.org/packages/be/c5/c6fe84e818f7fbb23bbd60c1feda7e0759f9ad67ef01f4bfa67c83f5866c/gdpc-7.2.0.tar.gz
+[2024-05-26 00:22:00] INFO root fetch - processPackages [gdpc]: executing diffoscope
+[2024-05-26 00:22:00] INFO root fetch - processPackages [gdpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdpc-7.1.0.tar.gz tmp/gdpc-7.2.0.tar.gz --markdown 20240526/g/gdpc/7.1.0-7.2.0/README.md --exclude *.pyd
+[2024-05-26 00:22:00] INFO root fetch - processPackages [gdpc]: Remove: archive file [/home/abi/fetcher/tmp/gdpc-7.1.0.tar.gz]
+[2024-05-26 00:22:00] INFO root fetch - processPackages [gdpc]: Remove: archive file [/home/abi/fetcher/tmp/gdpc-7.2.0.tar.gz]
+[2024-05-26 00:22:00] INFO root fetch - main [MainThread]: End processing [gdpc]: success
+[2024-05-26 00:22:00] INFO root fetch - main [MainThread]: Store serial: [23378264]
