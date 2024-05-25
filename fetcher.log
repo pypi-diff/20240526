@@ -155,3 +155,27 @@
 [2024-05-26 00:26:22] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-26 00:26:22] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-26 00:26:22] INFO root fetch - main [MainThread]: Store serial: [23378284]
+[2024-05-26 00:28:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378284]
+[2024-05-26 00:28:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 00:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-nets-core
+[2024-05-26 00:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: v2share
+[2024-05-26 00:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maskalib
+[2024-05-26 00:28:31] INFO root fetch - processPackages [v2share]: New version: [0.1.0b2] Old Version: [0.1.0b1]
+[2024-05-26 00:28:31] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-26 00:28:31] INFO root fetch - processPackages [v2share]: Downloading https://files.pythonhosted.org/packages/37/d8/d548ac7fc684939d830db2c792e7b1be4fbe7eabf5ffe9ec9bbae9126434/v2share-0.1.0b1.tar.gz
+[2024-05-26 00:28:31] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/79/c3/cda8f33a48cc3ba33d3b6d9e2fbd7ee2b5c3361c5337b09da3d8a207b017/django_nets_core-0.1.98.tar.gz
+[2024-05-26 00:28:31] WARNING root fetch - processPackages [maskalib]: Skipping, unable to determine old version
+[2024-05-26 00:28:31] INFO root fetch - main [MainThread]: End processing [maskalib] error
+[2024-05-26 00:28:31] INFO root fetch - processPackages [v2share]: Downloading https://files.pythonhosted.org/packages/8a/1f/32131eedfbfba86782690c6375d19b7d47026a9cefe08abe5dbabdc63a4d/v2share-0.1.0b2.tar.gz
+[2024-05-26 00:28:31] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/36/e9/30dde935785c504d8cae7b3855974eccdf725a0992dff1f40f413d916c8b/django_nets_core-0.1.99.tar.gz
+[2024-05-26 00:28:31] INFO root fetch - processPackages [v2share]: executing diffoscope
+[2024-05-26 00:28:31] INFO root fetch - processPackages [v2share]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v2share-0.1.0b1.tar.gz tmp/v2share-0.1.0b2.tar.gz --markdown 20240526/v/v2share/0.1.0b1-0.1.0b2/README.md --exclude *.pyd
+[2024-05-26 00:28:31] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-26 00:28:31] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_nets_core-0.1.98.tar.gz tmp/django_nets_core-0.1.99.tar.gz --markdown 20240526/d/django-nets-core/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-26 00:28:32] INFO root fetch - processPackages [v2share]: Remove: archive file [/home/abi/fetcher/tmp/v2share-0.1.0b1.tar.gz]
+[2024-05-26 00:28:32] INFO root fetch - processPackages [v2share]: Remove: archive file [/home/abi/fetcher/tmp/v2share-0.1.0b2.tar.gz]
+[2024-05-26 00:28:32] INFO root fetch - main [MainThread]: End processing [v2share]: success
+[2024-05-26 00:28:32] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.98.tar.gz]
+[2024-05-26 00:28:32] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.99.tar.gz]
+[2024-05-26 00:28:32] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-26 00:28:32] INFO root fetch - main [MainThread]: Store serial: [23378294]
