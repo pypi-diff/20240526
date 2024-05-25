@@ -543,3 +543,42 @@
 [2024-05-26 01:16:05] INFO root fetch - processPackages [gemini-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gemini_webapi-1.4.1.tar.gz]
 [2024-05-26 01:16:05] INFO root fetch - main [MainThread]: End processing [gemini-webapi]: success
 [2024-05-26 01:16:05] INFO root fetch - main [MainThread]: Store serial: [23378399]
+[2024-05-26 01:18:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378399]
+[2024-05-26 01:18:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 01:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: getblocks
+[2024-05-26 01:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinyticker
+[2024-05-26 01:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mddatasetbuilder
+[2024-05-26 01:18:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smartmoneyconcepts
+[2024-05-26 01:18:13] INFO root fetch - processPackages [getblocks]: New version: [2024.5.26] Old Version: [2024.5.25]
+[2024-05-26 01:18:13] INFO root fetch - processPackages [smartmoneyconcepts]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 01:18:13] INFO root fetch - processPackages [tinyticker]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-05-26 01:18:13] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/d0/91/bab75584280108852f11dbfa177b5f988a968ab35c32746526ee8ae2c34d/getblocks-2024.5.25.tar.gz
+[2024-05-26 01:18:13] INFO root fetch - processPackages [mddatasetbuilder]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-26 01:18:13] INFO root fetch - processPackages [smartmoneyconcepts]: Downloading https://files.pythonhosted.org/packages/f1/78/6c9b6e5371a0fb7e36f58bdb10614bb8b7bb315cbb8ab3c6ea49d7e529dd/smartmoneyconcepts-0.0.8.tar.gz
+[2024-05-26 01:18:13] INFO root fetch - processPackages [tinyticker]: Downloading https://files.pythonhosted.org/packages/bc/d9/8d62948e2f0610d70f759650fa5a2a2d6937b372f9b45a70b9a34cfda402/tinyticker-0.7.4.tar.gz
+[2024-05-26 01:18:13] INFO root fetch - processPackages [mddatasetbuilder]: Downloading https://files.pythonhosted.org/packages/09/d2/a68e525f64a1b52f0ef6e8c72f7846aaec5e9305be1429a9f62ca75a57fd/mddatasetbuilder-1.3.8.tar.gz
+[2024-05-26 01:18:13] INFO root fetch - processPackages [smartmoneyconcepts]: Downloading https://files.pythonhosted.org/packages/3e/3a/6fbe8ae2e70531c6cc84ee0b2ab73fefeabb01453d7ba374185fee6508fb/smartmoneyconcepts-0.0.9.tar.gz
+[2024-05-26 01:18:14] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/4f/52/3820c5023b9c17229c330786ae67f2e7f398ea2dd4a9d84c52e4290a38d5/getblocks-2024.5.26.tar.gz
+[2024-05-26 01:18:14] INFO root fetch - processPackages [smartmoneyconcepts]: executing diffoscope
+[2024-05-26 01:18:14] INFO root fetch - processPackages [smartmoneyconcepts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartmoneyconcepts-0.0.8.tar.gz tmp/smartmoneyconcepts-0.0.9.tar.gz --markdown 20240526/s/smartmoneyconcepts/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 01:18:14] INFO root fetch - processPackages [tinyticker]: Downloading https://files.pythonhosted.org/packages/c3/9e/be8d67d8eb920ee12b9e57e8ea086dbd057f1a81d3bf4c6ca38bc51de41e/tinyticker-0.7.5.tar.gz
+[2024-05-26 01:18:14] INFO root fetch - processPackages [getblocks]: executing diffoscope
+[2024-05-26 01:18:14] INFO root fetch - processPackages [getblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getblocks-2024.5.25.tar.gz tmp/getblocks-2024.5.26.tar.gz --markdown 20240526/g/getblocks/2024.5.25-2024.5.26/README.md --exclude *.pyd
+[2024-05-26 01:18:14] INFO root fetch - processPackages [tinyticker]: executing diffoscope
+[2024-05-26 01:18:14] INFO root fetch - processPackages [tinyticker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyticker-0.7.4.tar.gz tmp/tinyticker-0.7.5.tar.gz --markdown 20240526/t/tinyticker/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-05-26 01:18:14] INFO root fetch - processPackages [mddatasetbuilder]: Downloading https://files.pythonhosted.org/packages/af/17/9699c651e8018d1b71326c22a4472d5f8f00ade1f7b3986332aa2f8add99/mddatasetbuilder-1.3.9.tar.gz
+[2024-05-26 01:18:14] INFO root fetch - processPackages [mddatasetbuilder]: executing diffoscope
+[2024-05-26 01:18:14] INFO root fetch - processPackages [mddatasetbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mddatasetbuilder-1.3.8.tar.gz tmp/mddatasetbuilder-1.3.9.tar.gz --markdown 20240526/m/mddatasetbuilder/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-26 01:18:14] INFO root fetch - processPackages [smartmoneyconcepts]: Remove: archive file [/home/abi/fetcher/tmp/smartmoneyconcepts-0.0.8.tar.gz]
+[2024-05-26 01:18:14] INFO root fetch - processPackages [smartmoneyconcepts]: Remove: archive file [/home/abi/fetcher/tmp/smartmoneyconcepts-0.0.9.tar.gz]
+[2024-05-26 01:18:14] INFO root fetch - main [MainThread]: End processing [smartmoneyconcepts]: success
+[2024-05-26 01:18:14] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.5.25.tar.gz]
+[2024-05-26 01:18:14] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.5.26.tar.gz]
+[2024-05-26 01:18:14] INFO root fetch - main [MainThread]: End processing [getblocks]: success
+[2024-05-26 01:18:15] INFO root fetch - processPackages [tinyticker]: Remove: archive file [/home/abi/fetcher/tmp/tinyticker-0.7.4.tar.gz]
+[2024-05-26 01:18:15] INFO root fetch - processPackages [tinyticker]: Remove: archive file [/home/abi/fetcher/tmp/tinyticker-0.7.5.tar.gz]
+[2024-05-26 01:18:15] INFO root fetch - main [MainThread]: End processing [tinyticker]: success
+[2024-05-26 01:18:15] INFO root fetch - processPackages [mddatasetbuilder]: Remove: archive file [/home/abi/fetcher/tmp/mddatasetbuilder-1.3.8.tar.gz]
+[2024-05-26 01:18:15] INFO root fetch - processPackages [mddatasetbuilder]: Remove: archive file [/home/abi/fetcher/tmp/mddatasetbuilder-1.3.9.tar.gz]
+[2024-05-26 01:18:15] INFO root fetch - main [MainThread]: End processing [mddatasetbuilder]: success
+[2024-05-26 01:18:15] INFO root fetch - main [MainThread]: Store serial: [23378413]
