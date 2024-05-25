@@ -689,3 +689,26 @@
 [2024-05-26 01:44:06] INFO root fetch - processPackages [osmdiff]: Remove: archive file [/home/abi/fetcher/tmp/osmdiff-0.4.0.tar.gz]
 [2024-05-26 01:44:06] INFO root fetch - main [MainThread]: End processing [osmdiff]: success
 [2024-05-26 01:44:06] INFO root fetch - main [MainThread]: Store serial: [23378472]
+[2024-05-26 01:46:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378472]
+[2024-05-26 01:46:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 01:48:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378472]
+[2024-05-26 01:48:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 01:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coltrane
+[2024-05-26 01:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eras
+[2024-05-26 01:48:21] INFO root fetch - processPackages [coltrane]: New version: [0.35.2] Old Version: [0.35.1]
+[2024-05-26 01:48:21] INFO root fetch - processPackages [coltrane]: Downloading https://files.pythonhosted.org/packages/70/59/f8ee78af60852ffb055e898f1c83fd0b7730755c806d4b7f71d9a82f2e97/coltrane-0.35.1.tar.gz
+[2024-05-26 01:48:21] INFO root fetch - processPackages [eras]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-26 01:48:22] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/49/c6/8d67f263bcb7c3f92930d395558325d2b61c22e08d1d8a924a7c929e8bff/eras-0.3.6.tar.gz
+[2024-05-26 01:48:22] INFO root fetch - processPackages [coltrane]: Downloading https://files.pythonhosted.org/packages/21/08/04b76718249d5482dcdd48535179046ca39895d638c01b22906552eeaea6/coltrane-0.35.2.tar.gz
+[2024-05-26 01:48:22] INFO root fetch - processPackages [coltrane]: executing diffoscope
+[2024-05-26 01:48:22] INFO root fetch - processPackages [coltrane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coltrane-0.35.1.tar.gz tmp/coltrane-0.35.2.tar.gz --markdown 20240526/c/coltrane/0.35.1-0.35.2/README.md --exclude *.pyd
+[2024-05-26 01:48:22] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/bf/87/379fbbea0aa9b238d958ae7a16d0fb216cc1d09007431efd77f99021dee0/eras-0.3.7.tar.gz
+[2024-05-26 01:48:22] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-26 01:48:22] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.3.6.tar.gz tmp/eras-0.3.7.tar.gz --markdown 20240526/e/eras/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-26 01:48:22] INFO root fetch - processPackages [coltrane]: Remove: archive file [/home/abi/fetcher/tmp/coltrane-0.35.1.tar.gz]
+[2024-05-26 01:48:22] INFO root fetch - processPackages [coltrane]: Remove: archive file [/home/abi/fetcher/tmp/coltrane-0.35.2.tar.gz]
+[2024-05-26 01:48:22] INFO root fetch - main [MainThread]: End processing [coltrane]: success
+[2024-05-26 01:48:23] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.3.6.tar.gz]
+[2024-05-26 01:48:23] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.3.7.tar.gz]
+[2024-05-26 01:48:23] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-26 01:48:23] INFO root fetch - main [MainThread]: Store serial: [23378480]
