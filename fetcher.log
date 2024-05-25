@@ -509,3 +509,11 @@
 [2024-05-26 01:07:32] INFO root fetch - processPackages [adelie]: Remove: archive file [/home/abi/fetcher/tmp/adelie-1.1.32.dev1.tar.gz]
 [2024-05-26 01:07:32] INFO root fetch - main [MainThread]: End processing [adelie]: success
 [2024-05-26 01:07:32] INFO root fetch - main [MainThread]: Store serial: [23378391]
+[2024-05-26 01:09:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378391]
+[2024-05-26 01:09:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 01:09:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: viswaternet
+[2024-05-26 01:09:40] INFO root fetch - processPackages [viswaternet]: New version: [2.1.0] Old Version: [2.0.0b0]
+[2024-05-26 01:09:40] INFO root fetch - processPackages [viswaternet]: Downloading https://files.pythonhosted.org/packages/77/26/70b1c1dcbabeca6ef1b76fe12d28716e773f6df7c554e7984bee874c4f55/viswaternet-2.0.0.Beta.tar.gz
+[2024-05-26 01:09:40] WARNING root fetch - processPackages [viswaternet]: Skipping package: exceeds size limit 13978512>=10485760
+[2024-05-26 01:09:40] INFO root fetch - main [MainThread]: End processing [viswaternet] error
+[2024-05-26 01:09:40] INFO root fetch - main [MainThread]: Store serial: [23378394]
