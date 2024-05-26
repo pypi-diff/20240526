@@ -3744,3 +3744,36 @@
 [2024-05-26 06:53:52] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.10.tar.gz]
 [2024-05-26 06:53:52] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
 [2024-05-26 06:53:52] INFO root fetch - main [MainThread]: Store serial: [23379755]
+[2024-05-26 06:55:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379755]
+[2024-05-26 06:56:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 06:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask_postgres
+[2024-05-26 06:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modeling-tool
+[2024-05-26 06:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-l10n-br-account
+[2024-05-26 06:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prototools
+[2024-05-26 06:56:01] INFO root fetch - processPackages [flask_postgres]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 06:56:01] INFO root fetch - processPackages [odoo-addon-l10n-br-account]: New version: [15.0.2.6.0] Old Version: [15.0.2.5.0]
+[2024-05-26 06:56:01] WARNING root fetch - processPackages [modeling-tool]: Skipping, unable to determine old version
+[2024-05-26 06:56:01] INFO root fetch - main [MainThread]: End processing [modeling-tool] error
+[2024-05-26 06:56:01] INFO root fetch - processPackages [flask_postgres]: Downloading https://files.pythonhosted.org/packages/2a/f5/f90ce0994b3701c21184d1ddbae6de62dec5ae3058f41f3dbf1e4fe4f090/flask_postgres-0.2.2.tar.gz
+[2024-05-26 06:56:01] INFO root fetch - processPackages [odoo-addon-l10n-br-account]: Downloading https://files.pythonhosted.org/packages/b1/30/bbf94c7e09e58d02c4058ddd4436f61f53db699d521d4bee027c63f1e400/odoo_addon_l10n_br_account-15.0.2.5.0-py3-none-any.whl
+[2024-05-26 06:56:01] INFO root fetch - processPackages [prototools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 06:56:01] INFO root fetch - processPackages [odoo-addon-l10n-br-account]: Downloading https://files.pythonhosted.org/packages/b6/35/278c9c64a2521cb96e62b7a2f1ee9433f093205619652b5f3d99d006f0bb/odoo_addon_l10n_br_account-15.0.2.6.0-py3-none-any.whl
+[2024-05-26 06:56:01] INFO root fetch - processPackages [prototools]: Downloading https://files.pythonhosted.org/packages/1a/b4/767277f70c6a8918717db29d881305112ead8c5c927c819c1c80362a1543/prototools-0.1.8.tar.gz
+[2024-05-26 06:56:01] INFO root fetch - processPackages [flask_postgres]: Downloading https://files.pythonhosted.org/packages/35/a4/7e8159b0fa44cf7df4be645fdecc348015fa57713557cd7c97377eb56b30/flask_postgres-0.2.3.tar.gz
+[2024-05-26 06:56:01] INFO root fetch - processPackages [odoo-addon-l10n-br-account]: executing diffoscope
+[2024-05-26 06:56:01] INFO root fetch - processPackages [odoo-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_br_account-15.0.2.5.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_br_account-15.0.2.6.0-py3-none-any.whl.zip --markdown 20240526/o/odoo-addon-l10n-br-account/15.0.2.5.0-15.0.2.6.0/README.md --exclude *.pyd
+[2024-05-26 06:56:01] INFO root fetch - processPackages [flask_postgres]: executing diffoscope
+[2024-05-26 06:56:01] INFO root fetch - processPackages [flask_postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_postgres-0.2.2.tar.gz tmp/flask_postgres-0.2.3.tar.gz --markdown 20240526/f/flask_postgres/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 06:56:01] INFO root fetch - processPackages [prototools]: Downloading https://files.pythonhosted.org/packages/41/28/280ab721957a7e77a2c811966b1793d7449ddd1c649f172155906a40b6c1/prototools-0.1.9.tar.gz
+[2024-05-26 06:56:02] INFO root fetch - processPackages [prototools]: executing diffoscope
+[2024-05-26 06:56:02] INFO root fetch - processPackages [prototools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prototools-0.1.8.tar.gz tmp/prototools-0.1.9.tar.gz --markdown 20240526/p/prototools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 06:56:02] INFO root fetch - processPackages [flask_postgres]: Remove: archive file [/home/abi/fetcher/tmp/flask_postgres-0.2.2.tar.gz]
+[2024-05-26 06:56:02] INFO root fetch - processPackages [flask_postgres]: Remove: archive file [/home/abi/fetcher/tmp/flask_postgres-0.2.3.tar.gz]
+[2024-05-26 06:56:02] INFO root fetch - main [MainThread]: End processing [flask_postgres]: success
+[2024-05-26 06:56:02] INFO root fetch - processPackages [odoo-addon-l10n-br-account]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_br_account-15.0.2.5.0-py3-none-any.whl.zip]
+[2024-05-26 06:56:02] INFO root fetch - processPackages [odoo-addon-l10n-br-account]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_br_account-15.0.2.6.0-py3-none-any.whl.zip]
+[2024-05-26 06:56:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-br-account]: success
+[2024-05-26 06:56:02] INFO root fetch - processPackages [prototools]: Remove: archive file [/home/abi/fetcher/tmp/prototools-0.1.8.tar.gz]
+[2024-05-26 06:56:02] INFO root fetch - processPackages [prototools]: Remove: archive file [/home/abi/fetcher/tmp/prototools-0.1.9.tar.gz]
+[2024-05-26 06:56:02] INFO root fetch - main [MainThread]: End processing [prototools]: success
+[2024-05-26 06:56:02] INFO root fetch - main [MainThread]: Store serial: [23379768]
