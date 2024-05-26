@@ -9331,3 +9331,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:58:40] INFO root fetch - processPackages [accesskit]: Remove: archive file [/home/abi/fetcher/tmp/accesskit-0.3.3.tar.gz]
 [2024-05-26 12:58:40] INFO root fetch - main [MainThread]: End processing [accesskit]: success
 [2024-05-26 12:58:40] INFO root fetch - main [MainThread]: Store serial: [23382324]
+[2024-05-26 13:00:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382324]
+[2024-05-26 13:00:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 13:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xcai
+[2024-05-26 13:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reiuji-nuclearcraft
+[2024-05-26 13:00:54] INFO root fetch - processPackages [xcai]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 13:00:54] INFO root fetch - processPackages [reiuji-nuclearcraft]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 13:00:54] INFO root fetch - processPackages [xcai]: Downloading https://files.pythonhosted.org/packages/c3/38/45cde25c609b452e93506c7659695c14881189eaeed7191ccd1d7e0a3dba/xcai-0.1.8.tar.gz
+[2024-05-26 13:00:54] INFO root fetch - processPackages [reiuji-nuclearcraft]: Downloading https://files.pythonhosted.org/packages/43/10/e5b6d3f9d2557bd1c28a6de52fb8757cfa264d27dea9151c2c8f19eefc6f/reiuji_nuclearcraft-0.1.0.tar.gz
+[2024-05-26 13:00:54] INFO root fetch - processPackages [reiuji-nuclearcraft]: Downloading https://files.pythonhosted.org/packages/3a/5f/1833cfe73ae83fc0e95fe9a8d44bfbfa4d0c9098d1ae0d64a92ac0e85ecb/reiuji_nuclearcraft-0.1.1.tar.gz
+[2024-05-26 13:00:54] INFO root fetch - processPackages [xcai]: Downloading https://files.pythonhosted.org/packages/4e/7b/75c5239131d66840874d20f05230c84168c127f4441f439a86f1c6598b98/xcai-0.1.9.tar.gz
+[2024-05-26 13:00:54] INFO root fetch - processPackages [reiuji-nuclearcraft]: executing diffoscope
+[2024-05-26 13:00:54] INFO root fetch - processPackages [reiuji-nuclearcraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reiuji_nuclearcraft-0.1.0.tar.gz tmp/reiuji_nuclearcraft-0.1.1.tar.gz --markdown 20240526/r/reiuji-nuclearcraft/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 13:00:54] INFO root fetch - processPackages [xcai]: executing diffoscope
+[2024-05-26 13:00:54] INFO root fetch - processPackages [xcai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcai-0.1.8.tar.gz tmp/xcai-0.1.9.tar.gz --markdown 20240526/x/xcai/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 13:00:55] INFO root fetch - processPackages [xcai]: Remove: archive file [/home/abi/fetcher/tmp/xcai-0.1.8.tar.gz]
+[2024-05-26 13:00:55] INFO root fetch - processPackages [xcai]: Remove: archive file [/home/abi/fetcher/tmp/xcai-0.1.9.tar.gz]
+[2024-05-26 13:00:55] INFO root fetch - main [MainThread]: End processing [xcai]: success
+[2024-05-26 13:00:55] INFO root fetch - processPackages [reiuji-nuclearcraft]: Remove: archive file [/home/abi/fetcher/tmp/reiuji_nuclearcraft-0.1.0.tar.gz]
+[2024-05-26 13:00:55] INFO root fetch - processPackages [reiuji-nuclearcraft]: Remove: archive file [/home/abi/fetcher/tmp/reiuji_nuclearcraft-0.1.1.tar.gz]
+[2024-05-26 13:00:55] INFO root fetch - main [MainThread]: End processing [reiuji-nuclearcraft]: success
+[2024-05-26 13:00:55] INFO root fetch - main [MainThread]: Store serial: [23382330]
