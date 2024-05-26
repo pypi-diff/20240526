@@ -18558,3 +18558,21 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 22:15:48] INFO root fetch - processPackages [pianosdk]: Remove: archive file [/home/abi/fetcher/tmp/pianosdk-16.188.1.tar.gz]
 [2024-05-26 22:15:48] INFO root fetch - main [MainThread]: End processing [pianosdk]: success
 [2024-05-26 22:15:48] INFO root fetch - main [MainThread]: Store serial: [23386657]
+[2024-05-26 22:17:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386657]
+[2024-05-26 22:17:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 22:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastc
+[2024-05-26 22:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adonamaria-compute-stats
+[2024-05-26 22:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pref-voting
+[2024-05-26 22:17:56] INFO root fetch - processPackages [pref-voting]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-26 22:17:57] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/f1/15/600c669eebeb5cca29ed1ba0c2fe743721dac484e7de68a6c20e4a6c7539/pref_voting-1.3.8.tar.gz
+[2024-05-26 22:17:57] WARNING root fetch - processPackages [fastc]: Skipping, unable to determine old version
+[2024-05-26 22:17:57] INFO root fetch - main [MainThread]: End processing [fastc] error
+[2024-05-26 22:17:57] WARNING root fetch - processPackages [adonamaria-compute-stats]: Skipping, unable to determine old version
+[2024-05-26 22:17:57] INFO root fetch - main [MainThread]: End processing [adonamaria-compute-stats] error
+[2024-05-26 22:17:57] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/1d/67/c8bc45a9704add7e0fd7497e49dbabc78ee3ef4250a6813472689a1e9ea3/pref_voting-1.3.9.tar.gz
+[2024-05-26 22:17:57] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2024-05-26 22:17:57] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-1.3.8.tar.gz tmp/pref_voting-1.3.9.tar.gz --markdown 20240526/p/pref-voting/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-26 22:17:58] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.3.8.tar.gz]
+[2024-05-26 22:17:58] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.3.9.tar.gz]
+[2024-05-26 22:17:58] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2024-05-26 22:17:58] INFO root fetch - main [MainThread]: Store serial: [23386670]
