@@ -2766,3 +2766,35 @@
 [2024-05-26 05:05:50] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
 [2024-05-26 05:05:50] INFO root fetch - main [MainThread]: End processing [baseball]: success
 [2024-05-26 05:05:50] INFO root fetch - main [MainThread]: Store serial: [23379393]
+[2024-05-26 05:07:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379393]
+[2024-05-26 05:07:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 05:09:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379393]
+[2024-05-26 05:10:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 05:10:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-05-26 05:10:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stefutils
+[2024-05-26 05:10:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blackboxai
+[2024-05-26 05:10:04] INFO root fetch - processPackages [blackboxai]: New version: [3.0] Old Version: [2.9]
+[2024-05-26 05:10:04] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-26 05:10:04] INFO root fetch - processPackages [flatpack]: New version: [3.4.99] Old Version: [3.4.98]
+[2024-05-26 05:10:04] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/3d/13/604c88bbccbe954b669f9fa921a4ff338685c5b37aee9e4c7ba228e8c6b4/blackboxai-2.9.tar.gz
+[2024-05-26 05:10:04] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-05-26 05:10:04] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/cb/39/adcd388eba8071e3318b3a2224e5c96179761da6dbd7cfa96b20311e810f/flatpack-3.4.98.tar.gz
+[2024-05-26 05:10:04] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-05-26 05:10:04] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/89/20/a694f72cbfa96253cdb38b9f65c7cfd5f3a4fb145d2fe2483132b80dafd4/flatpack-3.4.99.tar.gz
+[2024-05-26 05:10:04] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-05-26 05:10:04] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240526/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-26 05:10:04] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-26 05:10:04] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.98.tar.gz tmp/flatpack-3.4.99.tar.gz --markdown 20240526/f/flatpack/3.4.98-3.4.99/README.md --exclude *.pyd
+[2024-05-26 05:10:05] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/e3/f4/ca6cb20905b25ca8274c5fa0191583e48cf6d61de35c1c1b42c05a57fd22/blackboxai-3.0.tar.gz
+[2024-05-26 05:10:05] INFO root fetch - processPackages [blackboxai]: executing diffoscope
+[2024-05-26 05:10:05] INFO root fetch - processPackages [blackboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackboxai-2.9.tar.gz tmp/blackboxai-3.0.tar.gz --markdown 20240526/b/blackboxai/2.9-3.0/README.md --exclude *.pyd
+[2024-05-26 05:10:05] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-05-26 05:10:05] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-05-26 05:10:05] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-05-26 05:10:05] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.98.tar.gz]
+[2024-05-26 05:10:05] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.99.tar.gz]
+[2024-05-26 05:10:05] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-26 05:10:06] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-2.9.tar.gz]
+[2024-05-26 05:10:06] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-3.0.tar.gz]
+[2024-05-26 05:10:06] INFO root fetch - main [MainThread]: End processing [blackboxai]: success
+[2024-05-26 05:10:06] INFO root fetch - main [MainThread]: Store serial: [23379401]
