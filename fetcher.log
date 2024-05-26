@@ -1913,3 +1913,81 @@
 [2024-05-26 03:31:24] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.777.6.tar.gz]
 [2024-05-26 03:31:24] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2024-05-26 03:31:24] INFO root fetch - main [MainThread]: Store serial: [23378980]
+[2024-05-26 03:33:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378980]
+[2024-05-26 03:33:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet-runtime
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-embed
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flet-pyodide
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blaze-double-bot
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gdextension-cli
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: blackboxai
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: litellm
+[2024-05-26 03:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: llamascript
+[2024-05-26 03:33:33] INFO root fetch - processPackages [blaze-double-bot]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-26 03:33:33] WARNING root fetch - processPackages [gdextension-cli]: Skipping, unable to determine old version
+[2024-05-26 03:33:33] INFO root fetch - main [MainThread]: End processing [gdextension-cli] error
+[2024-05-26 03:33:33] INFO root fetch - processPackages [blackboxai]: New version: [2.9] Old Version: [2.8]
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet-runtime]: New version: [0.9.0] Old Version: [0.23.0.dev2905]
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet]: New version: [0.9.0] Old Version: [0.23.0.dev2904]
+[2024-05-26 03:33:33] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-05-26 03:33:33] INFO root fetch - processPackages [llamascript]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-26 03:33:33] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/f9/22/17e8a20206020b8d6fdd710f8112da6470c83a9216f54ba1f35f326fd7fa/blaze_double_bot-0.2.4.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet-pyodide]: New version: [0.9.0] Old Version: [0.23.0.dev2905]
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet-embed]: New version: [0.9.0] Old Version: [0.23.0.dev2905]
+[2024-05-26 03:33:33] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/32/f9/448250ab304fd3d37c7bfc5d45b4a522881b747fbb4609a8ceab5c32457a/flet-0.23.0.dev2904.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/2b/da/79ef037610bd47204a5b90904196793d6490bd46ffa5edbb80d349b9a2ae/blackboxai-2.8.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet-runtime]: Downloading https://files.pythonhosted.org/packages/5b/89/df37619063e2fa52f060581bb08450b7cfbb700a5d73e2f94309ba095d5f/flet_runtime-0.23.0.dev2905.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [llamascript]: Downloading https://files.pythonhosted.org/packages/fa/15/bb31a6a14b48940e74e517d9296ba646a49cfec2bba6eb28d15149af80d1/llamascript-0.6.1.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet-embed]: Downloading https://files.pythonhosted.org/packages/a6/8e/77596ca87ca33be89e99c8df2752781b34fd9cf3f7229d9ad50564873d2d/flet_embed-0.23.0.dev2905.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/13/cc/f876234daa92a03a6a6f5ffb9f623f7d3603c29be44734c2df0c1768e7c5/flet_pyodide-0.23.0.dev2905.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [flet-runtime]: Downloading https://files.pythonhosted.org/packages/7d/21/4486f082fce6b7ee7174ae6b6c9bd62faeeb1cf712e65ccbd42d2a02b641/flet_runtime-0.9.0.tar.gz
+[2024-05-26 03:33:33] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/58/b2/4275d6a9224ed5afcc6f751b1c05b0f79109b6644f8f75987da0762fef9e/blaze_double_bot-0.2.5.tar.gz
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/0b/26/a5b2ba93c30d3a89efc6b6734cc4db067c9d2ca16059ed4685281d46c1f7/flet_pyodide-0.9.0.tar.gz
+[2024-05-26 03:33:34] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/3d/13/604c88bbccbe954b669f9fa921a4ff338685c5b37aee9e4c7ba228e8c6b4/blackboxai-2.9.tar.gz
+[2024-05-26 03:33:34] INFO root fetch - processPackages [blaze-double-bot]: executing diffoscope
+[2024-05-26 03:33:34] INFO root fetch - processPackages [blaze-double-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaze_double_bot-0.2.4.tar.gz tmp/blaze_double_bot-0.2.5.tar.gz --markdown 20240526/b/blaze-double-bot/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-runtime]: executing diffoscope
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_runtime-0.23.0.dev2905.tar.gz tmp/flet_runtime-0.9.0.tar.gz --markdown 20240526/f/flet-runtime/0.23.0.dev2905-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:33:34] INFO root fetch - processPackages [llamascript]: Downloading https://files.pythonhosted.org/packages/5d/71/d71dfd164db21a39d687937f1bbc319f12f1d77c32b1b022ae6d543a3af4/llamascript-0.6.2.tar.gz
+[2024-05-26 03:33:34] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-pyodide]: executing diffoscope
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_pyodide-0.23.0.dev2905.tar.gz tmp/flet_pyodide-0.9.0.tar.gz --markdown 20240526/f/flet-pyodide/0.23.0.dev2905-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-embed]: Downloading https://files.pythonhosted.org/packages/81/7e/d8933b7cb514fb7fd415c9368e2a55ab10465ad0c1277670abc72164e31b/flet_embed-0.9.0.tar.gz
+[2024-05-26 03:33:34] INFO root fetch - processPackages [llamascript]: executing diffoscope
+[2024-05-26 03:33:34] INFO root fetch - processPackages [llamascript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamascript-0.6.1.tar.gz tmp/llamascript-0.6.2.tar.gz --markdown 20240526/l/llamascript/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-26 03:33:34] INFO root fetch - processPackages [blackboxai]: executing diffoscope
+[2024-05-26 03:33:34] INFO root fetch - processPackages [blackboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackboxai-2.8.tar.gz tmp/blackboxai-2.9.tar.gz --markdown 20240526/b/blackboxai/2.8-2.9/README.md --exclude *.pyd
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-embed]: executing diffoscope
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_embed-0.23.0.dev2905.tar.gz tmp/flet_embed-0.9.0.tar.gz --markdown 20240526/f/flet-embed/0.23.0.dev2905-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/70/f1/c96f61c9817584ef31d84401520cb5d02e9b320f79d8aff85ba005ca6132/flet-0.9.0.tar.gz
+[2024-05-26 03:33:34] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-05-26 03:33:34] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240526/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet]: executing diffoscope
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.23.0.dev2904.tar.gz tmp/flet-0.9.0.tar.gz --markdown 20240526/f/flet/0.23.0.dev2904-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_pyodide-0.23.0.dev2905.tar.gz]
+[2024-05-26 03:33:34] INFO root fetch - processPackages [flet-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_pyodide-0.9.0.tar.gz]
+[2024-05-26 03:33:34] INFO root fetch - main [MainThread]: End processing [flet-pyodide]: success
+[2024-05-26 03:33:35] INFO root fetch - processPackages [llamascript]: Remove: archive file [/home/abi/fetcher/tmp/llamascript-0.6.1.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - processPackages [llamascript]: Remove: archive file [/home/abi/fetcher/tmp/llamascript-0.6.2.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - main [MainThread]: End processing [llamascript]: success
+[2024-05-26 03:33:35] INFO root fetch - processPackages [flet-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_runtime-0.23.0.dev2905.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - processPackages [flet-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_runtime-0.9.0.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - main [MainThread]: End processing [flet-runtime]: success
+[2024-05-26 03:33:35] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-0.2.4.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-0.2.5.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - main [MainThread]: End processing [blaze-double-bot]: success
+[2024-05-26 03:33:35] INFO root fetch - processPackages [flet-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_embed-0.23.0.dev2905.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - processPackages [flet-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_embed-0.9.0.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - main [MainThread]: End processing [flet-embed]: success
+[2024-05-26 03:33:35] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-2.8.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-2.9.tar.gz]
+[2024-05-26 03:33:35] INFO root fetch - main [MainThread]: End processing [blackboxai]: success
+[2024-05-26 03:33:36] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-05-26 03:33:36] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-05-26 03:33:36] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-05-26 03:34:44] INFO root fetch - processPackages [flet]: Remove: archive file [/home/abi/fetcher/tmp/flet-0.23.0.dev2904.tar.gz]
+[2024-05-26 03:34:44] INFO root fetch - processPackages [flet]: Remove: archive file [/home/abi/fetcher/tmp/flet-0.9.0.tar.gz]
+[2024-05-26 03:34:44] INFO root fetch - main [MainThread]: End processing [flet]: success
+[2024-05-26 03:34:44] INFO root fetch - main [MainThread]: Store serial: [23379017]
