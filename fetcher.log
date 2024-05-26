@@ -15996,3 +15996,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:51:31] INFO root fetch - processPackages [lanmonitor]: Remove: archive file [/home/abi/fetcher/tmp/lanmonitor-3.2.2.tar.gz]
 [2024-05-26 19:51:31] INFO root fetch - main [MainThread]: End processing [lanmonitor]: success
 [2024-05-26 19:51:31] INFO root fetch - main [MainThread]: Store serial: [23385407]
+[2024-05-26 19:53:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385407]
+[2024-05-26 19:53:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 19:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: group-local
+[2024-05-26 19:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sh1106-framework
+[2024-05-26 19:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abadpour
+[2024-05-26 19:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mkdocs-torillic
+[2024-05-26 19:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: affixapi
+[2024-05-26 19:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: multi-file-exis
+[2024-05-26 19:53:39] INFO root fetch - processPackages [affixapi]: New version: [1.1.79] Old Version: [1.1.78]
+[2024-05-26 19:53:39] INFO root fetch - processPackages [group-local]: New version: [0.0.29] Old Version: [0.0.28]
+[2024-05-26 19:53:39] INFO root fetch - processPackages [abadpour]: New version: [6.20.1] Old Version: [6.18.1]
+[2024-05-26 19:53:39] INFO root fetch - processPackages [mkdocs-torillic]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-05-26 19:53:40] INFO root fetch - processPackages [affixapi]: Downloading https://files.pythonhosted.org/packages/13/b9/6dc35a12bbb5aba598e6f8571184a096317f07b5f6831bdaf1e9d7812cc9/affixapi-1.1.78.tar.gz
+[2024-05-26 19:53:40] INFO root fetch - processPackages [group-local]: Downloading https://files.pythonhosted.org/packages/37/3b/18c71830e53447e10562809137a65275e53da08ea3d2f2141952c3ef1010/group_local-0.0.28.tar.gz
+[2024-05-26 19:53:40] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/c9/f8/c1986be388431dc3f1f38939b49175c5061d3ed1d01e102998f3b5d1cb4e/abadpour-6.18.1.tar.gz
+[2024-05-26 19:53:40] WARNING root fetch - processPackages [multi-file-exis]: Skipping, unable to determine old version
+[2024-05-26 19:53:40] INFO root fetch - main [MainThread]: End processing [multi-file-exis] error
+[2024-05-26 19:53:40] INFO root fetch - processPackages [sh1106-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 19:53:40] INFO root fetch - processPackages [mkdocs-torillic]: Downloading https://files.pythonhosted.org/packages/54/8d/91c3a1b78b262478ca36dd4700a0629300ba2b4e8ebd39bb5b64413645d7/mkdocs-torillic-2.2.0.tar.gz
+[2024-05-26 19:53:40] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/bf/c1/e72ec5d95c21e71734f47fa5dd569d03a2097eb8b4124593e4af702db395/sh1106_framework-0.0.8.tar.gz
+[2024-05-26 19:53:40] INFO root fetch - processPackages [group-local]: Downloading https://files.pythonhosted.org/packages/e7/d0/313c964bf0fce9359a6731974014a705d7429fc68b3b4e50e5f38a8ec8af/group_local-0.0.29.tar.gz
+[2024-05-26 19:53:40] INFO root fetch - processPackages [affixapi]: Downloading https://files.pythonhosted.org/packages/d2/fd/ea3de12ae99b50e0dfae1becf1b62c68d8f7b036bfafeee825ae3c482266/affixapi-1.1.79.tar.gz
+[2024-05-26 19:53:40] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/3c/7f/484034e9579031ad0eaba06657c30d487aec4668c728f7f6e08faa9a5606/abadpour-6.20.1.tar.gz
+[2024-05-26 19:53:40] INFO root fetch - processPackages [group-local]: executing diffoscope
+[2024-05-26 19:53:40] INFO root fetch - processPackages [group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/group_local-0.0.28.tar.gz tmp/group_local-0.0.29.tar.gz --markdown 20240526/g/group-local/0.0.28-0.0.29/README.md --exclude *.pyd
+[2024-05-26 19:53:40] INFO root fetch - processPackages [affixapi]: executing diffoscope
+[2024-05-26 19:53:40] INFO root fetch - processPackages [affixapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affixapi-1.1.78.tar.gz tmp/affixapi-1.1.79.tar.gz --markdown 20240526/a/affixapi/1.1.78-1.1.79/README.md --exclude *.pyd
+[2024-05-26 19:53:40] INFO root fetch - processPackages [abadpour]: executing diffoscope
+[2024-05-26 19:53:40] INFO root fetch - processPackages [abadpour]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abadpour-6.18.1.tar.gz tmp/abadpour-6.20.1.tar.gz --markdown 20240526/a/abadpour/6.18.1-6.20.1/README.md --exclude *.pyd
+[2024-05-26 19:53:40] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/88/50/3df455715deaa8fb585713096cd6c9e7e34fb43adbbe4643b34f6cf5b423/sh1106_framework-0.0.9.tar.gz
+[2024-05-26 19:53:40] INFO root fetch - processPackages [sh1106-framework]: executing diffoscope
+[2024-05-26 19:53:40] INFO root fetch - processPackages [sh1106-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh1106_framework-0.0.8.tar.gz tmp/sh1106_framework-0.0.9.tar.gz --markdown 20240526/s/sh1106-framework/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 19:53:41] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.28.tar.gz]
+[2024-05-26 19:53:41] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.29.tar.gz]
+[2024-05-26 19:53:41] INFO root fetch - main [MainThread]: End processing [group-local]: success
+[2024-05-26 19:53:41] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.18.1.tar.gz]
+[2024-05-26 19:53:41] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.20.1.tar.gz]
+[2024-05-26 19:53:41] INFO root fetch - main [MainThread]: End processing [abadpour]: success
+[2024-05-26 19:53:41] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.8.tar.gz]
+[2024-05-26 19:53:41] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.9.tar.gz]
+[2024-05-26 19:53:41] INFO root fetch - main [MainThread]: End processing [sh1106-framework]: success
+[2024-05-26 19:53:41] INFO root fetch - processPackages [mkdocs-torillic]: Downloading https://files.pythonhosted.org/packages/4d/9e/1aa9693356437d8aa252afc81a08e7129a5ef43dc574605bba7a88dedcec/mkdocs_torillic-2.3.0.tar.gz
+[2024-05-26 19:53:41] INFO root fetch - processPackages [mkdocs-torillic]: executing diffoscope
+[2024-05-26 19:53:41] INFO root fetch - processPackages [mkdocs-torillic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-torillic-2.2.0.tar.gz tmp/mkdocs_torillic-2.3.0.tar.gz --markdown 20240526/m/mkdocs-torillic/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-05-26 19:53:41] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.78.tar.gz]
+[2024-05-26 19:53:41] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.79.tar.gz]
+[2024-05-26 19:53:41] INFO root fetch - main [MainThread]: End processing [affixapi]: success
+[2024-05-26 19:53:42] INFO root fetch - processPackages [mkdocs-torillic]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-torillic-2.2.0.tar.gz]
+[2024-05-26 19:53:42] INFO root fetch - processPackages [mkdocs-torillic]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_torillic-2.3.0.tar.gz]
+[2024-05-26 19:53:42] INFO root fetch - main [MainThread]: End processing [mkdocs-torillic]: success
+[2024-05-26 19:53:42] INFO root fetch - main [MainThread]: Store serial: [23385428]
