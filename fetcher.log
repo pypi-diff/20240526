@@ -16127,3 +16127,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:02:32] INFO root fetch - processPackages [ASMRManager]: Remove: archive file [/home/abi/fetcher/tmp/asmrmanager-2.0.1.tar.gz]
 [2024-05-26 20:02:32] INFO root fetch - main [MainThread]: End processing [ASMRManager]: success
 [2024-05-26 20:02:32] INFO root fetch - main [MainThread]: Store serial: [23385480]
+[2024-05-26 20:04:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385480]
+[2024-05-26 20:04:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: goodwe
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abrain
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proxygetter
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ns-search-saved-export
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ns-search-saved-export]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ns-search-saved-export]: Downloading https://files.pythonhosted.org/packages/32/31/79cd04a70822617426262678514515b1b1919d0dd7d4fbd87f97bc14e9c8/ns_search_saved_export-0.1.1.tar.gz
+[2024-05-26 20:04:41] INFO root fetch - processPackages [proxygetter]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-26 20:04:41] INFO root fetch - processPackages [goodwe]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-26 20:04:41] INFO root fetch - processPackages [abrain]: New version: [1.0rc0.post7] Old Version: [1.0rc0.post5]
+[2024-05-26 20:04:41] INFO root fetch - processPackages [proxygetter]: Downloading https://files.pythonhosted.org/packages/38/4c/23deee6d77b88f74bfb151b89e6ffe1c830d21c58b9e7cdbc4b2d1571e57/proxygetter-0.2.1.tar.gz
+[2024-05-26 20:04:41] INFO root fetch - processPackages [goodwe]: Downloading https://files.pythonhosted.org/packages/05/ec/e06ff2904a29da2602fd95ccfbbf5651a70e6f40c30f5bb2f4332c47117a/goodwe-0.4.5.tar.gz
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ns-search-saved-export]: Downloading https://files.pythonhosted.org/packages/12/1a/7d73f7bab413149e9f2ea184b7e21d308e4c9711c5384b70f1779527a796/ns_search_saved_export-0.1.2.tar.gz
+[2024-05-26 20:04:41] INFO root fetch - processPackages [abrain]: Downloading https://files.pythonhosted.org/packages/37/f1/2f19058a0e43c87024e5979fe55a089c57621b49a6880b21cc303c1a7ed2/abrain-1.0rc0.post5.tar.gz
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ns-search-saved-export]: executing diffoscope
+[2024-05-26 20:04:41] INFO root fetch - processPackages [ns-search-saved-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ns_search_saved_export-0.1.1.tar.gz tmp/ns_search_saved_export-0.1.2.tar.gz --markdown 20240526/n/ns-search-saved-export/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 20:04:42] INFO root fetch - processPackages [goodwe]: Downloading https://files.pythonhosted.org/packages/f3/26/714321c964284ca41080f3f55b72c40c0d62a09629bd12ebb04eae4e20f1/goodwe-0.4.6.tar.gz
+[2024-05-26 20:04:42] INFO root fetch - processPackages [proxygetter]: Downloading https://files.pythonhosted.org/packages/08/7b/5c19974fbe7d453a7959cfeace599f2487b942abd075e3320c41e939c7a5/proxygetter-0.2.2.tar.gz
+[2024-05-26 20:04:42] INFO root fetch - processPackages [goodwe]: executing diffoscope
+[2024-05-26 20:04:42] INFO root fetch - processPackages [goodwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goodwe-0.4.5.tar.gz tmp/goodwe-0.4.6.tar.gz --markdown 20240526/g/goodwe/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-26 20:04:42] INFO root fetch - processPackages [abrain]: Downloading https://files.pythonhosted.org/packages/88/44/3e1e8ecc434496767e6653e7b9d7efbaf32527c1b6d2e7114ce64b6e0a7a/abrain-1.0rc0.post7.tar.gz
+[2024-05-26 20:04:42] INFO root fetch - processPackages [proxygetter]: executing diffoscope
+[2024-05-26 20:04:42] INFO root fetch - processPackages [proxygetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxygetter-0.2.1.tar.gz tmp/proxygetter-0.2.2.tar.gz --markdown 20240526/p/proxygetter/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-26 20:04:42] INFO root fetch - processPackages [ns-search-saved-export]: Remove: archive file [/home/abi/fetcher/tmp/ns_search_saved_export-0.1.1.tar.gz]
+[2024-05-26 20:04:42] INFO root fetch - processPackages [ns-search-saved-export]: Remove: archive file [/home/abi/fetcher/tmp/ns_search_saved_export-0.1.2.tar.gz]
+[2024-05-26 20:04:42] INFO root fetch - main [MainThread]: End processing [ns-search-saved-export]: success
+[2024-05-26 20:04:42] INFO root fetch - processPackages [abrain]: executing diffoscope
+[2024-05-26 20:04:42] INFO root fetch - processPackages [abrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abrain-1.0rc0.post5.tar.gz tmp/abrain-1.0rc0.post7.tar.gz --markdown 20240526/a/abrain/1.0rc0.post5-1.0rc0.post7/README.md --exclude *.pyd
+[2024-05-26 20:04:42] INFO root fetch - processPackages [proxygetter]: Remove: archive file [/home/abi/fetcher/tmp/proxygetter-0.2.1.tar.gz]
+[2024-05-26 20:04:42] INFO root fetch - processPackages [proxygetter]: Remove: archive file [/home/abi/fetcher/tmp/proxygetter-0.2.2.tar.gz]
+[2024-05-26 20:04:42] INFO root fetch - main [MainThread]: End processing [proxygetter]: success
+[2024-05-26 20:04:42] INFO root fetch - processPackages [goodwe]: Remove: archive file [/home/abi/fetcher/tmp/goodwe-0.4.5.tar.gz]
+[2024-05-26 20:04:42] INFO root fetch - processPackages [goodwe]: Remove: archive file [/home/abi/fetcher/tmp/goodwe-0.4.6.tar.gz]
+[2024-05-26 20:04:42] INFO root fetch - main [MainThread]: End processing [goodwe]: success
+[2024-05-26 20:04:43] INFO root fetch - processPackages [abrain]: Remove: archive file [/home/abi/fetcher/tmp/abrain-1.0rc0.post5.tar.gz]
+[2024-05-26 20:04:43] INFO root fetch - processPackages [abrain]: Remove: archive file [/home/abi/fetcher/tmp/abrain-1.0rc0.post7.tar.gz]
+[2024-05-26 20:04:43] INFO root fetch - main [MainThread]: End processing [abrain]: success
+[2024-05-26 20:04:43] INFO root fetch - main [MainThread]: Store serial: [23385558]
