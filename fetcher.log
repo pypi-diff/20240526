@@ -21805,3 +21805,72 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:21:09] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.1.1.tar.gz]
 [2024-05-26 23:21:09] INFO root fetch - main [MainThread]: End processing [bipsea]: success
 [2024-05-26 23:21:09] INFO root fetch - main [MainThread]: Store serial: [23387892]
+[2024-05-26 23:23:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387892]
+[2024-05-26 23:23:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 23:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-torillic
+[2024-05-26 23:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aioreqs
+[2024-05-26 23:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geofileops
+[2024-05-26 23:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MedatechUK.Landlord
+[2024-05-26 23:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pproject
+[2024-05-26 23:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytask
+[2024-05-26 23:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: socketbee
+[2024-05-26 23:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nudebomb
+[2024-05-26 23:23:18] INFO root fetch - processPackages [MedatechUK.Landlord]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 23:23:18] WARNING root fetch - processPackages [aioreqs]: Skipping, unable to determine old version
+[2024-05-26 23:23:18] INFO root fetch - main [MainThread]: End processing [aioreqs] error
+[2024-05-26 23:23:18] INFO root fetch - processPackages [geofileops]: New version: [0.8.2] Old Version: [0.8.1a0]
+[2024-05-26 23:23:18] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/dc/5c/36e6ca4793ea572014180040b971a51ad452029374fd8e6ef166a48bbf19/medatechuk_landlord-0.0.8.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [mkdocs-torillic]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-26 23:23:18] INFO root fetch - processPackages [geofileops]: Downloading https://files.pythonhosted.org/packages/5e/32/ac40f4c0fc34469f411b3a8fc4124fbd1b0dae31a0304186b032d1f81713/geofileops-0.8.1a0.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [pproject]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-26 23:23:18] INFO root fetch - processPackages [socketbee]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 23:23:18] INFO root fetch - processPackages [nudebomb]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-26 23:23:18] INFO root fetch - processPackages [pytask]: New version: [0.5.0] Old Version: [0.4.7]
+[2024-05-26 23:23:18] INFO root fetch - processPackages [pproject]: Downloading https://files.pythonhosted.org/packages/50/a2/3563d2fcb6e4fd8cabc92ada792a5600c9b7e1ebc2db1b5d3f365902af1c/pproject-0.0.3.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [socketbee]: Downloading https://files.pythonhosted.org/packages/7e/68/cd4dbd0f1b40c04ead3facdfdd8010d88d46241252a421ecbeec92de782e/socketbee-0.1.1.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/29/0e/be877fac307a67c9adc24e24a2a86c0e7f3cf85f7f972bd92d87099e22a2/medatechuk_landlord-0.0.9.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [mkdocs-torillic]: Downloading https://files.pythonhosted.org/packages/4d/9e/1aa9693356437d8aa252afc81a08e7129a5ef43dc574605bba7a88dedcec/mkdocs_torillic-2.3.0.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [nudebomb]: Downloading https://files.pythonhosted.org/packages/08/7b/87239753355b4c922af6e1f121ce007fe50bb534baf0d893cfb8be1a3ee4/nudebomb-0.3.6.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [geofileops]: Downloading https://files.pythonhosted.org/packages/60/5c/638604b73403049a8f16d7087c7d8671110b4dbd899cab0f26171b69c1b9/geofileops-0.8.2.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [pytask]: Downloading https://files.pythonhosted.org/packages/ae/0d/3d9ced3b922f87c67ad9894f4f1ef7ff1b2c174536ebfb1d2be625a84ad9/pytask-0.4.7.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [MedatechUK.Landlord]: executing diffoscope
+[2024-05-26 23:23:18] INFO root fetch - processPackages [MedatechUK.Landlord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medatechuk_landlord-0.0.8.tar.gz tmp/medatechuk_landlord-0.0.9.tar.gz --markdown 20240526/M/MedatechUK.Landlord/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 23:23:18] INFO root fetch - processPackages [geofileops]: executing diffoscope
+[2024-05-26 23:23:18] INFO root fetch - processPackages [geofileops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geofileops-0.8.1a0.tar.gz tmp/geofileops-0.8.2.tar.gz --markdown 20240526/g/geofileops/0.8.1a0-0.8.2/README.md --exclude *.pyd
+[2024-05-26 23:23:18] INFO root fetch - processPackages [mkdocs-torillic]: Downloading https://files.pythonhosted.org/packages/98/8e/582eb14a3b5a6a4cb0a556da3a745074d287391e1a21f7c16247f4669967/mkdocs_torillic-2.3.1.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [pproject]: Downloading https://files.pythonhosted.org/packages/3e/5e/f13064119b1cad2834d99edc77072508b54855d8223d7e2711fee6fc9bba/pproject-0.0.4.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [socketbee]: Downloading https://files.pythonhosted.org/packages/b7/c7/c063a993686ea569ba6ca7be92995948334891a908ac0436e01948ae5146/socketbee-0.1.2.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [pytask]: Downloading https://files.pythonhosted.org/packages/ed/95/cf849490bd4b01fa704e69416a2d0e72951d80657a533528ced9941ee0aa/pytask-0.5.0.tar.gz
+[2024-05-26 23:23:18] INFO root fetch - processPackages [pproject]: executing diffoscope
+[2024-05-26 23:23:18] INFO root fetch - processPackages [pproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pproject-0.0.3.tar.gz tmp/pproject-0.0.4.tar.gz --markdown 20240526/p/pproject/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-26 23:23:19] INFO root fetch - processPackages [socketbee]: executing diffoscope
+[2024-05-26 23:23:19] INFO root fetch - processPackages [socketbee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socketbee-0.1.1.tar.gz tmp/socketbee-0.1.2.tar.gz --markdown 20240526/s/socketbee/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 23:23:19] INFO root fetch - processPackages [pytask]: executing diffoscope
+[2024-05-26 23:23:19] INFO root fetch - processPackages [pytask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytask-0.4.7.tar.gz tmp/pytask-0.5.0.tar.gz --markdown 20240526/p/pytask/0.4.7-0.5.0/README.md --exclude *.pyd
+[2024-05-26 23:23:19] INFO root fetch - processPackages [mkdocs-torillic]: executing diffoscope
+[2024-05-26 23:23:19] INFO root fetch - processPackages [mkdocs-torillic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_torillic-2.3.0.tar.gz tmp/mkdocs_torillic-2.3.1.tar.gz --markdown 20240526/m/mkdocs-torillic/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-26 23:23:19] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.8.tar.gz]
+[2024-05-26 23:23:19] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.9.tar.gz]
+[2024-05-26 23:23:19] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
+[2024-05-26 23:23:19] INFO root fetch - processPackages [pproject]: Remove: archive file [/home/abi/fetcher/tmp/pproject-0.0.3.tar.gz]
+[2024-05-26 23:23:19] INFO root fetch - processPackages [pproject]: Remove: archive file [/home/abi/fetcher/tmp/pproject-0.0.4.tar.gz]
+[2024-05-26 23:23:19] INFO root fetch - main [MainThread]: End processing [pproject]: success
+[2024-05-26 23:23:19] INFO root fetch - processPackages [socketbee]: Remove: archive file [/home/abi/fetcher/tmp/socketbee-0.1.1.tar.gz]
+[2024-05-26 23:23:19] INFO root fetch - processPackages [socketbee]: Remove: archive file [/home/abi/fetcher/tmp/socketbee-0.1.2.tar.gz]
+[2024-05-26 23:23:19] INFO root fetch - main [MainThread]: End processing [socketbee]: success
+[2024-05-26 23:23:19] INFO root fetch - processPackages [nudebomb]: Downloading https://files.pythonhosted.org/packages/7f/7f/f76fa07db7100f1a3c425a4f35baf089575d65ce0018230f610c2fd73fa2/nudebomb-0.3.7.tar.gz
+[2024-05-26 23:23:19] INFO root fetch - processPackages [geofileops]: Remove: archive file [/home/abi/fetcher/tmp/geofileops-0.8.1a0.tar.gz]
+[2024-05-26 23:23:19] INFO root fetch - processPackages [geofileops]: Remove: archive file [/home/abi/fetcher/tmp/geofileops-0.8.2.tar.gz]
+[2024-05-26 23:23:19] INFO root fetch - main [MainThread]: End processing [geofileops]: success
+[2024-05-26 23:23:20] INFO root fetch - processPackages [mkdocs-torillic]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_torillic-2.3.0.tar.gz]
+[2024-05-26 23:23:20] INFO root fetch - processPackages [mkdocs-torillic]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_torillic-2.3.1.tar.gz]
+[2024-05-26 23:23:20] INFO root fetch - main [MainThread]: End processing [mkdocs-torillic]: success
+[2024-05-26 23:23:20] INFO root fetch - processPackages [pytask]: Remove: archive file [/home/abi/fetcher/tmp/pytask-0.4.7.tar.gz]
+[2024-05-26 23:23:20] INFO root fetch - processPackages [pytask]: Remove: archive file [/home/abi/fetcher/tmp/pytask-0.5.0.tar.gz]
+[2024-05-26 23:23:20] INFO root fetch - main [MainThread]: End processing [pytask]: success
+[2024-05-26 23:23:20] INFO root fetch - processPackages [nudebomb]: executing diffoscope
+[2024-05-26 23:23:20] INFO root fetch - processPackages [nudebomb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudebomb-0.3.6.tar.gz tmp/nudebomb-0.3.7.tar.gz --markdown 20240526/n/nudebomb/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-26 23:23:21] INFO root fetch - processPackages [nudebomb]: Remove: archive file [/home/abi/fetcher/tmp/nudebomb-0.3.6.tar.gz]
+[2024-05-26 23:23:21] INFO root fetch - processPackages [nudebomb]: Remove: archive file [/home/abi/fetcher/tmp/nudebomb-0.3.7.tar.gz]
+[2024-05-26 23:23:21] INFO root fetch - main [MainThread]: End processing [nudebomb]: success
+[2024-05-26 23:23:21] INFO root fetch - main [MainThread]: Store serial: [23387916]
