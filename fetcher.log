@@ -2239,3 +2239,18 @@
 [2024-05-26 04:05:05] INFO root fetch - processPackages [asyncwhois]: Remove: archive file [/home/abi/fetcher/tmp/asyncwhois-1.1.3.tar.gz]
 [2024-05-26 04:05:05] INFO root fetch - main [MainThread]: End processing [asyncwhois]: success
 [2024-05-26 04:05:05] INFO root fetch - main [MainThread]: Store serial: [23379144]
+[2024-05-26 04:07:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379144]
+[2024-05-26 04:07:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 04:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SpotToBee
+[2024-05-26 04:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rshf
+[2024-05-26 04:07:14] INFO root fetch - processPackages [rshf]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-05-26 04:07:14] WARNING root fetch - processPackages [SpotToBee]: Skipping, unable to determine old version
+[2024-05-26 04:07:14] INFO root fetch - main [MainThread]: End processing [SpotToBee] error
+[2024-05-26 04:07:14] INFO root fetch - processPackages [rshf]: Downloading https://files.pythonhosted.org/packages/51/17/7545773c91d42bc9ac15e44c9aaea635345bdcd9f97d1185e9cbf1d17700/rshf-0.0.1.tar.gz
+[2024-05-26 04:07:14] INFO root fetch - processPackages [rshf]: Downloading https://files.pythonhosted.org/packages/df/97/79f7c5a19369aedf99ee81197750d0a94cacdf1e8a0ef6645c046ad37b76/rshf-0.0.3.tar.gz
+[2024-05-26 04:07:14] INFO root fetch - processPackages [rshf]: executing diffoscope
+[2024-05-26 04:07:14] INFO root fetch - processPackages [rshf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rshf-0.0.1.tar.gz tmp/rshf-0.0.3.tar.gz --markdown 20240526/r/rshf/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-05-26 04:07:15] INFO root fetch - processPackages [rshf]: Remove: archive file [/home/abi/fetcher/tmp/rshf-0.0.1.tar.gz]
+[2024-05-26 04:07:15] INFO root fetch - processPackages [rshf]: Remove: archive file [/home/abi/fetcher/tmp/rshf-0.0.3.tar.gz]
+[2024-05-26 04:07:15] INFO root fetch - main [MainThread]: End processing [rshf]: success
+[2024-05-26 04:07:15] INFO root fetch - main [MainThread]: Store serial: [23379153]
