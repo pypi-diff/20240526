@@ -5444,3 +5444,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:26:27] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_post_defer-16.0.1.1.0-py3-none-any.whl.zip]
 [2024-05-26 09:26:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-post-defer]: success
 [2024-05-26 09:26:27] INFO root fetch - main [MainThread]: Store serial: [23380601]
+[2024-05-26 09:28:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380601]
+[2024-05-26 09:28:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 09:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-mail-tracking
+[2024-05-26 09:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-social
+[2024-05-26 09:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycobertura
+[2024-05-26 09:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygenomeviz
+[2024-05-26 09:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansar-create
+[2024-05-26 09:28:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ddeutil-workflow
+[2024-05-26 09:28:37] INFO root fetch - processPackages [odoo-addon-mail-tracking]: New version: [16.0.1.0.4.8] Old Version: [16.0.1.0.4.65]
+[2024-05-26 09:28:37] WARNING root fetch - processPackages [ddeutil-workflow]: Skipping, unable to determine old version
+[2024-05-26 09:28:37] INFO root fetch - main [MainThread]: End processing [ddeutil-workflow] error
+[2024-05-26 09:28:37] INFO root fetch - processPackages [pygenomeviz]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-26 09:28:37] INFO root fetch - processPackages [ansar-create]: New version: [0.1.98] Old Version: [0.1.97]
+[2024-05-26 09:28:37] INFO root fetch - processPackages [odoo-addons-oca-social]: New version: [16.0.20240525.0] Old Version: [16.0.20240521.0]
+[2024-05-26 09:28:37] INFO root fetch - processPackages [pycobertura]: New version: [3.3.2] Old Version: [3.3.1]
+[2024-05-26 09:28:37] INFO root fetch - processPackages [odoo-addon-mail-tracking]: Downloading https://files.pythonhosted.org/packages/29/d0/4cac2dcff47a5e954fe2c462dd9a16d7d4844118b53321d3e7bdc54af7eb/odoo_addon_mail_tracking-16.0.1.0.4.65-py3-none-any.whl
+[2024-05-26 09:28:37] INFO root fetch - processPackages [pygenomeviz]: Downloading https://files.pythonhosted.org/packages/4c/df/e3c18df787ed12e9691d2978f31f53fdfc2f7bd44edabe280e0e24a4f664/pygenomeviz-1.0.0.tar.gz
+[2024-05-26 09:28:37] INFO root fetch - processPackages [odoo-addons-oca-social]: Downloading https://files.pythonhosted.org/packages/56/45/67360be3ace6efd71d712e39b1a86af729d1ea9111a14540ece0fc23bb8a/odoo_addons_oca_social-16.0.20240521.0-py3-none-any.whl
+[2024-05-26 09:28:37] INFO root fetch - processPackages [pycobertura]: Downloading https://files.pythonhosted.org/packages/5e/57/2d33605526a1cff9805a5283a348346fbde8ff9a838cd457dee25ea933c0/pycobertura-3.3.1.tar.gz
+[2024-05-26 09:28:37] INFO root fetch - processPackages [ansar-create]: Downloading https://files.pythonhosted.org/packages/0a/19/98f1877ec2c3df66168349e14ee3e09a4391d7fd1969e52f29d9743e0435/ansar_create-0.1.97.tar.gz
+[2024-05-26 09:28:37] INFO root fetch - processPackages [odoo-addons-oca-social]: Downloading https://files.pythonhosted.org/packages/0d/a5/99e0e211c4e698609bcb2372d214a88b3906f309909a665e8b88e6a66711/odoo_addons_oca_social-16.0.20240525.0-py3-none-any.whl
+[2024-05-26 09:28:37] INFO root fetch - processPackages [ansar-create]: Downloading https://files.pythonhosted.org/packages/2c/fa/d6b4decbaa03c2822eb7f061b4611e838890f6fda60cde4bdb315388e3ec/ansar_create-0.1.98.tar.gz
+[2024-05-26 09:28:37] INFO root fetch - processPackages [pygenomeviz]: Downloading https://files.pythonhosted.org/packages/24/bd/6c63aca83c1f1628f9e7b6ed768a26eab34876770ffb19d45d194cd33aa5/pygenomeviz-1.1.0.tar.gz
+[2024-05-26 09:28:37] INFO root fetch - processPackages [odoo-addon-mail-tracking]: Downloading https://files.pythonhosted.org/packages/a9/b5/fe980727422eb439e605ad729f40089261801552e5074675cce97c3dbd4f/odoo_addon_mail_tracking-16.0.1.0.4.8-py3-none-any.whl
+[2024-05-26 09:28:37] INFO root fetch - processPackages [pycobertura]: Downloading https://files.pythonhosted.org/packages/9d/2e/f31591c9d767a562c9c4f7817dc065b497e95c881d7d4267a73caa703393/pycobertura-3.3.2.tar.gz
+[2024-05-26 09:28:37] INFO root fetch - processPackages [odoo-addons-oca-social]: executing diffoscope
+[2024-05-26 09:28:37] INFO root fetch - processPackages [odoo-addons-oca-social]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_social-16.0.20240521.0-py3-none-any.whl.zip tmp/odoo_addons_oca_social-16.0.20240525.0-py3-none-any.whl.zip --markdown 20240526/o/odoo-addons-oca-social/16.0.20240521.0-16.0.20240525.0/README.md --exclude *.pyd
+[2024-05-26 09:28:38] INFO root fetch - processPackages [odoo-addon-mail-tracking]: executing diffoscope
+[2024-05-26 09:28:38] INFO root fetch - processPackages [odoo-addon-mail-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mail_tracking-16.0.1.0.4.65-py3-none-any.whl.zip tmp/odoo_addon_mail_tracking-16.0.1.0.4.8-py3-none-any.whl.zip --markdown 20240526/o/odoo-addon-mail-tracking/16.0.1.0.4.65-16.0.1.0.4.8/README.md --exclude *.pyd
+[2024-05-26 09:28:38] INFO root fetch - processPackages [pycobertura]: executing diffoscope
+[2024-05-26 09:28:38] INFO root fetch - processPackages [pycobertura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycobertura-3.3.1.tar.gz tmp/pycobertura-3.3.2.tar.gz --markdown 20240526/p/pycobertura/3.3.1-3.3.2/README.md --exclude *.pyd
+[2024-05-26 09:28:38] INFO root fetch - processPackages [ansar-create]: executing diffoscope
+[2024-05-26 09:28:38] INFO root fetch - processPackages [ansar-create]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_create-0.1.97.tar.gz tmp/ansar_create-0.1.98.tar.gz --markdown 20240526/a/ansar-create/0.1.97-0.1.98/README.md --exclude *.pyd
+[2024-05-26 09:28:38] INFO root fetch - processPackages [pygenomeviz]: executing diffoscope
+[2024-05-26 09:28:38] INFO root fetch - processPackages [pygenomeviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygenomeviz-1.0.0.tar.gz tmp/pygenomeviz-1.1.0.tar.gz --markdown 20240526/p/pygenomeviz/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-26 09:28:38] INFO root fetch - processPackages [odoo-addons-oca-social]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_social-16.0.20240521.0-py3-none-any.whl.zip]
+[2024-05-26 09:28:38] INFO root fetch - processPackages [odoo-addons-oca-social]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_social-16.0.20240525.0-py3-none-any.whl.zip]
+[2024-05-26 09:28:38] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-social]: success
+[2024-05-26 09:28:38] INFO root fetch - processPackages [ansar-create]: Remove: archive file [/home/abi/fetcher/tmp/ansar_create-0.1.97.tar.gz]
+[2024-05-26 09:28:38] INFO root fetch - processPackages [ansar-create]: Remove: archive file [/home/abi/fetcher/tmp/ansar_create-0.1.98.tar.gz]
+[2024-05-26 09:28:38] INFO root fetch - main [MainThread]: End processing [ansar-create]: success
+[2024-05-26 09:28:38] INFO root fetch - processPackages [pycobertura]: Remove: archive file [/home/abi/fetcher/tmp/pycobertura-3.3.1.tar.gz]
+[2024-05-26 09:28:38] INFO root fetch - processPackages [pycobertura]: Remove: archive file [/home/abi/fetcher/tmp/pycobertura-3.3.2.tar.gz]
+[2024-05-26 09:28:38] INFO root fetch - main [MainThread]: End processing [pycobertura]: success
+[2024-05-26 09:28:39] INFO root fetch - processPackages [odoo-addon-mail-tracking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_tracking-16.0.1.0.4.65-py3-none-any.whl.zip]
+[2024-05-26 09:28:39] INFO root fetch - processPackages [odoo-addon-mail-tracking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_tracking-16.0.1.0.4.8-py3-none-any.whl.zip]
+[2024-05-26 09:28:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-tracking]: success
+[2024-05-26 09:28:39] INFO root fetch - processPackages [pygenomeviz]: Remove: archive file [/home/abi/fetcher/tmp/pygenomeviz-1.0.0.tar.gz]
+[2024-05-26 09:28:39] INFO root fetch - processPackages [pygenomeviz]: Remove: archive file [/home/abi/fetcher/tmp/pygenomeviz-1.1.0.tar.gz]
+[2024-05-26 09:28:39] INFO root fetch - main [MainThread]: End processing [pygenomeviz]: success
+[2024-05-26 09:28:39] INFO root fetch - main [MainThread]: Store serial: [23380621]
