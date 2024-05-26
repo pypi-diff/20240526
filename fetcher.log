@@ -5599,3 +5599,29 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:37:28] INFO root fetch - processPackages [pyecotrend-ista]: Remove: archive file [/home/abi/fetcher/tmp/pyecotrend-ista-3.1.0.tar.gz]
 [2024-05-26 09:37:28] INFO root fetch - main [MainThread]: End processing [pyecotrend-ista]: success
 [2024-05-26 09:37:28] INFO root fetch - main [MainThread]: Store serial: [23380656]
+[2024-05-26 09:39:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380656]
+[2024-05-26 09:39:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 09:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2024-05-26 09:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ansar-connect
+[2024-05-26 09:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-manipulation
+[2024-05-26 09:39:38] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.265] Old Version: [0.1.264]
+[2024-05-26 09:39:38] INFO root fetch - processPackages [data-manipulation]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 09:39:38] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-05-26 09:39:38] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/72/94/3e31caa39f56bc3c3cdf0be4641e5bc7476ecbacdb8aea5c168a29592a96/ansar_connect-0.1.264.tar.gz
+[2024-05-26 09:39:38] INFO root fetch - processPackages [data-manipulation]: Downloading https://files.pythonhosted.org/packages/11/e3/4b1ec8449e9e36a6057de278e11d627e1da10527371c7c3f13d668f3c2d4/data_manipulation-0.8.tar.gz
+[2024-05-26 09:39:38] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-26 09:39:38] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-05-26 09:39:38] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-05-26 09:39:38] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/d1/78/791f3289d28ebd99e00b7f2d78ff9de592a5b5316e5ec86f085b2e5ec27b/ansar_connect-0.1.265.tar.gz
+[2024-05-26 09:39:38] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-05-26 09:39:38] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.264.tar.gz tmp/ansar_connect-0.1.265.tar.gz --markdown 20240526/a/ansar-connect/0.1.264-0.1.265/README.md --exclude *.pyd
+[2024-05-26 09:39:38] INFO root fetch - processPackages [data-manipulation]: Downloading https://files.pythonhosted.org/packages/45/5a/fcb54c7d4023096be4bcedc594a44ad9cb8e93a6258c07807b914f7af380/data_manipulation-0.9.tar.gz
+[2024-05-26 09:39:39] INFO root fetch - processPackages [data-manipulation]: executing diffoscope
+[2024-05-26 09:39:39] INFO root fetch - processPackages [data-manipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_manipulation-0.8.tar.gz tmp/data_manipulation-0.9.tar.gz --markdown 20240526/d/data-manipulation/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 09:39:39] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.264.tar.gz]
+[2024-05-26 09:39:39] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.265.tar.gz]
+[2024-05-26 09:39:39] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-05-26 09:39:39] INFO root fetch - processPackages [data-manipulation]: Remove: archive file [/home/abi/fetcher/tmp/data_manipulation-0.8.tar.gz]
+[2024-05-26 09:39:39] INFO root fetch - processPackages [data-manipulation]: Remove: archive file [/home/abi/fetcher/tmp/data_manipulation-0.9.tar.gz]
+[2024-05-26 09:39:39] INFO root fetch - main [MainThread]: End processing [data-manipulation]: success
+[2024-05-26 09:39:39] INFO root fetch - main [MainThread]: Store serial: [23380680]
