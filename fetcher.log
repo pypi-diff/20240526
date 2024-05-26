@@ -10483,3 +10483,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:40:23] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.9.0.0b0.tar.gz]
 [2024-05-26 14:40:23] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
 [2024-05-26 14:40:23] INFO root fetch - main [MainThread]: Store serial: [23382891]
+[2024-05-26 14:42:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382891]
+[2024-05-26 14:42:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 14:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-llm
+[2024-05-26 14:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easychart
+[2024-05-26 14:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pi-awning-webthing
+[2024-05-26 14:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: testbrojct2
+[2024-05-26 14:42:36] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-26 14:42:36] INFO root fetch - processPackages [testbrojct2]: New version: [0.2] Old Version: [0.1]
+[2024-05-26 14:42:36] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/ee/39/a8059c35258d32bdec0ef11a69a8455b8a66a61e0f524db70c8a0e3c304b/pi_awning_webthing-0.3.4.tar.gz
+[2024-05-26 14:42:36] INFO root fetch - processPackages [easychart]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 14:42:36] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240526] Old Version: [2.5.0b20240525]
+[2024-05-26 14:42:37] INFO root fetch - processPackages [testbrojct2]: Downloading https://files.pythonhosted.org/packages/03/dd/c9d18398067579c5924638f2d3fd78eae10a747907109f06eb8a814b0d3d/testbrojct2-0.1.tar.gz
+[2024-05-26 14:42:37] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/26/01/6e1da0da2bc5e1d28b8a641624cef3f9a9b8d549aa420b8a62751e163f98/bigdl_llm-2.5.0b20240525-py3-none-win_amd64.whl
+[2024-05-26 14:42:37] INFO root fetch - processPackages [easychart]: Downloading https://files.pythonhosted.org/packages/e8/fb/7fde5c5e72a1f96d43586e9cdfc3312aed4445d7714392c17521d4f0cfeb/easychart-0.1.8.tar.gz
+[2024-05-26 14:42:37] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/c4/99/3188536dbd0fb0f3eaa5a2da8d6e35ab530ee6eed13397aa921a9061fc34/pi_awning_webthing-0.3.5.tar.gz
+[2024-05-26 14:42:37] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 14:42:37] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.4.tar.gz tmp/pi_awning_webthing-0.3.5.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-26 14:42:37] INFO root fetch - processPackages [testbrojct2]: Downloading https://files.pythonhosted.org/packages/2e/e4/f853584bdc3c0f5aea2d38abaf34e9923c0e8a2742e9731c1da67ec1ca84/testbrojct2-0.2.tar.gz
+[2024-05-26 14:42:37] INFO root fetch - processPackages [testbrojct2]: executing diffoscope
+[2024-05-26 14:42:37] INFO root fetch - processPackages [testbrojct2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testbrojct2-0.1.tar.gz tmp/testbrojct2-0.2.tar.gz --markdown 20240526/t/testbrojct2/0.1-0.2/README.md --exclude *.pyd
+[2024-05-26 14:42:37] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/d9/a0/0b4e255aa9287398379eb2760b121b7655fc3c6442a5352a5c078f0abc5e/bigdl_llm-2.5.0b20240526-py3-none-win_amd64.whl
+[2024-05-26 14:42:37] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.4.tar.gz]
+[2024-05-26 14:42:37] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.5.tar.gz]
+[2024-05-26 14:42:37] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 14:42:38] INFO root fetch - processPackages [testbrojct2]: Remove: archive file [/home/abi/fetcher/tmp/testbrojct2-0.1.tar.gz]
+[2024-05-26 14:42:38] INFO root fetch - processPackages [testbrojct2]: Remove: archive file [/home/abi/fetcher/tmp/testbrojct2-0.2.tar.gz]
+[2024-05-26 14:42:38] INFO root fetch - main [MainThread]: End processing [testbrojct2]: success
+[2024-05-26 14:42:38] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-05-26 14:42:38] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240525-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240526-py3-none-win_amd64.whl.zip --markdown 20240526/b/bigdl-llm/2.5.0b20240525-2.5.0b20240526/README.md --exclude *.pyd
+[2024-05-26 14:42:38] INFO root fetch - processPackages [easychart]: Downloading https://files.pythonhosted.org/packages/b3/f0/dfc877d8bcb1fb21c2b5466979e9e3c05622a010605f06a4533ee0bb8084/easychart-0.1.9.tar.gz
+[2024-05-26 14:42:39] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240525-py3-none-win_amd64.whl.zip]
+[2024-05-26 14:42:39] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240526-py3-none-win_amd64.whl.zip]
+[2024-05-26 14:42:39] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-05-26 14:42:39] INFO root fetch - processPackages [easychart]: executing diffoscope
+[2024-05-26 14:42:39] INFO root fetch - processPackages [easychart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easychart-0.1.8.tar.gz tmp/easychart-0.1.9.tar.gz --markdown 20240526/e/easychart/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 14:42:40] INFO root fetch - processPackages [easychart]: Remove: archive file [/home/abi/fetcher/tmp/easychart-0.1.8.tar.gz]
+[2024-05-26 14:42:40] INFO root fetch - processPackages [easychart]: Remove: archive file [/home/abi/fetcher/tmp/easychart-0.1.9.tar.gz]
+[2024-05-26 14:42:40] INFO root fetch - main [MainThread]: End processing [easychart]: success
+[2024-05-26 14:42:40] INFO root fetch - main [MainThread]: Store serial: [23382905]
