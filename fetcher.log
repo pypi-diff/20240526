@@ -18060,3 +18060,58 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:46:11] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip]
 [2024-05-26 21:46:11] INFO root fetch - main [MainThread]: End processing [nnetsauce]: success
 [2024-05-26 21:46:11] INFO root fetch - main [MainThread]: Store serial: [23386427]
+[2024-05-26 21:48:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386427]
+[2024-05-26 21:48:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dscontexai
+[2024-05-26 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: djantic2
+[2024-05-26 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arraylake
+[2024-05-26 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libbot
+[2024-05-26 21:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dscontexai
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-26 21:48:20] INFO root fetch - processPackages [libbot]: New version: [3.2.1] Old Version: [3.2.0]
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-26 21:48:20] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 21:48:20] INFO root fetch - processPackages [libbot]: Downloading https://files.pythonhosted.org/packages/9a/2c/c845eb2e264678cfdefdcc8f5524672f8e112361ad5d12e3ac819595a430/libbot-3.2.0.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [djantic2]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 21:48:20] INFO root fetch - processPackages [arraylake]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-26 21:48:20] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/33/25/ab5b96083997b98b87674edd15e40da25f7625aaf320404fcc5e1543a3fd/dscontexai-1.0.4.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/33/25/ab5b96083997b98b87674edd15e40da25f7625aaf320404fcc5e1543a3fd/dscontexai-1.0.4.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [arraylake]: Downloading https://files.pythonhosted.org/packages/cc/c0/34097743f4a7df9c45867774855e45aa3b05d64b0585451ece365256cd59/arraylake-0.9.7.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [djantic2]: Downloading https://files.pythonhosted.org/packages/69/22/5486f151fc82cd153255b944e6640b7c79e58d6516d1ba720cc095ab2337/djantic2-1.0.1.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [libbot]: Downloading https://files.pythonhosted.org/packages/a7/b1/72dfb1e586bb6ea88472769eea71b47c69da1ad8a8e64daafb7895e9c39b/libbot-3.2.1.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/6d/dd/a0b53d64be2a3725f9703394c0e757f109924b41d4f67c7cd938c2a59269/dscontexai-1.0.5.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/6d/dd/a0b53d64be2a3725f9703394c0e757f109924b41d4f67c7cd938c2a59269/dscontexai-1.0.5.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [libbot]: executing diffoscope
+[2024-05-26 21:48:20] INFO root fetch - processPackages [libbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libbot-3.2.0.tar.gz tmp/libbot-3.2.1.tar.gz --markdown 20240526/l/libbot/3.2.0-3.2.1/README.md --exclude *.pyd
+[2024-05-26 21:48:20] INFO root fetch - processPackages [djantic2]: Downloading https://files.pythonhosted.org/packages/10/a1/6e08c7e4f678febdf709f4af54fcb420863ab0f25a5e527f18c59f61a30d/djantic2-1.0.2.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [arraylake]: Downloading https://files.pythonhosted.org/packages/56/c6/6cd6bbfedfc92a83ffb0d33566771f59654285ea653295f851cacfed08f9/arraylake-0.9.8.tar.gz
+[2024-05-26 21:48:20] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 21:48:20] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-1.0.4.tar.gz tmp/dscontexai-1.0.5.tar.gz --markdown 20240526/d/dscontexai/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 21:48:20] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-1.0.4.tar.gz tmp/dscontexai-1.0.5.tar.gz --markdown 20240526/d/dscontexai/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-26 21:48:20] INFO root fetch - processPackages [arraylake]: executing diffoscope
+[2024-05-26 21:48:20] INFO root fetch - processPackages [arraylake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraylake-0.9.7.tar.gz tmp/arraylake-0.9.8.tar.gz --markdown 20240526/a/arraylake/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-26 21:48:20] INFO root fetch - processPackages [djantic2]: executing diffoscope
+[2024-05-26 21:48:20] INFO root fetch - processPackages [djantic2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djantic2-1.0.1.tar.gz tmp/djantic2-1.0.2.tar.gz --markdown 20240526/d/djantic2/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 21:48:21] INFO root fetch - processPackages [libbot]: Remove: archive file [/home/abi/fetcher/tmp/libbot-3.2.0.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - processPackages [libbot]: Remove: archive file [/home/abi/fetcher/tmp/libbot-3.2.1.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - main [MainThread]: End processing [libbot]: success
+[2024-05-26 21:48:21] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-1.0.4.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-1.0.5.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 21:48:21] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 21:48:21] INFO root fetch - processPackages [djantic2]: Remove: archive file [/home/abi/fetcher/tmp/djantic2-1.0.1.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - processPackages [djantic2]: Remove: archive file [/home/abi/fetcher/tmp/djantic2-1.0.2.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - main [MainThread]: End processing [djantic2]: success
+[2024-05-26 21:48:21] INFO root fetch - processPackages [arraylake]: Remove: archive file [/home/abi/fetcher/tmp/arraylake-0.9.7.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - processPackages [arraylake]: Remove: archive file [/home/abi/fetcher/tmp/arraylake-0.9.8.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - main [MainThread]: End processing [arraylake]: success
+[2024-05-26 21:48:21] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 21:48:21] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 21:48:21] INFO root fetch - main [MainThread]: Store serial: [23386453]
