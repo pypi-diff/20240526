@@ -11118,3 +11118,41 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:21:56] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.9.0.0b0.tar.gz]
 [2024-05-26 15:21:56] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
 [2024-05-26 15:21:56] INFO root fetch - main [MainThread]: Store serial: [23383181]
+[2024-05-26 15:24:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383181]
+[2024-05-26 15:24:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 15:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fusion-solar-py
+[2024-05-26 15:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dsConteXAI
+[2024-05-26 15:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: parse-it
+[2024-05-26 15:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flask-Captchaify
+[2024-05-26 15:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: light-database
+[2024-05-26 15:24:22] INFO root fetch - processPackages [fusion-solar-py]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 15:24:22] WARNING root fetch - processPackages [dsConteXAI]: Skipping, unable to determine old version
+[2024-05-26 15:24:22] INFO root fetch - main [MainThread]: End processing [dsConteXAI] error
+[2024-05-26 15:24:22] INFO root fetch - processPackages [light-database]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-26 15:24:22] INFO root fetch - processPackages [flask-Captchaify]: New version: [1.6.9.5.2] Old Version: [1.6.9.5.1]
+[2024-05-26 15:24:22] INFO root fetch - processPackages [parse-it]: New version: [3.8.0] Old Version: [3.7.0]
+[2024-05-26 15:24:22] INFO root fetch - processPackages [fusion-solar-py]: Downloading https://files.pythonhosted.org/packages/fc/20/993f3e7bedd02ca160824eb34f7761f050e9fcf86b1733472fc743f530ab/fusion_solar_py-0.0.8.tar.gz
+[2024-05-26 15:24:22] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/cd/52/dbb13663fccbffb09d020cc56e8a7a1b551efa4c47759a518f758bba3f02/parse_it-3.7.0.tar.gz
+[2024-05-26 15:24:22] INFO root fetch - processPackages [flask-Captchaify]: Downloading https://files.pythonhosted.org/packages/e5/60/392594f434643859078cc3b487e3eb1c206907dc5b598e2e8d6f7b94fd5a/flask_captchaify-1.6.9.5.1.tar.gz
+[2024-05-26 15:24:22] INFO root fetch - processPackages [light-database]: Downloading https://files.pythonhosted.org/packages/77/f0/4c1ec954b1386b4ff20678a4879a35f80c45012f05d28c2b2495e3986699/light_database-0.1.9-cp311-cp311-win_amd64.whl
+[2024-05-26 15:24:22] WARNING root fetch - processPackages [flask-Captchaify]: Skipping package: exceeds size limit 43910381>=10485760
+[2024-05-26 15:24:22] INFO root fetch - main [MainThread]: End processing [flask-Captchaify] error
+[2024-05-26 15:24:22] INFO root fetch - processPackages [fusion-solar-py]: Downloading https://files.pythonhosted.org/packages/bd/f8/6f8fd6f36464ce40844b309b39dc2b9fddb83ada902d3448f4dfd024c4a8/fusion_solar_py-0.0.9.tar.gz
+[2024-05-26 15:24:23] INFO root fetch - processPackages [fusion-solar-py]: executing diffoscope
+[2024-05-26 15:24:23] INFO root fetch - processPackages [fusion-solar-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusion_solar_py-0.0.8.tar.gz tmp/fusion_solar_py-0.0.9.tar.gz --markdown 20240526/f/fusion-solar-py/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 15:24:23] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/3b/d8/0a3f4a732fa677a35dbea4e9c72741f55e44859dc1c79bf5edfce61d95f0/parse_it-3.8.0.tar.gz
+[2024-05-26 15:24:23] INFO root fetch - processPackages [light-database]: Downloading https://files.pythonhosted.org/packages/31/b5/2ae78971a6bcb5205071e565a731581c69edc22407afa3609747bb19c0d9/light_database-0.2.0-cp311-cp311-win_amd64.whl
+[2024-05-26 15:24:23] INFO root fetch - processPackages [parse-it]: executing diffoscope
+[2024-05-26 15:24:23] INFO root fetch - processPackages [parse-it]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_it-3.7.0.tar.gz tmp/parse_it-3.8.0.tar.gz --markdown 20240526/p/parse-it/3.7.0-3.8.0/README.md --exclude *.pyd
+[2024-05-26 15:24:23] INFO root fetch - processPackages [fusion-solar-py]: Remove: archive file [/home/abi/fetcher/tmp/fusion_solar_py-0.0.8.tar.gz]
+[2024-05-26 15:24:23] INFO root fetch - processPackages [fusion-solar-py]: Remove: archive file [/home/abi/fetcher/tmp/fusion_solar_py-0.0.9.tar.gz]
+[2024-05-26 15:24:23] INFO root fetch - main [MainThread]: End processing [fusion-solar-py]: success
+[2024-05-26 15:24:23] INFO root fetch - processPackages [light-database]: executing diffoscope
+[2024-05-26 15:24:23] INFO root fetch - processPackages [light-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/light_database-0.1.9-cp311-cp311-win_amd64.whl.zip tmp/light_database-0.2.0-cp311-cp311-win_amd64.whl.zip --markdown 20240526/l/light-database/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-26 15:24:24] INFO root fetch - processPackages [parse-it]: Remove: archive file [/home/abi/fetcher/tmp/parse_it-3.7.0.tar.gz]
+[2024-05-26 15:24:24] INFO root fetch - processPackages [parse-it]: Remove: archive file [/home/abi/fetcher/tmp/parse_it-3.8.0.tar.gz]
+[2024-05-26 15:24:24] INFO root fetch - main [MainThread]: End processing [parse-it]: success
+[2024-05-26 15:24:24] INFO root fetch - processPackages [light-database]: Remove: archive file [/home/abi/fetcher/tmp/light_database-0.1.9-cp311-cp311-win_amd64.whl.zip]
+[2024-05-26 15:24:24] INFO root fetch - processPackages [light-database]: Remove: archive file [/home/abi/fetcher/tmp/light_database-0.2.0-cp311-cp311-win_amd64.whl.zip]
+[2024-05-26 15:24:24] INFO root fetch - main [MainThread]: End processing [light-database]: success
+[2024-05-26 15:24:24] INFO root fetch - main [MainThread]: Store serial: [23383201]
