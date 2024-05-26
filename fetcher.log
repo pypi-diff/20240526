@@ -11342,3 +11342,21 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:36:51] INFO root fetch - processPackages [iRe.py]: Remove: archive file [/home/abi/fetcher/tmp/iRe.py-0.3.0.tar.gz]
 [2024-05-26 15:36:51] INFO root fetch - main [MainThread]: End processing [iRe.py]: success
 [2024-05-26 15:36:51] INFO root fetch - main [MainThread]: Store serial: [23383351]
+[2024-05-26 15:39:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383351]
+[2024-05-26 15:39:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 15:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: text-topic-visualizer
+[2024-05-26 15:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dscontexai
+[2024-05-26 15:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: port-ocean
+[2024-05-26 15:39:19] WARNING root fetch - processPackages [dscontexai]: Skipping, unable to determine old version
+[2024-05-26 15:39:19] INFO root fetch - main [MainThread]: End processing [dscontexai] error
+[2024-05-26 15:39:19] INFO root fetch - processPackages [port-ocean]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-26 15:39:19] INFO root fetch - processPackages [port-ocean]: Downloading https://files.pythonhosted.org/packages/78/bc/7cc9e8e2e79075a3c79c00273aaeb13f895d17585c027c53b61f77bdaba4/port_ocean-0.5.8.tar.gz
+[2024-05-26 15:39:19] WARNING root fetch - processPackages [text-topic-visualizer]: Skipping, unable to determine old version
+[2024-05-26 15:39:19] INFO root fetch - main [MainThread]: End processing [text-topic-visualizer] error
+[2024-05-26 15:39:19] INFO root fetch - processPackages [port-ocean]: Downloading https://files.pythonhosted.org/packages/9a/b8/b4b21f5c3d509271ff988cb9644c8429ce3f2eb23c44e309e16fc3f2c3d6/port_ocean-0.5.9.tar.gz
+[2024-05-26 15:39:20] INFO root fetch - processPackages [port-ocean]: executing diffoscope
+[2024-05-26 15:39:20] INFO root fetch - processPackages [port-ocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/port_ocean-0.5.8.tar.gz tmp/port_ocean-0.5.9.tar.gz --markdown 20240526/p/port-ocean/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-26 15:39:20] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.8.tar.gz]
+[2024-05-26 15:39:20] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.9.tar.gz]
+[2024-05-26 15:39:20] INFO root fetch - main [MainThread]: End processing [port-ocean]: success
+[2024-05-26 15:39:20] INFO root fetch - main [MainThread]: Store serial: [23383363]
