@@ -10314,3 +10314,21 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:24:37] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev9.tar.gz]
 [2024-05-26 14:24:37] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-05-26 14:24:37] INFO root fetch - main [MainThread]: Store serial: [23382801]
+[2024-05-26 14:26:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382801]
+[2024-05-26 14:26:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 14:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cadziu
+[2024-05-26 14:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contact-group-local
+[2024-05-26 14:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: teamai
+[2024-05-26 14:26:51] INFO root fetch - processPackages [contact-group-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 14:26:51] WARNING root fetch - processPackages [teamai]: Skipping, unable to determine old version
+[2024-05-26 14:26:51] INFO root fetch - main [MainThread]: End processing [teamai] error
+[2024-05-26 14:26:51] WARNING root fetch - processPackages [cadziu]: Skipping, unable to determine old version
+[2024-05-26 14:26:51] INFO root fetch - main [MainThread]: End processing [cadziu] error
+[2024-05-26 14:26:51] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/63/e5/ff261731db98a38a39f4657a4cd1e04b2a998f175a7af36c640220ff9b00/contact-group-local-0.0.8.tar.gz
+[2024-05-26 14:26:51] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/84/cc/f78576331b2ff0f497f4640872d65b71ec33ae804f6a44bb2f10f1957687/contact-group-local-0.0.9.tar.gz
+[2024-05-26 14:26:51] INFO root fetch - processPackages [contact-group-local]: executing diffoscope
+[2024-05-26 14:26:51] INFO root fetch - processPackages [contact-group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-group-local-0.0.8.tar.gz tmp/contact-group-local-0.0.9.tar.gz --markdown 20240526/c/contact-group-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 14:26:52] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.8.tar.gz]
+[2024-05-26 14:26:52] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
+[2024-05-26 14:26:52] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
+[2024-05-26 14:26:52] INFO root fetch - main [MainThread]: Store serial: [23382816]
