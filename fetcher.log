@@ -1418,3 +1418,17 @@
 [2024-05-26 02:44:56] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405250044.tar.gz]
 [2024-05-26 02:44:56] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-05-26 02:44:56] INFO root fetch - main [MainThread]: Store serial: [23378780]
+[2024-05-26 02:47:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378780]
+[2024-05-26 02:47:05] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 02:49:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378801]
+[2024-05-26 02:49:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 02:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: souJpg-diffusers
+[2024-05-26 02:49:11] INFO root fetch - processPackages [souJpg-diffusers]: New version: [0.28.0.dev1] Old Version: [0.27.2]
+[2024-05-26 02:49:11] INFO root fetch - processPackages [souJpg-diffusers]: Downloading https://files.pythonhosted.org/packages/f8/97/41aa16f9f4c52189a6f3a2ae8145bea3fb9fd792b2f322f469b871f779f7/souJpg_diffusers-0.27.2-py3-none-any.whl
+[2024-05-26 02:49:12] INFO root fetch - processPackages [souJpg-diffusers]: Downloading https://files.pythonhosted.org/packages/c3/d0/87c8f9f138a72266730e695a046085e5901e5322d23d36d913299ceeed9f/souJpg_diffusers-0.28.0.dev1-py3-none-any.whl
+[2024-05-26 02:49:12] INFO root fetch - processPackages [souJpg-diffusers]: executing diffoscope
+[2024-05-26 02:49:12] INFO root fetch - processPackages [souJpg-diffusers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/souJpg_diffusers-0.27.2-py3-none-any.whl.zip tmp/souJpg_diffusers-0.28.0.dev1-py3-none-any.whl.zip --markdown 20240526/s/souJpg-diffusers/0.27.2-0.28.0.dev1/README.md --exclude *.pyd
+[2024-05-26 02:49:15] INFO root fetch - processPackages [souJpg-diffusers]: Remove: archive file [/home/abi/fetcher/tmp/souJpg_diffusers-0.27.2-py3-none-any.whl.zip]
+[2024-05-26 02:49:15] INFO root fetch - processPackages [souJpg-diffusers]: Remove: archive file [/home/abi/fetcher/tmp/souJpg_diffusers-0.28.0.dev1-py3-none-any.whl.zip]
+[2024-05-26 02:49:15] INFO root fetch - main [MainThread]: End processing [souJpg-diffusers]: success
+[2024-05-26 02:49:15] INFO root fetch - main [MainThread]: Store serial: [23378806]
