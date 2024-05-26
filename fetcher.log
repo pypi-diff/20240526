@@ -10565,3 +10565,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:44:56] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-2.9.tar.gz]
 [2024-05-26 14:44:56] INFO root fetch - main [MainThread]: End processing [webscout]: success
 [2024-05-26 14:44:56] INFO root fetch - main [MainThread]: Store serial: [23382927]
+[2024-05-26 14:47:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382927]
+[2024-05-26 14:47:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 14:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-islands
+[2024-05-26 14:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyDEMATEL-Package
+[2024-05-26 14:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: msfabricpysdkcore
+[2024-05-26 14:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matematikk
+[2024-05-26 14:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ffun
+[2024-05-26 14:47:10] INFO root fetch - processPackages [streamlit-islands]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 14:47:10] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 14:47:10] INFO root fetch - processPackages [streamlit-islands]: Downloading https://files.pythonhosted.org/packages/17/0a/64780277853dd89361babd2e531af2d12ed5e523e43dbb8dbd8fb42f0c27/streamlit-islands-0.0.1.tar.gz
+[2024-05-26 14:47:10] INFO root fetch - processPackages [msfabricpysdkcore]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 14:47:10] INFO root fetch - processPackages [ffun]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-05-26 14:47:10] WARNING root fetch - processPackages [pyDEMATEL-Package]: Skipping, unable to determine old version
+[2024-05-26 14:47:10] INFO root fetch - main [MainThread]: End processing [pyDEMATEL-Package] error
+[2024-05-26 14:47:10] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 14:47:10] INFO root fetch - processPackages [msfabricpysdkcore]: Downloading https://files.pythonhosted.org/packages/65/f9/83a8cbffd3d2ec022715513e395e101b324342fd15fd101d6fed5d79c480/msfabricpysdkcore-0.0.8.tar.gz
+[2024-05-26 14:47:10] INFO root fetch - processPackages [streamlit-islands]: Downloading https://files.pythonhosted.org/packages/12/fa/89a284f415441cd2c9344ae6b83a009ebc71e65e1ae087c784eb9ddeeb28/streamlit-islands-0.0.2.tar.gz
+[2024-05-26 14:47:10] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 14:47:10] INFO root fetch - processPackages [ffun]: Downloading https://files.pythonhosted.org/packages/8c/e5/81fc5d2a4bc82f89a82020acd7c155e0cb26d2d851821a8316d8d8665f38/ffun-1.5.4.tar.gz
+[2024-05-26 14:47:10] INFO root fetch - processPackages [streamlit-islands]: executing diffoscope
+[2024-05-26 14:47:10] INFO root fetch - processPackages [streamlit-islands]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-islands-0.0.1.tar.gz tmp/streamlit-islands-0.0.2.tar.gz --markdown 20240526/s/streamlit-islands/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 14:47:10] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 14:47:10] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 14:47:10] INFO root fetch - processPackages [msfabricpysdkcore]: Downloading https://files.pythonhosted.org/packages/7f/33/d4aae4ef11a328ff447cf78b90aa7f47eb976d8f2bdd73370ff71c5a0710/msfabricpysdkcore-0.0.9.tar.gz
+[2024-05-26 14:47:10] INFO root fetch - processPackages [ffun]: Downloading https://files.pythonhosted.org/packages/b8/9e/092e91977e80eb0221f51c0bad01928819e4307ed55d8af5ca4b8c158a81/ffun-1.5.5.tar.gz
+[2024-05-26 14:47:10] INFO root fetch - processPackages [ffun]: executing diffoscope
+[2024-05-26 14:47:10] INFO root fetch - processPackages [ffun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffun-1.5.4.tar.gz tmp/ffun-1.5.5.tar.gz --markdown 20240526/f/ffun/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-05-26 14:47:10] INFO root fetch - processPackages [msfabricpysdkcore]: executing diffoscope
+[2024-05-26 14:47:10] INFO root fetch - processPackages [msfabricpysdkcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msfabricpysdkcore-0.0.8.tar.gz tmp/msfabricpysdkcore-0.0.9.tar.gz --markdown 20240526/m/msfabricpysdkcore/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 14:47:11] INFO root fetch - processPackages [streamlit-islands]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-islands-0.0.1.tar.gz]
+[2024-05-26 14:47:11] INFO root fetch - processPackages [streamlit-islands]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-islands-0.0.2.tar.gz]
+[2024-05-26 14:47:11] INFO root fetch - main [MainThread]: End processing [streamlit-islands]: success
+[2024-05-26 14:47:11] INFO root fetch - processPackages [msfabricpysdkcore]: Remove: archive file [/home/abi/fetcher/tmp/msfabricpysdkcore-0.0.8.tar.gz]
+[2024-05-26 14:47:11] INFO root fetch - processPackages [msfabricpysdkcore]: Remove: archive file [/home/abi/fetcher/tmp/msfabricpysdkcore-0.0.9.tar.gz]
+[2024-05-26 14:47:11] INFO root fetch - main [MainThread]: End processing [msfabricpysdkcore]: success
+[2024-05-26 14:47:11] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 14:47:11] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 14:47:11] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 14:47:11] INFO root fetch - processPackages [ffun]: Remove: archive file [/home/abi/fetcher/tmp/ffun-1.5.4.tar.gz]
+[2024-05-26 14:47:11] INFO root fetch - processPackages [ffun]: Remove: archive file [/home/abi/fetcher/tmp/ffun-1.5.5.tar.gz]
+[2024-05-26 14:47:11] INFO root fetch - main [MainThread]: End processing [ffun]: success
+[2024-05-26 14:47:11] INFO root fetch - main [MainThread]: Store serial: [23382942]
