@@ -4362,3 +4362,33 @@
 [2024-05-26 07:52:16] INFO root fetch - processPackages [neginver]: Remove: archive file [/home/abi/fetcher/tmp/neginver-0.0.6.tar.gz]
 [2024-05-26 07:52:16] INFO root fetch - main [MainThread]: End processing [neginver]: success
 [2024-05-26 07:52:16] INFO root fetch - main [MainThread]: Store serial: [23380167]
+[2024-05-26 07:54:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380167]
+[2024-05-26 07:54:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 07:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: that-depends
+[2024-05-26 07:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: half-orm
+[2024-05-26 07:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlalchemy-crud-plus
+[2024-05-26 07:54:25] INFO root fetch - processPackages [that-depends]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-26 07:54:26] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/3b/9b/e464ceeb38f8e03399625fde3e904c983ebd7f3d0fac48a0d3812ff971f8/that_depends-1.9.2.tar.gz
+[2024-05-26 07:54:26] INFO root fetch - processPackages [sqlalchemy-crud-plus]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-26 07:54:26] INFO root fetch - processPackages [half-orm]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 07:54:26] INFO root fetch - processPackages [sqlalchemy-crud-plus]: Downloading https://files.pythonhosted.org/packages/24/ba/e3071d995cfeaa72af3e8000565ec7fba1a5e7e0f0644e7532e24e4b09ba/sqlalchemy_crud_plus-0.0.2.tar.gz
+[2024-05-26 07:54:26] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/f9/50/d51759f6b00295af55f21c03fed2b8089aeaedf2f19b5f66ae3ebc545bac/that_depends-1.9.3.tar.gz
+[2024-05-26 07:54:26] INFO root fetch - processPackages [half-orm]: Downloading https://files.pythonhosted.org/packages/03/5b/7ad7adf499f569d057fff1e0e6bc40a51103c154388596eab2c850d378f4/half_orm-0.9.8.tar.gz
+[2024-05-26 07:54:26] INFO root fetch - processPackages [that-depends]: executing diffoscope
+[2024-05-26 07:54:26] INFO root fetch - processPackages [that-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/that_depends-1.9.2.tar.gz tmp/that_depends-1.9.3.tar.gz --markdown 20240526/t/that-depends/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-05-26 07:54:26] INFO root fetch - processPackages [sqlalchemy-crud-plus]: Downloading https://files.pythonhosted.org/packages/45/30/263a95a627c268eebeb4aad95af57df481e31cb7d567f10dcff827aaff0b/sqlalchemy_crud_plus-0.0.3.tar.gz
+[2024-05-26 07:54:26] INFO root fetch - processPackages [half-orm]: Downloading https://files.pythonhosted.org/packages/9b/56/df1f5dae72d6953a2f5458c12c0689212adb79ad73442b5934bc404993bd/half_orm-0.9.9.tar.gz
+[2024-05-26 07:54:26] INFO root fetch - processPackages [sqlalchemy-crud-plus]: executing diffoscope
+[2024-05-26 07:54:26] INFO root fetch - processPackages [sqlalchemy-crud-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy_crud_plus-0.0.2.tar.gz tmp/sqlalchemy_crud_plus-0.0.3.tar.gz --markdown 20240526/s/sqlalchemy-crud-plus/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-26 07:54:26] INFO root fetch - processPackages [half-orm]: executing diffoscope
+[2024-05-26 07:54:26] INFO root fetch - processPackages [half-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/half_orm-0.9.8.tar.gz tmp/half_orm-0.9.9.tar.gz --markdown 20240526/h/half-orm/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 07:54:26] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.9.2.tar.gz]
+[2024-05-26 07:54:26] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.9.3.tar.gz]
+[2024-05-26 07:54:26] INFO root fetch - main [MainThread]: End processing [that-depends]: success
+[2024-05-26 07:54:27] INFO root fetch - processPackages [sqlalchemy-crud-plus]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_crud_plus-0.0.2.tar.gz]
+[2024-05-26 07:54:27] INFO root fetch - processPackages [sqlalchemy-crud-plus]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_crud_plus-0.0.3.tar.gz]
+[2024-05-26 07:54:27] INFO root fetch - main [MainThread]: End processing [sqlalchemy-crud-plus]: success
+[2024-05-26 07:54:27] INFO root fetch - processPackages [half-orm]: Remove: archive file [/home/abi/fetcher/tmp/half_orm-0.9.8.tar.gz]
+[2024-05-26 07:54:27] INFO root fetch - processPackages [half-orm]: Remove: archive file [/home/abi/fetcher/tmp/half_orm-0.9.9.tar.gz]
+[2024-05-26 07:54:27] INFO root fetch - main [MainThread]: End processing [half-orm]: success
+[2024-05-26 07:54:27] INFO root fetch - main [MainThread]: Store serial: [23380176]
