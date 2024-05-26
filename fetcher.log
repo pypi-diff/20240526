@@ -10522,3 +10522,46 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:42:40] INFO root fetch - processPackages [easychart]: Remove: archive file [/home/abi/fetcher/tmp/easychart-0.1.9.tar.gz]
 [2024-05-26 14:42:40] INFO root fetch - main [MainThread]: End processing [easychart]: success
 [2024-05-26 14:42:40] INFO root fetch - main [MainThread]: Store serial: [23382905]
+[2024-05-26 14:44:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382905]
+[2024-05-26 14:44:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RodTracker
+[2024-05-26 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contact-group-local
+[2024-05-26 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scripro
+[2024-05-26 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webscout
+[2024-05-26 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: open-pcc-metric
+[2024-05-26 14:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: findanywhere
+[2024-05-26 14:44:54] INFO root fetch - processPackages [RodTracker]: New version: [0.6.3.dev5] Old Version: [0.6.3.dev2]
+[2024-05-26 14:44:54] INFO root fetch - processPackages [contact-group-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 14:44:54] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/63/e5/ff261731db98a38a39f4657a4cd1e04b2a998f175a7af36c640220ff9b00/contact-group-local-0.0.8.tar.gz
+[2024-05-26 14:44:54] WARNING root fetch - processPackages [open-pcc-metric]: Skipping, unable to determine old version
+[2024-05-26 14:44:54] INFO root fetch - main [MainThread]: End processing [open-pcc-metric] error
+[2024-05-26 14:44:54] INFO root fetch - processPackages [findanywhere]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-05-26 14:44:54] INFO root fetch - processPackages [webscout]: New version: [2.9] Old Version: [2.8]
+[2024-05-26 14:44:54] INFO root fetch - processPackages [scripro]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-26 14:44:54] INFO root fetch - processPackages [RodTracker]: Downloading https://files.pythonhosted.org/packages/80/b7/2ac5a016a80202f0c9b1430d0d46cbb9a7319f5752b12fcd65d15242cbf2/rodtracker-0.6.3.dev2.tar.gz
+[2024-05-26 14:44:54] WARNING root fetch - processPackages [RodTracker]: Skipping package: exceeds size limit 16671778>=10485760
+[2024-05-26 14:44:54] INFO root fetch - main [MainThread]: End processing [RodTracker] error
+[2024-05-26 14:44:54] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/84/cc/f78576331b2ff0f497f4640872d65b71ec33ae804f6a44bb2f10f1957687/contact-group-local-0.0.9.tar.gz
+[2024-05-26 14:44:54] INFO root fetch - processPackages [scripro]: Downloading https://files.pythonhosted.org/packages/58/e4/5dc51c40ddc482d810ce85fa5386b832d6de3b76032f1949a8b9bb3bef9e/scripro-1.1.8.tar.gz
+[2024-05-26 14:44:54] INFO root fetch - processPackages [findanywhere]: Downloading https://files.pythonhosted.org/packages/dc/96/3b7799c1e6b5d5271a82d45e321d783f8a6b7f3331b7feefb4974ac0c943/findanywhere-0.1.0.tar.gz
+[2024-05-26 14:44:55] WARNING root fetch - processPackages [scripro]: Skipping package: exceeds size limit 21360012>=10485760
+[2024-05-26 14:44:55] INFO root fetch - main [MainThread]: End processing [scripro] error
+[2024-05-26 14:44:55] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/c8/37/1a094f3d65eb904124fed52e5f1f22212a9032335e9e8e74768dca276e20/webscout-2.8.tar.gz
+[2024-05-26 14:44:55] INFO root fetch - processPackages [contact-group-local]: executing diffoscope
+[2024-05-26 14:44:55] INFO root fetch - processPackages [contact-group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-group-local-0.0.8.tar.gz tmp/contact-group-local-0.0.9.tar.gz --markdown 20240526/c/contact-group-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 14:44:55] INFO root fetch - processPackages [findanywhere]: Downloading https://files.pythonhosted.org/packages/fb/8b/9b00b9ac150162672f219b25bb0f02bdf0796abd5befea89e6e9f0bd2390/findanywhere-1.0.0.tar.gz
+[2024-05-26 14:44:55] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/d6/91/55909baed25edcb8992a4c11042b009a9b72695315741d969767acfb0095/webscout-2.9.tar.gz
+[2024-05-26 14:44:55] INFO root fetch - processPackages [findanywhere]: executing diffoscope
+[2024-05-26 14:44:55] INFO root fetch - processPackages [findanywhere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findanywhere-0.1.0.tar.gz tmp/findanywhere-1.0.0.tar.gz --markdown 20240526/f/findanywhere/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-05-26 14:44:55] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.8.tar.gz]
+[2024-05-26 14:44:55] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
+[2024-05-26 14:44:55] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
+[2024-05-26 14:44:55] INFO root fetch - processPackages [webscout]: executing diffoscope
+[2024-05-26 14:44:55] INFO root fetch - processPackages [webscout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscout-2.8.tar.gz tmp/webscout-2.9.tar.gz --markdown 20240526/w/webscout/2.8-2.9/README.md --exclude *.pyd
+[2024-05-26 14:44:56] INFO root fetch - processPackages [findanywhere]: Remove: archive file [/home/abi/fetcher/tmp/findanywhere-0.1.0.tar.gz]
+[2024-05-26 14:44:56] INFO root fetch - processPackages [findanywhere]: Remove: archive file [/home/abi/fetcher/tmp/findanywhere-1.0.0.tar.gz]
+[2024-05-26 14:44:56] INFO root fetch - main [MainThread]: End processing [findanywhere]: success
+[2024-05-26 14:44:56] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-2.8.tar.gz]
+[2024-05-26 14:44:56] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-2.9.tar.gz]
+[2024-05-26 14:44:56] INFO root fetch - main [MainThread]: End processing [webscout]: success
+[2024-05-26 14:44:56] INFO root fetch - main [MainThread]: Store serial: [23382927]
