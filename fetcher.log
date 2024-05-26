@@ -3690,3 +3690,33 @@
 [2024-05-26 06:49:33] INFO root fetch - processPackages [django-modeltranslation]: Remove: archive file [/home/abi/fetcher/tmp/django-modeltranslation-0.9.1.tar.gz]
 [2024-05-26 06:49:33] INFO root fetch - main [MainThread]: End processing [django-modeltranslation]: success
 [2024-05-26 06:49:33] INFO root fetch - main [MainThread]: Store serial: [23379736]
+[2024-05-26 06:51:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379736]
+[2024-05-26 06:51:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 06:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2024-05-26 06:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: termpandas
+[2024-05-26 06:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: remarkable-update-fuse
+[2024-05-26 06:51:41] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-26 06:51:41] INFO root fetch - processPackages [remarkable-update-fuse]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-26 06:51:41] INFO root fetch - processPackages [termpandas]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 06:51:41] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-26 06:51:41] INFO root fetch - processPackages [remarkable-update-fuse]: Downloading https://files.pythonhosted.org/packages/94/ef/06593dff22ed7576c324b27ecbbf6b98446638fe35a3e685cd046b449f67/remarkable_update_fuse-1.1.0.tar.gz
+[2024-05-26 06:51:41] INFO root fetch - processPackages [termpandas]: Downloading https://files.pythonhosted.org/packages/15/50/9648c7b906a146f65f25745ae0dc783b7c3209c51d22b9205bbab152b7fd/termpandas-0.2.2.tar.gz
+[2024-05-26 06:51:41] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-26 06:51:41] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-26 06:51:41] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240526/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-26 06:51:42] INFO root fetch - processPackages [remarkable-update-fuse]: Downloading https://files.pythonhosted.org/packages/dc/7f/b0074b57e62589dc1cdae058645b23aa9808bc7f55d3c1bfae5a921a8ed9/remarkable_update_fuse-1.1.1.tar.gz
+[2024-05-26 06:51:42] INFO root fetch - processPackages [remarkable-update-fuse]: executing diffoscope
+[2024-05-26 06:51:42] INFO root fetch - processPackages [remarkable-update-fuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remarkable_update_fuse-1.1.0.tar.gz tmp/remarkable_update_fuse-1.1.1.tar.gz --markdown 20240526/r/remarkable-update-fuse/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-26 06:51:42] INFO root fetch - processPackages [termpandas]: Downloading https://files.pythonhosted.org/packages/5d/6c/f1e7e95ff03208faff4d6ad0ba4131a7c4b03a6bdc1bd18af183db876574/termpandas-0.2.3.tar.gz
+[2024-05-26 06:51:42] INFO root fetch - processPackages [termpandas]: executing diffoscope
+[2024-05-26 06:51:42] INFO root fetch - processPackages [termpandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/termpandas-0.2.2.tar.gz tmp/termpandas-0.2.3.tar.gz --markdown 20240526/t/termpandas/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 06:51:42] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-26 06:51:42] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-26 06:51:42] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-26 06:51:42] INFO root fetch - processPackages [remarkable-update-fuse]: Remove: archive file [/home/abi/fetcher/tmp/remarkable_update_fuse-1.1.0.tar.gz]
+[2024-05-26 06:51:42] INFO root fetch - processPackages [remarkable-update-fuse]: Remove: archive file [/home/abi/fetcher/tmp/remarkable_update_fuse-1.1.1.tar.gz]
+[2024-05-26 06:51:42] INFO root fetch - main [MainThread]: End processing [remarkable-update-fuse]: success
+[2024-05-26 06:51:42] INFO root fetch - processPackages [termpandas]: Remove: archive file [/home/abi/fetcher/tmp/termpandas-0.2.2.tar.gz]
+[2024-05-26 06:51:42] INFO root fetch - processPackages [termpandas]: Remove: archive file [/home/abi/fetcher/tmp/termpandas-0.2.3.tar.gz]
+[2024-05-26 06:51:42] INFO root fetch - main [MainThread]: End processing [termpandas]: success
+[2024-05-26 06:51:42] INFO root fetch - main [MainThread]: Store serial: [23379744]
