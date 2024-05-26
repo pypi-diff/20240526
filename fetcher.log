@@ -9434,3 +9434,43 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:09:56] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev9.tar.gz]
 [2024-05-26 13:09:56] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-26 13:09:56] INFO root fetch - main [MainThread]: Store serial: [23382358]
+[2024-05-26 13:12:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382358]
+[2024-05-26 13:12:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 13:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scripro
+[2024-05-26 13:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sounderpy
+[2024-05-26 13:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CloudConnector
+[2024-05-26 13:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dcspy
+[2024-05-26 13:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cadprox
+[2024-05-26 13:12:09] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 13:12:09] INFO root fetch - processPackages [scripro]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-26 13:12:09] INFO root fetch - processPackages [cadprox]: New version: [5.5] Old Version: [5.4]
+[2024-05-26 13:12:09] INFO root fetch - processPackages [sounderpy]: New version: [3.0.4.dev1] Old Version: [3.0.3]
+[2024-05-26 13:12:09] INFO root fetch - processPackages [dcspy]: New version: [3.5.0] Old Version: [3.4.2]
+[2024-05-26 13:12:09] INFO root fetch - processPackages [scripro]: Downloading https://files.pythonhosted.org/packages/58/e4/5dc51c40ddc482d810ce85fa5386b832d6de3b76032f1949a8b9bb3bef9e/scripro-1.1.8.tar.gz
+[2024-05-26 13:12:09] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/e2/f9/0d942c920d8483cfe880634f0e3e10bf0e20720761d2bd92d82015f0529f/cadprox-5.4.tar.gz
+[2024-05-26 13:12:09] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 13:12:09] WARNING root fetch - processPackages [scripro]: Skipping package: exceeds size limit 21360012>=10485760
+[2024-05-26 13:12:10] INFO root fetch - main [MainThread]: End processing [scripro] error
+[2024-05-26 13:12:10] INFO root fetch - processPackages [sounderpy]: Downloading https://files.pythonhosted.org/packages/6c/f1/41a761a0f346596d868451f78f74f4309ee057a094cc2374349e220971b8/sounderpy-3.0.3.tar.gz
+[2024-05-26 13:12:10] INFO root fetch - processPackages [dcspy]: Downloading https://files.pythonhosted.org/packages/f1/48/b339fbe67c6b829a943326d45a66aa8a746604fcfd49f08c57acaff94395/dcspy-3.4.2.tar.gz
+[2024-05-26 13:12:10] WARNING root fetch - processPackages [dcspy]: Skipping package: exceeds size limit 14031361>=10485760
+[2024-05-26 13:12:10] INFO root fetch - main [MainThread]: End processing [dcspy] error
+[2024-05-26 13:12:10] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 13:12:10] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/4d/93/0a0eae2033100dbc5d4f75e94c087573418cce3a95c8cc1122f811b1e62a/cadprox-5.5.tar.gz
+[2024-05-26 13:12:10] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 13:12:10] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 13:12:10] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 13:12:10] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-5.4.tar.gz tmp/cadprox-5.5.tar.gz --markdown 20240526/c/cadprox/5.4-5.5/README.md --exclude *.pyd
+[2024-05-26 13:12:10] INFO root fetch - processPackages [sounderpy]: Downloading https://files.pythonhosted.org/packages/43/bf/34859d8f75b71b142089ed2a03ee888dca91378068ae9451f394cf5224de/sounderpy-3.0.4.dev1.tar.gz
+[2024-05-26 13:12:10] INFO root fetch - processPackages [sounderpy]: executing diffoscope
+[2024-05-26 13:12:10] INFO root fetch - processPackages [sounderpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sounderpy-3.0.3.tar.gz tmp/sounderpy-3.0.4.dev1.tar.gz --markdown 20240526/s/sounderpy/3.0.3-3.0.4.dev1/README.md --exclude *.pyd
+[2024-05-26 13:12:10] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 13:12:10] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 13:12:10] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 13:12:10] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-5.4.tar.gz]
+[2024-05-26 13:12:10] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-5.5.tar.gz]
+[2024-05-26 13:12:10] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 13:12:11] INFO root fetch - processPackages [sounderpy]: Remove: archive file [/home/abi/fetcher/tmp/sounderpy-3.0.3.tar.gz]
+[2024-05-26 13:12:11] INFO root fetch - processPackages [sounderpy]: Remove: archive file [/home/abi/fetcher/tmp/sounderpy-3.0.4.dev1.tar.gz]
+[2024-05-26 13:12:11] INFO root fetch - main [MainThread]: End processing [sounderpy]: success
+[2024-05-26 13:12:11] INFO root fetch - main [MainThread]: Store serial: [23382373]
