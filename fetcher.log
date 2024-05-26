@@ -16434,3 +16434,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:22:06] INFO root fetch - main [MainThread]: End processing [pyarcamsolo]: success
 [2024-05-26 20:22:06] INFO root fetch - main [MainThread]: End processing [kamangir]: success
 [2024-05-26 20:22:06] INFO root fetch - main [MainThread]: Store serial: [23385676]
+[2024-05-26 20:24:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385676]
+[2024-05-26 20:24:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 20:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gammarers.aws-secure-vpc-bucket
+[2024-05-26 20:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-26 20:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wikipathway2genes
+[2024-05-26 20:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gammarers.aws-secure-frontend-web-app-cloudfront-distribution
+[2024-05-26 20:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gammarers.aws-secure-log-bucket
+[2024-05-26 20:24:16] INFO root fetch - processPackages [wikipathway2genes]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-26 20:24:16] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 20:24:16] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-05-26 20:24:16] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-05-26 20:24:16] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: New version: [1.6.6] Old Version: [1.6.5]
+[2024-05-26 20:24:16] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 20:24:16] INFO root fetch - processPackages [wikipathway2genes]: Downloading https://files.pythonhosted.org/packages/f4/b1/47eb28b2a1ebbfeff8bf708aafaab0e454f046631176552b74f0fe01332a/wikipathway2genes-0.0.3.tar.gz
+[2024-05-26 20:24:16] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/07/73/a92e7a0541b3ebb3ba36eb9e3fe2d4a2db13cb9d9164a5876c9000a305dc/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.4.tar.gz
+[2024-05-26 20:24:16] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/7b/71/85618bbed5d600f689cff4b3b9d989f255c6bc8e922433f71d368532e4bd/gammarers.aws-secure-vpc-bucket-1.3.4.tar.gz
+[2024-05-26 20:24:16] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/9a/66/3f23277aa480f394f5730f7a509e4f7287b1eddfc799e477b38674f0de5c/gammarers.aws-secure-log-bucket-1.6.5.tar.gz
+[2024-05-26 20:24:16] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 20:24:17] INFO root fetch - processPackages [wikipathway2genes]: Downloading https://files.pythonhosted.org/packages/79/63/5d5ff36670742ee1bb6d10b3f0d0bcf62001494612dc06282f7bd0478c7d/wikipathway2genes-0.0.4.tar.gz
+[2024-05-26 20:24:17] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 20:24:17] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 20:24:17] INFO root fetch - processPackages [wikipathway2genes]: executing diffoscope
+[2024-05-26 20:24:17] INFO root fetch - processPackages [wikipathway2genes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikipathway2genes-0.0.3.tar.gz tmp/wikipathway2genes-0.0.4.tar.gz --markdown 20240526/w/wikipathway2genes/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/96/fa/f034f9a263ea82c09813ea439a4d1817fe1f0cbe19dcd386cbaa6fd59b64/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.5.tar.gz
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/09/f1/bf2fa531f18aa2e4e9b67e8eea38c277967c367a8dc396a888ce7bdfc542/gammarers.aws-secure-vpc-bucket-1.3.5.tar.gz
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/b9/65/68cfdd58e277e033eb4202673c8cdcc6f2452fb2521168a4e31a163b028a/gammarers.aws-secure-log-bucket-1.6.6.tar.gz
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: executing diffoscope
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.4.tar.gz tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.5.tar.gz --markdown 20240526/g/gammarers.aws-secure-frontend-web-app-cloudfront-distribution/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: executing diffoscope
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-vpc-bucket-1.3.4.tar.gz tmp/gammarers.aws-secure-vpc-bucket-1.3.5.tar.gz --markdown 20240526/g/gammarers.aws-secure-vpc-bucket/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: executing diffoscope
+[2024-05-26 20:24:17] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-log-bucket-1.6.5.tar.gz tmp/gammarers.aws-secure-log-bucket-1.6.6.tar.gz --markdown 20240526/g/gammarers.aws-secure-log-bucket/1.6.5-1.6.6/README.md --exclude *.pyd
+[2024-05-26 20:24:17] INFO root fetch - processPackages [wikipathway2genes]: Remove: archive file [/home/abi/fetcher/tmp/wikipathway2genes-0.0.3.tar.gz]
+[2024-05-26 20:24:17] INFO root fetch - processPackages [wikipathway2genes]: Remove: archive file [/home/abi/fetcher/tmp/wikipathway2genes-0.0.4.tar.gz]
+[2024-05-26 20:24:17] INFO root fetch - main [MainThread]: End processing [wikipathway2genes]: success
+[2024-05-26 20:24:18] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.4.tar.gz]
+[2024-05-26 20:24:18] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.5.tar.gz]
+[2024-05-26 20:24:18] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: success
+[2024-05-26 20:24:18] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 20:24:18] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 20:24:18] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 20:24:18] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.5.tar.gz]
+[2024-05-26 20:24:18] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.6.tar.gz]
+[2024-05-26 20:24:18] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-log-bucket]: success
+[2024-05-26 20:24:18] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.4.tar.gz]
+[2024-05-26 20:24:18] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.5.tar.gz]
+[2024-05-26 20:24:18] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-vpc-bucket]: success
+[2024-05-26 20:24:18] INFO root fetch - main [MainThread]: Store serial: [23385692]
