@@ -11680,3 +11680,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:54:42] INFO root fetch - processPackages [OctoBot-Commons]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Commons-1.9.9.tar.gz]
 [2024-05-26 15:54:42] INFO root fetch - main [MainThread]: End processing [OctoBot-Commons]: success
 [2024-05-26 15:54:42] INFO root fetch - main [MainThread]: Store serial: [23383531]
+[2024-05-26 15:57:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383531]
+[2024-05-26 15:57:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 15:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-qanova
+[2024-05-26 15:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dscontexai
+[2024-05-26 15:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: copasi-basico
+[2024-05-26 15:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OctoBot-Trading
+[2024-05-26 15:57:11] INFO root fetch - processPackages [dscontexai]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 15:57:11] WARNING root fetch - processPackages [pytest-qanova]: Skipping, unable to determine old version
+[2024-05-26 15:57:11] INFO root fetch - main [MainThread]: End processing [pytest-qanova] error
+[2024-05-26 15:57:11] INFO root fetch - processPackages [copasi-basico]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 15:57:11] INFO root fetch - processPackages [OctoBot-Trading]: New version: [2.4.9] Old Version: [2.4.84]
+[2024-05-26 15:57:11] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/b9/71/a4e3e9bc9e27c84343bf5fcc009bd23eb97887f455686cc9902dd7ff75d5/dscontexai-0.0.1.tar.gz
+[2024-05-26 15:57:11] INFO root fetch - processPackages [copasi-basico]: Downloading https://files.pythonhosted.org/packages/2c/06/652f88bbab57586dfe4ca1bc14ba17e1e81fcf9425df961eb214afb88eae/copasi_basico-0.8.tar.gz
+[2024-05-26 15:57:11] INFO root fetch - processPackages [OctoBot-Trading]: Downloading https://files.pythonhosted.org/packages/71/92/7ae2107098593aa0ff5be666b3018ee8f365a94cf9d31bb85ecbb764435b/OctoBot-Trading-2.4.84.tar.gz
+[2024-05-26 15:57:12] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/c2/52/614183b7480420c16f404db333780be99d097539a0212f04fb5b2acd40fb/dscontexai-0.0.2.tar.gz
+[2024-05-26 15:57:12] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 15:57:12] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.0.1.tar.gz tmp/dscontexai-0.0.2.tar.gz --markdown 20240526/d/dscontexai/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 15:57:12] INFO root fetch - processPackages [OctoBot-Trading]: Downloading https://files.pythonhosted.org/packages/77/bc/ecdb68086de1f382830bf4a54be7e64fdcf11183cbc9e6485fe1c829615e/OctoBot-Trading-2.4.9.tar.gz
+[2024-05-26 15:57:12] INFO root fetch - processPackages [OctoBot-Trading]: executing diffoscope
+[2024-05-26 15:57:12] INFO root fetch - processPackages [OctoBot-Trading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Trading-2.4.84.tar.gz tmp/OctoBot-Trading-2.4.9.tar.gz --markdown 20240526/O/OctoBot-Trading/2.4.84-2.4.9/README.md --exclude *.pyd
+[2024-05-26 15:57:12] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.1.tar.gz]
+[2024-05-26 15:57:12] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.2.tar.gz]
+[2024-05-26 15:57:12] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 15:57:13] INFO root fetch - processPackages [copasi-basico]: Downloading https://files.pythonhosted.org/packages/ad/c1/8141b5ce634d2722b7cc85f199f86f66248f1b3621113604bdfd49c590ab/copasi_basico-0.9.tar.gz
+[2024-05-26 15:57:13] INFO root fetch - processPackages [copasi-basico]: executing diffoscope
+[2024-05-26 15:57:13] INFO root fetch - processPackages [copasi-basico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copasi_basico-0.8.tar.gz tmp/copasi_basico-0.9.tar.gz --markdown 20240526/c/copasi-basico/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 15:57:14] INFO root fetch - processPackages [copasi-basico]: Remove: archive file [/home/abi/fetcher/tmp/copasi_basico-0.8.tar.gz]
+[2024-05-26 15:57:14] INFO root fetch - processPackages [copasi-basico]: Remove: archive file [/home/abi/fetcher/tmp/copasi_basico-0.9.tar.gz]
+[2024-05-26 15:57:14] INFO root fetch - main [MainThread]: End processing [copasi-basico]: success
+[2024-05-26 15:57:15] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.84.tar.gz]
+[2024-05-26 15:57:15] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
+[2024-05-26 15:57:15] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
+[2024-05-26 15:57:15] INFO root fetch - main [MainThread]: Store serial: [23383544]
