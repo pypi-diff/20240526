@@ -10720,3 +10720,12 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:56:15] INFO root fetch - processPackages [topic-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/topic_benchmark-0.2.7.tar.gz]
 [2024-05-26 14:56:15] INFO root fetch - main [MainThread]: End processing [topic-benchmark]: success
 [2024-05-26 14:56:15] INFO root fetch - main [MainThread]: Store serial: [23382987]
+[2024-05-26 14:58:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382987]
+[2024-05-26 14:58:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 14:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phylogenetic-tree-vis-comp
+[2024-05-26 14:58:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: z2m-log-parser
+[2024-05-26 14:58:29] WARNING root fetch - processPackages [z2m-log-parser]: Skipping, unable to determine old version
+[2024-05-26 14:58:29] INFO root fetch - main [MainThread]: End processing [z2m-log-parser] error
+[2024-05-26 14:58:29] WARNING root fetch - processPackages [phylogenetic-tree-vis-comp]: Skipping, unable to determine old version
+[2024-05-26 14:58:29] INFO root fetch - main [MainThread]: End processing [phylogenetic-tree-vis-comp] error
+[2024-05-26 14:58:29] INFO root fetch - main [MainThread]: Store serial: [23383004]
