@@ -14771,3 +14771,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:41:29] INFO root fetch - processPackages [gradio-agentchatbot]: Remove: archive file [/home/abi/fetcher/tmp/gradio_agentchatbot-0.0.4.tar.gz]
 [2024-05-26 18:41:29] INFO root fetch - main [MainThread]: End processing [gradio-agentchatbot]: success
 [2024-05-26 18:41:29] INFO root fetch - main [MainThread]: Store serial: [23384833]
+[2024-05-26 18:43:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384833]
+[2024-05-26 18:43:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 18:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-otel-smtp-backend
+[2024-05-26 18:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Maslib
+[2024-05-26 18:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apeboiy
+[2024-05-26 18:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inline-snapshot
+[2024-05-26 18:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rooms-shared-services
+[2024-05-26 18:43:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zenaura
+[2024-05-26 18:43:39] WARNING root fetch - processPackages [django-otel-smtp-backend]: Skipping, unable to determine old version
+[2024-05-26 18:43:39] INFO root fetch - main [MainThread]: End processing [django-otel-smtp-backend] error
+[2024-05-26 18:43:39] INFO root fetch - processPackages [apeboiy]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 18:43:39] INFO root fetch - processPackages [Maslib]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-26 18:43:39] INFO root fetch - processPackages [zenaura]: New version: [0.9.56] Old Version: [0.9.55]
+[2024-05-26 18:43:39] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-05-26 18:43:39] INFO root fetch - processPackages [inline-snapshot]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-26 18:43:39] INFO root fetch - processPackages [apeboiy]: Downloading https://files.pythonhosted.org/packages/2c/d1/13ae5c5ceb0c97a91d946e1dd5fc329b3f384b59630ad259ab7ebe72713d/apeboiy-0.0.8.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/e0/91/ec8110dca6096c48d1e74d66074462a9a00f655f67dce858405b68fe9edf/Maslib-0.1.4.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/82/d7/14afaa8d69026e5914e531dad704a8cdfafe286a0ac42ae883e860d2d179/zenaura-0.9.55.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [inline-snapshot]: Downloading https://files.pythonhosted.org/packages/3a/36/2833c3ee269571344f119f5fa5504c835d1a679d300bdbe81b9b59ce6377/inline_snapshot-0.8.2.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [apeboiy]: Downloading https://files.pythonhosted.org/packages/04/42/a8230541f443842d5b00d865f7079650b8c865bda89a3de4ebc4010d0579/apeboiy-0.0.9.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [apeboiy]: executing diffoscope
+[2024-05-26 18:43:40] INFO root fetch - processPackages [apeboiy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apeboiy-0.0.8.tar.gz tmp/apeboiy-0.0.9.tar.gz --markdown 20240526/a/apeboiy/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 18:43:40] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/56/be/2a4e5595d1934af315e33b8c8609c4de85fc6d25d44f61c954c704355532/Maslib-0.1.5.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/7f/86/a574de485798b2d7713ebe352ef7ee87a21b6712083231fcaba131be603f/zenaura-0.9.56.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-05-26 18:43:40] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240526/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-05-26 18:43:40] INFO root fetch - processPackages [Maslib]: executing diffoscope
+[2024-05-26 18:43:40] INFO root fetch - processPackages [Maslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Maslib-0.1.4.tar.gz tmp/Maslib-0.1.5.tar.gz --markdown 20240526/M/Maslib/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-26 18:43:40] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 18:43:40] INFO root fetch - processPackages [inline-snapshot]: Downloading https://files.pythonhosted.org/packages/52/de/5cdde68682e2ed1453a071038a72ed83f8f41595d3fbd8f144a326c7242e/inline_snapshot-0.9.0.tar.gz
+[2024-05-26 18:43:40] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.55.tar.gz tmp/zenaura-0.9.56.tar.gz --markdown 20240526/z/zenaura/0.9.55-0.9.56/README.md --exclude *.pyd
+[2024-05-26 18:43:40] INFO root fetch - processPackages [inline-snapshot]: executing diffoscope
+[2024-05-26 18:43:40] INFO root fetch - processPackages [inline-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inline_snapshot-0.8.2.tar.gz tmp/inline_snapshot-0.9.0.tar.gz --markdown 20240526/i/inline-snapshot/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-26 18:43:41] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-05-26 18:43:41] INFO root fetch - processPackages [apeboiy]: Remove: archive file [/home/abi/fetcher/tmp/apeboiy-0.0.8.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - processPackages [apeboiy]: Remove: archive file [/home/abi/fetcher/tmp/apeboiy-0.0.9.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - main [MainThread]: End processing [apeboiy]: success
+[2024-05-26 18:43:41] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.55.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.56.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 18:43:41] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.1.4.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.1.5.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - main [MainThread]: End processing [Maslib]: success
+[2024-05-26 18:43:41] INFO root fetch - processPackages [inline-snapshot]: Remove: archive file [/home/abi/fetcher/tmp/inline_snapshot-0.8.2.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - processPackages [inline-snapshot]: Remove: archive file [/home/abi/fetcher/tmp/inline_snapshot-0.9.0.tar.gz]
+[2024-05-26 18:43:41] INFO root fetch - main [MainThread]: End processing [inline-snapshot]: success
+[2024-05-26 18:43:41] INFO root fetch - main [MainThread]: Store serial: [23384860]
