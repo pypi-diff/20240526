@@ -9758,3 +9758,18 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:37:00] INFO root fetch - processPackages [continuo]: Remove: archive file [/home/abi/fetcher/tmp/continuo-0.3.0.tar.gz]
 [2024-05-26 13:37:00] INFO root fetch - main [MainThread]: End processing [continuo]: success
 [2024-05-26 13:37:00] INFO root fetch - main [MainThread]: Store serial: [23382547]
+[2024-05-26 13:39:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382547]
+[2024-05-26 13:39:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 13:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Modul-Wrapper
+[2024-05-26 13:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyuptech
+[2024-05-26 13:39:14] INFO root fetch - processPackages [pyuptech]: New version: [0.1.6.2] Old Version: [0.1.6.1]
+[2024-05-26 13:39:14] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/87/6d/b4f31cfc8bb0033598d8bff095af04d674c87036310fe8ce6fac7c6a93cf/pyuptech-0.1.6.1.tar.gz
+[2024-05-26 13:39:14] WARNING root fetch - processPackages [Modul-Wrapper]: Skipping, unable to determine old version
+[2024-05-26 13:39:14] INFO root fetch - main [MainThread]: End processing [Modul-Wrapper] error
+[2024-05-26 13:39:14] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/87/4a/7a2123dd9a8b19633de24622b5e38420cdc66098996d8f327ba7b70aca02/pyuptech-0.1.6.2.tar.gz
+[2024-05-26 13:39:14] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-05-26 13:39:14] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.6.1.tar.gz tmp/pyuptech-0.1.6.2.tar.gz --markdown 20240526/p/pyuptech/0.1.6.1-0.1.6.2/README.md --exclude *.pyd
+[2024-05-26 13:39:15] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.6.1.tar.gz]
+[2024-05-26 13:39:15] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.6.2.tar.gz]
+[2024-05-26 13:39:15] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-05-26 13:39:15] INFO root fetch - main [MainThread]: Store serial: [23382563]
