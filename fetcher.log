@@ -5495,3 +5495,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:28:39] INFO root fetch - processPackages [pygenomeviz]: Remove: archive file [/home/abi/fetcher/tmp/pygenomeviz-1.1.0.tar.gz]
 [2024-05-26 09:28:39] INFO root fetch - main [MainThread]: End processing [pygenomeviz]: success
 [2024-05-26 09:28:39] INFO root fetch - main [MainThread]: Store serial: [23380621]
+[2024-05-26 09:30:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380621]
+[2024-05-26 09:30:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 09:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiy-worker
+[2024-05-26 09:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cutseq
+[2024-05-26 09:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ansar-connect
+[2024-05-26 09:30:50] INFO root fetch - processPackages [aiy-worker]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 09:30:50] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.264] Old Version: [0.1.263]
+[2024-05-26 09:30:50] INFO root fetch - processPackages [aiy-worker]: Downloading https://files.pythonhosted.org/packages/9b/2b/d1550666ab9f3b6cb21cb490d9a8107e7d6017302c820df8a9c0a2b69d8b/aiy_worker-0.0.5.tar.gz
+[2024-05-26 09:30:50] INFO root fetch - processPackages [cutseq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 09:30:50] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/58/37/87e976cd0a5974e0869fc8327737667b3b658095109f3f7f1f6108df5258/ansar_connect-0.1.263.tar.gz
+[2024-05-26 09:30:51] INFO root fetch - processPackages [aiy-worker]: Downloading https://files.pythonhosted.org/packages/6a/47/ef2dbc6f9c39801e7091c57b398938202dbcdaaa7cd81fb7b517338651ad/aiy_worker-0.0.6.tar.gz
+[2024-05-26 09:30:51] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/72/94/3e31caa39f56bc3c3cdf0be4641e5bc7476ecbacdb8aea5c168a29592a96/ansar_connect-0.1.264.tar.gz
+[2024-05-26 09:30:51] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-05-26 09:30:51] INFO root fetch - processPackages [aiy-worker]: executing diffoscope
+[2024-05-26 09:30:51] INFO root fetch - processPackages [aiy-worker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiy_worker-0.0.5.tar.gz tmp/aiy_worker-0.0.6.tar.gz --markdown 20240526/a/aiy-worker/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 09:30:51] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-05-26 09:30:51] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.263.tar.gz tmp/ansar_connect-0.1.264.tar.gz --markdown 20240526/a/ansar-connect/0.1.263-0.1.264/README.md --exclude *.pyd
+[2024-05-26 09:30:51] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/e5/82/45b103e58b439dac0cf4c7f6ef6957633721ec0f4553abfabba5ed961a0f/cutseq-0.0.9.tar.gz
+[2024-05-26 09:30:51] INFO root fetch - processPackages [aiy-worker]: Remove: archive file [/home/abi/fetcher/tmp/aiy_worker-0.0.5.tar.gz]
+[2024-05-26 09:30:51] INFO root fetch - processPackages [aiy-worker]: Remove: archive file [/home/abi/fetcher/tmp/aiy_worker-0.0.6.tar.gz]
+[2024-05-26 09:30:51] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-05-26 09:30:51] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.8.tar.gz tmp/cutseq-0.0.9.tar.gz --markdown 20240526/c/cutseq/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 09:30:51] INFO root fetch - main [MainThread]: End processing [aiy-worker]: success
+[2024-05-26 09:30:51] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.263.tar.gz]
+[2024-05-26 09:30:51] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.264.tar.gz]
+[2024-05-26 09:30:51] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-05-26 09:30:52] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-05-26 09:30:52] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
+[2024-05-26 09:30:52] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-05-26 09:30:52] INFO root fetch - main [MainThread]: Store serial: [23380630]
