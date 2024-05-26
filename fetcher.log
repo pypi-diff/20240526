@@ -11713,3 +11713,66 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:57:15] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
 [2024-05-26 15:57:15] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
 [2024-05-26 15:57:15] INFO root fetch - main [MainThread]: Store serial: [23383544]
+[2024-05-26 15:59:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383544]
+[2024-05-26 15:59:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 15:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-26 15:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mckinseysolvegame
+[2024-05-26 15:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dscontexai
+[2024-05-26 15:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zodchy-patterns
+[2024-05-26 15:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oahspe
+[2024-05-26 15:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pywechat391019
+[2024-05-26 15:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zodchy-fastapi
+[2024-05-26 15:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-prose-editor
+[2024-05-26 15:59:45] INFO root fetch - processPackages [dscontexai]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-26 15:59:45] WARNING root fetch - processPackages [pywechat391019]: Skipping, unable to determine old version
+[2024-05-26 15:59:45] INFO root fetch - main [MainThread]: End processing [pywechat391019] error
+[2024-05-26 15:59:45] WARNING root fetch - processPackages [oahspe]: Skipping, unable to determine old version
+[2024-05-26 15:59:45] INFO root fetch - processPackages [mckinseysolvegame]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 15:59:45] INFO root fetch - processPackages [zodchy-fastapi]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-26 15:59:45] INFO root fetch - main [MainThread]: End processing [oahspe] error
+[2024-05-26 15:59:45] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.338] Old Version: [0.0.337]
+[2024-05-26 15:59:45] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/c2/52/614183b7480420c16f404db333780be99d097539a0212f04fb5b2acd40fb/dscontexai-0.0.2.tar.gz
+[2024-05-26 15:59:45] INFO root fetch - processPackages [zodchy-patterns]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-26 15:59:45] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/9e/d4/cbbe9f8167c0c4f22e2936882a8b00168233892118edb1edd749c9cd2ded/mckinseysolvegame-1.0.1.tar.gz
+[2024-05-26 15:59:45] INFO root fetch - processPackages [zodchy-fastapi]: Downloading https://files.pythonhosted.org/packages/16/cd/0a825770abeac839bc7c83f3f8736b461b23e00e9e0045be9d64cb8d2b6a/zodchy_fastapi-0.3.0.tar.gz
+[2024-05-26 15:59:45] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/b9/81/0d0375373f6c61823d00cc9ceca0726a0cd05170297f1df9182d3b40b507/database_mysql_local-0.0.337.tar.gz
+[2024-05-26 15:59:45] INFO root fetch - processPackages [django-prose-editor]: New version: [0.4.0] Old Version: [0.3.4]
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-patterns]: Downloading https://files.pythonhosted.org/packages/6a/91/18e649979d5d963d48a8d3c42b7b462e7438edbcbe106c42a822bbe8f6e3/zodchy_patterns-0.2.1.tar.gz
+[2024-05-26 15:59:46] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/35/8b/4d7baab33c43c287172d90e0ae6017dcd004214bf0498f5a40438e74ad47/mckinseysolvegame-1.0.2.tar.gz
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-fastapi]: Downloading https://files.pythonhosted.org/packages/41/9d/a5a1bf1f8ab0b9c9857b503986b9a4f37f2654cbc7e8414915265d0f651d/zodchy_fastapi-0.3.1.tar.gz
+[2024-05-26 15:59:46] INFO root fetch - processPackages [django-prose-editor]: Downloading https://files.pythonhosted.org/packages/b9/d2/3ede077cdcd5d0e5ff3fc3b9ed32ebe3d63696f4697b158268c9ad32d54c/django_prose_editor-0.3.4.tar.gz
+[2024-05-26 15:59:46] INFO root fetch - processPackages [mckinseysolvegame]: executing diffoscope
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-fastapi]: executing diffoscope
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodchy_fastapi-0.3.0.tar.gz tmp/zodchy_fastapi-0.3.1.tar.gz --markdown 20240526/z/zodchy-fastapi/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-26 15:59:46] INFO root fetch - processPackages [mckinseysolvegame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mckinseysolvegame-1.0.1.tar.gz tmp/mckinseysolvegame-1.0.2.tar.gz --markdown 20240526/m/mckinseysolvegame/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 15:59:46] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/87/a2/1f4c80413d27b126a16e1aa8e715a4504afae6340317927fb0ca4e2f7ce3/database_mysql_local-0.0.338.tar.gz
+[2024-05-26 15:59:46] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/07/ba/8f43fb8484d2273901107528f4d077361a19ad4ccbf641d7bd3f4f18f9ef/dscontexai-0.0.3.tar.gz
+[2024-05-26 15:59:46] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 15:59:46] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.0.2.tar.gz tmp/dscontexai-0.0.3.tar.gz --markdown 20240526/d/dscontexai/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-26 15:59:46] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 15:59:46] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.337.tar.gz tmp/database_mysql_local-0.0.338.tar.gz --markdown 20240526/d/database-mysql-local/0.0.337-0.0.338/README.md --exclude *.pyd
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-patterns]: Downloading https://files.pythonhosted.org/packages/96/97/9e6c3abb84fd971224cf47f2a7163125749d186efd49e79488b91b9bec43/zodchy_patterns-0.3.0.tar.gz
+[2024-05-26 15:59:46] INFO root fetch - processPackages [django-prose-editor]: Downloading https://files.pythonhosted.org/packages/53/34/9ec9397781459906aa3c01e053ca1208c4ad13d7e43b9036d37c15cc019a/django_prose_editor-0.4.0.tar.gz
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-patterns]: executing diffoscope
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-patterns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodchy_patterns-0.2.1.tar.gz tmp/zodchy_patterns-0.3.0.tar.gz --markdown 20240526/z/zodchy-patterns/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-26 15:59:46] INFO root fetch - processPackages [django-prose-editor]: executing diffoscope
+[2024-05-26 15:59:46] INFO root fetch - processPackages [django-prose-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_prose_editor-0.3.4.tar.gz tmp/django_prose_editor-0.4.0.tar.gz --markdown 20240526/d/django-prose-editor/0.3.4-0.4.0/README.md --exclude *.pyd
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_fastapi-0.3.0.tar.gz]
+[2024-05-26 15:59:46] INFO root fetch - processPackages [zodchy-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_fastapi-0.3.1.tar.gz]
+[2024-05-26 15:59:46] INFO root fetch - main [MainThread]: End processing [zodchy-fastapi]: success
+[2024-05-26 15:59:46] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.2.tar.gz]
+[2024-05-26 15:59:46] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.3.tar.gz]
+[2024-05-26 15:59:46] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 15:59:46] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-1.0.1.tar.gz]
+[2024-05-26 15:59:46] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-1.0.2.tar.gz]
+[2024-05-26 15:59:46] INFO root fetch - main [MainThread]: End processing [mckinseysolvegame]: success
+[2024-05-26 15:59:47] INFO root fetch - processPackages [zodchy-patterns]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_patterns-0.2.1.tar.gz]
+[2024-05-26 15:59:47] INFO root fetch - processPackages [zodchy-patterns]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_patterns-0.3.0.tar.gz]
+[2024-05-26 15:59:47] INFO root fetch - main [MainThread]: End processing [zodchy-patterns]: success
+[2024-05-26 15:59:47] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.337.tar.gz]
+[2024-05-26 15:59:47] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.338.tar.gz]
+[2024-05-26 15:59:47] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 15:59:49] INFO root fetch - processPackages [django-prose-editor]: Remove: archive file [/home/abi/fetcher/tmp/django_prose_editor-0.3.4.tar.gz]
+[2024-05-26 15:59:49] INFO root fetch - processPackages [django-prose-editor]: Remove: archive file [/home/abi/fetcher/tmp/django_prose_editor-0.4.0.tar.gz]
+[2024-05-26 15:59:49] INFO root fetch - main [MainThread]: End processing [django-prose-editor]: success
+[2024-05-26 15:59:49] INFO root fetch - main [MainThread]: Store serial: [23383573]
