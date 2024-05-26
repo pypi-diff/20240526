@@ -11040,3 +11040,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:17:04] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.26-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-26 15:17:04] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-05-26 15:17:04] INFO root fetch - main [MainThread]: Store serial: [23383150]
+[2024-05-26 15:19:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383150]
+[2024-05-26 15:19:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 15:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textual
+[2024-05-26 15:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HSPiPy
+[2024-05-26 15:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: funky-modifiers
+[2024-05-26 15:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pi-awning-webthing
+[2024-05-26 15:19:28] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 15:19:28] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f3/91/ba07c9e27dbb568d0143cb8eab18a7b153f080c095d6be2a900c7fd69332/pi_awning_webthing-0.3.8.tar.gz
+[2024-05-26 15:19:28] INFO root fetch - processPackages [HSPiPy]: New version: [0.3] Old Version: [0.2]
+[2024-05-26 15:19:28] INFO root fetch - processPackages [funky-modifiers]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-05-26 15:19:29] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-26 15:19:29] INFO root fetch - processPackages [HSPiPy]: Downloading https://files.pythonhosted.org/packages/30/df/4e5eed50484d2d0c8d1f8fb497a5639bf63462337efa6fc1f2ee94770edc/HSPiPy-0.2.tar.gz
+[2024-05-26 15:19:29] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/29/ae/fcadd955de258a78d8bb7148994444c69ecd0cd4cb50b8ffe7ac16bdd837/funky_modifiers-0.2.0.tar.gz
+[2024-05-26 15:19:29] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/17/d2/002affba91d339187f5699c26fecc3fa3bf966f17c5d08bb696c724b63ee/textual-0.9.0.tar.gz
+[2024-05-26 15:19:29] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 15:19:29] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 15:19:29] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.8.tar.gz tmp/pi_awning_webthing-0.3.9.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 15:19:29] INFO root fetch - processPackages [HSPiPy]: Downloading https://files.pythonhosted.org/packages/72/70/7f3de7eefff0acfc2641d8d9dff3d1316d0a398429510e30e54241116c78/hspipy-0.3.tar.gz
+[2024-05-26 15:19:29] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/c4/4b/f53217aae4b01bd6c1cc1642e24bc2665b61ab32c9e871bd2a1446965b61/funky_modifiers-0.2.2.tar.gz
+[2024-05-26 15:19:29] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/0e/7d/2155bf024c3bdf1dc6365e109a16bab46098e032e62666565176ebc9f84a/textual-0.9.1.tar.gz
+[2024-05-26 15:19:29] INFO root fetch - processPackages [HSPiPy]: executing diffoscope
+[2024-05-26 15:19:29] INFO root fetch - processPackages [HSPiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HSPiPy-0.2.tar.gz tmp/hspipy-0.3.tar.gz --markdown 20240526/H/HSPiPy/0.2-0.3/README.md --exclude *.pyd
+[2024-05-26 15:19:29] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-26 15:19:29] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.2.0.tar.gz tmp/funky_modifiers-0.2.2.tar.gz --markdown 20240526/f/funky-modifiers/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-05-26 15:19:29] INFO root fetch - processPackages [textual]: executing diffoscope
+[2024-05-26 15:19:29] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20240526/t/textual/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-26 15:19:30] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.8.tar.gz]
+[2024-05-26 15:19:30] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 15:19:30] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 15:19:30] INFO root fetch - processPackages [HSPiPy]: Remove: archive file [/home/abi/fetcher/tmp/HSPiPy-0.2.tar.gz]
+[2024-05-26 15:19:30] INFO root fetch - processPackages [HSPiPy]: Remove: archive file [/home/abi/fetcher/tmp/hspipy-0.3.tar.gz]
+[2024-05-26 15:19:30] INFO root fetch - main [MainThread]: End processing [HSPiPy]: success
+[2024-05-26 15:19:30] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.0.tar.gz]
+[2024-05-26 15:19:30] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.2.tar.gz]
+[2024-05-26 15:19:30] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-26 15:19:30] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.0.tar.gz]
+[2024-05-26 15:19:30] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
+[2024-05-26 15:19:30] INFO root fetch - main [MainThread]: End processing [textual]: success
+[2024-05-26 15:19:30] INFO root fetch - main [MainThread]: Store serial: [23383165]
