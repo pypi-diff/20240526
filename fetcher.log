@@ -9979,3 +9979,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:57:21] INFO root fetch - processPackages [ctm-python-client]: Remove: archive file [/home/abi/fetcher/tmp/ctm-python-client-2.2.6.tar.gz]
 [2024-05-26 13:57:21] INFO root fetch - main [MainThread]: End processing [ctm-python-client]: success
 [2024-05-26 13:57:21] INFO root fetch - main [MainThread]: Store serial: [23382655]
+[2024-05-26 13:59:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382655]
+[2024-05-26 13:59:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 13:59:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: centerline
+[2024-05-26 13:59:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glide-for-redis
+[2024-05-26 13:59:35] INFO root fetch - processPackages [centerline]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-26 13:59:35] INFO root fetch - processPackages [glide-for-redis]: New version: [0.4.0rc0] Old Version: [0.3.3]
+[2024-05-26 13:59:35] INFO root fetch - processPackages [centerline]: Downloading https://files.pythonhosted.org/packages/7a/f1/774fb1b2173bb743343897879b7e78e6486a38617885cd3ad5743d0ae19b/centerline-1.1.0.tar.gz
+[2024-05-26 13:59:35] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/e6/82/0bec11d97af0b33becb209b283523cedf3889b59d1f28390cb6cd0af8a72/glide_for_redis-0.3.3-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-05-26 13:59:35] INFO root fetch - processPackages [centerline]: Downloading https://files.pythonhosted.org/packages/6c/70/4f011ff5302bfddfee9e5c4e2859db1564cc6344c98560bc9c1636b5321d/centerline-1.1.1.tar.gz
+[2024-05-26 13:59:35] INFO root fetch - processPackages [centerline]: executing diffoscope
+[2024-05-26 13:59:35] INFO root fetch - processPackages [centerline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centerline-1.1.0.tar.gz tmp/centerline-1.1.1.tar.gz --markdown 20240526/c/centerline/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-26 13:59:36] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/99/9f/ac29396c7bec43de5ee5f6ce49922c9ebdafedd76996451a4912c7b1ce27/glide_for_redis-0.4.0rc0-cp310-cp310-macosx_11_0_arm64.whl
+[2024-05-26 13:59:36] INFO root fetch - processPackages [centerline]: Remove: archive file [/home/abi/fetcher/tmp/centerline-1.1.0.tar.gz]
+[2024-05-26 13:59:36] INFO root fetch - processPackages [centerline]: Remove: archive file [/home/abi/fetcher/tmp/centerline-1.1.1.tar.gz]
+[2024-05-26 13:59:36] INFO root fetch - main [MainThread]: End processing [centerline]: success
+[2024-05-26 13:59:36] INFO root fetch - processPackages [glide-for-redis]: executing diffoscope
+[2024-05-26 13:59:36] INFO root fetch - processPackages [glide-for-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glide_for_redis-0.3.3-cp39-cp39-manylinux_2_28_aarch64.whl.zip tmp/glide_for_redis-0.4.0rc0-cp310-cp310-macosx_11_0_arm64.whl.zip --markdown 20240526/g/glide-for-redis/0.3.3-0.4.0rc0/README.md --exclude *.pyd
+[2024-05-26 13:59:38] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.3.3-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-05-26 13:59:38] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.0rc0-cp310-cp310-macosx_11_0_arm64.whl.zip]
+[2024-05-26 13:59:38] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
+[2024-05-26 13:59:38] INFO root fetch - main [MainThread]: Store serial: [23382663]
