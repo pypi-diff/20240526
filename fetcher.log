@@ -4975,3 +4975,42 @@
 [2024-05-26 08:55:39] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240524.tar.gz]
 [2024-05-26 08:55:39] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-05-26 08:55:39] INFO root fetch - main [MainThread]: Store serial: [23380444]
+[2024-05-26 08:57:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380444]
+[2024-05-26 08:57:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 08:57:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xarizmi
+[2024-05-26 08:57:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xssbase
+[2024-05-26 08:57:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: structables
+[2024-05-26 08:57:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: better-web3
+[2024-05-26 08:57:48] INFO root fetch - processPackages [better-web3]: New version: [4.0.0b7] Old Version: [4.0.0b6]
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xssbase]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 08:57:48] INFO root fetch - processPackages [structables]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xarizmi]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-26 08:57:48] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/ed/d9/df2294f081ca2296be069171a4f510fad68f306928a6cd2414cd7c04b94d/better_web3-4.0.0b6.tar.gz
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/e5/20/3ac84e5c3b601b393da7f757a72f8336e6ea45dbc54ecd63db8383161da6/xssbase-1.0.1.tar.gz
+[2024-05-26 08:57:48] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/95/fc/c2ee2f0629d140ae21ef47b20527f0f74bc32994d3c9e9b34ac5190625b4/structables-0.3.2.tar.gz
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xarizmi]: Downloading https://files.pythonhosted.org/packages/b2/9d/b7e1f7c191eaa90ce4f5ec5379a599539a6dce9dfb8df076881a12fe3986/xarizmi-0.3.1.tar.gz
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/32/8e/1f840ea33baf12d7ce5cc8cf60e874270c047da9c8a8103d54de34966571/xssbase-1.0.2.tar.gz
+[2024-05-26 08:57:48] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/05/96/d00289a025b289d688e9fc0d38ab89995811538680fe8b41c1aeb678154e/better_web3-4.0.0b7.tar.gz
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-1.0.1.tar.gz tmp/xssbase-1.0.2.tar.gz --markdown 20240526/x/xssbase/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xarizmi]: Downloading https://files.pythonhosted.org/packages/7a/1b/ade3489520432859e67ed4e6fb61d17a037af4a38355e79fe9b353ca3e8a/xarizmi-0.3.2.tar.gz
+[2024-05-26 08:57:48] INFO root fetch - processPackages [better-web3]: executing diffoscope
+[2024-05-26 08:57:48] INFO root fetch - processPackages [better-web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_web3-4.0.0b6.tar.gz tmp/better_web3-4.0.0b7.tar.gz --markdown 20240526/b/better-web3/4.0.0b6-4.0.0b7/README.md --exclude *.pyd
+[2024-05-26 08:57:48] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/e9/7f/72b1462c0c308ae25fc97ec3188344df572ef1ac343086d607ab463b79c7/structables-0.3.3.tar.gz
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xarizmi]: executing diffoscope
+[2024-05-26 08:57:48] INFO root fetch - processPackages [xarizmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xarizmi-0.3.1.tar.gz tmp/xarizmi-0.3.2.tar.gz --markdown 20240526/x/xarizmi/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-26 08:57:49] INFO root fetch - processPackages [structables]: executing diffoscope
+[2024-05-26 08:57:49] INFO root fetch - processPackages [structables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structables-0.3.2.tar.gz tmp/structables-0.3.3.tar.gz --markdown 20240526/s/structables/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-26 08:57:49] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.1.tar.gz]
+[2024-05-26 08:57:49] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.2.tar.gz]
+[2024-05-26 08:57:49] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 08:57:49] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b6.tar.gz]
+[2024-05-26 08:57:49] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b7.tar.gz]
+[2024-05-26 08:57:49] INFO root fetch - main [MainThread]: End processing [better-web3]: success
+[2024-05-26 08:57:49] INFO root fetch - processPackages [xarizmi]: Remove: archive file [/home/abi/fetcher/tmp/xarizmi-0.3.1.tar.gz]
+[2024-05-26 08:57:49] INFO root fetch - processPackages [xarizmi]: Remove: archive file [/home/abi/fetcher/tmp/xarizmi-0.3.2.tar.gz]
+[2024-05-26 08:57:49] INFO root fetch - main [MainThread]: End processing [xarizmi]: success
+[2024-05-26 08:57:50] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.2.tar.gz]
+[2024-05-26 08:57:50] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.3.tar.gz]
+[2024-05-26 08:57:50] INFO root fetch - main [MainThread]: End processing [structables]: success
+[2024-05-26 08:57:50] INFO root fetch - main [MainThread]: Store serial: [23380454]
