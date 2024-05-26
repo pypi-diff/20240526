@@ -15897,3 +15897,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:42:51] INFO root fetch - processPackages [gradio-agentchatbot]: Remove: archive file [/home/abi/fetcher/tmp/gradio_agentchatbot-0.0.5.tar.gz]
 [2024-05-26 19:42:51] INFO root fetch - main [MainThread]: End processing [gradio-agentchatbot]: success
 [2024-05-26 19:42:51] INFO root fetch - main [MainThread]: Store serial: [23385356]
+[2024-05-26 19:44:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385356]
+[2024-05-26 19:44:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 19:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netbits
+[2024-05-26 19:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iSmartDownloader
+[2024-05-26 19:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: web-image-downloader
+[2024-05-26 19:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: open-meteo-solar-forecast
+[2024-05-26 19:44:59] INFO root fetch - processPackages [open-meteo-solar-forecast]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-26 19:44:59] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/5d/7c/39601dd74e1a335c1acca2db233233f543c68f084fdcefe42f526c5ddb0b/open_meteo_solar_forecast-0.1.4.tar.gz
+[2024-05-26 19:44:59] ERROR root fetch - processPackages [iSmartDownloader]: Unable to get metadata: No such project 'iSmartDownloader'
+[2024-05-26 19:44:59] INFO root fetch - main [MainThread]: End processing [iSmartDownloader] error
+[2024-05-26 19:44:59] WARNING root fetch - processPackages [netbits]: Skipping, unable to determine old version
+[2024-05-26 19:44:59] INFO root fetch - main [MainThread]: End processing [netbits] error
+[2024-05-26 19:44:59] WARNING root fetch - processPackages [web-image-downloader]: Skipping, unable to determine old version
+[2024-05-26 19:44:59] INFO root fetch - main [MainThread]: End processing [web-image-downloader] error
+[2024-05-26 19:45:00] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/37/bb/4c2285e56ab9eba63f813804f7101df6c06156beb948b6905a4cb98014c3/open_meteo_solar_forecast-0.1.5.tar.gz
+[2024-05-26 19:45:00] INFO root fetch - processPackages [open-meteo-solar-forecast]: executing diffoscope
+[2024-05-26 19:45:00] INFO root fetch - processPackages [open-meteo-solar-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_meteo_solar_forecast-0.1.4.tar.gz tmp/open_meteo_solar_forecast-0.1.5.tar.gz --markdown 20240526/o/open-meteo-solar-forecast/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-26 19:45:00] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.4.tar.gz]
+[2024-05-26 19:45:00] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.5.tar.gz]
+[2024-05-26 19:45:00] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast]: success
+[2024-05-26 19:45:00] INFO root fetch - main [MainThread]: Store serial: [23385374]
