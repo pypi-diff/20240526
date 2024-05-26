@@ -4618,3 +4618,27 @@
 [2024-05-26 08:20:27] WARNING root fetch - processPackages [AsadStack]: Skipping, unable to determine old version
 [2024-05-26 08:20:27] INFO root fetch - main [MainThread]: End processing [AsadStack] error
 [2024-05-26 08:20:27] INFO root fetch - main [MainThread]: Store serial: [23380297]
+[2024-05-26 08:22:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380297]
+[2024-05-26 08:22:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 08:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-pipe
+[2024-05-26 08:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xingpyc
+[2024-05-26 08:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: textfile-compare-tool
+[2024-05-26 08:22:36] INFO root fetch - processPackages [xingpyc]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 08:22:36] INFO root fetch - processPackages [api-pipe]: New version: [2.0.16] Old Version: [2.0.15]
+[2024-05-26 08:22:36] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/19/a5/75aee1c45d6f3329066cb3bec74e680d28307bdfb95544a4cb6866a3130a/xingpyc-0.1.6.tar.gz
+[2024-05-26 08:22:36] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/a1/c8/dbfffa068c20fad007d53d4f3b7d36cec95800d0808e9edc14c0e5ebdb0f/api_pipe-2.0.15.tar.gz
+[2024-05-26 08:22:36] WARNING root fetch - processPackages [textfile-compare-tool]: Skipping, unable to determine old version
+[2024-05-26 08:22:36] INFO root fetch - main [MainThread]: End processing [textfile-compare-tool] error
+[2024-05-26 08:22:36] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/42/c2/1fb64f8d24e00abbe67bd56812bfcd37f759a2301cf9b10de28943061826/api_pipe-2.0.16.tar.gz
+[2024-05-26 08:22:36] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/dc/43/7ec40e39a1714ba8b96284e4d41491753fdcd1c7b81c3a5494d48701ab6f/xingpyc-0.1.7.tar.gz
+[2024-05-26 08:22:36] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-05-26 08:22:36] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.15.tar.gz tmp/api_pipe-2.0.16.tar.gz --markdown 20240526/a/api-pipe/2.0.15-2.0.16/README.md --exclude *.pyd
+[2024-05-26 08:22:36] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-26 08:22:36] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.6.tar.gz tmp/xingpyc-0.1.7.tar.gz --markdown 20240526/x/xingpyc/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 08:22:37] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.6.tar.gz]
+[2024-05-26 08:22:37] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.7.tar.gz]
+[2024-05-26 08:22:37] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-26 08:22:37] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.15.tar.gz]
+[2024-05-26 08:22:37] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.16.tar.gz]
+[2024-05-26 08:22:37] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-05-26 08:22:37] INFO root fetch - main [MainThread]: Store serial: [23380308]
