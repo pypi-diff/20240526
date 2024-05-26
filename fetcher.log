@@ -9594,3 +9594,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:23:40] WARNING root fetch - processPackages [neqsim]: Skipping package: exceeds size limit 28193627>=10485760
 [2024-05-26 13:23:40] INFO root fetch - main [MainThread]: End processing [neqsim] error
 [2024-05-26 13:23:40] INFO root fetch - main [MainThread]: Store serial: [23382471]
+[2024-05-26 13:25:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382471]
+[2024-05-26 13:25:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 13:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtail-factories
+[2024-05-26 13:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: camera-ui-python-types
+[2024-05-26 13:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agixtsdk
+[2024-05-26 13:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchrl-nightly
+[2024-05-26 13:25:53] INFO root fetch - processPackages [agixtsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 13:25:53] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/fc/f4/85d852d47773fa6751a3ed8d3ca02e654579a0a110cdc23896aebd954b2c/agixtsdk-0.0.8.tar.gz
+[2024-05-26 13:25:53] INFO root fetch - processPackages [wagtail-factories]: New version: [4.2.1] Old Version: [4.1.0]
+[2024-05-26 13:25:53] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 13:25:54] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-26 13:25:54] INFO root fetch - processPackages [wagtail-factories]: Downloading https://files.pythonhosted.org/packages/26/b3/0635fd66623ed5c0d943d8911a0ea5adff63df2c7ab1cfb1802003ba362c/wagtail_factories-4.1.0.tar.gz
+[2024-05-26 13:25:54] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-26 13:25:54] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/74/75/1048551801b0e2aa197b36b7a2d249437127d0d21a98a3aea7016e0929b9/agixtsdk-0.0.9.tar.gz
+[2024-05-26 13:25:54] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/a5/6d/9461214af24f1d24305421c7f45896fa740108e193fceb8f3145648e07e2/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-26 13:25:54] INFO root fetch - processPackages [agixtsdk]: executing diffoscope
+[2024-05-26 13:25:54] INFO root fetch - processPackages [agixtsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixtsdk-0.0.8.tar.gz tmp/agixtsdk-0.0.9.tar.gz --markdown 20240526/a/agixtsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 13:25:54] INFO root fetch - processPackages [wagtail-factories]: Downloading https://files.pythonhosted.org/packages/d1/74/9d958709e7b9a0f637b05c73ce66126f962bc47f7fb00ade12d5155214ba/wagtail_factories-4.2.1.tar.gz
+[2024-05-26 13:25:54] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-26 13:25:54] INFO root fetch - processPackages [wagtail-factories]: executing diffoscope
+[2024-05-26 13:25:54] INFO root fetch - processPackages [wagtail-factories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_factories-4.1.0.tar.gz tmp/wagtail_factories-4.2.1.tar.gz --markdown 20240526/w/wagtail-factories/4.1.0-4.2.1/README.md --exclude *.pyd
+[2024-05-26 13:25:54] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-26 13:25:54] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240526/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 13:25:54] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.8.tar.gz]
+[2024-05-26 13:25:54] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.9.tar.gz]
+[2024-05-26 13:25:54] INFO root fetch - main [MainThread]: End processing [agixtsdk]: success
+[2024-05-26 13:25:54] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/e9/e4/1d21a71adb0d6367cd81a5f47617cabf90f99ac96a421dda991f6aeefff2/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-26 13:25:55] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-05-26 13:25:55] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240526/t/torchrl-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-26 13:25:55] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-26 13:25:55] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-26 13:25:55] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-26 13:25:55] INFO root fetch - processPackages [wagtail-factories]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_factories-4.1.0.tar.gz]
+[2024-05-26 13:25:55] INFO root fetch - processPackages [wagtail-factories]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_factories-4.2.1.tar.gz]
+[2024-05-26 13:25:55] INFO root fetch - main [MainThread]: End processing [wagtail-factories]: success
+[2024-05-26 13:25:56] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 13:25:56] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 13:25:56] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-05-26 13:25:56] INFO root fetch - main [MainThread]: Store serial: [23382485]
