@@ -8421,3 +8421,32 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:48:53] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
 [2024-05-26 11:48:53] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-26 11:48:53] INFO root fetch - main [MainThread]: Store serial: [23381918]
+[2024-05-26 11:51:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381918]
+[2024-05-26 11:51:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 11:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyremotechrome
+[2024-05-26 11:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cappa-sqlplag
+[2024-05-26 11:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fABBA
+[2024-05-26 11:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-minio-mock
+[2024-05-26 11:51:05] WARNING root fetch - processPackages [cappa-sqlplag]: Skipping, unable to determine old version
+[2024-05-26 11:51:05] INFO root fetch - main [MainThread]: End processing [cappa-sqlplag] error
+[2024-05-26 11:51:05] INFO root fetch - processPackages [fABBA]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-26 11:51:05] INFO root fetch - processPackages [pyremotechrome]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 11:51:05] INFO root fetch - processPackages [pytest-minio-mock]: New version: [0.4.15] Old Version: [0.4.14]
+[2024-05-26 11:51:05] INFO root fetch - processPackages [pyremotechrome]: Downloading https://files.pythonhosted.org/packages/0d/ee/a36a5d9cdea56be41e2dc2f9b0043d6124e08171b45ff0f7c3d25852f5ba/pyremotechrome-0.1.1.tar.gz
+[2024-05-26 11:51:05] INFO root fetch - processPackages [fABBA]: Downloading https://files.pythonhosted.org/packages/c6/5e/94e2cc544587bdba14116adeb2b15f0b4aa1998e3e5b99900e3a12f50ea0/fABBA-1.2.1.tar.gz
+[2024-05-26 11:51:05] INFO root fetch - processPackages [pytest-minio-mock]: Downloading https://files.pythonhosted.org/packages/c6/c3/94579189fb6fe3cacde33008cd31b962aefa99dbcc82897a906bfe14ddef/pytest_minio_mock-0.4.14.tar.gz
+[2024-05-26 11:51:05] WARNING root fetch - processPackages [fABBA]: Skipping package: exceeds size limit 11194187>=10485760
+[2024-05-26 11:51:05] INFO root fetch - main [MainThread]: End processing [fABBA] error
+[2024-05-26 11:51:06] INFO root fetch - processPackages [pytest-minio-mock]: Downloading https://files.pythonhosted.org/packages/76/41/fca861f96dd8302fdcfdbd5532af705bc053bdaa584f3f2625e85b90477e/pytest_minio_mock-0.4.15.tar.gz
+[2024-05-26 11:51:06] INFO root fetch - processPackages [pyremotechrome]: Downloading https://files.pythonhosted.org/packages/52/69/37bd9e29df4d8b1ae5261ff99f2d4a97d4b36ab3dbe7023899f0e1d9c973/pyremotechrome-0.1.2.tar.gz
+[2024-05-26 11:51:06] INFO root fetch - processPackages [pytest-minio-mock]: executing diffoscope
+[2024-05-26 11:51:06] INFO root fetch - processPackages [pytest-minio-mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_minio_mock-0.4.14.tar.gz tmp/pytest_minio_mock-0.4.15.tar.gz --markdown 20240526/p/pytest-minio-mock/0.4.14-0.4.15/README.md --exclude *.pyd
+[2024-05-26 11:51:06] INFO root fetch - processPackages [pyremotechrome]: executing diffoscope
+[2024-05-26 11:51:06] INFO root fetch - processPackages [pyremotechrome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyremotechrome-0.1.1.tar.gz tmp/pyremotechrome-0.1.2.tar.gz --markdown 20240526/p/pyremotechrome/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 11:51:06] INFO root fetch - processPackages [pytest-minio-mock]: Remove: archive file [/home/abi/fetcher/tmp/pytest_minio_mock-0.4.14.tar.gz]
+[2024-05-26 11:51:06] INFO root fetch - processPackages [pytest-minio-mock]: Remove: archive file [/home/abi/fetcher/tmp/pytest_minio_mock-0.4.15.tar.gz]
+[2024-05-26 11:51:06] INFO root fetch - main [MainThread]: End processing [pytest-minio-mock]: success
+[2024-05-26 11:51:07] INFO root fetch - processPackages [pyremotechrome]: Remove: archive file [/home/abi/fetcher/tmp/pyremotechrome-0.1.1.tar.gz]
+[2024-05-26 11:51:07] INFO root fetch - processPackages [pyremotechrome]: Remove: archive file [/home/abi/fetcher/tmp/pyremotechrome-0.1.2.tar.gz]
+[2024-05-26 11:51:07] INFO root fetch - main [MainThread]: End processing [pyremotechrome]: success
+[2024-05-26 11:51:07] INFO root fetch - main [MainThread]: Store serial: [23381928]
