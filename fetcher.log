@@ -8122,3 +8122,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:28:44] INFO root fetch - processPackages [dashport]: Remove: archive file [/home/abi/fetcher/tmp/dashport-0.7.7.tar.gz]
 [2024-05-26 11:28:44] INFO root fetch - main [MainThread]: End processing [dashport]: success
 [2024-05-26 11:28:44] INFO root fetch - main [MainThread]: Store serial: [23381806]
+[2024-05-26 11:30:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381806]
+[2024-05-26 11:30:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 11:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ragdaemon
+[2024-05-26 11:30:56] INFO root fetch - processPackages [ragdaemon]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-26 11:30:56] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/e1/03/c5c10d282085ac8cb3725d41a25e526f75e5dbf1c5365c16fd88511c770c/ragdaemon-0.7.0.tar.gz
+[2024-05-26 11:30:57] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/96/40/460607cf914ef823a0c9beb8af10afdb9b79ffdb3de7ecf2e735cbf6ef55/ragdaemon-0.7.1.tar.gz
+[2024-05-26 11:30:57] INFO root fetch - processPackages [ragdaemon]: executing diffoscope
+[2024-05-26 11:30:57] INFO root fetch - processPackages [ragdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragdaemon-0.7.0.tar.gz tmp/ragdaemon-0.7.1.tar.gz --markdown 20240526/r/ragdaemon/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-26 11:30:57] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.7.0.tar.gz]
+[2024-05-26 11:30:57] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.7.1.tar.gz]
+[2024-05-26 11:30:57] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
+[2024-05-26 11:30:57] INFO root fetch - main [MainThread]: Store serial: [23381809]
