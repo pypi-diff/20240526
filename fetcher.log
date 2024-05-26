@@ -11641,3 +11641,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:52:11] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
 [2024-05-26 15:52:11] INFO root fetch - main [MainThread]: End processing [locust]: success
 [2024-05-26 15:52:11] INFO root fetch - main [MainThread]: Store serial: [23383514]
+[2024-05-26 15:54:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383514]
+[2024-05-26 15:54:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 15:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quarkstudio
+[2024-05-26 15:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matematikk
+[2024-05-26 15:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensordict-nightly
+[2024-05-26 15:54:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OctoBot-Commons
+[2024-05-26 15:54:40] INFO root fetch - processPackages [quarkstudio]: New version: [6.6.7.0] Old Version: [6.6.2.21]
+[2024-05-26 15:54:40] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 15:54:40] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/1b/7a/2ddc240da8724a4e7ea8c215381ab3952381d9fbd393742fba258c232693/quarkstudio-6.6.2.21-cp312-none-win_amd64.whl
+[2024-05-26 15:54:40] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 15:54:40] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-26 15:54:40] INFO root fetch - processPackages [OctoBot-Commons]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-26 15:54:40] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 15:54:40] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/9f/fb/dde7107df5ab3ca2adae086da6d1029df52cfd70612c50ca3c3167b2f971/quarkstudio-6.6.7.0-cp310-none-win_amd64.whl
+[2024-05-26 15:54:40] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/92/36/819c077c6f13e604fee257ce897f68e5860a53e54214b83dce4b4878dff6/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-26 15:54:40] INFO root fetch - processPackages [OctoBot-Commons]: Downloading https://files.pythonhosted.org/packages/d1/70/aae7728728bb494972e639d7fa912e43f672174c96673812eaa3f9821d42/OctoBot-Commons-1.9.8.tar.gz
+[2024-05-26 15:54:40] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 15:54:40] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 15:54:40] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2024-05-26 15:54:40] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.6.2.21-cp312-none-win_amd64.whl.zip tmp/quarkstudio-6.6.7.0-cp310-none-win_amd64.whl.zip --markdown 20240526/q/quarkstudio/6.6.2.21-6.6.7.0/README.md --exclude *.pyd
+[2024-05-26 15:54:40] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/b9/28/e296d4b168e87aedf19b6cf0d7e65b1474a3da33b8e5314b4a04050bda78/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-26 15:54:40] INFO root fetch - processPackages [OctoBot-Commons]: Downloading https://files.pythonhosted.org/packages/c9/88/6974930114bda39ad842a32e1c00a0fdf5592f27ff5d3e0a3b29aab15f76/OctoBot-Commons-1.9.9.tar.gz
+[2024-05-26 15:54:40] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-05-26 15:54:40] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240526/t/tensordict-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-26 15:54:41] INFO root fetch - processPackages [OctoBot-Commons]: executing diffoscope
+[2024-05-26 15:54:41] INFO root fetch - processPackages [OctoBot-Commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Commons-1.9.8.tar.gz tmp/OctoBot-Commons-1.9.9.tar.gz --markdown 20240526/O/OctoBot-Commons/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-26 15:54:41] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.2.21-cp312-none-win_amd64.whl.zip]
+[2024-05-26 15:54:41] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.7.0-cp310-none-win_amd64.whl.zip]
+[2024-05-26 15:54:41] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
+[2024-05-26 15:54:41] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 15:54:41] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 15:54:41] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 15:54:41] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 15:54:41] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 15:54:41] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-05-26 15:54:42] INFO root fetch - processPackages [OctoBot-Commons]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Commons-1.9.8.tar.gz]
+[2024-05-26 15:54:42] INFO root fetch - processPackages [OctoBot-Commons]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Commons-1.9.9.tar.gz]
+[2024-05-26 15:54:42] INFO root fetch - main [MainThread]: End processing [OctoBot-Commons]: success
+[2024-05-26 15:54:42] INFO root fetch - main [MainThread]: Store serial: [23383531]
