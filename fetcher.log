@@ -3720,3 +3720,27 @@
 [2024-05-26 06:51:42] INFO root fetch - processPackages [termpandas]: Remove: archive file [/home/abi/fetcher/tmp/termpandas-0.2.3.tar.gz]
 [2024-05-26 06:51:42] INFO root fetch - main [MainThread]: End processing [termpandas]: success
 [2024-05-26 06:51:42] INFO root fetch - main [MainThread]: Store serial: [23379744]
+[2024-05-26 06:53:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379744]
+[2024-05-26 06:53:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 06:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aigist
+[2024-05-26 06:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: api-pipe
+[2024-05-26 06:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: group-local
+[2024-05-26 06:53:51] WARNING root fetch - processPackages [aigist]: Skipping, unable to determine old version
+[2024-05-26 06:53:51] INFO root fetch - main [MainThread]: End processing [aigist] error
+[2024-05-26 06:53:51] INFO root fetch - processPackages [group-local]: New version: [0.0.29] Old Version: [0.0.28]
+[2024-05-26 06:53:51] INFO root fetch - processPackages [api-pipe]: New version: [2.0.10] Old Version: [1.0.7]
+[2024-05-26 06:53:51] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/1f/b5/faff998adffcc66196be2c881bace7e5fad585dca8b07c548a0a3165b0bf/api_pipe-1.0.7.tar.gz
+[2024-05-26 06:53:51] INFO root fetch - processPackages [group-local]: Downloading https://files.pythonhosted.org/packages/37/3b/18c71830e53447e10562809137a65275e53da08ea3d2f2141952c3ef1010/group_local-0.0.28.tar.gz
+[2024-05-26 06:53:52] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/2f/a8/767295a52d04e5682cc9cad99b68bb7444178ccc8742c2c8840d6e5987ec/api_pipe-2.0.10.tar.gz
+[2024-05-26 06:53:52] INFO root fetch - processPackages [group-local]: Downloading https://files.pythonhosted.org/packages/e7/d0/313c964bf0fce9359a6731974014a705d7429fc68b3b4e50e5f38a8ec8af/group_local-0.0.29.tar.gz
+[2024-05-26 06:53:52] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-05-26 06:53:52] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-1.0.7.tar.gz tmp/api_pipe-2.0.10.tar.gz --markdown 20240526/a/api-pipe/1.0.7-2.0.10/README.md --exclude *.pyd
+[2024-05-26 06:53:52] INFO root fetch - processPackages [group-local]: executing diffoscope
+[2024-05-26 06:53:52] INFO root fetch - processPackages [group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/group_local-0.0.28.tar.gz tmp/group_local-0.0.29.tar.gz --markdown 20240526/g/group-local/0.0.28-0.0.29/README.md --exclude *.pyd
+[2024-05-26 06:53:52] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.28.tar.gz]
+[2024-05-26 06:53:52] INFO root fetch - processPackages [group-local]: Remove: archive file [/home/abi/fetcher/tmp/group_local-0.0.29.tar.gz]
+[2024-05-26 06:53:52] INFO root fetch - main [MainThread]: End processing [group-local]: success
+[2024-05-26 06:53:52] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-1.0.7.tar.gz]
+[2024-05-26 06:53:52] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.10.tar.gz]
+[2024-05-26 06:53:52] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-05-26 06:53:52] INFO root fetch - main [MainThread]: Store serial: [23379755]
