@@ -14102,3 +14102,38 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:58:01] INFO root fetch - processPackages [pysimplecli]: Remove: archive file [/home/abi/fetcher/tmp/pysimplecli-1.0.4.tar.gz]
 [2024-05-26 17:58:01] INFO root fetch - main [MainThread]: End processing [pysimplecli]: success
 [2024-05-26 17:58:01] INFO root fetch - main [MainThread]: Store serial: [23384487]
+[2024-05-26 18:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384487]
+[2024-05-26 18:00:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 18:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ambient-backend-api-client
+[2024-05-26 18:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-Captchaify
+[2024-05-26 18:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-glue
+[2024-05-26 18:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyerualjetwork
+[2024-05-26 18:00:09] INFO root fetch - processPackages [pyerualjetwork]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-26 18:00:09] INFO root fetch - processPackages [flask-Captchaify]: New version: [1.6.9.5.2] Old Version: [1.6.9.5.1]
+[2024-05-26 18:00:09] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/15/24/7e31098123af2f76310865c5eb14b0368210acce03e34c9a15fb6bd1b3ef/pyerualjetwork-1.2.0.tar.gz
+[2024-05-26 18:00:09] INFO root fetch - processPackages [django-glue]: New version: [0.6.0] Old Version: [0.5.3]
+[2024-05-26 18:00:09] INFO root fetch - processPackages [flask-Captchaify]: Downloading https://files.pythonhosted.org/packages/e5/60/392594f434643859078cc3b487e3eb1c206907dc5b598e2e8d6f7b94fd5a/flask_captchaify-1.6.9.5.1.tar.gz
+[2024-05-26 18:00:09] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 18:00:09] WARNING root fetch - processPackages [flask-Captchaify]: Skipping package: exceeds size limit 43910381>=10485760
+[2024-05-26 18:00:09] INFO root fetch - main [MainThread]: End processing [flask-Captchaify] error
+[2024-05-26 18:00:09] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/f6/eb/59da8ec681d918996a898f98dd992f0dd01c4e66248583c87fd5d597e6bb/ambient_backend_api_client-0.1.8.tar.gz
+[2024-05-26 18:00:10] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/d2/91/c53f680554eebeb568424a237e63394b38148bdd0fd697010e6f4d566137/pyerualjetwork-1.2.1.tar.gz
+[2024-05-26 18:00:10] INFO root fetch - processPackages [django-glue]: Downloading https://files.pythonhosted.org/packages/f5/e0/a2cdd31acde351ae824a88c4abb3ff34b2abe3b0ae10fe3df1d7a3826e5d/django_glue-0.5.3.tar.gz
+[2024-05-26 18:00:10] INFO root fetch - processPackages [pyerualjetwork]: executing diffoscope
+[2024-05-26 18:00:10] INFO root fetch - processPackages [pyerualjetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerualjetwork-1.2.0.tar.gz tmp/pyerualjetwork-1.2.1.tar.gz --markdown 20240526/p/pyerualjetwork/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-26 18:00:10] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/0b/1f/b717fb08cbd4446f6c3ef2f503b2b7cf7489a90af64d9e8982283ae67928/ambient_backend_api_client-0.1.9.tar.gz
+[2024-05-26 18:00:10] INFO root fetch - processPackages [django-glue]: Downloading https://files.pythonhosted.org/packages/56/f7/42cc4dfa4d41c376e06e56c35dde70dc93e76043562ae708af20f6792e4b/django_glue-0.6.0.tar.gz
+[2024-05-26 18:00:10] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-05-26 18:00:10] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.8.tar.gz tmp/ambient_backend_api_client-0.1.9.tar.gz --markdown 20240526/a/ambient-backend-api-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 18:00:10] INFO root fetch - processPackages [django-glue]: executing diffoscope
+[2024-05-26 18:00:10] INFO root fetch - processPackages [django-glue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_glue-0.5.3.tar.gz tmp/django_glue-0.6.0.tar.gz --markdown 20240526/d/django-glue/0.5.3-0.6.0/README.md --exclude *.pyd
+[2024-05-26 18:00:10] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-1.2.0.tar.gz]
+[2024-05-26 18:00:10] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-1.2.1.tar.gz]
+[2024-05-26 18:00:10] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
+[2024-05-26 18:00:11] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.8.tar.gz]
+[2024-05-26 18:00:11] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.9.tar.gz]
+[2024-05-26 18:00:11] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-05-26 18:00:11] INFO root fetch - processPackages [django-glue]: Remove: archive file [/home/abi/fetcher/tmp/django_glue-0.5.3.tar.gz]
+[2024-05-26 18:00:11] INFO root fetch - processPackages [django-glue]: Remove: archive file [/home/abi/fetcher/tmp/django_glue-0.6.0.tar.gz]
+[2024-05-26 18:00:11] INFO root fetch - main [MainThread]: End processing [django-glue]: success
+[2024-05-26 18:00:11] INFO root fetch - main [MainThread]: Store serial: [23384501]
