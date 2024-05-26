@@ -5399,3 +5399,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:22:04] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.8.3346rc0.tar.gz]
 [2024-05-26 09:22:04] INFO root fetch - main [MainThread]: End processing [bbot]: success
 [2024-05-26 09:22:04] INFO root fetch - main [MainThread]: Store serial: [23380579]
+[2024-05-26 09:24:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380579]
+[2024-05-26 09:24:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 09:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-05-26 09:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastqwiper
+[2024-05-26 09:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: open-meteo-solar-forecast
+[2024-05-26 09:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: archiwith
+[2024-05-26 09:24:14] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.59]
+[2024-05-26 09:24:14] INFO root fetch - processPackages [archiwith]: New version: [1.1.2] Old Version: [1.1]
+[2024-05-26 09:24:14] WARNING root fetch - processPackages [open-meteo-solar-forecast]: Skipping, unable to determine old version
+[2024-05-26 09:24:14] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast] error
+[2024-05-26 09:24:14] INFO root fetch - processPackages [fastqwiper]: New version: [2024.1.93] Old Version: [2024.1.91]
+[2024-05-26 09:24:14] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/28/72/8b33ab4499887d6c0896c33e6a39610d42daab4427a1f76f81d7eb6608f8/scatcluster-0.0.59.tar.gz
+[2024-05-26 09:24:15] INFO root fetch - processPackages [fastqwiper]: Downloading https://files.pythonhosted.org/packages/ca/3e/60134c8b767a01aebd8e7cc2ce541a357cc5fadc0feb16f01db947b3aeba/fastqwiper-2024.1.91-py3-none-any.whl
+[2024-05-26 09:24:15] INFO root fetch - processPackages [archiwith]: Downloading https://files.pythonhosted.org/packages/05/98/a810ec98d00c9fefd8a42ffde268d6e7d71c284255520d08ac66c549866c/archiwith-1.1.tar.gz
+[2024-05-26 09:24:15] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 09:24:15] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 09:24:15] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.59.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.59-0.0.6/README.md --exclude *.pyd
+[2024-05-26 09:24:15] INFO root fetch - processPackages [fastqwiper]: Downloading https://files.pythonhosted.org/packages/18/0b/3333aa2594a90abedd41d3c5602055d401802817e7151227a4b934f98c61/fastqwiper-2024.1.93-py3-none-any.whl
+[2024-05-26 09:24:15] INFO root fetch - processPackages [archiwith]: Downloading https://files.pythonhosted.org/packages/52/b1/6bd1cc8bce5d5acf982d47fc1baba9da78877f4a74e83a857e3d6da28d12/archiwith-1.1.2.tar.gz
+[2024-05-26 09:24:15] INFO root fetch - processPackages [fastqwiper]: executing diffoscope
+[2024-05-26 09:24:15] INFO root fetch - processPackages [fastqwiper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastqwiper-2024.1.91-py3-none-any.whl.zip tmp/fastqwiper-2024.1.93-py3-none-any.whl.zip --markdown 20240526/f/fastqwiper/2024.1.91-2024.1.93/README.md --exclude *.pyd
+[2024-05-26 09:24:15] INFO root fetch - processPackages [archiwith]: executing diffoscope
+[2024-05-26 09:24:15] INFO root fetch - processPackages [archiwith]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archiwith-1.1.tar.gz tmp/archiwith-1.1.2.tar.gz --markdown 20240526/a/archiwith/1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-26 09:24:15] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.59.tar.gz]
+[2024-05-26 09:24:15] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 09:24:15] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 09:24:15] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2024.1.91-py3-none-any.whl.zip]
+[2024-05-26 09:24:15] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2024.1.93-py3-none-any.whl.zip]
+[2024-05-26 09:24:15] INFO root fetch - main [MainThread]: End processing [fastqwiper]: success
+[2024-05-26 09:24:16] INFO root fetch - processPackages [archiwith]: Remove: archive file [/home/abi/fetcher/tmp/archiwith-1.1.tar.gz]
+[2024-05-26 09:24:16] INFO root fetch - processPackages [archiwith]: Remove: archive file [/home/abi/fetcher/tmp/archiwith-1.1.2.tar.gz]
+[2024-05-26 09:24:16] INFO root fetch - main [MainThread]: End processing [archiwith]: success
+[2024-05-26 09:24:16] INFO root fetch - main [MainThread]: Store serial: [23380592]
