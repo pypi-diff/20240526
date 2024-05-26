@@ -15198,3 +15198,44 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:03:18] INFO root fetch - processPackages [indicparser]: Remove: archive file [/home/abi/fetcher/tmp/indicparser-0.1.0.tar.gz]
 [2024-05-26 19:03:18] INFO root fetch - main [MainThread]: End processing [indicparser]: success
 [2024-05-26 19:03:18] INFO root fetch - main [MainThread]: Store serial: [23385014]
+[2024-05-26 19:05:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385014]
+[2024-05-26 19:05:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 19:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bd_to_avp
+[2024-05-26 19:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simplestatusserver
+[2024-05-26 19:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: librds
+[2024-05-26 19:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sym-metanet
+[2024-05-26 19:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zenaura
+[2024-05-26 19:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yeref
+[2024-05-26 19:05:27] INFO root fetch - processPackages [zenaura]: New version: [0.9.61] Old Version: [0.9.60]
+[2024-05-26 19:05:27] WARNING root fetch - processPackages [librds]: Skipping, unable to determine old version
+[2024-05-26 19:05:27] INFO root fetch - main [MainThread]: End processing [librds] error
+[2024-05-26 19:05:27] INFO root fetch - processPackages [bd_to_avp]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:05:27] INFO root fetch - processPackages [sym-metanet]: New version: [1.1.0.post1] Old Version: [1.1.0]
+[2024-05-26 19:05:27] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 19:05:27] INFO root fetch - processPackages [bd_to_avp]: Downloading https://files.pythonhosted.org/packages/00/db/7e18af63153f16cb6b9d0cd019ae969bcff7057bcdaa43a5b82e8224ed2d/bd_to_avp-0.1.8.tar.gz
+[2024-05-26 19:05:27] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/37/3b/eb61ff5047a43a012323d9bbadba972ca44241702fa641c992d2fe1dc73b/zenaura-0.9.60.tar.gz
+[2024-05-26 19:05:27] WARNING root fetch - processPackages [simplestatusserver]: Skipping, unable to determine old version
+[2024-05-26 19:05:27] INFO root fetch - main [MainThread]: End processing [simplestatusserver] error
+[2024-05-26 19:05:27] WARNING root fetch - processPackages [bd_to_avp]: Skipping package: exceeds size limit 16498870>=10485760
+[2024-05-26 19:05:27] INFO root fetch - main [MainThread]: End processing [bd_to_avp] error
+[2024-05-26 19:05:27] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 19:05:27] INFO root fetch - processPackages [sym-metanet]: Downloading https://files.pythonhosted.org/packages/07/5c/9f9bb04c410e69c4744c77ebfe56bacbfc99f765102f67f15ff582be4460/sym_metanet-1.1.0.tar.gz
+[2024-05-26 19:05:28] INFO root fetch - processPackages [sym-metanet]: Downloading https://files.pythonhosted.org/packages/68/1d/82b5a872d44a850e6b34ab92b988313e17e52103950426ba7563331dc46c/sym_metanet-1.1.0.post1.tar.gz
+[2024-05-26 19:05:28] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/0f/9f/c2ba484bd0ad8bb4bbaaaf4a56cf9be5986974646d8553cea7ea2e677393/zenaura-0.9.61.tar.gz
+[2024-05-26 19:05:28] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 19:05:28] INFO root fetch - processPackages [sym-metanet]: executing diffoscope
+[2024-05-26 19:05:28] INFO root fetch - processPackages [sym-metanet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sym_metanet-1.1.0.tar.gz tmp/sym_metanet-1.1.0.post1.tar.gz --markdown 20240526/s/sym-metanet/1.1.0-1.1.0.post1/README.md --exclude *.pyd
+[2024-05-26 19:05:28] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 19:05:28] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.60.tar.gz tmp/zenaura-0.9.61.tar.gz --markdown 20240526/z/zenaura/0.9.60-0.9.61/README.md --exclude *.pyd
+[2024-05-26 19:05:28] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 19:05:28] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 19:05:28] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.60.tar.gz]
+[2024-05-26 19:05:28] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.61.tar.gz]
+[2024-05-26 19:05:28] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 19:05:28] INFO root fetch - processPackages [sym-metanet]: Remove: archive file [/home/abi/fetcher/tmp/sym_metanet-1.1.0.tar.gz]
+[2024-05-26 19:05:28] INFO root fetch - processPackages [sym-metanet]: Remove: archive file [/home/abi/fetcher/tmp/sym_metanet-1.1.0.post1.tar.gz]
+[2024-05-26 19:05:28] INFO root fetch - main [MainThread]: End processing [sym-metanet]: success
+[2024-05-26 19:05:29] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 19:05:29] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 19:05:29] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 19:05:29] INFO root fetch - main [MainThread]: Store serial: [23385033]
