@@ -14604,3 +14604,48 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:32:44] INFO root fetch - processPackages [legopack]: Remove: archive file [/home/abi/fetcher/tmp/legopack-0.21.tar.gz]
 [2024-05-26 18:32:44] INFO root fetch - main [MainThread]: End processing [legopack]: success
 [2024-05-26 18:32:44] INFO root fetch - main [MainThread]: Store serial: [23384762]
+[2024-05-26 18:34:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384762]
+[2024-05-26 18:34:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 18:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: structables
+[2024-05-26 18:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tdrpa.tdworker
+[2024-05-26 18:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airflow-markdown-extension
+[2024-05-26 18:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-daily-task
+[2024-05-26 18:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchbringer
+[2024-05-26 18:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FileTAO
+[2024-05-26 18:34:52] WARNING root fetch - processPackages [airflow-markdown-extension]: Skipping, unable to determine old version
+[2024-05-26 18:34:52] INFO root fetch - main [MainThread]: End processing [airflow-markdown-extension] error
+[2024-05-26 18:34:52] INFO root fetch - processPackages [torchbringer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 18:34:52] INFO root fetch - processPackages [structables]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-26 18:34:53] WARNING root fetch - processPackages [nonebot-plugin-daily-task]: Skipping, unable to determine old version
+[2024-05-26 18:34:53] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-daily-task] error
+[2024-05-26 18:34:53] INFO root fetch - processPackages [tdrpa.tdworker]: New version: [1.1.4.20] Old Version: [1.1.4.19]
+[2024-05-26 18:34:53] INFO root fetch - processPackages [FileTAO]: New version: [3.0.2] Old Version: [3.0.1]
+[2024-05-26 18:34:53] INFO root fetch - processPackages [torchbringer]: Downloading https://files.pythonhosted.org/packages/7c/95/d8a0cd5672d726c896384844571e5dc416061fd71db9f30c0acfc2e652ce/torchbringer-0.1.0.tar.gz
+[2024-05-26 18:34:53] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/f7/0e/2cc9c019e914e3c8eb0c9d97bf0727274d1b6c3af0dbe22ffae18018ab50/structables-0.3.4.tar.gz
+[2024-05-26 18:34:53] INFO root fetch - processPackages [tdrpa.tdworker]: Downloading https://files.pythonhosted.org/packages/e4/db/0ce987c5a141f59f76bb3e5520b3943614acfe17aa7d541abeb1585da26a/tdrpa.tdworker-1.1.4.19-py39-none-win_amd64.whl
+[2024-05-26 18:34:53] INFO root fetch - processPackages [FileTAO]: Downloading https://files.pythonhosted.org/packages/4f/fb/9a26d21cdff05efcb3adcdb29a0e713b120e3df07be4b1defc934aab48c4/FileTAO-3.0.1.tar.gz
+[2024-05-26 18:34:53] INFO root fetch - processPackages [torchbringer]: Downloading https://files.pythonhosted.org/packages/2f/45/d2773d1f7c20cda29751b6d62fe80e492b2530bcde5e2d987e9b68c4ab17/torchbringer-0.1.1.tar.gz
+[2024-05-26 18:34:53] INFO root fetch - processPackages [torchbringer]: executing diffoscope
+[2024-05-26 18:34:53] INFO root fetch - processPackages [torchbringer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchbringer-0.1.0.tar.gz tmp/torchbringer-0.1.1.tar.gz --markdown 20240526/t/torchbringer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 18:34:53] INFO root fetch - processPackages [tdrpa.tdworker]: Downloading https://files.pythonhosted.org/packages/b5/a4/7ea234fd8ef0102f1b71c3dec22505ae40720d7932b9b35d879c63a4bd89/tdrpa.tdworker-1.1.4.20-py39-none-win_amd64.whl
+[2024-05-26 18:34:53] INFO root fetch - processPackages [FileTAO]: Downloading https://files.pythonhosted.org/packages/7a/b1/8746d730d383f5317db47c75b1fa299a9028682e11c59f23cff3cde352b7/FileTAO-3.0.2.tar.gz
+[2024-05-26 18:34:53] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/53/3a/58fa2606e454958fd9658b7e6bf2e77e476f33343729cd5ab2ecb9edd2c7/structables-0.3.5.tar.gz
+[2024-05-26 18:34:53] INFO root fetch - processPackages [tdrpa.tdworker]: executing diffoscope
+[2024-05-26 18:34:53] INFO root fetch - processPackages [tdrpa.tdworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdworker-1.1.4.19-py39-none-win_amd64.whl.zip tmp/tdrpa.tdworker-1.1.4.20-py39-none-win_amd64.whl.zip --markdown 20240526/t/tdrpa.tdworker/1.1.4.19-1.1.4.20/README.md --exclude *.pyd
+[2024-05-26 18:34:53] INFO root fetch - processPackages [FileTAO]: executing diffoscope
+[2024-05-26 18:34:53] INFO root fetch - processPackages [FileTAO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FileTAO-3.0.1.tar.gz tmp/FileTAO-3.0.2.tar.gz --markdown 20240526/F/FileTAO/3.0.1-3.0.2/README.md --exclude *.pyd
+[2024-05-26 18:34:53] INFO root fetch - processPackages [structables]: executing diffoscope
+[2024-05-26 18:34:53] INFO root fetch - processPackages [structables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structables-0.3.4.tar.gz tmp/structables-0.3.5.tar.gz --markdown 20240526/s/structables/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-26 18:34:54] INFO root fetch - processPackages [torchbringer]: Remove: archive file [/home/abi/fetcher/tmp/torchbringer-0.1.0.tar.gz]
+[2024-05-26 18:34:54] INFO root fetch - processPackages [torchbringer]: Remove: archive file [/home/abi/fetcher/tmp/torchbringer-0.1.1.tar.gz]
+[2024-05-26 18:34:54] INFO root fetch - main [MainThread]: End processing [torchbringer]: success
+[2024-05-26 18:34:54] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.19-py39-none-win_amd64.whl.zip]
+[2024-05-26 18:34:54] INFO root fetch - processPackages [tdrpa.tdworker]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdworker-1.1.4.20-py39-none-win_amd64.whl.zip]
+[2024-05-26 18:34:54] INFO root fetch - main [MainThread]: End processing [tdrpa.tdworker]: success
+[2024-05-26 18:34:54] INFO root fetch - processPackages [FileTAO]: Remove: archive file [/home/abi/fetcher/tmp/FileTAO-3.0.1.tar.gz]
+[2024-05-26 18:34:54] INFO root fetch - processPackages [FileTAO]: Remove: archive file [/home/abi/fetcher/tmp/FileTAO-3.0.2.tar.gz]
+[2024-05-26 18:34:54] INFO root fetch - main [MainThread]: End processing [FileTAO]: success
+[2024-05-26 18:34:54] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.4.tar.gz]
+[2024-05-26 18:34:54] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.5.tar.gz]
+[2024-05-26 18:34:54] INFO root fetch - main [MainThread]: End processing [structables]: success
+[2024-05-26 18:34:54] INFO root fetch - main [MainThread]: Store serial: [23384783]
