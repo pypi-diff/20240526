@@ -14649,3 +14649,68 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:34:54] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.5.tar.gz]
 [2024-05-26 18:34:54] INFO root fetch - main [MainThread]: End processing [structables]: success
 [2024-05-26 18:34:54] INFO root fetch - main [MainThread]: Store serial: [23384783]
+[2024-05-26 18:36:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384783]
+[2024-05-26 18:37:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abcli
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xtrain
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apeboiy
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dott-ng
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llama-cpp-agent
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dott-ng-runtime
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sparkit-aviad.klein
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ai-alchemy
+[2024-05-26 18:37:03] INFO root fetch - processPackages [abcli]: New version: [9.3.1] Old Version: [9.2.1]
+[2024-05-26 18:37:03] INFO root fetch - processPackages [apeboiy]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 18:37:03] INFO root fetch - processPackages [llama-cpp-agent]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 18:37:03] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/5b/19/d0e6e72f3d45ac08c0239df3fd3f0aeac3aad914a52cd17dade958adea0b/abcli-9.2.1.tar.gz
+[2024-05-26 18:37:03] INFO root fetch - processPackages [xtrain]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-26 18:37:03] INFO root fetch - processPackages [dott-ng-runtime]: New version: [1.13.0] Old Version: [1.1.1]
+[2024-05-26 18:37:03] WARNING root fetch - processPackages [sparkit-aviad.klein]: Skipping, unable to determine old version
+[2024-05-26 18:37:03] INFO root fetch - main [MainThread]: End processing [sparkit-aviad.klein] error
+[2024-05-26 18:37:03] INFO root fetch - processPackages [dott-ng]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-26 18:37:03] INFO root fetch - processPackages [apeboiy]: Downloading https://files.pythonhosted.org/packages/2c/d1/13ae5c5ceb0c97a91d946e1dd5fc329b3f384b59630ad259ab7ebe72713d/apeboiy-0.0.8.tar.gz
+[2024-05-26 18:37:03] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/fe/91/a3117e58fb82be16e1bb454f9ca27e9e489a3223ac29b6868b787fdff37d/ai_alchemy-0.1.8.tar.gz
+[2024-05-26 18:37:03] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/a0/ba/e28b4ffe7b86f6d15ba5b9672537e66bc8273c02bbb8fa06f1337493886a/llama_cpp_agent-0.2.8.tar.gz
+[2024-05-26 18:37:03] INFO root fetch - processPackages [xtrain]: Downloading https://files.pythonhosted.org/packages/2a/db/bf164a53a5c81886596202637bd4e03708ddcfdaf1d18a0f37da7a247578/xtrain-0.3.2.tar.gz
+[2024-05-26 18:37:03] INFO root fetch - processPackages [dott-ng]: Downloading https://files.pythonhosted.org/packages/62/24/080cd3206aa0b34b854a179d0ef154cc05c00b446af2f85ceaf16c8b697e/dott_ng-1.9.2-py3-none-any.whl
+[2024-05-26 18:37:03] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/e5/bb/9a16b289d7453095ab2485d73acf22968e24e78ddee8f364f962860bc7e1/llama_cpp_agent-0.2.9.tar.gz
+[2024-05-26 18:37:03] INFO root fetch - processPackages [dott-ng-runtime]: Downloading https://files.pythonhosted.org/packages/8f/46/d42337be749a5b6b3c9ad02a316513ee5fcbaa03215b90db8031a331c619/dott_ng_runtime-1.1.1-py3-none-win_amd64.whl
+[2024-05-26 18:37:03] INFO root fetch - processPackages [apeboiy]: Downloading https://files.pythonhosted.org/packages/04/42/a8230541f443842d5b00d865f7079650b8c865bda89a3de4ebc4010d0579/apeboiy-0.0.9.tar.gz
+[2024-05-26 18:37:04] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/27/0f/c18b5fa4712b3f6bcc42462d85618b5a3c37cc5d4c765462ebfab12d9c8f/abcli-9.3.1.tar.gz
+[2024-05-26 18:37:04] INFO root fetch - processPackages [llama-cpp-agent]: executing diffoscope
+[2024-05-26 18:37:04] INFO root fetch - processPackages [llama-cpp-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_agent-0.2.8.tar.gz tmp/llama_cpp_agent-0.2.9.tar.gz --markdown 20240526/l/llama-cpp-agent/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 18:37:04] INFO root fetch - processPackages [apeboiy]: executing diffoscope
+[2024-05-26 18:37:04] INFO root fetch - processPackages [apeboiy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apeboiy-0.0.8.tar.gz tmp/apeboiy-0.0.9.tar.gz --markdown 20240526/a/apeboiy/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 18:37:04] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/46/87/7396855bd027de43e635cea5168d7491e3665556ed138f395c91892e00b6/ai_alchemy-0.1.9.tar.gz
+[2024-05-26 18:37:04] WARNING root fetch - processPackages [dott-ng-runtime]: Skipping package: exceeds size limit 41990437>=10485760
+[2024-05-26 18:37:04] INFO root fetch - main [MainThread]: End processing [dott-ng-runtime] error
+[2024-05-26 18:37:04] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-26 18:37:04] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-9.2.1.tar.gz tmp/abcli-9.3.1.tar.gz --markdown 20240526/a/abcli/9.2.1-9.3.1/README.md --exclude *.pyd
+[2024-05-26 18:37:04] INFO root fetch - processPackages [dott-ng]: Downloading https://files.pythonhosted.org/packages/61/a7/81d3a4a40236f97f317f93878ecb2ff5ff6188def96c9f80696d2a3c8e3e/dott_ng-1.9.3-py3-none-any.whl
+[2024-05-26 18:37:04] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 18:37:04] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.8.tar.gz tmp/ai_alchemy-0.1.9.tar.gz --markdown 20240526/a/ai-alchemy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 18:37:04] INFO root fetch - processPackages [xtrain]: Downloading https://files.pythonhosted.org/packages/35/cb/f70c6eab3e64e0928b396f10c54151dd9acdd2316261c2c119d2d87ab243/xtrain-0.3.3.tar.gz
+[2024-05-26 18:37:04] INFO root fetch - processPackages [dott-ng]: executing diffoscope
+[2024-05-26 18:37:04] INFO root fetch - processPackages [dott-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dott_ng-1.9.2-py3-none-any.whl.zip tmp/dott_ng-1.9.3-py3-none-any.whl.zip --markdown 20240526/d/dott-ng/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-05-26 18:37:04] INFO root fetch - processPackages [xtrain]: executing diffoscope
+[2024-05-26 18:37:04] INFO root fetch - processPackages [xtrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtrain-0.3.2.tar.gz tmp/xtrain-0.3.3.tar.gz --markdown 20240526/x/xtrain/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-26 18:37:04] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.8.tar.gz]
+[2024-05-26 18:37:04] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.9.tar.gz]
+[2024-05-26 18:37:04] INFO root fetch - main [MainThread]: End processing [llama-cpp-agent]: success
+[2024-05-26 18:37:04] INFO root fetch - processPackages [apeboiy]: Remove: archive file [/home/abi/fetcher/tmp/apeboiy-0.0.8.tar.gz]
+[2024-05-26 18:37:04] INFO root fetch - processPackages [apeboiy]: Remove: archive file [/home/abi/fetcher/tmp/apeboiy-0.0.9.tar.gz]
+[2024-05-26 18:37:04] INFO root fetch - main [MainThread]: End processing [apeboiy]: success
+[2024-05-26 18:37:05] INFO root fetch - processPackages [xtrain]: Remove: archive file [/home/abi/fetcher/tmp/xtrain-0.3.2.tar.gz]
+[2024-05-26 18:37:05] INFO root fetch - processPackages [xtrain]: Remove: archive file [/home/abi/fetcher/tmp/xtrain-0.3.3.tar.gz]
+[2024-05-26 18:37:05] INFO root fetch - main [MainThread]: End processing [xtrain]: success
+[2024-05-26 18:37:05] INFO root fetch - processPackages [dott-ng]: Remove: archive file [/home/abi/fetcher/tmp/dott_ng-1.9.2-py3-none-any.whl.zip]
+[2024-05-26 18:37:05] INFO root fetch - processPackages [dott-ng]: Remove: archive file [/home/abi/fetcher/tmp/dott_ng-1.9.3-py3-none-any.whl.zip]
+[2024-05-26 18:37:05] INFO root fetch - main [MainThread]: End processing [dott-ng]: success
+[2024-05-26 18:37:05] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.8.tar.gz]
+[2024-05-26 18:37:05] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.9.tar.gz]
+[2024-05-26 18:37:05] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 18:37:05] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.2.1.tar.gz]
+[2024-05-26 18:37:05] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.3.1.tar.gz]
+[2024-05-26 18:37:05] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-26 18:37:05] INFO root fetch - main [MainThread]: Store serial: [23384807]
