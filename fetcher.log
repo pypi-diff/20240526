@@ -3909,3 +3909,12 @@
 [2024-05-26 07:09:03] INFO root fetch - processPackages [pystools]: Remove: archive file [/home/abi/fetcher/tmp/pystools-0.0.9.tar.gz]
 [2024-05-26 07:09:03] INFO root fetch - main [MainThread]: End processing [pystools]: success
 [2024-05-26 07:09:03] INFO root fetch - main [MainThread]: Store serial: [23379826]
+[2024-05-26 07:11:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379826]
+[2024-05-26 07:11:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 07:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-reverse-string
+[2024-05-26 07:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-emailvalidator
+[2024-05-26 07:11:11] WARNING root fetch - processPackages [apiverve-emailvalidator]: Skipping, unable to determine old version
+[2024-05-26 07:11:11] INFO root fetch - main [MainThread]: End processing [apiverve-emailvalidator] error
+[2024-05-26 07:11:11] WARNING root fetch - processPackages [my-reverse-string]: Skipping, unable to determine old version
+[2024-05-26 07:11:11] INFO root fetch - main [MainThread]: End processing [my-reverse-string] error
+[2024-05-26 07:11:11] INFO root fetch - main [MainThread]: Store serial: [23379835]
