@@ -919,3 +919,18 @@
 [2024-05-26 02:08:00] INFO root fetch - processPackages [compressed-tensors-nightly]: Remove: archive file [/home/abi/fetcher/tmp/compressed_tensors_nightly-0.3.3.20240525-py3-none-any.whl.zip]
 [2024-05-26 02:08:00] INFO root fetch - main [MainThread]: End processing [compressed-tensors-nightly]: success
 [2024-05-26 02:08:00] INFO root fetch - main [MainThread]: Store serial: [23378547]
+[2024-05-26 02:10:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378547]
+[2024-05-26 02:10:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 02:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-common
+[2024-05-26 02:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: discord-react
+[2024-05-26 02:10:08] WARNING root fetch - processPackages [discord-react]: Skipping, unable to determine old version
+[2024-05-26 02:10:08] INFO root fetch - main [MainThread]: End processing [discord-react] error
+[2024-05-26 02:10:08] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-26 02:10:08] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-26 02:10:09] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-26 02:10:09] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-26 02:10:09] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240526/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-26 02:10:10] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-26 02:10:10] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-26 02:10:10] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-26 02:10:10] INFO root fetch - main [MainThread]: Store serial: [23378552]
