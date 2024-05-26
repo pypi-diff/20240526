@@ -3885,3 +3885,27 @@
 [2024-05-26 07:06:52] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz]
 [2024-05-26 07:06:52] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
 [2024-05-26 07:06:52] INFO root fetch - main [MainThread]: Store serial: [23379814]
+[2024-05-26 07:08:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379814]
+[2024-05-26 07:09:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 07:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipackager
+[2024-05-26 07:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-emaildisposablechecker
+[2024-05-26 07:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pystools
+[2024-05-26 07:09:01] INFO root fetch - processPackages [pipackager]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-26 07:09:01] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/0d/ad/29b43fc7dd141c5d254d22137950c24e7e1c21cb0f8d9d85ca0e70e18af7/pipackager-0.4.5.tar.gz
+[2024-05-26 07:09:01] WARNING root fetch - processPackages [apiverve-emaildisposablechecker]: Skipping, unable to determine old version
+[2024-05-26 07:09:01] INFO root fetch - main [MainThread]: End processing [apiverve-emaildisposablechecker] error
+[2024-05-26 07:09:01] INFO root fetch - processPackages [pystools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 07:09:01] INFO root fetch - processPackages [pystools]: Downloading https://files.pythonhosted.org/packages/d3/f1/f6fef6b574bd57970579f257d2f3b2adf9f6b87b20d9dc2c11e18d2a4a47/pystools-0.0.8.tar.gz
+[2024-05-26 07:09:01] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/33/08/bd777d0cf91701325dc3949cdcd661ba56d3199183c8fb89dd7a57ac885b/pipackager-0.4.6.tar.gz
+[2024-05-26 07:09:01] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 07:09:01] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.4.5.tar.gz tmp/pipackager-0.4.6.tar.gz --markdown 20240526/p/pipackager/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-26 07:09:01] INFO root fetch - processPackages [pystools]: Downloading https://files.pythonhosted.org/packages/9b/5a/9f2cf38e22565c5aa2ecb7be3dbecb7a44f7d23efbd86fd532eacd613f62/pystools-0.0.9.tar.gz
+[2024-05-26 07:09:02] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.5.tar.gz]
+[2024-05-26 07:09:02] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.6.tar.gz]
+[2024-05-26 07:09:02] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 07:09:02] INFO root fetch - processPackages [pystools]: executing diffoscope
+[2024-05-26 07:09:02] INFO root fetch - processPackages [pystools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystools-0.0.8.tar.gz tmp/pystools-0.0.9.tar.gz --markdown 20240526/p/pystools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 07:09:03] INFO root fetch - processPackages [pystools]: Remove: archive file [/home/abi/fetcher/tmp/pystools-0.0.8.tar.gz]
+[2024-05-26 07:09:03] INFO root fetch - processPackages [pystools]: Remove: archive file [/home/abi/fetcher/tmp/pystools-0.0.9.tar.gz]
+[2024-05-26 07:09:03] INFO root fetch - main [MainThread]: End processing [pystools]: success
+[2024-05-26 07:09:03] INFO root fetch - main [MainThread]: Store serial: [23379826]
