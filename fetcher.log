@@ -15335,3 +15335,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:11:59] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.5.tar.gz]
 [2024-05-26 19:11:59] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
 [2024-05-26 19:11:59] INFO root fetch - main [MainThread]: Store serial: [23385074]
+[2024-05-26 19:14:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385074]
+[2024-05-26 19:14:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 19:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ambient-backend-api-client
+[2024-05-26 19:14:08] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:14:08] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/f6/eb/59da8ec681d918996a898f98dd992f0dd01c4e66248583c87fd5d597e6bb/ambient_backend_api_client-0.1.8.tar.gz
+[2024-05-26 19:14:08] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/0b/1f/b717fb08cbd4446f6c3ef2f503b2b7cf7489a90af64d9e8982283ae67928/ambient_backend_api_client-0.1.9.tar.gz
+[2024-05-26 19:14:08] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-05-26 19:14:08] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.8.tar.gz tmp/ambient_backend_api_client-0.1.9.tar.gz --markdown 20240526/a/ambient-backend-api-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 19:14:09] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.8.tar.gz]
+[2024-05-26 19:14:09] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.9.tar.gz]
+[2024-05-26 19:14:09] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-05-26 19:14:09] INFO root fetch - main [MainThread]: Store serial: [23385077]
