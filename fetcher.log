@@ -16388,3 +16388,49 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:19:56] INFO root fetch - processPackages [CryptoLyzer]: Remove: archive file [/home/abi/fetcher/tmp/CryptoLyzer-0.9.1.tar.gz]
 [2024-05-26 20:19:56] INFO root fetch - main [MainThread]: End processing [CryptoLyzer]: success
 [2024-05-26 20:19:56] INFO root fetch - main [MainThread]: Store serial: [23385661]
+[2024-05-26 20:22:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385661]
+[2024-05-26 20:22:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 20:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyarcamsolo
+[2024-05-26 20:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: z2m-log-parser
+[2024-05-26 20:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kamangir
+[2024-05-26 20:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: techtribe-addressbook
+[2024-05-26 20:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kamangir
+[2024-05-26 20:22:05] INFO root fetch - processPackages [techtribe-addressbook]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 20:22:05] INFO root fetch - processPackages [z2m-log-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: New version: [3.67.1] Old Version: [3.65.1]
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: New version: [3.67.1] Old Version: [3.65.1]
+[2024-05-26 20:22:05] INFO root fetch - processPackages [pyarcamsolo]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 20:22:05] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/3c/bf/045aab314e9a6c6ba6648f7196be4382d805417677bd4ab8597079a40eec/z2m_log_parser-0.0.8.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/17/7e/4b6c304cc1ab1537dff144df9dcc8452784f05e41afba050207ba4ef736d/kamangir-3.65.1.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [techtribe-addressbook]: Downloading https://files.pythonhosted.org/packages/cb/be/72ee94c8e8b0c51291d928e811979ed128c96ac48193073dfa39f631c461/techtribe_addressbook-1.0.1.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/17/7e/4b6c304cc1ab1537dff144df9dcc8452784f05e41afba050207ba4ef736d/kamangir-3.65.1.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [pyarcamsolo]: Downloading https://files.pythonhosted.org/packages/c1/1c/1e61f9d070ff380818615227a4bd803130a9f6011575744ffa8f7a25369d/pyarcamsolo-0.0.5.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/71/97/7033f666d3eb6726fdd071cf1160a1c1a82f0c16dce62d13168b432e6ac1/z2m_log_parser-0.0.9.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [techtribe-addressbook]: Downloading https://files.pythonhosted.org/packages/34/52/3830b091267534912832496de4c357811113713bc282dd5961581b1f5b6d/techtribe_addressbook-1.0.2.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [z2m-log-parser]: executing diffoscope
+[2024-05-26 20:22:05] INFO root fetch - processPackages [z2m-log-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z2m_log_parser-0.0.8.tar.gz tmp/z2m_log_parser-0.0.9.tar.gz --markdown 20240526/z/z2m-log-parser/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/62/dc/c2ce45f953935b32e3a04b48155a9f8b277b138b1fc7c2a256c00e500207/kamangir-3.67.1.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/62/dc/c2ce45f953935b32e3a04b48155a9f8b277b138b1fc7c2a256c00e500207/kamangir-3.67.1.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [techtribe-addressbook]: executing diffoscope
+[2024-05-26 20:22:05] INFO root fetch - processPackages [techtribe-addressbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/techtribe_addressbook-1.0.1.tar.gz tmp/techtribe_addressbook-1.0.2.tar.gz --markdown 20240526/t/techtribe-addressbook/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.65.1.tar.gz tmp/kamangir-3.67.1.tar.gz --markdown 20240526/k/kamangir/3.65.1-3.67.1/README.md --exclude *.pyd
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-26 20:22:05] INFO root fetch - processPackages [pyarcamsolo]: Downloading https://files.pythonhosted.org/packages/d9/5b/1a5a2e474441d815370520362cd22ee47fe211e023633ae35f31dc1458f8/pyarcamsolo-0.0.6.tar.gz
+[2024-05-26 20:22:05] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.65.1.tar.gz tmp/kamangir-3.67.1.tar.gz --markdown 20240526/k/kamangir/3.65.1-3.67.1/README.md --exclude *.pyd
+[2024-05-26 20:22:05] INFO root fetch - processPackages [pyarcamsolo]: executing diffoscope
+[2024-05-26 20:22:05] INFO root fetch - processPackages [pyarcamsolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarcamsolo-0.0.5.tar.gz tmp/pyarcamsolo-0.0.6.tar.gz --markdown 20240526/p/pyarcamsolo/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 20:22:06] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.8.tar.gz]
+[2024-05-26 20:22:06] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.9.tar.gz]
+[2024-05-26 20:22:06] INFO root fetch - main [MainThread]: End processing [z2m-log-parser]: success
+[2024-05-26 20:22:06] INFO root fetch - processPackages [techtribe-addressbook]: Remove: archive file [/home/abi/fetcher/tmp/techtribe_addressbook-1.0.1.tar.gz]
+[2024-05-26 20:22:06] INFO root fetch - processPackages [techtribe-addressbook]: Remove: archive file [/home/abi/fetcher/tmp/techtribe_addressbook-1.0.2.tar.gz]
+[2024-05-26 20:22:06] INFO root fetch - main [MainThread]: End processing [techtribe-addressbook]: success
+[2024-05-26 20:22:06] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.65.1.tar.gz]
+[2024-05-26 20:22:06] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.67.1.tar.gz]
+[2024-05-26 20:22:06] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-26 20:22:06] INFO root fetch - processPackages [pyarcamsolo]: Remove: archive file [/home/abi/fetcher/tmp/pyarcamsolo-0.0.5.tar.gz]
+[2024-05-26 20:22:06] INFO root fetch - processPackages [pyarcamsolo]: Remove: archive file [/home/abi/fetcher/tmp/pyarcamsolo-0.0.6.tar.gz]
+[2024-05-26 20:22:06] INFO root fetch - main [MainThread]: End processing [pyarcamsolo]: success
+[2024-05-26 20:22:06] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-26 20:22:06] INFO root fetch - main [MainThread]: Store serial: [23385676]
