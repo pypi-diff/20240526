@@ -8934,3 +8934,41 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:21:01] INFO root fetch - processPackages [TenshiTranslator]: Remove: archive file [/home/abi/fetcher/tmp/tenshitranslator-2.0.0.tar.gz]
 [2024-05-26 12:21:01] INFO root fetch - main [MainThread]: End processing [TenshiTranslator]: success
 [2024-05-26 12:21:01] INFO root fetch - main [MainThread]: Store serial: [23382150]
+[2024-05-26 12:23:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382150]
+[2024-05-26 12:23:14] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 12:25:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382150]
+[2024-05-26 12:25:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 12:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: examy
+[2024-05-26 12:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mtai
+[2024-05-26 12:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CloudConnector
+[2024-05-26 12:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyevaljs3
+[2024-05-26 12:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: img-ai
+[2024-05-26 12:25:20] WARNING root fetch - processPackages [examy]: Skipping, unable to determine old version
+[2024-05-26 12:25:20] INFO root fetch - main [MainThread]: End processing [examy] error
+[2024-05-26 12:25:20] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 12:25:20] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 12:25:20] INFO root fetch - processPackages [pyevaljs3]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 12:25:20] INFO root fetch - processPackages [mtai]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-26 12:25:20] WARNING root fetch - processPackages [img-ai]: Skipping, unable to determine old version
+[2024-05-26 12:25:20] INFO root fetch - main [MainThread]: End processing [img-ai] error
+[2024-05-26 12:25:20] INFO root fetch - processPackages [pyevaljs3]: Downloading https://files.pythonhosted.org/packages/1f/83/fa0efef6e212152a9c097b5560faf787eb6628c7e5522938e88b3100cedd/pyevaljs3-0.1.2.tar.gz
+[2024-05-26 12:25:20] INFO root fetch - processPackages [mtai]: Downloading https://files.pythonhosted.org/packages/55/f1/365b2f7c2ce6aa51471c88e71e7b02b5e22509aee27849e9950d5190a48a/mtai-0.0.3.tar.gz
+[2024-05-26 12:25:20] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 12:25:20] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 12:25:20] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 12:25:21] INFO root fetch - processPackages [pyevaljs3]: Downloading https://files.pythonhosted.org/packages/f3/6a/53520187cd2d3fa0291649e8892fde31da42915a1a968ff8850d6fe8d0f7/pyevaljs3-0.1.3.tar.gz
+[2024-05-26 12:25:21] INFO root fetch - processPackages [mtai]: Downloading https://files.pythonhosted.org/packages/45/73/281d568420efd6f92cd65af40c86524772c41e4cfa38e171483b1898399a/mtai-0.0.4.tar.gz
+[2024-05-26 12:25:21] INFO root fetch - processPackages [pyevaljs3]: executing diffoscope
+[2024-05-26 12:25:21] INFO root fetch - processPackages [pyevaljs3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyevaljs3-0.1.2.tar.gz tmp/pyevaljs3-0.1.3.tar.gz --markdown 20240526/p/pyevaljs3/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 12:25:21] INFO root fetch - processPackages [mtai]: executing diffoscope
+[2024-05-26 12:25:21] INFO root fetch - processPackages [mtai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtai-0.0.3.tar.gz tmp/mtai-0.0.4.tar.gz --markdown 20240526/m/mtai/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-26 12:25:21] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 12:25:21] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 12:25:21] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 12:25:21] INFO root fetch - processPackages [pyevaljs3]: Remove: archive file [/home/abi/fetcher/tmp/pyevaljs3-0.1.2.tar.gz]
+[2024-05-26 12:25:21] INFO root fetch - processPackages [pyevaljs3]: Remove: archive file [/home/abi/fetcher/tmp/pyevaljs3-0.1.3.tar.gz]
+[2024-05-26 12:25:21] INFO root fetch - main [MainThread]: End processing [pyevaljs3]: success
+[2024-05-26 12:25:21] INFO root fetch - processPackages [mtai]: Remove: archive file [/home/abi/fetcher/tmp/mtai-0.0.3.tar.gz]
+[2024-05-26 12:25:21] INFO root fetch - processPackages [mtai]: Remove: archive file [/home/abi/fetcher/tmp/mtai-0.0.4.tar.gz]
+[2024-05-26 12:25:21] INFO root fetch - main [MainThread]: End processing [mtai]: success
+[2024-05-26 12:25:21] INFO root fetch - main [MainThread]: Store serial: [23382168]
