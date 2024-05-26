@@ -13458,3 +13458,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:20:57] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.8.tar.gz]
 [2024-05-26 17:20:57] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
 [2024-05-26 17:20:57] INFO root fetch - main [MainThread]: Store serial: [23384255]
+[2024-05-26 17:23:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384255]
+[2024-05-26 17:23:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 17:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ai-alchemy
+[2024-05-26 17:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pennylane-qrack
+[2024-05-26 17:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: absbox
+[2024-05-26 17:23:06] INFO root fetch - processPackages [pennylane-qrack]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-26 17:23:06] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-26 17:23:06] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/b6/30/5e44d0d7980e57c6f2f0945c9d72ac3c3efb07d4061fc9e3a5478adc2b53/ai_alchemy-0.1.4.tar.gz
+[2024-05-26 17:23:06] INFO root fetch - processPackages [pennylane-qrack]: Downloading https://files.pythonhosted.org/packages/9d/88/d4820670dc0006b16c6bb9786bd6cf51bcbf62e1291641e44e73fe4d05df/pennylane_qrack-0.6.0.tar.gz
+[2024-05-26 17:23:06] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-05-26 17:23:06] INFO root fetch - processPackages [pennylane-qrack]: Downloading https://files.pythonhosted.org/packages/12/c4/4636ca4f790cbda78dae31a4701c1263e362a3db1e8ffb7112ef2930802e/pennylane_qrack-0.6.1.tar.gz
+[2024-05-26 17:23:06] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-05-26 17:23:06] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/3a/1b/a6230d9a9a5d24df60c18d943a55f40d55732dd5a701f5605119fe6bf7ca/ai_alchemy-0.1.5.tar.gz
+[2024-05-26 17:23:07] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 17:23:07] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.4.tar.gz tmp/ai_alchemy-0.1.5.tar.gz --markdown 20240526/a/ai-alchemy/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-26 17:23:07] INFO root fetch - processPackages [pennylane-qrack]: executing diffoscope
+[2024-05-26 17:23:07] INFO root fetch - processPackages [pennylane-qrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pennylane_qrack-0.6.0.tar.gz tmp/pennylane_qrack-0.6.1.tar.gz --markdown 20240526/p/pennylane-qrack/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-26 17:23:07] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-05-26 17:23:07] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-05-26 17:23:07] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240526/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-05-26 17:23:07] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.4.tar.gz]
+[2024-05-26 17:23:07] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.5.tar.gz]
+[2024-05-26 17:23:07] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 17:23:07] INFO root fetch - processPackages [pennylane-qrack]: Remove: archive file [/home/abi/fetcher/tmp/pennylane_qrack-0.6.0.tar.gz]
+[2024-05-26 17:23:07] INFO root fetch - processPackages [pennylane-qrack]: Remove: archive file [/home/abi/fetcher/tmp/pennylane_qrack-0.6.1.tar.gz]
+[2024-05-26 17:23:07] INFO root fetch - main [MainThread]: End processing [pennylane-qrack]: success
+[2024-05-26 17:23:07] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-05-26 17:23:07] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-05-26 17:23:07] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-05-26 17:23:07] INFO root fetch - main [MainThread]: Store serial: [23384265]
