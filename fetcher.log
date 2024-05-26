@@ -5432,3 +5432,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:24:16] INFO root fetch - processPackages [archiwith]: Remove: archive file [/home/abi/fetcher/tmp/archiwith-1.1.2.tar.gz]
 [2024-05-26 09:24:16] INFO root fetch - main [MainThread]: End processing [archiwith]: success
 [2024-05-26 09:24:16] INFO root fetch - main [MainThread]: Store serial: [23380592]
+[2024-05-26 09:26:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380592]
+[2024-05-26 09:26:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 09:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-mail-post-defer
+[2024-05-26 09:26:26] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.1.5]
+[2024-05-26 09:26:26] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Downloading https://files.pythonhosted.org/packages/3b/e0/3d30187cc3d9421f00d591e264c987dfd6319fd02cde84d9fd609b84c941/odoo_addon_mail_post_defer-16.0.1.0.1.5-py3-none-any.whl
+[2024-05-26 09:26:26] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Downloading https://files.pythonhosted.org/packages/09/bf/23123b4de059dc4ba32175483c37c10bedbcb8a821be4cae793224db6bab/odoo_addon_mail_post_defer-16.0.1.1.0-py3-none-any.whl
+[2024-05-26 09:26:26] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: executing diffoscope
+[2024-05-26 09:26:26] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mail_post_defer-16.0.1.0.1.5-py3-none-any.whl.zip tmp/odoo_addon_mail_post_defer-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240526/o/odoo-addon-mail-post-defer/16.0.1.0.1.5-16.0.1.1.0/README.md --exclude *.pyd
+[2024-05-26 09:26:27] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_post_defer-16.0.1.0.1.5-py3-none-any.whl.zip]
+[2024-05-26 09:26:27] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_post_defer-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-26 09:26:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-post-defer]: success
+[2024-05-26 09:26:27] INFO root fetch - main [MainThread]: Store serial: [23380601]
