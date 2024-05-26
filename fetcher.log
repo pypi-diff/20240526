@@ -16313,3 +16313,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:15:35] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.9.tar.gz]
 [2024-05-26 20:15:35] INFO root fetch - main [MainThread]: End processing [z2m-log-parser]: success
 [2024-05-26 20:15:35] INFO root fetch - main [MainThread]: Store serial: [23385630]
+[2024-05-26 20:17:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385630]
+[2024-05-26 20:17:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 20:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-ecr-deployment
+[2024-05-26 20:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyDEMATEL
+[2024-05-26 20:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-fourier-rescale
+[2024-05-26 20:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: glotter2
+[2024-05-26 20:17:44] INFO root fetch - processPackages [pyDEMATEL]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 20:17:44] ERROR root fetch - processPackages [torch-fourier-rescale]: Unable to get metadata: No such project 'torch-fourier-rescale'
+[2024-05-26 20:17:44] INFO root fetch - main [MainThread]: End processing [torch-fourier-rescale] error
+[2024-05-26 20:17:44] INFO root fetch - processPackages [glotter2]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-26 20:17:44] INFO root fetch - processPackages [cdk-ecr-deployment]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-05-26 20:17:44] INFO root fetch - processPackages [pyDEMATEL]: Downloading https://files.pythonhosted.org/packages/09/9b/47f25fdd5950bcc1fd14bc959f36a3078ff4076b23e1ae546fb5f46582f2/pydematel-0.1.0.tar.gz
+[2024-05-26 20:17:44] INFO root fetch - processPackages [glotter2]: Downloading https://files.pythonhosted.org/packages/35/f4/e036975f8f0e0c9bd6f3fb0652b04b4e04ecf86bb687298f6f32735199ca/glotter2-0.8.1.tar.gz
+[2024-05-26 20:17:44] INFO root fetch - processPackages [cdk-ecr-deployment]: Downloading https://files.pythonhosted.org/packages/f2/0f/dc3794b8dfc7de96b78ebdafe54d17c5dbcc4c74b5c302d83f0a89bcad6f/cdk-ecr-deployment-3.0.8.tar.gz
+[2024-05-26 20:17:44] INFO root fetch - processPackages [pyDEMATEL]: Downloading https://files.pythonhosted.org/packages/88/86/2f15b8cb3da8df87517c362f7ffddd6870b4113b8b6abc8ce5f27b48a032/pydematel-0.1.1.tar.gz
+[2024-05-26 20:17:44] INFO root fetch - processPackages [pyDEMATEL]: executing diffoscope
+[2024-05-26 20:17:44] INFO root fetch - processPackages [pyDEMATEL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydematel-0.1.0.tar.gz tmp/pydematel-0.1.1.tar.gz --markdown 20240526/p/pyDEMATEL/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 20:17:44] INFO root fetch - processPackages [glotter2]: Downloading https://files.pythonhosted.org/packages/36/16/8cc06acf5da4e64ea5ae22178c508429527b28e367fc1f6d371e65c69bff/glotter2-0.8.2.tar.gz
+[2024-05-26 20:17:45] INFO root fetch - processPackages [cdk-ecr-deployment]: Downloading https://files.pythonhosted.org/packages/14/e7/64da189beeb50823724b0d18358741faabf9a3ee6c432069fdc8fba452bf/cdk-ecr-deployment-3.0.9.tar.gz
+[2024-05-26 20:17:45] INFO root fetch - processPackages [glotter2]: executing diffoscope
+[2024-05-26 20:17:45] INFO root fetch - processPackages [glotter2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glotter2-0.8.1.tar.gz tmp/glotter2-0.8.2.tar.gz --markdown 20240526/g/glotter2/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-26 20:17:45] INFO root fetch - processPackages [cdk-ecr-deployment]: executing diffoscope
+[2024-05-26 20:17:45] INFO root fetch - processPackages [cdk-ecr-deployment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecr-deployment-3.0.8.tar.gz tmp/cdk-ecr-deployment-3.0.9.tar.gz --markdown 20240526/c/cdk-ecr-deployment/3.0.8-3.0.9/README.md --exclude *.pyd
+[2024-05-26 20:17:45] INFO root fetch - processPackages [pyDEMATEL]: Remove: archive file [/home/abi/fetcher/tmp/pydematel-0.1.0.tar.gz]
+[2024-05-26 20:17:45] INFO root fetch - processPackages [pyDEMATEL]: Remove: archive file [/home/abi/fetcher/tmp/pydematel-0.1.1.tar.gz]
+[2024-05-26 20:17:45] INFO root fetch - main [MainThread]: End processing [pyDEMATEL]: success
+[2024-05-26 20:17:45] INFO root fetch - processPackages [glotter2]: Remove: archive file [/home/abi/fetcher/tmp/glotter2-0.8.1.tar.gz]
+[2024-05-26 20:17:45] INFO root fetch - processPackages [glotter2]: Remove: archive file [/home/abi/fetcher/tmp/glotter2-0.8.2.tar.gz]
+[2024-05-26 20:17:45] INFO root fetch - main [MainThread]: End processing [glotter2]: success
+[2024-05-26 20:17:46] INFO root fetch - processPackages [cdk-ecr-deployment]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecr-deployment-3.0.8.tar.gz]
+[2024-05-26 20:17:46] INFO root fetch - processPackages [cdk-ecr-deployment]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecr-deployment-3.0.9.tar.gz]
+[2024-05-26 20:17:46] INFO root fetch - main [MainThread]: End processing [cdk-ecr-deployment]: success
+[2024-05-26 20:17:46] INFO root fetch - main [MainThread]: Store serial: [23385644]
