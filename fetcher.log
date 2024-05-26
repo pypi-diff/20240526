@@ -11306,3 +11306,39 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:34:21] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-26 15:34:21] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-26 15:34:21] INFO root fetch - main [MainThread]: Store serial: [23383332]
+[2024-05-26 15:36:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383332]
+[2024-05-26 15:36:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 15:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: playwright-page-pool
+[2024-05-26 15:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bacterial-image-analyzer
+[2024-05-26 15:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iRe.py
+[2024-05-26 15:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pi-awning-webthing
+[2024-05-26 15:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: parse-it
+[2024-05-26 15:36:50] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 15:36:50] INFO root fetch - processPackages [parse-it]: New version: [3.8.0] Old Version: [3.7.0]
+[2024-05-26 15:36:50] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f3/91/ba07c9e27dbb568d0143cb8eab18a7b153f080c095d6be2a900c7fd69332/pi_awning_webthing-0.3.8.tar.gz
+[2024-05-26 15:36:50] WARNING root fetch - processPackages [playwright-page-pool]: Skipping, unable to determine old version
+[2024-05-26 15:36:50] INFO root fetch - main [MainThread]: End processing [playwright-page-pool] error
+[2024-05-26 15:36:50] WARNING root fetch - processPackages [bacterial-image-analyzer]: Skipping, unable to determine old version
+[2024-05-26 15:36:50] INFO root fetch - main [MainThread]: End processing [bacterial-image-analyzer] error
+[2024-05-26 15:36:50] INFO root fetch - processPackages [iRe.py]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-26 15:36:50] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/cd/52/dbb13663fccbffb09d020cc56e8a7a1b551efa4c47759a518f758bba3f02/parse_it-3.7.0.tar.gz
+[2024-05-26 15:36:50] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 15:36:50] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/3b/d8/0a3f4a732fa677a35dbea4e9c72741f55e44859dc1c79bf5edfce61d95f0/parse_it-3.8.0.tar.gz
+[2024-05-26 15:36:50] INFO root fetch - processPackages [iRe.py]: Downloading https://files.pythonhosted.org/packages/b8/79/8ade605f972e6d213fdaef25a0db5cec3bd951a6f58edf79a3799ede824f/iRe.py-0.2.0.tar.gz
+[2024-05-26 15:36:50] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 15:36:50] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.8.tar.gz tmp/pi_awning_webthing-0.3.9.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 15:36:50] INFO root fetch - processPackages [parse-it]: executing diffoscope
+[2024-05-26 15:36:50] INFO root fetch - processPackages [parse-it]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_it-3.7.0.tar.gz tmp/parse_it-3.8.0.tar.gz --markdown 20240526/p/parse-it/3.7.0-3.8.0/README.md --exclude *.pyd
+[2024-05-26 15:36:50] INFO root fetch - processPackages [iRe.py]: Downloading https://files.pythonhosted.org/packages/5f/19/fd0bfeeb0252c1e3e2bba23813c08badf1edfafbb513c6fe0e1d388f4a5c/iRe.py-0.3.0.tar.gz
+[2024-05-26 15:36:51] INFO root fetch - processPackages [iRe.py]: executing diffoscope
+[2024-05-26 15:36:51] INFO root fetch - processPackages [iRe.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iRe.py-0.2.0.tar.gz tmp/iRe.py-0.3.0.tar.gz --markdown 20240526/i/iRe.py/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-26 15:36:51] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.8.tar.gz]
+[2024-05-26 15:36:51] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 15:36:51] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 15:36:51] INFO root fetch - processPackages [parse-it]: Remove: archive file [/home/abi/fetcher/tmp/parse_it-3.7.0.tar.gz]
+[2024-05-26 15:36:51] INFO root fetch - processPackages [parse-it]: Remove: archive file [/home/abi/fetcher/tmp/parse_it-3.8.0.tar.gz]
+[2024-05-26 15:36:51] INFO root fetch - main [MainThread]: End processing [parse-it]: success
+[2024-05-26 15:36:51] INFO root fetch - processPackages [iRe.py]: Remove: archive file [/home/abi/fetcher/tmp/iRe.py-0.2.0.tar.gz]
+[2024-05-26 15:36:51] INFO root fetch - processPackages [iRe.py]: Remove: archive file [/home/abi/fetcher/tmp/iRe.py-0.3.0.tar.gz]
+[2024-05-26 15:36:51] INFO root fetch - main [MainThread]: End processing [iRe.py]: success
+[2024-05-26 15:36:51] INFO root fetch - main [MainThread]: Store serial: [23383351]
