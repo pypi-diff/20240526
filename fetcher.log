@@ -21781,3 +21781,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:18:59] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.2.tar.gz]
 [2024-05-26 23:18:59] INFO root fetch - main [MainThread]: End processing [lenlp]: success
 [2024-05-26 23:18:59] INFO root fetch - main [MainThread]: Store serial: [23387883]
+[2024-05-26 23:21:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387883]
+[2024-05-26 23:21:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 23:21:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bipsea
+[2024-05-26 23:21:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yoto-api
+[2024-05-26 23:21:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rainbowkit
+[2024-05-26 23:21:08] INFO root fetch - processPackages [bipsea]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-26 23:21:08] WARNING root fetch - processPackages [rainbowkit]: Skipping, unable to determine old version
+[2024-05-26 23:21:08] INFO root fetch - main [MainThread]: End processing [rainbowkit] error
+[2024-05-26 23:21:08] INFO root fetch - processPackages [yoto-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-26 23:21:08] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/0c/ce/e8631b9319eccf4ffbaef962e56044d41f29cb3f8c07be1556f741f2569a/yoto_api-1.8.0.tar.gz
+[2024-05-26 23:21:08] INFO root fetch - processPackages [bipsea]: Downloading https://files.pythonhosted.org/packages/cd/76/6e591ace4f14bdf5a1a7e5a9e6a1a41fe58ce5dc3d708286d747edcbc77c/bipsea-0.1.tar.gz
+[2024-05-26 23:21:08] INFO root fetch - processPackages [bipsea]: Downloading https://files.pythonhosted.org/packages/43/1a/57e704e068a391c69c929b8b5feaadb42a0706b7440210d318b07408c600/bipsea-0.1.1.tar.gz
+[2024-05-26 23:21:08] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/28/bc/e9d37198654bf82ae9be692dd9ee95b753eb8ca5b6edf44ab69ecca38f17/yoto_api-1.9.0.tar.gz
+[2024-05-26 23:21:08] INFO root fetch - processPackages [bipsea]: executing diffoscope
+[2024-05-26 23:21:08] INFO root fetch - processPackages [bipsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bipsea-0.1.tar.gz tmp/bipsea-0.1.1.tar.gz --markdown 20240526/b/bipsea/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-26 23:21:08] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-05-26 23:21:08] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.8.0.tar.gz tmp/yoto_api-1.9.0.tar.gz --markdown 20240526/y/yoto-api/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-26 23:21:09] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.8.0.tar.gz]
+[2024-05-26 23:21:09] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
+[2024-05-26 23:21:09] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-05-26 23:21:09] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.1.tar.gz]
+[2024-05-26 23:21:09] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.1.1.tar.gz]
+[2024-05-26 23:21:09] INFO root fetch - main [MainThread]: End processing [bipsea]: success
+[2024-05-26 23:21:09] INFO root fetch - main [MainThread]: Store serial: [23387892]
