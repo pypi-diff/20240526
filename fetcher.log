@@ -14472,3 +14472,18 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:24:03] INFO root fetch - processPackages [json-dict-diff]: Remove: archive file [/home/abi/fetcher/tmp/json_dict_diff-1.0.3.tar.gz]
 [2024-05-26 18:24:03] INFO root fetch - main [MainThread]: End processing [json-dict-diff]: success
 [2024-05-26 18:24:03] INFO root fetch - main [MainThread]: Store serial: [23384688]
+[2024-05-26 18:26:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384688]
+[2024-05-26 18:26:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 18:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: generate-temp-table-sql
+[2024-05-26 18:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clank-so-openinference-instrumentation-dspy
+[2024-05-26 18:26:12] INFO root fetch - processPackages [clank-so-openinference-instrumentation-dspy]: New version: [0.1.9] Old Version: [0.1.6]
+[2024-05-26 18:26:12] WARNING root fetch - processPackages [generate-temp-table-sql]: Skipping, unable to determine old version
+[2024-05-26 18:26:12] INFO root fetch - main [MainThread]: End processing [generate-temp-table-sql] error
+[2024-05-26 18:26:12] INFO root fetch - processPackages [clank-so-openinference-instrumentation-dspy]: Downloading https://files.pythonhosted.org/packages/b7/5d/605ed36777b617bd69c8c8768366865832486cfe170da709c6a8c92dc6ce/clank_so_openinference_instrumentation_dspy-0.1.6.tar.gz
+[2024-05-26 18:26:12] INFO root fetch - processPackages [clank-so-openinference-instrumentation-dspy]: Downloading https://files.pythonhosted.org/packages/b5/46/79bb81af9a46998f6dd7b1672572f8b8b9dfc111ea19582706cac38c6a71/clank_so_openinference_instrumentation_dspy-0.1.9.tar.gz
+[2024-05-26 18:26:12] INFO root fetch - processPackages [clank-so-openinference-instrumentation-dspy]: executing diffoscope
+[2024-05-26 18:26:12] INFO root fetch - processPackages [clank-so-openinference-instrumentation-dspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clank_so_openinference_instrumentation_dspy-0.1.6.tar.gz tmp/clank_so_openinference_instrumentation_dspy-0.1.9.tar.gz --markdown 20240526/c/clank-so-openinference-instrumentation-dspy/0.1.6-0.1.9/README.md --exclude *.pyd
+[2024-05-26 18:26:13] INFO root fetch - processPackages [clank-so-openinference-instrumentation-dspy]: Remove: archive file [/home/abi/fetcher/tmp/clank_so_openinference_instrumentation_dspy-0.1.6.tar.gz]
+[2024-05-26 18:26:13] INFO root fetch - processPackages [clank-so-openinference-instrumentation-dspy]: Remove: archive file [/home/abi/fetcher/tmp/clank_so_openinference_instrumentation_dspy-0.1.9.tar.gz]
+[2024-05-26 18:26:13] INFO root fetch - main [MainThread]: End processing [clank-so-openinference-instrumentation-dspy]: success
+[2024-05-26 18:26:13] INFO root fetch - main [MainThread]: Store serial: [23384697]
