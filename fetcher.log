@@ -16217,3 +16217,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:06:55] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220921.tar.gz]
 [2024-05-26 20:06:55] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2024-05-26 20:06:55] INFO root fetch - main [MainThread]: Store serial: [23385577]
+[2024-05-26 20:08:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385577]
+[2024-05-26 20:09:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylonparser
+[2024-05-26 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-26 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dendrite-python-sdk
+[2024-05-26 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaeger
+[2024-05-26 20:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multi-file-exis
+[2024-05-26 20:09:03] WARNING root fetch - processPackages [multi-file-exis]: Skipping, unable to determine old version
+[2024-05-26 20:09:03] INFO root fetch - main [MainThread]: End processing [multi-file-exis] error
+[2024-05-26 20:09:03] INFO root fetch - processPackages [dendrite-python-sdk]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-05-26 20:09:03] INFO root fetch - processPackages [zenaura]: New version: [0.9.70] Old Version: [0.9.33]
+[2024-05-26 20:09:03] INFO root fetch - processPackages [pylonparser]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 20:09:03] INFO root fetch - processPackages [jaeger]: New version: [1.7.3] Old Version: [1.7.2]
+[2024-05-26 20:09:04] INFO root fetch - processPackages [dendrite-python-sdk]: Downloading https://files.pythonhosted.org/packages/c5/76/fab761e31401d4e8d3e178145ea0b3f7d86647cd0c92b296041d001a8f42/dendrite_python_sdk-0.1.0.tar.gz
+[2024-05-26 20:09:04] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/c0/ab/cc9340e3736fdc8b9ce91d1421daea59c715bfb215303cc68f2f002bebab/zenaura-0.9.33.tar.gz
+[2024-05-26 20:09:04] INFO root fetch - processPackages [pylonparser]: Downloading https://files.pythonhosted.org/packages/82/ab/533a648b3b2b7a00d4204dd909a450918fdfa3cb03eb8cd05c62d1b26f1f/pylonparser-0.1.2.tar.gz
+[2024-05-26 20:09:04] INFO root fetch - processPackages [jaeger]: Downloading https://files.pythonhosted.org/packages/54/ae/82ff03afdea39f9c20536a1a42dbb9fe2cdf8fabed83baab81c85bd1ec86/jaeger-1.7.2.tar.gz
+[2024-05-26 20:09:04] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/55/6e/1f82b402804072f31b7f8510eb906372c67490bb8818f60071a9c336d197/zenaura-0.9.70.tar.gz
+[2024-05-26 20:09:04] INFO root fetch - processPackages [pylonparser]: Downloading https://files.pythonhosted.org/packages/24/55/f7a2e55235047610f7b58b76d543b50287933a5c32ae87944591ca720d84/pylonparser-0.1.3.tar.gz
+[2024-05-26 20:09:04] INFO root fetch - processPackages [dendrite-python-sdk]: Downloading https://files.pythonhosted.org/packages/fc/97/3f6995c05bf7f2c9804d6d457cea71f4541d2de4acc8c9682f440135233a/dendrite_python_sdk-1.0.0.tar.gz
+[2024-05-26 20:09:04] INFO root fetch - processPackages [jaeger]: Downloading https://files.pythonhosted.org/packages/a9/d6/cd1dcabfa1057939fe95dcf43640085634f762fad9aa84f5a31c70b8bcc1/jaeger-1.7.3.tar.gz
+[2024-05-26 20:09:04] INFO root fetch - processPackages [pylonparser]: executing diffoscope
+[2024-05-26 20:09:04] INFO root fetch - processPackages [pylonparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylonparser-0.1.2.tar.gz tmp/pylonparser-0.1.3.tar.gz --markdown 20240526/p/pylonparser/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 20:09:04] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 20:09:04] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.33.tar.gz tmp/zenaura-0.9.70.tar.gz --markdown 20240526/z/zenaura/0.9.33-0.9.70/README.md --exclude *.pyd
+[2024-05-26 20:09:04] INFO root fetch - processPackages [dendrite-python-sdk]: executing diffoscope
+[2024-05-26 20:09:04] INFO root fetch - processPackages [dendrite-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dendrite_python_sdk-0.1.0.tar.gz tmp/dendrite_python_sdk-1.0.0.tar.gz --markdown 20240526/d/dendrite-python-sdk/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-05-26 20:09:04] INFO root fetch - processPackages [jaeger]: executing diffoscope
+[2024-05-26 20:09:04] INFO root fetch - processPackages [jaeger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaeger-1.7.2.tar.gz tmp/jaeger-1.7.3.tar.gz --markdown 20240526/j/jaeger/1.7.2-1.7.3/README.md --exclude *.pyd
+[2024-05-26 20:09:05] INFO root fetch - processPackages [pylonparser]: Remove: archive file [/home/abi/fetcher/tmp/pylonparser-0.1.2.tar.gz]
+[2024-05-26 20:09:05] INFO root fetch - processPackages [pylonparser]: Remove: archive file [/home/abi/fetcher/tmp/pylonparser-0.1.3.tar.gz]
+[2024-05-26 20:09:05] INFO root fetch - main [MainThread]: End processing [pylonparser]: success
+[2024-05-26 20:09:05] INFO root fetch - processPackages [dendrite-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/dendrite_python_sdk-0.1.0.tar.gz]
+[2024-05-26 20:09:05] INFO root fetch - processPackages [dendrite-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/dendrite_python_sdk-1.0.0.tar.gz]
+[2024-05-26 20:09:05] INFO root fetch - main [MainThread]: End processing [dendrite-python-sdk]: success
+[2024-05-26 20:09:05] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.33.tar.gz]
+[2024-05-26 20:09:05] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.70.tar.gz]
+[2024-05-26 20:09:05] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 20:09:05] INFO root fetch - processPackages [jaeger]: Remove: archive file [/home/abi/fetcher/tmp/jaeger-1.7.2.tar.gz]
+[2024-05-26 20:09:05] INFO root fetch - processPackages [jaeger]: Remove: archive file [/home/abi/fetcher/tmp/jaeger-1.7.3.tar.gz]
+[2024-05-26 20:09:05] INFO root fetch - main [MainThread]: End processing [jaeger]: success
+[2024-05-26 20:09:05] INFO root fetch - main [MainThread]: Store serial: [23385597]
