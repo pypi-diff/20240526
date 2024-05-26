@@ -5164,3 +5164,42 @@
 [2024-05-26 09:08:54] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.57-py3-none-any.whl.zip]
 [2024-05-26 09:08:54] INFO root fetch - main [MainThread]: End processing [muko]: success
 [2024-05-26 09:08:54] INFO root fetch - main [MainThread]: Store serial: [23380529]
+[2024-05-26 09:10:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380529]
+[2024-05-26 09:11:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 09:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapegraphai
+[2024-05-26 09:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AsadStack
+[2024-05-26 09:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ddeutil
+[2024-05-26 09:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scatcluster
+[2024-05-26 09:11:04] INFO root fetch - processPackages [AsadStack]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scrapegraphai]: New version: [1.5.0b5] Old Version: [1.5.0b4]
+[2024-05-26 09:11:04] INFO root fetch - processPackages [AsadStack]: Downloading https://files.pythonhosted.org/packages/d4/f2/b7eec2851b33fa9892e67b42293cd06857e71cb05438681d9b7cf0305b75/AsadStack-0.1.0.tar.gz
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-05-26 09:11:04] INFO root fetch - processPackages [ddeutil]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/9d/4b/2c0807a27bcfe16f14874bc003b81e0f633772e84be5866d67505ff31eef/scrapegraphai-1.5.0b4.tar.gz
+[2024-05-26 09:11:04] INFO root fetch - processPackages [ddeutil]: Downloading https://files.pythonhosted.org/packages/29/14/a3247c132069c1e61427f6d5a8d41e86e9f026a6fd31f0978d4bbe5f26c7/ddeutil-0.3.4.tar.gz
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 09:11:04] INFO root fetch - processPackages [AsadStack]: Downloading https://files.pythonhosted.org/packages/06/28/4898a7161019877761039b61ad9cf7f8cb93235767f62d2f78456ce2b922/AsadStack-0.1.1.tar.gz
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 09:11:04] INFO root fetch - processPackages [AsadStack]: executing diffoscope
+[2024-05-26 09:11:04] INFO root fetch - processPackages [AsadStack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AsadStack-0.1.0.tar.gz tmp/AsadStack-0.1.1.tar.gz --markdown 20240526/A/AsadStack/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/5c/04/23c289dddb7a11eb123baf20ae002b5ba74ce2e9142cf5a9b9f8b0d7837f/scrapegraphai-1.5.0b5.tar.gz
+[2024-05-26 09:11:04] INFO root fetch - processPackages [ddeutil]: Downloading https://files.pythonhosted.org/packages/59/2c/18b7d8840d7dc933689f8f2d771c5580a54548845cb02c5c5ee7984df71c/ddeutil-0.3.5.tar.gz
+[2024-05-26 09:11:04] INFO root fetch - processPackages [ddeutil]: executing diffoscope
+[2024-05-26 09:11:04] INFO root fetch - processPackages [ddeutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddeutil-0.3.4.tar.gz tmp/ddeutil-0.3.5.tar.gz --markdown 20240526/d/ddeutil/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-26 09:11:04] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.5.0b4.tar.gz tmp/scrapegraphai-1.5.0b5.tar.gz --markdown 20240526/s/scrapegraphai/1.5.0b4-1.5.0b5/README.md --exclude *.pyd
+[2024-05-26 09:11:05] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-05-26 09:11:05] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 09:11:05] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 09:11:05] INFO root fetch - processPackages [AsadStack]: Remove: archive file [/home/abi/fetcher/tmp/AsadStack-0.1.0.tar.gz]
+[2024-05-26 09:11:05] INFO root fetch - processPackages [AsadStack]: Remove: archive file [/home/abi/fetcher/tmp/AsadStack-0.1.1.tar.gz]
+[2024-05-26 09:11:05] INFO root fetch - main [MainThread]: End processing [AsadStack]: success
+[2024-05-26 09:11:05] INFO root fetch - processPackages [ddeutil]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil-0.3.4.tar.gz]
+[2024-05-26 09:11:05] INFO root fetch - processPackages [ddeutil]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil-0.3.5.tar.gz]
+[2024-05-26 09:11:05] INFO root fetch - main [MainThread]: End processing [ddeutil]: success
+[2024-05-26 09:11:06] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b4.tar.gz]
+[2024-05-26 09:11:06] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b5.tar.gz]
+[2024-05-26 09:11:06] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-26 09:11:06] INFO root fetch - main [MainThread]: Store serial: [23380542]
