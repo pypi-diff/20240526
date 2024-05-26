@@ -2552,3 +2552,28 @@
 [2024-05-26 04:35:49] INFO root fetch - processPackages [intellikit]: Remove: archive file [/home/abi/fetcher/tmp/intellikit-0.0.5.tar.gz]
 [2024-05-26 04:35:49] INFO root fetch - main [MainThread]: End processing [intellikit]: success
 [2024-05-26 04:35:49] INFO root fetch - main [MainThread]: Store serial: [23379274]
+[2024-05-26 04:37:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379274]
+[2024-05-26 04:37:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 04:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379280]
+[2024-05-26 04:40:03] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 04:42:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379280]
+[2024-05-26 04:42:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 04:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-changelist-toolbar-admin
+[2024-05-26 04:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: remarkable-update-fuse
+[2024-05-26 04:42:08] INFO root fetch - processPackages [django-changelist-toolbar-admin]: New version: [0.4.5] Old Version: [0.4.3]
+[2024-05-26 04:42:08] INFO root fetch - processPackages [remarkable-update-fuse]: New version: [1.1.0] Old Version: [1.0.8]
+[2024-05-26 04:42:08] INFO root fetch - processPackages [django-changelist-toolbar-admin]: Downloading https://files.pythonhosted.org/packages/39/bc/c5323d3d68ae3c157f8a6a8c3e40c214b1a8393fd5a46c737b131155908b/django-changelist-toolbar-admin-0.4.3.tar.gz
+[2024-05-26 04:42:08] INFO root fetch - processPackages [remarkable-update-fuse]: Downloading https://files.pythonhosted.org/packages/ff/28/eae1000d409fa3c174e9c38558922d13e14757d674367ffc4daf4bff80ab/remarkable_update_fuse-1.0.8.tar.gz
+[2024-05-26 04:42:08] INFO root fetch - processPackages [remarkable-update-fuse]: Downloading https://files.pythonhosted.org/packages/94/ef/06593dff22ed7576c324b27ecbbf6b98446638fe35a3e685cd046b449f67/remarkable_update_fuse-1.1.0.tar.gz
+[2024-05-26 04:42:09] INFO root fetch - processPackages [django-changelist-toolbar-admin]: Downloading https://files.pythonhosted.org/packages/47/99/63e0156a87422d8112eb372bfd373dd117f4deafae69dce17af77dd17085/django-changelist-toolbar-admin-0.4.5.tar.gz
+[2024-05-26 04:42:09] INFO root fetch - processPackages [remarkable-update-fuse]: executing diffoscope
+[2024-05-26 04:42:09] INFO root fetch - processPackages [remarkable-update-fuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remarkable_update_fuse-1.0.8.tar.gz tmp/remarkable_update_fuse-1.1.0.tar.gz --markdown 20240526/r/remarkable-update-fuse/1.0.8-1.1.0/README.md --exclude *.pyd
+[2024-05-26 04:42:09] INFO root fetch - processPackages [django-changelist-toolbar-admin]: executing diffoscope
+[2024-05-26 04:42:09] INFO root fetch - processPackages [django-changelist-toolbar-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-changelist-toolbar-admin-0.4.3.tar.gz tmp/django-changelist-toolbar-admin-0.4.5.tar.gz --markdown 20240526/d/django-changelist-toolbar-admin/0.4.3-0.4.5/README.md --exclude *.pyd
+[2024-05-26 04:42:09] INFO root fetch - processPackages [remarkable-update-fuse]: Remove: archive file [/home/abi/fetcher/tmp/remarkable_update_fuse-1.0.8.tar.gz]
+[2024-05-26 04:42:09] INFO root fetch - processPackages [remarkable-update-fuse]: Remove: archive file [/home/abi/fetcher/tmp/remarkable_update_fuse-1.1.0.tar.gz]
+[2024-05-26 04:42:09] INFO root fetch - main [MainThread]: End processing [remarkable-update-fuse]: success
+[2024-05-26 04:42:09] INFO root fetch - processPackages [django-changelist-toolbar-admin]: Remove: archive file [/home/abi/fetcher/tmp/django-changelist-toolbar-admin-0.4.3.tar.gz]
+[2024-05-26 04:42:09] INFO root fetch - processPackages [django-changelist-toolbar-admin]: Remove: archive file [/home/abi/fetcher/tmp/django-changelist-toolbar-admin-0.4.5.tar.gz]
+[2024-05-26 04:42:09] INFO root fetch - main [MainThread]: End processing [django-changelist-toolbar-admin]: success
+[2024-05-26 04:42:09] INFO root fetch - main [MainThread]: Store serial: [23379285]
