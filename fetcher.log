@@ -4249,3 +4249,80 @@
 [2024-05-26 07:45:46] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.6.7.tar.gz]
 [2024-05-26 07:45:46] INFO root fetch - main [MainThread]: End processing [marimo]: success
 [2024-05-26 07:45:46] INFO root fetch - main [MainThread]: Store serial: [23380089]
+[2024-05-26 07:47:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380089]
+[2024-05-26 07:47:55] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docprompt
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sq-dataset
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sq-feature-blizzard
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sq-fincrimes-ml
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sq-find-bug-owner
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sq-flask-common
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sq-flask-example
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sq-llm-checker
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sq-logging
+[2024-05-26 07:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sq-mbn-tools
+[2024-05-26 07:47:56] INFO root fetch - processPackages [docprompt]: New version: [0.6.0] Old Version: [0.5.4]
+[2024-05-26 07:47:56] INFO root fetch - processPackages [docprompt]: Downloading https://files.pythonhosted.org/packages/b4/65/0ce78e57905efc2f065da4a295e0fa48356bb40bb38f10b8053f29deeea9/docprompt-0.5.4.tar.gz
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-llm-checker]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-llm-checker]: Start processing: sq-metrics
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-llm-checker] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-flask-common]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-flask-common]: Start processing: sq-notebook-shutdown
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-flask-common] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-feature-blizzard]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-feature-blizzard]: Start processing: sq-ostiary
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-feature-blizzard] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-logging]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-logging]: Start processing: sq-probably
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-logging] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-mbn-tools]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-mbn-tools]: Start processing: sq-proto-parser
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-mbn-tools] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-flask-example]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-fincrimes-ml]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-flask-example]: Start processing: sq-py-sample-size
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-dataset]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-flask-example] error
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-fincrimes-ml]: Start processing: sq-pysnowflake
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-find-bug-owner]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-dataset]: Start processing: sq-scoop
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-fincrimes-ml] error
+[2024-05-26 07:47:56] INFO root fetch - processPackages [sq-find-bug-owner]: Start processing: neginver
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-dataset] error
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-find-bug-owner] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [docprompt]: Skipping package: exceeds size limit 19681090>=10485760
+[2024-05-26 07:47:56] INFO root fetch - processPackages [docprompt]: Start processing: nlpx
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [docprompt] error
+[2024-05-26 07:47:56] INFO root fetch - processPackages [neginver]: New version: [0.0.5] Old Version: [0.0.2]
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-metrics]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-metrics] error
+[2024-05-26 07:47:56] INFO root fetch - processPackages [nlpx]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-notebook-shutdown]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-notebook-shutdown] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-ostiary]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-ostiary] error
+[2024-05-26 07:47:56] INFO root fetch - processPackages [neginver]: Downloading https://files.pythonhosted.org/packages/0a/bd/6da133f6580c1d809bd79289a4b1634057646b25930b57076d9873a02d2c/neginver-0.0.2.tar.gz
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-probably]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-probably] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-proto-parser]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-proto-parser] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-py-sample-size]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-py-sample-size] error
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-pysnowflake]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-pysnowflake] error
+[2024-05-26 07:47:56] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/c8/65/2e17704a863906a83fd5d97799c163f62d6cedbc4d954b7044a41e930973/nlpx-1.1.5.tar.gz
+[2024-05-26 07:47:56] WARNING root fetch - processPackages [sq-scoop]: Skipping, unable to determine old version
+[2024-05-26 07:47:56] INFO root fetch - main [MainThread]: End processing [sq-scoop] error
+[2024-05-26 07:47:56] INFO root fetch - processPackages [neginver]: Downloading https://files.pythonhosted.org/packages/de/fb/cc257377316ec1d95fa46babafb8320341b3b00cab0ea3c30c731fd6cba4/neginver-0.0.5.tar.gz
+[2024-05-26 07:47:56] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/c6/17/9ba871ba6f96c1ea1b6ec41f70a133bc39c73bfbb98f4a24f3e0450ecc90/nlpx-1.1.6.tar.gz
+[2024-05-26 07:47:56] INFO root fetch - processPackages [neginver]: executing diffoscope
+[2024-05-26 07:47:56] INFO root fetch - processPackages [neginver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neginver-0.0.2.tar.gz tmp/neginver-0.0.5.tar.gz --markdown 20240526/n/neginver/0.0.2-0.0.5/README.md --exclude *.pyd
+[2024-05-26 07:47:56] INFO root fetch - processPackages [nlpx]: executing diffoscope
+[2024-05-26 07:47:56] INFO root fetch - processPackages [nlpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpx-1.1.5.tar.gz tmp/nlpx-1.1.6.tar.gz --markdown 20240526/n/nlpx/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-05-26 07:47:57] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.5.tar.gz]
+[2024-05-26 07:47:57] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.6.tar.gz]
+[2024-05-26 07:47:57] INFO root fetch - main [MainThread]: End processing [nlpx]: success
+[2024-05-26 07:47:57] INFO root fetch - processPackages [neginver]: Remove: archive file [/home/abi/fetcher/tmp/neginver-0.0.2.tar.gz]
+[2024-05-26 07:47:57] INFO root fetch - processPackages [neginver]: Remove: archive file [/home/abi/fetcher/tmp/neginver-0.0.5.tar.gz]
+[2024-05-26 07:47:57] INFO root fetch - main [MainThread]: End processing [neginver]: success
+[2024-05-26 07:47:57] INFO root fetch - main [MainThread]: Store serial: [23380144]
