@@ -2501,3 +2501,33 @@
 [2024-05-26 04:31:23] WARNING root fetch - processPackages [qspace]: Skipping, unable to determine old version
 [2024-05-26 04:31:23] INFO root fetch - main [MainThread]: End processing [qspace] error
 [2024-05-26 04:31:23] INFO root fetch - main [MainThread]: Store serial: [23379256]
+[2024-05-26 04:33:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379256]
+[2024-05-26 04:33:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 04:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: platypush
+[2024-05-26 04:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lunapi
+[2024-05-26 04:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easy-llama
+[2024-05-26 04:33:32] INFO root fetch - processPackages [platypush]: New version: [0.99.11] Old Version: [0.9.6]
+[2024-05-26 04:33:32] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/7e/35/59d1ec1a6e1adbdae1077821c98c4771df412b7ffda91c342124c578d658/platypush-0.9.6.tar.gz
+[2024-05-26 04:33:32] INFO root fetch - processPackages [easy-llama]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 04:33:32] INFO root fetch - processPackages [lunapi]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 04:33:32] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/ce/e9/39a06b9ce349625a5d6c7da00644a8cc7320112fb3ba2b2e54944d3a6135/easy_llama-0.1.8.tar.gz
+[2024-05-26 04:33:32] INFO root fetch - processPackages [lunapi]: Downloading https://files.pythonhosted.org/packages/19/2a/4aaef3a9ac4c4a00524ba8a3a77ffb10d280b0a6cad009c615e92b6e4de3/lunapi-0.0.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-26 04:33:32] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/98/5d/f5007368104957b81fc41c01c18234178e2875066cca25192bec1d846caf/easy_llama-0.1.9.tar.gz
+[2024-05-26 04:33:32] INFO root fetch - processPackages [easy-llama]: executing diffoscope
+[2024-05-26 04:33:32] INFO root fetch - processPackages [easy-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_llama-0.1.8.tar.gz tmp/easy_llama-0.1.9.tar.gz --markdown 20240526/e/easy-llama/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 04:33:32] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/03/31/c588be986ee8fdd7cb29932c20bdc4998e8af74e476f3764af7761c244de/platypush-0.99.11.tar.gz
+[2024-05-26 04:33:33] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.8.tar.gz]
+[2024-05-26 04:33:33] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
+[2024-05-26 04:33:33] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
+[2024-05-26 04:33:33] INFO root fetch - processPackages [platypush]: executing diffoscope
+[2024-05-26 04:33:33] INFO root fetch - processPackages [platypush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/platypush-0.9.6.tar.gz tmp/platypush-0.99.11.tar.gz --markdown 20240526/p/platypush/0.9.6-0.99.11/README.md --exclude *.pyd
+[2024-05-26 04:33:33] INFO root fetch - processPackages [lunapi]: Downloading https://files.pythonhosted.org/packages/25/45/16139a4f9f11f51c84d42e33aa793a2a5be9f5e7646b556a0610c234936c/lunapi-0.0.8-pp39-pypy39_pp73-macosx_11_0_arm64.whl
+[2024-05-26 04:33:34] INFO root fetch - processPackages [lunapi]: executing diffoscope
+[2024-05-26 04:33:34] INFO root fetch - processPackages [lunapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lunapi-0.0.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/lunapi-0.0.8-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip --markdown 20240526/l/lunapi/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 04:33:36] INFO root fetch - processPackages [lunapi]: Remove: archive file [/home/abi/fetcher/tmp/lunapi-0.0.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-26 04:33:36] INFO root fetch - processPackages [lunapi]: Remove: archive file [/home/abi/fetcher/tmp/lunapi-0.0.8-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip]
+[2024-05-26 04:33:36] INFO root fetch - main [MainThread]: End processing [lunapi]: success
+[2024-05-26 04:33:39] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-0.9.6.tar.gz]
+[2024-05-26 04:33:39] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-0.99.11.tar.gz]
+[2024-05-26 04:33:39] INFO root fetch - main [MainThread]: End processing [platypush]: success
+[2024-05-26 04:33:39] INFO root fetch - main [MainThread]: Store serial: [23379268]
