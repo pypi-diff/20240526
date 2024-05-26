@@ -7333,3 +7333,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:50:38] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
 [2024-05-26 10:50:38] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
 [2024-05-26 10:50:38] INFO root fetch - main [MainThread]: Store serial: [23381440]
+[2024-05-26 10:52:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381440]
+[2024-05-26 10:52:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 10:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: setux-modules
+[2024-05-26 10:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cadprox
+[2024-05-26 10:52:50] INFO root fetch - processPackages [cadprox]: New version: [4.8] Old Version: [4.7]
+[2024-05-26 10:52:50] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/62/9f/74848c98325b8bc8e5af0a926b81a8dd1a751391cd71f26d9706b3295bc0/cadprox-4.7.tar.gz
+[2024-05-26 10:52:50] INFO root fetch - processPackages [setux-modules]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-26 10:52:50] INFO root fetch - processPackages [setux-modules]: Downloading https://files.pythonhosted.org/packages/de/9d/0d151b7a3f54d33e17905a0c17ead01d62f454f9e5453f50b0dea9fb3440/setux_modules-0.3.3.tar.gz
+[2024-05-26 10:52:50] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/04/4e/8f675179efd7d0f79d313bc53da939ed028e0d4788721b67fbfb7d153e6a/cadprox-4.8.tar.gz
+[2024-05-26 10:52:50] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 10:52:50] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-4.7.tar.gz tmp/cadprox-4.8.tar.gz --markdown 20240526/c/cadprox/4.7-4.8/README.md --exclude *.pyd
+[2024-05-26 10:52:51] INFO root fetch - processPackages [setux-modules]: Downloading https://files.pythonhosted.org/packages/29/b8/867ab4ac8f7ad076250b2e82d61c5e71f95424e124b5d0467cc119592c2e/setux_modules-0.3.4.tar.gz
+[2024-05-26 10:52:51] INFO root fetch - processPackages [setux-modules]: executing diffoscope
+[2024-05-26 10:52:51] INFO root fetch - processPackages [setux-modules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux_modules-0.3.3.tar.gz tmp/setux_modules-0.3.4.tar.gz --markdown 20240526/s/setux-modules/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-26 10:52:51] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.7.tar.gz]
+[2024-05-26 10:52:51] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.8.tar.gz]
+[2024-05-26 10:52:51] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 10:52:51] INFO root fetch - processPackages [setux-modules]: Remove: archive file [/home/abi/fetcher/tmp/setux_modules-0.3.3.tar.gz]
+[2024-05-26 10:52:51] INFO root fetch - processPackages [setux-modules]: Remove: archive file [/home/abi/fetcher/tmp/setux_modules-0.3.4.tar.gz]
+[2024-05-26 10:52:51] INFO root fetch - main [MainThread]: End processing [setux-modules]: success
+[2024-05-26 10:52:51] INFO root fetch - main [MainThread]: Store serial: [23381453]
