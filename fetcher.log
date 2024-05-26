@@ -7886,3 +7886,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:15:10] INFO root fetch - processPackages [tgqSim]: Remove: archive file [/home/abi/fetcher/tmp/tgqSim-0.3.2.tar.gz]
 [2024-05-26 11:15:10] INFO root fetch - main [MainThread]: End processing [tgqSim]: success
 [2024-05-26 11:15:10] INFO root fetch - main [MainThread]: Store serial: [23381651]
+[2024-05-26 11:17:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381651]
+[2024-05-26 11:17:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 11:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvfuser-cu121
+[2024-05-26 11:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: traceloop-sdk
+[2024-05-26 11:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvfuser-cu118
+[2024-05-26 11:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: surfaces
+[2024-05-26 11:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: psqlpy
+[2024-05-26 11:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vbinsta
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.5.dev20240525] Old Version: [0.2.5.dev20240524]
+[2024-05-26 11:17:22] INFO root fetch - processPackages [vbinsta]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.5.dev20240525] Old Version: [0.2.5.dev20240524]
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/1d/3b/0ce9be8b372fc3427317371d87bbef470941cb304147839f2dd1424cb4e2/nvfuser_cu121-0.2.5.dev20240524.tar.gz
+[2024-05-26 11:17:22] INFO root fetch - processPackages [vbinsta]: Downloading https://files.pythonhosted.org/packages/ba/80/5663cabd63636db186efa665b880317a49123ad0cd606ff16cb94c07c75b/vbinsta-0.1.6.tar.gz
+[2024-05-26 11:17:22] INFO root fetch - processPackages [traceloop-sdk]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-26 11:17:22] INFO root fetch - processPackages [surfaces]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/98/b5/6b6dc13134002f30cb9a373d60b20e30801e1aa3ba15d3e9b048e737fdbb/nvfuser_cu118-0.2.5.dev20240524.tar.gz
+[2024-05-26 11:17:22] INFO root fetch - processPackages [traceloop-sdk]: Downloading https://files.pythonhosted.org/packages/71/52/a865ce901951f5201da24334b1278104b1b370b18ce9595ea9035a6c3a0e/traceloop_sdk-0.9.3.tar.gz
+[2024-05-26 11:17:22] INFO root fetch - processPackages [surfaces]: Downloading https://files.pythonhosted.org/packages/a9/2c/c0dc91edf7ee8156f6ea65ec51c93dcd9cb4f5f7ea6ca8f5e9dbe9379be3/surfaces-0.4.0-py3-none-any.whl
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/36/4c/8957782c08c769d45bd3df70549efb0c9a4dc1e329045b9c7ab74600d512/nvfuser_cu121-0.2.5.dev20240525.tar.gz
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/52/26/58010f8203361a8767523a55e795723c9a82e3c3c6acf1234e81cdfc2bba/nvfuser_cu118-0.2.5.dev20240525.tar.gz
+[2024-05-26 11:17:22] INFO root fetch - processPackages [vbinsta]: Downloading https://files.pythonhosted.org/packages/eb/bc/125e1fe5942a9c82eef440ba43683494af997a9a77ff79ca96025076650b/vbinsta-0.1.7.tar.gz
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.5.dev20240524.tar.gz tmp/nvfuser_cu118-0.2.5.dev20240525.tar.gz --markdown 20240526/n/nvfuser-cu118/0.2.5.dev20240524-0.2.5.dev20240525/README.md --exclude *.pyd
+[2024-05-26 11:17:22] INFO root fetch - processPackages [vbinsta]: executing diffoscope
+[2024-05-26 11:17:22] INFO root fetch - processPackages [vbinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbinsta-0.1.6.tar.gz tmp/vbinsta-0.1.7.tar.gz --markdown 20240526/v/vbinsta/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-05-26 11:17:22] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.5.dev20240524.tar.gz tmp/nvfuser_cu121-0.2.5.dev20240525.tar.gz --markdown 20240526/n/nvfuser-cu121/0.2.5.dev20240524-0.2.5.dev20240525/README.md --exclude *.pyd
+[2024-05-26 11:17:22] INFO root fetch - processPackages [traceloop-sdk]: Downloading https://files.pythonhosted.org/packages/ae/ca/192dff20dadbfa74c05ff4b865462f41b6cb019752812778ed2fbe2b45db/traceloop_sdk-0.9.4.tar.gz
+[2024-05-26 11:17:23] INFO root fetch - processPackages [psqlpy]: New version: [0.6.0] Old Version: [0.5.6]
+[2024-05-26 11:17:23] INFO root fetch - processPackages [traceloop-sdk]: executing diffoscope
+[2024-05-26 11:17:23] INFO root fetch - processPackages [traceloop-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traceloop_sdk-0.9.3.tar.gz tmp/traceloop_sdk-0.9.4.tar.gz --markdown 20240526/t/traceloop-sdk/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-26 11:17:23] INFO root fetch - processPackages [surfaces]: Downloading https://files.pythonhosted.org/packages/3e/65/723b38ce54dfab712dd44bd3a0f39fbc969a29e990600aefb1eb87808c94/surfaces-0.5.0-py3-none-any.whl
+[2024-05-26 11:17:23] INFO root fetch - processPackages [psqlpy]: Downloading https://files.pythonhosted.org/packages/94/c7/fd3b784d6046b64a671cd8826d93903eae4aa61120d7d3eb17c482325b09/psqlpy-0.5.6.tar.gz
+[2024-05-26 11:17:23] INFO root fetch - processPackages [surfaces]: executing diffoscope
+[2024-05-26 11:17:23] INFO root fetch - processPackages [surfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfaces-0.4.0-py3-none-any.whl.zip tmp/surfaces-0.5.0-py3-none-any.whl.zip --markdown 20240526/s/surfaces/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-26 11:17:23] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.5.dev20240524.tar.gz]
+[2024-05-26 11:17:23] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.5.dev20240525.tar.gz]
+[2024-05-26 11:17:23] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-05-26 11:17:23] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.6.tar.gz]
+[2024-05-26 11:17:23] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.7.tar.gz]
+[2024-05-26 11:17:23] INFO root fetch - main [MainThread]: End processing [vbinsta]: success
+[2024-05-26 11:17:23] INFO root fetch - processPackages [traceloop-sdk]: Remove: archive file [/home/abi/fetcher/tmp/traceloop_sdk-0.9.3.tar.gz]
+[2024-05-26 11:17:23] INFO root fetch - processPackages [traceloop-sdk]: Remove: archive file [/home/abi/fetcher/tmp/traceloop_sdk-0.9.4.tar.gz]
+[2024-05-26 11:17:23] INFO root fetch - main [MainThread]: End processing [traceloop-sdk]: success
+[2024-05-26 11:17:23] INFO root fetch - processPackages [psqlpy]: Downloading https://files.pythonhosted.org/packages/e7/fe/6bb92402a10880cecc8ed7877dea4b97cb786d697ee970e331b4b1268081/psqlpy-0.6.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2024-05-26 11:17:23] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.5.dev20240524.tar.gz]
+[2024-05-26 11:17:23] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.5.dev20240525.tar.gz]
+[2024-05-26 11:17:23] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-05-26 11:17:24] INFO root fetch - processPackages [surfaces]: Remove: archive file [/home/abi/fetcher/tmp/surfaces-0.4.0-py3-none-any.whl.zip]
+[2024-05-26 11:17:24] INFO root fetch - processPackages [surfaces]: Remove: archive file [/home/abi/fetcher/tmp/surfaces-0.5.0-py3-none-any.whl.zip]
+[2024-05-26 11:17:24] INFO root fetch - main [MainThread]: End processing [surfaces]: success
+[2024-05-26 11:17:25] INFO root fetch - processPackages [psqlpy]: executing diffoscope
+[2024-05-26 11:17:25] INFO root fetch - processPackages [psqlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psqlpy-0.5.6.tar.gz tmp/psqlpy-0.6.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip --markdown 20240526/p/psqlpy/0.5.6-0.6.0/README.md --exclude *.pyd
+[2024-05-26 11:17:26] INFO root fetch - processPackages [psqlpy]: Remove: archive file [/home/abi/fetcher/tmp/psqlpy-0.5.6.tar.gz]
+[2024-05-26 11:17:26] INFO root fetch - processPackages [psqlpy]: Remove: archive file [/home/abi/fetcher/tmp/psqlpy-0.6.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
+[2024-05-26 11:17:26] INFO root fetch - main [MainThread]: End processing [psqlpy]: success
+[2024-05-26 11:17:26] INFO root fetch - main [MainThread]: Store serial: [23381694]
