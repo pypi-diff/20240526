@@ -16080,3 +16080,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:56:05] INFO root fetch - processPackages [lusid-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-sdk-preview-1.1.98.tar.gz]
 [2024-05-26 19:56:05] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2024-05-26 19:56:05] INFO root fetch - main [MainThread]: Store serial: [23385440]
+[2024-05-26 19:58:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385440]
+[2024-05-26 19:58:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 19:58:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zenaura
+[2024-05-26 19:58:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ultranest
+[2024-05-26 19:58:14] INFO root fetch - processPackages [zenaura]: New version: [0.9.67] Old Version: [0.9.66]
+[2024-05-26 19:58:14] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/b2/8d/18eefb3d77b97599b36fafcd37c5428e4c3b5e3cac9fac7d1ad98645f5c7/zenaura-0.9.66.tar.gz
+[2024-05-26 19:58:14] INFO root fetch - processPackages [ultranest]: New version: [4.3.1] Old Version: [4.2.0]
+[2024-05-26 19:58:14] INFO root fetch - processPackages [ultranest]: Downloading https://files.pythonhosted.org/packages/ec/4e/56d6aafe2e8d04c1211d1fa1251a7953e34aa4779f514e33fe2343c970c4/ultranest-4.2.0.tar.gz
+[2024-05-26 19:58:14] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/02/66/254ea15bf1a3d262785a509546b0f48d224bac281f3bbc9ead92b7dee6f3/zenaura-0.9.67.tar.gz
+[2024-05-26 19:58:14] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 19:58:14] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.66.tar.gz tmp/zenaura-0.9.67.tar.gz --markdown 20240526/z/zenaura/0.9.66-0.9.67/README.md --exclude *.pyd
+[2024-05-26 19:58:15] INFO root fetch - processPackages [ultranest]: Downloading https://files.pythonhosted.org/packages/af/ec/16028220728b48c0d5403a5bbc46b3f5867ecbe3cd47f9b1f8cc13544e0a/ultranest-4.3.1.tar.gz
+[2024-05-26 19:58:15] INFO root fetch - processPackages [ultranest]: executing diffoscope
+[2024-05-26 19:58:15] INFO root fetch - processPackages [ultranest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultranest-4.2.0.tar.gz tmp/ultranest-4.3.1.tar.gz --markdown 20240526/u/ultranest/4.2.0-4.3.1/README.md --exclude *.pyd
+[2024-05-26 19:58:15] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.66.tar.gz]
+[2024-05-26 19:58:15] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.67.tar.gz]
+[2024-05-26 19:58:15] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 19:58:16] INFO root fetch - processPackages [ultranest]: Remove: archive file [/home/abi/fetcher/tmp/ultranest-4.2.0.tar.gz]
+[2024-05-26 19:58:16] INFO root fetch - processPackages [ultranest]: Remove: archive file [/home/abi/fetcher/tmp/ultranest-4.3.1.tar.gz]
+[2024-05-26 19:58:16] INFO root fetch - main [MainThread]: End processing [ultranest]: success
+[2024-05-26 19:58:16] INFO root fetch - main [MainThread]: Store serial: [23385450]
