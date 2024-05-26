@@ -850,3 +850,42 @@
 [2024-05-26 02:03:37] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
 [2024-05-26 02:03:37] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
 [2024-05-26 02:03:37] INFO root fetch - main [MainThread]: Store serial: [23378527]
+[2024-05-26 02:05:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378527]
+[2024-05-26 02:05:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 02:05:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-nightly
+[2024-05-26 02:05:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxkern-nightly
+[2024-05-26 02:05:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onnxscript
+[2024-05-26 02:05:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyExploitDb
+[2024-05-26 02:05:47] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240525] Old Version: [0.1.0.dev20240524]
+[2024-05-26 02:05:47] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-05-26 02:05:47] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240525.406] Old Version: [2.0.0.20240524.446]
+[2024-05-26 02:05:47] INFO root fetch - processPackages [pyExploitDb]: New version: [0.2.9] Old Version: [0.2.6]
+[2024-05-26 02:05:47] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/21/99/82551663bdf312059defb879a0a12f3bc5dd0f3b75882f1ba7f0fabaa2e3/onnxscript-0.1.0.dev20240524.tar.gz
+[2024-05-26 02:05:47] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/a0/37/624a05bc0596f42226daa90a37cb1f9ede140aaac0e3d42954fa667e585b/mct-nightly-2.0.0.20240524.446.tar.gz
+[2024-05-26 02:05:47] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-05-26 02:05:47] INFO root fetch - processPackages [pyExploitDb]: Downloading https://files.pythonhosted.org/packages/db/f7/0a8a973ebf516134ee9f275887bb4bb1e53a0c4bfe9d08ef50c8a91f5685/pyExploitDb-0.2.6.tar.gz
+[2024-05-26 02:05:48] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-05-26 02:05:48] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/9f/8e/27c6402040f9d05f36e464aa476af36c109a5cb1fcde8663b6360d0fd21d/mct-nightly-2.0.0.20240525.406.tar.gz
+[2024-05-26 02:05:48] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/23/4a/2da57f90956517a477547449f19d896fa3957ae592bbb6e727bd2ec49c78/onnxscript-0.1.0.dev20240525.tar.gz
+[2024-05-26 02:05:48] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-05-26 02:05:48] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240526/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-05-26 02:05:48] INFO root fetch - processPackages [pyExploitDb]: Downloading https://files.pythonhosted.org/packages/9c/eb/b8dfdf3b6b5313c0c99c1d10134a1ec6bf2af38cc490c82550e859fba37f/pyExploitDb-0.2.9.tar.gz
+[2024-05-26 02:05:48] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-05-26 02:05:48] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240524.446.tar.gz tmp/mct-nightly-2.0.0.20240525.406.tar.gz --markdown 20240526/m/mct-nightly/2.0.0.20240524.446-2.0.0.20240525.406/README.md --exclude *.pyd
+[2024-05-26 02:05:48] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-05-26 02:05:48] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240524.tar.gz tmp/onnxscript-0.1.0.dev20240525.tar.gz --markdown 20240526/o/onnxscript/0.1.0.dev20240524-0.1.0.dev20240525/README.md --exclude *.pyd
+[2024-05-26 02:05:48] INFO root fetch - processPackages [pyExploitDb]: executing diffoscope
+[2024-05-26 02:05:48] INFO root fetch - processPackages [pyExploitDb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyExploitDb-0.2.6.tar.gz tmp/pyExploitDb-0.2.9.tar.gz --markdown 20240526/p/pyExploitDb/0.2.6-0.2.9/README.md --exclude *.pyd
+[2024-05-26 02:05:48] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-05-26 02:05:48] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-05-26 02:05:48] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-05-26 02:05:49] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240524.tar.gz]
+[2024-05-26 02:05:49] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240525.tar.gz]
+[2024-05-26 02:05:49] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-05-26 02:05:50] INFO root fetch - processPackages [pyExploitDb]: Remove: archive file [/home/abi/fetcher/tmp/pyExploitDb-0.2.6.tar.gz]
+[2024-05-26 02:05:50] INFO root fetch - processPackages [pyExploitDb]: Remove: archive file [/home/abi/fetcher/tmp/pyExploitDb-0.2.9.tar.gz]
+[2024-05-26 02:05:50] INFO root fetch - main [MainThread]: End processing [pyExploitDb]: success
+[2024-05-26 02:05:50] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240524.446.tar.gz]
+[2024-05-26 02:05:50] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240525.406.tar.gz]
+[2024-05-26 02:05:50] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-05-26 02:05:50] INFO root fetch - main [MainThread]: Store serial: [23378539]
