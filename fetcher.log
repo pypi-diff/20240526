@@ -9241,3 +9241,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:54:10] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
 [2024-05-26 12:54:10] INFO root fetch - main [MainThread]: End processing [locust]: success
 [2024-05-26 12:54:10] INFO root fetch - main [MainThread]: Store serial: [23382286]
+[2024-05-26 12:56:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382286]
+[2024-05-26 12:56:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 12:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: examy
+[2024-05-26 12:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiopioneer
+[2024-05-26 12:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xssbase
+[2024-05-26 12:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pynumint
+[2024-05-26 12:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ALLMDEV
+[2024-05-26 12:56:23] INFO root fetch - processPackages [xssbase]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-05-26 12:56:23] INFO root fetch - processPackages [examy]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 12:56:23] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/f9/de/f22d8e4535e43903edd9e815e109f77b1be38e5f72ac35fcdc2ca22696af/xssbase-2.0.5.tar.gz
+[2024-05-26 12:56:23] INFO root fetch - processPackages [ALLMDEV]: New version: [1.3.7] Old Version: [1.3.6]
+[2024-05-26 12:56:23] WARNING root fetch - processPackages [pynumint]: Skipping, unable to determine old version
+[2024-05-26 12:56:23] INFO root fetch - main [MainThread]: End processing [pynumint] error
+[2024-05-26 12:56:23] INFO root fetch - processPackages [aiopioneer]: New version: [0.6.0rc1] Old Version: [0.6.0]
+[2024-05-26 12:56:23] INFO root fetch - processPackages [examy]: Downloading https://files.pythonhosted.org/packages/7d/93/5778abbb77ef67eeb2b379c0a1acbc8ce7ae2093ebc13bd2316d401c2bb8/examy-0.1.2.tar.gz
+[2024-05-26 12:56:24] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/3b/a1/2d1334f461ca7e29d0677c6067cefc02fd6e875479df184bffe788a2d5d2/ALLMDEV-1.3.6-py3-none-any.whl
+[2024-05-26 12:56:24] INFO root fetch - processPackages [aiopioneer]: Downloading https://files.pythonhosted.org/packages/56/1d/91bd205321e783b869078d28596f2eff7f1da144fa2761732b82b964168b/aiopioneer-0.6.0.tar.gz
+[2024-05-26 12:56:24] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/87/a1/dff76ec29166fa3a662525725f906710b3661a390c65abeff0d4982c337e/xssbase-2.0.6.tar.gz
+[2024-05-26 12:56:24] INFO root fetch - processPackages [examy]: Downloading https://files.pythonhosted.org/packages/49/d4/2b2ab744c651fe0ae94c8a4622755c654279893048d58f01538bb7b465b5/examy-0.1.3.tar.gz
+[2024-05-26 12:56:24] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 12:56:24] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-2.0.5.tar.gz tmp/xssbase-2.0.6.tar.gz --markdown 20240526/x/xssbase/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-05-26 12:56:24] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/26/04/df193487954786a8f3bbbfef3474c26d0180c57423f06ce9f88782133c39/ALLMDEV-1.3.7-py3-none-any.whl
+[2024-05-26 12:56:24] INFO root fetch - processPackages [aiopioneer]: Downloading https://files.pythonhosted.org/packages/8e/2b/e03b84384254634697a270dab64d879aef0342ad67013c9aab2734edc1f6/aiopioneer-0.6.0rc1.tar.gz
+[2024-05-26 12:56:24] INFO root fetch - processPackages [examy]: executing diffoscope
+[2024-05-26 12:56:24] INFO root fetch - processPackages [examy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/examy-0.1.2.tar.gz tmp/examy-0.1.3.tar.gz --markdown 20240526/e/examy/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 12:56:24] INFO root fetch - processPackages [aiopioneer]: executing diffoscope
+[2024-05-26 12:56:24] INFO root fetch - processPackages [aiopioneer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiopioneer-0.6.0.tar.gz tmp/aiopioneer-0.6.0rc1.tar.gz --markdown 20240526/a/aiopioneer/0.6.0-0.6.0rc1/README.md --exclude *.pyd
+[2024-05-26 12:56:24] INFO root fetch - processPackages [ALLMDEV]: executing diffoscope
+[2024-05-26 12:56:24] INFO root fetch - processPackages [ALLMDEV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLMDEV-1.3.6-py3-none-any.whl.zip tmp/ALLMDEV-1.3.7-py3-none-any.whl.zip --markdown 20240526/A/ALLMDEV/1.3.6-1.3.7/README.md --exclude *.pyd
+[2024-05-26 12:56:24] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.5.tar.gz]
+[2024-05-26 12:56:24] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.6.tar.gz]
+[2024-05-26 12:56:24] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 12:56:24] INFO root fetch - processPackages [examy]: Remove: archive file [/home/abi/fetcher/tmp/examy-0.1.2.tar.gz]
+[2024-05-26 12:56:24] INFO root fetch - processPackages [examy]: Remove: archive file [/home/abi/fetcher/tmp/examy-0.1.3.tar.gz]
+[2024-05-26 12:56:24] INFO root fetch - main [MainThread]: End processing [examy]: success
+[2024-05-26 12:56:25] INFO root fetch - processPackages [aiopioneer]: Remove: archive file [/home/abi/fetcher/tmp/aiopioneer-0.6.0.tar.gz]
+[2024-05-26 12:56:25] INFO root fetch - processPackages [aiopioneer]: Remove: archive file [/home/abi/fetcher/tmp/aiopioneer-0.6.0rc1.tar.gz]
+[2024-05-26 12:56:25] INFO root fetch - main [MainThread]: End processing [aiopioneer]: success
+[2024-05-26 12:56:25] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.3.6-py3-none-any.whl.zip]
+[2024-05-26 12:56:25] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.3.7-py3-none-any.whl.zip]
+[2024-05-26 12:56:25] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
+[2024-05-26 12:56:25] INFO root fetch - main [MainThread]: Store serial: [23382301]
