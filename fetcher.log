@@ -7354,3 +7354,38 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:52:51] INFO root fetch - processPackages [setux-modules]: Remove: archive file [/home/abi/fetcher/tmp/setux_modules-0.3.4.tar.gz]
 [2024-05-26 10:52:51] INFO root fetch - main [MainThread]: End processing [setux-modules]: success
 [2024-05-26 10:52:51] INFO root fetch - main [MainThread]: Store serial: [23381453]
+[2024-05-26 10:54:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381453]
+[2024-05-26 10:55:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 10:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: setux
+[2024-05-26 10:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-meteo-solar-forecast
+[2024-05-26 10:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lantana
+[2024-05-26 10:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aicli
+[2024-05-26 10:55:02] INFO root fetch - processPackages [open-meteo-solar-forecast]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 10:55:02] INFO root fetch - processPackages [aicli]: New version: [99.0.202405251138] Old Version: [99.0.202405241338]
+[2024-05-26 10:55:02] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/7e/a9/a16910d41bc499f3712ce505f2b68b8b72aceae7c6da2a235d82c7183da1/open_meteo_solar_forecast-0.0.5.tar.gz
+[2024-05-26 10:55:02] INFO root fetch - processPackages [setux]: New version: [0.6.3.1] Old Version: [0.6.3.0]
+[2024-05-26 10:55:02] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/f1/c7/688ed78749cf83832a7c21c164c571f9ac4541a95191bceff6b58f090799/aicli-99.0.202405241338-py3-none-any.whl
+[2024-05-26 10:55:02] INFO root fetch - processPackages [lantana]: New version: [2.9.8.2] Old Version: [2.9.8.1]
+[2024-05-26 10:55:03] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/4c/ae/ce831dceb9953696058373e6d69e118342a5bc62d08075fef6c83294812d/lantana-2.9.8.1.tar.gz
+[2024-05-26 10:55:03] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/2f/49/91934bd9aee6533448fdf391683c7a735a63a59ad2cf2563b52b98ad4201/setux-0.6.3.0.tar.gz
+[2024-05-26 10:55:03] ERROR root fetch - processPackages [open-meteo-solar-forecast]: Unable to fetch info: No such project/version 'open-meteo-solar-forecast' 0.0.6
+[2024-05-26 10:55:03] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast] error
+[2024-05-26 10:55:03] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/22/1d/6af50fceaf8e1b7dad8c29ebb391bd4d2493a249665ca916efaa718fb0c7/aicli-99.0.202405251138-py3-none-any.whl
+[2024-05-26 10:55:03] INFO root fetch - processPackages [aicli]: executing diffoscope
+[2024-05-26 10:55:03] INFO root fetch - processPackages [aicli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aicli-99.0.202405241338-py3-none-any.whl.zip tmp/aicli-99.0.202405251138-py3-none-any.whl.zip --markdown 20240526/a/aicli/99.0.202405241338-99.0.202405251138/README.md --exclude *.pyd
+[2024-05-26 10:55:03] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/ad/0f/ea659bb0a2030b085f60069b2fb29d1dc322f7444f95eaa97478e78035e2/setux-0.6.3.1.tar.gz
+[2024-05-26 10:55:03] INFO root fetch - processPackages [setux]: executing diffoscope
+[2024-05-26 10:55:03] INFO root fetch - processPackages [setux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux-0.6.3.0.tar.gz tmp/setux-0.6.3.1.tar.gz --markdown 20240526/s/setux/0.6.3.0-0.6.3.1/README.md --exclude *.pyd
+[2024-05-26 10:55:03] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/90/25/5be11fa3ca5fc808135b7e067f60521174d6faaed6f1fd9e0480c7310488/lantana-2.9.8.2.tar.gz
+[2024-05-26 10:55:03] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2024-05-26 10:55:03] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.9.8.1.tar.gz tmp/lantana-2.9.8.2.tar.gz --markdown 20240526/l/lantana/2.9.8.1-2.9.8.2/README.md --exclude *.pyd
+[2024-05-26 10:55:04] INFO root fetch - processPackages [aicli]: Remove: archive file [/home/abi/fetcher/tmp/aicli-99.0.202405241338-py3-none-any.whl.zip]
+[2024-05-26 10:55:04] INFO root fetch - processPackages [aicli]: Remove: archive file [/home/abi/fetcher/tmp/aicli-99.0.202405251138-py3-none-any.whl.zip]
+[2024-05-26 10:55:04] INFO root fetch - main [MainThread]: End processing [aicli]: success
+[2024-05-26 10:55:04] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.0.tar.gz]
+[2024-05-26 10:55:04] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.1.tar.gz]
+[2024-05-26 10:55:04] INFO root fetch - main [MainThread]: End processing [setux]: success
+[2024-05-26 10:55:04] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.1.tar.gz]
+[2024-05-26 10:55:04] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.2.tar.gz]
+[2024-05-26 10:55:04] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2024-05-26 10:55:04] INFO root fetch - main [MainThread]: Store serial: [23381465]
