@@ -4029,3 +4029,12 @@
 [2024-05-26 07:19:49] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.9rc6.tar.gz]
 [2024-05-26 07:19:49] INFO root fetch - main [MainThread]: End processing [liveflask]: success
 [2024-05-26 07:19:49] INFO root fetch - main [MainThread]: Store serial: [23379939]
+[2024-05-26 07:21:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379939]
+[2024-05-26 07:21:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 07:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-metadataextractor
+[2024-05-26 07:21:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: windowsfetch
+[2024-05-26 07:21:58] WARNING root fetch - processPackages [apiverve-metadataextractor]: Skipping, unable to determine old version
+[2024-05-26 07:21:58] INFO root fetch - main [MainThread]: End processing [apiverve-metadataextractor] error
+[2024-05-26 07:21:58] WARNING root fetch - processPackages [windowsfetch]: Skipping, unable to determine old version
+[2024-05-26 07:21:58] INFO root fetch - main [MainThread]: End processing [windowsfetch] error
+[2024-05-26 07:21:58] INFO root fetch - main [MainThread]: Store serial: [23379952]
