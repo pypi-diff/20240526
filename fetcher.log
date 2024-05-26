@@ -11360,3 +11360,69 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:39:20] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.9.tar.gz]
 [2024-05-26 15:39:20] INFO root fetch - main [MainThread]: End processing [port-ocean]: success
 [2024-05-26 15:39:20] INFO root fetch - main [MainThread]: Store serial: [23383363]
+[2024-05-26 15:41:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383363]
+[2024-05-26 15:41:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oahspe
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bdpy
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: diffusivity-step
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrapegraphai
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: embedprepro
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: popgui
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: satsure-core-test
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: songfinder
+[2024-05-26 15:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: songfindercli
+[2024-05-26 15:41:50] INFO root fetch - processPackages [satsure-core-test]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-26 15:41:50] INFO root fetch - processPackages [scrapegraphai]: New version: [1.5.0b5] Old Version: [1.5.0b4]
+[2024-05-26 15:41:50] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/fe/0f/ca15a216cd10c0eed7fe70e71ee973ecc91db38b58c84c76988e88aca5b4/satsure-core-test-0.3.1.tar.gz
+[2024-05-26 15:41:50] WARNING root fetch - processPackages [embedprepro]: Skipping, unable to determine old version
+[2024-05-26 15:41:50] INFO root fetch - main [MainThread]: End processing [embedprepro] error
+[2024-05-26 15:41:50] INFO root fetch - processPackages [diffusivity-step]: New version: [2024.5.26] Old Version: [2023.9.4]
+[2024-05-26 15:41:50] INFO root fetch - processPackages [bdpy]: New version: [0.22] Old Version: [0.21.1]
+[2024-05-26 15:41:50] WARNING root fetch - processPackages [popgui]: Skipping, unable to determine old version
+[2024-05-26 15:41:50] INFO root fetch - main [MainThread]: End processing [popgui] error
+[2024-05-26 15:41:50] WARNING root fetch - processPackages [oahspe]: Skipping, unable to determine old version
+[2024-05-26 15:41:50] INFO root fetch - processPackages [songfindercli]: New version: [0.9.7] Old Version: [0.9.5]
+[2024-05-26 15:41:50] INFO root fetch - main [MainThread]: End processing [oahspe] error
+[2024-05-26 15:41:50] INFO root fetch - processPackages [songfinder]: New version: [0.9.7] Old Version: [0.9.5]
+[2024-05-26 15:41:50] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/9d/4b/2c0807a27bcfe16f14874bc003b81e0f633772e84be5866d67505ff31eef/scrapegraphai-1.5.0b4.tar.gz
+[2024-05-26 15:41:50] INFO root fetch - processPackages [diffusivity-step]: Downloading https://files.pythonhosted.org/packages/ca/24/322eb1104b81cbe37cb1e776d33e5e7ae436d32d5f8c33d0c547f14d4ab8/diffusivity_step-2023.9.4.tar.gz
+[2024-05-26 15:41:50] INFO root fetch - processPackages [bdpy]: Downloading https://files.pythonhosted.org/packages/b8/75/5e059142b609c7237e3ab1bbd943231a489398401233b2020545a5b17e49/bdpy-0.21.1.tar.gz
+[2024-05-26 15:41:50] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/e0/f7/41c016ffafc059d20a7a77b536db06953c65a886c0224d99dbaab3507a73/satsure-core-test-0.3.2.tar.gz
+[2024-05-26 15:41:50] INFO root fetch - processPackages [satsure-core-test]: executing diffoscope
+[2024-05-26 15:41:50] INFO root fetch - processPackages [satsure-core-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satsure-core-test-0.3.1.tar.gz tmp/satsure-core-test-0.3.2.tar.gz --markdown 20240526/s/satsure-core-test/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-26 15:41:50] INFO root fetch - processPackages [songfindercli]: Downloading https://files.pythonhosted.org/packages/16/db/126ee764619b1e3e11bac4b35631a31c33c2c836bb9825d65347861e1e48/songfindercli-0.9.5-py3-none-any.whl
+[2024-05-26 15:41:50] INFO root fetch - processPackages [songfinder]: Downloading https://files.pythonhosted.org/packages/a4/ad/9182e05cd8b08d52fcc4a76126a30fc9f524025f3e4c573acdb778f54a23/songfinder-0.9.5-py3-none-any.whl
+[2024-05-26 15:41:50] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/5c/04/23c289dddb7a11eb123baf20ae002b5ba74ce2e9142cf5a9b9f8b0d7837f/scrapegraphai-1.5.0b5.tar.gz
+[2024-05-26 15:41:51] INFO root fetch - processPackages [bdpy]: Downloading https://files.pythonhosted.org/packages/b4/62/874131566696512a3caa6b66f69a5d89bd67898170fecbdb3f4515da2022/bdpy-0.22.tar.gz
+[2024-05-26 15:41:51] INFO root fetch - processPackages [diffusivity-step]: Downloading https://files.pythonhosted.org/packages/d7/c9/7433d7e31d169a6bf2354520b5375186507c4394077274531d98ce7f8bfd/diffusivity_step-2024.5.26.tar.gz
+[2024-05-26 15:41:51] INFO root fetch - processPackages [songfinder]: Downloading https://files.pythonhosted.org/packages/58/a4/8d6ec2246f1d896b47cb78752c0e9be1b58f3bcd7d8fa589ca5bb37cf07a/songfinder-0.9.7-py3-none-any.whl
+[2024-05-26 15:41:51] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-26 15:41:51] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.5.0b4.tar.gz tmp/scrapegraphai-1.5.0b5.tar.gz --markdown 20240526/s/scrapegraphai/1.5.0b4-1.5.0b5/README.md --exclude *.pyd
+[2024-05-26 15:41:51] INFO root fetch - processPackages [diffusivity-step]: executing diffoscope
+[2024-05-26 15:41:51] INFO root fetch - processPackages [diffusivity-step]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diffusivity_step-2023.9.4.tar.gz tmp/diffusivity_step-2024.5.26.tar.gz --markdown 20240526/d/diffusivity-step/2023.9.4-2024.5.26/README.md --exclude *.pyd
+[2024-05-26 15:41:51] INFO root fetch - processPackages [bdpy]: executing diffoscope
+[2024-05-26 15:41:51] INFO root fetch - processPackages [bdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdpy-0.21.1.tar.gz tmp/bdpy-0.22.tar.gz --markdown 20240526/b/bdpy/0.21.1-0.22/README.md --exclude *.pyd
+[2024-05-26 15:41:51] INFO root fetch - processPackages [songfindercli]: Downloading https://files.pythonhosted.org/packages/33/3b/641deefaf0e91cf6a1df5eba6ee91bd111b880aa2e6b3fb259217b9e0459/songfindercli-0.9.7-py3-none-any.whl
+[2024-05-26 15:41:51] INFO root fetch - processPackages [songfinder]: executing diffoscope
+[2024-05-26 15:41:51] INFO root fetch - processPackages [songfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songfinder-0.9.5-py3-none-any.whl.zip tmp/songfinder-0.9.7-py3-none-any.whl.zip --markdown 20240526/s/songfinder/0.9.5-0.9.7/README.md --exclude *.pyd
+[2024-05-26 15:41:51] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.1.tar.gz]
+[2024-05-26 15:41:51] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.2.tar.gz]
+[2024-05-26 15:41:51] INFO root fetch - main [MainThread]: End processing [satsure-core-test]: success
+[2024-05-26 15:41:51] INFO root fetch - processPackages [songfindercli]: executing diffoscope
+[2024-05-26 15:41:51] INFO root fetch - processPackages [songfindercli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songfindercli-0.9.5-py3-none-any.whl.zip tmp/songfindercli-0.9.7-py3-none-any.whl.zip --markdown 20240526/s/songfindercli/0.9.5-0.9.7/README.md --exclude *.pyd
+[2024-05-26 15:41:52] INFO root fetch - processPackages [diffusivity-step]: Remove: archive file [/home/abi/fetcher/tmp/diffusivity_step-2023.9.4.tar.gz]
+[2024-05-26 15:41:52] INFO root fetch - processPackages [diffusivity-step]: Remove: archive file [/home/abi/fetcher/tmp/diffusivity_step-2024.5.26.tar.gz]
+[2024-05-26 15:41:52] INFO root fetch - main [MainThread]: End processing [diffusivity-step]: success
+[2024-05-26 15:41:52] INFO root fetch - processPackages [bdpy]: Remove: archive file [/home/abi/fetcher/tmp/bdpy-0.21.1.tar.gz]
+[2024-05-26 15:41:52] INFO root fetch - processPackages [bdpy]: Remove: archive file [/home/abi/fetcher/tmp/bdpy-0.22.tar.gz]
+[2024-05-26 15:41:52] INFO root fetch - main [MainThread]: End processing [bdpy]: success
+[2024-05-26 15:41:52] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-0.9.5-py3-none-any.whl.zip]
+[2024-05-26 15:41:52] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-0.9.7-py3-none-any.whl.zip]
+[2024-05-26 15:41:52] INFO root fetch - main [MainThread]: End processing [songfinder]: success
+[2024-05-26 15:41:52] INFO root fetch - processPackages [songfindercli]: Remove: archive file [/home/abi/fetcher/tmp/songfindercli-0.9.5-py3-none-any.whl.zip]
+[2024-05-26 15:41:52] INFO root fetch - processPackages [songfindercli]: Remove: archive file [/home/abi/fetcher/tmp/songfindercli-0.9.7-py3-none-any.whl.zip]
+[2024-05-26 15:41:52] INFO root fetch - main [MainThread]: End processing [songfindercli]: success
+[2024-05-26 15:41:53] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b4.tar.gz]
+[2024-05-26 15:41:53] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b5.tar.gz]
+[2024-05-26 15:41:53] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-26 15:41:53] INFO root fetch - main [MainThread]: Store serial: [23383392]
