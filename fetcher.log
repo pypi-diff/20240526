@@ -22322,3 +22322,63 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:54:00] INFO root fetch - processPackages [ebrow]: Remove: archive file [/home/abi/fetcher/tmp/ebrow-0.1.79.tar.gz]
 [2024-05-26 23:54:00] INFO root fetch - main [MainThread]: End processing [ebrow]: success
 [2024-05-26 23:54:00] INFO root fetch - main [MainThread]: Store serial: [23388117]
+[2024-05-26 23:56:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23388117]
+[2024-05-26 23:56:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ebrow
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notebooks-and-scripts
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ragoon
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aib2ofx
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kamangir
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: unyts
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hubblescope
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ebrow]: New version: [0.1.80] Old Version: [0.1.79]
+[2024-05-26 23:56:09] INFO root fetch - processPackages [notebooks-and-scripts]: New version: [4.465.1] Old Version: [4.464.1]
+[2024-05-26 23:56:09] INFO root fetch - processPackages [hubblescope]: New version: [4.8.1] Old Version: [4.6.1]
+[2024-05-26 23:56:09] INFO root fetch - processPackages [kamangir]: New version: [3.75.1] Old Version: [3.74.1]
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ebrow]: Downloading https://files.pythonhosted.org/packages/98/90/ac64fc61f195c02518d833b916f30cef6de4ecf7db49799872636e58609b/ebrow-0.1.79.tar.gz
+[2024-05-26 23:56:09] INFO root fetch - processPackages [aib2ofx]: New version: [0.73.2] Old Version: [0.73.1]
+[2024-05-26 23:56:09] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/35/eb/61182bd0b5151bcccfae3a883b4ebc70e22445557602c0bb99e12e9435d4/notebooks_and_scripts-4.464.1.tar.gz
+[2024-05-26 23:56:09] WARNING root fetch - processPackages [ragoon]: Skipping, unable to determine old version
+[2024-05-26 23:56:09] INFO root fetch - main [MainThread]: End processing [ragoon] error
+[2024-05-26 23:56:09] INFO root fetch - processPackages [unyts]: New version: [0.8.9] Old Version: [0.8.3]
+[2024-05-26 23:56:09] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/4d/50/718c2ab4eaa124b5955f4615ccd05c919e825d2e4ce8d0d897a53f1df465/kamangir-3.74.1.tar.gz
+[2024-05-26 23:56:09] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/b5/6f/4f0a41f0d92645c658e6ac840df2f52567ed4a8a759e20090563ebe58108/hubblescope-4.6.1.tar.gz
+[2024-05-26 23:56:09] INFO root fetch - processPackages [aib2ofx]: Downloading https://files.pythonhosted.org/packages/6d/7d/7c5413797f573a07af03feca64925d47c8d57e636e9532ad20252d842cfe/aib2ofx-0.73.1.tar.gz
+[2024-05-26 23:56:09] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/78/9a/5ed5f10da658c0d47a86d64ecd6655197cc75c0317ba317b9c6f82be243d/hubblescope-4.8.1.tar.gz
+[2024-05-26 23:56:09] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/cd/91/7bced74eee46f70c87f5e7ed608979d3a1a43fe1438b2aa0c795da837ff5/unyts-0.8.3.tar.gz
+[2024-05-26 23:56:09] INFO root fetch - processPackages [hubblescope]: executing diffoscope
+[2024-05-26 23:56:09] INFO root fetch - processPackages [hubblescope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubblescope-4.6.1.tar.gz tmp/hubblescope-4.8.1.tar.gz --markdown 20240526/h/hubblescope/4.6.1-4.8.1/README.md --exclude *.pyd
+[2024-05-26 23:56:09] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/25/d3/b64ea4893265ecc136cac002c564fd02ed066c52e6ee7c69961871eb927e/notebooks_and_scripts-4.465.1.tar.gz
+[2024-05-26 23:56:09] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/10/c7/1943950441df16cdf51f3c7cfb7896a9cdc32e6ebe7a9c7b1b964ee20a57/kamangir-3.75.1.tar.gz
+[2024-05-26 23:56:09] INFO root fetch - processPackages [ebrow]: Downloading https://files.pythonhosted.org/packages/1d/08/b19332fd09f1e51775e01571080a476a848bf21041f47160bc67976b7ad3/ebrow-0.1.80.tar.gz
+[2024-05-26 23:56:10] INFO root fetch - processPackages [notebooks-and-scripts]: executing diffoscope
+[2024-05-26 23:56:10] INFO root fetch - processPackages [notebooks-and-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebooks_and_scripts-4.464.1.tar.gz tmp/notebooks_and_scripts-4.465.1.tar.gz --markdown 20240526/n/notebooks-and-scripts/4.464.1-4.465.1/README.md --exclude *.pyd
+[2024-05-26 23:56:10] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-26 23:56:10] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.74.1.tar.gz tmp/kamangir-3.75.1.tar.gz --markdown 20240526/k/kamangir/3.74.1-3.75.1/README.md --exclude *.pyd
+[2024-05-26 23:56:10] INFO root fetch - processPackages [aib2ofx]: Downloading https://files.pythonhosted.org/packages/4b/b3/5938677df483bbcba24c13789f2446f6a46544319a32f70cff3bd3daa84a/aib2ofx-0.73.2.tar.gz
+[2024-05-26 23:56:10] INFO root fetch - processPackages [unyts]: Downloading https://files.pythonhosted.org/packages/8f/e1/188d783eaa0079854357600e3fb8190a8fc032e1d3625ae431141bf58fb5/unyts-0.8.9.tar.gz
+[2024-05-26 23:56:10] INFO root fetch - processPackages [ebrow]: executing diffoscope
+[2024-05-26 23:56:10] INFO root fetch - processPackages [ebrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebrow-0.1.79.tar.gz tmp/ebrow-0.1.80.tar.gz --markdown 20240526/e/ebrow/0.1.79-0.1.80/README.md --exclude *.pyd
+[2024-05-26 23:56:10] INFO root fetch - processPackages [aib2ofx]: executing diffoscope
+[2024-05-26 23:56:10] INFO root fetch - processPackages [aib2ofx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aib2ofx-0.73.1.tar.gz tmp/aib2ofx-0.73.2.tar.gz --markdown 20240526/a/aib2ofx/0.73.1-0.73.2/README.md --exclude *.pyd
+[2024-05-26 23:56:10] INFO root fetch - processPackages [unyts]: executing diffoscope
+[2024-05-26 23:56:10] INFO root fetch - processPackages [unyts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unyts-0.8.3.tar.gz tmp/unyts-0.8.9.tar.gz --markdown 20240526/u/unyts/0.8.3-0.8.9/README.md --exclude *.pyd
+[2024-05-26 23:56:10] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.6.1.tar.gz]
+[2024-05-26 23:56:10] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.8.1.tar.gz]
+[2024-05-26 23:56:10] INFO root fetch - main [MainThread]: End processing [hubblescope]: success
+[2024-05-26 23:56:10] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.74.1.tar.gz]
+[2024-05-26 23:56:10] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.75.1.tar.gz]
+[2024-05-26 23:56:10] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-26 23:56:10] INFO root fetch - processPackages [aib2ofx]: Remove: archive file [/home/abi/fetcher/tmp/aib2ofx-0.73.1.tar.gz]
+[2024-05-26 23:56:10] INFO root fetch - processPackages [aib2ofx]: Remove: archive file [/home/abi/fetcher/tmp/aib2ofx-0.73.2.tar.gz]
+[2024-05-26 23:56:10] INFO root fetch - main [MainThread]: End processing [aib2ofx]: success
+[2024-05-26 23:56:10] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.464.1.tar.gz]
+[2024-05-26 23:56:10] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.465.1.tar.gz]
+[2024-05-26 23:56:10] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
+[2024-05-26 23:56:11] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.3.tar.gz]
+[2024-05-26 23:56:11] INFO root fetch - processPackages [unyts]: Remove: archive file [/home/abi/fetcher/tmp/unyts-0.8.9.tar.gz]
+[2024-05-26 23:56:11] INFO root fetch - main [MainThread]: End processing [unyts]: success
+[2024-05-26 23:56:12] INFO root fetch - processPackages [ebrow]: Remove: archive file [/home/abi/fetcher/tmp/ebrow-0.1.79.tar.gz]
+[2024-05-26 23:56:12] INFO root fetch - processPackages [ebrow]: Remove: archive file [/home/abi/fetcher/tmp/ebrow-0.1.80.tar.gz]
+[2024-05-26 23:56:12] INFO root fetch - main [MainThread]: End processing [ebrow]: success
+[2024-05-26 23:56:12] INFO root fetch - main [MainThread]: Store serial: [23388141]
