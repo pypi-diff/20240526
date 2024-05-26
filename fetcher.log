@@ -7129,3 +7129,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:37:09] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.1.9.tar.gz]
 [2024-05-26 10:37:09] INFO root fetch - main [MainThread]: End processing [simevopy]: success
 [2024-05-26 10:37:09] INFO root fetch - main [MainThread]: Store serial: [23381318]
+[2024-05-26 10:39:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381318]
+[2024-05-26 10:39:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 10:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moulti
+[2024-05-26 10:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redcoffee
+[2024-05-26 10:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kuzu
+[2024-05-26 10:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: my-cli-code-explorer
+[2024-05-26 10:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cadprox
+[2024-05-26 10:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pygenda
+[2024-05-26 10:39:21] INFO root fetch - processPackages [my-cli-code-explorer]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 10:39:21] INFO root fetch - processPackages [cadprox]: New version: [4.7] Old Version: [4.6]
+[2024-05-26 10:39:21] INFO root fetch - processPackages [kuzu]: New version: [0.4.3.dev9] Old Version: [0.4.3.dev8]
+[2024-05-26 10:39:21] WARNING root fetch - processPackages [redcoffee]: Skipping, unable to determine old version
+[2024-05-26 10:39:21] INFO root fetch - main [MainThread]: End processing [redcoffee] error
+[2024-05-26 10:39:21] INFO root fetch - processPackages [moulti]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-05-26 10:39:21] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/e0/1f/9a539dfa4e779ef75a6b70bb9dd109e6fea52577734c1448a1f95d745f4a/cadprox-4.6.tar.gz
+[2024-05-26 10:39:21] INFO root fetch - processPackages [my-cli-code-explorer]: Downloading https://files.pythonhosted.org/packages/12/61/26e18d51e9f81ed80850bce58c1f61bc183413d3db0987524bceb6f29a71/my_cli_code_explorer-0.1.2.tar.gz
+[2024-05-26 10:39:21] INFO root fetch - processPackages [pygenda]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-26 10:39:21] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/8c/65/7162eaa21f2086d35586ac13298c2ee7127cec11827c394a1c4a3a08801e/kuzu-0.4.3.dev8.tar.gz
+[2024-05-26 10:39:21] INFO root fetch - processPackages [pygenda]: Downloading https://files.pythonhosted.org/packages/6e/ad/e7fe3c1900b1562e1be78edc4fed09db27f64219c1ef065718da53e99df9/pygenda-0.3.2.tar.gz
+[2024-05-26 10:39:22] INFO root fetch - processPackages [moulti]: Downloading https://files.pythonhosted.org/packages/ef/82/b6eb70a7607c80fcc40d2cf976c93780432db5843d1b5c3674f64f293eb4/moulti-1.8.1.tar.gz
+[2024-05-26 10:39:23] INFO root fetch - processPackages [my-cli-code-explorer]: Downloading https://files.pythonhosted.org/packages/5b/46/7eb8803613da1835a64b7ae98a1accf8730a2d58edc588e96324a4817c64/my_cli_code_explorer-0.1.3.tar.gz
+[2024-05-26 10:39:23] INFO root fetch - processPackages [my-cli-code-explorer]: executing diffoscope
+[2024-05-26 10:39:23] INFO root fetch - processPackages [my-cli-code-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_cli_code_explorer-0.1.2.tar.gz tmp/my_cli_code_explorer-0.1.3.tar.gz --markdown 20240526/m/my-cli-code-explorer/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 10:39:23] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/62/9f/74848c98325b8bc8e5af0a926b81a8dd1a751391cd71f26d9706b3295bc0/cadprox-4.7.tar.gz
+[2024-05-26 10:39:23] INFO root fetch - processPackages [pygenda]: Downloading https://files.pythonhosted.org/packages/bf/a5/676de80369a57b60cc75e40ebe19d7b37f837cb9ef7c865def492174c13d/pygenda-0.3.3.tar.gz
+[2024-05-26 10:39:23] INFO root fetch - processPackages [moulti]: Downloading https://files.pythonhosted.org/packages/6e/f7/587d0042b5f4df158ce68f9a9319325935e38aecb1554e4f4329869a2f73/moulti-1.9.0.tar.gz
+[2024-05-26 10:39:23] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 10:39:23] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-4.6.tar.gz tmp/cadprox-4.7.tar.gz --markdown 20240526/c/cadprox/4.6-4.7/README.md --exclude *.pyd
+[2024-05-26 10:39:23] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/df/58/55a184ddd23fb47a5a837c33035095e3fcffa62119ae3557cf8e8b4f7f0c/kuzu-0.4.3.dev9.tar.gz
+[2024-05-26 10:39:23] INFO root fetch - processPackages [moulti]: executing diffoscope
+[2024-05-26 10:39:23] INFO root fetch - processPackages [moulti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moulti-1.8.1.tar.gz tmp/moulti-1.9.0.tar.gz --markdown 20240526/m/moulti/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-05-26 10:39:23] INFO root fetch - processPackages [pygenda]: executing diffoscope
+[2024-05-26 10:39:23] INFO root fetch - processPackages [pygenda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygenda-0.3.2.tar.gz tmp/pygenda-0.3.3.tar.gz --markdown 20240526/p/pygenda/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-26 10:39:23] INFO root fetch - processPackages [my-cli-code-explorer]: Remove: archive file [/home/abi/fetcher/tmp/my_cli_code_explorer-0.1.2.tar.gz]
+[2024-05-26 10:39:23] INFO root fetch - processPackages [my-cli-code-explorer]: Remove: archive file [/home/abi/fetcher/tmp/my_cli_code_explorer-0.1.3.tar.gz]
+[2024-05-26 10:39:23] INFO root fetch - main [MainThread]: End processing [my-cli-code-explorer]: success
+[2024-05-26 10:39:24] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-05-26 10:39:24] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.4.3.dev8.tar.gz tmp/kuzu-0.4.3.dev9.tar.gz --markdown 20240526/k/kuzu/0.4.3.dev8-0.4.3.dev9/README.md --exclude *.pyd
+[2024-05-26 10:39:24] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.6.tar.gz]
+[2024-05-26 10:39:24] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.7.tar.gz]
+[2024-05-26 10:39:24] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 10:39:24] INFO root fetch - processPackages [moulti]: Remove: archive file [/home/abi/fetcher/tmp/moulti-1.8.1.tar.gz]
+[2024-05-26 10:39:24] INFO root fetch - processPackages [moulti]: Remove: archive file [/home/abi/fetcher/tmp/moulti-1.9.0.tar.gz]
+[2024-05-26 10:39:24] INFO root fetch - main [MainThread]: End processing [moulti]: success
+[2024-05-26 10:39:24] INFO root fetch - processPackages [pygenda]: Remove: archive file [/home/abi/fetcher/tmp/pygenda-0.3.2.tar.gz]
+[2024-05-26 10:39:24] INFO root fetch - processPackages [pygenda]: Remove: archive file [/home/abi/fetcher/tmp/pygenda-0.3.3.tar.gz]
+[2024-05-26 10:39:24] INFO root fetch - main [MainThread]: End processing [pygenda]: success
+[2024-05-26 10:39:30] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev8.tar.gz]
+[2024-05-26 10:39:30] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev9.tar.gz]
+[2024-05-26 10:39:30] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-05-26 10:39:30] INFO root fetch - main [MainThread]: Store serial: [23381390]
