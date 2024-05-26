@@ -1745,3 +1745,51 @@
 [2024-05-26 03:26:17] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-0.2.4.tar.gz]
 [2024-05-26 03:26:17] INFO root fetch - main [MainThread]: End processing [blaze-double-bot]: success
 [2024-05-26 03:26:17] INFO root fetch - main [MainThread]: Store serial: [23378926]
+[2024-05-26 03:28:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378926]
+[2024-05-26 03:28:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 03:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-wordpress
+[2024-05-26 03:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-core
+[2024-05-26 03:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-runtime
+[2024-05-26 03:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flet-embed
+[2024-05-26 03:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flet
+[2024-05-26 03:28:26] INFO root fetch - processPackages [flet-core]: New version: [0.9.0.dev1631] Old Version: [0.9.0.dev1630]
+[2024-05-26 03:28:26] INFO root fetch - processPackages [flet-runtime]: New version: [0.9.0] Old Version: [0.23.0.dev2902]
+[2024-05-26 03:28:26] INFO root fetch - processPackages [flet-embed]: New version: [0.9.0] Old Version: [0.23.0.dev2902]
+[2024-05-26 03:28:26] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/06/78/2b607ba8cf90f09185f6b1de3138bf723d510d19ee11130a68433cce2d20/flet_core-0.9.0.dev1630.tar.gz
+[2024-05-26 03:28:26] INFO root fetch - processPackages [flet-runtime]: Downloading https://files.pythonhosted.org/packages/6f/af/6e47bc4fcdd915bea698a6d16789b37a139467847f94b6d32c304228fe0a/flet_runtime-0.23.0.dev2902.tar.gz
+[2024-05-26 03:28:26] INFO root fetch - processPackages [flet-embed]: Downloading https://files.pythonhosted.org/packages/e5/e9/0119ae885112e7f365b88bda47d51743d64095db974dc02925d188db34c2/flet_embed-0.23.0.dev2902.tar.gz
+[2024-05-26 03:28:26] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 03:28:26] INFO root fetch - processPackages [flet]: New version: [0.9.0] Old Version: [0.23.0.dev2904]
+[2024-05-26 03:28:27] INFO root fetch - processPackages [cdk-wordpress]: Downloading https://files.pythonhosted.org/packages/95/5a/46730445b7c8db7cad33c0b319cbd75004ba42b6cbe2f00628d2191c5516/cdk-wordpress-0.0.98.tar.gz
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-embed]: Downloading https://files.pythonhosted.org/packages/81/7e/d8933b7cb514fb7fd415c9368e2a55ab10465ad0c1277670abc72164e31b/flet_embed-0.9.0.tar.gz
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-runtime]: Downloading https://files.pythonhosted.org/packages/7d/21/4486f082fce6b7ee7174ae6b6c9bd62faeeb1cf712e65ccbd42d2a02b641/flet_runtime-0.9.0.tar.gz
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/4f/c9/c2705045754a5e96e2a0e04c30f12e30cc27d1e60b1fb83e686da4c0a8e6/flet_core-0.9.0.dev1631.tar.gz
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-embed]: executing diffoscope
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_embed-0.23.0.dev2902.tar.gz tmp/flet_embed-0.9.0.tar.gz --markdown 20240526/f/flet-embed/0.23.0.dev2902-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-runtime]: executing diffoscope
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_runtime-0.23.0.dev2902.tar.gz tmp/flet_runtime-0.9.0.tar.gz --markdown 20240526/f/flet-runtime/0.23.0.dev2902-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/05/81/eb52f4f586dad163475cd80c171ddc868e42ec9fbae1c15d335598823846/flet-0.23.0.dev2904-py3-none-any.whl
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-core]: executing diffoscope
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_core-0.9.0.dev1630.tar.gz tmp/flet_core-0.9.0.dev1631.tar.gz --markdown 20240526/f/flet-core/0.9.0.dev1630-0.9.0.dev1631/README.md --exclude *.pyd
+[2024-05-26 03:28:27] INFO root fetch - processPackages [cdk-wordpress]: Downloading https://files.pythonhosted.org/packages/f5/33/8bc435266e926cea52eb7df452e54c2c0657beef07580a86eae44236d88b/cdk-wordpress-0.0.99.tar.gz
+[2024-05-26 03:28:27] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2024-05-26 03:28:27] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20240526/c/cdk-wordpress/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_embed-0.23.0.dev2902.tar.gz]
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_embed-0.9.0.tar.gz]
+[2024-05-26 03:28:27] INFO root fetch - main [MainThread]: End processing [flet-embed]: success
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_runtime-0.23.0.dev2902.tar.gz]
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_runtime-0.9.0.tar.gz]
+[2024-05-26 03:28:27] INFO root fetch - main [MainThread]: End processing [flet-runtime]: success
+[2024-05-26 03:28:27] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/70/f1/c96f61c9817584ef31d84401520cb5d02e9b320f79d8aff85ba005ca6132/flet-0.9.0.tar.gz
+[2024-05-26 03:28:28] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.98.tar.gz]
+[2024-05-26 03:28:28] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.99.tar.gz]
+[2024-05-26 03:28:28] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2024-05-26 03:28:28] INFO root fetch - processPackages [flet-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_core-0.9.0.dev1630.tar.gz]
+[2024-05-26 03:28:28] INFO root fetch - processPackages [flet-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_core-0.9.0.dev1631.tar.gz]
+[2024-05-26 03:28:28] INFO root fetch - main [MainThread]: End processing [flet-core]: success
+[2024-05-26 03:28:28] INFO root fetch - processPackages [flet]: executing diffoscope
+[2024-05-26 03:28:28] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.23.0.dev2904-py3-none-any.whl.zip tmp/flet-0.9.0.tar.gz --markdown 20240526/f/flet/0.23.0.dev2904-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:28:31] INFO root fetch - processPackages [flet]: Remove: archive file [/home/abi/fetcher/tmp/flet-0.23.0.dev2904-py3-none-any.whl.zip]
+[2024-05-26 03:28:31] INFO root fetch - processPackages [flet]: Remove: archive file [/home/abi/fetcher/tmp/flet-0.9.0.tar.gz]
+[2024-05-26 03:28:31] INFO root fetch - main [MainThread]: End processing [flet]: success
+[2024-05-26 03:28:31] INFO root fetch - main [MainThread]: Store serial: [23378935]
