@@ -8652,3 +8652,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:00:15] INFO root fetch - processPackages [riskparityportfolio]: Remove: archive file [/home/abi/fetcher/tmp/riskparityportfolio-0.6.0.tar.gz]
 [2024-05-26 12:00:15] INFO root fetch - main [MainThread]: End processing [riskparityportfolio]: success
 [2024-05-26 12:00:15] INFO root fetch - main [MainThread]: Store serial: [23382012]
+[2024-05-26 12:02:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382012]
+[2024-05-26 12:02:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 12:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpl-ascii
+[2024-05-26 12:02:29] INFO root fetch - processPackages [mpl-ascii]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-26 12:02:29] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/00/4d/0fa534913c49e90b33083de6ab7aff0145cda0ef70ff46397dc89aae26b3/mpl_ascii-0.6.3.tar.gz
+[2024-05-26 12:02:29] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/47/81/81aedaec8e879b730090cea33b22485cf3180ab01895f39aa0b403d40897/mpl_ascii-0.6.4.tar.gz
+[2024-05-26 12:02:30] INFO root fetch - processPackages [mpl-ascii]: executing diffoscope
+[2024-05-26 12:02:30] INFO root fetch - processPackages [mpl-ascii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpl_ascii-0.6.3.tar.gz tmp/mpl_ascii-0.6.4.tar.gz --markdown 20240526/m/mpl-ascii/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-26 12:02:30] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.3.tar.gz]
+[2024-05-26 12:02:30] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.4.tar.gz]
+[2024-05-26 12:02:30] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
+[2024-05-26 12:02:30] INFO root fetch - main [MainThread]: Store serial: [23382015]
