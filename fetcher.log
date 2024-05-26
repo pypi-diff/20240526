@@ -7943,3 +7943,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:17:26] INFO root fetch - processPackages [psqlpy]: Remove: archive file [/home/abi/fetcher/tmp/psqlpy-0.6.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
 [2024-05-26 11:17:26] INFO root fetch - main [MainThread]: End processing [psqlpy]: success
 [2024-05-26 11:17:26] INFO root fetch - main [MainThread]: Store serial: [23381694]
+[2024-05-26 11:19:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381694]
+[2024-05-26 11:19:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 11:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cadprox
+[2024-05-26 11:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djdynatable
+[2024-05-26 11:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ampform-dpd
+[2024-05-26 11:19:38] INFO root fetch - processPackages [cadprox]: New version: [5.1] Old Version: [5]
+[2024-05-26 11:19:38] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/27/5d/d9b09cfe723d67743b92f82eb05e9b90c6a539a9e13810ff2336213bfc15/cadprox-5.tar.gz
+[2024-05-26 11:19:38] INFO root fetch - processPackages [djdynatable]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-26 11:19:38] INFO root fetch - processPackages [ampform-dpd]: New version: [0.2.1rc0] Old Version: [0.2.0]
+[2024-05-26 11:19:38] INFO root fetch - processPackages [ampform-dpd]: Downloading https://files.pythonhosted.org/packages/4d/60/79199095b558d824a833889fe1965d6429e85be94c0b2979f20f4ca97081/ampform_dpd-0.2.0.tar.gz
+[2024-05-26 11:19:38] INFO root fetch - processPackages [djdynatable]: Downloading https://files.pythonhosted.org/packages/05/a6/00f931b4d56bbb1d60dc65ceacc88545d2d47883836ba7239c42cff15029/djdynatable-1.0.0.tar.gz
+[2024-05-26 11:19:39] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/b3/32/823174b4bf83c47a479bb2ab37291d5db2b1552a563ab4854fc4a46486ea/cadprox-5.1.tar.gz
+[2024-05-26 11:19:39] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 11:19:39] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-5.tar.gz tmp/cadprox-5.1.tar.gz --markdown 20240526/c/cadprox/5-5.1/README.md --exclude *.pyd
+[2024-05-26 11:19:39] INFO root fetch - processPackages [djdynatable]: Downloading https://files.pythonhosted.org/packages/83/21/a1dc21dc477b0c8c369ff48cacfa12217a16057cc45271ed463fd2a12680/djdynatable-1.0.1.tar.gz
+[2024-05-26 11:19:39] INFO root fetch - processPackages [ampform-dpd]: Downloading https://files.pythonhosted.org/packages/1e/61/12ca1148605c6703d4398a8430264a20b2ae099a8720fe51f79191188b2d/ampform_dpd-0.2.1rc0.tar.gz
+[2024-05-26 11:19:39] INFO root fetch - processPackages [djdynatable]: executing diffoscope
+[2024-05-26 11:19:39] INFO root fetch - processPackages [djdynatable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djdynatable-1.0.0.tar.gz tmp/djdynatable-1.0.1.tar.gz --markdown 20240526/d/djdynatable/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-26 11:19:39] INFO root fetch - processPackages [ampform-dpd]: executing diffoscope
+[2024-05-26 11:19:39] INFO root fetch - processPackages [ampform-dpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ampform_dpd-0.2.0.tar.gz tmp/ampform_dpd-0.2.1rc0.tar.gz --markdown 20240526/a/ampform-dpd/0.2.0-0.2.1rc0/README.md --exclude *.pyd
+[2024-05-26 11:19:39] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-5.tar.gz]
+[2024-05-26 11:19:39] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-5.1.tar.gz]
+[2024-05-26 11:19:39] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 11:19:39] INFO root fetch - processPackages [djdynatable]: Remove: archive file [/home/abi/fetcher/tmp/djdynatable-1.0.0.tar.gz]
+[2024-05-26 11:19:39] INFO root fetch - processPackages [djdynatable]: Remove: archive file [/home/abi/fetcher/tmp/djdynatable-1.0.1.tar.gz]
+[2024-05-26 11:19:39] INFO root fetch - main [MainThread]: End processing [djdynatable]: success
+[2024-05-26 11:19:41] INFO root fetch - processPackages [ampform-dpd]: Remove: archive file [/home/abi/fetcher/tmp/ampform_dpd-0.2.0.tar.gz]
+[2024-05-26 11:19:41] INFO root fetch - processPackages [ampform-dpd]: Remove: archive file [/home/abi/fetcher/tmp/ampform_dpd-0.2.1rc0.tar.gz]
+[2024-05-26 11:19:41] INFO root fetch - main [MainThread]: End processing [ampform-dpd]: success
+[2024-05-26 11:19:41] INFO root fetch - main [MainThread]: Store serial: [23381746]
