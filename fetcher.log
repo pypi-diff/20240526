@@ -2577,3 +2577,24 @@
 [2024-05-26 04:42:09] INFO root fetch - processPackages [django-changelist-toolbar-admin]: Remove: archive file [/home/abi/fetcher/tmp/django-changelist-toolbar-admin-0.4.5.tar.gz]
 [2024-05-26 04:42:09] INFO root fetch - main [MainThread]: End processing [django-changelist-toolbar-admin]: success
 [2024-05-26 04:42:09] INFO root fetch - main [MainThread]: Store serial: [23379285]
+[2024-05-26 04:44:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379285]
+[2024-05-26 04:44:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 04:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2024-05-26 04:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baseball
+[2024-05-26 04:44:18] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-26 04:44:18] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-26 04:44:18] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-26 04:44:18] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-26 04:44:18] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-26 04:44:18] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-26 04:44:18] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-26 04:44:18] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240526/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-26 04:44:18] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-26 04:44:18] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240526/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-26 04:44:19] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-26 04:44:19] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-26 04:44:19] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-26 04:44:19] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-26 04:44:19] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-26 04:44:19] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-26 04:44:19] INFO root fetch - main [MainThread]: Store serial: [23379290]
