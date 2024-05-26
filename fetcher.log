@@ -11285,3 +11285,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:31:50] INFO root fetch - processPackages [comtrade-pysharp]: Remove: archive file [/home/abi/fetcher/tmp/comtrade_pysharp-0.0.2.tar.gz]
 [2024-05-26 15:31:50] INFO root fetch - main [MainThread]: End processing [comtrade-pysharp]: success
 [2024-05-26 15:31:50] INFO root fetch - main [MainThread]: Store serial: [23383326]
+[2024-05-26 15:34:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383326]
+[2024-05-26 15:34:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 15:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 15:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beets-goingrunning
+[2024-05-26 15:34:20] INFO root fetch - processPackages [beets-goingrunning]: New version: [1.2.9] Old Version: [1.2.5]
+[2024-05-26 15:34:20] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 15:34:20] INFO root fetch - processPackages [beets-goingrunning]: Downloading https://files.pythonhosted.org/packages/8f/3a/2040927541067f41d293fdd01d07361a61e7c93fb95c6a63a832ac875a35/beets-goingrunning-1.2.5.tar.gz
+[2024-05-26 15:34:20] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 15:34:20] INFO root fetch - processPackages [beets-goingrunning]: Downloading https://files.pythonhosted.org/packages/16/d2/1de9a4549ca54e53b22cdabaab0cb30b3a34b511d1d0b469682b2a242611/beets-goingrunning-1.2.9.tar.gz
+[2024-05-26 15:34:20] INFO root fetch - processPackages [beets-goingrunning]: executing diffoscope
+[2024-05-26 15:34:20] INFO root fetch - processPackages [beets-goingrunning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets-goingrunning-1.2.5.tar.gz tmp/beets-goingrunning-1.2.9.tar.gz --markdown 20240526/b/beets-goingrunning/1.2.5-1.2.9/README.md --exclude *.pyd
+[2024-05-26 15:34:20] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 15:34:20] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 15:34:20] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 15:34:21] INFO root fetch - processPackages [beets-goingrunning]: Remove: archive file [/home/abi/fetcher/tmp/beets-goingrunning-1.2.5.tar.gz]
+[2024-05-26 15:34:21] INFO root fetch - processPackages [beets-goingrunning]: Remove: archive file [/home/abi/fetcher/tmp/beets-goingrunning-1.2.9.tar.gz]
+[2024-05-26 15:34:21] INFO root fetch - main [MainThread]: End processing [beets-goingrunning]: success
+[2024-05-26 15:34:21] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 15:34:21] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 15:34:21] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 15:34:21] INFO root fetch - main [MainThread]: Store serial: [23383332]
