@@ -3575,3 +3575,24 @@
 [2024-05-26 06:38:43] WARNING root fetch - processPackages [pypdfzipcracker]: Skipping, unable to determine old version
 [2024-05-26 06:38:43] INFO root fetch - main [MainThread]: End processing [pypdfzipcracker] error
 [2024-05-26 06:38:43] INFO root fetch - main [MainThread]: Store serial: [23379697]
+[2024-05-26 06:40:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379697]
+[2024-05-26 06:40:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywikisource
+[2024-05-26 06:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-modeltranslation
+[2024-05-26 06:40:52] INFO root fetch - processPackages [pywikisource]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 06:40:52] INFO root fetch - processPackages [django-modeltranslation]: New version: [0.9.1] Old Version: [0.9]
+[2024-05-26 06:40:52] INFO root fetch - processPackages [pywikisource]: Downloading https://files.pythonhosted.org/packages/07/79/9c8d94d06e71bdbfbb0177e3b92820689c9c42f36a4ffdef7d71a298504b/pywikisource-0.0.4.tar.gz
+[2024-05-26 06:40:52] INFO root fetch - processPackages [django-modeltranslation]: Downloading https://files.pythonhosted.org/packages/9e/01/d441cf6e79ae464a19985c24f68e20dd636e925fe74eff84b55f43c284bc/django-modeltranslation-0.9.tar.gz
+[2024-05-26 06:40:52] INFO root fetch - processPackages [django-modeltranslation]: Downloading https://files.pythonhosted.org/packages/d5/35/af034d89c42b08db5ea0b8f25009e09e41317feb9def4928eeaf3cc57f52/django-modeltranslation-0.9.1.tar.gz
+[2024-05-26 06:40:52] INFO root fetch - processPackages [pywikisource]: Downloading https://files.pythonhosted.org/packages/77/a1/011a5f9ff7e1e4b9625e53da6ac385c43c4471857c38e3e205103b87e95f/pywikisource-0.0.5-py3-none-any.whl
+[2024-05-26 06:40:53] INFO root fetch - processPackages [django-modeltranslation]: executing diffoscope
+[2024-05-26 06:40:53] INFO root fetch - processPackages [django-modeltranslation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-modeltranslation-0.9.tar.gz tmp/django-modeltranslation-0.9.1.tar.gz --markdown 20240526/d/django-modeltranslation/0.9-0.9.1/README.md --exclude *.pyd
+[2024-05-26 06:40:53] INFO root fetch - processPackages [pywikisource]: executing diffoscope
+[2024-05-26 06:40:53] INFO root fetch - processPackages [pywikisource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywikisource-0.0.4.tar.gz tmp/pywikisource-0.0.5-py3-none-any.whl.zip --markdown 20240526/p/pywikisource/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 06:40:53] INFO root fetch - processPackages [pywikisource]: Remove: archive file [/home/abi/fetcher/tmp/pywikisource-0.0.4.tar.gz]
+[2024-05-26 06:40:53] INFO root fetch - processPackages [pywikisource]: Remove: archive file [/home/abi/fetcher/tmp/pywikisource-0.0.5-py3-none-any.whl.zip]
+[2024-05-26 06:40:53] INFO root fetch - main [MainThread]: End processing [pywikisource]: success
+[2024-05-26 06:40:53] INFO root fetch - processPackages [django-modeltranslation]: Remove: archive file [/home/abi/fetcher/tmp/django-modeltranslation-0.9.tar.gz]
+[2024-05-26 06:40:53] INFO root fetch - processPackages [django-modeltranslation]: Remove: archive file [/home/abi/fetcher/tmp/django-modeltranslation-0.9.1.tar.gz]
+[2024-05-26 06:40:53] INFO root fetch - main [MainThread]: End processing [django-modeltranslation]: success
+[2024-05-26 06:40:53] INFO root fetch - main [MainThread]: Store serial: [23379703]
