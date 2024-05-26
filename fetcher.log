@@ -14989,3 +14989,63 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:54:34] INFO root fetch - processPackages [tfy-mlflow-client]: Remove: archive file [/home/abi/fetcher/tmp/tfy-mlflow-client-0.0.9.tar.gz]
 [2024-05-26 18:54:34] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
 [2024-05-26 18:54:34] INFO root fetch - main [MainThread]: Store serial: [23384926]
+[2024-05-26 18:56:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384926]
+[2024-05-26 18:56:44] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ezcoding
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mypackagetestno1
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bnunicodenormalizer
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: useful-rdkit-utils
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: json-dt-serializer
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yeref
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sym-metanet
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyerualjetwork
+[2024-05-26 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: burger-shop-reminder
+[2024-05-26 18:56:44] WARNING root fetch - processPackages [json-dt-serializer]: Skipping, unable to determine old version
+[2024-05-26 18:56:44] INFO root fetch - main [MainThread]: End processing [json-dt-serializer] error
+[2024-05-26 18:56:44] INFO root fetch - processPackages [pyerualjetwork]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-26 18:56:44] WARNING root fetch - processPackages [ezcoding]: Skipping, unable to determine old version
+[2024-05-26 18:56:44] INFO root fetch - main [MainThread]: End processing [ezcoding] error
+[2024-05-26 18:56:44] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 18:56:44] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/93/75/468fe6cc80e68c83e3ed77b644114465b1f64cb4473efff33d4d3144f4c2/pyerualjetwork-1.2.4.tar.gz
+[2024-05-26 18:56:44] INFO root fetch - processPackages [sym-metanet]: New version: [1.1.0.post1] Old Version: [1.1.0]
+[2024-05-26 18:56:44] WARNING root fetch - processPackages [burger-shop-reminder]: Skipping, unable to determine old version
+[2024-05-26 18:56:44] INFO root fetch - main [MainThread]: End processing [burger-shop-reminder] error
+[2024-05-26 18:56:44] INFO root fetch - processPackages [bnunicodenormalizer]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 18:56:44] INFO root fetch - processPackages [useful-rdkit-utils]: New version: [0.5] Old Version: [0.3.8]
+[2024-05-26 18:56:44] WARNING root fetch - processPackages [mypackagetestno1]: Skipping, unable to determine old version
+[2024-05-26 18:56:44] INFO root fetch - main [MainThread]: End processing [mypackagetestno1] error
+[2024-05-26 18:56:44] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 18:56:44] INFO root fetch - processPackages [bnunicodenormalizer]: Downloading https://files.pythonhosted.org/packages/b0/eb/8ec11d496623bfceeccb3ad8d40b4a4653d4e1559ece2f4488f5bf58518d/bnunicodenormalizer-0.1.6.tar.gz
+[2024-05-26 18:56:44] INFO root fetch - processPackages [useful-rdkit-utils]: Downloading https://files.pythonhosted.org/packages/f2/00/272f108f9768745fa89a6e0e8bdeac8c8b045e531af96211f7bfe6b451de/useful_rdkit_utils-0.3.8.tar.gz
+[2024-05-26 18:56:44] INFO root fetch - processPackages [sym-metanet]: Downloading https://files.pythonhosted.org/packages/07/5c/9f9bb04c410e69c4744c77ebfe56bacbfc99f765102f67f15ff582be4460/sym_metanet-1.1.0.tar.gz
+[2024-05-26 18:56:44] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 18:56:44] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/35/15/f58d3c7961db2e7c4861776344d7810323ce293eeb39d93835c1154fb11a/pyerualjetwork-1.2.5.tar.gz
+[2024-05-26 18:56:44] INFO root fetch - processPackages [pyerualjetwork]: executing diffoscope
+[2024-05-26 18:56:44] INFO root fetch - processPackages [pyerualjetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerualjetwork-1.2.4.tar.gz tmp/pyerualjetwork-1.2.5.tar.gz --markdown 20240526/p/pyerualjetwork/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-26 18:56:45] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 18:56:45] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 18:56:45] INFO root fetch - processPackages [bnunicodenormalizer]: Downloading https://files.pythonhosted.org/packages/35/b4/b93d9cd7dc3906eaceafc340cb9e834f9f54fac84d51e00045bd6cb9d3e6/bnunicodenormalizer-0.1.7.tar.gz
+[2024-05-26 18:56:45] INFO root fetch - processPackages [sym-metanet]: Downloading https://files.pythonhosted.org/packages/68/1d/82b5a872d44a850e6b34ab92b988313e17e52103950426ba7563331dc46c/sym_metanet-1.1.0.post1.tar.gz
+[2024-05-26 18:56:45] INFO root fetch - processPackages [bnunicodenormalizer]: executing diffoscope
+[2024-05-26 18:56:45] INFO root fetch - processPackages [bnunicodenormalizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bnunicodenormalizer-0.1.6.tar.gz tmp/bnunicodenormalizer-0.1.7.tar.gz --markdown 20240526/b/bnunicodenormalizer/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 18:56:45] INFO root fetch - processPackages [sym-metanet]: executing diffoscope
+[2024-05-26 18:56:45] INFO root fetch - processPackages [sym-metanet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sym_metanet-1.1.0.tar.gz tmp/sym_metanet-1.1.0.post1.tar.gz --markdown 20240526/s/sym-metanet/1.1.0-1.1.0.post1/README.md --exclude *.pyd
+[2024-05-26 18:56:45] INFO root fetch - processPackages [useful-rdkit-utils]: Downloading https://files.pythonhosted.org/packages/10/03/2df29e4b1318c3b6b0c9f4fecae6f0e91f8d060310081cbdfe4309af0cfd/useful_rdkit_utils-0.5.tar.gz
+[2024-05-26 18:56:45] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-1.2.4.tar.gz]
+[2024-05-26 18:56:45] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-1.2.5.tar.gz]
+[2024-05-26 18:56:45] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
+[2024-05-26 18:56:45] INFO root fetch - processPackages [useful-rdkit-utils]: executing diffoscope
+[2024-05-26 18:56:45] INFO root fetch - processPackages [useful-rdkit-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/useful_rdkit_utils-0.3.8.tar.gz tmp/useful_rdkit_utils-0.5.tar.gz --markdown 20240526/u/useful-rdkit-utils/0.3.8-0.5/README.md --exclude *.pyd
+[2024-05-26 18:56:45] INFO root fetch - processPackages [bnunicodenormalizer]: Remove: archive file [/home/abi/fetcher/tmp/bnunicodenormalizer-0.1.6.tar.gz]
+[2024-05-26 18:56:45] INFO root fetch - processPackages [bnunicodenormalizer]: Remove: archive file [/home/abi/fetcher/tmp/bnunicodenormalizer-0.1.7.tar.gz]
+[2024-05-26 18:56:45] INFO root fetch - main [MainThread]: End processing [bnunicodenormalizer]: success
+[2024-05-26 18:56:45] INFO root fetch - processPackages [sym-metanet]: Remove: archive file [/home/abi/fetcher/tmp/sym_metanet-1.1.0.tar.gz]
+[2024-05-26 18:56:45] INFO root fetch - processPackages [sym-metanet]: Remove: archive file [/home/abi/fetcher/tmp/sym_metanet-1.1.0.post1.tar.gz]
+[2024-05-26 18:56:45] INFO root fetch - main [MainThread]: End processing [sym-metanet]: success
+[2024-05-26 18:56:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 18:56:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 18:56:45] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 18:56:46] INFO root fetch - processPackages [useful-rdkit-utils]: Remove: archive file [/home/abi/fetcher/tmp/useful_rdkit_utils-0.3.8.tar.gz]
+[2024-05-26 18:56:46] INFO root fetch - processPackages [useful-rdkit-utils]: Remove: archive file [/home/abi/fetcher/tmp/useful_rdkit_utils-0.5.tar.gz]
+[2024-05-26 18:56:46] INFO root fetch - main [MainThread]: End processing [useful-rdkit-utils]: success
+[2024-05-26 18:56:46] INFO root fetch - main [MainThread]: Store serial: [23384960]
