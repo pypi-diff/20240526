@@ -12919,3 +12919,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:58:31] INFO root fetch - processPackages [mnists]: Remove: archive file [/home/abi/fetcher/tmp/mnists-0.2.1.tar.gz]
 [2024-05-26 16:58:31] INFO root fetch - main [MainThread]: End processing [mnists]: success
 [2024-05-26 16:58:31] INFO root fetch - main [MainThread]: Store serial: [23384000]
+[2024-05-26 17:00:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384000]
+[2024-05-26 17:00:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 17:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bvhio
+[2024-05-26 17:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geocif
+[2024-05-26 17:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asteca
+[2024-05-26 17:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: granian
+[2024-05-26 17:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multiMotif
+[2024-05-26 17:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pi-awning-webthing
+[2024-05-26 17:00:39] INFO root fetch - processPackages [asteca]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-26 17:00:39] INFO root fetch - processPackages [bvhio]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-05-26 17:00:39] INFO root fetch - processPackages [granian]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-26 17:00:39] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 17:00:39] INFO root fetch - processPackages [asteca]: Downloading https://files.pythonhosted.org/packages/ab/14/74b6afc9075b663858dc8465db540aad113bce30bb58a8abcad9240a30d4/asteca-0.5.2.tar.gz
+[2024-05-26 17:00:39] INFO root fetch - processPackages [bvhio]: Downloading https://files.pythonhosted.org/packages/bc/d2/e8b5ecc1d7be6bfb75038831a21edf6144d4a0bf08c43884ec333289a402/bvhio-1.4.0.tar.gz
+[2024-05-26 17:00:39] INFO root fetch - processPackages [geocif]: New version: [0.1.30] Old Version: [0.1.29]
+[2024-05-26 17:00:39] INFO root fetch - processPackages [multiMotif]: New version: [1.2.3] Old Version: [1.2.1]
+[2024-05-26 17:00:39] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 17:00:39] INFO root fetch - processPackages [geocif]: Downloading https://files.pythonhosted.org/packages/ff/7f/f38712cc056fa0ac8d850b1aaa80aad25870648e60fdfeaf23f76a96f593/geocif-0.1.29.tar.gz
+[2024-05-26 17:00:39] INFO root fetch - processPackages [multiMotif]: Downloading https://files.pythonhosted.org/packages/0f/79/8caab37a082216f19636b02a9381a6a9174d8325a93b4e64718d63cca865/multiMotif-1.2.1.tar.gz
+[2024-05-26 17:00:39] INFO root fetch - processPackages [granian]: Downloading https://files.pythonhosted.org/packages/fa/af/ee293fb0467df6db0b68f11440c1fd1062fc17692067e9f6fb46a1318a8d/granian-1.3.1.tar.gz
+[2024-05-26 17:00:39] INFO root fetch - processPackages [asteca]: Downloading https://files.pythonhosted.org/packages/ce/ec/495d85a559a12630191794c71d27a7a674e43155acab04d2b1edf1c3e358/asteca-0.5.3.tar.gz
+[2024-05-26 17:00:40] INFO root fetch - processPackages [bvhio]: Downloading https://files.pythonhosted.org/packages/81/0e/7364b53b8f91c25d30cf4f5bab88c0bfad27dee05555b53b387fd3091508/bvhio-1.4.1.tar.gz
+[2024-05-26 17:00:40] INFO root fetch - processPackages [asteca]: executing diffoscope
+[2024-05-26 17:00:40] INFO root fetch - processPackages [asteca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asteca-0.5.2.tar.gz tmp/asteca-0.5.3.tar.gz --markdown 20240526/a/asteca/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-26 17:00:40] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 17:00:40] INFO root fetch - processPackages [bvhio]: executing diffoscope
+[2024-05-26 17:00:40] INFO root fetch - processPackages [bvhio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bvhio-1.4.0.tar.gz tmp/bvhio-1.4.1.tar.gz --markdown 20240526/b/bvhio/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-05-26 17:00:40] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 17:00:40] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 17:00:40] INFO root fetch - processPackages [geocif]: Downloading https://files.pythonhosted.org/packages/4d/86/b2311608e590eaa0d86033768e1722c83686d1bd7dc925aaa526ac40fea6/geocif-0.1.30.tar.gz
+[2024-05-26 17:00:40] INFO root fetch - processPackages [multiMotif]: Downloading https://files.pythonhosted.org/packages/15/4f/e7ced0e7d4689ea157973bc9df69201eb7adc86a1c0e2ea703e906788778/multimotif-1.2.3.tar.gz
+[2024-05-26 17:00:40] INFO root fetch - processPackages [geocif]: executing diffoscope
+[2024-05-26 17:00:40] INFO root fetch - processPackages [geocif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geocif-0.1.29.tar.gz tmp/geocif-0.1.30.tar.gz --markdown 20240526/g/geocif/0.1.29-0.1.30/README.md --exclude *.pyd
+[2024-05-26 17:00:40] INFO root fetch - processPackages [multiMotif]: executing diffoscope
+[2024-05-26 17:00:40] INFO root fetch - processPackages [multiMotif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiMotif-1.2.1.tar.gz tmp/multimotif-1.2.3.tar.gz --markdown 20240526/m/multiMotif/1.2.1-1.2.3/README.md --exclude *.pyd
+[2024-05-26 17:00:40] INFO root fetch - processPackages [granian]: Downloading https://files.pythonhosted.org/packages/13/69/7ac5c690c5afa3e0a864953837c49227d7e67428f4f86f884e951c87d972/granian-1.3.2.tar.gz
+[2024-05-26 17:00:40] INFO root fetch - processPackages [granian]: executing diffoscope
+[2024-05-26 17:00:40] INFO root fetch - processPackages [granian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granian-1.3.1.tar.gz tmp/granian-1.3.2.tar.gz --markdown 20240526/g/granian/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-26 17:00:40] INFO root fetch - processPackages [asteca]: Remove: archive file [/home/abi/fetcher/tmp/asteca-0.5.2.tar.gz]
+[2024-05-26 17:00:40] INFO root fetch - processPackages [asteca]: Remove: archive file [/home/abi/fetcher/tmp/asteca-0.5.3.tar.gz]
+[2024-05-26 17:00:40] INFO root fetch - main [MainThread]: End processing [asteca]: success
+[2024-05-26 17:00:40] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 17:00:40] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 17:00:40] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 17:00:40] INFO root fetch - processPackages [bvhio]: Remove: archive file [/home/abi/fetcher/tmp/bvhio-1.4.0.tar.gz]
+[2024-05-26 17:00:40] INFO root fetch - processPackages [bvhio]: Remove: archive file [/home/abi/fetcher/tmp/bvhio-1.4.1.tar.gz]
+[2024-05-26 17:00:40] INFO root fetch - main [MainThread]: End processing [bvhio]: success
+[2024-05-26 17:00:41] INFO root fetch - processPackages [multiMotif]: Remove: archive file [/home/abi/fetcher/tmp/multiMotif-1.2.1.tar.gz]
+[2024-05-26 17:00:41] INFO root fetch - processPackages [multiMotif]: Remove: archive file [/home/abi/fetcher/tmp/multimotif-1.2.3.tar.gz]
+[2024-05-26 17:00:41] INFO root fetch - main [MainThread]: End processing [multiMotif]: success
+[2024-05-26 17:00:41] INFO root fetch - processPackages [geocif]: Remove: archive file [/home/abi/fetcher/tmp/geocif-0.1.29.tar.gz]
+[2024-05-26 17:00:41] INFO root fetch - processPackages [geocif]: Remove: archive file [/home/abi/fetcher/tmp/geocif-0.1.30.tar.gz]
+[2024-05-26 17:00:41] INFO root fetch - main [MainThread]: End processing [geocif]: success
+[2024-05-26 17:00:41] INFO root fetch - processPackages [granian]: Remove: archive file [/home/abi/fetcher/tmp/granian-1.3.1.tar.gz]
+[2024-05-26 17:00:41] INFO root fetch - processPackages [granian]: Remove: archive file [/home/abi/fetcher/tmp/granian-1.3.2.tar.gz]
+[2024-05-26 17:00:41] INFO root fetch - main [MainThread]: End processing [granian]: success
+[2024-05-26 17:00:41] INFO root fetch - main [MainThread]: Store serial: [23384041]
