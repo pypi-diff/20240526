@@ -16905,3 +16905,32 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:48:21] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-26 20:48:21] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-26 20:48:21] INFO root fetch - main [MainThread]: Store serial: [23385856]
+[2024-05-26 20:50:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385856]
+[2024-05-26 20:50:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 20:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keggpathway2genes
+[2024-05-26 20:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matematikk
+[2024-05-26 20:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zenaura
+[2024-05-26 20:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: afeng-py-tools
+[2024-05-26 20:50:29] WARNING root fetch - processPackages [keggpathway2genes]: Skipping, unable to determine old version
+[2024-05-26 20:50:29] INFO root fetch - main [MainThread]: End processing [keggpathway2genes] error
+[2024-05-26 20:50:29] INFO root fetch - processPackages [zenaura]: New version: [0.9.73] Old Version: [0.9.33]
+[2024-05-26 20:50:29] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 20:50:29] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 20:50:29] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/c0/ab/cc9340e3736fdc8b9ce91d1421daea59c715bfb215303cc68f2f002bebab/zenaura-0.9.33.tar.gz
+[2024-05-26 20:50:29] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 20:50:29] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-05-26 20:50:30] ERROR root fetch - processPackages [zenaura]: Unable to fetch info: No such project/version 'zenaura' 0.9.73
+[2024-05-26 20:50:30] INFO root fetch - main [MainThread]: End processing [zenaura] error
+[2024-05-26 20:50:30] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 20:50:30] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-05-26 20:50:30] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 20:50:30] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 20:50:30] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-05-26 20:50:30] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240526/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 20:50:31] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 20:50:31] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 20:50:31] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 20:50:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-05-26 20:50:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-05-26 20:50:31] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-05-26 20:50:31] INFO root fetch - main [MainThread]: Store serial: [23385869]
