@@ -4865,3 +4865,31 @@
 [2024-05-26 08:46:26] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.80.tar.gz]
 [2024-05-26 08:46:26] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-05-26 08:46:26] INFO root fetch - main [MainThread]: Store serial: [23380399]
+[2024-05-26 08:48:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380399]
+[2024-05-26 08:48:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 08:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xingpyc
+[2024-05-26 08:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mypylib
+[2024-05-26 08:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xingpyc
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: New version: [0.1.88888] Old Version: [0.1.8888]
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: New version: [0.1.88888] Old Version: [0.1.8888]
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/e4/d2/3bad83c1bad835a19fc07e3d6579f0e46b355a73a4324ac02bff5804ad3b/xingpyc-0.1.8888.tar.gz
+[2024-05-26 08:48:35] INFO root fetch - processPackages [mypylib]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/e4/d2/3bad83c1bad835a19fc07e3d6579f0e46b355a73a4324ac02bff5804ad3b/xingpyc-0.1.8888.tar.gz
+[2024-05-26 08:48:35] INFO root fetch - processPackages [mypylib]: Downloading https://files.pythonhosted.org/packages/d8/32/4301943d3e52a7807614cd5eb3c3ecced64abe1c0aea4de097035c4d9b60/mypylib-0.2.7.tar.gz
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/aa/7f/47ccf4c3e7af3eed4f55c0281d8618e12531d29020e4630706d28b8c88c9/xingpyc-0.1.88888.tar.gz
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/aa/7f/47ccf4c3e7af3eed4f55c0281d8618e12531d29020e4630706d28b8c88c9/xingpyc-0.1.88888.tar.gz
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.8888.tar.gz tmp/xingpyc-0.1.88888.tar.gz --markdown 20240526/x/xingpyc/0.1.8888-0.1.88888/README.md --exclude *.pyd
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-26 08:48:35] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.8888.tar.gz tmp/xingpyc-0.1.88888.tar.gz --markdown 20240526/x/xingpyc/0.1.8888-0.1.88888/README.md --exclude *.pyd
+[2024-05-26 08:48:35] INFO root fetch - processPackages [mypylib]: Downloading https://files.pythonhosted.org/packages/92/62/3ed4d6ea043177c034990668d9e32f173050fa18aae6ed358f8e1fc226f0/mypylib-0.2.8.tar.gz
+[2024-05-26 08:48:35] INFO root fetch - processPackages [mypylib]: executing diffoscope
+[2024-05-26 08:48:35] INFO root fetch - processPackages [mypylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypylib-0.2.7.tar.gz tmp/mypylib-0.2.8.tar.gz --markdown 20240526/m/mypylib/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-26 08:48:36] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.8888.tar.gz]
+[2024-05-26 08:48:36] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.88888.tar.gz]
+[2024-05-26 08:48:36] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-26 08:48:36] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-26 08:48:36] INFO root fetch - processPackages [mypylib]: Remove: archive file [/home/abi/fetcher/tmp/mypylib-0.2.7.tar.gz]
+[2024-05-26 08:48:36] INFO root fetch - processPackages [mypylib]: Remove: archive file [/home/abi/fetcher/tmp/mypylib-0.2.8.tar.gz]
+[2024-05-26 08:48:36] INFO root fetch - main [MainThread]: End processing [mypylib]: success
+[2024-05-26 08:48:36] INFO root fetch - main [MainThread]: Store serial: [23380408]
