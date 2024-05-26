@@ -11802,3 +11802,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:02:19] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.2.tar.gz]
 [2024-05-26 16:02:19] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics]: success
 [2024-05-26 16:02:19] INFO root fetch - main [MainThread]: Store serial: [23383587]
+[2024-05-26 16:04:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383587]
+[2024-05-26 16:04:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 16:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: turboconf
+[2024-05-26 16:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pi-awning-webthing
+[2024-05-26 16:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oahspe
+[2024-05-26 16:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: burny_common
+[2024-05-26 16:04:47] WARNING root fetch - processPackages [turboconf]: Skipping, unable to determine old version
+[2024-05-26 16:04:47] INFO root fetch - main [MainThread]: End processing [turboconf] error
+[2024-05-26 16:04:47] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 16:04:47] INFO root fetch - processPackages [oahspe]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-26 16:04:47] INFO root fetch - processPackages [burny_common]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 16:04:47] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f3/91/ba07c9e27dbb568d0143cb8eab18a7b153f080c095d6be2a900c7fd69332/pi_awning_webthing-0.3.8.tar.gz
+[2024-05-26 16:04:47] INFO root fetch - processPackages [oahspe]: Downloading https://files.pythonhosted.org/packages/3b/e2/4d3c97aeb1acebd9cf47d323fb05d10dcbf7a9b76d92414485a186c07bd7/oahspe-0.0.2.tar.gz
+[2024-05-26 16:04:47] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:04:47] INFO root fetch - processPackages [burny_common]: Downloading https://files.pythonhosted.org/packages/cb/fd/94afdbbfe96bf985cb8f2ce4990fbac907749bef1b4babc81ee01556590f/burny_common-0.0.8.tar.gz
+[2024-05-26 16:04:48] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:04:48] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.8.tar.gz tmp/pi_awning_webthing-0.3.9.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 16:04:48] INFO root fetch - processPackages [oahspe]: Downloading https://files.pythonhosted.org/packages/b7/5f/171c427a9c9078397c26be29e8a3111aba5ace405f000a59fab4c093185b/oahspe-0.0.3.tar.gz
+[2024-05-26 16:04:48] INFO root fetch - processPackages [oahspe]: executing diffoscope
+[2024-05-26 16:04:48] INFO root fetch - processPackages [oahspe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oahspe-0.0.2.tar.gz tmp/oahspe-0.0.3.tar.gz --markdown 20240526/o/oahspe/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-26 16:04:48] INFO root fetch - processPackages [burny_common]: Downloading https://files.pythonhosted.org/packages/23/4a/2559afa35b918543da5f953ce7a09cf3629307828fa528048b38ac26e8a1/burny_common-0.0.9.tar.gz
+[2024-05-26 16:04:48] INFO root fetch - processPackages [burny_common]: executing diffoscope
+[2024-05-26 16:04:48] INFO root fetch - processPackages [burny_common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burny_common-0.0.8.tar.gz tmp/burny_common-0.0.9.tar.gz --markdown 20240526/b/burny_common/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 16:04:48] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.8.tar.gz]
+[2024-05-26 16:04:48] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:04:48] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:04:48] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.2.tar.gz]
+[2024-05-26 16:04:48] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.3.tar.gz]
+[2024-05-26 16:04:48] INFO root fetch - main [MainThread]: End processing [oahspe]: success
+[2024-05-26 16:04:49] INFO root fetch - processPackages [burny_common]: Remove: archive file [/home/abi/fetcher/tmp/burny_common-0.0.8.tar.gz]
+[2024-05-26 16:04:49] INFO root fetch - processPackages [burny_common]: Remove: archive file [/home/abi/fetcher/tmp/burny_common-0.0.9.tar.gz]
+[2024-05-26 16:04:49] INFO root fetch - main [MainThread]: End processing [burny_common]: success
+[2024-05-26 16:04:49] INFO root fetch - main [MainThread]: Store serial: [23383595]
