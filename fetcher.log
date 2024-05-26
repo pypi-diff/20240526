@@ -10080,3 +10080,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:08:45] INFO root fetch - processPackages [fractus]: Remove: archive file [/home/abi/fetcher/tmp/fractus-0.1.8.tar.gz]
 [2024-05-26 14:08:45] INFO root fetch - main [MainThread]: End processing [fractus]: success
 [2024-05-26 14:08:45] INFO root fetch - main [MainThread]: Store serial: [23382716]
+[2024-05-26 14:10:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382716]
+[2024-05-26 14:10:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 14:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rekker
+[2024-05-26 14:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GenAIRR
+[2024-05-26 14:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: killercoda-cli
+[2024-05-26 14:10:59] INFO root fetch - processPackages [killercoda-cli]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-26 14:10:59] INFO root fetch - processPackages [killercoda-cli]: Downloading https://files.pythonhosted.org/packages/3a/c4/d51913f854d9b5fd3374b34e85cae299971d161c1de6df3c719ba45d66e4/killercoda_cli-1.0.4.tar.gz
+[2024-05-26 14:10:59] INFO root fetch - processPackages [GenAIRR]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 14:10:59] INFO root fetch - processPackages [rekker]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 14:10:59] INFO root fetch - processPackages [rekker]: Downloading https://files.pythonhosted.org/packages/60/21/98731f18eceac30ef718837df1344d42bc99f7d58eac528f01d7a54ccfed/rekker-0.1.0.tar.gz
+[2024-05-26 14:10:59] INFO root fetch - processPackages [GenAIRR]: Downloading https://files.pythonhosted.org/packages/12/f2/43499402fc795eaa0bc1c65039aa4871c83caf23affe097ec4f4af126011/genairr-0.1.2.tar.gz
+[2024-05-26 14:10:59] INFO root fetch - processPackages [killercoda-cli]: Downloading https://files.pythonhosted.org/packages/ef/64/c69ac1e077b69d7584d551bca5f71ebc430682dab04348de66fa9173c3dd/killercoda_cli-1.0.5.tar.gz
+[2024-05-26 14:10:59] INFO root fetch - processPackages [killercoda-cli]: executing diffoscope
+[2024-05-26 14:10:59] INFO root fetch - processPackages [killercoda-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/killercoda_cli-1.0.4.tar.gz tmp/killercoda_cli-1.0.5.tar.gz --markdown 20240526/k/killercoda-cli/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-26 14:10:59] INFO root fetch - processPackages [rekker]: Downloading https://files.pythonhosted.org/packages/38/3b/0c09eee7987d3e76313c98616bdc29c51bd3ac88076d17ce4e63a616c5f0/rekker-0.1.1.tar.gz
+[2024-05-26 14:10:59] INFO root fetch - processPackages [rekker]: executing diffoscope
+[2024-05-26 14:10:59] INFO root fetch - processPackages [rekker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rekker-0.1.0.tar.gz tmp/rekker-0.1.1.tar.gz --markdown 20240526/r/rekker/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 14:10:59] INFO root fetch - processPackages [GenAIRR]: Downloading https://files.pythonhosted.org/packages/04/28/44be797e2554b8bf4a3fd1130c0b247e88fd2972c3b91e0eb61a7e654e68/genairr-0.1.3.tar.gz
+[2024-05-26 14:11:00] INFO root fetch - processPackages [killercoda-cli]: Remove: archive file [/home/abi/fetcher/tmp/killercoda_cli-1.0.4.tar.gz]
+[2024-05-26 14:11:00] INFO root fetch - processPackages [killercoda-cli]: Remove: archive file [/home/abi/fetcher/tmp/killercoda_cli-1.0.5.tar.gz]
+[2024-05-26 14:11:00] INFO root fetch - main [MainThread]: End processing [killercoda-cli]: success
+[2024-05-26 14:11:00] INFO root fetch - processPackages [GenAIRR]: executing diffoscope
+[2024-05-26 14:11:00] INFO root fetch - processPackages [GenAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genairr-0.1.2.tar.gz tmp/genairr-0.1.3.tar.gz --markdown 20240526/G/GenAIRR/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 14:11:00] INFO root fetch - processPackages [rekker]: Remove: archive file [/home/abi/fetcher/tmp/rekker-0.1.0.tar.gz]
+[2024-05-26 14:11:00] INFO root fetch - processPackages [rekker]: Remove: archive file [/home/abi/fetcher/tmp/rekker-0.1.1.tar.gz]
+[2024-05-26 14:11:00] INFO root fetch - main [MainThread]: End processing [rekker]: success
+[2024-05-26 14:11:02] INFO root fetch - processPackages [GenAIRR]: Remove: archive file [/home/abi/fetcher/tmp/genairr-0.1.2.tar.gz]
+[2024-05-26 14:11:02] INFO root fetch - processPackages [GenAIRR]: Remove: archive file [/home/abi/fetcher/tmp/genairr-0.1.3.tar.gz]
+[2024-05-26 14:11:02] INFO root fetch - main [MainThread]: End processing [GenAIRR]: success
+[2024-05-26 14:11:02] INFO root fetch - main [MainThread]: Store serial: [23382725]
