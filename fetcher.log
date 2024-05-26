@@ -4415,3 +4415,15 @@
 [2024-05-26 07:58:43] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716684593.tar.gz]
 [2024-05-26 07:58:43] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-05-26 07:58:43] INFO root fetch - main [MainThread]: Store serial: [23380182]
+[2024-05-26 08:00:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380182]
+[2024-05-26 08:00:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 08:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-openupgrade-scripts
+[2024-05-26 08:00:52] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.3] Old Version: [17.0.1.0.1.2]
+[2024-05-26 08:00:52] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/2e/07/cd2a4ed7796c54648aaa9877e518fbf9fbf32efb82f079e0a29a9bc2c6a8/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl
+[2024-05-26 08:00:52] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/f2/91/02310927fe11638961035a9674b0da49957cf5a36fe9d4f8296940bc73b9/odoo_addon_openupgrade_scripts-17.0.1.0.1.3-py3-none-any.whl
+[2024-05-26 08:00:52] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-05-26 08:00:52] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.3-py3-none-any.whl.zip --markdown 20240526/o/odoo-addon-openupgrade-scripts/17.0.1.0.1.2-17.0.1.0.1.3/README.md --exclude *.pyd
+[2024-05-26 08:00:55] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-05-26 08:00:55] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.3-py3-none-any.whl.zip]
+[2024-05-26 08:00:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-05-26 08:00:55] INFO root fetch - main [MainThread]: Store serial: [23380184]
