@@ -4077,3 +4077,18 @@
 [2024-05-26 07:24:08] INFO root fetch - processPackages [cambridge]: Remove: archive file [/home/abi/fetcher/tmp/cambridge-3.9.9.tar.gz]
 [2024-05-26 07:24:08] INFO root fetch - main [MainThread]: End processing [cambridge]: success
 [2024-05-26 07:24:08] INFO root fetch - main [MainThread]: Store serial: [23379966]
+[2024-05-26 07:26:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379966]
+[2024-05-26 07:26:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 07:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymail2
+[2024-05-26 07:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinytuya
+[2024-05-26 07:26:16] WARNING root fetch - processPackages [pymail2]: Skipping, unable to determine old version
+[2024-05-26 07:26:16] INFO root fetch - main [MainThread]: End processing [pymail2] error
+[2024-05-26 07:26:16] INFO root fetch - processPackages [tinytuya]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-26 07:26:16] INFO root fetch - processPackages [tinytuya]: Downloading https://files.pythonhosted.org/packages/22/7d/9d5fa82f83de2bc3db572f4410c55462fbeac68779f13c61ab259b930b3b/tinytuya-1.9.0-py2.py3-none-any.whl
+[2024-05-26 07:26:17] INFO root fetch - processPackages [tinytuya]: Downloading https://files.pythonhosted.org/packages/6b/dd/19d76df53a7c336d3c501f30b519cec78154f50351414491f01fa4ea7c75/tinytuya-1.9.1-py2.py3-none-any.whl
+[2024-05-26 07:26:17] INFO root fetch - processPackages [tinytuya]: executing diffoscope
+[2024-05-26 07:26:17] INFO root fetch - processPackages [tinytuya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinytuya-1.9.0-py2.py3-none-any.whl.zip tmp/tinytuya-1.9.1-py2.py3-none-any.whl.zip --markdown 20240526/t/tinytuya/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-26 07:26:18] INFO root fetch - processPackages [tinytuya]: Remove: archive file [/home/abi/fetcher/tmp/tinytuya-1.9.0-py2.py3-none-any.whl.zip]
+[2024-05-26 07:26:18] INFO root fetch - processPackages [tinytuya]: Remove: archive file [/home/abi/fetcher/tmp/tinytuya-1.9.1-py2.py3-none-any.whl.zip]
+[2024-05-26 07:26:18] INFO root fetch - main [MainThread]: End processing [tinytuya]: success
+[2024-05-26 07:26:18] INFO root fetch - main [MainThread]: Store serial: [23379982]
