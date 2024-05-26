@@ -3274,3 +3274,11 @@
 [2024-05-26 05:57:48] INFO root fetch - processPackages [inspect-py]: Remove: archive file [/home/abi/fetcher/tmp/inspect_py-0.1.1-py3-none-any.whl.zip]
 [2024-05-26 05:57:48] INFO root fetch - main [MainThread]: End processing [inspect-py]: success
 [2024-05-26 05:57:48] INFO root fetch - main [MainThread]: Store serial: [23379569]
+[2024-05-26 05:59:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379569]
+[2024-05-26 05:59:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 05:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-cdktf-provider-aws
+[2024-05-26 05:59:57] INFO root fetch - processPackages [cdktf-cdktf-provider-aws]: New version: [9.0.9] Old Version: [9.0.8]
+[2024-05-26 05:59:57] INFO root fetch - processPackages [cdktf-cdktf-provider-aws]: Downloading https://files.pythonhosted.org/packages/aa/2e/834bb9d56f903b34743b3b8d5766864ad4e2a039b6c88e65b6d835c946e4/cdktf-cdktf-provider-aws-9.0.8.tar.gz
+[2024-05-26 05:59:57] WARNING root fetch - processPackages [cdktf-cdktf-provider-aws]: Skipping package: exceeds size limit 23814479>=10485760
+[2024-05-26 05:59:57] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-aws] error
+[2024-05-26 05:59:57] INFO root fetch - main [MainThread]: Store serial: [23379575]
