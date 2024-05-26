@@ -2432,3 +2432,15 @@
 [2024-05-26 04:22:31] INFO root fetch - processPackages [jvi]: Remove: archive file [/home/abi/fetcher/tmp/jvi-0.1.4.tar.gz]
 [2024-05-26 04:22:31] INFO root fetch - main [MainThread]: End processing [jvi]: success
 [2024-05-26 04:22:31] INFO root fetch - main [MainThread]: Store serial: [23379223]
+[2024-05-26 04:24:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379223]
+[2024-05-26 04:24:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 04:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protai
+[2024-05-26 04:24:41] INFO root fetch - processPackages [protai]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-26 04:24:41] INFO root fetch - processPackages [protai]: Downloading https://files.pythonhosted.org/packages/4c/72/4a1acf0a654f1d7d18ed0e7b2b064f8d8b58e8bc206b4fe0f3878758e1d2/protai-0.6.0.tar.gz
+[2024-05-26 04:24:41] INFO root fetch - processPackages [protai]: Downloading https://files.pythonhosted.org/packages/f6/74/e25c8d61a80ee816769deb6f7ed1744eb1bf8de20f38d1cd3eeb9bc2f429/protai-0.6.1.tar.gz
+[2024-05-26 04:24:41] INFO root fetch - processPackages [protai]: executing diffoscope
+[2024-05-26 04:24:41] INFO root fetch - processPackages [protai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protai-0.6.0.tar.gz tmp/protai-0.6.1.tar.gz --markdown 20240526/p/protai/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-26 04:24:42] INFO root fetch - processPackages [protai]: Remove: archive file [/home/abi/fetcher/tmp/protai-0.6.0.tar.gz]
+[2024-05-26 04:24:42] INFO root fetch - processPackages [protai]: Remove: archive file [/home/abi/fetcher/tmp/protai-0.6.1.tar.gz]
+[2024-05-26 04:24:42] INFO root fetch - main [MainThread]: End processing [protai]: success
+[2024-05-26 04:24:42] INFO root fetch - main [MainThread]: Store serial: [23379228]
