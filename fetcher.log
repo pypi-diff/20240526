@@ -8703,3 +8703,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:05:20] INFO root fetch - processPackages [dash-extensions]: Remove: archive file [/home/abi/fetcher/tmp/dash_extensions-1.0.9.tar.gz]
 [2024-05-26 12:05:20] INFO root fetch - main [MainThread]: End processing [dash-extensions]: success
 [2024-05-26 12:05:20] INFO root fetch - main [MainThread]: Store serial: [23382027]
+[2024-05-26 12:07:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382027]
+[2024-05-26 12:07:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 12:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: setux
+[2024-05-26 12:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cookiecutter-python-vscode-github
+[2024-05-26 12:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: numericalint
+[2024-05-26 12:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jumeaux
+[2024-05-26 12:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xssbase
+[2024-05-26 12:07:33] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: New version: [0.8.0a0] Old Version: [0.7.0]
+[2024-05-26 12:07:33] INFO root fetch - processPackages [xssbase]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-05-26 12:07:33] INFO root fetch - processPackages [setux]: New version: [0.6.3.1] Old Version: [0.6.3.0]
+[2024-05-26 12:07:33] WARNING root fetch - processPackages [numericalint]: Skipping, unable to determine old version
+[2024-05-26 12:07:33] INFO root fetch - main [MainThread]: End processing [numericalint] error
+[2024-05-26 12:07:33] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: Downloading https://files.pythonhosted.org/packages/70/e5/a765dc52b82f5bbb74db2293d4462230ddee94d74f83bd526e159c284c5a/cookiecutter_python_vscode_github-0.7.0.tar.gz
+[2024-05-26 12:07:33] INFO root fetch - processPackages [jumeaux]: New version: [5.0.2] Old Version: [5.0.1]
+[2024-05-26 12:07:33] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/b0/82/81189004da665dab678029206db62d4c5221abb5815bad31bc7217ad8e98/xssbase-2.0.3.tar.gz
+[2024-05-26 12:07:33] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/2f/49/91934bd9aee6533448fdf391683c7a735a63a59ad2cf2563b52b98ad4201/setux-0.6.3.0.tar.gz
+[2024-05-26 12:07:33] INFO root fetch - processPackages [jumeaux]: Downloading https://files.pythonhosted.org/packages/8e/37/1ee3730dcdc50dc3e284b06452e7f237a78d119452a9fce65e9aa80712f2/jumeaux-5.0.1-py3-none-any.whl
+[2024-05-26 12:07:33] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: Downloading https://files.pythonhosted.org/packages/91/c8/a9bf9dcc482c1976480cea79fcdfd7d68826ee005225db0d3cd725596040/cookiecutter_python_vscode_github-0.8.0a0-py3-none-any.whl
+[2024-05-26 12:07:33] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/ad/0f/ea659bb0a2030b085f60069b2fb29d1dc322f7444f95eaa97478e78035e2/setux-0.6.3.1.tar.gz
+[2024-05-26 12:07:33] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/a7/05/ab1d9e709ec7554561489375d14bc45db783a26e1df6433d0954dd0cbedf/xssbase-2.0.4.tar.gz
+[2024-05-26 12:07:33] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: executing diffoscope
+[2024-05-26 12:07:33] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter_python_vscode_github-0.7.0.tar.gz tmp/cookiecutter_python_vscode_github-0.8.0a0-py3-none-any.whl.zip --markdown 20240526/c/cookiecutter-python-vscode-github/0.7.0-0.8.0a0/README.md --exclude *.pyd
+[2024-05-26 12:07:33] INFO root fetch - processPackages [setux]: executing diffoscope
+[2024-05-26 12:07:33] INFO root fetch - processPackages [setux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux-0.6.3.0.tar.gz tmp/setux-0.6.3.1.tar.gz --markdown 20240526/s/setux/0.6.3.0-0.6.3.1/README.md --exclude *.pyd
+[2024-05-26 12:07:33] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 12:07:33] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-2.0.3.tar.gz tmp/xssbase-2.0.4.tar.gz --markdown 20240526/x/xssbase/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-05-26 12:07:33] INFO root fetch - processPackages [jumeaux]: Downloading https://files.pythonhosted.org/packages/2e/e5/22757124ebd7a216551f083a75c087b2a5ea4c5f3f9dbc5a2d6d1eb6dce8/jumeaux-5.0.2-py3-none-any.whl
+[2024-05-26 12:07:34] INFO root fetch - processPackages [jumeaux]: executing diffoscope
+[2024-05-26 12:07:34] INFO root fetch - processPackages [jumeaux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumeaux-5.0.1-py3-none-any.whl.zip tmp/jumeaux-5.0.2-py3-none-any.whl.zip --markdown 20240526/j/jumeaux/5.0.1-5.0.2/README.md --exclude *.pyd
+[2024-05-26 12:07:34] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: Remove: archive file [/home/abi/fetcher/tmp/cookiecutter_python_vscode_github-0.7.0.tar.gz]
+[2024-05-26 12:07:34] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: Remove: archive file [/home/abi/fetcher/tmp/cookiecutter_python_vscode_github-0.8.0a0-py3-none-any.whl.zip]
+[2024-05-26 12:07:34] INFO root fetch - main [MainThread]: End processing [cookiecutter-python-vscode-github]: success
+[2024-05-26 12:07:34] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.0.tar.gz]
+[2024-05-26 12:07:34] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.1.tar.gz]
+[2024-05-26 12:07:34] INFO root fetch - main [MainThread]: End processing [setux]: success
+[2024-05-26 12:07:34] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.3.tar.gz]
+[2024-05-26 12:07:34] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.4.tar.gz]
+[2024-05-26 12:07:34] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 12:07:35] INFO root fetch - processPackages [jumeaux]: Remove: archive file [/home/abi/fetcher/tmp/jumeaux-5.0.1-py3-none-any.whl.zip]
+[2024-05-26 12:07:35] INFO root fetch - processPackages [jumeaux]: Remove: archive file [/home/abi/fetcher/tmp/jumeaux-5.0.2-py3-none-any.whl.zip]
+[2024-05-26 12:07:35] INFO root fetch - main [MainThread]: End processing [jumeaux]: success
+[2024-05-26 12:07:35] INFO root fetch - main [MainThread]: Store serial: [23382040]
