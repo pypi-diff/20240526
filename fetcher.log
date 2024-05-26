@@ -4826,3 +4826,42 @@
 [2024-05-26 08:43:56] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.6.7.tar.gz]
 [2024-05-26 08:43:56] INFO root fetch - main [MainThread]: End processing [marimo]: success
 [2024-05-26 08:43:56] INFO root fetch - main [MainThread]: Store serial: [23380379]
+[2024-05-26 08:46:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380379]
+[2024-05-26 08:46:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 08:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contact-group-local
+[2024-05-26 08:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crossword-puzzle
+[2024-05-26 08:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: altrios
+[2024-05-26 08:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xingpyc
+[2024-05-26 08:46:04] INFO root fetch - processPackages [xingpyc]: New version: [0.1.8888] Old Version: [0.1.888]
+[2024-05-26 08:46:04] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/5d/b5/23cb1f9eb0c21cff9026e42f365984616219d430d372f938277f8b70a036/xingpyc-0.1.888.tar.gz
+[2024-05-26 08:46:04] INFO root fetch - processPackages [crossword-puzzle]: New version: [1.2.80] Old Version: [1.2.79]
+[2024-05-26 08:46:04] INFO root fetch - processPackages [contact-group-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 08:46:04] INFO root fetch - processPackages [altrios]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 08:46:05] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/be/c6/d5a1942e9382c8d83538b3e0a6630eda844f3dbea0e5f447ae5e7421fbe6/crossword_puzzle-1.2.79.tar.gz
+[2024-05-26 08:46:05] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/63/e5/ff261731db98a38a39f4657a4cd1e04b2a998f175a7af36c640220ff9b00/contact-group-local-0.0.8.tar.gz
+[2024-05-26 08:46:05] INFO root fetch - processPackages [altrios]: Downloading https://files.pythonhosted.org/packages/c3/98/2fb9b58a79fe20054a5d61aa590ea9b6d21fdb413046f92bdd1fbe1a5250/altrios-0.2.2.tar.gz
+[2024-05-26 08:46:05] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/e4/d2/3bad83c1bad835a19fc07e3d6579f0e46b355a73a4324ac02bff5804ad3b/xingpyc-0.1.8888.tar.gz
+[2024-05-26 08:46:05] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-26 08:46:05] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.888.tar.gz tmp/xingpyc-0.1.8888.tar.gz --markdown 20240526/x/xingpyc/0.1.888-0.1.8888/README.md --exclude *.pyd
+[2024-05-26 08:46:05] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/84/cc/f78576331b2ff0f497f4640872d65b71ec33ae804f6a44bb2f10f1957687/contact-group-local-0.0.9.tar.gz
+[2024-05-26 08:46:05] INFO root fetch - processPackages [contact-group-local]: executing diffoscope
+[2024-05-26 08:46:05] INFO root fetch - processPackages [contact-group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-group-local-0.0.8.tar.gz tmp/contact-group-local-0.0.9.tar.gz --markdown 20240526/c/contact-group-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 08:46:05] INFO root fetch - processPackages [altrios]: Downloading https://files.pythonhosted.org/packages/62/a1/5a616aa0fcd7656e557cf928278e507a4b76c15dc646fb34789e0e1be31a/altrios-0.2.3.tar.gz
+[2024-05-26 08:46:05] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/4b/b8/01c2c509b0fb42c03d208b6ce47046ce222a806f7adb4e3e6f90ac86994a/crossword_puzzle-1.2.80.tar.gz
+[2024-05-26 08:46:05] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.888.tar.gz]
+[2024-05-26 08:46:05] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.8888.tar.gz]
+[2024-05-26 08:46:05] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-26 08:46:05] INFO root fetch - processPackages [altrios]: executing diffoscope
+[2024-05-26 08:46:05] INFO root fetch - processPackages [altrios]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altrios-0.2.2.tar.gz tmp/altrios-0.2.3.tar.gz --markdown 20240526/a/altrios/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 08:46:06] INFO root fetch - processPackages [crossword-puzzle]: executing diffoscope
+[2024-05-26 08:46:06] INFO root fetch - processPackages [crossword-puzzle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossword_puzzle-1.2.79.tar.gz tmp/crossword_puzzle-1.2.80.tar.gz --markdown 20240526/c/crossword-puzzle/1.2.79-1.2.80/README.md --exclude *.pyd
+[2024-05-26 08:46:06] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.8.tar.gz]
+[2024-05-26 08:46:06] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
+[2024-05-26 08:46:06] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
+[2024-05-26 08:46:07] INFO root fetch - processPackages [altrios]: Remove: archive file [/home/abi/fetcher/tmp/altrios-0.2.2.tar.gz]
+[2024-05-26 08:46:07] INFO root fetch - processPackages [altrios]: Remove: archive file [/home/abi/fetcher/tmp/altrios-0.2.3.tar.gz]
+[2024-05-26 08:46:07] INFO root fetch - main [MainThread]: End processing [altrios]: success
+[2024-05-26 08:46:26] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.79.tar.gz]
+[2024-05-26 08:46:26] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.80.tar.gz]
+[2024-05-26 08:46:26] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
+[2024-05-26 08:46:26] INFO root fetch - main [MainThread]: Store serial: [23380399]
