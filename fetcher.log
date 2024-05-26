@@ -9352,3 +9352,29 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:00:55] INFO root fetch - processPackages [reiuji-nuclearcraft]: Remove: archive file [/home/abi/fetcher/tmp/reiuji_nuclearcraft-0.1.1.tar.gz]
 [2024-05-26 13:00:55] INFO root fetch - main [MainThread]: End processing [reiuji-nuclearcraft]: success
 [2024-05-26 13:00:55] INFO root fetch - main [MainThread]: Store serial: [23382330]
+[2024-05-26 13:03:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382330]
+[2024-05-26 13:03:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 13:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: killercoda-cli
+[2024-05-26 13:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xssbase
+[2024-05-26 13:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scripro
+[2024-05-26 13:03:09] INFO root fetch - processPackages [xssbase]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-05-26 13:03:09] INFO root fetch - processPackages [scripro]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-26 13:03:09] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/82/c1/657a006abfa916011bf904c31fb8c18e492dd2c4cf87a1dc1a1bff833dfb/xssbase-2.0.7.tar.gz
+[2024-05-26 13:03:09] INFO root fetch - processPackages [killercoda-cli]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-26 13:03:09] INFO root fetch - processPackages [scripro]: Downloading https://files.pythonhosted.org/packages/58/e4/5dc51c40ddc482d810ce85fa5386b832d6de3b76032f1949a8b9bb3bef9e/scripro-1.1.8.tar.gz
+[2024-05-26 13:03:09] WARNING root fetch - processPackages [scripro]: Skipping package: exceeds size limit 21360012>=10485760
+[2024-05-26 13:03:09] INFO root fetch - main [MainThread]: End processing [scripro] error
+[2024-05-26 13:03:09] INFO root fetch - processPackages [killercoda-cli]: Downloading https://files.pythonhosted.org/packages/c3/d7/bbd8775be2290b20a25d73ab0d81d6e81222cb864515284c8f2bd97fa60e/killercoda_cli-1.0.2.tar.gz
+[2024-05-26 13:03:09] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/8b/0f/0d7d2b3197c174ef4ca65a41da8cb5d8bde8eb6f233aae2ef8c01ec53088/xssbase-2.0.8.tar.gz
+[2024-05-26 13:03:09] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 13:03:09] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-2.0.7.tar.gz tmp/xssbase-2.0.8.tar.gz --markdown 20240526/x/xssbase/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-05-26 13:03:09] INFO root fetch - processPackages [killercoda-cli]: Downloading https://files.pythonhosted.org/packages/c9/62/d6ab7f51fd0ea59654264f4884f95f8f0ba88de5bd8ca0b51faa667f09b5/killercoda_cli-1.0.3.tar.gz
+[2024-05-26 13:03:09] INFO root fetch - processPackages [killercoda-cli]: executing diffoscope
+[2024-05-26 13:03:09] INFO root fetch - processPackages [killercoda-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/killercoda_cli-1.0.2.tar.gz tmp/killercoda_cli-1.0.3.tar.gz --markdown 20240526/k/killercoda-cli/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-26 13:03:10] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.7.tar.gz]
+[2024-05-26 13:03:10] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.8.tar.gz]
+[2024-05-26 13:03:10] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 13:03:10] INFO root fetch - processPackages [killercoda-cli]: Remove: archive file [/home/abi/fetcher/tmp/killercoda_cli-1.0.2.tar.gz]
+[2024-05-26 13:03:10] INFO root fetch - processPackages [killercoda-cli]: Remove: archive file [/home/abi/fetcher/tmp/killercoda_cli-1.0.3.tar.gz]
+[2024-05-26 13:03:10] INFO root fetch - main [MainThread]: End processing [killercoda-cli]: success
+[2024-05-26 13:03:10] INFO root fetch - main [MainThread]: Store serial: [23382339]
