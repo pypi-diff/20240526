@@ -15573,3 +15573,63 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:22:56] INFO root fetch - processPackages [irispie]: Remove: archive file [/home/abi/fetcher/tmp/irispie-0.9.0.tar.gz]
 [2024-05-26 19:22:56] INFO root fetch - main [MainThread]: End processing [irispie]: success
 [2024-05-26 19:22:56] INFO root fetch - main [MainThread]: Store serial: [23385164]
+[2024-05-26 19:25:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385164]
+[2024-05-26 19:25:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carbon-registry-indexer
+[2024-05-26 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aligned
+[2024-05-26 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: web-assets-downloader
+[2024-05-26 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytun-pmd3
+[2024-05-26 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MedatechUK.Landlord
+[2024-05-26 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: abcli
+[2024-05-26 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: khoj-assistant
+[2024-05-26 19:25:05] WARNING root fetch - processPackages [MedatechUK.Landlord]: Skipping, unable to determine old version
+[2024-05-26 19:25:05] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord] error
+[2024-05-26 19:25:05] INFO root fetch - processPackages [abcli]: New version: [9.3.1] Old Version: [9.2.1]
+[2024-05-26 19:25:05] INFO root fetch - processPackages [aligned]: New version: [0.0.9a0] Old Version: [0.0.98]
+[2024-05-26 19:25:05] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/5b/19/d0e6e72f3d45ac08c0239df3fd3f0aeac3aad914a52cd17dade958adea0b/abcli-9.2.1.tar.gz
+[2024-05-26 19:25:05] INFO root fetch - processPackages [web-assets-downloader]: New version: [2.3.0] Old Version: [2.2.1]
+[2024-05-26 19:25:05] INFO root fetch - processPackages [carbon-registry-indexer]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:25:05] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-05-26 19:25:05] INFO root fetch - processPackages [pytun-pmd3]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-05-26 19:25:05] INFO root fetch - processPackages [aligned]: Downloading https://files.pythonhosted.org/packages/14/6f/9b343ef83d5b1d7930aaea186ca92dd1598bde6ad338f8ac278d119d5586/aligned-0.0.98.tar.gz
+[2024-05-26 19:25:05] INFO root fetch - processPackages [web-assets-downloader]: Downloading https://files.pythonhosted.org/packages/14/dd/7c358509d9a0993ab9368aeae8879a14a13e0c1aba1036a735af13f6e6d8/web_assets_downloader-2.2.1.tar.gz
+[2024-05-26 19:25:05] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/6a/ea/27f744d6e0e724c6e0575edb2c67737c6a70147e7ebcd97674a2959d66dd/carbon-registry-indexer-0.1.8.tar.gz
+[2024-05-26 19:25:05] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-05-26 19:25:05] INFO root fetch - processPackages [pytun-pmd3]: Downloading https://files.pythonhosted.org/packages/30/3a/3a1895a84cefc61092e34319eebdf687b36c3fa9d6068aa8f9e7c4a8b714/pytun_pmd3-2.0.7.tar.gz
+[2024-05-26 19:25:05] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/27/0f/c18b5fa4712b3f6bcc42462d85618b5a3c37cc5d4c765462ebfab12d9c8f/abcli-9.3.1.tar.gz
+[2024-05-26 19:25:05] INFO root fetch - processPackages [web-assets-downloader]: Downloading https://files.pythonhosted.org/packages/e7/7c/798d9fa2ee30f7e57bfe6e5e3a5c244a01de4a8b25a5f6c789bec76f6256/web_assets_downloader-2.3.0.tar.gz
+[2024-05-26 19:25:05] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-26 19:25:06] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-9.2.1.tar.gz tmp/abcli-9.3.1.tar.gz --markdown 20240526/a/abcli/9.2.1-9.3.1/README.md --exclude *.pyd
+[2024-05-26 19:25:06] INFO root fetch - processPackages [aligned]: Downloading https://files.pythonhosted.org/packages/80/76/56f2f101a999db7508a16452e09b1eb914b98582072a7b0a24058d97c906/aligned-0.0.9a0.tar.gz
+[2024-05-26 19:25:06] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/e5/cd/1e1e95e6852f521936093508bcf7bbf278df34c6892a3bcd86aa33caf947/carbon-registry-indexer-0.1.9.tar.gz
+[2024-05-26 19:25:06] INFO root fetch - processPackages [web-assets-downloader]: executing diffoscope
+[2024-05-26 19:25:06] INFO root fetch - processPackages [web-assets-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web_assets_downloader-2.2.1.tar.gz tmp/web_assets_downloader-2.3.0.tar.gz --markdown 20240526/w/web-assets-downloader/2.2.1-2.3.0/README.md --exclude *.pyd
+[2024-05-26 19:25:06] INFO root fetch - processPackages [aligned]: executing diffoscope
+[2024-05-26 19:25:06] INFO root fetch - processPackages [aligned]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aligned-0.0.98.tar.gz tmp/aligned-0.0.9a0.tar.gz --markdown 20240526/a/aligned/0.0.98-0.0.9a0/README.md --exclude *.pyd
+[2024-05-26 19:25:06] INFO root fetch - processPackages [carbon-registry-indexer]: executing diffoscope
+[2024-05-26 19:25:06] INFO root fetch - processPackages [carbon-registry-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon-registry-indexer-0.1.8.tar.gz tmp/carbon-registry-indexer-0.1.9.tar.gz --markdown 20240526/c/carbon-registry-indexer/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 19:25:06] INFO root fetch - processPackages [pytun-pmd3]: Downloading https://files.pythonhosted.org/packages/94/d1/e8dafe664a3c0b50ae6f933499ee07d3d3c3167ca424c53cb785197d0ec4/pytun_pmd3-2.0.8-cp38-cp38-musllinux_1_1_x86_64.whl
+[2024-05-26 19:25:06] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-05-26 19:25:06] INFO root fetch - processPackages [web-assets-downloader]: Remove: archive file [/home/abi/fetcher/tmp/web_assets_downloader-2.2.1.tar.gz]
+[2024-05-26 19:25:06] INFO root fetch - processPackages [web-assets-downloader]: Remove: archive file [/home/abi/fetcher/tmp/web_assets_downloader-2.3.0.tar.gz]
+[2024-05-26 19:25:06] INFO root fetch - main [MainThread]: End processing [web-assets-downloader]: success
+[2024-05-26 19:25:06] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-05-26 19:25:06] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240526/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-26 19:25:06] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.2.1.tar.gz]
+[2024-05-26 19:25:06] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.3.1.tar.gz]
+[2024-05-26 19:25:06] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-26 19:25:06] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.8.tar.gz]
+[2024-05-26 19:25:06] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.9.tar.gz]
+[2024-05-26 19:25:06] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
+[2024-05-26 19:25:06] INFO root fetch - processPackages [aligned]: Remove: archive file [/home/abi/fetcher/tmp/aligned-0.0.98.tar.gz]
+[2024-05-26 19:25:06] INFO root fetch - processPackages [aligned]: Remove: archive file [/home/abi/fetcher/tmp/aligned-0.0.9a0.tar.gz]
+[2024-05-26 19:25:06] INFO root fetch - main [MainThread]: End processing [aligned]: success
+[2024-05-26 19:25:07] INFO root fetch - processPackages [pytun-pmd3]: executing diffoscope
+[2024-05-26 19:25:07] INFO root fetch - processPackages [pytun-pmd3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytun_pmd3-2.0.7.tar.gz tmp/pytun_pmd3-2.0.8-cp38-cp38-musllinux_1_1_x86_64.whl.zip --markdown 20240526/p/pytun-pmd3/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-05-26 19:25:07] INFO root fetch - processPackages [pytun-pmd3]: Remove: archive file [/home/abi/fetcher/tmp/pytun_pmd3-2.0.7.tar.gz]
+[2024-05-26 19:25:07] INFO root fetch - processPackages [pytun-pmd3]: Remove: archive file [/home/abi/fetcher/tmp/pytun_pmd3-2.0.8-cp38-cp38-musllinux_1_1_x86_64.whl.zip]
+[2024-05-26 19:25:07] INFO root fetch - main [MainThread]: End processing [pytun-pmd3]: success
+[2024-05-26 19:25:08] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-05-26 19:25:08] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-05-26 19:25:08] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-05-26 19:25:08] INFO root fetch - main [MainThread]: Store serial: [23385213]
