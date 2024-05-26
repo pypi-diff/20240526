@@ -9208,3 +9208,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:51:55] WARNING root fetch - processPackages [crx-utils]: Skipping, unable to determine old version
 [2024-05-26 12:51:55] INFO root fetch - main [MainThread]: End processing [crx-utils] error
 [2024-05-26 12:51:55] INFO root fetch - main [MainThread]: Store serial: [23382272]
+[2024-05-26 12:54:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382272]
+[2024-05-26 12:54:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 12:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lukasdata
+[2024-05-26 12:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: locust
+[2024-05-26 12:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: umerfy-number
+[2024-05-26 12:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: readme-ation
+[2024-05-26 12:54:08] INFO root fetch - processPackages [readme-ation]: New version: [0.1.4] Old Version: [0.1.2]
+[2024-05-26 12:54:08] INFO root fetch - processPackages [readme-ation]: Downloading https://files.pythonhosted.org/packages/72/44/dd6ef5e3c133728e27190047cddb6edf12b7767fbcc5fdea27e8113dde75/readme-ation-0.1.2.tar.gz
+[2024-05-26 12:54:08] INFO root fetch - processPackages [lukasdata]: New version: [1.4] Old Version: [1.3.9]
+[2024-05-26 12:54:08] WARNING root fetch - processPackages [umerfy-number]: Skipping, unable to determine old version
+[2024-05-26 12:54:08] INFO root fetch - main [MainThread]: End processing [umerfy-number] error
+[2024-05-26 12:54:08] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-05-26 12:54:08] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/b7/fd/03866628d2dfe74724de7a662d95a3927962b46638904ff6ee7b7c0f3ad4/lukasdata-1.3.9.tar.gz
+[2024-05-26 12:54:08] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-05-26 12:54:08] INFO root fetch - processPackages [readme-ation]: Downloading https://files.pythonhosted.org/packages/4b/6b/986aae3c53d6580ab467b912cb3d8734c1c799689312d8370477ca927d4b/readme_ation-0.1.4.tar.gz
+[2024-05-26 12:54:09] INFO root fetch - processPackages [readme-ation]: executing diffoscope
+[2024-05-26 12:54:09] INFO root fetch - processPackages [readme-ation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/readme-ation-0.1.2.tar.gz tmp/readme_ation-0.1.4.tar.gz --markdown 20240526/r/readme-ation/0.1.2-0.1.4/README.md --exclude *.pyd
+[2024-05-26 12:54:09] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/55/7f/0be4fe8d94540d422ea68227dfa8c3b23b329ce507a21aa561e6050c5bf3/lukasdata-1.4.tar.gz
+[2024-05-26 12:54:09] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-05-26 12:54:09] INFO root fetch - processPackages [lukasdata]: executing diffoscope
+[2024-05-26 12:54:09] INFO root fetch - processPackages [lukasdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lukasdata-1.3.9.tar.gz tmp/lukasdata-1.4.tar.gz --markdown 20240526/l/lukasdata/1.3.9-1.4/README.md --exclude *.pyd
+[2024-05-26 12:54:09] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-05-26 12:54:09] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240526/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-05-26 12:54:09] INFO root fetch - processPackages [readme-ation]: Remove: archive file [/home/abi/fetcher/tmp/readme-ation-0.1.2.tar.gz]
+[2024-05-26 12:54:09] INFO root fetch - processPackages [readme-ation]: Remove: archive file [/home/abi/fetcher/tmp/readme_ation-0.1.4.tar.gz]
+[2024-05-26 12:54:09] INFO root fetch - main [MainThread]: End processing [readme-ation]: success
+[2024-05-26 12:54:09] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.9.tar.gz]
+[2024-05-26 12:54:09] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.4.tar.gz]
+[2024-05-26 12:54:09] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
+[2024-05-26 12:54:10] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-05-26 12:54:10] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-05-26 12:54:10] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-05-26 12:54:10] INFO root fetch - main [MainThread]: Store serial: [23382286]
