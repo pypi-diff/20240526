@@ -17430,3 +17430,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:17:09] INFO root fetch - processPackages [borgbackup]: Remove: archive file [/home/abi/fetcher/tmp/borgbackup-2.0.0b8.tar.gz]
 [2024-05-26 21:17:09] INFO root fetch - main [MainThread]: End processing [borgbackup]: success
 [2024-05-26 21:17:09] INFO root fetch - main [MainThread]: Store serial: [23386159]
+[2024-05-26 21:19:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386159]
+[2024-05-26 21:19:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 21:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asapi
+[2024-05-26 21:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ricklib
+[2024-05-26 21:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: luma-ml
+[2024-05-26 21:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ofxstatement-santander
+[2024-05-26 21:19:20] WARNING root fetch - processPackages [ricklib]: Skipping, unable to determine old version
+[2024-05-26 21:19:20] INFO root fetch - main [MainThread]: End processing [ricklib] error
+[2024-05-26 21:19:20] WARNING root fetch - processPackages [asapi]: Skipping, unable to determine old version
+[2024-05-26 21:19:20] INFO root fetch - main [MainThread]: End processing [asapi] error
+[2024-05-26 21:19:20] INFO root fetch - processPackages [luma-ml]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-26 21:19:20] WARNING root fetch - processPackages [ofxstatement-santander]: Skipping, unable to determine old version
+[2024-05-26 21:19:20] INFO root fetch - main [MainThread]: End processing [ofxstatement-santander] error
+[2024-05-26 21:19:20] INFO root fetch - processPackages [luma-ml]: Downloading https://files.pythonhosted.org/packages/f9/a8/0bec93142c6a31c14228e545e9ae3214b62a25368c500a6d7048e1bd44b1/luma-ml-0.8.1.tar.gz
+[2024-05-26 21:19:20] INFO root fetch - processPackages [luma-ml]: Downloading https://files.pythonhosted.org/packages/7d/14/359eee519fc3c1db127a4c4ee42aea93e8ee7ddf8f4c13d1282537c3b863/luma-ml-0.8.2.tar.gz
+[2024-05-26 21:19:21] INFO root fetch - processPackages [luma-ml]: executing diffoscope
+[2024-05-26 21:19:21] INFO root fetch - processPackages [luma-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luma-ml-0.8.1.tar.gz tmp/luma-ml-0.8.2.tar.gz --markdown 20240526/l/luma-ml/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-26 21:19:22] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.8.1.tar.gz]
+[2024-05-26 21:19:22] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.8.2.tar.gz]
+[2024-05-26 21:19:22] INFO root fetch - main [MainThread]: End processing [luma-ml]: success
+[2024-05-26 21:19:22] INFO root fetch - main [MainThread]: Store serial: [23386176]
