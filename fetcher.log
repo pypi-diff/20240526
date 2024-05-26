@@ -1573,3 +1573,33 @@
 [2024-05-26 03:06:55] WARNING root fetch - processPackages [nonebot-plugin-webpreview]: Skipping, unable to determine old version
 [2024-05-26 03:06:55] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-webpreview] error
 [2024-05-26 03:06:55] INFO root fetch - main [MainThread]: Store serial: [23378855]
+[2024-05-26 03:08:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378855]
+[2024-05-26 03:09:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 03:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dolomite-se
+[2024-05-26 03:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maestro-compose
+[2024-05-26 03:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ziya
+[2024-05-26 03:09:03] INFO root fetch - processPackages [maestro-compose]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 03:09:03] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/46/21/f8f434a0ed687fbc453482479a786c1712b369056ccd76164f2bbb99c435/maestro_compose-0.1.2.tar.gz
+[2024-05-26 03:09:03] INFO root fetch - processPackages [ziya]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 03:09:03] INFO root fetch - processPackages [dolomite-se]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 03:09:04] INFO root fetch - processPackages [dolomite-se]: Downloading https://files.pythonhosted.org/packages/00/4f/e72d602be9ec322c610ab24697a4ed65740c04831720ad94fa0c0cdcd58c/dolomite_se-0.1.3.tar.gz
+[2024-05-26 03:09:04] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/ec/d9/c132e3d3bb3131f4f7bb39f9ffbfcd6ab71db3e4b23813e75962970fdbc0/ziya-0.1.8.tar.gz
+[2024-05-26 03:09:04] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/04/ee/a03d07f5e7d168c3f0f6dd7d4285b3827857697335275d8deba630cdb302/maestro_compose-0.1.3.tar.gz
+[2024-05-26 03:09:04] INFO root fetch - processPackages [maestro-compose]: executing diffoscope
+[2024-05-26 03:09:04] INFO root fetch - processPackages [maestro-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestro_compose-0.1.2.tar.gz tmp/maestro_compose-0.1.3.tar.gz --markdown 20240526/m/maestro-compose/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 03:09:04] INFO root fetch - processPackages [dolomite-se]: Downloading https://files.pythonhosted.org/packages/bd/0a/5300ec3b8357fdee9a08b58b4ab445079f68b91d5b8f1ad0441aa28b7888/dolomite_se-0.1.4.tar.gz
+[2024-05-26 03:09:04] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/b4/86/a2ff21e28f4db4b1b8e94fe73a5ae18bf459c135ea7489a3772c612b45d3/ziya-0.1.9.tar.gz
+[2024-05-26 03:09:04] INFO root fetch - processPackages [dolomite-se]: executing diffoscope
+[2024-05-26 03:09:04] INFO root fetch - processPackages [dolomite-se]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolomite_se-0.1.3.tar.gz tmp/dolomite_se-0.1.4.tar.gz --markdown 20240526/d/dolomite-se/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 03:09:04] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-05-26 03:09:04] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.8.tar.gz tmp/ziya-0.1.9.tar.gz --markdown 20240526/z/ziya/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 03:09:04] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.2.tar.gz]
+[2024-05-26 03:09:04] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.3.tar.gz]
+[2024-05-26 03:09:04] INFO root fetch - main [MainThread]: End processing [maestro-compose]: success
+[2024-05-26 03:09:05] INFO root fetch - processPackages [dolomite-se]: Remove: archive file [/home/abi/fetcher/tmp/dolomite_se-0.1.3.tar.gz]
+[2024-05-26 03:09:05] INFO root fetch - processPackages [dolomite-se]: Remove: archive file [/home/abi/fetcher/tmp/dolomite_se-0.1.4.tar.gz]
+[2024-05-26 03:09:05] INFO root fetch - main [MainThread]: End processing [dolomite-se]: success
+[2024-05-26 03:09:05] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.8.tar.gz]
+[2024-05-26 03:09:05] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.9.tar.gz]
+[2024-05-26 03:09:05] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-05-26 03:09:05] INFO root fetch - main [MainThread]: Store serial: [23378864]
