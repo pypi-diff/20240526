@@ -4612,3 +4612,9 @@
 [2024-05-26 08:18:19] INFO root fetch - processPackages [cbpi4-BM-PID-SmartBoilWithPump]: Remove: archive file [/home/abi/fetcher/tmp/cbpi4-BM_PID_SmartBoilWithPump-0.1.7.tar.gz]
 [2024-05-26 08:18:19] INFO root fetch - main [MainThread]: End processing [cbpi4-BM-PID-SmartBoilWithPump]: success
 [2024-05-26 08:18:19] INFO root fetch - main [MainThread]: Store serial: [23380292]
+[2024-05-26 08:20:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380292]
+[2024-05-26 08:20:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 08:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AsadStack
+[2024-05-26 08:20:27] WARNING root fetch - processPackages [AsadStack]: Skipping, unable to determine old version
+[2024-05-26 08:20:27] INFO root fetch - main [MainThread]: End processing [AsadStack] error
+[2024-05-26 08:20:27] INFO root fetch - main [MainThread]: Store serial: [23380297]
