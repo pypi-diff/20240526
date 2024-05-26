@@ -10220,3 +10220,38 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:20:02] INFO root fetch - processPackages [tapsage-client]: Remove: archive file [/home/abi/fetcher/tmp/tapsage_client-0.6.1.tar.gz]
 [2024-05-26 14:20:02] INFO root fetch - main [MainThread]: End processing [tapsage-client]: success
 [2024-05-26 14:20:02] INFO root fetch - main [MainThread]: Store serial: [23382763]
+[2024-05-26 14:22:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382763]
+[2024-05-26 14:22:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 14:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reportXlsx
+[2024-05-26 14:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreamai
+[2024-05-26 14:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pi-awning-webthing
+[2024-05-26 14:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Office365-REST-Python-Client
+[2024-05-26 14:22:16] INFO root fetch - processPackages [dreamai]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-05-26 14:22:16] INFO root fetch - processPackages [dreamai]: Downloading https://files.pythonhosted.org/packages/86/4e/4af317cfb739d4e5394ab4b83b60cfc07da2f04a50e1afb891d410a7389e/dreamai-2.0.6.tar.gz
+[2024-05-26 14:22:16] INFO root fetch - processPackages [reportXlsx]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-26 14:22:16] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-26 14:22:16] INFO root fetch - processPackages [Office365-REST-Python-Client]: New version: [2.5.9] Old Version: [2.5.8]
+[2024-05-26 14:22:17] INFO root fetch - processPackages [reportXlsx]: Downloading https://files.pythonhosted.org/packages/9b/e1/a7d3bf9c431f43ef5a251a808e1c5ca62a5fc5a1e38fa6ba7bcc341fc3c7/reportXlsx-0.3.4.tar.gz
+[2024-05-26 14:22:17] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/ee/39/a8059c35258d32bdec0ef11a69a8455b8a66a61e0f524db70c8a0e3c304b/pi_awning_webthing-0.3.4.tar.gz
+[2024-05-26 14:22:17] INFO root fetch - processPackages [Office365-REST-Python-Client]: Downloading https://files.pythonhosted.org/packages/a1/2c/71c0bd2986e8844963a10f4e28ccada6f7b58857577c12cde4dd3ff6a273/Office365-REST-Python-Client-2.5.8.tar.gz
+[2024-05-26 14:22:17] INFO root fetch - processPackages [dreamai]: Downloading https://files.pythonhosted.org/packages/eb/7f/f9ccdbb8ef8e3fa9e4740dca7e19543265bd56e209a9d91a587525aaf1ce/dreamai-2.0.7.tar.gz
+[2024-05-26 14:22:17] WARNING root fetch - processPackages [reportXlsx]: Skipping package: exceeds size limit 15594271>=10485760
+[2024-05-26 14:22:17] INFO root fetch - main [MainThread]: End processing [reportXlsx] error
+[2024-05-26 14:22:17] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2024-05-26 14:22:17] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-2.0.6.tar.gz tmp/dreamai-2.0.7.tar.gz --markdown 20240526/d/dreamai/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-05-26 14:22:17] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/c4/99/3188536dbd0fb0f3eaa5a2da8d6e35ab530ee6eed13397aa921a9061fc34/pi_awning_webthing-0.3.5.tar.gz
+[2024-05-26 14:22:17] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 14:22:17] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.4.tar.gz tmp/pi_awning_webthing-0.3.5.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-26 14:22:17] INFO root fetch - processPackages [Office365-REST-Python-Client]: Downloading https://files.pythonhosted.org/packages/e5/7d/7219ab9e1091024a74ee32cef0205a7bd44d3058d08a4948d30c58793eee/Office365-REST-Python-Client-2.5.9.tar.gz
+[2024-05-26 14:22:17] INFO root fetch - processPackages [Office365-REST-Python-Client]: executing diffoscope
+[2024-05-26 14:22:17] INFO root fetch - processPackages [Office365-REST-Python-Client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Office365-REST-Python-Client-2.5.8.tar.gz tmp/Office365-REST-Python-Client-2.5.9.tar.gz --markdown 20240526/O/Office365-REST-Python-Client/2.5.8-2.5.9/README.md --exclude *.pyd
+[2024-05-26 14:22:17] INFO root fetch - processPackages [dreamai]: Remove: archive file [/home/abi/fetcher/tmp/dreamai-2.0.6.tar.gz]
+[2024-05-26 14:22:17] INFO root fetch - processPackages [dreamai]: Remove: archive file [/home/abi/fetcher/tmp/dreamai-2.0.7.tar.gz]
+[2024-05-26 14:22:17] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2024-05-26 14:22:18] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.4.tar.gz]
+[2024-05-26 14:22:18] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.5.tar.gz]
+[2024-05-26 14:22:18] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 14:22:21] INFO root fetch - processPackages [Office365-REST-Python-Client]: Remove: archive file [/home/abi/fetcher/tmp/Office365-REST-Python-Client-2.5.8.tar.gz]
+[2024-05-26 14:22:21] INFO root fetch - processPackages [Office365-REST-Python-Client]: Remove: archive file [/home/abi/fetcher/tmp/Office365-REST-Python-Client-2.5.9.tar.gz]
+[2024-05-26 14:22:21] INFO root fetch - main [MainThread]: End processing [Office365-REST-Python-Client]: success
+[2024-05-26 14:22:21] INFO root fetch - main [MainThread]: Store serial: [23382775]
