@@ -16259,3 +16259,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:09:05] INFO root fetch - processPackages [jaeger]: Remove: archive file [/home/abi/fetcher/tmp/jaeger-1.7.3.tar.gz]
 [2024-05-26 20:09:05] INFO root fetch - main [MainThread]: End processing [jaeger]: success
 [2024-05-26 20:09:05] INFO root fetch - main [MainThread]: Store serial: [23385597]
+[2024-05-26 20:11:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385597]
+[2024-05-26 20:11:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 20:11:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: preprod
+[2024-05-26 20:11:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wikipathway2genes
+[2024-05-26 20:11:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maestro-compose
+[2024-05-26 20:11:14] INFO root fetch - processPackages [maestro-compose]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 20:11:14] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/04/ee/a03d07f5e7d168c3f0f6dd7d4285b3827857697335275d8deba630cdb302/maestro_compose-0.1.3.tar.gz
+[2024-05-26 20:11:14] WARNING root fetch - processPackages [wikipathway2genes]: Skipping, unable to determine old version
+[2024-05-26 20:11:14] INFO root fetch - main [MainThread]: End processing [wikipathway2genes] error
+[2024-05-26 20:11:14] INFO root fetch - processPackages [preprod]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-26 20:11:14] INFO root fetch - processPackages [preprod]: Downloading https://files.pythonhosted.org/packages/6b/c4/3be8a25386d39cf0cf93f77db48f4626871a2cf87c14519224d96c041875/preprod-0.1.0.tar.gz
+[2024-05-26 20:11:14] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/64/e7/6c250dc8ad24056c3101288d80df25251bc68c5b5c624d4afd92c9e6ad18/maestro_compose-0.1.4.tar.gz
+[2024-05-26 20:11:14] INFO root fetch - processPackages [maestro-compose]: executing diffoscope
+[2024-05-26 20:11:14] INFO root fetch - processPackages [maestro-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestro_compose-0.1.3.tar.gz tmp/maestro_compose-0.1.4.tar.gz --markdown 20240526/m/maestro-compose/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 20:11:14] INFO root fetch - processPackages [preprod]: Downloading https://files.pythonhosted.org/packages/88/3f/dd991b7e1ec9d4f21c13e8d3c135b634626acde1bc7564a7a38a173b2946/preprod-0.2.0.tar.gz
+[2024-05-26 20:11:14] INFO root fetch - processPackages [preprod]: executing diffoscope
+[2024-05-26 20:11:14] INFO root fetch - processPackages [preprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preprod-0.1.0.tar.gz tmp/preprod-0.2.0.tar.gz --markdown 20240526/p/preprod/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-26 20:11:15] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.3.tar.gz]
+[2024-05-26 20:11:15] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.4.tar.gz]
+[2024-05-26 20:11:15] INFO root fetch - main [MainThread]: End processing [maestro-compose]: success
+[2024-05-26 20:11:15] INFO root fetch - processPackages [preprod]: Remove: archive file [/home/abi/fetcher/tmp/preprod-0.1.0.tar.gz]
+[2024-05-26 20:11:15] INFO root fetch - processPackages [preprod]: Remove: archive file [/home/abi/fetcher/tmp/preprod-0.2.0.tar.gz]
+[2024-05-26 20:11:15] INFO root fetch - main [MainThread]: End processing [preprod]: success
+[2024-05-26 20:11:15] INFO root fetch - main [MainThread]: Store serial: [23385610]
