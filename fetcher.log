@@ -13401,3 +13401,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:18:47] INFO root fetch - processPackages [ObjectToString]: Remove: archive file [/home/abi/fetcher/tmp/ObjectToString-0.2.72.tar.gz]
 [2024-05-26 17:18:47] INFO root fetch - main [MainThread]: End processing [ObjectToString]: success
 [2024-05-26 17:18:47] INFO root fetch - main [MainThread]: Store serial: [23384237]
+[2024-05-26 17:20:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384237]
+[2024-05-26 17:20:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ai-alchemy
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dicio-py
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mentabotix
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ambient-backend-api-client
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pi-awning-webthing
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: clickup-sdk
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 17:20:56] INFO root fetch - processPackages [dicio-py]: New version: [1.1] Old Version: [1.0]
+[2024-05-26 17:20:56] INFO root fetch - processPackages [mentabotix]: New version: [0.1.5.3] Old Version: [0.1.5.2]
+[2024-05-26 17:20:56] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/35/a3/7c6448ac837e0edc0c5c899d10fd5ef25426887f00a42b874a5bd165a167/ai_alchemy-0.1.3.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/03/5e/1acbf0d163a14cc9f4eed5a8ff8c12bb31e009060e7aeb08adfa64c23daa/mentabotix-0.1.5.2.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [clickup-sdk]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 17:20:56] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [dicio-py]: Downloading https://files.pythonhosted.org/packages/42/50/1e5aebf2760b9d37dac254f82b76c6beb0a6aa19d58539d7686e023e2e2e/dicio_py-1.0.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/13/32/71470ef5f9e3dc4130b7d664c9f2cec549f5ab16e83c243f915f2d4583e4/ambient_backend_api_client-0.1.7.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [clickup-sdk]: Downloading https://files.pythonhosted.org/packages/aa/51/80b5f60aafdceb84ee0834276df1744c982b557dfdfd91de2be868104f86/clickup_sdk-0.1.1.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/b6/30/5e44d0d7980e57c6f2f0945c9d72ac3c3efb07d4061fc9e3a5478adc2b53/ai_alchemy-0.1.4.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/fc/43/a5139e6d351d8277e3d007f9c0fb2b329882b4dabaa73d09f25f1aa1f3f5/mentabotix-0.1.5.3.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [dicio-py]: Downloading https://files.pythonhosted.org/packages/c7/c0/8a8dff4284149f9c2b4f18511b89fb27f6f326b303824774bb0d43fa8830/dicio_py-1.1.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/f6/eb/59da8ec681d918996a898f98dd992f0dd01c4e66248583c87fd5d597e6bb/ambient_backend_api_client-0.1.8.tar.gz
+[2024-05-26 17:20:56] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-05-26 17:20:56] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.5.2.tar.gz tmp/mentabotix-0.1.5.3.tar.gz --markdown 20240526/m/mentabotix/0.1.5.2-0.1.5.3/README.md --exclude *.pyd
+[2024-05-26 17:20:56] INFO root fetch - processPackages [dicio-py]: executing diffoscope
+[2024-05-26 17:20:56] INFO root fetch - processPackages [dicio-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicio_py-1.0.tar.gz tmp/dicio_py-1.1.tar.gz --markdown 20240526/d/dicio-py/1.0-1.1/README.md --exclude *.pyd
+[2024-05-26 17:20:56] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 17:20:56] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-05-26 17:20:56] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.7.tar.gz tmp/ambient_backend_api_client-0.1.8.tar.gz --markdown 20240526/a/ambient-backend-api-client/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-26 17:20:56] INFO root fetch - processPackages [clickup-sdk]: Downloading https://files.pythonhosted.org/packages/f5/e2/195cc5e2e479fbca42fa88d8433d2f43028b0ba60ee317bab5c46536e1e7/clickup_sdk-0.1.2.tar.gz
+[2024-05-26 17:20:57] INFO root fetch - processPackages [clickup-sdk]: executing diffoscope
+[2024-05-26 17:20:57] INFO root fetch - processPackages [clickup-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickup_sdk-0.1.1.tar.gz tmp/clickup_sdk-0.1.2.tar.gz --markdown 20240526/c/clickup-sdk/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 17:20:57] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 17:20:57] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.3.tar.gz tmp/ai_alchemy-0.1.4.tar.gz --markdown 20240526/a/ai-alchemy/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 17:20:57] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.2.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.3.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-05-26 17:20:57] INFO root fetch - processPackages [dicio-py]: Remove: archive file [/home/abi/fetcher/tmp/dicio_py-1.0.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - processPackages [dicio-py]: Remove: archive file [/home/abi/fetcher/tmp/dicio_py-1.1.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - main [MainThread]: End processing [dicio-py]: success
+[2024-05-26 17:20:57] INFO root fetch - processPackages [clickup-sdk]: Remove: archive file [/home/abi/fetcher/tmp/clickup_sdk-0.1.1.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - processPackages [clickup-sdk]: Remove: archive file [/home/abi/fetcher/tmp/clickup_sdk-0.1.2.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - main [MainThread]: End processing [clickup-sdk]: success
+[2024-05-26 17:20:57] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.3.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.4.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 17:20:57] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 17:20:57] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.7.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.8.tar.gz]
+[2024-05-26 17:20:57] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-05-26 17:20:57] INFO root fetch - main [MainThread]: Store serial: [23384255]
