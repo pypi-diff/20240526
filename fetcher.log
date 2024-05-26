@@ -3569,3 +3569,9 @@
 [2024-05-26 06:36:35] WARNING root fetch - processPackages [remarkable-update-image]: Skipping, unable to determine old version
 [2024-05-26 06:36:35] INFO root fetch - main [MainThread]: End processing [remarkable-update-image] error
 [2024-05-26 06:36:35] INFO root fetch - main [MainThread]: Store serial: [23379693]
+[2024-05-26 06:38:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379693]
+[2024-05-26 06:38:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 06:38:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypdfzipcracker
+[2024-05-26 06:38:43] WARNING root fetch - processPackages [pypdfzipcracker]: Skipping, unable to determine old version
+[2024-05-26 06:38:43] INFO root fetch - main [MainThread]: End processing [pypdfzipcracker] error
+[2024-05-26 06:38:43] INFO root fetch - main [MainThread]: Store serial: [23379697]
