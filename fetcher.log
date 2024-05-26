@@ -9283,3 +9283,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:56:25] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.3.7-py3-none-any.whl.zip]
 [2024-05-26 12:56:25] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
 [2024-05-26 12:56:25] INFO root fetch - main [MainThread]: Store serial: [23382301]
+[2024-05-26 12:58:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382301]
+[2024-05-26 12:58:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 12:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naturalexperiments
+[2024-05-26 12:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: accesskit
+[2024-05-26 12:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sevenapps-py-easy
+[2024-05-26 12:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: steelseries-sonar-py
+[2024-05-26 12:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xssbase
+[2024-05-26 12:58:38] INFO root fetch - processPackages [sevenapps-py-easy]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 12:58:38] INFO root fetch - processPackages [xssbase]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-05-26 12:58:38] INFO root fetch - processPackages [steelseries-sonar-py]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-26 12:58:38] INFO root fetch - processPackages [sevenapps-py-easy]: Downloading https://files.pythonhosted.org/packages/58/5f/929992abce4fee2ed2684aed6cf239ac981d84a305132b2f387d0d205480/sevenapps_py_easy-0.0.7.tar.gz
+[2024-05-26 12:58:38] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/87/a1/dff76ec29166fa3a662525725f906710b3661a390c65abeff0d4982c337e/xssbase-2.0.6.tar.gz
+[2024-05-26 12:58:38] INFO root fetch - processPackages [naturalexperiments]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 12:58:38] INFO root fetch - processPackages [accesskit]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-26 12:58:38] INFO root fetch - processPackages [steelseries-sonar-py]: Downloading https://files.pythonhosted.org/packages/87/25/48ad03cc4fc60f48308ac6c8e3bbc6cf558b9b4c5e727447efe4d416838c/steelseries-sonar-py-1.0.1.tar.gz
+[2024-05-26 12:58:38] INFO root fetch - processPackages [naturalexperiments]: Downloading https://files.pythonhosted.org/packages/81/7e/54c3d552cf1967242ad78b9fc56780aca8e8aef35dcf8f4e75ef40397435/naturalexperiments-0.1.3.tar.gz
+[2024-05-26 12:58:38] INFO root fetch - processPackages [accesskit]: Downloading https://files.pythonhosted.org/packages/36/98/a67a8dd16260b5a9972a9d5092089db087268f9dfee03acce6f66590f182/accesskit-0.3.2.tar.gz
+[2024-05-26 12:58:38] INFO root fetch - processPackages [sevenapps-py-easy]: Downloading https://files.pythonhosted.org/packages/d3/df/71b9bf0b88a4bc0b5917a7855bec181ed8cae822e04ba48cc590310b67f0/sevenapps_py_easy-0.0.8.tar.gz
+[2024-05-26 12:58:39] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/82/c1/657a006abfa916011bf904c31fb8c18e492dd2c4cf87a1dc1a1bff833dfb/xssbase-2.0.7.tar.gz
+[2024-05-26 12:58:39] INFO root fetch - processPackages [sevenapps-py-easy]: executing diffoscope
+[2024-05-26 12:58:39] INFO root fetch - processPackages [sevenapps-py-easy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sevenapps_py_easy-0.0.7.tar.gz tmp/sevenapps_py_easy-0.0.8.tar.gz --markdown 20240526/s/sevenapps-py-easy/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 12:58:39] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 12:58:39] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-2.0.6.tar.gz tmp/xssbase-2.0.7.tar.gz --markdown 20240526/x/xssbase/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-05-26 12:58:39] INFO root fetch - processPackages [steelseries-sonar-py]: Downloading https://files.pythonhosted.org/packages/85/3f/3b12d5c5ebe7189750b5b6993587b113705857200bf98c45401ae79143fa/steelseries_sonar_py-1.1.0.tar.gz
+[2024-05-26 12:58:39] INFO root fetch - processPackages [naturalexperiments]: Downloading https://files.pythonhosted.org/packages/10/30/e81c30f68a76c1cbcbf37646a3823eb6e87a9b05612968ef8d4ae029d1a5/naturalexperiments-0.1.4.tar.gz
+[2024-05-26 12:58:39] INFO root fetch - processPackages [accesskit]: Downloading https://files.pythonhosted.org/packages/b3/c6/deff773a0dfc151a5a389775d4b92ce862c6265ddd3abfdab2a07919b273/accesskit-0.3.3.tar.gz
+[2024-05-26 12:58:39] INFO root fetch - processPackages [naturalexperiments]: executing diffoscope
+[2024-05-26 12:58:39] INFO root fetch - processPackages [naturalexperiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalexperiments-0.1.3.tar.gz tmp/naturalexperiments-0.1.4.tar.gz --markdown 20240526/n/naturalexperiments/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 12:58:39] INFO root fetch - processPackages [accesskit]: executing diffoscope
+[2024-05-26 12:58:39] INFO root fetch - processPackages [accesskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accesskit-0.3.2.tar.gz tmp/accesskit-0.3.3.tar.gz --markdown 20240526/a/accesskit/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-26 12:58:39] INFO root fetch - processPackages [steelseries-sonar-py]: executing diffoscope
+[2024-05-26 12:58:39] INFO root fetch - processPackages [steelseries-sonar-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steelseries-sonar-py-1.0.1.tar.gz tmp/steelseries_sonar_py-1.1.0.tar.gz --markdown 20240526/s/steelseries-sonar-py/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-26 12:58:39] INFO root fetch - processPackages [sevenapps-py-easy]: Remove: archive file [/home/abi/fetcher/tmp/sevenapps_py_easy-0.0.7.tar.gz]
+[2024-05-26 12:58:39] INFO root fetch - processPackages [sevenapps-py-easy]: Remove: archive file [/home/abi/fetcher/tmp/sevenapps_py_easy-0.0.8.tar.gz]
+[2024-05-26 12:58:39] INFO root fetch - main [MainThread]: End processing [sevenapps-py-easy]: success
+[2024-05-26 12:58:39] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.6.tar.gz]
+[2024-05-26 12:58:39] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.7.tar.gz]
+[2024-05-26 12:58:39] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 12:58:40] INFO root fetch - processPackages [naturalexperiments]: Remove: archive file [/home/abi/fetcher/tmp/naturalexperiments-0.1.3.tar.gz]
+[2024-05-26 12:58:40] INFO root fetch - processPackages [naturalexperiments]: Remove: archive file [/home/abi/fetcher/tmp/naturalexperiments-0.1.4.tar.gz]
+[2024-05-26 12:58:40] INFO root fetch - main [MainThread]: End processing [naturalexperiments]: success
+[2024-05-26 12:58:40] INFO root fetch - processPackages [steelseries-sonar-py]: Remove: archive file [/home/abi/fetcher/tmp/steelseries-sonar-py-1.0.1.tar.gz]
+[2024-05-26 12:58:40] INFO root fetch - processPackages [steelseries-sonar-py]: Remove: archive file [/home/abi/fetcher/tmp/steelseries_sonar_py-1.1.0.tar.gz]
+[2024-05-26 12:58:40] INFO root fetch - main [MainThread]: End processing [steelseries-sonar-py]: success
+[2024-05-26 12:58:40] INFO root fetch - processPackages [accesskit]: Remove: archive file [/home/abi/fetcher/tmp/accesskit-0.3.2.tar.gz]
+[2024-05-26 12:58:40] INFO root fetch - processPackages [accesskit]: Remove: archive file [/home/abi/fetcher/tmp/accesskit-0.3.3.tar.gz]
+[2024-05-26 12:58:40] INFO root fetch - main [MainThread]: End processing [accesskit]: success
+[2024-05-26 12:58:40] INFO root fetch - main [MainThread]: Store serial: [23382324]
