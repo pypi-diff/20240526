@@ -12074,3 +12074,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:17:24] INFO root fetch - processPackages [coguard-cli]: Remove: archive file [/home/abi/fetcher/tmp/coguard-cli-0.2.9.tar.gz]
 [2024-05-26 16:17:24] INFO root fetch - main [MainThread]: End processing [coguard-cli]: success
 [2024-05-26 16:17:24] INFO root fetch - main [MainThread]: Store serial: [23383686]
+[2024-05-26 16:19:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383686]
+[2024-05-26 16:19:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 16:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beets-autofix
+[2024-05-26 16:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rimc-engine
+[2024-05-26 16:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: matematikk
+[2024-05-26 16:19:52] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 16:19:52] INFO root fetch - processPackages [rimc-engine]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-26 16:19:52] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 16:19:52] INFO root fetch - processPackages [beets-autofix]: New version: [0.1.5] Old Version: [0.1.3]
+[2024-05-26 16:19:52] INFO root fetch - processPackages [beets-autofix]: Downloading https://files.pythonhosted.org/packages/93/8c/ec98da5339911fce81e08a7a9574513ebb4aac04a2d27e5edf29373c555f/beets-autofix-0.1.3.tar.gz
+[2024-05-26 16:19:52] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 16:19:52] INFO root fetch - processPackages [rimc-engine]: Downloading https://files.pythonhosted.org/packages/06/79/4b653260fcbec7e56febea700479a4a3987f226720858138872274e5e982/rimc_engine-0.5.1.tar.gz
+[2024-05-26 16:19:52] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 16:19:52] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 16:19:52] INFO root fetch - processPackages [beets-autofix]: Downloading https://files.pythonhosted.org/packages/95/01/c5b17e87e126c99bece41506cba019e9979ff68454aa55b853a8234d12be/beets_autofix-0.1.5.tar.gz
+[2024-05-26 16:19:52] INFO root fetch - processPackages [beets-autofix]: executing diffoscope
+[2024-05-26 16:19:52] INFO root fetch - processPackages [beets-autofix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets-autofix-0.1.3.tar.gz tmp/beets_autofix-0.1.5.tar.gz --markdown 20240526/b/beets-autofix/0.1.3-0.1.5/README.md --exclude *.pyd
+[2024-05-26 16:19:53] INFO root fetch - processPackages [rimc-engine]: Downloading https://files.pythonhosted.org/packages/c0/e9/d54192be5ad74a2b70835567cf0322606b5fc9b019196c7feb62a47818f6/rimc_engine-0.5.2.tar.gz
+[2024-05-26 16:19:53] INFO root fetch - processPackages [beets-autofix]: Remove: archive file [/home/abi/fetcher/tmp/beets-autofix-0.1.3.tar.gz]
+[2024-05-26 16:19:53] INFO root fetch - processPackages [beets-autofix]: Remove: archive file [/home/abi/fetcher/tmp/beets_autofix-0.1.5.tar.gz]
+[2024-05-26 16:19:53] INFO root fetch - main [MainThread]: End processing [beets-autofix]: success
+[2024-05-26 16:19:53] INFO root fetch - processPackages [rimc-engine]: executing diffoscope
+[2024-05-26 16:19:53] INFO root fetch - processPackages [rimc-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rimc_engine-0.5.1.tar.gz tmp/rimc_engine-0.5.2.tar.gz --markdown 20240526/r/rimc-engine/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-26 16:19:53] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 16:19:53] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 16:19:53] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 16:19:54] INFO root fetch - processPackages [rimc-engine]: Remove: archive file [/home/abi/fetcher/tmp/rimc_engine-0.5.1.tar.gz]
+[2024-05-26 16:19:54] INFO root fetch - processPackages [rimc-engine]: Remove: archive file [/home/abi/fetcher/tmp/rimc_engine-0.5.2.tar.gz]
+[2024-05-26 16:19:54] INFO root fetch - main [MainThread]: End processing [rimc-engine]: success
+[2024-05-26 16:19:54] INFO root fetch - main [MainThread]: Store serial: [23383696]
