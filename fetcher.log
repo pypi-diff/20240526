@@ -8226,3 +8226,74 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:39:47] INFO root fetch - processPackages [imas-tools]: Remove: archive file [/home/abi/fetcher/tmp/imas_tools-0.4.6.tar.gz]
 [2024-05-26 11:39:47] INFO root fetch - main [MainThread]: End processing [imas-tools]: success
 [2024-05-26 11:39:47] INFO root fetch - main [MainThread]: Store serial: [23381836]
+[2024-05-26 11:41:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381836]
+[2024-05-26 11:42:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cookiecutter-python-vscode-github
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xssbase
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: brianmechanisms
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ParticleDetection
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BigEDA
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: RodTracker
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rpeasings
+[2024-05-26 11:42:00] INFO root fetch - processPackages [RodTracker]: New version: [0.6.2.dev39] Old Version: [0.6.2.dev37]
+[2024-05-26 11:42:00] INFO root fetch - processPackages [mimllearning]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ParticleDetection]: New version: [0.4.2.dev6] Old Version: [0.4.2.dev3]
+[2024-05-26 11:42:00] INFO root fetch - processPackages [brianmechanisms]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 11:42:00] INFO root fetch - processPackages [xssbase]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-26 11:42:00] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: New version: [0.8.0a0] Old Version: [0.7.0]
+[2024-05-26 11:42:00] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 11:42:00] INFO root fetch - processPackages [rpeasings]: New version: [0.0.3] Old Version: [0.0.2.1]
+[2024-05-26 11:42:00] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-05-26 11:42:00] INFO root fetch - processPackages [RodTracker]: Downloading https://files.pythonhosted.org/packages/5a/0d/4b14b495b2756bbd9c4b4bc6b33d01b28b8e2df5e57021270c3c0ad15886/rodtracker-0.6.2.dev37.tar.gz
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ParticleDetection]: Downloading https://files.pythonhosted.org/packages/1d/76/1be171876f4c69278d68a3f3fe16d1e3718a9a1bb40e1080d7f6107ec784/particledetection-0.4.2.dev3.tar.gz
+[2024-05-26 11:42:00] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/20/32/d0c211d080e6ecfd372d0254c511059e51404087645e39d3558bf6d1c4bf/xssbase-1.0.8.tar.gz
+[2024-05-26 11:42:00] INFO root fetch - processPackages [brianmechanisms]: Downloading https://files.pythonhosted.org/packages/5f/76/b42837b59985e72227f7fd799c18ad90495afa246055818524fcb6e173e0/brianmechanisms-0.1.2.tar.gz
+[2024-05-26 11:42:00] WARNING root fetch - processPackages [RodTracker]: Skipping package: exceeds size limit 16671962>=10485760
+[2024-05-26 11:42:00] INFO root fetch - main [MainThread]: End processing [RodTracker] error
+[2024-05-26 11:42:00] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: Downloading https://files.pythonhosted.org/packages/70/e5/a765dc52b82f5bbb74db2293d4462230ddee94d74f83bd526e159c284c5a/cookiecutter_python_vscode_github-0.7.0.tar.gz
+[2024-05-26 11:42:00] INFO root fetch - processPackages [rpeasings]: Downloading https://files.pythonhosted.org/packages/f4/7a/99719c67b08e3eb9eb773433040fc0af7de086becda832e8ab08305028d5/rpeasings-0.0.2.1.tar.gz
+[2024-05-26 11:42:00] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ParticleDetection]: Downloading https://files.pythonhosted.org/packages/36/d7/236542d481ec8aee7460c4b01fc92f0dd43d514fbca14ba505944b214bd9/particledetection-0.4.2.dev6-py3-none-any.whl
+[2024-05-26 11:42:00] INFO root fetch - processPackages [brianmechanisms]: Downloading https://files.pythonhosted.org/packages/b7/26/5e245529f78b3e5b4ee6823aeaa93aefc6512216460ec68334ee65bb1aac/brianmechanisms-0.1.3.tar.gz
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ParticleDetection]: executing diffoscope
+[2024-05-26 11:42:00] INFO root fetch - processPackages [ParticleDetection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/particledetection-0.4.2.dev3.tar.gz tmp/particledetection-0.4.2.dev6-py3-none-any.whl.zip --markdown 20240526/P/ParticleDetection/0.4.2.dev3-0.4.2.dev6/README.md --exclude *.pyd
+[2024-05-26 11:42:00] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/76/78/bf557a461d4e3184599fab66bd77a4507a7607a12fcb480d3d562d369fce/xssbase-1.0.9.tar.gz
+[2024-05-26 11:42:01] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: Downloading https://files.pythonhosted.org/packages/91/c8/a9bf9dcc482c1976480cea79fcdfd7d68826ee005225db0d3cd725596040/cookiecutter_python_vscode_github-0.8.0a0-py3-none-any.whl
+[2024-05-26 11:42:01] INFO root fetch - processPackages [brianmechanisms]: executing diffoscope
+[2024-05-26 11:42:01] INFO root fetch - processPackages [brianmechanisms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brianmechanisms-0.1.2.tar.gz tmp/brianmechanisms-0.1.3.tar.gz --markdown 20240526/b/brianmechanisms/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 11:42:01] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 11:42:01] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-1.0.8.tar.gz tmp/xssbase-1.0.9.tar.gz --markdown 20240526/x/xssbase/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-26 11:42:01] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: executing diffoscope
+[2024-05-26 11:42:01] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter_python_vscode_github-0.7.0.tar.gz tmp/cookiecutter_python_vscode_github-0.8.0a0-py3-none-any.whl.zip --markdown 20240526/c/cookiecutter-python-vscode-github/0.7.0-0.8.0a0/README.md --exclude *.pyd
+[2024-05-26 11:42:01] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-26 11:42:01] INFO root fetch - processPackages [rpeasings]: Downloading https://files.pythonhosted.org/packages/d4/5b/bfe058831b2d2ba74bd74408c1f35112264c3ab87233908e5ae71df97e12/rpeasings-0.0.3.tar.gz
+[2024-05-26 11:42:01] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-26 11:42:01] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240526/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 11:42:01] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-05-26 11:42:01] INFO root fetch - processPackages [rpeasings]: executing diffoscope
+[2024-05-26 11:42:01] INFO root fetch - processPackages [rpeasings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpeasings-0.0.2.1.tar.gz tmp/rpeasings-0.0.3.tar.gz --markdown 20240526/r/rpeasings/0.0.2.1-0.0.3/README.md --exclude *.pyd
+[2024-05-26 11:42:01] INFO root fetch - processPackages [ParticleDetection]: Remove: archive file [/home/abi/fetcher/tmp/particledetection-0.4.2.dev3.tar.gz]
+[2024-05-26 11:42:01] INFO root fetch - processPackages [ParticleDetection]: Remove: archive file [/home/abi/fetcher/tmp/particledetection-0.4.2.dev6-py3-none-any.whl.zip]
+[2024-05-26 11:42:01] INFO root fetch - main [MainThread]: End processing [ParticleDetection]: success
+[2024-05-26 11:42:01] INFO root fetch - processPackages [brianmechanisms]: Remove: archive file [/home/abi/fetcher/tmp/brianmechanisms-0.1.2.tar.gz]
+[2024-05-26 11:42:01] INFO root fetch - processPackages [brianmechanisms]: Remove: archive file [/home/abi/fetcher/tmp/brianmechanisms-0.1.3.tar.gz]
+[2024-05-26 11:42:01] INFO root fetch - main [MainThread]: End processing [brianmechanisms]: success
+[2024-05-26 11:42:01] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.8.tar.gz]
+[2024-05-26 11:42:01] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.9.tar.gz]
+[2024-05-26 11:42:01] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 11:42:01] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: Remove: archive file [/home/abi/fetcher/tmp/cookiecutter_python_vscode_github-0.7.0.tar.gz]
+[2024-05-26 11:42:01] INFO root fetch - processPackages [cookiecutter-python-vscode-github]: Remove: archive file [/home/abi/fetcher/tmp/cookiecutter_python_vscode_github-0.8.0a0-py3-none-any.whl.zip]
+[2024-05-26 11:42:01] INFO root fetch - main [MainThread]: End processing [cookiecutter-python-vscode-github]: success
+[2024-05-26 11:42:01] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-26 11:42:01] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.8.tar.gz tmp/mimllearning-0.5.9.tar.gz --markdown 20240526/m/mimllearning/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-26 11:42:02] INFO root fetch - processPackages [rpeasings]: Remove: archive file [/home/abi/fetcher/tmp/rpeasings-0.0.2.1.tar.gz]
+[2024-05-26 11:42:02] INFO root fetch - processPackages [rpeasings]: Remove: archive file [/home/abi/fetcher/tmp/rpeasings-0.0.3.tar.gz]
+[2024-05-26 11:42:02] INFO root fetch - main [MainThread]: End processing [rpeasings]: success
+[2024-05-26 11:42:02] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-26 11:42:02] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-26 11:42:02] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-26 11:42:05] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-05-26 11:42:05] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-05-26 11:42:05] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-26 11:42:05] INFO root fetch - main [MainThread]: Store serial: [23381859]
