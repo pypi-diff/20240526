@@ -3648,3 +3648,24 @@
 [2024-05-26 06:45:14] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.351.1.tar.gz]
 [2024-05-26 06:45:14] INFO root fetch - main [MainThread]: End processing [vancouver-watching]: success
 [2024-05-26 06:45:14] INFO root fetch - main [MainThread]: Store serial: [23379726]
+[2024-05-26 06:47:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379726]
+[2024-05-26 06:47:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 06:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appmesh
+[2024-05-26 06:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vancouver-watching
+[2024-05-26 06:47:22] INFO root fetch - processPackages [vancouver-watching]: New version: [3.353.1] Old Version: [3.351.1]
+[2024-05-26 06:47:22] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/95/ce/3d50d7851e441ddb06fa6c7c8ec0e8c545052aaf5865c9151d347bda5675/vancouver_watching-3.351.1.tar.gz
+[2024-05-26 06:47:22] INFO root fetch - processPackages [appmesh]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-05-26 06:47:22] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/dc/e5/d7f1373d304ed35a7f7285a143ff82e7140e51ceb86bb94ec64612cc014b/appmesh-1.1.5-py3-none-any.whl
+[2024-05-26 06:47:22] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/4b/de/1fba9f19ea7cc93ad729aa9b6de637320d300c15ab59c7d9b91a2e735bdb/vancouver_watching-3.353.1.tar.gz
+[2024-05-26 06:47:22] INFO root fetch - processPackages [vancouver-watching]: executing diffoscope
+[2024-05-26 06:47:22] INFO root fetch - processPackages [vancouver-watching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vancouver_watching-3.351.1.tar.gz tmp/vancouver_watching-3.353.1.tar.gz --markdown 20240526/v/vancouver-watching/3.351.1-3.353.1/README.md --exclude *.pyd
+[2024-05-26 06:47:22] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/17/8c/88062e912ef390dabc695224a8680d87d297ae46a72d66167015e5d42546/appmesh-1.1.6-py3-none-any.whl
+[2024-05-26 06:47:22] INFO root fetch - processPackages [appmesh]: executing diffoscope
+[2024-05-26 06:47:22] INFO root fetch - processPackages [appmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmesh-1.1.5-py3-none-any.whl.zip tmp/appmesh-1.1.6-py3-none-any.whl.zip --markdown 20240526/a/appmesh/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-05-26 06:47:23] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.351.1.tar.gz]
+[2024-05-26 06:47:23] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.353.1.tar.gz]
+[2024-05-26 06:47:23] INFO root fetch - main [MainThread]: End processing [vancouver-watching]: success
+[2024-05-26 06:47:23] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-1.1.5-py3-none-any.whl.zip]
+[2024-05-26 06:47:23] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-1.1.6-py3-none-any.whl.zip]
+[2024-05-26 06:47:23] INFO root fetch - main [MainThread]: End processing [appmesh]: success
+[2024-05-26 06:47:23] INFO root fetch - main [MainThread]: Store serial: [23379731]
