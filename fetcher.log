@@ -14571,3 +14571,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:30:34] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
 [2024-05-26 18:30:34] INFO root fetch - main [MainThread]: End processing [matematikk]: success
 [2024-05-26 18:30:34] INFO root fetch - main [MainThread]: Store serial: [23384741]
+[2024-05-26 18:32:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384741]
+[2024-05-26 18:32:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 18:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ai-alchemy
+[2024-05-26 18:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blaze-double-bot
+[2024-05-26 18:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: legopack
+[2024-05-26 18:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medjc09-hub-python
+[2024-05-26 18:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyftms
+[2024-05-26 18:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tibia
+[2024-05-26 18:32:42] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-26 18:32:42] INFO root fetch - processPackages [legopack]: New version: [0.21] Old Version: [0.2]
+[2024-05-26 18:32:42] WARNING root fetch - processPackages [medjc09-hub-python]: Skipping, unable to determine old version
+[2024-05-26 18:32:42] INFO root fetch - main [MainThread]: End processing [medjc09-hub-python] error
+[2024-05-26 18:32:42] WARNING root fetch - processPackages [blaze-double-bot]: Skipping, unable to determine old version
+[2024-05-26 18:32:42] INFO root fetch - main [MainThread]: End processing [blaze-double-bot] error
+[2024-05-26 18:32:43] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/67/eb/4225dd0322e3b0470fe7dc5f4ca48a03ae6098c7532ee0e2430b6dd85e18/ai_alchemy-0.1.7.tar.gz
+[2024-05-26 18:32:43] INFO root fetch - processPackages [legopack]: Downloading https://files.pythonhosted.org/packages/ea/1f/0b529db2c7963c58423a84004fc43366ec825edd0b208d249b4bc1cbfbe7/legopack-0.2.tar.gz
+[2024-05-26 18:32:43] WARNING root fetch - processPackages [pyftms]: Skipping, unable to determine old version
+[2024-05-26 18:32:43] INFO root fetch - main [MainThread]: End processing [pyftms] error
+[2024-05-26 18:32:43] WARNING root fetch - processPackages [tibia]: Skipping, unable to determine old version
+[2024-05-26 18:32:43] INFO root fetch - main [MainThread]: End processing [tibia] error
+[2024-05-26 18:32:43] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/fe/91/a3117e58fb82be16e1bb454f9ca27e9e489a3223ac29b6868b787fdff37d/ai_alchemy-0.1.8.tar.gz
+[2024-05-26 18:32:43] INFO root fetch - processPackages [legopack]: Downloading https://files.pythonhosted.org/packages/d6/ca/9a1289a25242a884e5a8e0745ad31ff53b5a6df40cafcede0b465227b1ad/legopack-0.21.tar.gz
+[2024-05-26 18:32:43] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 18:32:43] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.7.tar.gz tmp/ai_alchemy-0.1.8.tar.gz --markdown 20240526/a/ai-alchemy/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-26 18:32:43] INFO root fetch - processPackages [legopack]: executing diffoscope
+[2024-05-26 18:32:43] INFO root fetch - processPackages [legopack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legopack-0.2.tar.gz tmp/legopack-0.21.tar.gz --markdown 20240526/l/legopack/0.2-0.21/README.md --exclude *.pyd
+[2024-05-26 18:32:44] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.7.tar.gz]
+[2024-05-26 18:32:44] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.8.tar.gz]
+[2024-05-26 18:32:44] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 18:32:44] INFO root fetch - processPackages [legopack]: Remove: archive file [/home/abi/fetcher/tmp/legopack-0.2.tar.gz]
+[2024-05-26 18:32:44] INFO root fetch - processPackages [legopack]: Remove: archive file [/home/abi/fetcher/tmp/legopack-0.21.tar.gz]
+[2024-05-26 18:32:44] INFO root fetch - main [MainThread]: End processing [legopack]: success
+[2024-05-26 18:32:44] INFO root fetch - main [MainThread]: Store serial: [23384762]
