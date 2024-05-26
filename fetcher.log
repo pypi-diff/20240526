@@ -13620,3 +13620,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:31:47] INFO root fetch - processPackages [desktop-shop]: Remove: archive file [/home/abi/fetcher/tmp/desktop_shop-1.1.0.tar.gz]
 [2024-05-26 17:31:47] INFO root fetch - main [MainThread]: End processing [desktop-shop]: success
 [2024-05-26 17:31:47] INFO root fetch - main [MainThread]: Store serial: [23384319]
+[2024-05-26 17:33:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384319]
+[2024-05-26 17:33:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 17:33:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymail2
+[2024-05-26 17:33:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-shutdown-hook
+[2024-05-26 17:33:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bota
+[2024-05-26 17:33:55] INFO root fetch - processPackages [pymail2]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 17:33:55] INFO root fetch - processPackages [nonebot-plugin-shutdown-hook]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 17:33:55] INFO root fetch - processPackages [bota]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 17:33:55] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/20/a9/4f637666fa83c508695967d807e33c729d659786a5de468b4289f5bff8b4/bota-4.0.8.tar.gz
+[2024-05-26 17:33:56] INFO root fetch - processPackages [nonebot-plugin-shutdown-hook]: Downloading https://files.pythonhosted.org/packages/b1/bb/7b82075d8a1ce03c482e0fce742699ae920024bd2d5d9f62281730c8a4f3/nonebot_plugin_shutdown_hook-0.1.0.tar.gz
+[2024-05-26 17:33:56] INFO root fetch - processPackages [pymail2]: Downloading https://files.pythonhosted.org/packages/91/bd/8b5f1a439821e6955642f728c2c126634b6fa392b4329eb4d240f8807f88/pymail2-0.1.0.tar.gz
+[2024-05-26 17:33:56] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/a4/5f/24c14d0a7d609507557baf5369feaca8b3459d111f35e9258e9d0396f9a8/bota-4.0.9.tar.gz
+[2024-05-26 17:33:56] INFO root fetch - processPackages [bota]: executing diffoscope
+[2024-05-26 17:33:56] INFO root fetch - processPackages [bota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bota-4.0.8.tar.gz tmp/bota-4.0.9.tar.gz --markdown 20240526/b/bota/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 17:33:56] INFO root fetch - processPackages [pymail2]: Downloading https://files.pythonhosted.org/packages/87/f3/a4bbe600db55c61a1493511f7e90d3fd0363880ff39b1e0f0ccc5bc136e5/pymail2-0.1.1.tar.gz
+[2024-05-26 17:33:56] INFO root fetch - processPackages [nonebot-plugin-shutdown-hook]: Downloading https://files.pythonhosted.org/packages/70/7a/89c612074c34ba3cceceb600512a299b3667bad11c67bc505534978f16b0/nonebot_plugin_shutdown_hook-0.1.1.tar.gz
+[2024-05-26 17:33:56] INFO root fetch - processPackages [nonebot-plugin-shutdown-hook]: executing diffoscope
+[2024-05-26 17:33:56] INFO root fetch - processPackages [nonebot-plugin-shutdown-hook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_shutdown_hook-0.1.0.tar.gz tmp/nonebot_plugin_shutdown_hook-0.1.1.tar.gz --markdown 20240526/n/nonebot-plugin-shutdown-hook/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 17:33:56] INFO root fetch - processPackages [pymail2]: executing diffoscope
+[2024-05-26 17:33:56] INFO root fetch - processPackages [pymail2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymail2-0.1.0.tar.gz tmp/pymail2-0.1.1.tar.gz --markdown 20240526/p/pymail2/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 17:33:56] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.8.tar.gz]
+[2024-05-26 17:33:56] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
+[2024-05-26 17:33:56] INFO root fetch - main [MainThread]: End processing [bota]: success
+[2024-05-26 17:33:56] INFO root fetch - processPackages [pymail2]: Remove: archive file [/home/abi/fetcher/tmp/pymail2-0.1.0.tar.gz]
+[2024-05-26 17:33:56] INFO root fetch - processPackages [pymail2]: Remove: archive file [/home/abi/fetcher/tmp/pymail2-0.1.1.tar.gz]
+[2024-05-26 17:33:56] INFO root fetch - main [MainThread]: End processing [pymail2]: success
+[2024-05-26 17:33:57] INFO root fetch - processPackages [nonebot-plugin-shutdown-hook]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_shutdown_hook-0.1.0.tar.gz]
+[2024-05-26 17:33:57] INFO root fetch - processPackages [nonebot-plugin-shutdown-hook]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_shutdown_hook-0.1.1.tar.gz]
+[2024-05-26 17:33:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-shutdown-hook]: success
+[2024-05-26 17:33:57] INFO root fetch - main [MainThread]: Store serial: [23384327]
