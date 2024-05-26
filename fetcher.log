@@ -2300,3 +2300,56 @@
 [2024-05-26 04:13:46] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-0.99.11.tar.gz]
 [2024-05-26 04:13:46] INFO root fetch - main [MainThread]: End processing [platypush]: success
 [2024-05-26 04:13:46] INFO root fetch - main [MainThread]: Store serial: [23379179]
+[2024-05-26 04:15:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379179]
+[2024-05-26 04:15:54] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 04:17:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379179]
+[2024-05-26 04:18:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 04:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maskalib
+[2024-05-26 04:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mutt-html-reply
+[2024-05-26 04:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipackager
+[2024-05-26 04:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-library-objects
+[2024-05-26 04:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: baseball
+[2024-05-26 04:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: monai-weekly
+[2024-05-26 04:18:00] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-26 04:18:00] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-05-26 04:18:00] INFO root fetch - processPackages [pipackager]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-26 04:18:00] WARNING root fetch - processPackages [maskalib]: Skipping, unable to determine old version
+[2024-05-26 04:18:00] INFO root fetch - main [MainThread]: End processing [maskalib] error
+[2024-05-26 04:18:00] INFO root fetch - processPackages [mutt-html-reply]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-26 04:18:00] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-05-26 04:18:00] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/ec/cc/f22c7376d88c94ae4d294b2c3b8396b4ed9e828f8fbf6fdc1372162bbb1e/pipackager-0.3.1.tar.gz
+[2024-05-26 04:18:00] INFO root fetch - processPackages [monai-weekly]: New version: [1.4.dev2421] Old Version: [1.4.dev2420]
+[2024-05-26 04:18:00] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-26 04:18:00] INFO root fetch - processPackages [mutt-html-reply]: Downloading https://files.pythonhosted.org/packages/53/10/70d0da4055c71785636606bfc759d60556ade0030db17201a9e209a58192/mutt_html_reply-0.1.0.tar.gz
+[2024-05-26 04:18:00] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-05-26 04:18:00] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-26 04:18:00] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/e0/f2/063fa474cfbe9b6462d4be3686dffa518c8a920998faca1702c2b72e8bcb/monai_weekly-1.4.dev2420.tar.gz
+[2024-05-26 04:18:00] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/7e/ac/7a301a46b2ac5656687796e50ea69dc389e789004c6fd35e61ed6d4644d9/pipackager-0.4.0.tar.gz
+[2024-05-26 04:18:00] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-05-26 04:18:00] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240526/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-05-26 04:18:00] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-26 04:18:00] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240526/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-26 04:18:01] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 04:18:01] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.3.1.tar.gz tmp/pipackager-0.4.0.tar.gz --markdown 20240526/p/pipackager/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-26 04:18:01] INFO root fetch - processPackages [mutt-html-reply]: Downloading https://files.pythonhosted.org/packages/56/98/261c8499dd37662e782e5cfb373e8803f4721ddd44fcf5ea4abc4ee7b233/mutt_html_reply-0.2.0.tar.gz
+[2024-05-26 04:18:01] INFO root fetch - processPackages [mutt-html-reply]: executing diffoscope
+[2024-05-26 04:18:01] INFO root fetch - processPackages [mutt-html-reply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutt_html_reply-0.1.0.tar.gz tmp/mutt_html_reply-0.2.0.tar.gz --markdown 20240526/m/mutt-html-reply/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-26 04:18:01] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/5c/54/cf99c442891fb66bdc2643141bebc359141445b0b199f58f159b6301754c/monai_weekly-1.4.dev2421.tar.gz
+[2024-05-26 04:18:01] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-26 04:18:01] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-26 04:18:01] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-26 04:18:01] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-05-26 04:18:01] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-05-26 04:18:01] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-05-26 04:18:01] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.3.1.tar.gz]
+[2024-05-26 04:18:01] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.0.tar.gz]
+[2024-05-26 04:18:01] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 04:18:01] INFO root fetch - processPackages [mutt-html-reply]: Remove: archive file [/home/abi/fetcher/tmp/mutt_html_reply-0.1.0.tar.gz]
+[2024-05-26 04:18:01] INFO root fetch - processPackages [mutt-html-reply]: Remove: archive file [/home/abi/fetcher/tmp/mutt_html_reply-0.2.0.tar.gz]
+[2024-05-26 04:18:01] INFO root fetch - main [MainThread]: End processing [mutt-html-reply]: success
+[2024-05-26 04:18:03] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2024-05-26 04:18:03] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai_weekly-1.4.dev2420.tar.gz tmp/monai_weekly-1.4.dev2421.tar.gz --markdown 20240526/m/monai-weekly/1.4.dev2420-1.4.dev2421/README.md --exclude *.pyd
+[2024-05-26 04:18:07] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2420.tar.gz]
+[2024-05-26 04:18:07] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2421.tar.gz]
+[2024-05-26 04:18:07] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2024-05-26 04:18:07] INFO root fetch - main [MainThread]: Store serial: [23379194]
