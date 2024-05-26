@@ -17778,3 +17778,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:26:18] INFO root fetch - processPackages [ansible-taskrunner]: Remove: archive file [/home/abi/fetcher/tmp/ansible_taskrunner-2.8.4.tar.gz]
 [2024-05-26 21:26:18] INFO root fetch - main [MainThread]: End processing [ansible-taskrunner]: success
 [2024-05-26 21:26:18] INFO root fetch - main [MainThread]: Store serial: [23386280]
+[2024-05-26 21:28:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386280]
+[2024-05-26 21:28:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 21:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tablinum
+[2024-05-26 21:28:28] INFO root fetch - processPackages [tablinum]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 21:28:28] INFO root fetch - processPackages [tablinum]: Downloading https://files.pythonhosted.org/packages/91/85/4e9a8d7da27a526f39c3c09eac03e9b63f53cd00b8498cfb483766ea182f/tablinum-0.1.3.tar.gz
+[2024-05-26 21:28:28] INFO root fetch - processPackages [tablinum]: Downloading https://files.pythonhosted.org/packages/5b/03/230bfd67d1716ffd2439dada05e9badbca55e63c9b8a027db379f786d909/tablinum-0.1.4.tar.gz
+[2024-05-26 21:28:28] INFO root fetch - processPackages [tablinum]: executing diffoscope
+[2024-05-26 21:28:28] INFO root fetch - processPackages [tablinum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablinum-0.1.3.tar.gz tmp/tablinum-0.1.4.tar.gz --markdown 20240526/t/tablinum/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 21:28:29] INFO root fetch - processPackages [tablinum]: Remove: archive file [/home/abi/fetcher/tmp/tablinum-0.1.3.tar.gz]
+[2024-05-26 21:28:29] INFO root fetch - processPackages [tablinum]: Remove: archive file [/home/abi/fetcher/tmp/tablinum-0.1.4.tar.gz]
+[2024-05-26 21:28:29] INFO root fetch - main [MainThread]: End processing [tablinum]: success
+[2024-05-26 21:28:29] INFO root fetch - main [MainThread]: Store serial: [23386283]
