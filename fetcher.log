@@ -9202,3 +9202,9 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:49:41] INFO root fetch - processPackages [workutils]: Remove: archive file [/home/abi/fetcher/tmp/workutils-0.0.8.tar.gz]
 [2024-05-26 12:49:41] INFO root fetch - main [MainThread]: End processing [workutils]: success
 [2024-05-26 12:49:41] INFO root fetch - main [MainThread]: Store serial: [23382269]
+[2024-05-26 12:51:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382269]
+[2024-05-26 12:51:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 12:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crx-utils
+[2024-05-26 12:51:55] WARNING root fetch - processPackages [crx-utils]: Skipping, unable to determine old version
+[2024-05-26 12:51:55] INFO root fetch - main [MainThread]: End processing [crx-utils] error
+[2024-05-26 12:51:55] INFO root fetch - main [MainThread]: Store serial: [23382272]
