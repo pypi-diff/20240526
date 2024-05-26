@@ -18170,3 +18170,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:52:43] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.1.3.tar.gz]
 [2024-05-26 21:52:43] INFO root fetch - main [MainThread]: End processing [pyiso20022]: success
 [2024-05-26 21:52:43] INFO root fetch - main [MainThread]: Store serial: [23386477]
+[2024-05-26 21:54:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386477]
+[2024-05-26 21:54:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 21:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: causal-conv1d
+[2024-05-26 21:54:51] INFO root fetch - processPackages [causal-conv1d]: New version: [1.2.1] Old Version: [1.2.0.post2]
+[2024-05-26 21:54:51] INFO root fetch - processPackages [causal-conv1d]: Downloading https://files.pythonhosted.org/packages/7b/02/d2ff7b71358dadde5278b5a8c70b569124c64464a1f412469366fc639ac9/causal_conv1d-1.2.0.post2.tar.gz
+[2024-05-26 21:54:51] INFO root fetch - processPackages [causal-conv1d]: Downloading https://files.pythonhosted.org/packages/6d/dd/07a28aa3a4d3b67a9d32ef6b2266b1657eb764d150385a07a12a17552308/causal_conv1d-1.2.1.tar.gz
+[2024-05-26 21:54:52] INFO root fetch - processPackages [causal-conv1d]: executing diffoscope
+[2024-05-26 21:54:52] INFO root fetch - processPackages [causal-conv1d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causal_conv1d-1.2.0.post2.tar.gz tmp/causal_conv1d-1.2.1.tar.gz --markdown 20240526/c/causal-conv1d/1.2.0.post2-1.2.1/README.md --exclude *.pyd
+[2024-05-26 21:54:52] INFO root fetch - processPackages [causal-conv1d]: Remove: archive file [/home/abi/fetcher/tmp/causal_conv1d-1.2.0.post2.tar.gz]
+[2024-05-26 21:54:52] INFO root fetch - processPackages [causal-conv1d]: Remove: archive file [/home/abi/fetcher/tmp/causal_conv1d-1.2.1.tar.gz]
+[2024-05-26 21:54:52] INFO root fetch - main [MainThread]: End processing [causal-conv1d]: success
+[2024-05-26 21:54:52] INFO root fetch - main [MainThread]: Store serial: [23386482]
