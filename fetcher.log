@@ -2420,3 +2420,15 @@
 [2024-05-26 04:20:22] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2421.tar.gz]
 [2024-05-26 04:20:22] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2024-05-26 04:20:22] INFO root fetch - main [MainThread]: Store serial: [23379219]
+[2024-05-26 04:22:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379219]
+[2024-05-26 04:22:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 04:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jvi
+[2024-05-26 04:22:30] INFO root fetch - processPackages [jvi]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 04:22:30] INFO root fetch - processPackages [jvi]: Downloading https://files.pythonhosted.org/packages/c1/6d/b0bb8d400c2dbfe0e187b7aed64b1bedd295db8a39758028268f0ed7b94a/jvi-0.1.3.tar.gz
+[2024-05-26 04:22:31] INFO root fetch - processPackages [jvi]: Downloading https://files.pythonhosted.org/packages/32/76/092e448e30b5484f3a3fcceab700619e1bd34d6d9d83f6985bfd07402735/jvi-0.1.4.tar.gz
+[2024-05-26 04:22:31] INFO root fetch - processPackages [jvi]: executing diffoscope
+[2024-05-26 04:22:31] INFO root fetch - processPackages [jvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jvi-0.1.3.tar.gz tmp/jvi-0.1.4.tar.gz --markdown 20240526/j/jvi/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 04:22:31] INFO root fetch - processPackages [jvi]: Remove: archive file [/home/abi/fetcher/tmp/jvi-0.1.3.tar.gz]
+[2024-05-26 04:22:31] INFO root fetch - processPackages [jvi]: Remove: archive file [/home/abi/fetcher/tmp/jvi-0.1.4.tar.gz]
+[2024-05-26 04:22:31] INFO root fetch - main [MainThread]: End processing [jvi]: success
+[2024-05-26 04:22:31] INFO root fetch - main [MainThread]: Store serial: [23379223]
