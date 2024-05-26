@@ -3852,3 +3852,36 @@
 [2024-05-26 07:04:43] WARNING root fetch - processPackages [natural-language-processing]: Skipping, unable to determine old version
 [2024-05-26 07:04:43] INFO root fetch - main [MainThread]: End processing [natural-language-processing] error
 [2024-05-26 07:04:43] INFO root fetch - main [MainThread]: Store serial: [23379800]
+[2024-05-26 07:06:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379800]
+[2024-05-26 07:06:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-homeassistant-custom-component
+[2024-05-26 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: insurance-tool
+[2024-05-26 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapid-pe
+[2024-05-26 07:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipackager
+[2024-05-26 07:06:51] INFO root fetch - processPackages [pipackager]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-26 07:06:51] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240525] Old Version: [0.1.2.dev20240524]
+[2024-05-26 07:06:51] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 07:06:51] WARNING root fetch - processPackages [insurance-tool]: Skipping, unable to determine old version
+[2024-05-26 07:06:51] INFO root fetch - main [MainThread]: End processing [insurance-tool] error
+[2024-05-26 07:06:51] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/5e/fa/2ca91490af83da1c16a3634c01950b825f9fe530a00507c021f9c2f2e380/rapid_pe-0.1.2.dev20240524.tar.gz
+[2024-05-26 07:06:51] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/52/68/fa38c1877cc761208df74ec612d2921f2109c600ef2493afeffcad65c9ca/pipackager-0.4.4.tar.gz
+[2024-05-26 07:06:51] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/8a/3b/b76075872ac35edad46a4fd3401c3faebda7af874b306526a1d7e1a4336a/pytest-homeassistant-custom-component-0.9.8.tar.gz
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/0d/ad/29b43fc7dd141c5d254d22137950c24e7e1c21cb0f8d9d85ca0e70e18af7/pipackager-0.4.5.tar.gz
+[2024-05-26 07:06:52] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/be/9b/1e776fcae1009033163d5d7740eea5150f64339d61bd20bbbb6f5ee2ff5c/rapid_pe-0.1.2.dev20240525.tar.gz
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/60/4e/ba1174db4b883610c2a5afba7a30857178ada41a2368936b2e3d764bfe6a/pytest-homeassistant-custom-component-0.9.9.tar.gz
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.4.4.tar.gz tmp/pipackager-0.4.5.tar.gz --markdown 20240526/p/pipackager/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-26 07:06:52] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-05-26 07:06:52] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240524.tar.gz tmp/rapid_pe-0.1.2.dev20240525.tar.gz --markdown 20240526/r/rapid-pe/0.1.2.dev20240524-0.1.2.dev20240525/README.md --exclude *.pyd
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20240526/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.4.tar.gz]
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.5.tar.gz]
+[2024-05-26 07:06:52] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 07:06:52] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240524.tar.gz]
+[2024-05-26 07:06:52] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240525.tar.gz]
+[2024-05-26 07:06:52] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz]
+[2024-05-26 07:06:52] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz]
+[2024-05-26 07:06:52] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2024-05-26 07:06:52] INFO root fetch - main [MainThread]: Store serial: [23379814]
