@@ -3513,3 +3513,15 @@
 [2024-05-26 06:25:52] INFO root fetch - processPackages [sole-bili-get]: Remove: archive file [/home/abi/fetcher/tmp/sole_bili_get-0.0.5.tar.gz]
 [2024-05-26 06:25:52] INFO root fetch - main [MainThread]: End processing [sole-bili-get]: success
 [2024-05-26 06:25:52] INFO root fetch - main [MainThread]: Store serial: [23379660]
+[2024-05-26 06:27:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379660]
+[2024-05-26 06:28:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 06:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radprompter
+[2024-05-26 06:28:01] INFO root fetch - processPackages [radprompter]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-26 06:28:01] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/5e/0e/d7637fad67a8038db437dc6ba97808ab8c3c4f93af4ac7351d5a3ed69009/radprompter-1.1.8.tar.gz
+[2024-05-26 06:28:01] INFO root fetch - processPackages [radprompter]: Downloading https://files.pythonhosted.org/packages/6b/d9/023b429dc673c9057d397be36e8ec52c8123f87da33d529131954232fcd1/radprompter-1.1.9.tar.gz
+[2024-05-26 06:28:01] INFO root fetch - processPackages [radprompter]: executing diffoscope
+[2024-05-26 06:28:01] INFO root fetch - processPackages [radprompter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radprompter-1.1.8.tar.gz tmp/radprompter-1.1.9.tar.gz --markdown 20240526/r/radprompter/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-26 06:28:02] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.1.8.tar.gz]
+[2024-05-26 06:28:02] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.1.9.tar.gz]
+[2024-05-26 06:28:02] INFO root fetch - main [MainThread]: End processing [radprompter]: success
+[2024-05-26 06:28:02] INFO root fetch - main [MainThread]: Store serial: [23379665]
