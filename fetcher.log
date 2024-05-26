@@ -12624,3 +12624,55 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:47:34] INFO root fetch - processPackages [django-debug-toolbar]: Remove: archive file [/home/abi/fetcher/tmp/django_debug_toolbar-4.3.0.tar.gz]
 [2024-05-26 16:47:34] INFO root fetch - main [MainThread]: End processing [django-debug-toolbar]: success
 [2024-05-26 16:47:34] INFO root fetch - main [MainThread]: Store serial: [23383882]
+[2024-05-26 16:49:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383882]
+[2024-05-26 16:49:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 16:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myst-libre
+[2024-05-26 16:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: goit-phone-book-bot
+[2024-05-26 16:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pi-awning-webthing
+[2024-05-26 16:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: goit-phone-book-bot
+[2024-05-26 16:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gdaicommons
+[2024-05-26 16:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jaaql-monitor
+[2024-05-26 16:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-shutdown-hook
+[2024-05-26 16:49:43] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 16:49:43] WARNING root fetch - processPackages [gdaicommons]: Skipping, unable to determine old version
+[2024-05-26 16:49:43] INFO root fetch - main [MainThread]: End processing [gdaicommons] error
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 16:49:43] INFO root fetch - processPackages [myst-libre]: New version: [0.0.post1] Old Version: [0.0.0]
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/58/a6/b9478ba67ce959ec4c11592178224e6e98c48e1ea43e04c9c003d9fdd99e/goit_phone_book_bot-0.1.1.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.99] Old Version: [1.2.98]
+[2024-05-26 16:49:43] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/58/a6/b9478ba67ce959ec4c11592178224e6e98c48e1ea43e04c9c003d9fdd99e/goit_phone_book_bot-0.1.1.tar.gz
+[2024-05-26 16:49:43] WARNING root fetch - processPackages [nonebot-plugin-shutdown-hook]: Skipping, unable to determine old version
+[2024-05-26 16:49:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-shutdown-hook] error
+[2024-05-26 16:49:43] INFO root fetch - processPackages [myst-libre]: Downloading https://files.pythonhosted.org/packages/1e/45/b910d02edc9a8d2906ee08bb50b26d7c2b811c7af5446b6b93c3fccba752/myst_libre-0.0.0.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/80/27/cd391208e45e79c24a8a3c147059581e229086e3fd355deabbaaef08cba6/jaaql-monitor-1.2.98.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/40/70/7a0ee61eb0b910ac65cb58ebe7446af211e5d55896f11d5405c7d0207629/goit_phone_book_bot-0.1.2.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/40/70/7a0ee61eb0b910ac65cb58ebe7446af211e5d55896f11d5405c7d0207629/goit_phone_book_bot-0.1.2.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:49:43] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 16:49:43] INFO root fetch - processPackages [myst-libre]: Downloading https://files.pythonhosted.org/packages/96/65/7ba9bb22bcdf62cd3af9edbb1ae1c5a6be7e048e3dcccc8d22d777afb5b6/myst_libre-0.0.post1.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: executing diffoscope
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goit_phone_book_bot-0.1.1.tar.gz tmp/goit_phone_book_bot-0.1.2.tar.gz --markdown 20240526/g/goit-phone-book-bot/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: executing diffoscope
+[2024-05-26 16:49:43] INFO root fetch - processPackages [goit-phone-book-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goit_phone_book_bot-0.1.1.tar.gz tmp/goit_phone_book_bot-0.1.2.tar.gz --markdown 20240526/g/goit-phone-book-bot/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 16:49:43] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/38/72/19bb845ce929eb67ea1384097fd45a39c91b84579b3cfa77612867cec978/jaaql-monitor-1.2.99.tar.gz
+[2024-05-26 16:49:43] INFO root fetch - processPackages [myst-libre]: executing diffoscope
+[2024-05-26 16:49:43] INFO root fetch - processPackages [myst-libre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myst_libre-0.0.0.tar.gz tmp/myst_libre-0.0.post1.tar.gz --markdown 20240526/m/myst-libre/0.0.0-0.0.post1/README.md --exclude *.pyd
+[2024-05-26 16:49:43] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2024-05-26 16:49:43] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.98.tar.gz tmp/jaaql-monitor-1.2.99.tar.gz --markdown 20240526/j/jaaql-monitor/1.2.98-1.2.99/README.md --exclude *.pyd
+[2024-05-26 16:49:44] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:49:44] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 16:49:44] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:49:44] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit_phone_book_bot-0.1.1.tar.gz]
+[2024-05-26 16:49:44] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit_phone_book_bot-0.1.2.tar.gz]
+[2024-05-26 16:49:44] INFO root fetch - main [MainThread]: End processing [goit-phone-book-bot]: success
+[2024-05-26 16:49:44] INFO root fetch - main [MainThread]: End processing [goit-phone-book-bot]: success
+[2024-05-26 16:49:44] INFO root fetch - processPackages [myst-libre]: Remove: archive file [/home/abi/fetcher/tmp/myst_libre-0.0.0.tar.gz]
+[2024-05-26 16:49:44] INFO root fetch - processPackages [myst-libre]: Remove: archive file [/home/abi/fetcher/tmp/myst_libre-0.0.post1.tar.gz]
+[2024-05-26 16:49:44] INFO root fetch - main [MainThread]: End processing [myst-libre]: success
+[2024-05-26 16:49:44] INFO root fetch - processPackages [jaaql-monitor]: Remove: archive file [/home/abi/fetcher/tmp/jaaql-monitor-1.2.98.tar.gz]
+[2024-05-26 16:49:44] INFO root fetch - processPackages [jaaql-monitor]: Remove: archive file [/home/abi/fetcher/tmp/jaaql-monitor-1.2.99.tar.gz]
+[2024-05-26 16:49:44] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2024-05-26 16:49:44] INFO root fetch - main [MainThread]: Store serial: [23383901]
