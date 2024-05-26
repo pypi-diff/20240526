@@ -4758,3 +4758,41 @@
 [2024-05-26 08:37:43] INFO root fetch - processPackages [mypylib]: Remove: archive file [/home/abi/fetcher/tmp/mypylib-0.2.7.tar.gz]
 [2024-05-26 08:37:43] INFO root fetch - main [MainThread]: End processing [mypylib]: success
 [2024-05-26 08:37:43] INFO root fetch - main [MainThread]: Store serial: [23380354]
+[2024-05-26 08:39:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380354]
+[2024-05-26 08:39:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 08:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nanosense
+[2024-05-26 08:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stefutils
+[2024-05-26 08:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-mysql-local
+[2024-05-26 08:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docprompt
+[2024-05-26 08:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cPyparsing
+[2024-05-26 08:39:52] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-26 08:39:52] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.335] Old Version: [0.0.334]
+[2024-05-26 08:39:52] WARNING root fetch - processPackages [nanosense]: Skipping, unable to determine old version
+[2024-05-26 08:39:52] INFO root fetch - main [MainThread]: End processing [nanosense] error
+[2024-05-26 08:39:52] INFO root fetch - processPackages [docprompt]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-26 08:39:52] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-05-26 08:39:52] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/70/ac/1a4e8d1dfb91112764f768e834edce73d87ea463925721ecedc274f8e43a/database_mysql_local-0.0.334.tar.gz
+[2024-05-26 08:39:52] INFO root fetch - processPackages [cPyparsing]: New version: [2.4.7.2.3.3] Old Version: [2.4.7.2.3.2]
+[2024-05-26 08:39:52] INFO root fetch - processPackages [docprompt]: Downloading https://files.pythonhosted.org/packages/67/8b/f76ab6ec466c0a3d8d2933ad006b172ca5acf31921fbf17ec8f8730f0583/docprompt-0.6.0.tar.gz
+[2024-05-26 08:39:52] INFO root fetch - processPackages [cPyparsing]: Downloading https://files.pythonhosted.org/packages/f1/2c/be67465b34206c24be7230746f589f0d4adbb60f96e889fc248fd51b9e3d/cPyparsing-2.4.7.2.3.2.tar.gz
+[2024-05-26 08:39:52] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-05-26 08:39:52] WARNING root fetch - processPackages [docprompt]: Skipping package: exceeds size limit 19682207>=10485760
+[2024-05-26 08:39:52] INFO root fetch - main [MainThread]: End processing [docprompt] error
+[2024-05-26 08:39:52] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-05-26 08:39:52] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240526/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-26 08:39:52] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/13/9c/decdf96a8232d9487935c3286fc06540569bf7795a7df5f84239b4d8324d/database_mysql_local-0.0.335.tar.gz
+[2024-05-26 08:39:52] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 08:39:52] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.334.tar.gz tmp/database_mysql_local-0.0.335.tar.gz --markdown 20240526/d/database-mysql-local/0.0.334-0.0.335/README.md --exclude *.pyd
+[2024-05-26 08:39:53] INFO root fetch - processPackages [cPyparsing]: Downloading https://files.pythonhosted.org/packages/8f/1d/f5e3d63dc71f130b003244afd676d4a6ffdee96dac30f271b2207c0d91fe/cpyparsing-2.4.7.2.3.3.tar.gz
+[2024-05-26 08:39:53] INFO root fetch - processPackages [cPyparsing]: executing diffoscope
+[2024-05-26 08:39:53] INFO root fetch - processPackages [cPyparsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cPyparsing-2.4.7.2.3.2.tar.gz tmp/cpyparsing-2.4.7.2.3.3.tar.gz --markdown 20240526/c/cPyparsing/2.4.7.2.3.2-2.4.7.2.3.3/README.md --exclude *.pyd
+[2024-05-26 08:39:53] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-05-26 08:39:53] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-05-26 08:39:53] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-05-26 08:39:53] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.334.tar.gz]
+[2024-05-26 08:39:53] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.335.tar.gz]
+[2024-05-26 08:39:53] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 08:39:58] INFO root fetch - processPackages [cPyparsing]: Remove: archive file [/home/abi/fetcher/tmp/cPyparsing-2.4.7.2.3.2.tar.gz]
+[2024-05-26 08:39:58] INFO root fetch - processPackages [cPyparsing]: Remove: archive file [/home/abi/fetcher/tmp/cpyparsing-2.4.7.2.3.3.tar.gz]
+[2024-05-26 08:39:58] INFO root fetch - main [MainThread]: End processing [cPyparsing]: success
+[2024-05-26 08:39:58] INFO root fetch - main [MainThread]: Store serial: [23380370]
