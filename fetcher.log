@@ -7389,3 +7389,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:55:04] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.2.tar.gz]
 [2024-05-26 10:55:04] INFO root fetch - main [MainThread]: End processing [lantana]: success
 [2024-05-26 10:55:04] INFO root fetch - main [MainThread]: Store serial: [23381465]
+[2024-05-26 10:57:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381465]
+[2024-05-26 10:57:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 10:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AZMusicAPI
+[2024-05-26 10:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sherlock-project
+[2024-05-26 10:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: regolith-json-template
+[2024-05-26 10:57:15] INFO root fetch - processPackages [AZMusicAPI]: New version: [1.4.5] Old Version: [1.4.3]
+[2024-05-26 10:57:15] INFO root fetch - processPackages [sherlock-project]: New version: [0.14.4] Old Version: [0.14.3]
+[2024-05-26 10:57:15] INFO root fetch - processPackages [regolith-json-template]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-05-26 10:57:15] INFO root fetch - processPackages [sherlock-project]: Downloading https://files.pythonhosted.org/packages/2a/63/96b5e9a8a8785d4d3f41d1c8909833cd0d847b9feda1a38df5af2a426b30/sherlock_project-0.14.3.tar.gz
+[2024-05-26 10:57:15] INFO root fetch - processPackages [AZMusicAPI]: Downloading https://files.pythonhosted.org/packages/75/e9/8dc4d18d45893e2dbfa3d29d98a78f094b353d80e508f20a19817f212d4f/AZMusicAPI-1.4.3.tar.gz
+[2024-05-26 10:57:16] INFO root fetch - processPackages [regolith-json-template]: Downloading https://files.pythonhosted.org/packages/16/98/bc0a96d6edf547df6644b6f8999f03e018d8054c8fccf15ac773158c7288/regolith-json-template-1.2.0.tar.gz
+[2024-05-26 10:57:16] INFO root fetch - processPackages [AZMusicAPI]: Downloading https://files.pythonhosted.org/packages/c0/15/9a944dc86b3ec4f53a3b9a78c81517b42fd971cee648bbd2e4744c6d707a/AZMusicAPI-1.4.5.tar.gz
+[2024-05-26 10:57:16] INFO root fetch - processPackages [sherlock-project]: Downloading https://files.pythonhosted.org/packages/eb/57/0ac8fcde9e2dbdacb20f48e8c20f3049972a59839d8bccbef0799b944140/sherlock_project-0.14.4.tar.gz
+[2024-05-26 10:57:16] INFO root fetch - processPackages [regolith-json-template]: Downloading https://files.pythonhosted.org/packages/d1/ae/cea01bc4658213cf57414157febbf6b3aca82cfddd352040cf6e106d555f/regolith_json_template-1.3.0.tar.gz
+[2024-05-26 10:57:16] INFO root fetch - processPackages [AZMusicAPI]: executing diffoscope
+[2024-05-26 10:57:16] INFO root fetch - processPackages [AZMusicAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AZMusicAPI-1.4.3.tar.gz tmp/AZMusicAPI-1.4.5.tar.gz --markdown 20240526/A/AZMusicAPI/1.4.3-1.4.5/README.md --exclude *.pyd
+[2024-05-26 10:57:16] INFO root fetch - processPackages [regolith-json-template]: executing diffoscope
+[2024-05-26 10:57:16] INFO root fetch - processPackages [regolith-json-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regolith-json-template-1.2.0.tar.gz tmp/regolith_json_template-1.3.0.tar.gz --markdown 20240526/r/regolith-json-template/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-05-26 10:57:16] INFO root fetch - processPackages [sherlock-project]: executing diffoscope
+[2024-05-26 10:57:16] INFO root fetch - processPackages [sherlock-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherlock_project-0.14.3.tar.gz tmp/sherlock_project-0.14.4.tar.gz --markdown 20240526/s/sherlock-project/0.14.3-0.14.4/README.md --exclude *.pyd
+[2024-05-26 10:57:17] INFO root fetch - processPackages [regolith-json-template]: Remove: archive file [/home/abi/fetcher/tmp/regolith-json-template-1.2.0.tar.gz]
+[2024-05-26 10:57:17] INFO root fetch - processPackages [regolith-json-template]: Remove: archive file [/home/abi/fetcher/tmp/regolith_json_template-1.3.0.tar.gz]
+[2024-05-26 10:57:17] INFO root fetch - main [MainThread]: End processing [regolith-json-template]: success
+[2024-05-26 10:57:17] INFO root fetch - processPackages [AZMusicAPI]: Remove: archive file [/home/abi/fetcher/tmp/AZMusicAPI-1.4.3.tar.gz]
+[2024-05-26 10:57:17] INFO root fetch - processPackages [AZMusicAPI]: Remove: archive file [/home/abi/fetcher/tmp/AZMusicAPI-1.4.5.tar.gz]
+[2024-05-26 10:57:17] INFO root fetch - main [MainThread]: End processing [AZMusicAPI]: success
+[2024-05-26 10:57:17] INFO root fetch - processPackages [sherlock-project]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_project-0.14.3.tar.gz]
+[2024-05-26 10:57:17] INFO root fetch - processPackages [sherlock-project]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_project-0.14.4.tar.gz]
+[2024-05-26 10:57:17] INFO root fetch - main [MainThread]: End processing [sherlock-project]: success
+[2024-05-26 10:57:17] INFO root fetch - main [MainThread]: Store serial: [23381475]
