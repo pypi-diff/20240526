@@ -17305,3 +17305,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:10:23] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.81.tar.gz]
 [2024-05-26 21:10:23] INFO root fetch - main [MainThread]: End processing [zenaura]: success
 [2024-05-26 21:10:23] INFO root fetch - main [MainThread]: Store serial: [23386077]
+[2024-05-26 21:12:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386077]
+[2024-05-26 21:12:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MedatechUK.Landlord
+[2024-05-26 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xssbase
+[2024-05-26 21:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: doveseed
+[2024-05-26 21:12:33] INFO root fetch - processPackages [MedatechUK.Landlord]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-05-26 21:12:33] INFO root fetch - processPackages [xssbase]: New version: [4.0.0] Old Version: [3.0.6]
+[2024-05-26 21:12:33] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/b2/bc/88ebffc53281dffbbb6c5c74b6292b8864c065d71352c68e40780364bdc1/medatechuk_landlord-0.0.6.tar.gz
+[2024-05-26 21:12:33] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/9f/2c/daa247aee728f411b79080e20069c9d1e06a57101a37816f47e4ef3323ba/xssbase-3.0.6.tar.gz
+[2024-05-26 21:12:33] INFO root fetch - processPackages [doveseed]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-05-26 21:12:33] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/ac/9d/f44381aa272917bd176265228275e0ec49cbbd9370092a54e4c3a2f5af45/doveseed-2.0.3.tar.gz
+[2024-05-26 21:12:33] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/71/c8/3a1efa54ee4dbd266702b7b4d054ef35946b2ac11a262eba85bf2a21e8e6/xssbase-4.0.0.tar.gz
+[2024-05-26 21:12:34] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/dc/5c/36e6ca4793ea572014180040b971a51ad452029374fd8e6ef166a48bbf19/medatechuk_landlord-0.0.8.tar.gz
+[2024-05-26 21:12:34] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 21:12:34] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-3.0.6.tar.gz tmp/xssbase-4.0.0.tar.gz --markdown 20240526/x/xssbase/3.0.6-4.0.0/README.md --exclude *.pyd
+[2024-05-26 21:12:34] INFO root fetch - processPackages [MedatechUK.Landlord]: executing diffoscope
+[2024-05-26 21:12:34] INFO root fetch - processPackages [MedatechUK.Landlord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medatechuk_landlord-0.0.6.tar.gz tmp/medatechuk_landlord-0.0.8.tar.gz --markdown 20240526/M/MedatechUK.Landlord/0.0.6-0.0.8/README.md --exclude *.pyd
+[2024-05-26 21:12:34] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/c4/f5/3f9d556127a8f70ffcf157ce1be7d708e2ca5b5fd69b2b6e9d03f202154d/doveseed-2.0.4.tar.gz
+[2024-05-26 21:12:34] INFO root fetch - processPackages [doveseed]: executing diffoscope
+[2024-05-26 21:12:34] INFO root fetch - processPackages [doveseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doveseed-2.0.3.tar.gz tmp/doveseed-2.0.4.tar.gz --markdown 20240526/d/doveseed/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-05-26 21:12:34] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-3.0.6.tar.gz]
+[2024-05-26 21:12:34] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-4.0.0.tar.gz]
+[2024-05-26 21:12:34] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 21:12:34] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.6.tar.gz]
+[2024-05-26 21:12:34] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.8.tar.gz]
+[2024-05-26 21:12:34] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
+[2024-05-26 21:12:34] INFO root fetch - processPackages [doveseed]: Remove: archive file [/home/abi/fetcher/tmp/doveseed-2.0.3.tar.gz]
+[2024-05-26 21:12:34] INFO root fetch - processPackages [doveseed]: Remove: archive file [/home/abi/fetcher/tmp/doveseed-2.0.4.tar.gz]
+[2024-05-26 21:12:34] INFO root fetch - main [MainThread]: End processing [doveseed]: success
+[2024-05-26 21:12:34] INFO root fetch - main [MainThread]: Store serial: [23386086]
