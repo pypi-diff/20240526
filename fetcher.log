@@ -4642,3 +4642,24 @@
 [2024-05-26 08:22:37] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.16.tar.gz]
 [2024-05-26 08:22:37] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
 [2024-05-26 08:22:37] INFO root fetch - main [MainThread]: Store serial: [23380308]
+[2024-05-26 08:24:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380308]
+[2024-05-26 08:24:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 08:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shmessy
+[2024-05-26 08:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: location-local
+[2024-05-26 08:24:45] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 08:24:45] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-05-26 08:24:45] INFO root fetch - processPackages [shmessy]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-05-26 08:24:45] INFO root fetch - processPackages [shmessy]: Downloading https://files.pythonhosted.org/packages/88/55/6d463d108dc15790749f48b6a493eedbb7829a8b9df5aa0e171108d921f4/shmessy-1.3.4.tar.gz
+[2024-05-26 08:24:45] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-05-26 08:24:46] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-05-26 08:24:46] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240526/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 08:24:46] INFO root fetch - processPackages [shmessy]: Downloading https://files.pythonhosted.org/packages/5f/8b/12446d26abdabd895757961ae118b20fc5e98aa074cbefafd12dcf102882/shmessy-1.3.5.tar.gz
+[2024-05-26 08:24:46] INFO root fetch - processPackages [shmessy]: executing diffoscope
+[2024-05-26 08:24:46] INFO root fetch - processPackages [shmessy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shmessy-1.3.4.tar.gz tmp/shmessy-1.3.5.tar.gz --markdown 20240526/s/shmessy/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-05-26 08:24:46] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-05-26 08:24:46] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-05-26 08:24:46] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-05-26 08:24:46] INFO root fetch - processPackages [shmessy]: Remove: archive file [/home/abi/fetcher/tmp/shmessy-1.3.4.tar.gz]
+[2024-05-26 08:24:46] INFO root fetch - processPackages [shmessy]: Remove: archive file [/home/abi/fetcher/tmp/shmessy-1.3.5.tar.gz]
+[2024-05-26 08:24:46] INFO root fetch - main [MainThread]: End processing [shmessy]: success
+[2024-05-26 08:24:46] INFO root fetch - main [MainThread]: Store serial: [23380314]
