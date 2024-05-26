@@ -7261,3 +7261,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:43:57] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.6.tar.gz]
 [2024-05-26 10:43:57] INFO root fetch - main [MainThread]: End processing [magyar]: success
 [2024-05-26 10:43:57] INFO root fetch - main [MainThread]: Store serial: [23381417]
+[2024-05-26 10:46:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381417]
+[2024-05-26 10:46:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 10:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2024-05-26 10:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arrendatools.actualiza-renta
+[2024-05-26 10:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yymake
+[2024-05-26 10:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly-cpu
+[2024-05-26 10:46:08] INFO root fetch - processPackages [arrendatools.actualiza-renta]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-05-26 10:46:08] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-05-26 10:46:08] INFO root fetch - processPackages [arrendatools.actualiza-renta]: Downloading https://files.pythonhosted.org/packages/5b/53/446179aac204607c646b179fe6fd7de603146819df75bddcf229e28186a1/arrendatools.actualiza_renta-0.1.7.tar.gz
+[2024-05-26 10:46:08] INFO root fetch - processPackages [yymake]: New version: [0.8.7] Old Version: [0.8.5]
+[2024-05-26 10:46:08] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-05-26 10:46:08] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240526] Old Version: [2.17.0.dev20240525]
+[2024-05-26 10:46:08] INFO root fetch - processPackages [arrendatools.actualiza-renta]: Downloading https://files.pythonhosted.org/packages/29/3c/34615fceaeaf67862bf12049ce1e692096905871495366cdaa13d4dba34b/arrendatools_actualiza_renta-0.2.0.tar.gz
+[2024-05-26 10:46:08] INFO root fetch - processPackages [yymake]: Downloading https://files.pythonhosted.org/packages/11/b8/b5f6c49a174a4c6e32dcd1508fc36ffe646b6b7c1479ce5585ee9154d6bf/yymake-0.8.5.tar.gz
+[2024-05-26 10:46:08] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/20/62/de7c6af7d2c3052a57fae272f367cf5ea14a9c924a68c058ae6c922aefb7/tf_nightly_cpu-2.17.0.dev20240525-cp39-cp39-win_amd64.whl
+[2024-05-26 10:46:08] INFO root fetch - processPackages [arrendatools.actualiza-renta]: executing diffoscope
+[2024-05-26 10:46:08] INFO root fetch - processPackages [arrendatools.actualiza-renta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrendatools.actualiza_renta-0.1.7.tar.gz tmp/arrendatools_actualiza_renta-0.2.0.tar.gz --markdown 20240526/a/arrendatools.actualiza-renta/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-05-26 10:46:08] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-05-26 10:46:09] INFO root fetch - processPackages [yymake]: Downloading https://files.pythonhosted.org/packages/ca/cb/f870eff01581c201575ee2f54da694b7a6459be2d432b0d9111e05744183/yymake-0.8.7.tar.gz
+[2024-05-26 10:46:09] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/80/7e/c7262bf7b37f7b0be6963cc450e81e59a6bf326cd1bd8e6bddf6e79cb43a/tf_nightly_cpu-2.17.0.dev20240526-cp39-cp39-win_amd64.whl
+[2024-05-26 10:46:09] INFO root fetch - processPackages [yymake]: executing diffoscope
+[2024-05-26 10:46:09] INFO root fetch - processPackages [yymake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yymake-0.8.5.tar.gz tmp/yymake-0.8.7.tar.gz --markdown 20240526/y/yymake/0.8.5-0.8.7/README.md --exclude *.pyd
+[2024-05-26 10:46:09] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-05-26 10:46:09] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240526/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-05-26 10:46:09] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-05-26 10:46:09] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240525-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240526-cp39-cp39-win_amd64.whl.zip --markdown 20240526/t/tf-nightly-cpu/2.17.0.dev20240525-2.17.0.dev20240526/README.md --exclude *.pyd
+[2024-05-26 10:46:09] INFO root fetch - processPackages [arrendatools.actualiza-renta]: Remove: archive file [/home/abi/fetcher/tmp/arrendatools.actualiza_renta-0.1.7.tar.gz]
+[2024-05-26 10:46:09] INFO root fetch - processPackages [arrendatools.actualiza-renta]: Remove: archive file [/home/abi/fetcher/tmp/arrendatools_actualiza_renta-0.2.0.tar.gz]
+[2024-05-26 10:46:09] INFO root fetch - main [MainThread]: End processing [arrendatools.actualiza-renta]: success
+[2024-05-26 10:46:09] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240525-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 10:46:09] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240526-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 10:46:09] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-05-26 10:46:09] INFO root fetch - processPackages [yymake]: Remove: archive file [/home/abi/fetcher/tmp/yymake-0.8.5.tar.gz]
+[2024-05-26 10:46:09] INFO root fetch - processPackages [yymake]: Remove: archive file [/home/abi/fetcher/tmp/yymake-0.8.7.tar.gz]
+[2024-05-26 10:46:09] INFO root fetch - main [MainThread]: End processing [yymake]: success
+[2024-05-26 10:46:12] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-05-26 10:46:12] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-05-26 10:46:12] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-05-26 10:46:12] INFO root fetch - main [MainThread]: Store serial: [23381430]
