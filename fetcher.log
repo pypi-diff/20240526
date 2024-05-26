@@ -3777,3 +3777,36 @@
 [2024-05-26 06:56:02] INFO root fetch - processPackages [prototools]: Remove: archive file [/home/abi/fetcher/tmp/prototools-0.1.9.tar.gz]
 [2024-05-26 06:56:02] INFO root fetch - main [MainThread]: End processing [prototools]: success
 [2024-05-26 06:56:02] INFO root fetch - main [MainThread]: Store serial: [23379768]
+[2024-05-26 06:58:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379768]
+[2024-05-26 06:58:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 06:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aigist
+[2024-05-26 06:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: criteria-local
+[2024-05-26 06:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ragdaemon
+[2024-05-26 06:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dycw-utilities
+[2024-05-26 06:58:12] INFO root fetch - processPackages [criteria-local]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 06:58:12] INFO root fetch - processPackages [ragdaemon]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-26 06:58:12] WARNING root fetch - processPackages [aigist]: Skipping, unable to determine old version
+[2024-05-26 06:58:12] INFO root fetch - main [MainThread]: End processing [aigist] error
+[2024-05-26 06:58:12] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-05-26 06:58:12] INFO root fetch - processPackages [criteria-local]: Downloading https://files.pythonhosted.org/packages/6a/64/3cfdc8c1fab42a46a86e91f09bc94dac7098131bf28a574989d677a5c176/criteria-local-0.0.7.tar.gz
+[2024-05-26 06:58:12] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/34/aa/a9c5adc303f6c0b0053949860bfc4dab60986917e204816c47142bb64dd8/ragdaemon-0.6.1.tar.gz
+[2024-05-26 06:58:12] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-05-26 06:58:12] INFO root fetch - processPackages [criteria-local]: Downloading https://files.pythonhosted.org/packages/64/00/8a1d3648f3a7e5706ec3bdd7415e0f7db56b10dc9df9b5fb8ade8dfdeda6/criteria-local-0.0.8.tar.gz
+[2024-05-26 06:58:13] INFO root fetch - processPackages [criteria-local]: executing diffoscope
+[2024-05-26 06:58:13] INFO root fetch - processPackages [criteria-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/criteria-local-0.0.7.tar.gz tmp/criteria-local-0.0.8.tar.gz --markdown 20240526/c/criteria-local/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 06:58:13] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-05-26 06:58:13] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/f1/ab/94a02c656d913a08d0fda6b2bf62c96c8a9e6bf299d42813aca1add9fa59/ragdaemon-0.6.2.tar.gz
+[2024-05-26 06:58:13] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-05-26 06:58:13] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240526/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-05-26 06:58:13] INFO root fetch - processPackages [ragdaemon]: executing diffoscope
+[2024-05-26 06:58:13] INFO root fetch - processPackages [ragdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragdaemon-0.6.1.tar.gz tmp/ragdaemon-0.6.2.tar.gz --markdown 20240526/r/ragdaemon/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-26 06:58:13] INFO root fetch - processPackages [criteria-local]: Remove: archive file [/home/abi/fetcher/tmp/criteria-local-0.0.7.tar.gz]
+[2024-05-26 06:58:13] INFO root fetch - processPackages [criteria-local]: Remove: archive file [/home/abi/fetcher/tmp/criteria-local-0.0.8.tar.gz]
+[2024-05-26 06:58:13] INFO root fetch - main [MainThread]: End processing [criteria-local]: success
+[2024-05-26 06:58:14] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.6.1.tar.gz]
+[2024-05-26 06:58:14] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.6.2.tar.gz]
+[2024-05-26 06:58:14] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
+[2024-05-26 06:58:14] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-05-26 06:58:14] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-05-26 06:58:14] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-05-26 06:58:14] INFO root fetch - main [MainThread]: Store serial: [23379780]
