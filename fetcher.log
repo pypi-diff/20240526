@@ -1624,3 +1624,51 @@
 [2024-05-26 03:11:14] INFO root fetch - processPackages [assessment-episode-matcher]: Remove: archive file [/home/abi/fetcher/tmp/assessment_episode_matcher-0.4.0.tar.gz]
 [2024-05-26 03:11:14] INFO root fetch - main [MainThread]: End processing [assessment-episode-matcher]: success
 [2024-05-26 03:11:14] INFO root fetch - main [MainThread]: Store serial: [23378873]
+[2024-05-26 03:13:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378873]
+[2024-05-26 03:13:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 03:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-26 03:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aviatrix-migration-nat
+[2024-05-26 03:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: typeshed-stats
+[2024-05-26 03:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gypsum-client
+[2024-05-26 03:13:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-alpaca-daily-losers
+[2024-05-26 03:13:24] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.26a1716684593] Old Version: [0.0.26a1716673050]
+[2024-05-26 03:13:24] INFO root fetch - processPackages [typeshed-stats]: New version: [24.5.26] Old Version: [24.5.23]
+[2024-05-26 03:13:24] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/de/d3/895244ad01f18f2290aa5d1935397301d2dac91fbc0bf4ff0add876b1e69/pulumi_kubernetes_the_hard_way-0.0.26a1716673050.tar.gz
+[2024-05-26 03:13:24] INFO root fetch - processPackages [gypsum-client]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 03:13:24] INFO root fetch - processPackages [aviatrix-migration-nat]: New version: [0.9.1] Old Version: [0.8.4]
+[2024-05-26 03:13:24] INFO root fetch - processPackages [py-alpaca-daily-losers]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-26 03:13:24] INFO root fetch - processPackages [gypsum-client]: Downloading https://files.pythonhosted.org/packages/34/15/81cc4f6360d8b209f98b02ae683a78482fb09312ac5f91696148a100d3ee/gypsum_client-0.1.1.tar.gz
+[2024-05-26 03:13:25] INFO root fetch - processPackages [typeshed-stats]: Downloading https://files.pythonhosted.org/packages/d2/e2/9d099dd73fd53c1eb7168c4d6cd52e95e33313b8beb559df45ee2318d452/typeshed_stats-24.5.23.tar.gz
+[2024-05-26 03:13:25] INFO root fetch - processPackages [aviatrix-migration-nat]: Downloading https://files.pythonhosted.org/packages/cb/47/92651d92ccba0fbe9e38d333a7b5429e4de29cde51799fffc63cbd67ef8f/aviatrix_migration_nat-0.8.4-cp39-cp39-win_amd64.whl
+[2024-05-26 03:13:25] INFO root fetch - processPackages [py-alpaca-daily-losers]: Downloading https://files.pythonhosted.org/packages/24/dd/9314574fd3b6e260165a57f55e8d427ef121e337c15da348eff9e5e2efe3/py_alpaca_daily_losers-0.2.6.tar.gz
+[2024-05-26 03:13:25] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/6d/4a/38986e9504b3cccdb2570a321e9712e8a5c983a050685a269cb048ada531/pulumi_kubernetes_the_hard_way-0.0.26a1716684593.tar.gz
+[2024-05-26 03:13:25] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-26 03:13:25] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716673050.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716684593.tar.gz --markdown 20240526/p/pulumi-kubernetes-the-hard-way/0.0.26a1716673050-0.0.26a1716684593/README.md --exclude *.pyd
+[2024-05-26 03:13:25] INFO root fetch - processPackages [gypsum-client]: Downloading https://files.pythonhosted.org/packages/e9/4a/33b20bfd47c33ff7a7e46bd61881572344f92db6cb8cfc027b2908293bb3/gypsum_client-0.1.2.tar.gz
+[2024-05-26 03:13:25] INFO root fetch - processPackages [py-alpaca-daily-losers]: Downloading https://files.pythonhosted.org/packages/c5/46/47071e1b984ee0e3439b6c9f28e9eb059147f6e23ed385e030d61b99c2c3/py_alpaca_daily_losers-0.2.7.tar.gz
+[2024-05-26 03:13:25] INFO root fetch - processPackages [gypsum-client]: executing diffoscope
+[2024-05-26 03:13:25] INFO root fetch - processPackages [gypsum-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gypsum_client-0.1.1.tar.gz tmp/gypsum_client-0.1.2.tar.gz --markdown 20240526/g/gypsum-client/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 03:13:25] INFO root fetch - processPackages [typeshed-stats]: Downloading https://files.pythonhosted.org/packages/12/9c/3413cab34257ffabc97495d19344272372fb85a1ce0e06936479f0ea5648/typeshed_stats-24.5.26.tar.gz
+[2024-05-26 03:13:25] INFO root fetch - processPackages [py-alpaca-daily-losers]: executing diffoscope
+[2024-05-26 03:13:25] INFO root fetch - processPackages [py-alpaca-daily-losers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_daily_losers-0.2.6.tar.gz tmp/py_alpaca_daily_losers-0.2.7.tar.gz --markdown 20240526/p/py-alpaca-daily-losers/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-26 03:13:25] INFO root fetch - processPackages [aviatrix-migration-nat]: Downloading https://files.pythonhosted.org/packages/a5/f1/afbc85547537c9fc243fd287facbdca6346a56251b681c75fba48417d0d3/aviatrix_migration_nat-0.9.1-cp39-cp39-win_amd64.whl
+[2024-05-26 03:13:25] INFO root fetch - processPackages [typeshed-stats]: executing diffoscope
+[2024-05-26 03:13:25] INFO root fetch - processPackages [typeshed-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typeshed_stats-24.5.23.tar.gz tmp/typeshed_stats-24.5.26.tar.gz --markdown 20240526/t/typeshed-stats/24.5.23-24.5.26/README.md --exclude *.pyd
+[2024-05-26 03:13:25] INFO root fetch - processPackages [aviatrix-migration-nat]: executing diffoscope
+[2024-05-26 03:13:25] INFO root fetch - processPackages [aviatrix-migration-nat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aviatrix_migration_nat-0.8.4-cp39-cp39-win_amd64.whl.zip tmp/aviatrix_migration_nat-0.9.1-cp39-cp39-win_amd64.whl.zip --markdown 20240526/a/aviatrix-migration-nat/0.8.4-0.9.1/README.md --exclude *.pyd
+[2024-05-26 03:13:26] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716673050.tar.gz]
+[2024-05-26 03:13:26] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716684593.tar.gz]
+[2024-05-26 03:13:26] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-26 03:13:26] INFO root fetch - processPackages [gypsum-client]: Remove: archive file [/home/abi/fetcher/tmp/gypsum_client-0.1.1.tar.gz]
+[2024-05-26 03:13:26] INFO root fetch - processPackages [gypsum-client]: Remove: archive file [/home/abi/fetcher/tmp/gypsum_client-0.1.2.tar.gz]
+[2024-05-26 03:13:26] INFO root fetch - main [MainThread]: End processing [gypsum-client]: success
+[2024-05-26 03:13:26] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-0.2.6.tar.gz]
+[2024-05-26 03:13:26] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-0.2.7.tar.gz]
+[2024-05-26 03:13:26] INFO root fetch - main [MainThread]: End processing [py-alpaca-daily-losers]: success
+[2024-05-26 03:13:26] INFO root fetch - processPackages [aviatrix-migration-nat]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_migration_nat-0.8.4-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 03:13:26] INFO root fetch - processPackages [aviatrix-migration-nat]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_migration_nat-0.9.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 03:13:26] INFO root fetch - main [MainThread]: End processing [aviatrix-migration-nat]: success
+[2024-05-26 03:13:27] INFO root fetch - processPackages [typeshed-stats]: Remove: archive file [/home/abi/fetcher/tmp/typeshed_stats-24.5.23.tar.gz]
+[2024-05-26 03:13:27] INFO root fetch - processPackages [typeshed-stats]: Remove: archive file [/home/abi/fetcher/tmp/typeshed_stats-24.5.26.tar.gz]
+[2024-05-26 03:13:27] INFO root fetch - main [MainThread]: End processing [typeshed-stats]: success
+[2024-05-26 03:13:27] INFO root fetch - main [MainThread]: Store serial: [23378905]
