@@ -14296,3 +14296,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:11:05] INFO root fetch - processPackages [aipkgs-notifications]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_notifications-1.0.2.tar.gz]
 [2024-05-26 18:11:05] INFO root fetch - main [MainThread]: End processing [aipkgs-notifications]: success
 [2024-05-26 18:11:05] INFO root fetch - main [MainThread]: Store serial: [23384578]
+[2024-05-26 18:13:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384578]
+[2024-05-26 18:13:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 18:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 18:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moval
+[2024-05-26 18:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-navitia-client
+[2024-05-26 18:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wiggle-camera
+[2024-05-26 18:13:13] WARNING root fetch - processPackages [python-navitia-client]: Skipping, unable to determine old version
+[2024-05-26 18:13:13] INFO root fetch - main [MainThread]: End processing [python-navitia-client] error
+[2024-05-26 18:13:13] INFO root fetch - processPackages [moval]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 18:13:13] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 18:13:14] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/8a/aa/b16fe864612aedce9b33655b5aa4b6529ca2716bc8af23353d0c5850bae7/moval-0.3.8.tar.gz
+[2024-05-26 18:13:14] INFO root fetch - processPackages [wiggle-camera]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 18:13:14] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 18:13:14] INFO root fetch - processPackages [wiggle-camera]: Downloading https://files.pythonhosted.org/packages/ab/05/2a011654ed28cb7277651adc21323178cf8f2c5df9029549b999ec37ebe2/wiggle_camera-0.0.1.tar.gz
+[2024-05-26 18:13:14] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/b4/3b/6db51dc55940cdbf87faccdbbdb0feff90bf5743a5ba796f48046c862b4b/moval-0.3.9.tar.gz
+[2024-05-26 18:13:14] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 18:13:14] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-05-26 18:13:14] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.3.8.tar.gz tmp/moval-0.3.9.tar.gz --markdown 20240526/m/moval/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 18:13:14] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 18:13:14] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 18:13:14] INFO root fetch - processPackages [wiggle-camera]: Downloading https://files.pythonhosted.org/packages/91/bb/e466a27ecc4efd36fe75d83f1dffc6a71c2d29f190af37faa2bfd4d1d809/wiggle_camera-0.0.2.tar.gz
+[2024-05-26 18:13:14] INFO root fetch - processPackages [wiggle-camera]: executing diffoscope
+[2024-05-26 18:13:14] INFO root fetch - processPackages [wiggle-camera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wiggle_camera-0.0.1.tar.gz tmp/wiggle_camera-0.0.2.tar.gz --markdown 20240526/w/wiggle-camera/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 18:13:15] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.8.tar.gz]
+[2024-05-26 18:13:15] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.9.tar.gz]
+[2024-05-26 18:13:15] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-05-26 18:13:15] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 18:13:15] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 18:13:15] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 18:13:15] INFO root fetch - processPackages [wiggle-camera]: Remove: archive file [/home/abi/fetcher/tmp/wiggle_camera-0.0.1.tar.gz]
+[2024-05-26 18:13:15] INFO root fetch - processPackages [wiggle-camera]: Remove: archive file [/home/abi/fetcher/tmp/wiggle_camera-0.0.2.tar.gz]
+[2024-05-26 18:13:15] INFO root fetch - main [MainThread]: End processing [wiggle-camera]: success
+[2024-05-26 18:13:15] INFO root fetch - main [MainThread]: Store serial: [23384590]
