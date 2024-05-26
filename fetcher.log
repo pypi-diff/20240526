@@ -6238,3 +6238,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:30:04] INFO root fetch - processPackages [RecoLul]: Remove: archive file [/home/abi/fetcher/tmp/RecoLul-1.9.0.tar.gz]
 [2024-05-26 10:30:04] INFO root fetch - main [MainThread]: End processing [RecoLul]: success
 [2024-05-26 10:30:04] INFO root fetch - main [MainThread]: Store serial: [23381037]
+[2024-05-26 10:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381037]
+[2024-05-26 10:32:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 10:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-textreadabilityscore
+[2024-05-26 10:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-reversegeocode
+[2024-05-26 10:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-salestaxlookup
+[2024-05-26 10:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cv-smart-house-camera
+[2024-05-26 10:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: altstore-proxy
+[2024-05-26 10:32:15] INFO root fetch - processPackages [altstore-proxy]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-05-26 10:32:15] INFO root fetch - processPackages [cv-smart-house-camera]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-26 10:32:15] WARNING root fetch - processPackages [apiverve-reversegeocode]: Skipping, unable to determine old version
+[2024-05-26 10:32:15] INFO root fetch - main [MainThread]: End processing [apiverve-reversegeocode] error
+[2024-05-26 10:32:15] WARNING root fetch - processPackages [apiverve-salestaxlookup]: Skipping, unable to determine old version
+[2024-05-26 10:32:15] INFO root fetch - main [MainThread]: End processing [apiverve-salestaxlookup] error
+[2024-05-26 10:32:15] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/f3/8d/c8df78ec613cf0304dc04d5f3ffe1e17314fd971a57ffd2c260c5129af8f/altstore_proxy-1.3.2.tar.gz
+[2024-05-26 10:32:15] WARNING root fetch - processPackages [apiverve-textreadabilityscore]: Skipping, unable to determine old version
+[2024-05-26 10:32:15] INFO root fetch - main [MainThread]: End processing [apiverve-textreadabilityscore] error
+[2024-05-26 10:32:15] INFO root fetch - processPackages [cv-smart-house-camera]: Downloading https://files.pythonhosted.org/packages/ca/a8/cda08a4e9e430b26088673d80b744ab5875b7897cfe5724b354a25468f48/cv_smart_house_camera-0.1.7.tar.gz
+[2024-05-26 10:32:15] INFO root fetch - processPackages [cv-smart-house-camera]: Downloading https://files.pythonhosted.org/packages/d0/ae/32a8916dea6fdb3437eba21e9a7967811650c5824e3fbbfe7a5d84a0d1af/cv_smart_house_camera-0.1.8.tar.gz
+[2024-05-26 10:32:15] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/c6/e9/fe14ec855c5dbe8ac754f4116ac26abbe9e501ac0c128e5875877d3ec883/altstore_proxy-1.3.3.tar.gz
+[2024-05-26 10:32:15] INFO root fetch - processPackages [cv-smart-house-camera]: executing diffoscope
+[2024-05-26 10:32:15] INFO root fetch - processPackages [cv-smart-house-camera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv_smart_house_camera-0.1.7.tar.gz tmp/cv_smart_house_camera-0.1.8.tar.gz --markdown 20240526/c/cv-smart-house-camera/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-26 10:32:16] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-26 10:32:16] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.3.2.tar.gz tmp/altstore_proxy-1.3.3.tar.gz --markdown 20240526/a/altstore-proxy/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-05-26 10:32:16] INFO root fetch - processPackages [cv-smart-house-camera]: Remove: archive file [/home/abi/fetcher/tmp/cv_smart_house_camera-0.1.7.tar.gz]
+[2024-05-26 10:32:16] INFO root fetch - processPackages [cv-smart-house-camera]: Remove: archive file [/home/abi/fetcher/tmp/cv_smart_house_camera-0.1.8.tar.gz]
+[2024-05-26 10:32:16] INFO root fetch - main [MainThread]: End processing [cv-smart-house-camera]: success
+[2024-05-26 10:32:16] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.3.2.tar.gz]
+[2024-05-26 10:32:16] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.3.3.tar.gz]
+[2024-05-26 10:32:16] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-26 10:32:16] INFO root fetch - main [MainThread]: Store serial: [23381058]
