@@ -14227,3 +14227,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:06:42] INFO root fetch - processPackages [people-local]: Remove: archive file [/home/abi/fetcher/tmp/people-local-0.0.9.tar.gz]
 [2024-05-26 18:06:42] INFO root fetch - main [MainThread]: End processing [people-local]: success
 [2024-05-26 18:06:42] INFO root fetch - main [MainThread]: Store serial: [23384546]
+[2024-05-26 18:08:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384546]
+[2024-05-26 18:08:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 18:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: windowsfetch
+[2024-05-26 18:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-26 18:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yfinance-cache
+[2024-05-26 18:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rio-ui
+[2024-05-26 18:08:51] INFO root fetch - processPackages [windowsfetch]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-26 18:08:51] INFO root fetch - processPackages [zenaura]: New version: [0.9.54] Old Version: [0.9.53]
+[2024-05-26 18:08:51] INFO root fetch - processPackages [rio-ui]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-05-26 18:08:51] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/aa/f6/63b65418701af24cd1be71aec4596f80b8dc6e22db91d44bfaec1a235253/zenaura-0.9.53.tar.gz
+[2024-05-26 18:08:51] INFO root fetch - processPackages [yfinance-cache]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-26 18:08:51] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/a1/41/4a63fae683fd7cceb7f5d9f0fd84cbe3776f64f9cd07b1d81af201bc5b76/rio_ui-0.8.2.tar.gz
+[2024-05-26 18:08:51] INFO root fetch - processPackages [windowsfetch]: Downloading https://files.pythonhosted.org/packages/62/43/343078e36dfaa3839af67c1c7857cd3305dc46df9ffaf21d1bc19adeb326/windowsfetch-1.0.0-py3-none-any.whl
+[2024-05-26 18:08:51] INFO root fetch - processPackages [yfinance-cache]: Downloading https://files.pythonhosted.org/packages/24/b9/a3f0ad34e89ce92c8429a8f98f0dbad237f851369da5e682f04d143a8bcb/yfinance_cache-0.6.2.tar.gz
+[2024-05-26 18:08:51] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/ec/10/57ca25ab0464266f3c2d254b82cfe0d2b7c07818f723755d6522500e91eb/rio_ui-0.8.3.tar.gz
+[2024-05-26 18:08:51] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/70/dd/45f4c1caa1a7c6584c8cd1f3777379e97ccdab4edc955a9e12de2457d923/zenaura-0.9.54.tar.gz
+[2024-05-26 18:08:51] INFO root fetch - processPackages [windowsfetch]: Downloading https://files.pythonhosted.org/packages/72/19/0a8be74c744574c7dda53d19e1b9964cd84a9c21b95e8d44751633530d71/windowsfetch-1.0.1.tar.gz
+[2024-05-26 18:08:51] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 18:08:51] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.53.tar.gz tmp/zenaura-0.9.54.tar.gz --markdown 20240526/z/zenaura/0.9.53-0.9.54/README.md --exclude *.pyd
+[2024-05-26 18:08:52] INFO root fetch - processPackages [yfinance-cache]: Downloading https://files.pythonhosted.org/packages/62/a1/c54e715207685c6e5e3f7660f1674f77fa40f3ae862104101ec95a1a25dc/yfinance_cache-0.6.3.tar.gz
+[2024-05-26 18:08:52] INFO root fetch - processPackages [windowsfetch]: executing diffoscope
+[2024-05-26 18:08:52] INFO root fetch - processPackages [windowsfetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windowsfetch-1.0.0-py3-none-any.whl.zip tmp/windowsfetch-1.0.1.tar.gz --markdown 20240526/w/windowsfetch/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-26 18:08:52] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-05-26 18:08:52] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.8.2.tar.gz tmp/rio_ui-0.8.3.tar.gz --markdown 20240526/r/rio-ui/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-05-26 18:08:52] INFO root fetch - processPackages [yfinance-cache]: executing diffoscope
+[2024-05-26 18:08:52] INFO root fetch - processPackages [yfinance-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yfinance_cache-0.6.2.tar.gz tmp/yfinance_cache-0.6.3.tar.gz --markdown 20240526/y/yfinance-cache/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-05-26 18:08:52] INFO root fetch - processPackages [windowsfetch]: Remove: archive file [/home/abi/fetcher/tmp/windowsfetch-1.0.0-py3-none-any.whl.zip]
+[2024-05-26 18:08:52] INFO root fetch - processPackages [windowsfetch]: Remove: archive file [/home/abi/fetcher/tmp/windowsfetch-1.0.1.tar.gz]
+[2024-05-26 18:08:52] INFO root fetch - main [MainThread]: End processing [windowsfetch]: success
+[2024-05-26 18:08:52] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.53.tar.gz]
+[2024-05-26 18:08:52] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.54.tar.gz]
+[2024-05-26 18:08:52] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 18:08:53] INFO root fetch - processPackages [yfinance-cache]: Remove: archive file [/home/abi/fetcher/tmp/yfinance_cache-0.6.2.tar.gz]
+[2024-05-26 18:08:53] INFO root fetch - processPackages [yfinance-cache]: Remove: archive file [/home/abi/fetcher/tmp/yfinance_cache-0.6.3.tar.gz]
+[2024-05-26 18:08:53] INFO root fetch - main [MainThread]: End processing [yfinance-cache]: success
+[2024-05-26 18:08:54] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.8.2.tar.gz]
+[2024-05-26 18:08:54] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.8.3.tar.gz]
+[2024-05-26 18:08:54] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-05-26 18:08:54] INFO root fetch - main [MainThread]: Store serial: [23384560]
