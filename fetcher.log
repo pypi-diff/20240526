@@ -21928,3 +21928,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:27:47] INFO root fetch - processPackages [adelie]: Remove: archive file [/home/abi/fetcher/tmp/adelie-1.1.32.dev1.tar.gz]
 [2024-05-26 23:27:47] INFO root fetch - main [MainThread]: End processing [adelie]: success
 [2024-05-26 23:27:47] INFO root fetch - main [MainThread]: Store serial: [23387947]
+[2024-05-26 23:29:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387947]
+[2024-05-26 23:29:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 23:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matematikk
+[2024-05-26 23:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: almax-common
+[2024-05-26 23:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nanodl
+[2024-05-26 23:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opteryx
+[2024-05-26 23:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ebrow
+[2024-05-26 23:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zenaura
+[2024-05-26 23:29:56] INFO root fetch - processPackages [zenaura]: New version: [0.9.85] Old Version: [0.9.84]
+[2024-05-26 23:29:56] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 23:29:56] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/af/90/48f3e7039993fe989b957aa974fdf7cac3bf7c9b86b9b27aaeb78488704d/zenaura-0.9.84.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [nanodl]: New version: [1.2.5.dev1] Old Version: [1.2.4.dev1]
+[2024-05-26 23:29:56] INFO root fetch - processPackages [almax-common]: New version: [0.8.2] Old Version: [0.7.0]
+[2024-05-26 23:29:56] INFO root fetch - processPackages [ebrow]: New version: [0.1.79] Old Version: [0.1.78]
+[2024-05-26 23:29:56] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [opteryx]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-26 23:29:56] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/b4/a2/1932b1aa45478a7b33140585eb9c9a30899ef94624b06645e52a6fe62869/zenaura-0.9.85.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [nanodl]: Downloading https://files.pythonhosted.org/packages/96/2d/3325abf90d1d44364287d8024c80538c8f70ac827ea45c9530ad7443c82c/nanodl-1.2.4.dev1.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/6f/d2/d7c74578b16fb861b552333d41e4547e578569efd3ca919677a735354952/almax_common-0.7.0.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [opteryx]: Downloading https://files.pythonhosted.org/packages/5e/91/765e2a472f1ca3feaa2526a4bbec45d770e3d67f120965da4092459d8d99/opteryx-0.9.2.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [ebrow]: Downloading https://files.pythonhosted.org/packages/4d/95/23e9e1616bf5028a6c6e5d904dcc021019ea3462c7aa9459318f78e86b5b/ebrow-0.1.78.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 23:29:56] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.84.tar.gz tmp/zenaura-0.9.85.tar.gz --markdown 20240526/z/zenaura/0.9.84-0.9.85/README.md --exclude *.pyd
+[2024-05-26 23:29:56] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 23:29:56] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 23:29:56] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/fb/03/556ddc4c0d02bdf4aaf91a865ccc0e407aa86d39521e68261c92d6cfcba8/almax_common-0.8.2.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [nanodl]: Downloading https://files.pythonhosted.org/packages/55/3c/55fb4e6cacb943feaa16943b62d6a91707fa10265f25fceb37b4586f146f/nanodl-1.2.5.dev1.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-05-26 23:29:56] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.7.0.tar.gz tmp/almax_common-0.8.2.tar.gz --markdown 20240526/a/almax-common/0.7.0-0.8.2/README.md --exclude *.pyd
+[2024-05-26 23:29:56] INFO root fetch - processPackages [opteryx]: Downloading https://files.pythonhosted.org/packages/64/71/44793ad728906cb5f308a98ffac1dea36c22000fac4080dd51bc5c9a0ef4/opteryx-0.9.3.tar.gz
+[2024-05-26 23:29:56] INFO root fetch - processPackages [nanodl]: executing diffoscope
+[2024-05-26 23:29:56] INFO root fetch - processPackages [nanodl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanodl-1.2.4.dev1.tar.gz tmp/nanodl-1.2.5.dev1.tar.gz --markdown 20240526/n/nanodl/1.2.4.dev1-1.2.5.dev1/README.md --exclude *.pyd
+[2024-05-26 23:29:56] INFO root fetch - processPackages [ebrow]: Downloading https://files.pythonhosted.org/packages/98/90/ac64fc61f195c02518d833b916f30cef6de4ecf7db49799872636e58609b/ebrow-0.1.79.tar.gz
+[2024-05-26 23:29:57] INFO root fetch - processPackages [opteryx]: executing diffoscope
+[2024-05-26 23:29:57] INFO root fetch - processPackages [opteryx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opteryx-0.9.2.tar.gz tmp/opteryx-0.9.3.tar.gz --markdown 20240526/o/opteryx/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-26 23:29:57] INFO root fetch - processPackages [ebrow]: executing diffoscope
+[2024-05-26 23:29:57] INFO root fetch - processPackages [ebrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebrow-0.1.78.tar.gz tmp/ebrow-0.1.79.tar.gz --markdown 20240526/e/ebrow/0.1.78-0.1.79/README.md --exclude *.pyd
+[2024-05-26 23:29:57] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.84.tar.gz]
+[2024-05-26 23:29:57] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.85.tar.gz]
+[2024-05-26 23:29:57] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 23:29:57] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.7.0.tar.gz]
+[2024-05-26 23:29:57] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.8.2.tar.gz]
+[2024-05-26 23:29:57] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-05-26 23:29:57] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 23:29:57] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 23:29:57] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 23:29:57] INFO root fetch - processPackages [nanodl]: Remove: archive file [/home/abi/fetcher/tmp/nanodl-1.2.4.dev1.tar.gz]
+[2024-05-26 23:29:57] INFO root fetch - processPackages [nanodl]: Remove: archive file [/home/abi/fetcher/tmp/nanodl-1.2.5.dev1.tar.gz]
+[2024-05-26 23:29:57] INFO root fetch - main [MainThread]: End processing [nanodl]: success
+[2024-05-26 23:29:58] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.2.tar.gz]
+[2024-05-26 23:29:58] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.3.tar.gz]
+[2024-05-26 23:29:58] INFO root fetch - main [MainThread]: End processing [opteryx]: success
+[2024-05-26 23:29:59] INFO root fetch - processPackages [ebrow]: Remove: archive file [/home/abi/fetcher/tmp/ebrow-0.1.78.tar.gz]
+[2024-05-26 23:29:59] INFO root fetch - processPackages [ebrow]: Remove: archive file [/home/abi/fetcher/tmp/ebrow-0.1.79.tar.gz]
+[2024-05-26 23:29:59] INFO root fetch - main [MainThread]: End processing [ebrow]: success
+[2024-05-26 23:29:59] INFO root fetch - main [MainThread]: Store serial: [23387973]
