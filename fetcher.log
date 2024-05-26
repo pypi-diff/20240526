@@ -14822,3 +14822,26 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:43:41] INFO root fetch - processPackages [inline-snapshot]: Remove: archive file [/home/abi/fetcher/tmp/inline_snapshot-0.9.0.tar.gz]
 [2024-05-26 18:43:41] INFO root fetch - main [MainThread]: End processing [inline-snapshot]: success
 [2024-05-26 18:43:41] INFO root fetch - main [MainThread]: Store serial: [23384860]
+[2024-05-26 18:45:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384860]
+[2024-05-26 18:45:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 18:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apeboiy
+[2024-05-26 18:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NetHyTech-DeepTTS
+[2024-05-26 18:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simscv
+[2024-05-26 18:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly-tpu
+[2024-05-26 18:45:49] INFO root fetch - processPackages [apeboiy]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 18:45:49] INFO root fetch - processPackages [apeboiy]: Downloading https://files.pythonhosted.org/packages/2c/d1/13ae5c5ceb0c97a91d946e1dd5fc329b3f384b59630ad259ab7ebe72713d/apeboiy-0.0.8.tar.gz
+[2024-05-26 18:45:50] WARNING root fetch - processPackages [simscv]: Skipping, unable to determine old version
+[2024-05-26 18:45:50] INFO root fetch - main [MainThread]: End processing [simscv] error
+[2024-05-26 18:45:50] WARNING root fetch - processPackages [NetHyTech-DeepTTS]: Skipping, unable to determine old version
+[2024-05-26 18:45:50] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240526] Old Version: [2.17.0.dev20240525]
+[2024-05-26 18:45:50] INFO root fetch - main [MainThread]: End processing [NetHyTech-DeepTTS] error
+[2024-05-26 18:45:50] INFO root fetch - processPackages [apeboiy]: Downloading https://files.pythonhosted.org/packages/04/42/a8230541f443842d5b00d865f7079650b8c865bda89a3de4ebc4010d0579/apeboiy-0.0.9.tar.gz
+[2024-05-26 18:45:50] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/0d/39/917503f11b9273ad5b9a287db4e581bc8705d9c28065c9f499b271ea77c2/tf_nightly_tpu-2.17.0.dev20240525-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-26 18:45:50] INFO root fetch - processPackages [apeboiy]: executing diffoscope
+[2024-05-26 18:45:50] INFO root fetch - processPackages [apeboiy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apeboiy-0.0.8.tar.gz tmp/apeboiy-0.0.9.tar.gz --markdown 20240526/a/apeboiy/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 18:45:50] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 224796843>=10485760
+[2024-05-26 18:45:50] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-05-26 18:45:50] INFO root fetch - processPackages [apeboiy]: Remove: archive file [/home/abi/fetcher/tmp/apeboiy-0.0.8.tar.gz]
+[2024-05-26 18:45:50] INFO root fetch - processPackages [apeboiy]: Remove: archive file [/home/abi/fetcher/tmp/apeboiy-0.0.9.tar.gz]
+[2024-05-26 18:45:50] INFO root fetch - main [MainThread]: End processing [apeboiy]: success
+[2024-05-26 18:45:50] INFO root fetch - main [MainThread]: Store serial: [23384880]
