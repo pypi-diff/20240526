@@ -5357,3 +5357,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:17:39] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev9.tar.gz]
 [2024-05-26 09:17:39] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-05-26 09:17:39] INFO root fetch - main [MainThread]: Store serial: [23380568]
+[2024-05-26 09:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380568]
+[2024-05-26 09:19:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 09:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GPTPlugins4All
+[2024-05-26 09:19:50] INFO root fetch - processPackages [GPTPlugins4All]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-26 09:19:50] INFO root fetch - processPackages [GPTPlugins4All]: Downloading https://files.pythonhosted.org/packages/5a/b5/97b0775cb4c951d2872d6c4e33db266a0dba4dc2207a3dbac7ed55f6b995/GPTPlugins4All-1.0.8.tar.gz
+[2024-05-26 09:19:50] INFO root fetch - processPackages [GPTPlugins4All]: Downloading https://files.pythonhosted.org/packages/fb/16/af06befd4a411c5c48cd6f713bca08893d0e33bde8c93250203608d1ef03/GPTPlugins4All-1.0.9.tar.gz
+[2024-05-26 09:19:51] INFO root fetch - processPackages [GPTPlugins4All]: executing diffoscope
+[2024-05-26 09:19:51] INFO root fetch - processPackages [GPTPlugins4All]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GPTPlugins4All-1.0.8.tar.gz tmp/GPTPlugins4All-1.0.9.tar.gz --markdown 20240526/G/GPTPlugins4All/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-26 09:19:51] INFO root fetch - processPackages [GPTPlugins4All]: Remove: archive file [/home/abi/fetcher/tmp/GPTPlugins4All-1.0.8.tar.gz]
+[2024-05-26 09:19:51] INFO root fetch - processPackages [GPTPlugins4All]: Remove: archive file [/home/abi/fetcher/tmp/GPTPlugins4All-1.0.9.tar.gz]
+[2024-05-26 09:19:51] INFO root fetch - main [MainThread]: End processing [GPTPlugins4All]: success
+[2024-05-26 09:19:51] INFO root fetch - main [MainThread]: Store serial: [23380571]
