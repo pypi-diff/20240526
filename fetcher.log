@@ -4038,3 +4038,42 @@
 [2024-05-26 07:21:58] WARNING root fetch - processPackages [windowsfetch]: Skipping, unable to determine old version
 [2024-05-26 07:21:58] INFO root fetch - main [MainThread]: End processing [windowsfetch] error
 [2024-05-26 07:21:58] INFO root fetch - main [MainThread]: Store serial: [23379952]
+[2024-05-26 07:24:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379952]
+[2024-05-26 07:24:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 07:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cambridge
+[2024-05-26 07:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: api-pipe
+[2024-05-26 07:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sh1106-framework
+[2024-05-26 07:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-cpp-agent
+[2024-05-26 07:24:06] INFO root fetch - processPackages [api-pipe]: New version: [2.0.12] Old Version: [2.0.10]
+[2024-05-26 07:24:06] INFO root fetch - processPackages [llama-cpp-agent]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 07:24:06] INFO root fetch - processPackages [cambridge]: New version: [3.9.9] Old Version: [3.9.8]
+[2024-05-26 07:24:06] INFO root fetch - processPackages [sh1106-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 07:24:06] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/2f/a8/767295a52d04e5682cc9cad99b68bb7444178ccc8742c2c8840d6e5987ec/api_pipe-2.0.10.tar.gz
+[2024-05-26 07:24:06] INFO root fetch - processPackages [cambridge]: Downloading https://files.pythonhosted.org/packages/1a/6c/f6eac9a9a3c73dffe3d4cf7f2a1eb667444409b93eadf6759403b2fd04f0/cambridge-3.9.8.tar.gz
+[2024-05-26 07:24:06] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/a0/ba/e28b4ffe7b86f6d15ba5b9672537e66bc8273c02bbb8fa06f1337493886a/llama_cpp_agent-0.2.8.tar.gz
+[2024-05-26 07:24:07] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/bf/c1/e72ec5d95c21e71734f47fa5dd569d03a2097eb8b4124593e4af702db395/sh1106_framework-0.0.8.tar.gz
+[2024-05-26 07:24:07] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/57/7f/641ed7d2a39fc883b95a494b1ca405dbd3d5bf5841467f2d05b73a3882cc/api_pipe-2.0.12.tar.gz
+[2024-05-26 07:24:07] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/e5/bb/9a16b289d7453095ab2485d73acf22968e24e78ddee8f364f962860bc7e1/llama_cpp_agent-0.2.9.tar.gz
+[2024-05-26 07:24:07] INFO root fetch - processPackages [cambridge]: Downloading https://files.pythonhosted.org/packages/ba/7b/9c8dd2b5cf61b8ce1c5534fbe54410490464d40a63be4aa7c8964c61e97c/cambridge-3.9.9.tar.gz
+[2024-05-26 07:24:07] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-05-26 07:24:07] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.10.tar.gz tmp/api_pipe-2.0.12.tar.gz --markdown 20240526/a/api-pipe/2.0.10-2.0.12/README.md --exclude *.pyd
+[2024-05-26 07:24:07] INFO root fetch - processPackages [llama-cpp-agent]: executing diffoscope
+[2024-05-26 07:24:07] INFO root fetch - processPackages [llama-cpp-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_agent-0.2.8.tar.gz tmp/llama_cpp_agent-0.2.9.tar.gz --markdown 20240526/l/llama-cpp-agent/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 07:24:07] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/88/50/3df455715deaa8fb585713096cd6c9e7e34fb43adbbe4643b34f6cf5b423/sh1106_framework-0.0.9.tar.gz
+[2024-05-26 07:24:07] INFO root fetch - processPackages [cambridge]: executing diffoscope
+[2024-05-26 07:24:07] INFO root fetch - processPackages [cambridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cambridge-3.9.8.tar.gz tmp/cambridge-3.9.9.tar.gz --markdown 20240526/c/cambridge/3.9.8-3.9.9/README.md --exclude *.pyd
+[2024-05-26 07:24:07] INFO root fetch - processPackages [sh1106-framework]: executing diffoscope
+[2024-05-26 07:24:07] INFO root fetch - processPackages [sh1106-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh1106_framework-0.0.8.tar.gz tmp/sh1106_framework-0.0.9.tar.gz --markdown 20240526/s/sh1106-framework/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 07:24:07] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.10.tar.gz]
+[2024-05-26 07:24:07] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.12.tar.gz]
+[2024-05-26 07:24:07] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-05-26 07:24:08] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.8.tar.gz]
+[2024-05-26 07:24:08] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.9.tar.gz]
+[2024-05-26 07:24:08] INFO root fetch - main [MainThread]: End processing [sh1106-framework]: success
+[2024-05-26 07:24:08] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.8.tar.gz]
+[2024-05-26 07:24:08] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.9.tar.gz]
+[2024-05-26 07:24:08] INFO root fetch - main [MainThread]: End processing [llama-cpp-agent]: success
+[2024-05-26 07:24:08] INFO root fetch - processPackages [cambridge]: Remove: archive file [/home/abi/fetcher/tmp/cambridge-3.9.8.tar.gz]
+[2024-05-26 07:24:08] INFO root fetch - processPackages [cambridge]: Remove: archive file [/home/abi/fetcher/tmp/cambridge-3.9.9.tar.gz]
+[2024-05-26 07:24:08] INFO root fetch - main [MainThread]: End processing [cambridge]: success
+[2024-05-26 07:24:08] INFO root fetch - main [MainThread]: Store serial: [23379966]
