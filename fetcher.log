@@ -3005,3 +3005,15 @@
 [2024-05-26 05:33:57] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-05-26 05:33:57] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-05-26 05:33:57] INFO root fetch - main [MainThread]: Store serial: [23379459]
+[2024-05-26 05:36:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379459]
+[2024-05-26 05:36:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 05:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eras
+[2024-05-26 05:36:06] INFO root fetch - processPackages [eras]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-26 05:36:06] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/1a/4f/64b9240649580cd7c1ee39d148031c6161a419b2879c9ef5c368d8d10c4a/eras-0.4.1.tar.gz
+[2024-05-26 05:36:07] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/62/31/253985310b88b2ebfb6368bf69dd3803eb90ab0be68cc1e5ac1c5dd9c399/eras-0.4.2.tar.gz
+[2024-05-26 05:36:07] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-26 05:36:07] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.4.1.tar.gz tmp/eras-0.4.2.tar.gz --markdown 20240526/e/eras/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-26 05:36:08] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.4.1.tar.gz]
+[2024-05-26 05:36:08] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.4.2.tar.gz]
+[2024-05-26 05:36:08] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-26 05:36:08] INFO root fetch - main [MainThread]: Store serial: [23379462]
