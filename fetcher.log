@@ -11913,3 +11913,67 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:09:49] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-26 16:09:49] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-26 16:09:49] INFO root fetch - main [MainThread]: Store serial: [23383629]
+[2024-05-26 16:12:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383629]
+[2024-05-26 16:12:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 16:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 16:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpl-ascii
+[2024-05-26 16:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sanghyunjo
+[2024-05-26 16:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dycw-utilities
+[2024-05-26 16:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yeref
+[2024-05-26 16:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: burny_common
+[2024-05-26 16:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: funky-modifiers
+[2024-05-26 16:12:18] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-05-26 16:12:18] INFO root fetch - processPackages [burny_common]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 16:12:18] INFO root fetch - processPackages [mpl-ascii]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-26 16:12:18] INFO root fetch - processPackages [funky-modifiers]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-05-26 16:12:18] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 16:12:18] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 16:12:18] INFO root fetch - processPackages [burny_common]: Downloading https://files.pythonhosted.org/packages/cb/fd/94afdbbfe96bf985cb8f2ce4990fbac907749bef1b4babc81ee01556590f/burny_common-0.0.8.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [sanghyunjo]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-26 16:12:18] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/29/ae/fcadd955de258a78d8bb7148994444c69ecd0cd4cb50b8ffe7ac16bdd837/funky_modifiers-0.2.0.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/00/4d/0fa534913c49e90b33083de6ab7aff0145cda0ef70ff46397dc89aae26b3/mpl_ascii-0.6.3.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [sanghyunjo]: Downloading https://files.pythonhosted.org/packages/88/6e/72436adaa416cf72bfe16079cf3b9ca681a5f39f547d8a6eaaf08ff7ce55/sanghyunjo-1.3.0.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [burny_common]: Downloading https://files.pythonhosted.org/packages/23/4a/2559afa35b918543da5f953ce7a09cf3629307828fa528048b38ac26e8a1/burny_common-0.0.9.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/c4/4b/f53217aae4b01bd6c1cc1642e24bc2665b61ab32c9e871bd2a1446965b61/funky_modifiers-0.2.2.tar.gz
+[2024-05-26 16:12:18] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/47/81/81aedaec8e879b730090cea33b22485cf3180ab01895f39aa0b403d40897/mpl_ascii-0.6.4.tar.gz
+[2024-05-26 16:12:19] INFO root fetch - processPackages [burny_common]: executing diffoscope
+[2024-05-26 16:12:19] INFO root fetch - processPackages [burny_common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burny_common-0.0.8.tar.gz tmp/burny_common-0.0.9.tar.gz --markdown 20240526/b/burny_common/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 16:12:19] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 16:12:19] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 16:12:19] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-05-26 16:12:19] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-26 16:12:19] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.2.0.tar.gz tmp/funky_modifiers-0.2.2.tar.gz --markdown 20240526/f/funky-modifiers/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-05-26 16:12:19] INFO root fetch - processPackages [mpl-ascii]: executing diffoscope
+[2024-05-26 16:12:19] INFO root fetch - processPackages [mpl-ascii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpl_ascii-0.6.3.tar.gz tmp/mpl_ascii-0.6.4.tar.gz --markdown 20240526/m/mpl-ascii/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-26 16:12:19] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 16:12:19] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 16:12:19] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-05-26 16:12:19] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240526/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-05-26 16:12:19] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 16:12:19] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 16:12:19] INFO root fetch - processPackages [sanghyunjo]: Downloading https://files.pythonhosted.org/packages/a0/8f/9c76d3ce997379eb898a79693f4c28831db3dfeeea0cc1a8f0dfe5ff6f8c/sanghyunjo-1.4.0.tar.gz
+[2024-05-26 16:12:19] INFO root fetch - processPackages [sanghyunjo]: executing diffoscope
+[2024-05-26 16:12:19] INFO root fetch - processPackages [sanghyunjo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sanghyunjo-1.3.0.tar.gz tmp/sanghyunjo-1.4.0.tar.gz --markdown 20240526/s/sanghyunjo/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-26 16:12:19] INFO root fetch - processPackages [burny_common]: Remove: archive file [/home/abi/fetcher/tmp/burny_common-0.0.8.tar.gz]
+[2024-05-26 16:12:19] INFO root fetch - processPackages [burny_common]: Remove: archive file [/home/abi/fetcher/tmp/burny_common-0.0.9.tar.gz]
+[2024-05-26 16:12:19] INFO root fetch - main [MainThread]: End processing [burny_common]: success
+[2024-05-26 16:12:19] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.0.tar.gz]
+[2024-05-26 16:12:19] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.2.tar.gz]
+[2024-05-26 16:12:19] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-26 16:12:20] INFO root fetch - processPackages [sanghyunjo]: Remove: archive file [/home/abi/fetcher/tmp/sanghyunjo-1.3.0.tar.gz]
+[2024-05-26 16:12:20] INFO root fetch - processPackages [sanghyunjo]: Remove: archive file [/home/abi/fetcher/tmp/sanghyunjo-1.4.0.tar.gz]
+[2024-05-26 16:12:20] INFO root fetch - main [MainThread]: End processing [sanghyunjo]: success
+[2024-05-26 16:12:20] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 16:12:20] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 16:12:20] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 16:12:20] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 16:12:20] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-05-26 16:12:20] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-05-26 16:12:20] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-05-26 16:12:20] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.3.tar.gz]
+[2024-05-26 16:12:20] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.4.tar.gz]
+[2024-05-26 16:12:20] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
+[2024-05-26 16:12:20] INFO root fetch - main [MainThread]: Store serial: [23383652]
