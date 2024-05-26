@@ -14090,3 +14090,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:55:51] INFO root fetch - processPackages [bimmer-connected]: Remove: archive file [/home/abi/fetcher/tmp/bimmer_connected-0.9.6.tar.gz]
 [2024-05-26 17:55:51] INFO root fetch - main [MainThread]: End processing [bimmer-connected]: success
 [2024-05-26 17:55:51] INFO root fetch - main [MainThread]: Store serial: [23384484]
+[2024-05-26 17:57:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384484]
+[2024-05-26 17:57:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 17:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysimplecli
+[2024-05-26 17:57:59] INFO root fetch - processPackages [pysimplecli]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-26 17:58:00] INFO root fetch - processPackages [pysimplecli]: Downloading https://files.pythonhosted.org/packages/6b/4e/fadd1bbfbe483ec3a521804b8a5a5102d030fc4ef0bf0cd2d470ccb41db9/pysimplecli-1.0.3.tar.gz
+[2024-05-26 17:58:00] INFO root fetch - processPackages [pysimplecli]: Downloading https://files.pythonhosted.org/packages/4f/2c/e83fd4b05d271bf13b1d9f9dad5bab444f37e08b21f55887a3bbb0b3c83a/pysimplecli-1.0.4.tar.gz
+[2024-05-26 17:58:00] INFO root fetch - processPackages [pysimplecli]: executing diffoscope
+[2024-05-26 17:58:00] INFO root fetch - processPackages [pysimplecli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysimplecli-1.0.3.tar.gz tmp/pysimplecli-1.0.4.tar.gz --markdown 20240526/p/pysimplecli/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-26 17:58:01] INFO root fetch - processPackages [pysimplecli]: Remove: archive file [/home/abi/fetcher/tmp/pysimplecli-1.0.3.tar.gz]
+[2024-05-26 17:58:01] INFO root fetch - processPackages [pysimplecli]: Remove: archive file [/home/abi/fetcher/tmp/pysimplecli-1.0.4.tar.gz]
+[2024-05-26 17:58:01] INFO root fetch - main [MainThread]: End processing [pysimplecli]: success
+[2024-05-26 17:58:01] INFO root fetch - main [MainThread]: Store serial: [23384487]
