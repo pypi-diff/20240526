@@ -8182,3 +8182,26 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:33:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
 [2024-05-26 11:33:15] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-26 11:33:15] INFO root fetch - main [MainThread]: Store serial: [23381824]
+[2024-05-26 11:35:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381824]
+[2024-05-26 11:35:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 11:37:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381824]
+[2024-05-26 11:37:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 11:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trash-cli
+[2024-05-26 11:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xssbase
+[2024-05-26 11:37:32] INFO root fetch - processPackages [xssbase]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-26 11:37:32] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/6d/54/c8eb4481efd4a4deee1076c564669a6ee8717e1d7cd976d1b8688b786e0c/xssbase-1.0.7.tar.gz
+[2024-05-26 11:37:32] INFO root fetch - processPackages [trash-cli]: New version: [0.24.5.26] Old Version: [0.24.4.17]
+[2024-05-26 11:37:33] INFO root fetch - processPackages [trash-cli]: Downloading https://files.pythonhosted.org/packages/6b/2c/40b5a7f7623986d784272290eedf6add4c266798ab92d0ab11b1e24aedc2/trash_cli-0.24.4.17.tar.gz
+[2024-05-26 11:37:33] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/20/32/d0c211d080e6ecfd372d0254c511059e51404087645e39d3558bf6d1c4bf/xssbase-1.0.8.tar.gz
+[2024-05-26 11:37:33] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 11:37:33] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-1.0.7.tar.gz tmp/xssbase-1.0.8.tar.gz --markdown 20240526/x/xssbase/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-26 11:37:33] INFO root fetch - processPackages [trash-cli]: Downloading https://files.pythonhosted.org/packages/f7/6c/d51b36377c35e4f9e69af4d8b61a920f26251483cdc0165f5513da7aefeb/trash_cli-0.24.5.26.tar.gz
+[2024-05-26 11:37:33] INFO root fetch - processPackages [trash-cli]: executing diffoscope
+[2024-05-26 11:37:33] INFO root fetch - processPackages [trash-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trash_cli-0.24.4.17.tar.gz tmp/trash_cli-0.24.5.26.tar.gz --markdown 20240526/t/trash-cli/0.24.4.17-0.24.5.26/README.md --exclude *.pyd
+[2024-05-26 11:37:33] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.7.tar.gz]
+[2024-05-26 11:37:33] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.8.tar.gz]
+[2024-05-26 11:37:33] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 11:37:34] INFO root fetch - processPackages [trash-cli]: Remove: archive file [/home/abi/fetcher/tmp/trash_cli-0.24.4.17.tar.gz]
+[2024-05-26 11:37:34] INFO root fetch - processPackages [trash-cli]: Remove: archive file [/home/abi/fetcher/tmp/trash_cli-0.24.5.26.tar.gz]
+[2024-05-26 11:37:34] INFO root fetch - main [MainThread]: End processing [trash-cli]: success
+[2024-05-26 11:37:34] INFO root fetch - main [MainThread]: Store serial: [23381830]
