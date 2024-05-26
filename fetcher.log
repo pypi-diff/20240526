@@ -7180,3 +7180,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:39:30] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev9.tar.gz]
 [2024-05-26 10:39:30] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-05-26 10:39:30] INFO root fetch - main [MainThread]: Store serial: [23381390]
+[2024-05-26 10:41:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381390]
+[2024-05-26 10:41:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 10:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: icemammoth-common
+[2024-05-26 10:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GraphRetrieval
+[2024-05-26 10:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weaver-ai-tools
+[2024-05-26 10:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inoutlists
+[2024-05-26 10:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: instagram-profile-downloader
+[2024-05-26 10:41:42] WARNING root fetch - processPackages [icemammoth-common]: Skipping, unable to determine old version
+[2024-05-26 10:41:42] INFO root fetch - main [MainThread]: End processing [icemammoth-common] error
+[2024-05-26 10:41:42] INFO root fetch - processPackages [weaver-ai-tools]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 10:41:42] INFO root fetch - processPackages [instagram-profile-downloader]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-26 10:41:42] INFO root fetch - processPackages [GraphRetrieval]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-26 10:41:42] INFO root fetch - processPackages [inoutlists]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 10:41:42] INFO root fetch - processPackages [instagram-profile-downloader]: Downloading https://files.pythonhosted.org/packages/b6/44/6eb1207aa30490f64098376d0e98d766dd1f7d6e58f14a4f305f02bef561/instagram_profile_downloader-1.1.3.tar.gz
+[2024-05-26 10:41:42] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/10/9a/b4d9f1c3168fe7569f236209756d08359278d84baca5b96e913673686092/graphretrieval-0.1.7.tar.gz
+[2024-05-26 10:41:42] INFO root fetch - processPackages [weaver-ai-tools]: Downloading https://files.pythonhosted.org/packages/da/25/586119bbf202da1da6632aeb2ace6288e934cda922bd31c66883a4f64dc8/weaver-ai-tools-0.0.1.tar.gz
+[2024-05-26 10:41:42] INFO root fetch - processPackages [inoutlists]: Downloading https://files.pythonhosted.org/packages/6b/46/841c2d73bb6c1da0a0af61b131f64ac5159cecb01c42ce9414229684585e/inoutlists-0.0.1.tar.gz
+[2024-05-26 10:41:42] INFO root fetch - processPackages [instagram-profile-downloader]: Downloading https://files.pythonhosted.org/packages/a4/0e/649280dadc0c85be0d863e14eb8d172e840231c74a363c07b19507afb14e/instagram_profile_downloader-1.1.4.tar.gz
+[2024-05-26 10:41:42] INFO root fetch - processPackages [instagram-profile-downloader]: executing diffoscope
+[2024-05-26 10:41:42] INFO root fetch - processPackages [instagram-profile-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instagram_profile_downloader-1.1.3.tar.gz tmp/instagram_profile_downloader-1.1.4.tar.gz --markdown 20240526/i/instagram-profile-downloader/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-26 10:41:42] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/34/bc/219ccb263c27a4627201431393862061c2698dd20499fd2301f2613a5cd0/graphretrieval-0.1.8.tar.gz
+[2024-05-26 10:41:42] INFO root fetch - processPackages [weaver-ai-tools]: Downloading https://files.pythonhosted.org/packages/63/7a/c4749f9f27da9c138dbd91405aa9fdda53d24223566ace16be5c9c9e3d6f/weaver-ai-tools-0.0.2.tar.gz
+[2024-05-26 10:41:42] INFO root fetch - processPackages [GraphRetrieval]: executing diffoscope
+[2024-05-26 10:41:42] INFO root fetch - processPackages [GraphRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphretrieval-0.1.7.tar.gz tmp/graphretrieval-0.1.8.tar.gz --markdown 20240526/G/GraphRetrieval/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-26 10:41:42] INFO root fetch - processPackages [inoutlists]: Downloading https://files.pythonhosted.org/packages/93/4c/ca9f1af43b6eda5fdd242c284bd6575ec2ab0dcdab2280b67523f56e2de0/inoutlists-0.0.2.tar.gz
+[2024-05-26 10:41:42] INFO root fetch - processPackages [weaver-ai-tools]: executing diffoscope
+[2024-05-26 10:41:42] INFO root fetch - processPackages [weaver-ai-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weaver-ai-tools-0.0.1.tar.gz tmp/weaver-ai-tools-0.0.2.tar.gz --markdown 20240526/w/weaver-ai-tools/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 10:41:42] INFO root fetch - processPackages [inoutlists]: executing diffoscope
+[2024-05-26 10:41:42] INFO root fetch - processPackages [inoutlists]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inoutlists-0.0.1.tar.gz tmp/inoutlists-0.0.2.tar.gz --markdown 20240526/i/inoutlists/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 10:41:43] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.1.3.tar.gz]
+[2024-05-26 10:41:43] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.1.4.tar.gz]
+[2024-05-26 10:41:43] INFO root fetch - main [MainThread]: End processing [instagram-profile-downloader]: success
+[2024-05-26 10:41:43] INFO root fetch - processPackages [weaver-ai-tools]: Remove: archive file [/home/abi/fetcher/tmp/weaver-ai-tools-0.0.1.tar.gz]
+[2024-05-26 10:41:43] INFO root fetch - processPackages [weaver-ai-tools]: Remove: archive file [/home/abi/fetcher/tmp/weaver-ai-tools-0.0.2.tar.gz]
+[2024-05-26 10:41:43] INFO root fetch - main [MainThread]: End processing [weaver-ai-tools]: success
+[2024-05-26 10:41:43] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.7.tar.gz]
+[2024-05-26 10:41:43] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.8.tar.gz]
+[2024-05-26 10:41:43] INFO root fetch - main [MainThread]: End processing [GraphRetrieval]: success
+[2024-05-26 10:41:43] INFO root fetch - processPackages [inoutlists]: Remove: archive file [/home/abi/fetcher/tmp/inoutlists-0.0.1.tar.gz]
+[2024-05-26 10:41:43] INFO root fetch - processPackages [inoutlists]: Remove: archive file [/home/abi/fetcher/tmp/inoutlists-0.0.2.tar.gz]
+[2024-05-26 10:41:43] INFO root fetch - main [MainThread]: End processing [inoutlists]: success
+[2024-05-26 10:41:43] INFO root fetch - main [MainThread]: Store serial: [23381405]
