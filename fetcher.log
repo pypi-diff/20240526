@@ -9818,3 +9818,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:43:46] INFO root fetch - processPackages [spaceone-api]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-api-2.0.dev89.tar.gz]
 [2024-05-26 13:43:46] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
 [2024-05-26 13:43:46] INFO root fetch - main [MainThread]: Store serial: [23382580]
+[2024-05-26 13:45:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382580]
+[2024-05-26 13:45:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 13:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onceuponai
+[2024-05-26 13:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: database-mysql-local
+[2024-05-26 13:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kal-utils
+[2024-05-26 13:45:59] WARNING root fetch - processPackages [kal-utils]: Skipping, unable to determine old version
+[2024-05-26 13:45:59] INFO root fetch - main [MainThread]: End processing [kal-utils] error
+[2024-05-26 13:45:59] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.336] Old Version: [0.0.335]
+[2024-05-26 13:45:59] INFO root fetch - processPackages [onceuponai]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 13:45:59] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/13/9c/decdf96a8232d9487935c3286fc06540569bf7795a7df5f84239b4d8324d/database_mysql_local-0.0.335.tar.gz
+[2024-05-26 13:45:59] INFO root fetch - processPackages [onceuponai]: Downloading https://files.pythonhosted.org/packages/71/17/30646c0b22c4171ae4f21742601f1a51072e9c51cd3eb7915977aabf96e6/onceuponai-0.0.1-cp310-cp310-manylinux_2_34_x86_64.whl
+[2024-05-26 13:45:59] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/b6/26/c2e4011de7b05b6cd2a86dd78f711506e9f7d81ce829f5135fb53359716d/database_mysql_local-0.0.336.tar.gz
+[2024-05-26 13:46:00] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 13:46:00] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.335.tar.gz tmp/database_mysql_local-0.0.336.tar.gz --markdown 20240526/d/database-mysql-local/0.0.335-0.0.336/README.md --exclude *.pyd
+[2024-05-26 13:46:00] INFO root fetch - processPackages [onceuponai]: Downloading https://files.pythonhosted.org/packages/ba/32/631c9992b731fc5745b7ed6b2591c9baeb1b111e8c0697a97006fc5f05dc/onceuponai-0.0.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-26 13:46:00] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.335.tar.gz]
+[2024-05-26 13:46:00] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.336.tar.gz]
+[2024-05-26 13:46:00] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 13:46:00] INFO root fetch - processPackages [onceuponai]: executing diffoscope
+[2024-05-26 13:46:00] INFO root fetch - processPackages [onceuponai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onceuponai-0.0.1-cp310-cp310-manylinux_2_34_x86_64.whl.zip tmp/onceuponai-0.0.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240526/o/onceuponai/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 13:46:02] INFO root fetch - processPackages [onceuponai]: Remove: archive file [/home/abi/fetcher/tmp/onceuponai-0.0.1-cp310-cp310-manylinux_2_34_x86_64.whl.zip]
+[2024-05-26 13:46:02] INFO root fetch - processPackages [onceuponai]: Remove: archive file [/home/abi/fetcher/tmp/onceuponai-0.0.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-26 13:46:02] INFO root fetch - main [MainThread]: End processing [onceuponai]: success
+[2024-05-26 13:46:02] INFO root fetch - main [MainThread]: Store serial: [23382588]
