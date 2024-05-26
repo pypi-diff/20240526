@@ -9946,3 +9946,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:55:03] INFO root fetch - processPackages [aloha]: Remove: archive file [/home/abi/fetcher/tmp/aloha-2024.526.1153.tar.gz]
 [2024-05-26 13:55:03] INFO root fetch - main [MainThread]: End processing [aloha]: success
 [2024-05-26 13:55:03] INFO root fetch - main [MainThread]: Store serial: [23382637]
+[2024-05-26 13:57:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382637]
+[2024-05-26 13:57:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 13:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyDEMATEL-Package
+[2024-05-26 13:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pih-plb-db
+[2024-05-26 13:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctm-python-client
+[2024-05-26 13:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neura-library
+[2024-05-26 13:57:17] INFO root fetch - processPackages [pih-plb-db]: New version: [0.21] Old Version: [0.20.5]
+[2024-05-26 13:57:17] INFO root fetch - processPackages [pih-plb-db]: Downloading https://files.pythonhosted.org/packages/f7/38/73da801a4d5b1c4d57b6f0308d3f9e0f2a6afe0dfb03ec2b2a4533a32769/pih-plb_db-0.20.5.tar.gz
+[2024-05-26 13:57:17] WARNING root fetch - processPackages [pyDEMATEL-Package]: Skipping, unable to determine old version
+[2024-05-26 13:57:17] INFO root fetch - main [MainThread]: End processing [pyDEMATEL-Package] error
+[2024-05-26 13:57:17] INFO root fetch - processPackages [ctm-python-client]: New version: [2.2.6] Old Version: [2.2.5]
+[2024-05-26 13:57:17] INFO root fetch - processPackages [neura-library]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 13:57:17] INFO root fetch - processPackages [pih-plb-db]: Downloading https://files.pythonhosted.org/packages/10/7f/a865afb2cfa38a1b1d0fe2e35175666b30ac5a8dba2b83888f7108937110/pih-plb_db-0.21.tar.gz
+[2024-05-26 13:57:17] INFO root fetch - processPackages [ctm-python-client]: Downloading https://files.pythonhosted.org/packages/08/20/4bc6ee672f156e41198a86d22a21082cccef256117866b9e5d78e46bcf37/ctm-python-client-2.2.5.tar.gz
+[2024-05-26 13:57:17] INFO root fetch - processPackages [neura-library]: Downloading https://files.pythonhosted.org/packages/a1/33/10a2cf596fed66209fc4d4510c3d0725e05766711ebd0ac34781a94f865e/neura_library-0.0.5.tar.gz
+[2024-05-26 13:57:18] INFO root fetch - processPackages [pih-plb-db]: executing diffoscope
+[2024-05-26 13:57:18] INFO root fetch - processPackages [pih-plb-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pih-plb_db-0.20.5.tar.gz tmp/pih-plb_db-0.21.tar.gz --markdown 20240526/p/pih-plb-db/0.20.5-0.21/README.md --exclude *.pyd
+[2024-05-26 13:57:18] INFO root fetch - processPackages [ctm-python-client]: Downloading https://files.pythonhosted.org/packages/29/bb/2df9acc8b5b7e086556365cd6cae76d3dd787d9c2deb779229064836068a/ctm-python-client-2.2.6.tar.gz
+[2024-05-26 13:57:18] INFO root fetch - processPackages [neura-library]: Downloading https://files.pythonhosted.org/packages/21/e1/d2f00309965484cf47af849d072e884047abbdde5b39341ed7067296decd/neura_library-0.0.6.tar.gz
+[2024-05-26 13:57:18] INFO root fetch - processPackages [ctm-python-client]: executing diffoscope
+[2024-05-26 13:57:18] INFO root fetch - processPackages [ctm-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctm-python-client-2.2.5.tar.gz tmp/ctm-python-client-2.2.6.tar.gz --markdown 20240526/c/ctm-python-client/2.2.5-2.2.6/README.md --exclude *.pyd
+[2024-05-26 13:57:18] INFO root fetch - processPackages [neura-library]: executing diffoscope
+[2024-05-26 13:57:18] INFO root fetch - processPackages [neura-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neura_library-0.0.5.tar.gz tmp/neura_library-0.0.6.tar.gz --markdown 20240526/n/neura-library/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 13:57:18] INFO root fetch - processPackages [pih-plb-db]: Remove: archive file [/home/abi/fetcher/tmp/pih-plb_db-0.20.5.tar.gz]
+[2024-05-26 13:57:18] INFO root fetch - processPackages [pih-plb-db]: Remove: archive file [/home/abi/fetcher/tmp/pih-plb_db-0.21.tar.gz]
+[2024-05-26 13:57:18] INFO root fetch - main [MainThread]: End processing [pih-plb-db]: success
+[2024-05-26 13:57:19] INFO root fetch - processPackages [neura-library]: Remove: archive file [/home/abi/fetcher/tmp/neura_library-0.0.5.tar.gz]
+[2024-05-26 13:57:19] INFO root fetch - processPackages [neura-library]: Remove: archive file [/home/abi/fetcher/tmp/neura_library-0.0.6.tar.gz]
+[2024-05-26 13:57:19] INFO root fetch - main [MainThread]: End processing [neura-library]: success
+[2024-05-26 13:57:21] INFO root fetch - processPackages [ctm-python-client]: Remove: archive file [/home/abi/fetcher/tmp/ctm-python-client-2.2.5.tar.gz]
+[2024-05-26 13:57:21] INFO root fetch - processPackages [ctm-python-client]: Remove: archive file [/home/abi/fetcher/tmp/ctm-python-client-2.2.6.tar.gz]
+[2024-05-26 13:57:21] INFO root fetch - main [MainThread]: End processing [ctm-python-client]: success
+[2024-05-26 13:57:21] INFO root fetch - main [MainThread]: Store serial: [23382655]
