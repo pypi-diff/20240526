@@ -12847,3 +12847,75 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:56:20] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-26 16:56:20] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-26 16:56:20] INFO root fetch - main [MainThread]: Store serial: [23383973]
+[2024-05-26 16:58:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383973]
+[2024-05-26 16:58:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: e4ting
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-shutdown-hook
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bota
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: database-mysql-local
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: playwright-network-spy
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: monzo-utils
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mnists
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: GameStorageAPI
+[2024-05-26 16:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: npeccv6
+[2024-05-26 16:58:29] INFO root fetch - processPackages [bota]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 16:58:29] INFO root fetch - processPackages [monzo-utils]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 16:58:29] INFO root fetch - processPackages [e4ting]: New version: [1.1.3485] Old Version: [1.1.3319]
+[2024-05-26 16:58:29] INFO root fetch - processPackages [GameStorageAPI]: New version: [0.1.13] Old Version: [0.0.13]
+[2024-05-26 16:58:29] WARNING root fetch - processPackages [nonebot-plugin-shutdown-hook]: Skipping, unable to determine old version
+[2024-05-26 16:58:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-shutdown-hook] error
+[2024-05-26 16:58:29] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.339] Old Version: [0.0.338]
+[2024-05-26 16:58:29] INFO root fetch - processPackages [npeccv6]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-26 16:58:29] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/20/a9/4f637666fa83c508695967d807e33c729d659786a5de468b4289f5bff8b4/bota-4.0.8.tar.gz
+[2024-05-26 16:58:29] INFO root fetch - processPackages [mnists]: New version: [0.2.1] Old Version: [0.2.0rc1]
+[2024-05-26 16:58:29] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/a5/ff/06f8dcf05f0a2b7d36358226703a3c52ac7afd4f3253361a1fb88178693c/monzo_utils-0.1.1-py3-none-any.whl
+[2024-05-26 16:58:29] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/87/a2/1f4c80413d27b126a16e1aa8e715a4504afae6340317927fb0ca4e2f7ce3/database_mysql_local-0.0.338.tar.gz
+[2024-05-26 16:58:29] WARNING root fetch - processPackages [playwright-network-spy]: Skipping, unable to determine old version
+[2024-05-26 16:58:29] INFO root fetch - main [MainThread]: End processing [playwright-network-spy] error
+[2024-05-26 16:58:29] INFO root fetch - processPackages [e4ting]: Downloading https://files.pythonhosted.org/packages/cd/1f/cbe08224118da3b9cdd990847e6ce17f91ffbd9eed9daacffb09053dc5eb/e4ting-1.1.3319-py3-none-any.whl
+[2024-05-26 16:58:29] INFO root fetch - processPackages [GameStorageAPI]: Downloading https://files.pythonhosted.org/packages/d2/32/abbbe3b19ce210359f9ae988b0a27c0c82fa785b93099ce6e264f6d0841f/gamestorageapi-0.0.13.tar.gz
+[2024-05-26 16:58:29] INFO root fetch - processPackages [npeccv6]: Downloading https://files.pythonhosted.org/packages/fc/ed/d740ebe93154e89f722f6df8581065c85b401e2b8e9cd8a23cbd8d22b8f6/npeccv6-0.0.3.tar.gz
+[2024-05-26 16:58:29] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/a4/5f/24c14d0a7d609507557baf5369feaca8b3459d111f35e9258e9d0396f9a8/bota-4.0.9.tar.gz
+[2024-05-26 16:58:29] INFO root fetch - processPackages [mnists]: Downloading https://files.pythonhosted.org/packages/ac/84/63f7a03d63db6943cf120d7f20b53d9d958da7a10d659bc8cf2da857c918/mnists-0.2.0rc1.tar.gz
+[2024-05-26 16:58:29] INFO root fetch - processPackages [e4ting]: Downloading https://files.pythonhosted.org/packages/e8/33/7a57b0ea3101e5771126c786f517634eb978575420e8f2e0a95f0adf4a94/e4ting-1.1.3485-py3-none-any.whl
+[2024-05-26 16:58:29] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/52/73/ee67590a107060bbd39acd71db04450fd9502c201b68a18dd584913f4497/monzo_utils-0.1.2-py3-none-any.whl
+[2024-05-26 16:58:29] INFO root fetch - processPackages [bota]: executing diffoscope
+[2024-05-26 16:58:29] INFO root fetch - processPackages [bota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bota-4.0.8.tar.gz tmp/bota-4.0.9.tar.gz --markdown 20240526/b/bota/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 16:58:29] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/67/5c/8f46d8523251077485162174ee854ded464c0348faf0272a9b868c683ca1/database_mysql_local-0.0.339.tar.gz
+[2024-05-26 16:58:29] INFO root fetch - processPackages [GameStorageAPI]: Downloading https://files.pythonhosted.org/packages/2b/4c/a0df97246c089ececd56247acf0f01565da35a54562eb72bd8d078589c63/gamestorageapi-0.1.13.tar.gz
+[2024-05-26 16:58:29] INFO root fetch - processPackages [e4ting]: executing diffoscope
+[2024-05-26 16:58:29] INFO root fetch - processPackages [e4ting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e4ting-1.1.3319-py3-none-any.whl.zip tmp/e4ting-1.1.3485-py3-none-any.whl.zip --markdown 20240526/e/e4ting/1.1.3319-1.1.3485/README.md --exclude *.pyd
+[2024-05-26 16:58:29] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-05-26 16:58:29] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.1.1-py3-none-any.whl.zip tmp/monzo_utils-0.1.2-py3-none-any.whl.zip --markdown 20240526/m/monzo-utils/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 16:58:29] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 16:58:29] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.338.tar.gz tmp/database_mysql_local-0.0.339.tar.gz --markdown 20240526/d/database-mysql-local/0.0.338-0.0.339/README.md --exclude *.pyd
+[2024-05-26 16:58:29] INFO root fetch - processPackages [npeccv6]: Downloading https://files.pythonhosted.org/packages/28/35/bebc7e8be490f2159cd6262120036a69d475976036cab02b200fcd9bfe24/npeccv6-0.0.4.tar.gz
+[2024-05-26 16:58:30] INFO root fetch - processPackages [GameStorageAPI]: executing diffoscope
+[2024-05-26 16:58:30] INFO root fetch - processPackages [GameStorageAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamestorageapi-0.0.13.tar.gz tmp/gamestorageapi-0.1.13.tar.gz --markdown 20240526/G/GameStorageAPI/0.0.13-0.1.13/README.md --exclude *.pyd
+[2024-05-26 16:58:30] INFO root fetch - processPackages [mnists]: Downloading https://files.pythonhosted.org/packages/a0/d4/c73831f5580ef3214d6cbe46f0c5ad2937e8882e5744c188099c47bbcaae/mnists-0.2.1.tar.gz
+[2024-05-26 16:58:30] INFO root fetch - processPackages [npeccv6]: executing diffoscope
+[2024-05-26 16:58:30] INFO root fetch - processPackages [npeccv6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npeccv6-0.0.3.tar.gz tmp/npeccv6-0.0.4.tar.gz --markdown 20240526/n/npeccv6/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-26 16:58:30] INFO root fetch - processPackages [mnists]: executing diffoscope
+[2024-05-26 16:58:30] INFO root fetch - processPackages [mnists]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mnists-0.2.0rc1.tar.gz tmp/mnists-0.2.1.tar.gz --markdown 20240526/m/mnists/0.2.0rc1-0.2.1/README.md --exclude *.pyd
+[2024-05-26 16:58:30] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.8.tar.gz]
+[2024-05-26 16:58:30] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
+[2024-05-26 16:58:30] INFO root fetch - main [MainThread]: End processing [bota]: success
+[2024-05-26 16:58:30] INFO root fetch - processPackages [GameStorageAPI]: Remove: archive file [/home/abi/fetcher/tmp/gamestorageapi-0.0.13.tar.gz]
+[2024-05-26 16:58:30] INFO root fetch - processPackages [GameStorageAPI]: Remove: archive file [/home/abi/fetcher/tmp/gamestorageapi-0.1.13.tar.gz]
+[2024-05-26 16:58:30] INFO root fetch - main [MainThread]: End processing [GameStorageAPI]: success
+[2024-05-26 16:58:30] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.338.tar.gz]
+[2024-05-26 16:58:30] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.339.tar.gz]
+[2024-05-26 16:58:30] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 16:58:30] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.1.1-py3-none-any.whl.zip]
+[2024-05-26 16:58:30] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.1.2-py3-none-any.whl.zip]
+[2024-05-26 16:58:30] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-05-26 16:58:30] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.3319-py3-none-any.whl.zip]
+[2024-05-26 16:58:30] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.3485-py3-none-any.whl.zip]
+[2024-05-26 16:58:30] INFO root fetch - main [MainThread]: End processing [e4ting]: success
+[2024-05-26 16:58:31] INFO root fetch - processPackages [npeccv6]: Remove: archive file [/home/abi/fetcher/tmp/npeccv6-0.0.3.tar.gz]
+[2024-05-26 16:58:31] INFO root fetch - processPackages [npeccv6]: Remove: archive file [/home/abi/fetcher/tmp/npeccv6-0.0.4.tar.gz]
+[2024-05-26 16:58:31] INFO root fetch - main [MainThread]: End processing [npeccv6]: success
+[2024-05-26 16:58:31] INFO root fetch - processPackages [mnists]: Remove: archive file [/home/abi/fetcher/tmp/mnists-0.2.0rc1.tar.gz]
+[2024-05-26 16:58:31] INFO root fetch - processPackages [mnists]: Remove: archive file [/home/abi/fetcher/tmp/mnists-0.2.1.tar.gz]
+[2024-05-26 16:58:31] INFO root fetch - main [MainThread]: End processing [mnists]: success
+[2024-05-26 16:58:31] INFO root fetch - main [MainThread]: Store serial: [23384000]
