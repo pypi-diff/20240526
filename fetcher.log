@@ -8556,3 +8556,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:55:38] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-26 11:55:38] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-26 11:55:38] INFO root fetch - main [MainThread]: Store serial: [23381965]
+[2024-05-26 11:57:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381965]
+[2024-05-26 11:57:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 11:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-26 11:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cadprox
+[2024-05-26 11:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CloudConnector
+[2024-05-26 11:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: byzerllm
+[2024-05-26 11:57:51] INFO root fetch - processPackages [cadprox]: New version: [5.3] Old Version: [5.2]
+[2024-05-26 11:57:51] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 11:57:51] INFO root fetch - processPackages [mimllearning]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-26 11:57:51] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/36/f6/9bc1721739ecd607f96961c2bcbef4f0136bd2946f50dd10e8d1c9de466f/cadprox-5.2.tar.gz
+[2024-05-26 11:57:51] INFO root fetch - processPackages [byzerllm]: New version: [0.1.91] Old Version: [0.1.90]
+[2024-05-26 11:57:51] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 11:57:51] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-05-26 11:57:51] INFO root fetch - processPackages [byzerllm]: Downloading https://files.pythonhosted.org/packages/75/af/68c5c573371f05f1e7254e76c113041c6ac818e319c602a9cdb59a341b89/byzerllm-0.1.90.tar.gz
+[2024-05-26 11:57:51] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 11:57:52] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/86/8c/5a338715ba100ace6678f4c4ba9361cf1941155e0df6b18a69ea75d9dffc/cadprox-5.3.tar.gz
+[2024-05-26 11:57:52] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 11:57:52] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 11:57:52] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 11:57:52] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-5.2.tar.gz tmp/cadprox-5.3.tar.gz --markdown 20240526/c/cadprox/5.2-5.3/README.md --exclude *.pyd
+[2024-05-26 11:57:52] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-05-26 11:57:52] INFO root fetch - processPackages [byzerllm]: Downloading https://files.pythonhosted.org/packages/95/25/7ea107b26285d6a7498dc94f13d851a4db86ab39b28414241d6367920953/byzerllm-0.1.91.tar.gz
+[2024-05-26 11:57:52] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 11:57:52] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 11:57:52] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 11:57:52] INFO root fetch - processPackages [byzerllm]: executing diffoscope
+[2024-05-26 11:57:52] INFO root fetch - processPackages [byzerllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byzerllm-0.1.90.tar.gz tmp/byzerllm-0.1.91.tar.gz --markdown 20240526/b/byzerllm/0.1.90-0.1.91/README.md --exclude *.pyd
+[2024-05-26 11:57:52] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-5.2.tar.gz]
+[2024-05-26 11:57:52] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-5.3.tar.gz]
+[2024-05-26 11:57:52] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 11:57:52] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-26 11:57:52] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.8.tar.gz tmp/mimllearning-0.5.9.tar.gz --markdown 20240526/m/mimllearning/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-26 11:57:55] INFO root fetch - processPackages [byzerllm]: Remove: archive file [/home/abi/fetcher/tmp/byzerllm-0.1.90.tar.gz]
+[2024-05-26 11:57:55] INFO root fetch - processPackages [byzerllm]: Remove: archive file [/home/abi/fetcher/tmp/byzerllm-0.1.91.tar.gz]
+[2024-05-26 11:57:55] INFO root fetch - main [MainThread]: End processing [byzerllm]: success
+[2024-05-26 11:57:56] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-05-26 11:57:56] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-05-26 11:57:56] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-26 11:57:56] INFO root fetch - main [MainThread]: Store serial: [23381983]
