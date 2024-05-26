@@ -10145,3 +10145,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:13:17] INFO root fetch - processPackages [opensr-test]: Remove: archive file [/home/abi/fetcher/tmp/opensr_test-1.0.0.tar.gz]
 [2024-05-26 14:13:17] INFO root fetch - main [MainThread]: End processing [opensr-test]: success
 [2024-05-26 14:13:17] INFO root fetch - main [MainThread]: Store serial: [23382736]
+[2024-05-26 14:15:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382736]
+[2024-05-26 14:15:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 14:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: varorm
+[2024-05-26 14:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bridgecrew
+[2024-05-26 14:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bipsea
+[2024-05-26 14:15:30] INFO root fetch - processPackages [varorm]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 14:15:30] WARNING root fetch - processPackages [bipsea]: Skipping, unable to determine old version
+[2024-05-26 14:15:30] INFO root fetch - main [MainThread]: End processing [bipsea] error
+[2024-05-26 14:15:30] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.99] Old Version: [3.2.98]
+[2024-05-26 14:15:30] INFO root fetch - processPackages [varorm]: Downloading https://files.pythonhosted.org/packages/45/93/1f0b2eb856355b888ae79d51ae610a366c1e6bd9a5d57855b035905119ff/varorm-0.1.1.tar.gz
+[2024-05-26 14:15:30] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/5e/b5/7cd86ab5bf038cd7943f580e675768a014b20cb33f33518059ce303b9c9d/bridgecrew-3.2.98.tar.gz
+[2024-05-26 14:15:31] INFO root fetch - processPackages [varorm]: Downloading https://files.pythonhosted.org/packages/0c/3d/fc94ebd05294ed5d9181f4e63100c4e7a7a1afb74f5288a83944f59aedf4/varorm-0.1.2.tar.gz
+[2024-05-26 14:15:31] INFO root fetch - processPackages [varorm]: executing diffoscope
+[2024-05-26 14:15:31] INFO root fetch - processPackages [varorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/varorm-0.1.1.tar.gz tmp/varorm-0.1.2.tar.gz --markdown 20240526/v/varorm/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 14:15:31] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/8c/e2/de43e2e6c966fe98c0624abafa7f7374b59b424536aaa809a4d6a8fe4aa1/bridgecrew-3.2.99.tar.gz
+[2024-05-26 14:15:31] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-05-26 14:15:31] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.98.tar.gz tmp/bridgecrew-3.2.99.tar.gz --markdown 20240526/b/bridgecrew/3.2.98-3.2.99/README.md --exclude *.pyd
+[2024-05-26 14:15:31] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.98.tar.gz]
+[2024-05-26 14:15:31] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.99.tar.gz]
+[2024-05-26 14:15:31] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-05-26 14:15:31] INFO root fetch - processPackages [varorm]: Remove: archive file [/home/abi/fetcher/tmp/varorm-0.1.1.tar.gz]
+[2024-05-26 14:15:31] INFO root fetch - processPackages [varorm]: Remove: archive file [/home/abi/fetcher/tmp/varorm-0.1.2.tar.gz]
+[2024-05-26 14:15:31] INFO root fetch - main [MainThread]: End processing [varorm]: success
+[2024-05-26 14:15:31] INFO root fetch - main [MainThread]: Store serial: [23382748]
