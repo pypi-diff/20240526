@@ -3969,3 +3969,18 @@
 [2024-05-26 07:13:21] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.3485-py3-none-any.whl.zip]
 [2024-05-26 07:13:21] INFO root fetch - main [MainThread]: End processing [e4ting]: success
 [2024-05-26 07:13:21] INFO root fetch - main [MainThread]: Store serial: [23379876]
+[2024-05-26 07:15:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379876]
+[2024-05-26 07:15:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 07:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-horoscope
+[2024-05-26 07:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-ipblacklistlookup
+[2024-05-26 07:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-iplookup
+[2024-05-26 07:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-keywordextractor
+[2024-05-26 07:15:30] WARNING root fetch - processPackages [apiverve-horoscope]: Skipping, unable to determine old version
+[2024-05-26 07:15:30] WARNING root fetch - processPackages [apiverve-iplookup]: Skipping, unable to determine old version
+[2024-05-26 07:15:30] INFO root fetch - main [MainThread]: End processing [apiverve-horoscope] error
+[2024-05-26 07:15:30] WARNING root fetch - processPackages [apiverve-ipblacklistlookup]: Skipping, unable to determine old version
+[2024-05-26 07:15:30] INFO root fetch - main [MainThread]: End processing [apiverve-iplookup] error
+[2024-05-26 07:15:30] INFO root fetch - main [MainThread]: End processing [apiverve-ipblacklistlookup] error
+[2024-05-26 07:15:30] WARNING root fetch - processPackages [apiverve-keywordextractor]: Skipping, unable to determine old version
+[2024-05-26 07:15:30] INFO root fetch - main [MainThread]: End processing [apiverve-keywordextractor] error
+[2024-05-26 07:15:30] INFO root fetch - main [MainThread]: Store serial: [23379896]
