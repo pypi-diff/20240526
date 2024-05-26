@@ -15314,3 +15314,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:09:49] INFO root fetch - processPackages [hat-controller]: Remove: archive file [/home/abi/fetcher/tmp/hat_controller-0.1.9-cp310.cp311.cp312-abi3-win_amd64.whl.zip]
 [2024-05-26 19:09:49] INFO root fetch - main [MainThread]: End processing [hat-controller]: success
 [2024-05-26 19:09:49] INFO root fetch - main [MainThread]: Store serial: [23385066]
+[2024-05-26 19:11:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385066]
+[2024-05-26 19:11:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MedatechUK.APY
+[2024-05-26 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funky-modifiers
+[2024-05-26 19:11:58] INFO root fetch - processPackages [MedatechUK.APY]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 19:11:58] INFO root fetch - processPackages [funky-modifiers]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-26 19:11:58] INFO root fetch - processPackages [MedatechUK.APY]: Downloading https://files.pythonhosted.org/packages/54/66/e44b04686d59238130935715b731408212eda9289254d189b3b770933a45/MedatechUK.APY-0.0.8.tar.gz
+[2024-05-26 19:11:58] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/a5/f2/658045ab8e4a55b2792476b6910bc326863f6a71ea130cc7153cee278409/funky_modifiers-0.2.4.tar.gz
+[2024-05-26 19:11:58] INFO root fetch - processPackages [MedatechUK.APY]: Downloading https://files.pythonhosted.org/packages/52/05/0fec0481da7efd13dbcc9f6a4f846a517422a23374a1f4e257f08e1315e9/MedatechUK.APY-0.0.9.tar.gz
+[2024-05-26 19:11:59] INFO root fetch - processPackages [MedatechUK.APY]: executing diffoscope
+[2024-05-26 19:11:59] INFO root fetch - processPackages [MedatechUK.APY]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MedatechUK.APY-0.0.8.tar.gz tmp/MedatechUK.APY-0.0.9.tar.gz --markdown 20240526/M/MedatechUK.APY/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 19:11:59] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/dd/92/1becedb3e32e52cd4bbb77d63465045f0951e0694b75b0796f80b5deea85/funky_modifiers-0.2.5.tar.gz
+[2024-05-26 19:11:59] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-26 19:11:59] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.2.4.tar.gz tmp/funky_modifiers-0.2.5.tar.gz --markdown 20240526/f/funky-modifiers/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-26 19:11:59] INFO root fetch - processPackages [MedatechUK.APY]: Remove: archive file [/home/abi/fetcher/tmp/MedatechUK.APY-0.0.8.tar.gz]
+[2024-05-26 19:11:59] INFO root fetch - processPackages [MedatechUK.APY]: Remove: archive file [/home/abi/fetcher/tmp/MedatechUK.APY-0.0.9.tar.gz]
+[2024-05-26 19:11:59] INFO root fetch - main [MainThread]: End processing [MedatechUK.APY]: success
+[2024-05-26 19:11:59] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.4.tar.gz]
+[2024-05-26 19:11:59] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.5.tar.gz]
+[2024-05-26 19:11:59] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-26 19:11:59] INFO root fetch - main [MainThread]: Store serial: [23385074]
