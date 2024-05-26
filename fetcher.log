@@ -2465,3 +2465,33 @@
 [2024-05-26 04:26:55] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.25.tar.gz]
 [2024-05-26 04:26:55] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
 [2024-05-26 04:26:55] INFO root fetch - main [MainThread]: Store serial: [23379244]
+[2024-05-26 04:29:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379244]
+[2024-05-26 04:29:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 04:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-05-26 04:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thztools
+[2024-05-26 04:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kitsunekko-tools
+[2024-05-26 04:29:12] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240525] Old Version: [1.2.20240524]
+[2024-05-26 04:29:12] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/80/49/8ff6acb5a869ab82e624787d2aa6c6017c6573d3d8522a169ba8d541f2a9/iam_actions-1.2.20240524.tar.gz
+[2024-05-26 04:29:12] INFO root fetch - processPackages [thztools]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-26 04:29:12] INFO root fetch - processPackages [kitsunekko-tools]: New version: [24.5.3.1] Old Version: [24.5.3.0]
+[2024-05-26 04:29:12] INFO root fetch - processPackages [thztools]: Downloading https://files.pythonhosted.org/packages/be/e1/3dff60204da6f6f4604c4e6df58e5260e334a4b820742b6aa2913acefb98/thztools-0.4.0.tar.gz
+[2024-05-26 04:29:12] INFO root fetch - processPackages [kitsunekko-tools]: Downloading https://files.pythonhosted.org/packages/bc/46/aa7cd8aca53ed2ad4d98b1e2ff11c521120723001b25822d05a4c46ff54f/kitsunekko_tools-24.5.3.0.tar.gz
+[2024-05-26 04:29:12] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/52/b0/9472ad62a91d8190897d298607bca5254517942b0b1138ab1e64a37f08f2/iam_actions-1.2.20240525.tar.gz
+[2024-05-26 04:29:12] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-05-26 04:29:12] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240524.tar.gz tmp/iam_actions-1.2.20240525.tar.gz --markdown 20240526/i/iam-actions/1.2.20240524-1.2.20240525/README.md --exclude *.pyd
+[2024-05-26 04:29:12] INFO root fetch - processPackages [thztools]: Downloading https://files.pythonhosted.org/packages/d9/22/81a5b47f3d8e3fe13ac3ad35b6fea98f3fc6f5462b78b9b0d0b0251b6fae/thztools-0.4.1.tar.gz
+[2024-05-26 04:29:12] INFO root fetch - processPackages [kitsunekko-tools]: Downloading https://files.pythonhosted.org/packages/dd/78/e6c6f2f582ccc3529bbb619776475a2631add6a833522a2a788475466e09/kitsunekko_tools-24.5.3.1.tar.gz
+[2024-05-26 04:29:13] INFO root fetch - processPackages [kitsunekko-tools]: executing diffoscope
+[2024-05-26 04:29:13] INFO root fetch - processPackages [kitsunekko-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kitsunekko_tools-24.5.3.0.tar.gz tmp/kitsunekko_tools-24.5.3.1.tar.gz --markdown 20240526/k/kitsunekko-tools/24.5.3.0-24.5.3.1/README.md --exclude *.pyd
+[2024-05-26 04:29:13] INFO root fetch - processPackages [thztools]: executing diffoscope
+[2024-05-26 04:29:13] INFO root fetch - processPackages [thztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thztools-0.4.0.tar.gz tmp/thztools-0.4.1.tar.gz --markdown 20240526/t/thztools/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-26 04:29:13] INFO root fetch - processPackages [kitsunekko-tools]: Remove: archive file [/home/abi/fetcher/tmp/kitsunekko_tools-24.5.3.0.tar.gz]
+[2024-05-26 04:29:13] INFO root fetch - processPackages [kitsunekko-tools]: Remove: archive file [/home/abi/fetcher/tmp/kitsunekko_tools-24.5.3.1.tar.gz]
+[2024-05-26 04:29:13] INFO root fetch - main [MainThread]: End processing [kitsunekko-tools]: success
+[2024-05-26 04:29:13] INFO root fetch - processPackages [thztools]: Remove: archive file [/home/abi/fetcher/tmp/thztools-0.4.0.tar.gz]
+[2024-05-26 04:29:13] INFO root fetch - processPackages [thztools]: Remove: archive file [/home/abi/fetcher/tmp/thztools-0.4.1.tar.gz]
+[2024-05-26 04:29:13] INFO root fetch - main [MainThread]: End processing [thztools]: success
+[2024-05-26 04:29:14] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240524.tar.gz]
+[2024-05-26 04:29:14] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240525.tar.gz]
+[2024-05-26 04:29:14] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-05-26 04:29:14] INFO root fetch - main [MainThread]: Store serial: [23379252]
