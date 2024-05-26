@@ -12134,3 +12134,40 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:22:24] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.50.tar.gz]
 [2024-05-26 16:22:24] INFO root fetch - main [MainThread]: End processing [zenaura]: success
 [2024-05-26 16:22:24] INFO root fetch - main [MainThread]: Store serial: [23383705]
+[2024-05-26 16:24:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383705]
+[2024-05-26 16:24:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 16:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rooms-shared-services
+[2024-05-26 16:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BaleVK
+[2024-05-26 16:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-flex-report
+[2024-05-26 16:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-flex-report
+[2024-05-26 16:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asgi-user-agents
+[2024-05-26 16:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ns-search-saved-export
+[2024-05-26 16:24:54] WARNING root fetch - processPackages [asgi-user-agents]: Skipping, unable to determine old version
+[2024-05-26 16:24:54] INFO root fetch - main [MainThread]: End processing [asgi-user-agents] error
+[2024-05-26 16:24:54] INFO root fetch - processPackages [django-flex-report]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-05-26 16:24:54] WARNING root fetch - processPackages [ns-search-saved-export]: Skipping, unable to determine old version
+[2024-05-26 16:24:54] INFO root fetch - main [MainThread]: End processing [ns-search-saved-export] error
+[2024-05-26 16:24:54] INFO root fetch - processPackages [django-flex-report]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-05-26 16:24:54] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-05-26 16:24:54] WARNING root fetch - processPackages [BaleVK]: Skipping, unable to determine old version
+[2024-05-26 16:24:54] INFO root fetch - main [MainThread]: End processing [BaleVK] error
+[2024-05-26 16:24:54] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/84/94/ba292eb8cabca7b74eb8f2bac3accd79640fc2b26e08e6239d5bcfbb2416/django_flex_report-0.8.5-py3-none-any.whl
+[2024-05-26 16:24:54] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/84/94/ba292eb8cabca7b74eb8f2bac3accd79640fc2b26e08e6239d5bcfbb2416/django_flex_report-0.8.5-py3-none-any.whl
+[2024-05-26 16:24:54] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-05-26 16:24:55] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/f9/84/139634b30cab0e5fa200abdc85283e1c6e48cb26eff5865d51f1082ce113/django-flex-report-0.8.6.tar.gz
+[2024-05-26 16:24:55] INFO root fetch - processPackages [django-flex-report]: Downloading https://files.pythonhosted.org/packages/f9/84/139634b30cab0e5fa200abdc85283e1c6e48cb26eff5865d51f1082ce113/django-flex-report-0.8.6.tar.gz
+[2024-05-26 16:24:55] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-05-26 16:24:55] INFO root fetch - processPackages [django-flex-report]: executing diffoscope
+[2024-05-26 16:24:55] INFO root fetch - processPackages [django-flex-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_flex_report-0.8.5-py3-none-any.whl.zip tmp/django-flex-report-0.8.6.tar.gz --markdown 20240526/d/django-flex-report/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-05-26 16:24:55] INFO root fetch - processPackages [django-flex-report]: executing diffoscope
+[2024-05-26 16:24:55] INFO root fetch - processPackages [django-flex-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_flex_report-0.8.5-py3-none-any.whl.zip tmp/django-flex-report-0.8.6.tar.gz --markdown 20240526/d/django-flex-report/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-05-26 16:24:55] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-05-26 16:24:55] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240526/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-05-26 16:24:55] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django_flex_report-0.8.5-py3-none-any.whl.zip]
+[2024-05-26 16:24:55] INFO root fetch - processPackages [django-flex-report]: Remove: archive file [/home/abi/fetcher/tmp/django-flex-report-0.8.6.tar.gz]
+[2024-05-26 16:24:55] INFO root fetch - main [MainThread]: End processing [django-flex-report]: success
+[2024-05-26 16:24:55] INFO root fetch - main [MainThread]: End processing [django-flex-report]: success
+[2024-05-26 16:24:55] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-05-26 16:24:55] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-05-26 16:24:55] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-05-26 16:24:55] INFO root fetch - main [MainThread]: Store serial: [23383725]
