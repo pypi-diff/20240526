@@ -21757,3 +21757,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:16:49] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
 [2024-05-26 23:16:49] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
 [2024-05-26 23:16:49] INFO root fetch - main [MainThread]: Store serial: [23387862]
+[2024-05-26 23:18:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387862]
+[2024-05-26 23:18:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 23:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioreqs
+[2024-05-26 23:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mamba-ssm
+[2024-05-26 23:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lenlp
+[2024-05-26 23:18:58] INFO root fetch - processPackages [lenlp]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 23:18:58] INFO root fetch - processPackages [mamba-ssm]: New version: [1.2.1] Old Version: [1.2.0.post1]
+[2024-05-26 23:18:58] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/4c/0f/9ffc2198a1f5b2d7b9a218689c872852ef6bdd4eb717ff70841209f83658/lenlp-1.0.1.tar.gz
+[2024-05-26 23:18:58] WARNING root fetch - processPackages [aioreqs]: Skipping, unable to determine old version
+[2024-05-26 23:18:58] INFO root fetch - main [MainThread]: End processing [aioreqs] error
+[2024-05-26 23:18:58] INFO root fetch - processPackages [mamba-ssm]: Downloading https://files.pythonhosted.org/packages/d3/12/dc792f3136fc8969ac6404f091135ab1aa9260a978a625a77a3cce5299dd/mamba_ssm-1.2.0.post1.tar.gz
+[2024-05-26 23:18:58] INFO root fetch - processPackages [mamba-ssm]: Downloading https://files.pythonhosted.org/packages/c3/bd/648ff75f376b0bc7b60b91b10f5a6dd62b3ab7aa1c56794d86a84dff40bc/mamba_ssm-1.2.1.tar.gz
+[2024-05-26 23:18:58] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/25/eb/ee9faaecaf2bf264c1e3da57c42840c9bc232c6f07c17912e3d25a02d770/lenlp-1.0.2.tar.gz
+[2024-05-26 23:18:58] INFO root fetch - processPackages [mamba-ssm]: executing diffoscope
+[2024-05-26 23:18:58] INFO root fetch - processPackages [mamba-ssm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mamba_ssm-1.2.0.post1.tar.gz tmp/mamba_ssm-1.2.1.tar.gz --markdown 20240526/m/mamba-ssm/1.2.0.post1-1.2.1/README.md --exclude *.pyd
+[2024-05-26 23:18:58] INFO root fetch - processPackages [lenlp]: executing diffoscope
+[2024-05-26 23:18:58] INFO root fetch - processPackages [lenlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lenlp-1.0.1.tar.gz tmp/lenlp-1.0.2.tar.gz --markdown 20240526/l/lenlp/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 23:18:59] INFO root fetch - processPackages [mamba-ssm]: Remove: archive file [/home/abi/fetcher/tmp/mamba_ssm-1.2.0.post1.tar.gz]
+[2024-05-26 23:18:59] INFO root fetch - processPackages [mamba-ssm]: Remove: archive file [/home/abi/fetcher/tmp/mamba_ssm-1.2.1.tar.gz]
+[2024-05-26 23:18:59] INFO root fetch - main [MainThread]: End processing [mamba-ssm]: success
+[2024-05-26 23:18:59] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.1.tar.gz]
+[2024-05-26 23:18:59] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.2.tar.gz]
+[2024-05-26 23:18:59] INFO root fetch - main [MainThread]: End processing [lenlp]: success
+[2024-05-26 23:18:59] INFO root fetch - main [MainThread]: Store serial: [23387883]
