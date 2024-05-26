@@ -2353,3 +2353,70 @@
 [2024-05-26 04:18:07] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2421.tar.gz]
 [2024-05-26 04:18:07] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2024-05-26 04:18:07] INFO root fetch - main [MainThread]: Store serial: [23379194]
+[2024-05-26 04:20:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379194]
+[2024-05-26 04:20:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 04:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monai-weekly
+[2024-05-26 04:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-catalog-objects
+[2024-05-26 04:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-05-26 04:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-web-core
+[2024-05-26 04:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipackager
+[2024-05-26 04:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jcx
+[2024-05-26 04:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pdfzipcracker
+[2024-05-26 04:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sweetrpg-web-core
+[2024-05-26 04:20:16] INFO root fetch - processPackages [pipackager]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-26 04:20:16] INFO root fetch - processPackages [monai-weekly]: New version: [1.4.dev2421] Old Version: [1.4.dev2420]
+[2024-05-26 04:20:16] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 04:20:16] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 04:20:16] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/7e/ac/7a301a46b2ac5656687796e50ea69dc389e789004c6fd35e61ed6d4644d9/pipackager-0.4.0.tar.gz
+[2024-05-26 04:20:16] INFO root fetch - processPackages [jcx]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-26 04:20:16] WARNING root fetch - processPackages [pdfzipcracker]: Skipping, unable to determine old version
+[2024-05-26 04:20:16] INFO root fetch - main [MainThread]: End processing [pdfzipcracker] error
+[2024-05-26 04:20:16] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 04:20:16] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/e0/f2/063fa474cfbe9b6462d4be3686dffa518c8a920998faca1702c2b72e8bcb/monai_weekly-1.4.dev2420.tar.gz
+[2024-05-26 04:20:16] INFO root fetch - processPackages [flatpack]: New version: [3.4.99] Old Version: [3.4.98]
+[2024-05-26 04:20:16] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-26 04:20:16] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/cb/39/adcd388eba8071e3318b3a2224e5c96179761da6dbd7cfa96b20311e810f/flatpack-3.4.98.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [jcx]: Downloading https://files.pythonhosted.org/packages/cb/eb/f56ee5f2c721b812e97ccdb6adbb02f0be4af59e455ae6042b6caee4cbbb/jcx-0.2.0.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/22/37/419e8dda74fe55125b947096438fdc617e084178126ff4acadec7ec214cf/pipackager-0.4.1.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240526/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 04:20:17] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/5c/54/cf99c442891fb66bdc2643141bebc359141445b0b199f58f159b6301754c/monai_weekly-1.4.dev2421.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 04:20:17] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.4.0.tar.gz tmp/pipackager-0.4.1.tar.gz --markdown 20240526/p/pipackager/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240526/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/89/20/a694f72cbfa96253cdb38b9f65c7cfd5f3a4fb145d2fe2483132b80dafd4/flatpack-3.4.99.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [jcx]: Downloading https://files.pythonhosted.org/packages/04/a5/68f31e157b2a145fb71edbf8f315b549ab4b0689edc7f59f401cdeaacb08/jcx-0.2.1.tar.gz
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240526/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 04:20:17] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2024-05-26 04:20:17] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai_weekly-1.4.dev2420.tar.gz tmp/monai_weekly-1.4.dev2421.tar.gz --markdown 20240526/m/monai-weekly/1.4.dev2420-1.4.dev2421/README.md --exclude *.pyd
+[2024-05-26 04:20:17] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-26 04:20:17] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.98.tar.gz tmp/flatpack-3.4.99.tar.gz --markdown 20240526/f/flatpack/3.4.98-3.4.99/README.md --exclude *.pyd
+[2024-05-26 04:20:17] INFO root fetch - processPackages [jcx]: executing diffoscope
+[2024-05-26 04:20:17] INFO root fetch - processPackages [jcx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jcx-0.2.0.tar.gz tmp/jcx-0.2.1.tar.gz --markdown 20240526/j/jcx/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-05-26 04:20:17] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-05-26 04:20:17] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-26 04:20:18] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.0.tar.gz]
+[2024-05-26 04:20:18] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.1.tar.gz]
+[2024-05-26 04:20:18] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 04:20:18] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-26 04:20:18] INFO root fetch - processPackages [jcx]: Remove: archive file [/home/abi/fetcher/tmp/jcx-0.2.0.tar.gz]
+[2024-05-26 04:20:18] INFO root fetch - processPackages [jcx]: Remove: archive file [/home/abi/fetcher/tmp/jcx-0.2.1.tar.gz]
+[2024-05-26 04:20:18] INFO root fetch - main [MainThread]: End processing [jcx]: success
+[2024-05-26 04:20:18] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.98.tar.gz]
+[2024-05-26 04:20:18] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.99.tar.gz]
+[2024-05-26 04:20:18] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-26 04:20:18] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-05-26 04:20:18] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-05-26 04:20:18] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-05-26 04:20:22] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2420.tar.gz]
+[2024-05-26 04:20:22] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2421.tar.gz]
+[2024-05-26 04:20:22] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2024-05-26 04:20:22] INFO root fetch - main [MainThread]: Store serial: [23379219]
