@@ -13045,3 +13045,102 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:05:02] INFO root fetch - processPackages [fermo-core]: Remove: archive file [/home/abi/fetcher/tmp/fermo_core-0.2.0.tar.gz]
 [2024-05-26 17:05:02] INFO root fetch - main [MainThread]: End processing [fermo-core]: success
 [2024-05-26 17:05:02] INFO root fetch - main [MainThread]: Store serial: [23384099]
+[2024-05-26 17:07:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384099]
+[2024-05-26 17:07:12] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ns-search-saved-export
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xssbase
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GameStorageAPI
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dscontexai
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swanlab
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tfy-mlflow-client
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dicio-py
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ai-alchemy
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ipex-llm
+[2024-05-26 17:07:12] INFO root fetch - processPackages [xssbase]: New version: [3.0.3] Old Version: [3.0.1]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ns-search-saved-export]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [dscontexai]: New version: [0.1.0] Old Version: [0.0.7]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [GameStorageAPI]: New version: [0.1.14] Old Version: [0.1.13]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 17:07:12] WARNING root fetch - processPackages [dicio-py]: Skipping, unable to determine old version
+[2024-05-26 17:07:12] INFO root fetch - processPackages [dicio-py]: Start processing: e4ting
+[2024-05-26 17:07:12] INFO root fetch - main [MainThread]: End processing [dicio-py] error
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240525] Old Version: [2.1.0b20240524]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [e4ting]: New version: [1.1.3494] Old Version: [1.1.3485]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [swanlab]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [tfy-mlflow-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 17:07:12] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/74/5a/d6859838ff0e8a45c7d3735f0cba88f5ea38092ce03517ae7209bfff0f59/xssbase-3.0.1.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/ba/9a/726cf48dd347a1b2addeedffe09e179df4c6c01862cea634ef38022578c4/ai_alchemy-0.1.1.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [GameStorageAPI]: Downloading https://files.pythonhosted.org/packages/2b/4c/a0df97246c089ececd56247acf0f01565da35a54562eb72bd8d078589c63/gamestorageapi-0.1.13.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/91/7f/30bc12c167095a051b8d9b494bd46d61d015c26a309b6fc9703b63629b5d/ipex_llm-2.1.0b20240524-py3-none-win_amd64.whl
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ns-search-saved-export]: Downloading https://files.pythonhosted.org/packages/b7/ba/0cb48b8bcb6cc73d716e5943b30a6b115bfc1d5af81f47697437e4d3ec8c/ns_search_saved_export-0.1.0.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [e4ting]: Downloading https://files.pythonhosted.org/packages/e8/33/7a57b0ea3101e5771126c786f517634eb978575420e8f2e0a95f0adf4a94/e4ting-1.1.3485-py3-none-any.whl
+[2024-05-26 17:07:12] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/a3/7a/95f32c1f03cd624a1e0e70dfba94c417e8c476454347c7c84bb13af3ba01/dscontexai-0.0.7.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [tfy-mlflow-client]: Downloading https://files.pythonhosted.org/packages/43/f0/45be21abdff732bb8de13f178413b52bd098bb8395e239c8721423f39e0e/tfy-mlflow-client-0.0.8.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [swanlab]: Downloading https://files.pythonhosted.org/packages/61/b0/82a2a6b63f42145acb4683572548a6d06a7ea20cf226533ced146d3db62c/swanlab-0.3.3.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/fa/1d/5923247cd1f7b887918f6c08c2415d44b3d2190067bb6a29175d6d8c1871/ai_alchemy-0.1.2.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/32/87/c65929006a5419d99fa7a755f9a631092a3dadd7f2e89d35f832dce59f6a/xssbase-3.0.3.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/94/d9/a91652e8739fb952e46cc9bdb4234e6d0702adbf48fe6eaf28d6b2c211e3/dscontexai-0.1.0.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ns-search-saved-export]: Downloading https://files.pythonhosted.org/packages/32/31/79cd04a70822617426262678514515b1b1919d0dd7d4fbd87f97bc14e9c8/ns_search_saved_export-0.1.1.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 17:07:12] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.1.tar.gz tmp/ai_alchemy-0.1.2.tar.gz --markdown 20240526/a/ai-alchemy/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 17:07:12] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 17:07:12] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 17:07:12] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-3.0.1.tar.gz tmp/xssbase-3.0.3.tar.gz --markdown 20240526/x/xssbase/3.0.1-3.0.3/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [e4ting]: Downloading https://files.pythonhosted.org/packages/e0/0e/384c4ce21055ac4464801d99a402aabce1fce59ad057a8eeea1fa2a3c29d/e4ting-1.1.3494-py3-none-any.whl
+[2024-05-26 17:07:13] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 17:07:13] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.0.7.tar.gz tmp/dscontexai-0.1.0.tar.gz --markdown 20240526/d/dscontexai/0.0.7-0.1.0/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [ns-search-saved-export]: executing diffoscope
+[2024-05-26 17:07:13] INFO root fetch - processPackages [ns-search-saved-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ns_search_saved_export-0.1.0.tar.gz tmp/ns_search_saved_export-0.1.1.tar.gz --markdown 20240526/n/ns-search-saved-export/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [GameStorageAPI]: Downloading https://files.pythonhosted.org/packages/5e/fe/f1101db559fd0f4b0e7bc42b9cc7101c8f68976d23dc157033fbe3a7a19f/gamestorageapi-0.1.14.tar.gz
+[2024-05-26 17:07:13] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/c9/75/d2432acc6c866cfce303a14ccefa4eb0205d0f8600393533e9786d4f5450/ipex_llm-2.1.0b20240525-py3-none-win_amd64.whl
+[2024-05-26 17:07:13] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 17:07:13] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [e4ting]: executing diffoscope
+[2024-05-26 17:07:13] INFO root fetch - processPackages [e4ting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e4ting-1.1.3485-py3-none-any.whl.zip tmp/e4ting-1.1.3494-py3-none-any.whl.zip --markdown 20240526/e/e4ting/1.1.3485-1.1.3494/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [swanlab]: Downloading https://files.pythonhosted.org/packages/b9/e2/8de0138a4251758b4af207d1ca4c40fd4a50fabc46bd3cd109e2699d8e09/swanlab-0.3.4.tar.gz
+[2024-05-26 17:07:13] INFO root fetch - processPackages [GameStorageAPI]: executing diffoscope
+[2024-05-26 17:07:13] INFO root fetch - processPackages [GameStorageAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamestorageapi-0.1.13.tar.gz tmp/gamestorageapi-0.1.14.tar.gz --markdown 20240526/G/GameStorageAPI/0.1.13-0.1.14/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [tfy-mlflow-client]: Downloading https://files.pythonhosted.org/packages/99/46/ec87ff507a911f7eb4550bd758513440cf543ba1d9701b042b5caf64682a/tfy-mlflow-client-0.0.9.tar.gz
+[2024-05-26 17:07:13] INFO root fetch - processPackages [swanlab]: executing diffoscope
+[2024-05-26 17:07:13] INFO root fetch - processPackages [swanlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swanlab-0.3.3.tar.gz tmp/swanlab-0.3.4.tar.gz --markdown 20240526/s/swanlab/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-05-26 17:07:13] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240524-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240525-py3-none-win_amd64.whl.zip --markdown 20240526/i/ipex-llm/2.1.0b20240524-2.1.0b20240525/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [tfy-mlflow-client]: executing diffoscope
+[2024-05-26 17:07:13] INFO root fetch - processPackages [tfy-mlflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfy-mlflow-client-0.0.8.tar.gz tmp/tfy-mlflow-client-0.0.9.tar.gz --markdown 20240526/t/tfy-mlflow-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 17:07:13] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.1.tar.gz]
+[2024-05-26 17:07:13] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.2.tar.gz]
+[2024-05-26 17:07:13] INFO root fetch - processPackages [ai-alchemy]: Start processing: ZeroXRequests
+[2024-05-26 17:07:13] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 17:07:13] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-3.0.1.tar.gz]
+[2024-05-26 17:07:13] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-3.0.3.tar.gz]
+[2024-05-26 17:07:13] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 17:07:13] WARNING root fetch - processPackages [ZeroXRequests]: Skipping, unable to determine old version
+[2024-05-26 17:07:13] INFO root fetch - main [MainThread]: End processing [ZeroXRequests] error
+[2024-05-26 17:07:13] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.7.tar.gz]
+[2024-05-26 17:07:13] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.1.0.tar.gz]
+[2024-05-26 17:07:13] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 17:07:14] INFO root fetch - processPackages [ns-search-saved-export]: Remove: archive file [/home/abi/fetcher/tmp/ns_search_saved_export-0.1.0.tar.gz]
+[2024-05-26 17:07:14] INFO root fetch - processPackages [ns-search-saved-export]: Remove: archive file [/home/abi/fetcher/tmp/ns_search_saved_export-0.1.1.tar.gz]
+[2024-05-26 17:07:14] INFO root fetch - main [MainThread]: End processing [ns-search-saved-export]: success
+[2024-05-26 17:07:14] INFO root fetch - processPackages [GameStorageAPI]: Remove: archive file [/home/abi/fetcher/tmp/gamestorageapi-0.1.13.tar.gz]
+[2024-05-26 17:07:14] INFO root fetch - processPackages [GameStorageAPI]: Remove: archive file [/home/abi/fetcher/tmp/gamestorageapi-0.1.14.tar.gz]
+[2024-05-26 17:07:14] INFO root fetch - main [MainThread]: End processing [GameStorageAPI]: success
+[2024-05-26 17:07:14] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 17:07:14] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 17:07:14] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 17:07:14] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.3485-py3-none-any.whl.zip]
+[2024-05-26 17:07:14] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.3494-py3-none-any.whl.zip]
+[2024-05-26 17:07:14] INFO root fetch - main [MainThread]: End processing [e4ting]: success
+[2024-05-26 17:07:15] INFO root fetch - processPackages [tfy-mlflow-client]: Remove: archive file [/home/abi/fetcher/tmp/tfy-mlflow-client-0.0.8.tar.gz]
+[2024-05-26 17:07:15] INFO root fetch - processPackages [tfy-mlflow-client]: Remove: archive file [/home/abi/fetcher/tmp/tfy-mlflow-client-0.0.9.tar.gz]
+[2024-05-26 17:07:15] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
+[2024-05-26 17:07:16] INFO root fetch - processPackages [swanlab]: Remove: archive file [/home/abi/fetcher/tmp/swanlab-0.3.3.tar.gz]
+[2024-05-26 17:07:16] INFO root fetch - processPackages [swanlab]: Remove: archive file [/home/abi/fetcher/tmp/swanlab-0.3.4.tar.gz]
+[2024-05-26 17:07:16] INFO root fetch - main [MainThread]: End processing [swanlab]: success
+[2024-05-26 17:07:41] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240524-py3-none-win_amd64.whl.zip]
+[2024-05-26 17:07:41] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240525-py3-none-win_amd64.whl.zip]
+[2024-05-26 17:07:41] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-05-26 17:07:41] INFO root fetch - main [MainThread]: Store serial: [23384136]
