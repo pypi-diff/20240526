@@ -2861,3 +2861,9 @@
 [2024-05-26 05:16:37] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
 [2024-05-26 05:16:37] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
 [2024-05-26 05:16:37] INFO root fetch - main [MainThread]: Store serial: [23379419]
+[2024-05-26 05:18:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379419]
+[2024-05-26 05:18:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 05:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysalm
+[2024-05-26 05:18:46] WARNING root fetch - processPackages [pysalm]: Skipping, unable to determine old version
+[2024-05-26 05:18:46] INFO root fetch - main [MainThread]: End processing [pysalm] error
+[2024-05-26 05:18:46] INFO root fetch - main [MainThread]: Store serial: [23379424]
