@@ -9711,3 +9711,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:32:31] INFO root fetch - processPackages [altvmasterlist]: Remove: archive file [/home/abi/fetcher/tmp/altvmasterlist-3.2.0.tar.gz]
 [2024-05-26 13:32:31] INFO root fetch - main [MainThread]: End processing [altvmasterlist]: success
 [2024-05-26 13:32:31] INFO root fetch - main [MainThread]: Store serial: [23382519]
+[2024-05-26 13:34:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382519]
+[2024-05-26 13:34:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 13:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchsnapshot-nightly
+[2024-05-26 13:34:44] INFO root fetch - processPackages [torchsnapshot-nightly]: New version: [2024.5.25] Old Version: [2024.5.24]
+[2024-05-26 13:34:44] INFO root fetch - processPackages [torchsnapshot-nightly]: Downloading https://files.pythonhosted.org/packages/23/8d/e8d00394625aea7e0e7225a1dd1f11efdf08fe7c8b75096143a44ab5b770/torchsnapshot_nightly-2024.5.24.tar.gz
+[2024-05-26 13:34:44] INFO root fetch - processPackages [torchsnapshot-nightly]: Downloading https://files.pythonhosted.org/packages/8f/7b/871db36afceeb159e643a5d769195fab19ef384ff34925c1149f0eaa34ec/torchsnapshot_nightly-2024.5.25.tar.gz
+[2024-05-26 13:34:45] INFO root fetch - processPackages [torchsnapshot-nightly]: executing diffoscope
+[2024-05-26 13:34:45] INFO root fetch - processPackages [torchsnapshot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchsnapshot_nightly-2024.5.24.tar.gz tmp/torchsnapshot_nightly-2024.5.25.tar.gz --markdown 20240526/t/torchsnapshot-nightly/2024.5.24-2024.5.25/README.md --exclude *.pyd
+[2024-05-26 13:34:45] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.5.24.tar.gz]
+[2024-05-26 13:34:45] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.5.25.tar.gz]
+[2024-05-26 13:34:45] INFO root fetch - main [MainThread]: End processing [torchsnapshot-nightly]: success
+[2024-05-26 13:34:45] INFO root fetch - main [MainThread]: Store serial: [23382525]
