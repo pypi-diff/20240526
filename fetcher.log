@@ -21874,3 +21874,18 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:23:21] INFO root fetch - processPackages [nudebomb]: Remove: archive file [/home/abi/fetcher/tmp/nudebomb-0.3.7.tar.gz]
 [2024-05-26 23:23:21] INFO root fetch - main [MainThread]: End processing [nudebomb]: success
 [2024-05-26 23:23:21] INFO root fetch - main [MainThread]: Store serial: [23387916]
+[2024-05-26 23:25:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387916]
+[2024-05-26 23:25:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 23:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckdb-upgrade
+[2024-05-26 23:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pip2deb
+[2024-05-26 23:25:32] INFO root fetch - processPackages [pip2deb]: New version: [1.5] Old Version: [1.4]
+[2024-05-26 23:25:32] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/31/43/2ed7bcebce8383419c343ee7ceb917348e23270486d4d808e850736f5660/pip2deb-1.4.tar.gz
+[2024-05-26 23:25:32] WARNING root fetch - processPackages [duckdb-upgrade]: Skipping, unable to determine old version
+[2024-05-26 23:25:32] INFO root fetch - main [MainThread]: End processing [duckdb-upgrade] error
+[2024-05-26 23:25:32] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/03/90/28a10aa28982d3dedbf16904f3060b244bfc78d1c88b8781d7980364fad8/pip2deb-1.5.tar.gz
+[2024-05-26 23:25:32] INFO root fetch - processPackages [pip2deb]: executing diffoscope
+[2024-05-26 23:25:32] INFO root fetch - processPackages [pip2deb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip2deb-1.4.tar.gz tmp/pip2deb-1.5.tar.gz --markdown 20240526/p/pip2deb/1.4-1.5/README.md --exclude *.pyd
+[2024-05-26 23:25:33] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.4.tar.gz]
+[2024-05-26 23:25:33] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.5.tar.gz]
+[2024-05-26 23:25:33] INFO root fetch - main [MainThread]: End processing [pip2deb]: success
+[2024-05-26 23:25:33] INFO root fetch - main [MainThread]: Store serial: [23387924]
