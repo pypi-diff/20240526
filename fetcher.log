@@ -1453,3 +1453,15 @@
 [2024-05-26 02:51:26] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
 [2024-05-26 02:51:26] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
 [2024-05-26 02:51:26] INFO root fetch - main [MainThread]: Store serial: [23378813]
+[2024-05-26 02:53:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378813]
+[2024-05-26 02:53:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 02:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatchat
+[2024-05-26 02:53:35] INFO root fetch - processPackages [chatchat]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 02:53:35] INFO root fetch - processPackages [chatchat]: Downloading https://files.pythonhosted.org/packages/06/79/22836d7869e317d1323fc429ae2ec203160df189494aefc343182d0accaf/chatchat-0.1.1.tar.gz
+[2024-05-26 02:53:35] INFO root fetch - processPackages [chatchat]: Downloading https://files.pythonhosted.org/packages/63/91/e34c9545da46c41b5486bab087cf2ce04d3f8443cc260b2ea3382e0da1d8/chatchat-0.1.2.tar.gz
+[2024-05-26 02:53:35] INFO root fetch - processPackages [chatchat]: executing diffoscope
+[2024-05-26 02:53:35] INFO root fetch - processPackages [chatchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatchat-0.1.1.tar.gz tmp/chatchat-0.1.2.tar.gz --markdown 20240526/c/chatchat/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 02:53:36] INFO root fetch - processPackages [chatchat]: Remove: archive file [/home/abi/fetcher/tmp/chatchat-0.1.1.tar.gz]
+[2024-05-26 02:53:36] INFO root fetch - processPackages [chatchat]: Remove: archive file [/home/abi/fetcher/tmp/chatchat-0.1.2.tar.gz]
+[2024-05-26 02:53:36] INFO root fetch - main [MainThread]: End processing [chatchat]: success
+[2024-05-26 02:53:36] INFO root fetch - main [MainThread]: Store serial: [23378816]
