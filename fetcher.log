@@ -6012,3 +6012,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:10:23] INFO root fetch - processPackages [benchmark-runner]: Remove: archive file [/home/abi/fetcher/tmp/benchmark-runner-1.0.99.tar.gz]
 [2024-05-26 10:10:23] INFO root fetch - main [MainThread]: End processing [benchmark-runner]: success
 [2024-05-26 10:10:23] INFO root fetch - main [MainThread]: Store serial: [23380849]
+[2024-05-26 10:12:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380849]
+[2024-05-26 10:12:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 10:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-meteo-solar-forecast
+[2024-05-26 10:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-web-m2x-options
+[2024-05-26 10:12:34] INFO root fetch - processPackages [open-meteo-solar-forecast]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-26 10:12:34] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/c2/1e/facee34c20184f14c097a6eb23b2bddb9c1066fefcad951af812c3923969/open_meteo_solar_forecast-0.0.2.tar.gz
+[2024-05-26 10:12:34] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: New version: [16.0.1.1.3] Old Version: [16.0.1.1.2.4]
+[2024-05-26 10:12:35] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: Downloading https://files.pythonhosted.org/packages/64/43/f246d38df7cfa009040eb9f4f13c3c1a326d264b9c9ad626e675fa31e005/odoo_addon_web_m2x_options-16.0.1.1.2.4-py3-none-any.whl
+[2024-05-26 10:12:35] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/8d/b3/746a18b8806212b18ba7cafe44177046f892ffff2c5eeb079543ddbd080a/open_meteo_solar_forecast-0.0.3.tar.gz
+[2024-05-26 10:12:35] INFO root fetch - processPackages [open-meteo-solar-forecast]: executing diffoscope
+[2024-05-26 10:12:35] INFO root fetch - processPackages [open-meteo-solar-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_meteo_solar_forecast-0.0.2.tar.gz tmp/open_meteo_solar_forecast-0.0.3.tar.gz --markdown 20240526/o/open-meteo-solar-forecast/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-26 10:12:35] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: Downloading https://files.pythonhosted.org/packages/ac/15/4f8e357008752410ccdb9a9ea5c565ddf43a656ebab4385fa01f3ecffa6c/odoo_addon_web_m2x_options-16.0.1.1.3-py3-none-any.whl
+[2024-05-26 10:12:35] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: executing diffoscope
+[2024-05-26 10:12:35] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_m2x_options-16.0.1.1.2.4-py3-none-any.whl.zip tmp/odoo_addon_web_m2x_options-16.0.1.1.3-py3-none-any.whl.zip --markdown 20240526/o/odoo-addon-web-m2x-options/16.0.1.1.2.4-16.0.1.1.3/README.md --exclude *.pyd
+[2024-05-26 10:12:35] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.0.2.tar.gz]
+[2024-05-26 10:12:35] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.0.3.tar.gz]
+[2024-05-26 10:12:35] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast]: success
+[2024-05-26 10:12:36] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_m2x_options-16.0.1.1.2.4-py3-none-any.whl.zip]
+[2024-05-26 10:12:36] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_m2x_options-16.0.1.1.3-py3-none-any.whl.zip]
+[2024-05-26 10:12:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-m2x-options]: success
+[2024-05-26 10:12:36] INFO root fetch - main [MainThread]: Store serial: [23380855]
