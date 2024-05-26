@@ -8134,3 +8134,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:30:57] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.7.1.tar.gz]
 [2024-05-26 11:30:57] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
 [2024-05-26 11:30:57] INFO root fetch - main [MainThread]: Store serial: [23381809]
+[2024-05-26 11:33:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381809]
+[2024-05-26 11:33:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: locust
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ok-script
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CI-CloudConnector
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xssbase
+[2024-05-26 11:33:10] INFO root fetch - processPackages [xssbase]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 11:33:10] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 11:33:10] INFO root fetch - processPackages [mimllearning]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-26 11:33:10] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-05-26 11:33:10] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 11:33:10] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/24/54/73a6306cf4585baa2568eaf700d9339ea6d39b8df818c274c57dc1236fa2/xssbase-1.0.6.tar.gz
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-05-26 11:33:10] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-05-26 11:33:10] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-05-26 11:33:10] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-05-26 11:33:10] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/6d/54/c8eb4481efd4a4deee1076c564669a6ee8717e1d7cd976d1b8688b786e0c/xssbase-1.0.7.tar.gz
+[2024-05-26 11:33:10] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 11:33:10] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 11:33:10] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-05-26 11:33:10] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240526/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 11:33:10] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 11:33:10] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-1.0.6.tar.gz tmp/xssbase-1.0.7.tar.gz --markdown 20240526/x/xssbase/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-26 11:33:11] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-05-26 11:33:11] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240526/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-05-26 11:33:11] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-05-26 11:33:11] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 11:33:11] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 11:33:11] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 11:33:11] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.6.tar.gz]
+[2024-05-26 11:33:11] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.7.tar.gz]
+[2024-05-26 11:33:11] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 11:33:11] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-05-26 11:33:11] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-05-26 11:33:11] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-05-26 11:33:11] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-26 11:33:11] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.8.tar.gz tmp/mimllearning-0.5.9.tar.gz --markdown 20240526/m/mimllearning/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-26 11:33:12] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-05-26 11:33:12] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-05-26 11:33:12] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-05-26 11:33:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-05-26 11:33:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-05-26 11:33:15] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-26 11:33:15] INFO root fetch - main [MainThread]: Store serial: [23381824]
