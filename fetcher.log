@@ -15633,3 +15633,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:25:08] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-05-26 19:25:08] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-05-26 19:25:08] INFO root fetch - main [MainThread]: Store serial: [23385213]
+[2024-05-26 19:27:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385213]
+[2024-05-26 19:27:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 19:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 19:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pip2deb
+[2024-05-26 19:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tibia
+[2024-05-26 19:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ppynet
+[2024-05-26 19:27:16] WARNING root fetch - processPackages [tibia]: Skipping, unable to determine old version
+[2024-05-26 19:27:16] INFO root fetch - main [MainThread]: End processing [tibia] error
+[2024-05-26 19:27:16] INFO root fetch - processPackages [pip2deb]: New version: [1.1] Old Version: [1.0]
+[2024-05-26 19:27:16] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 19:27:16] INFO root fetch - processPackages [ppynet]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-26 19:27:16] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 19:27:16] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/96/7c/2ccec849c89090d0814a3a301a21472ff73c4f03c27e7d57dc05d9c9a241/pip2deb-1.0.tar.gz
+[2024-05-26 19:27:17] INFO root fetch - processPackages [ppynet]: Downloading https://files.pythonhosted.org/packages/0e/27/d1cf531071dc53c5bc9a712f972764318c9596d16cc82628d2ffed3fe5c6/ppynet-0.0.2.tar.gz
+[2024-05-26 19:27:17] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 19:27:17] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/86/ba/954b5b2e5eca45db53d862385a5611313a66702efeae4a86839a86ebd423/pip2deb-1.1.tar.gz
+[2024-05-26 19:27:17] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 19:27:17] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 19:27:17] INFO root fetch - processPackages [pip2deb]: executing diffoscope
+[2024-05-26 19:27:17] INFO root fetch - processPackages [pip2deb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip2deb-1.0.tar.gz tmp/pip2deb-1.1.tar.gz --markdown 20240526/p/pip2deb/1.0-1.1/README.md --exclude *.pyd
+[2024-05-26 19:27:17] INFO root fetch - processPackages [ppynet]: Downloading https://files.pythonhosted.org/packages/99/5b/14299f97743f7813ebc3df6f4afa31fc66c5ff41700cdf1cd966df4095b8/ppynet-0.0.3.tar.gz
+[2024-05-26 19:27:17] INFO root fetch - processPackages [ppynet]: executing diffoscope
+[2024-05-26 19:27:17] INFO root fetch - processPackages [ppynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppynet-0.0.2.tar.gz tmp/ppynet-0.0.3.tar.gz --markdown 20240526/p/ppynet/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-26 19:27:17] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.0.tar.gz]
+[2024-05-26 19:27:17] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.1.tar.gz]
+[2024-05-26 19:27:17] INFO root fetch - main [MainThread]: End processing [pip2deb]: success
+[2024-05-26 19:27:18] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 19:27:18] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 19:27:18] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 19:27:18] INFO root fetch - processPackages [ppynet]: Remove: archive file [/home/abi/fetcher/tmp/ppynet-0.0.2.tar.gz]
+[2024-05-26 19:27:18] INFO root fetch - processPackages [ppynet]: Remove: archive file [/home/abi/fetcher/tmp/ppynet-0.0.3.tar.gz]
+[2024-05-26 19:27:18] INFO root fetch - main [MainThread]: End processing [ppynet]: success
+[2024-05-26 19:27:18] INFO root fetch - main [MainThread]: Store serial: [23385250]
