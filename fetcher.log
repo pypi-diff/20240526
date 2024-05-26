@@ -10691,3 +10691,32 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:54:00] INFO root fetch - processPackages [turftopic]: Remove: archive file [/home/abi/fetcher/tmp/turftopic-0.2.9.tar.gz]
 [2024-05-26 14:54:00] INFO root fetch - main [MainThread]: End processing [turftopic]: success
 [2024-05-26 14:54:00] INFO root fetch - main [MainThread]: Store serial: [23382971]
+[2024-05-26 14:56:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382971]
+[2024-05-26 14:56:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 14:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: botrun-langgraph-agents
+[2024-05-26 14:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-islands
+[2024-05-26 14:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2024-05-26 14:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: topic-benchmark
+[2024-05-26 14:56:13] INFO root fetch - processPackages [streamlit-islands]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-26 14:56:14] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240526.12.29.80612] Old Version: [20240524.14.57.405447]
+[2024-05-26 14:56:14] INFO root fetch - processPackages [streamlit-islands]: Downloading https://files.pythonhosted.org/packages/12/fa/89a284f415441cd2c9344ae6b83a009ebc71e65e1ae087c784eb9ddeeb28/streamlit-islands-0.0.2.tar.gz
+[2024-05-26 14:56:14] INFO root fetch - processPackages [topic-benchmark]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-26 14:56:14] WARNING root fetch - processPackages [botrun-langgraph-agents]: Skipping, unable to determine old version
+[2024-05-26 14:56:14] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/e5/45/6647c5d4d7787efea521aa0ad492450fc23df4ab5e160304f83a1964a167/certora-cli-alpha-master-20240524.14.57.405447.tar.gz
+[2024-05-26 14:56:14] INFO root fetch - main [MainThread]: End processing [botrun-langgraph-agents] error
+[2024-05-26 14:56:14] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14595137>=10485760
+[2024-05-26 14:56:14] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-05-26 14:56:14] INFO root fetch - processPackages [topic-benchmark]: Downloading https://files.pythonhosted.org/packages/7c/1b/67b1b3ea726bea5fd44d57f42143a3b9ac2bc18854608a0366d82d0be003/topic_benchmark-0.2.6.tar.gz
+[2024-05-26 14:56:14] INFO root fetch - processPackages [streamlit-islands]: Downloading https://files.pythonhosted.org/packages/dc/b0/682d077d9056a0bd1849d67f5cc853ddc226e81a7ea727a13013f14d87c7/streamlit-islands-0.0.3.tar.gz
+[2024-05-26 14:56:14] INFO root fetch - processPackages [streamlit-islands]: executing diffoscope
+[2024-05-26 14:56:14] INFO root fetch - processPackages [streamlit-islands]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-islands-0.0.2.tar.gz tmp/streamlit-islands-0.0.3.tar.gz --markdown 20240526/s/streamlit-islands/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-26 14:56:14] INFO root fetch - processPackages [topic-benchmark]: Downloading https://files.pythonhosted.org/packages/c4/ee/5104307ae3d1111e923c729a27aea21fdd91b4c244465e980bc47fe3d16d/topic_benchmark-0.2.7.tar.gz
+[2024-05-26 14:56:14] INFO root fetch - processPackages [topic-benchmark]: executing diffoscope
+[2024-05-26 14:56:14] INFO root fetch - processPackages [topic-benchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topic_benchmark-0.2.6.tar.gz tmp/topic_benchmark-0.2.7.tar.gz --markdown 20240526/t/topic-benchmark/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-26 14:56:15] INFO root fetch - processPackages [streamlit-islands]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-islands-0.0.2.tar.gz]
+[2024-05-26 14:56:15] INFO root fetch - processPackages [streamlit-islands]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-islands-0.0.3.tar.gz]
+[2024-05-26 14:56:15] INFO root fetch - main [MainThread]: End processing [streamlit-islands]: success
+[2024-05-26 14:56:15] INFO root fetch - processPackages [topic-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/topic_benchmark-0.2.6.tar.gz]
+[2024-05-26 14:56:15] INFO root fetch - processPackages [topic-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/topic_benchmark-0.2.7.tar.gz]
+[2024-05-26 14:56:15] INFO root fetch - main [MainThread]: End processing [topic-benchmark]: success
+[2024-05-26 14:56:15] INFO root fetch - main [MainThread]: Store serial: [23382987]
