@@ -14362,3 +14362,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:15:26] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.9.tar.gz]
 [2024-05-26 18:15:26] INFO root fetch - main [MainThread]: End processing [pqsdk]: success
 [2024-05-26 18:15:26] INFO root fetch - main [MainThread]: Store serial: [23384603]
+[2024-05-26 18:17:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384603]
+[2024-05-26 18:17:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 18:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-missing-releases-librmo
+[2024-05-26 18:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-26 18:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RankChem
+[2024-05-26 18:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stam
+[2024-05-26 18:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pip2deb
+[2024-05-26 18:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: medjc09-hub-python
+[2024-05-26 18:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: satsure-core-test
+[2024-05-26 18:17:35] INFO root fetch - processPackages [zenaura]: New version: [0.9.55] Old Version: [0.9.54]
+[2024-05-26 18:17:35] WARNING root fetch - processPackages [pip2deb]: Skipping, unable to determine old version
+[2024-05-26 18:17:35] INFO root fetch - main [MainThread]: End processing [pip2deb] error
+[2024-05-26 18:17:35] INFO root fetch - processPackages [satsure-core-test]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-26 18:17:35] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/70/dd/45f4c1caa1a7c6584c8cd1f3777379e97ccdab4edc955a9e12de2457d923/zenaura-0.9.54.tar.gz
+[2024-05-26 18:17:35] WARNING root fetch - processPackages [medjc09-hub-python]: Skipping, unable to determine old version
+[2024-05-26 18:17:35] INFO root fetch - main [MainThread]: End processing [medjc09-hub-python] error
+[2024-05-26 18:17:35] INFO root fetch - processPackages [py-missing-releases-librmo]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 18:17:35] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/02/c7/a5a85c05a3052fdcaad6c3ca296ad6f8b36b6bbab140ed12b1745d5ce23c/satsure-core-test-0.3.3.tar.gz
+[2024-05-26 18:17:35] WARNING root fetch - processPackages [RankChem]: Skipping, unable to determine old version
+[2024-05-26 18:17:35] INFO root fetch - main [MainThread]: End processing [RankChem] error
+[2024-05-26 18:17:35] INFO root fetch - processPackages [stam]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-26 18:17:35] INFO root fetch - processPackages [py-missing-releases-librmo]: Downloading https://files.pythonhosted.org/packages/84/40/42d4516f79ab71243307891768aa9fa5135a6a12748cdea5b525b734f79d/py_missing_releases_librmo-0.1.0.tar.gz
+[2024-05-26 18:17:35] INFO root fetch - processPackages [stam]: Downloading https://files.pythonhosted.org/packages/2e/16/1df7848b76b5029bc515a738ee1f5c6951de4d8de1df51c46ecac5504814/stam-0.8.0.tar.gz
+[2024-05-26 18:17:35] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/82/d7/14afaa8d69026e5914e531dad704a8cdfafe286a0ac42ae883e860d2d179/zenaura-0.9.55.tar.gz
+[2024-05-26 18:17:35] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/c0/aa/7ff7141f4b7d38585b999df3060005a161c483a0d0da39af83151a1f8ef0/satsure-core-test-0.3.4.tar.gz
+[2024-05-26 18:17:35] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 18:17:35] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.54.tar.gz tmp/zenaura-0.9.55.tar.gz --markdown 20240526/z/zenaura/0.9.54-0.9.55/README.md --exclude *.pyd
+[2024-05-26 18:17:36] INFO root fetch - processPackages [py-missing-releases-librmo]: Downloading https://files.pythonhosted.org/packages/a4/e4/4bf0085bd0e592331b38915c558d2b6a32b25bc5af6c1c2a31d60973b895/py_missing_releases_librmo-0.1.1.tar.gz
+[2024-05-26 18:17:36] INFO root fetch - processPackages [satsure-core-test]: executing diffoscope
+[2024-05-26 18:17:36] INFO root fetch - processPackages [satsure-core-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satsure-core-test-0.3.3.tar.gz tmp/satsure-core-test-0.3.4.tar.gz --markdown 20240526/s/satsure-core-test/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-26 18:17:36] INFO root fetch - processPackages [py-missing-releases-librmo]: executing diffoscope
+[2024-05-26 18:17:36] INFO root fetch - processPackages [py-missing-releases-librmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_missing_releases_librmo-0.1.0.tar.gz tmp/py_missing_releases_librmo-0.1.1.tar.gz --markdown 20240526/p/py-missing-releases-librmo/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 18:17:36] INFO root fetch - processPackages [stam]: Downloading https://files.pythonhosted.org/packages/a0/e7/d16a2522e1e64a992da71e5010ea12a9ba60a05d2db5c2c710473d8d7aa5/stam-0.8.1-cp39-cp39-musllinux_1_2_x86_64.whl
+[2024-05-26 18:17:36] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.3.tar.gz]
+[2024-05-26 18:17:36] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.4.tar.gz]
+[2024-05-26 18:17:36] INFO root fetch - main [MainThread]: End processing [satsure-core-test]: success
+[2024-05-26 18:17:36] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.54.tar.gz]
+[2024-05-26 18:17:36] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.55.tar.gz]
+[2024-05-26 18:17:36] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 18:17:36] INFO root fetch - processPackages [py-missing-releases-librmo]: Remove: archive file [/home/abi/fetcher/tmp/py_missing_releases_librmo-0.1.0.tar.gz]
+[2024-05-26 18:17:36] INFO root fetch - processPackages [py-missing-releases-librmo]: Remove: archive file [/home/abi/fetcher/tmp/py_missing_releases_librmo-0.1.1.tar.gz]
+[2024-05-26 18:17:36] INFO root fetch - main [MainThread]: End processing [py-missing-releases-librmo]: success
+[2024-05-26 18:17:36] INFO root fetch - processPackages [stam]: executing diffoscope
+[2024-05-26 18:17:36] INFO root fetch - processPackages [stam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stam-0.8.0.tar.gz tmp/stam-0.8.1-cp39-cp39-musllinux_1_2_x86_64.whl.zip --markdown 20240526/s/stam/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-26 18:17:37] INFO root fetch - processPackages [stam]: Remove: archive file [/home/abi/fetcher/tmp/stam-0.8.0.tar.gz]
+[2024-05-26 18:17:37] INFO root fetch - processPackages [stam]: Remove: archive file [/home/abi/fetcher/tmp/stam-0.8.1-cp39-cp39-musllinux_1_2_x86_64.whl.zip]
+[2024-05-26 18:17:37] INFO root fetch - main [MainThread]: End processing [stam]: success
+[2024-05-26 18:17:37] INFO root fetch - main [MainThread]: Store serial: [23384653]
