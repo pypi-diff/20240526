@@ -12262,3 +12262,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:32:29] WARNING root fetch - processPackages [nlpaf]: Skipping package: exceeds size limit 24324747>=10485760
 [2024-05-26 16:32:29] INFO root fetch - main [MainThread]: End processing [nlpaf] error
 [2024-05-26 16:32:29] INFO root fetch - main [MainThread]: Store serial: [23383754]
+[2024-05-26 16:34:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383754]
+[2024-05-26 16:34:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 16:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyheos
+[2024-05-26 16:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pi-awning-webthing
+[2024-05-26 16:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-26 16:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: goit-phone-book-bot
+[2024-05-26 16:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aonet
+[2024-05-26 16:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bvhio
+[2024-05-26 16:34:58] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 16:34:58] INFO root fetch - processPackages [bvhio]: New version: [1.4.0] Old Version: [1.3.9]
+[2024-05-26 16:34:58] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pyheos]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-26 16:34:59] INFO root fetch - processPackages [aonet]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-26 16:34:59] INFO root fetch - processPackages [goit-phone-book-bot]: New version: [0.1.0] Old Version: [0.0.8]
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [bvhio]: Downloading https://files.pythonhosted.org/packages/86/64/ac2e823dc32a1427f6e361ca977d7b5517e066a76243408a44f885422252/bvhio-1.3.9.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pyheos]: Downloading https://files.pythonhosted.org/packages/42/a5/7c32d401e1395a5388812fff60ef6609816ae10032fe261da03c1a482243/pyheos-0.7.2.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [aonet]: Downloading https://files.pythonhosted.org/packages/1e/9a/767dce83d5ac0c1817dfd330e8d4446f2404a9182f9ffc034eb830c30772/aonet-1.0.3.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/89/5f/e85d342c5f221466c784679fac37a491cc4fc0499c700b9e2b1d5a49ab4c/goit-phone-book-bot-0.0.8.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [bvhio]: Downloading https://files.pythonhosted.org/packages/bc/d2/e8b5ecc1d7be6bfb75038831a21edf6144d4a0bf08c43884ec333289a402/bvhio-1.4.0.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [bvhio]: executing diffoscope
+[2024-05-26 16:34:59] INFO root fetch - processPackages [bvhio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bvhio-1.3.9.tar.gz tmp/bvhio-1.4.0.tar.gz --markdown 20240526/b/bvhio/1.3.9-1.4.0/README.md --exclude *.pyd
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 16:34:59] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 16:34:59] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 16:34:59] INFO root fetch - processPackages [aonet]: Downloading https://files.pythonhosted.org/packages/72/4b/ec966ee21cf7eb33f24df0ed4af5f9e369bb522cd4ab53b129d1552b3b6e/aonet-1.0.4.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/a5/77/c885eee2f2b1c6f37d8d2e30cbaf960d930708bcafc088a243806a30d4a5/goit_phone_book_bot-0.1.0.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pyheos]: Downloading https://files.pythonhosted.org/packages/4f/70/c7f79643068889ab038db31ede3b681aea8ac7a244787f443bb56d9c6842/pyheos-0.7.3.tar.gz
+[2024-05-26 16:34:59] INFO root fetch - processPackages [goit-phone-book-bot]: executing diffoscope
+[2024-05-26 16:34:59] INFO root fetch - processPackages [goit-phone-book-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goit-phone-book-bot-0.0.8.tar.gz tmp/goit_phone_book_bot-0.1.0.tar.gz --markdown 20240526/g/goit-phone-book-bot/0.0.8-0.1.0/README.md --exclude *.pyd
+[2024-05-26 16:34:59] INFO root fetch - processPackages [aonet]: executing diffoscope
+[2024-05-26 16:34:59] INFO root fetch - processPackages [aonet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aonet-1.0.3.tar.gz tmp/aonet-1.0.4.tar.gz --markdown 20240526/a/aonet/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pyheos]: executing diffoscope
+[2024-05-26 16:34:59] INFO root fetch - processPackages [pyheos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyheos-0.7.2.tar.gz tmp/pyheos-0.7.3.tar.gz --markdown 20240526/p/pyheos/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-05-26 16:35:00] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:35:00] INFO root fetch - processPackages [bvhio]: Remove: archive file [/home/abi/fetcher/tmp/bvhio-1.3.9.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - processPackages [bvhio]: Remove: archive file [/home/abi/fetcher/tmp/bvhio-1.4.0.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - main [MainThread]: End processing [bvhio]: success
+[2024-05-26 16:35:00] INFO root fetch - processPackages [aonet]: Remove: archive file [/home/abi/fetcher/tmp/aonet-1.0.3.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - processPackages [aonet]: Remove: archive file [/home/abi/fetcher/tmp/aonet-1.0.4.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - main [MainThread]: End processing [aonet]: success
+[2024-05-26 16:35:00] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit-phone-book-bot-0.0.8.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit_phone_book_bot-0.1.0.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - main [MainThread]: End processing [goit-phone-book-bot]: success
+[2024-05-26 16:35:00] INFO root fetch - processPackages [pyheos]: Remove: archive file [/home/abi/fetcher/tmp/pyheos-0.7.2.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - processPackages [pyheos]: Remove: archive file [/home/abi/fetcher/tmp/pyheos-0.7.3.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - main [MainThread]: End processing [pyheos]: success
+[2024-05-26 16:35:00] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 16:35:00] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 16:35:00] INFO root fetch - main [MainThread]: Store serial: [23383772]
