@@ -22152,3 +22152,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:43:06] INFO root fetch - processPackages [cam-manager]: Remove: archive file [/home/abi/fetcher/tmp/cam_manager-0.1.3.tar.gz]
 [2024-05-26 23:43:06] INFO root fetch - main [MainThread]: End processing [cam-manager]: success
 [2024-05-26 23:43:06] INFO root fetch - main [MainThread]: Store serial: [23388055]
+[2024-05-26 23:45:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23388055]
+[2024-05-26 23:45:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 23:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contact-phone-local
+[2024-05-26 23:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leechcorepyc
+[2024-05-26 23:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atlantic
+[2024-05-26 23:45:15] INFO root fetch - processPackages [atlantic]: New version: [1.1.50] Old Version: [1.1.5]
+[2024-05-26 23:45:15] INFO root fetch - processPackages [contact-phone-local]: New version: [0.0.9] Old Version: [0.0.18]
+[2024-05-26 23:45:15] INFO root fetch - processPackages [leechcorepyc]: New version: [2.8.1] Old Version: [2.8.0]
+[2024-05-26 23:45:15] INFO root fetch - processPackages [contact-phone-local]: Downloading https://files.pythonhosted.org/packages/7f/57/149f22172846d53da091ba4385e9587963309bcf54b563ce498d9d45f7b5/contact_phone_local-0.0.18.tar.gz
+[2024-05-26 23:45:15] INFO root fetch - processPackages [atlantic]: Downloading https://files.pythonhosted.org/packages/f0/79/9583bcb37f5d8254ee93a7589e1519dc15e5eedb301f4eebe721cd2ff4f6/atlantic-1.1.5-py3-none-any.whl
+[2024-05-26 23:45:15] INFO root fetch - processPackages [leechcorepyc]: Downloading https://files.pythonhosted.org/packages/54/9e/10b361cfa728f728beecfacdc1e4fc2ca0462f56c8e73fd7e8738f5c8f36/leechcorepyc-2.8.0.tar.gz
+[2024-05-26 23:45:16] INFO root fetch - processPackages [atlantic]: Downloading https://files.pythonhosted.org/packages/12/4a/bdb50154b5b35228641314fff8fd1ec072c7168e5a05c43f37fe28968140/atlantic-1.1.50-py3-none-any.whl
+[2024-05-26 23:45:16] INFO root fetch - processPackages [contact-phone-local]: Downloading https://files.pythonhosted.org/packages/88/b5/c3cd7b2322b674e5115abe0cf1665d7405051dc6307ded8f38e07f5d95e7/contact_phone_local-0.0.9.tar.gz
+[2024-05-26 23:45:16] INFO root fetch - processPackages [leechcorepyc]: Downloading https://files.pythonhosted.org/packages/e6/52/24292fbdc9d104ec939737b4a4b656fcc87a4a658d6cf8281f31a4ae82e8/leechcorepyc-2.8.1.tar.gz
+[2024-05-26 23:45:16] INFO root fetch - processPackages [atlantic]: executing diffoscope
+[2024-05-26 23:45:16] INFO root fetch - processPackages [atlantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlantic-1.1.5-py3-none-any.whl.zip tmp/atlantic-1.1.50-py3-none-any.whl.zip --markdown 20240526/a/atlantic/1.1.5-1.1.50/README.md --exclude *.pyd
+[2024-05-26 23:45:16] INFO root fetch - processPackages [leechcorepyc]: executing diffoscope
+[2024-05-26 23:45:16] INFO root fetch - processPackages [leechcorepyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leechcorepyc-2.8.0.tar.gz tmp/leechcorepyc-2.8.1.tar.gz --markdown 20240526/l/leechcorepyc/2.8.0-2.8.1/README.md --exclude *.pyd
+[2024-05-26 23:45:16] INFO root fetch - processPackages [contact-phone-local]: executing diffoscope
+[2024-05-26 23:45:16] INFO root fetch - processPackages [contact-phone-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_phone_local-0.0.18.tar.gz tmp/contact_phone_local-0.0.9.tar.gz --markdown 20240526/c/contact-phone-local/0.0.18-0.0.9/README.md --exclude *.pyd
+[2024-05-26 23:45:16] INFO root fetch - processPackages [atlantic]: Remove: archive file [/home/abi/fetcher/tmp/atlantic-1.1.5-py3-none-any.whl.zip]
+[2024-05-26 23:45:16] INFO root fetch - processPackages [atlantic]: Remove: archive file [/home/abi/fetcher/tmp/atlantic-1.1.50-py3-none-any.whl.zip]
+[2024-05-26 23:45:16] INFO root fetch - main [MainThread]: End processing [atlantic]: success
+[2024-05-26 23:45:16] INFO root fetch - processPackages [contact-phone-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_phone_local-0.0.18.tar.gz]
+[2024-05-26 23:45:16] INFO root fetch - processPackages [contact-phone-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_phone_local-0.0.9.tar.gz]
+[2024-05-26 23:45:16] INFO root fetch - main [MainThread]: End processing [contact-phone-local]: success
+[2024-05-26 23:45:16] INFO root fetch - processPackages [leechcorepyc]: Remove: archive file [/home/abi/fetcher/tmp/leechcorepyc-2.8.0.tar.gz]
+[2024-05-26 23:45:16] INFO root fetch - processPackages [leechcorepyc]: Remove: archive file [/home/abi/fetcher/tmp/leechcorepyc-2.8.1.tar.gz]
+[2024-05-26 23:45:16] INFO root fetch - main [MainThread]: End processing [leechcorepyc]: success
+[2024-05-26 23:45:16] INFO root fetch - main [MainThread]: Store serial: [23388068]
