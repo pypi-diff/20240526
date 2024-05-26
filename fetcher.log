@@ -1567,3 +1567,9 @@
 [2024-05-26 03:04:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716673050.tar.gz]
 [2024-05-26 03:04:47] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-05-26 03:04:47] INFO root fetch - main [MainThread]: Store serial: [23378851]
+[2024-05-26 03:06:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378851]
+[2024-05-26 03:06:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 03:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-webpreview
+[2024-05-26 03:06:55] WARNING root fetch - processPackages [nonebot-plugin-webpreview]: Skipping, unable to determine old version
+[2024-05-26 03:06:55] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-webpreview] error
+[2024-05-26 03:06:55] INFO root fetch - main [MainThread]: Store serial: [23378855]
