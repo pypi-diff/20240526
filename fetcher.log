@@ -8913,3 +8913,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:18:47] INFO root fetch - processPackages [mihomo]: Remove: archive file [/home/abi/fetcher/tmp/mihomo-2.3.0.tar.gz]
 [2024-05-26 12:18:47] INFO root fetch - main [MainThread]: End processing [mihomo]: success
 [2024-05-26 12:18:47] INFO root fetch - main [MainThread]: Store serial: [23382144]
+[2024-05-26 12:20:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382144]
+[2024-05-26 12:21:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 12:21:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TenshiTranslator
+[2024-05-26 12:21:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AZMusicAPI
+[2024-05-26 12:21:00] INFO root fetch - processPackages [AZMusicAPI]: New version: [1.4.5] Old Version: [1.4.3]
+[2024-05-26 12:21:00] INFO root fetch - processPackages [AZMusicAPI]: Downloading https://files.pythonhosted.org/packages/75/e9/8dc4d18d45893e2dbfa3d29d98a78f094b353d80e508f20a19817f212d4f/AZMusicAPI-1.4.3.tar.gz
+[2024-05-26 12:21:00] INFO root fetch - processPackages [TenshiTranslator]: New version: [2.0.0] Old Version: [1.0.4]
+[2024-05-26 12:21:00] INFO root fetch - processPackages [TenshiTranslator]: Downloading https://files.pythonhosted.org/packages/7c/6f/e3be28728a53501bec425f45994c68f8ab2458e6cdcc2ef8d34344b8d0ef/tenshitranslator-1.0.4.tar.gz
+[2024-05-26 12:21:01] INFO root fetch - processPackages [AZMusicAPI]: Downloading https://files.pythonhosted.org/packages/c0/15/9a944dc86b3ec4f53a3b9a78c81517b42fd971cee648bbd2e4744c6d707a/AZMusicAPI-1.4.5.tar.gz
+[2024-05-26 12:21:01] INFO root fetch - processPackages [AZMusicAPI]: executing diffoscope
+[2024-05-26 12:21:01] INFO root fetch - processPackages [AZMusicAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AZMusicAPI-1.4.3.tar.gz tmp/AZMusicAPI-1.4.5.tar.gz --markdown 20240526/A/AZMusicAPI/1.4.3-1.4.5/README.md --exclude *.pyd
+[2024-05-26 12:21:01] INFO root fetch - processPackages [TenshiTranslator]: Downloading https://files.pythonhosted.org/packages/91/6a/311e9e7aa32617bad12a2ed559de0a27aa4050f0196c7673b4aeb1a8d1cb/tenshitranslator-2.0.0.tar.gz
+[2024-05-26 12:21:01] INFO root fetch - processPackages [TenshiTranslator]: executing diffoscope
+[2024-05-26 12:21:01] INFO root fetch - processPackages [TenshiTranslator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tenshitranslator-1.0.4.tar.gz tmp/tenshitranslator-2.0.0.tar.gz --markdown 20240526/T/TenshiTranslator/1.0.4-2.0.0/README.md --exclude *.pyd
+[2024-05-26 12:21:01] INFO root fetch - processPackages [AZMusicAPI]: Remove: archive file [/home/abi/fetcher/tmp/AZMusicAPI-1.4.3.tar.gz]
+[2024-05-26 12:21:01] INFO root fetch - processPackages [AZMusicAPI]: Remove: archive file [/home/abi/fetcher/tmp/AZMusicAPI-1.4.5.tar.gz]
+[2024-05-26 12:21:01] INFO root fetch - main [MainThread]: End processing [AZMusicAPI]: success
+[2024-05-26 12:21:01] INFO root fetch - processPackages [TenshiTranslator]: Remove: archive file [/home/abi/fetcher/tmp/tenshitranslator-1.0.4.tar.gz]
+[2024-05-26 12:21:01] INFO root fetch - processPackages [TenshiTranslator]: Remove: archive file [/home/abi/fetcher/tmp/tenshitranslator-2.0.0.tar.gz]
+[2024-05-26 12:21:01] INFO root fetch - main [MainThread]: End processing [TenshiTranslator]: success
+[2024-05-26 12:21:01] INFO root fetch - main [MainThread]: Store serial: [23382150]
