@@ -3353,3 +3353,15 @@
 [2024-05-26 06:08:37] INFO root fetch - processPackages [video-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/video_toolkit-0.1.1.tar.gz]
 [2024-05-26 06:08:37] INFO root fetch - main [MainThread]: End processing [video-toolkit]: success
 [2024-05-26 06:08:37] INFO root fetch - main [MainThread]: Store serial: [23379595]
+[2024-05-26 06:10:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379595]
+[2024-05-26 06:10:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 06:10:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-geoacumen
+[2024-05-26 06:10:46] INFO root fetch - processPackages [python-geoacumen]: New version: [2024.5.5] Old Version: [2024.5.26]
+[2024-05-26 06:10:46] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/35/52/6a0cdb9cb233b68a8c5cbde8f44fa7160808fad7318224bec7c33229cd70/python-geoacumen-2024.5.26.tar.gz
+[2024-05-26 06:10:47] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/90/c0/07d5db0508938cc316c7a276f6f70aa320c1da593c6ecb7a45cd1be82880/python-geoacumen-2024.5.5.tar.gz
+[2024-05-26 06:10:48] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2024-05-26 06:10:48] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2024.5.26.tar.gz tmp/python-geoacumen-2024.5.5.tar.gz --markdown 20240526/p/python-geoacumen/2024.5.26-2024.5.5/README.md --exclude *.pyd
+[2024-05-26 06:10:49] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.26.tar.gz]
+[2024-05-26 06:10:49] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.5.tar.gz]
+[2024-05-26 06:10:49] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2024-05-26 06:10:49] INFO root fetch - main [MainThread]: Store serial: [23379599]
