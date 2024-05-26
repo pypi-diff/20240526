@@ -8038,3 +8038,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:22:03] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.1.tar.gz]
 [2024-05-26 11:22:03] INFO root fetch - main [MainThread]: End processing [platypush]: success
 [2024-05-26 11:22:03] INFO root fetch - main [MainThread]: Store serial: [23381765]
+[2024-05-26 11:24:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381765]
+[2024-05-26 11:24:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 11:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lantana
+[2024-05-26 11:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EcoStock
+[2024-05-26 11:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdmxschemas
+[2024-05-26 11:24:15] INFO root fetch - processPackages [EcoStock]: New version: [1.3] Old Version: [1.2]
+[2024-05-26 11:24:15] INFO root fetch - processPackages [lantana]: New version: [2.9.8.4] Old Version: [2.9.8.3]
+[2024-05-26 11:24:15] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/59/d2/6dcffa0083625eb829a9c3dad160f677951c3b5966008190fada62b9bc79/ecostock-1.2.tar.gz
+[2024-05-26 11:24:15] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/8d/48/b9d878dbe66bbdf8a711fbc9726d3a8afcc8b6edb55bf9ee6d3e2b61ca00/lantana-2.9.8.3.tar.gz
+[2024-05-26 11:24:15] INFO root fetch - processPackages [sdmxschemas]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-26 11:24:15] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/08/1e/a88fed5ead7a6625529e619a03cd244ab4898f925ec4e87d83be57398ccf/ecostock-1.3.tar.gz
+[2024-05-26 11:24:15] INFO root fetch - processPackages [sdmxschemas]: Downloading https://files.pythonhosted.org/packages/b9/5b/461b302351aee2592f2ac7567ffacd32b3c9f8d241d71da9729d876f182d/sdmxschemas-0.1.0.tar.gz
+[2024-05-26 11:24:15] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-05-26 11:24:15] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecostock-1.2.tar.gz tmp/ecostock-1.3.tar.gz --markdown 20240526/E/EcoStock/1.2-1.3/README.md --exclude *.pyd
+[2024-05-26 11:24:15] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/4f/d1/a30803875de4354e1ef11b3c9672aad2c477a2dbf6bd73b49a9f9bc3c32f/lantana-2.9.8.4.tar.gz
+[2024-05-26 11:24:15] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2024-05-26 11:24:15] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.9.8.3.tar.gz tmp/lantana-2.9.8.4.tar.gz --markdown 20240526/l/lantana/2.9.8.3-2.9.8.4/README.md --exclude *.pyd
+[2024-05-26 11:24:15] INFO root fetch - processPackages [sdmxschemas]: Downloading https://files.pythonhosted.org/packages/88/db/c8282de9924ba8e5dab20eb34433e86ec296b9b418650262f8fd163b6691/sdmxschemas-0.2.0.tar.gz
+[2024-05-26 11:24:16] INFO root fetch - processPackages [sdmxschemas]: executing diffoscope
+[2024-05-26 11:24:16] INFO root fetch - processPackages [sdmxschemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdmxschemas-0.1.0.tar.gz tmp/sdmxschemas-0.2.0.tar.gz --markdown 20240526/s/sdmxschemas/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-26 11:24:16] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.2.tar.gz]
+[2024-05-26 11:24:16] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.3.tar.gz]
+[2024-05-26 11:24:16] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-05-26 11:24:16] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.3.tar.gz]
+[2024-05-26 11:24:16] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.4.tar.gz]
+[2024-05-26 11:24:16] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2024-05-26 11:24:17] INFO root fetch - processPackages [sdmxschemas]: Remove: archive file [/home/abi/fetcher/tmp/sdmxschemas-0.1.0.tar.gz]
+[2024-05-26 11:24:17] INFO root fetch - processPackages [sdmxschemas]: Remove: archive file [/home/abi/fetcher/tmp/sdmxschemas-0.2.0.tar.gz]
+[2024-05-26 11:24:17] INFO root fetch - main [MainThread]: End processing [sdmxschemas]: success
+[2024-05-26 11:24:17] INFO root fetch - main [MainThread]: Store serial: [23381774]
