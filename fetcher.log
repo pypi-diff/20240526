@@ -5802,3 +5802,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:52:46] INFO root fetch - processPackages [spotinst-sdk2]: Remove: archive file [/home/abi/fetcher/tmp/spotinst-sdk2-3.5.0.tar.gz]
 [2024-05-26 09:52:46] INFO root fetch - main [MainThread]: End processing [spotinst-sdk2]: success
 [2024-05-26 09:52:46] INFO root fetch - main [MainThread]: Store serial: [23380764]
+[2024-05-26 09:54:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380764]
+[2024-05-26 09:54:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 09:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uk_bin_collection
+[2024-05-26 09:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tgqSim
+[2024-05-26 09:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tdrpa.tdcore
+[2024-05-26 09:54:58] INFO root fetch - processPackages [tgqSim]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-26 09:54:58] INFO root fetch - processPackages [tgqSim]: Downloading https://files.pythonhosted.org/packages/5e/25/392683466bdb87ab8fec88151fae96e4038b5d7d01ff2dcd73481fa4bf54/tgqSim-0.3.0.tar.gz
+[2024-05-26 09:54:58] INFO root fetch - processPackages [tdrpa.tdcore]: New version: [1.1.41] Old Version: [1.1.39]
+[2024-05-26 09:54:58] INFO root fetch - processPackages [uk_bin_collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-26 09:54:58] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-05-26 09:54:58] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/28/0d/ab204608790818424e8203463426f38ebba112de5624daf3294798163a7d/tdrpa.tdcore-1.1.39-py39-none-win_amd64.whl
+[2024-05-26 09:54:58] INFO root fetch - processPackages [tgqSim]: Downloading https://files.pythonhosted.org/packages/e3/5e/df6af86cf194c5e78f42c686734b61d563374325dceca97eeeaf5334b296/tgqSim-0.3.1.tar.gz
+[2024-05-26 09:54:58] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-05-26 09:54:58] INFO root fetch - processPackages [tgqSim]: executing diffoscope
+[2024-05-26 09:54:58] INFO root fetch - processPackages [tgqSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tgqSim-0.3.0.tar.gz tmp/tgqSim-0.3.1.tar.gz --markdown 20240526/t/tgqSim/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-26 09:54:58] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/5b/16/af565da1f3a7f6614e86bc07061ad55920311939c2c0a7d2eb60c560b357/tdrpa.tdcore-1.1.41-py39-none-win_amd64.whl
+[2024-05-26 09:54:58] INFO root fetch - processPackages [uk_bin_collection]: executing diffoscope
+[2024-05-26 09:54:58] INFO root fetch - processPackages [uk_bin_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240526/u/uk_bin_collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-26 09:54:59] INFO root fetch - processPackages [tdrpa.tdcore]: executing diffoscope
+[2024-05-26 09:54:59] INFO root fetch - processPackages [tdrpa.tdcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdcore-1.1.39-py39-none-win_amd64.whl.zip tmp/tdrpa.tdcore-1.1.41-py39-none-win_amd64.whl.zip --markdown 20240526/t/tdrpa.tdcore/1.1.39-1.1.41/README.md --exclude *.pyd
+[2024-05-26 09:54:59] INFO root fetch - processPackages [tgqSim]: Remove: archive file [/home/abi/fetcher/tmp/tgqSim-0.3.0.tar.gz]
+[2024-05-26 09:54:59] INFO root fetch - processPackages [tgqSim]: Remove: archive file [/home/abi/fetcher/tmp/tgqSim-0.3.1.tar.gz]
+[2024-05-26 09:54:59] INFO root fetch - main [MainThread]: End processing [tgqSim]: success
+[2024-05-26 09:54:59] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-05-26 09:54:59] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-05-26 09:54:59] INFO root fetch - main [MainThread]: End processing [uk_bin_collection]: success
+[2024-05-26 09:55:01] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.39-py39-none-win_amd64.whl.zip]
+[2024-05-26 09:55:01] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.41-py39-none-win_amd64.whl.zip]
+[2024-05-26 09:55:01] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
+[2024-05-26 09:55:01] INFO root fetch - main [MainThread]: Store serial: [23380777]
