@@ -10199,3 +10199,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:17:47] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.6.tar.gz]
 [2024-05-26 14:17:47] INFO root fetch - main [MainThread]: End processing [contacts-assistant]: success
 [2024-05-26 14:17:47] INFO root fetch - main [MainThread]: Store serial: [23382757]
+[2024-05-26 14:19:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382757]
+[2024-05-26 14:20:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tapsage-client
+[2024-05-26 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreamai
+[2024-05-26 14:20:01] INFO root fetch - processPackages [dreamai]: New version: [2.0.6] Old Version: [2.0.4]
+[2024-05-26 14:20:01] INFO root fetch - processPackages [dreamai]: Downloading https://files.pythonhosted.org/packages/b6/a8/903cb4a40b0b17bd1c23455a2b7c868cd4a48be3f0a79760842db3323bfe/dreamai-2.0.4.tar.gz
+[2024-05-26 14:20:01] INFO root fetch - processPackages [tapsage-client]: New version: [0.6.1] Old Version: [0.5.0]
+[2024-05-26 14:20:01] INFO root fetch - processPackages [dreamai]: Downloading https://files.pythonhosted.org/packages/86/4e/4af317cfb739d4e5394ab4b83b60cfc07da2f04a50e1afb891d410a7389e/dreamai-2.0.6.tar.gz
+[2024-05-26 14:20:01] INFO root fetch - processPackages [tapsage-client]: Downloading https://files.pythonhosted.org/packages/70/df/4787c5871840faae3b56074373b17f795acb7f0f7d0aea3c6395ce9bd7b0/tapsage_client-0.5.0.tar.gz
+[2024-05-26 14:20:01] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2024-05-26 14:20:01] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-2.0.4.tar.gz tmp/dreamai-2.0.6.tar.gz --markdown 20240526/d/dreamai/2.0.4-2.0.6/README.md --exclude *.pyd
+[2024-05-26 14:20:02] INFO root fetch - processPackages [tapsage-client]: Downloading https://files.pythonhosted.org/packages/02/6b/fc8999b23c394147d78f090b55549d458ed916f849487665d52fc8dac5ff/tapsage_client-0.6.1.tar.gz
+[2024-05-26 14:20:02] INFO root fetch - processPackages [tapsage-client]: executing diffoscope
+[2024-05-26 14:20:02] INFO root fetch - processPackages [tapsage-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapsage_client-0.5.0.tar.gz tmp/tapsage_client-0.6.1.tar.gz --markdown 20240526/t/tapsage-client/0.5.0-0.6.1/README.md --exclude *.pyd
+[2024-05-26 14:20:02] INFO root fetch - processPackages [dreamai]: Remove: archive file [/home/abi/fetcher/tmp/dreamai-2.0.4.tar.gz]
+[2024-05-26 14:20:02] INFO root fetch - processPackages [dreamai]: Remove: archive file [/home/abi/fetcher/tmp/dreamai-2.0.6.tar.gz]
+[2024-05-26 14:20:02] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2024-05-26 14:20:02] INFO root fetch - processPackages [tapsage-client]: Remove: archive file [/home/abi/fetcher/tmp/tapsage_client-0.5.0.tar.gz]
+[2024-05-26 14:20:02] INFO root fetch - processPackages [tapsage-client]: Remove: archive file [/home/abi/fetcher/tmp/tapsage_client-0.6.1.tar.gz]
+[2024-05-26 14:20:02] INFO root fetch - main [MainThread]: End processing [tapsage-client]: success
+[2024-05-26 14:20:02] INFO root fetch - main [MainThread]: Store serial: [23382763]
