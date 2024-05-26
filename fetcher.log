@@ -11522,3 +11522,56 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:47:11] INFO root fetch - processPackages [benchmarkfcns]: Remove: archive file [/home/abi/fetcher/tmp/benchmarkfcns-2.1.0.tar.gz]
 [2024-05-26 15:47:11] INFO root fetch - main [MainThread]: End processing [benchmarkfcns]: success
 [2024-05-26 15:47:11] INFO root fetch - main [MainThread]: Store serial: [23383467]
+[2024-05-26 15:49:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383467]
+[2024-05-26 15:49:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 15:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zvt
+[2024-05-26 15:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beets-goingrunning
+[2024-05-26 15:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mckinseysolvegame
+[2024-05-26 15:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bota
+[2024-05-26 15:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pi-awning-webthing
+[2024-05-26 15:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: llama-cpp-agent
+[2024-05-26 15:49:40] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 15:49:40] INFO root fetch - processPackages [llama-cpp-agent]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 15:49:40] INFO root fetch - processPackages [beets-goingrunning]: New version: [1.2.9] Old Version: [1.2.5]
+[2024-05-26 15:49:40] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f3/91/ba07c9e27dbb568d0143cb8eab18a7b153f080c095d6be2a900c7fd69332/pi_awning_webthing-0.3.8.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [bota]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 15:49:40] INFO root fetch - processPackages [mckinseysolvegame]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 15:49:40] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/a0/ba/e28b4ffe7b86f6d15ba5b9672537e66bc8273c02bbb8fa06f1337493886a/llama_cpp_agent-0.2.8.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [beets-goingrunning]: Downloading https://files.pythonhosted.org/packages/8f/3a/2040927541067f41d293fdd01d07361a61e7c93fb95c6a63a832ac875a35/beets-goingrunning-1.2.5.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [zvt]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 15:49:40] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/20/a9/4f637666fa83c508695967d807e33c729d659786a5de468b4289f5bff8b4/bota-4.0.8.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/9e/d4/cbbe9f8167c0c4f22e2936882a8b00168233892118edb1edd749c9cd2ded/mckinseysolvegame-1.0.1.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [zvt]: Downloading https://files.pythonhosted.org/packages/15/fc/4394995ee4725016348ce4358883f582a1e2ce472da132461fb6c4cb4e65/zvt-0.9.8.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/e5/bb/9a16b289d7453095ab2485d73acf22968e24e78ddee8f364f962860bc7e1/llama_cpp_agent-0.2.9.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [beets-goingrunning]: Downloading https://files.pythonhosted.org/packages/16/d2/1de9a4549ca54e53b22cdabaab0cb30b3a34b511d1d0b469682b2a242611/beets-goingrunning-1.2.9.tar.gz
+[2024-05-26 15:49:40] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 15:49:40] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.8.tar.gz tmp/pi_awning_webthing-0.3.9.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 15:49:40] WARNING root fetch - processPackages [zvt]: Skipping package: exceeds size limit 14014439>=10485760
+[2024-05-26 15:49:40] INFO root fetch - main [MainThread]: End processing [zvt] error
+[2024-05-26 15:49:40] INFO root fetch - processPackages [beets-goingrunning]: executing diffoscope
+[2024-05-26 15:49:40] INFO root fetch - processPackages [beets-goingrunning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets-goingrunning-1.2.5.tar.gz tmp/beets-goingrunning-1.2.9.tar.gz --markdown 20240526/b/beets-goingrunning/1.2.5-1.2.9/README.md --exclude *.pyd
+[2024-05-26 15:49:40] INFO root fetch - processPackages [llama-cpp-agent]: executing diffoscope
+[2024-05-26 15:49:40] INFO root fetch - processPackages [llama-cpp-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_agent-0.2.8.tar.gz tmp/llama_cpp_agent-0.2.9.tar.gz --markdown 20240526/l/llama-cpp-agent/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 15:49:40] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/a4/5f/24c14d0a7d609507557baf5369feaca8b3459d111f35e9258e9d0396f9a8/bota-4.0.9.tar.gz
+[2024-05-26 15:49:41] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/35/8b/4d7baab33c43c287172d90e0ae6017dcd004214bf0498f5a40438e74ad47/mckinseysolvegame-1.0.2.tar.gz
+[2024-05-26 15:49:41] INFO root fetch - processPackages [bota]: executing diffoscope
+[2024-05-26 15:49:41] INFO root fetch - processPackages [bota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bota-4.0.8.tar.gz tmp/bota-4.0.9.tar.gz --markdown 20240526/b/bota/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 15:49:41] INFO root fetch - processPackages [mckinseysolvegame]: executing diffoscope
+[2024-05-26 15:49:41] INFO root fetch - processPackages [mckinseysolvegame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mckinseysolvegame-1.0.1.tar.gz tmp/mckinseysolvegame-1.0.2.tar.gz --markdown 20240526/m/mckinseysolvegame/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 15:49:41] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.8.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 15:49:41] INFO root fetch - processPackages [beets-goingrunning]: Remove: archive file [/home/abi/fetcher/tmp/beets-goingrunning-1.2.5.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - processPackages [beets-goingrunning]: Remove: archive file [/home/abi/fetcher/tmp/beets-goingrunning-1.2.9.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - main [MainThread]: End processing [beets-goingrunning]: success
+[2024-05-26 15:49:41] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.8.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.9.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - main [MainThread]: End processing [llama-cpp-agent]: success
+[2024-05-26 15:49:41] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-1.0.1.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-1.0.2.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - main [MainThread]: End processing [mckinseysolvegame]: success
+[2024-05-26 15:49:41] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.8.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
+[2024-05-26 15:49:41] INFO root fetch - main [MainThread]: End processing [bota]: success
+[2024-05-26 15:49:41] INFO root fetch - main [MainThread]: Store serial: [23383487]
