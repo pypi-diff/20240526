@@ -17275,3 +17275,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:08:13] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.5.0.tar.gz]
 [2024-05-26 21:08:13] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
 [2024-05-26 21:08:13] INFO root fetch - main [MainThread]: Store serial: [23386045]
+[2024-05-26 21:10:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386045]
+[2024-05-26 21:10:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 21:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-05-26 21:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-26 21:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cadwyn
+[2024-05-26 21:10:22] INFO root fetch - processPackages [zenaura]: New version: [0.9.81] Old Version: [0.9.80]
+[2024-05-26 21:10:22] INFO root fetch - processPackages [scatcluster]: New version: [0.0.60] Old Version: [0.0.6]
+[2024-05-26 21:10:22] INFO root fetch - processPackages [cadwyn]: New version: [3.9.1] Old Version: [3.9.0]
+[2024-05-26 21:10:22] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/55/ee/bd803406ac566de7d3c98e77e5849605461b10951c4bca122172495b35a8/zenaura-0.9.80.tar.gz
+[2024-05-26 21:10:22] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 21:10:22] INFO root fetch - processPackages [cadwyn]: Downloading https://files.pythonhosted.org/packages/a3/4f/7b4a2bd12c03b455e251a3dc2d4e5cea1a278c3b661f83d9f1ae71ec61af/cadwyn-3.9.0.tar.gz
+[2024-05-26 21:10:22] INFO root fetch - processPackages [cadwyn]: Downloading https://files.pythonhosted.org/packages/db/ba/b60a6ff319798df485be894e718a016136ad97356e18ed27a805f3bbab7c/cadwyn-3.9.1.tar.gz
+[2024-05-26 21:10:22] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/82/cf/7a054f0fada5cf7e5e3f6055556222755fe95ee604fdfa60ac5092d80402/scatcluster-0.0.60.tar.gz
+[2024-05-26 21:10:22] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/90/f5/ea3477e84206e924c8574c2584cfe0e04774a411aeb7b9b8796021909a3c/zenaura-0.9.81.tar.gz
+[2024-05-26 21:10:22] INFO root fetch - processPackages [cadwyn]: executing diffoscope
+[2024-05-26 21:10:22] INFO root fetch - processPackages [cadwyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadwyn-3.9.0.tar.gz tmp/cadwyn-3.9.1.tar.gz --markdown 20240526/c/cadwyn/3.9.0-3.9.1/README.md --exclude *.pyd
+[2024-05-26 21:10:22] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 21:10:22] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.6.tar.gz tmp/scatcluster-0.0.60.tar.gz --markdown 20240526/s/scatcluster/0.0.6-0.0.60/README.md --exclude *.pyd
+[2024-05-26 21:10:22] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 21:10:22] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.80.tar.gz tmp/zenaura-0.9.81.tar.gz --markdown 20240526/z/zenaura/0.9.80-0.9.81/README.md --exclude *.pyd
+[2024-05-26 21:10:23] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 21:10:23] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.60.tar.gz]
+[2024-05-26 21:10:23] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 21:10:23] INFO root fetch - processPackages [cadwyn]: Remove: archive file [/home/abi/fetcher/tmp/cadwyn-3.9.0.tar.gz]
+[2024-05-26 21:10:23] INFO root fetch - processPackages [cadwyn]: Remove: archive file [/home/abi/fetcher/tmp/cadwyn-3.9.1.tar.gz]
+[2024-05-26 21:10:23] INFO root fetch - main [MainThread]: End processing [cadwyn]: success
+[2024-05-26 21:10:23] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.80.tar.gz]
+[2024-05-26 21:10:23] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.81.tar.gz]
+[2024-05-26 21:10:23] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 21:10:23] INFO root fetch - main [MainThread]: Store serial: [23386077]
