@@ -13144,3 +13144,32 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:07:41] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240525-py3-none-win_amd64.whl.zip]
 [2024-05-26 17:07:41] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-05-26 17:07:41] INFO root fetch - main [MainThread]: Store serial: [23384136]
+[2024-05-26 17:09:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384136]
+[2024-05-26 17:09:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 17:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airflow-markdown-extension
+[2024-05-26 17:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pi-awning-webthing
+[2024-05-26 17:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tabgan
+[2024-05-26 17:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fABBA
+[2024-05-26 17:09:50] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 17:09:50] INFO root fetch - processPackages [fABBA]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-26 17:09:50] WARNING root fetch - processPackages [airflow-markdown-extension]: Skipping, unable to determine old version
+[2024-05-26 17:09:50] INFO root fetch - main [MainThread]: End processing [airflow-markdown-extension] error
+[2024-05-26 17:09:50] INFO root fetch - processPackages [tabgan]: New version: [2.2.0] Old Version: [2.0.5]
+[2024-05-26 17:09:50] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 17:09:50] INFO root fetch - processPackages [fABBA]: Downloading https://files.pythonhosted.org/packages/c6/5e/94e2cc544587bdba14116adeb2b15f0b4aa1998e3e5b99900e3a12f50ea0/fABBA-1.2.1.tar.gz
+[2024-05-26 17:09:50] WARNING root fetch - processPackages [fABBA]: Skipping package: exceeds size limit 11194187>=10485760
+[2024-05-26 17:09:50] INFO root fetch - main [MainThread]: End processing [fABBA] error
+[2024-05-26 17:09:50] INFO root fetch - processPackages [tabgan]: Downloading https://files.pythonhosted.org/packages/f0/28/2bc2b90e2cf574d6d27f7ebe8dd1d29a84f4d97b71443bfcbbb7ba5e1773/tabgan-2.0.5-py2.py3-none-any.whl
+[2024-05-26 17:09:50] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 17:09:50] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 17:09:50] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 17:09:51] INFO root fetch - processPackages [tabgan]: Downloading https://files.pythonhosted.org/packages/70/66/585d0ece5233b2583d477682887bd15da7b6f74b36fbd074007899d7df9a/tabgan-2.2.0-py2.py3-none-any.whl
+[2024-05-26 17:09:51] INFO root fetch - processPackages [tabgan]: executing diffoscope
+[2024-05-26 17:09:51] INFO root fetch - processPackages [tabgan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabgan-2.0.5-py2.py3-none-any.whl.zip tmp/tabgan-2.2.0-py2.py3-none-any.whl.zip --markdown 20240526/t/tabgan/2.0.5-2.2.0/README.md --exclude *.pyd
+[2024-05-26 17:09:51] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 17:09:51] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 17:09:51] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 17:09:51] INFO root fetch - processPackages [tabgan]: Remove: archive file [/home/abi/fetcher/tmp/tabgan-2.0.5-py2.py3-none-any.whl.zip]
+[2024-05-26 17:09:51] INFO root fetch - processPackages [tabgan]: Remove: archive file [/home/abi/fetcher/tmp/tabgan-2.2.0-py2.py3-none-any.whl.zip]
+[2024-05-26 17:09:51] INFO root fetch - main [MainThread]: End processing [tabgan]: success
+[2024-05-26 17:09:51] INFO root fetch - main [MainThread]: Store serial: [23384148]
