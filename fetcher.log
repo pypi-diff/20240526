@@ -1368,3 +1368,53 @@
 [2024-05-26 02:40:32] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.9.tar.gz]
 [2024-05-26 02:40:32] INFO root fetch - main [MainThread]: End processing [agixtsdk]: success
 [2024-05-26 02:40:32] INFO root fetch - main [MainThread]: Store serial: [23378715]
+[2024-05-26 02:42:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378715]
+[2024-05-26 02:42:40] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 02:44:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378715]
+[2024-05-26 02:44:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 02:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nanoarrow
+[2024-05-26 02:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chift
+[2024-05-26 02:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sophus-pyo3
+[2024-05-26 02:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lyriks
+[2024-05-26 02:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tfds-nightly
+[2024-05-26 02:44:46] INFO root fetch - processPackages [lyriks]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 02:44:46] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202405250044] Old Version: [4.9.4.dev202405240044]
+[2024-05-26 02:44:46] INFO root fetch - processPackages [sophus-pyo3]: New version: [0.6.0] Old Version: [0.4.0]
+[2024-05-26 02:44:46] INFO root fetch - processPackages [chift]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 02:44:46] INFO root fetch - processPackages [nanoarrow]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-26 02:44:46] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/b8/1d/89e47d63e9b0ef801714b1e0872be3941515fbdf8733be4aad28b314b8d1/lyriks-0.2.2.tar.gz
+[2024-05-26 02:44:46] INFO root fetch - processPackages [chift]: Downloading https://files.pythonhosted.org/packages/d6/6f/f1da36cb45e5a3602ca98d5a4c0a76c94eb87c20a7125c20982ab1f6276f/chift-0.1.8.tar.gz
+[2024-05-26 02:44:46] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/41/77/0b6f3a7653d3e0f225c1a4b58531ce13702093a66d1637fc446e8a6b0ea5/tfds-nightly-4.9.4.dev202405240044.tar.gz
+[2024-05-26 02:44:46] INFO root fetch - processPackages [sophus-pyo3]: Downloading https://files.pythonhosted.org/packages/07/21/a590583631e112ef464041261bf50cca1e064e58b87a7e1017b62f4e2507/sophus_pyo3-0.4.0.tar.gz
+[2024-05-26 02:44:46] INFO root fetch - processPackages [nanoarrow]: Downloading https://files.pythonhosted.org/packages/59/70/e5df66cb079958d79709c1655d7909499eb60d0f20c50b72a20edec595fa/nanoarrow-0.4.0.tar.gz
+[2024-05-26 02:44:46] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/36/1a/df0efe5a55d5bd30ea82ecc82e9afecc1e97dbb6b5f2fb146dd9e198b437/lyriks-0.2.3.tar.gz
+[2024-05-26 02:44:46] INFO root fetch - processPackages [lyriks]: executing diffoscope
+[2024-05-26 02:44:46] INFO root fetch - processPackages [lyriks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyriks-0.2.2.tar.gz tmp/lyriks-0.2.3.tar.gz --markdown 20240526/l/lyriks/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 02:44:46] INFO root fetch - processPackages [chift]: Downloading https://files.pythonhosted.org/packages/fc/05/9b76c39d5ab3132a9abb69c6da7f9490b9ff7f7bb7c38327921c92e9674f/chift-0.1.9.tar.gz
+[2024-05-26 02:44:46] INFO root fetch - processPackages [sophus-pyo3]: Downloading https://files.pythonhosted.org/packages/e8/c2/9b008a9ef14d230d4730550ad991b96486b88929046f71379a98cc23017f/sophus_pyo3-0.6.0.tar.gz
+[2024-05-26 02:44:46] INFO root fetch - processPackages [chift]: executing diffoscope
+[2024-05-26 02:44:46] INFO root fetch - processPackages [chift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chift-0.1.8.tar.gz tmp/chift-0.1.9.tar.gz --markdown 20240526/c/chift/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 02:44:46] INFO root fetch - processPackages [sophus-pyo3]: executing diffoscope
+[2024-05-26 02:44:46] INFO root fetch - processPackages [sophus-pyo3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sophus_pyo3-0.4.0.tar.gz tmp/sophus_pyo3-0.6.0.tar.gz --markdown 20240526/s/sophus-pyo3/0.4.0-0.6.0/README.md --exclude *.pyd
+[2024-05-26 02:44:46] INFO root fetch - processPackages [nanoarrow]: Downloading https://files.pythonhosted.org/packages/7a/38/0e06215209a22e47688a8325473a79e23f9fc91a41dbdc1c8de75ac1585e/nanoarrow-0.5.0-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-05-26 02:44:47] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/16/37/676c5cb8dcc71785432cbf1e8c9fbe60546bd306eac897d09dccd71e02c0/tfds-nightly-4.9.4.dev202405250044.tar.gz
+[2024-05-26 02:44:47] INFO root fetch - processPackages [nanoarrow]: executing diffoscope
+[2024-05-26 02:44:47] INFO root fetch - processPackages [nanoarrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanoarrow-0.4.0.tar.gz tmp/nanoarrow-0.5.0-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240526/n/nanoarrow/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-26 02:44:47] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.2.tar.gz]
+[2024-05-26 02:44:47] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.3.tar.gz]
+[2024-05-26 02:44:47] INFO root fetch - main [MainThread]: End processing [lyriks]: success
+[2024-05-26 02:44:47] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-05-26 02:44:47] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202405240044.tar.gz tmp/tfds-nightly-4.9.4.dev202405250044.tar.gz --markdown 20240526/t/tfds-nightly/4.9.4.dev202405240044-4.9.4.dev202405250044/README.md --exclude *.pyd
+[2024-05-26 02:44:47] INFO root fetch - processPackages [chift]: Remove: archive file [/home/abi/fetcher/tmp/chift-0.1.8.tar.gz]
+[2024-05-26 02:44:47] INFO root fetch - processPackages [chift]: Remove: archive file [/home/abi/fetcher/tmp/chift-0.1.9.tar.gz]
+[2024-05-26 02:44:47] INFO root fetch - main [MainThread]: End processing [chift]: success
+[2024-05-26 02:44:47] INFO root fetch - processPackages [nanoarrow]: Remove: archive file [/home/abi/fetcher/tmp/nanoarrow-0.4.0.tar.gz]
+[2024-05-26 02:44:47] INFO root fetch - processPackages [nanoarrow]: Remove: archive file [/home/abi/fetcher/tmp/nanoarrow-0.5.0-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-05-26 02:44:47] INFO root fetch - main [MainThread]: End processing [nanoarrow]: success
+[2024-05-26 02:44:47] INFO root fetch - processPackages [sophus-pyo3]: Remove: archive file [/home/abi/fetcher/tmp/sophus_pyo3-0.4.0.tar.gz]
+[2024-05-26 02:44:47] INFO root fetch - processPackages [sophus-pyo3]: Remove: archive file [/home/abi/fetcher/tmp/sophus_pyo3-0.6.0.tar.gz]
+[2024-05-26 02:44:47] INFO root fetch - main [MainThread]: End processing [sophus-pyo3]: success
+[2024-05-26 02:44:56] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405240044.tar.gz]
+[2024-05-26 02:44:56] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405250044.tar.gz]
+[2024-05-26 02:44:56] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-05-26 02:44:56] INFO root fetch - main [MainThread]: Store serial: [23378780]
