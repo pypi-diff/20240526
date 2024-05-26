@@ -934,3 +934,27 @@
 [2024-05-26 02:10:10] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-05-26 02:10:10] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-05-26 02:10:10] INFO root fetch - main [MainThread]: Store serial: [23378552]
+[2024-05-26 02:12:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378552]
+[2024-05-26 02:12:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 02:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-mysql-local
+[2024-05-26 02:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: remarkable-update-image
+[2024-05-26 02:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mct-quantizers-nightly
+[2024-05-26 02:12:18] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.332] Old Version: [0.0.331]
+[2024-05-26 02:12:18] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240525.post1041] Old Version: [1.5.0.20240524.post1127]
+[2024-05-26 02:12:18] WARNING root fetch - processPackages [remarkable-update-image]: Skipping, unable to determine old version
+[2024-05-26 02:12:18] INFO root fetch - main [MainThread]: End processing [remarkable-update-image] error
+[2024-05-26 02:12:18] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/69/d7/718263a49dcd4e94e716a639fba85dd3dafb47d0ae4c95073761e38bc36a/mct-quantizers-nightly-1.5.0.20240524.post1127.tar.gz
+[2024-05-26 02:12:18] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/4d/2b/99e07a1402a7960b9d945a5edd4c48f97a2c9a552ca64914f0d10dd2ff52/database_mysql_local-0.0.331.tar.gz
+[2024-05-26 02:12:19] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/b0/d3/952a54c78a4822e6a07798fd6ed71781fb4d1fae32ef1bffa8f146adda68/mct-quantizers-nightly-1.5.0.20240525.post1041.tar.gz
+[2024-05-26 02:12:19] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/4e/f9/679fe796b511bc9b021a357f545f27905ed756f4d95ad81c1d84eddfdd21/database_mysql_local-0.0.332.tar.gz
+[2024-05-26 02:12:19] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-05-26 02:12:19] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240524.post1127.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240525.post1041.tar.gz --markdown 20240526/m/mct-quantizers-nightly/1.5.0.20240524.post1127-1.5.0.20240525.post1041/README.md --exclude *.pyd
+[2024-05-26 02:12:19] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 02:12:19] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.331.tar.gz tmp/database_mysql_local-0.0.332.tar.gz --markdown 20240526/d/database-mysql-local/0.0.331-0.0.332/README.md --exclude *.pyd
+[2024-05-26 02:12:19] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240524.post1127.tar.gz]
+[2024-05-26 02:12:19] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240525.post1041.tar.gz]
+[2024-05-26 02:12:19] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-05-26 02:12:19] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.331.tar.gz]
+[2024-05-26 02:12:19] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.332.tar.gz]
+[2024-05-26 02:12:19] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 02:12:19] INFO root fetch - main [MainThread]: Store serial: [23378564]
