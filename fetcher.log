@@ -9518,3 +9518,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:16:42] INFO root fetch - processPackages [manim-speech]: Remove: archive file [/home/abi/fetcher/tmp/manim_speech-0.2.0.tar.gz]
 [2024-05-26 13:16:42] INFO root fetch - main [MainThread]: End processing [manim-speech]: success
 [2024-05-26 13:16:42] INFO root fetch - main [MainThread]: Store serial: [23382393]
+[2024-05-26 13:18:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382393]
+[2024-05-26 13:18:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 13:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coverage
+[2024-05-26 13:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paginx
+[2024-05-26 13:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: killercoda-cli
+[2024-05-26 13:18:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: green-bit-llm
+[2024-05-26 13:18:55] WARNING root fetch - processPackages [paginx]: Skipping, unable to determine old version
+[2024-05-26 13:18:55] INFO root fetch - main [MainThread]: End processing [paginx] error
+[2024-05-26 13:18:55] INFO root fetch - processPackages [green-bit-llm]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-05-26 13:18:55] INFO root fetch - processPackages [killercoda-cli]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-26 13:18:55] INFO root fetch - processPackages [coverage]: New version: [7.5.1] Old Version: [7.5.0]
+[2024-05-26 13:18:55] INFO root fetch - processPackages [killercoda-cli]: Downloading https://files.pythonhosted.org/packages/c3/d7/bbd8775be2290b20a25d73ab0d81d6e81222cb864515284c8f2bd97fa60e/killercoda_cli-1.0.2.tar.gz
+[2024-05-26 13:18:55] INFO root fetch - processPackages [green-bit-llm]: Downloading https://files.pythonhosted.org/packages/cd/09/81555e6bb546fba77372374f3fd2ead1eb30171ce20333d305a48799f848/green-bit-llm-0.2.0.tar.gz
+[2024-05-26 13:18:56] INFO root fetch - processPackages [coverage]: Downloading https://files.pythonhosted.org/packages/52/d3/3ec80acdd57a0d6a1111b978ade388824f37126446fd6750d38bfaca949c/coverage-7.5.0.tar.gz
+[2024-05-26 13:18:56] INFO root fetch - processPackages [killercoda-cli]: Downloading https://files.pythonhosted.org/packages/c9/62/d6ab7f51fd0ea59654264f4884f95f8f0ba88de5bd8ca0b51faa667f09b5/killercoda_cli-1.0.3.tar.gz
+[2024-05-26 13:18:56] INFO root fetch - processPackages [green-bit-llm]: Downloading https://files.pythonhosted.org/packages/63/da/eaecc8d376386fdcbcc77ed0493f0baa95a84a8c1c5ee4ffe0eb3d74dd2b/green_bit_llm-0.2.2.tar.gz
+[2024-05-26 13:18:56] INFO root fetch - processPackages [killercoda-cli]: executing diffoscope
+[2024-05-26 13:18:56] INFO root fetch - processPackages [killercoda-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/killercoda_cli-1.0.2.tar.gz tmp/killercoda_cli-1.0.3.tar.gz --markdown 20240526/k/killercoda-cli/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-26 13:18:56] INFO root fetch - processPackages [green-bit-llm]: executing diffoscope
+[2024-05-26 13:18:56] INFO root fetch - processPackages [green-bit-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/green-bit-llm-0.2.0.tar.gz tmp/green_bit_llm-0.2.2.tar.gz --markdown 20240526/g/green-bit-llm/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-05-26 13:18:56] INFO root fetch - processPackages [coverage]: Downloading https://files.pythonhosted.org/packages/04/1d/3e426526df9f320f0a08dd08434dc7b94cd621543f73f96d8a4faf216ec7/coverage-7.5.1.tar.gz
+[2024-05-26 13:18:56] INFO root fetch - processPackages [coverage]: executing diffoscope
+[2024-05-26 13:18:56] INFO root fetch - processPackages [coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coverage-7.5.0.tar.gz tmp/coverage-7.5.1.tar.gz --markdown 20240526/c/coverage/7.5.0-7.5.1/README.md --exclude *.pyd
+[2024-05-26 13:18:56] INFO root fetch - processPackages [killercoda-cli]: Remove: archive file [/home/abi/fetcher/tmp/killercoda_cli-1.0.2.tar.gz]
+[2024-05-26 13:18:56] INFO root fetch - processPackages [killercoda-cli]: Remove: archive file [/home/abi/fetcher/tmp/killercoda_cli-1.0.3.tar.gz]
+[2024-05-26 13:18:56] INFO root fetch - main [MainThread]: End processing [killercoda-cli]: success
+[2024-05-26 13:18:56] INFO root fetch - processPackages [green-bit-llm]: Remove: archive file [/home/abi/fetcher/tmp/green-bit-llm-0.2.0.tar.gz]
+[2024-05-26 13:18:56] INFO root fetch - processPackages [green-bit-llm]: Remove: archive file [/home/abi/fetcher/tmp/green_bit_llm-0.2.2.tar.gz]
+[2024-05-26 13:18:56] INFO root fetch - main [MainThread]: End processing [green-bit-llm]: success
+[2024-05-26 13:18:59] INFO root fetch - processPackages [coverage]: Remove: archive file [/home/abi/fetcher/tmp/coverage-7.5.0.tar.gz]
+[2024-05-26 13:18:59] INFO root fetch - processPackages [coverage]: Remove: archive file [/home/abi/fetcher/tmp/coverage-7.5.1.tar.gz]
+[2024-05-26 13:18:59] INFO root fetch - main [MainThread]: End processing [coverage]: success
+[2024-05-26 13:18:59] INFO root fetch - main [MainThread]: Store serial: [23382452]
