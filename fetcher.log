@@ -8850,3 +8850,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:14:17] INFO root fetch - processPackages [proxy-inspector]: Remove: archive file [/home/abi/fetcher/tmp/proxy_inspector-0.0.5-py3-none-any.whl.zip]
 [2024-05-26 12:14:17] INFO root fetch - main [MainThread]: End processing [proxy-inspector]: success
 [2024-05-26 12:14:17] INFO root fetch - main [MainThread]: Store serial: [23382091]
+[2024-05-26 12:16:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382091]
+[2024-05-26 12:16:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 12:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meetlify
+[2024-05-26 12:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyuptech
+[2024-05-26 12:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: setux
+[2024-05-26 12:16:30] INFO root fetch - processPackages [setux]: New version: [0.6.3.1] Old Version: [0.6.3.0]
+[2024-05-26 12:16:30] INFO root fetch - processPackages [meetlify]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 12:16:30] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/2f/49/91934bd9aee6533448fdf391683c7a735a63a59ad2cf2563b52b98ad4201/setux-0.6.3.0.tar.gz
+[2024-05-26 12:16:30] INFO root fetch - processPackages [pyuptech]: New version: [0.1.6.2] Old Version: [0.1.6.1]
+[2024-05-26 12:16:31] INFO root fetch - processPackages [meetlify]: Downloading https://files.pythonhosted.org/packages/2e/c5/996c97ba300dceaaa8b3a624e5ed1353b23b966dfd7bd53846655460d0fb/meetlify-0.1.6.tar.gz
+[2024-05-26 12:16:31] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/87/6d/b4f31cfc8bb0033598d8bff095af04d674c87036310fe8ce6fac7c6a93cf/pyuptech-0.1.6.1.tar.gz
+[2024-05-26 12:16:31] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/ad/0f/ea659bb0a2030b085f60069b2fb29d1dc322f7444f95eaa97478e78035e2/setux-0.6.3.1.tar.gz
+[2024-05-26 12:16:31] INFO root fetch - processPackages [setux]: executing diffoscope
+[2024-05-26 12:16:31] INFO root fetch - processPackages [setux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux-0.6.3.0.tar.gz tmp/setux-0.6.3.1.tar.gz --markdown 20240526/s/setux/0.6.3.0-0.6.3.1/README.md --exclude *.pyd
+[2024-05-26 12:16:31] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/87/4a/7a2123dd9a8b19633de24622b5e38420cdc66098996d8f327ba7b70aca02/pyuptech-0.1.6.2.tar.gz
+[2024-05-26 12:16:31] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-05-26 12:16:31] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.6.1.tar.gz tmp/pyuptech-0.1.6.2.tar.gz --markdown 20240526/p/pyuptech/0.1.6.1-0.1.6.2/README.md --exclude *.pyd
+[2024-05-26 12:16:31] INFO root fetch - processPackages [meetlify]: Downloading https://files.pythonhosted.org/packages/ab/d6/da6f833d963abe2ff7179e733f0c2087f64907dfef77799798afc4455d46/meetlify-0.1.7.tar.gz
+[2024-05-26 12:16:31] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.0.tar.gz]
+[2024-05-26 12:16:31] INFO root fetch - processPackages [setux]: Remove: archive file [/home/abi/fetcher/tmp/setux-0.6.3.1.tar.gz]
+[2024-05-26 12:16:31] INFO root fetch - main [MainThread]: End processing [setux]: success
+[2024-05-26 12:16:31] INFO root fetch - processPackages [meetlify]: executing diffoscope
+[2024-05-26 12:16:31] INFO root fetch - processPackages [meetlify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meetlify-0.1.6.tar.gz tmp/meetlify-0.1.7.tar.gz --markdown 20240526/m/meetlify/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 12:16:32] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.6.1.tar.gz]
+[2024-05-26 12:16:32] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.6.2.tar.gz]
+[2024-05-26 12:16:32] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-05-26 12:16:33] INFO root fetch - processPackages [meetlify]: Remove: archive file [/home/abi/fetcher/tmp/meetlify-0.1.6.tar.gz]
+[2024-05-26 12:16:33] INFO root fetch - processPackages [meetlify]: Remove: archive file [/home/abi/fetcher/tmp/meetlify-0.1.7.tar.gz]
+[2024-05-26 12:16:33] INFO root fetch - main [MainThread]: End processing [meetlify]: success
+[2024-05-26 12:16:33] INFO root fetch - main [MainThread]: Store serial: [23382109]
