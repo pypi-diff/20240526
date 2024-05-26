@@ -3377,3 +3377,49 @@
 [2024-05-26 06:12:59] INFO root fetch - processPackages [pyrqlite]: Remove: archive file [/home/abi/fetcher/tmp/pyrqlite-2.2.3.tar.gz]
 [2024-05-26 06:12:59] INFO root fetch - main [MainThread]: End processing [pyrqlite]: success
 [2024-05-26 06:12:59] INFO root fetch - main [MainThread]: Store serial: [23379602]
+[2024-05-26 06:15:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379602]
+[2024-05-26 06:15:08] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 06:17:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379604]
+[2024-05-26 06:17:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 06:19:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379604]
+[2024-05-26 06:19:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 06:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vancouver-watching
+[2024-05-26 06:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mentabotix
+[2024-05-26 06:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crewai-logging-patch
+[2024-05-26 06:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-cefran
+[2024-05-26 06:19:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: omnijp
+[2024-05-26 06:19:21] WARNING root fetch - processPackages [django-cefran]: Skipping, unable to determine old version
+[2024-05-26 06:19:21] INFO root fetch - main [MainThread]: End processing [django-cefran] error
+[2024-05-26 06:19:21] INFO root fetch - processPackages [crewai-logging-patch]: New version: [0.4] Old Version: [0.3]
+[2024-05-26 06:19:21] INFO root fetch - processPackages [vancouver-watching]: New version: [3.349.1] Old Version: [3.348.1]
+[2024-05-26 06:19:21] INFO root fetch - processPackages [omnijp]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-05-26 06:19:21] INFO root fetch - processPackages [crewai-logging-patch]: Downloading https://files.pythonhosted.org/packages/33/5c/c251c08111dbc6e3ad6cde3f69f5c0942ea9a524bce5c3da8faa8cc0c4c5/crewai_logging_patch-0.3.tar.gz
+[2024-05-26 06:19:21] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/6e/f1/1d42a351ade12346e05d5905fc848f7478c396321873f66728b687d3754a/vancouver_watching-3.348.1.tar.gz
+[2024-05-26 06:19:21] INFO root fetch - processPackages [omnijp]: Downloading https://files.pythonhosted.org/packages/27/6b/9138e736e756ad17b66a3959ffe89404f5060f002e10741b6ab8f9ac1004/omnijp-2.2.0.tar.gz
+[2024-05-26 06:19:21] INFO root fetch - processPackages [mentabotix]: New version: [0.1.5.3] Old Version: [0.1.5.2]
+[2024-05-26 06:19:22] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/03/5e/1acbf0d163a14cc9f4eed5a8ff8c12bb31e009060e7aeb08adfa64c23daa/mentabotix-0.1.5.2.tar.gz
+[2024-05-26 06:19:22] INFO root fetch - processPackages [omnijp]: Downloading https://files.pythonhosted.org/packages/71/ad/fc70539f9c36f5620cbe0ec6bcfa7f46d14efe35e872981a5b101f8058a5/omnijp-2.3.0.tar.gz
+[2024-05-26 06:19:22] INFO root fetch - processPackages [crewai-logging-patch]: Downloading https://files.pythonhosted.org/packages/08/d3/350e5cdff46074862d8deca6e77b4eb5cff9c8b1f2bee44c4aa6a3a6a735/crewai_logging_patch-0.4.tar.gz
+[2024-05-26 06:19:22] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/16/68/34d6c81a4cb2cc7ff1c4d561eeeade9a1031951e83ec244732630e584930/vancouver_watching-3.349.1.tar.gz
+[2024-05-26 06:19:22] INFO root fetch - processPackages [omnijp]: executing diffoscope
+[2024-05-26 06:19:22] INFO root fetch - processPackages [omnijp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnijp-2.2.0.tar.gz tmp/omnijp-2.3.0.tar.gz --markdown 20240526/o/omnijp/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-05-26 06:19:22] INFO root fetch - processPackages [crewai-logging-patch]: executing diffoscope
+[2024-05-26 06:19:22] INFO root fetch - processPackages [crewai-logging-patch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai_logging_patch-0.3.tar.gz tmp/crewai_logging_patch-0.4.tar.gz --markdown 20240526/c/crewai-logging-patch/0.3-0.4/README.md --exclude *.pyd
+[2024-05-26 06:19:22] INFO root fetch - processPackages [vancouver-watching]: executing diffoscope
+[2024-05-26 06:19:22] INFO root fetch - processPackages [vancouver-watching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vancouver_watching-3.348.1.tar.gz tmp/vancouver_watching-3.349.1.tar.gz --markdown 20240526/v/vancouver-watching/3.348.1-3.349.1/README.md --exclude *.pyd
+[2024-05-26 06:19:22] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/fc/43/a5139e6d351d8277e3d007f9c0fb2b329882b4dabaa73d09f25f1aa1f3f5/mentabotix-0.1.5.3.tar.gz
+[2024-05-26 06:19:22] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-05-26 06:19:22] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.5.2.tar.gz tmp/mentabotix-0.1.5.3.tar.gz --markdown 20240526/m/mentabotix/0.1.5.2-0.1.5.3/README.md --exclude *.pyd
+[2024-05-26 06:19:22] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.2.0.tar.gz]
+[2024-05-26 06:19:22] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.3.0.tar.gz]
+[2024-05-26 06:19:22] INFO root fetch - main [MainThread]: End processing [omnijp]: success
+[2024-05-26 06:19:22] INFO root fetch - processPackages [crewai-logging-patch]: Remove: archive file [/home/abi/fetcher/tmp/crewai_logging_patch-0.3.tar.gz]
+[2024-05-26 06:19:22] INFO root fetch - processPackages [crewai-logging-patch]: Remove: archive file [/home/abi/fetcher/tmp/crewai_logging_patch-0.4.tar.gz]
+[2024-05-26 06:19:22] INFO root fetch - main [MainThread]: End processing [crewai-logging-patch]: success
+[2024-05-26 06:19:23] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.348.1.tar.gz]
+[2024-05-26 06:19:23] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.349.1.tar.gz]
+[2024-05-26 06:19:23] INFO root fetch - main [MainThread]: End processing [vancouver-watching]: success
+[2024-05-26 06:19:23] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.2.tar.gz]
+[2024-05-26 06:19:23] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.5.3.tar.gz]
+[2024-05-26 06:19:23] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-05-26 06:19:23] INFO root fetch - main [MainThread]: Store serial: [23379621]
