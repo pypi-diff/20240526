@@ -4176,3 +4176,28 @@
 [2024-05-26 07:33:09] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
 [2024-05-26 07:33:09] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2024-05-26 07:33:09] INFO root fetch - main [MainThread]: Store serial: [23380029]
+[2024-05-26 07:35:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380029]
+[2024-05-26 07:35:22] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 07:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380030]
+[2024-05-26 07:37:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 07:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymobiledevice3
+[2024-05-26 07:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cx-Freeze
+[2024-05-26 07:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: litellm
+[2024-05-26 07:37:28] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-05-26 07:37:28] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-05-26 07:37:28] INFO root fetch - processPackages [pymobiledevice3]: New version: [4.8.5] Old Version: [4.8.4]
+[2024-05-26 07:37:29] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/70/bf/88a066dd3a16b785130dd81bf57bc30d21c502030e71741d624fc9161b4a/pymobiledevice3-4.8.4.tar.gz
+[2024-05-26 07:37:29] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31548115>=10485760
+[2024-05-26 07:37:29] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-05-26 07:37:29] INFO root fetch - processPackages [cx-Freeze]: New version: [7.1.0] Old Version: [7.0.0]
+[2024-05-26 07:37:29] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-05-26 07:37:29] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-05-26 07:37:29] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240526/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-05-26 07:37:29] INFO root fetch - processPackages [cx-Freeze]: Downloading https://files.pythonhosted.org/packages/21/0d/a2d4140e413c701c46205acc97aed56bfe8084c589c30417b79572b3fdc0/cx_freeze-7.0.0.tar.gz
+[2024-05-26 07:37:30] INFO root fetch - processPackages [cx-Freeze]: Downloading https://files.pythonhosted.org/packages/d3/2d/965f447624fb93f98981e0f15c705b75fe28a485ce52af2b241ef0e93c69/cx_Freeze-7.1.0-cp311-cp311-macosx_11_0_arm64.whl
+[2024-05-26 07:37:30] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-05-26 07:37:30] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-05-26 07:37:30] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-05-26 07:37:31] WARNING root fetch - processPackages [cx-Freeze]: Skipping package: exceeds size limit 21404115>=10485760
+[2024-05-26 07:37:31] INFO root fetch - main [MainThread]: End processing [cx-Freeze] error
+[2024-05-26 07:37:31] INFO root fetch - main [MainThread]: Store serial: [23380048]
