@@ -17889,3 +17889,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:33:02] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-custom-sidebar-test-0.0.9.tar.gz]
 [2024-05-26 21:33:02] INFO root fetch - main [MainThread]: End processing [streamlit-custom-sidebar-test]: success
 [2024-05-26 21:33:02] INFO root fetch - main [MainThread]: Store serial: [23386315]
+[2024-05-26 21:35:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386315]
+[2024-05-26 21:35:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 21:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 21:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-render-swagger-plugin
+[2024-05-26 21:35:12] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 21:35:12] INFO root fetch - processPackages [mkdocs-render-swagger-plugin]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 21:35:12] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 21:35:12] INFO root fetch - processPackages [mkdocs-render-swagger-plugin]: Downloading https://files.pythonhosted.org/packages/ea/2d/72373074011cc8b62c2d5a19215e85e05e5014fd21a85c030903d2f030d0/mkdocs_render_swagger_plugin-0.1.1-py3-none-any.whl
+[2024-05-26 21:35:12] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 21:35:12] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 21:35:12] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 21:35:12] INFO root fetch - processPackages [mkdocs-render-swagger-plugin]: Downloading https://files.pythonhosted.org/packages/de/0b/cf5e4e9529a8068d4b2def4b38540f7a5762283bdd5b652ee083b8a7c9c6/mkdocs_render_swagger_plugin-0.1.2-py3-none-any.whl
+[2024-05-26 21:35:13] INFO root fetch - processPackages [mkdocs-render-swagger-plugin]: executing diffoscope
+[2024-05-26 21:35:13] INFO root fetch - processPackages [mkdocs-render-swagger-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_render_swagger_plugin-0.1.1-py3-none-any.whl.zip tmp/mkdocs_render_swagger_plugin-0.1.2-py3-none-any.whl.zip --markdown 20240526/m/mkdocs-render-swagger-plugin/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 21:35:13] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 21:35:13] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 21:35:13] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 21:35:13] INFO root fetch - processPackages [mkdocs-render-swagger-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_render_swagger_plugin-0.1.1-py3-none-any.whl.zip]
+[2024-05-26 21:35:13] INFO root fetch - processPackages [mkdocs-render-swagger-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_render_swagger_plugin-0.1.2-py3-none-any.whl.zip]
+[2024-05-26 21:35:13] INFO root fetch - main [MainThread]: End processing [mkdocs-render-swagger-plugin]: success
+[2024-05-26 21:35:13] INFO root fetch - main [MainThread]: Store serial: [23386320]
