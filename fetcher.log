@@ -6208,3 +6208,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:27:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0.1-py3-none-any.whl.zip]
 [2024-05-26 10:27:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-edi-ubl]: success
 [2024-05-26 10:27:51] INFO root fetch - main [MainThread]: Store serial: [23381004]
+[2024-05-26 10:29:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381004]
+[2024-05-26 10:30:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 10:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-randomidentity
+[2024-05-26 10:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RecoLul
+[2024-05-26 10:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-randomjoke
+[2024-05-26 10:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-randompun
+[2024-05-26 10:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apiverve-randomquote
+[2024-05-26 10:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apiverve-randomusergenerator
+[2024-05-26 10:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apiverve-randomword
+[2024-05-26 10:30:03] WARNING root fetch - processPackages [apiverve-randomidentity]: Skipping, unable to determine old version
+[2024-05-26 10:30:03] INFO root fetch - main [MainThread]: End processing [apiverve-randomidentity] error
+[2024-05-26 10:30:03] WARNING root fetch - processPackages [apiverve-randomusergenerator]: Skipping, unable to determine old version
+[2024-05-26 10:30:03] INFO root fetch - main [MainThread]: End processing [apiverve-randomusergenerator] error
+[2024-05-26 10:30:03] WARNING root fetch - processPackages [apiverve-randomjoke]: Skipping, unable to determine old version
+[2024-05-26 10:30:03] WARNING root fetch - processPackages [apiverve-randomword]: Skipping, unable to determine old version
+[2024-05-26 10:30:03] INFO root fetch - main [MainThread]: End processing [apiverve-randomjoke] error
+[2024-05-26 10:30:03] INFO root fetch - main [MainThread]: End processing [apiverve-randomword] error
+[2024-05-26 10:30:03] WARNING root fetch - processPackages [apiverve-randomquote]: Skipping, unable to determine old version
+[2024-05-26 10:30:03] INFO root fetch - main [MainThread]: End processing [apiverve-randomquote] error
+[2024-05-26 10:30:03] WARNING root fetch - processPackages [apiverve-randompun]: Skipping, unable to determine old version
+[2024-05-26 10:30:03] INFO root fetch - main [MainThread]: End processing [apiverve-randompun] error
+[2024-05-26 10:30:03] INFO root fetch - processPackages [RecoLul]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-26 10:30:03] INFO root fetch - processPackages [RecoLul]: Downloading https://files.pythonhosted.org/packages/29/c9/77be5819cb245e470f3ad847f79c78900e436b3153626a7d6dc7710bf91e/RecoLul-1.8.0.tar.gz
+[2024-05-26 10:30:03] INFO root fetch - processPackages [RecoLul]: Downloading https://files.pythonhosted.org/packages/ca/49/5f550fd9ff0be4f5545d8a1e5bbeabc4b8cb345b0fc1894c45d854f0f1c9/RecoLul-1.9.0.tar.gz
+[2024-05-26 10:30:04] INFO root fetch - processPackages [RecoLul]: executing diffoscope
+[2024-05-26 10:30:04] INFO root fetch - processPackages [RecoLul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RecoLul-1.8.0.tar.gz tmp/RecoLul-1.9.0.tar.gz --markdown 20240526/R/RecoLul/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-26 10:30:04] INFO root fetch - processPackages [RecoLul]: Remove: archive file [/home/abi/fetcher/tmp/RecoLul-1.8.0.tar.gz]
+[2024-05-26 10:30:04] INFO root fetch - processPackages [RecoLul]: Remove: archive file [/home/abi/fetcher/tmp/RecoLul-1.9.0.tar.gz]
+[2024-05-26 10:30:04] INFO root fetch - main [MainThread]: End processing [RecoLul]: success
+[2024-05-26 10:30:04] INFO root fetch - main [MainThread]: Store serial: [23381037]
