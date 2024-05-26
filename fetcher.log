@@ -6033,3 +6033,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:12:36] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_m2x_options-16.0.1.1.3-py3-none-any.whl.zip]
 [2024-05-26 10:12:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-m2x-options]: success
 [2024-05-26 10:12:36] INFO root fetch - main [MainThread]: Store serial: [23380855]
+[2024-05-26 10:14:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380855]
+[2024-05-26 10:14:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 10:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aviatrix-discovery
+[2024-05-26 10:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: medcamEditedbyFiras
+[2024-05-26 10:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aviatrix-migration
+[2024-05-26 10:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cv-smart-house-camera
+[2024-05-26 10:14:46] WARNING root fetch - processPackages [medcamEditedbyFiras]: Skipping, unable to determine old version
+[2024-05-26 10:14:46] INFO root fetch - main [MainThread]: End processing [medcamEditedbyFiras] error
+[2024-05-26 10:14:47] INFO root fetch - processPackages [aviatrix-discovery]: New version: [0.2.95] Old Version: [0.2.94]
+[2024-05-26 10:14:47] INFO root fetch - processPackages [cv-smart-house-camera]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 10:14:47] INFO root fetch - processPackages [aviatrix-migration]: New version: [0.2.95] Old Version: [0.2.94]
+[2024-05-26 10:14:47] INFO root fetch - processPackages [aviatrix-discovery]: Downloading https://files.pythonhosted.org/packages/9d/67/4aaefc162dd0c73585b37ea7289f4922ef5b0d3b5c0f7850d9dba0d0fbc2/aviatrix_discovery-0.2.94-cp39-cp39-win_amd64.whl
+[2024-05-26 10:14:47] INFO root fetch - processPackages [cv-smart-house-camera]: Downloading https://files.pythonhosted.org/packages/58/c3/4eed0f1d20b0b2011fa598dc4fca30d3d3470ac654a954f626e5657fe1b4/cv_smart_house_camera-0.1.6.tar.gz
+[2024-05-26 10:14:47] INFO root fetch - processPackages [aviatrix-migration]: Downloading https://files.pythonhosted.org/packages/60/60/3c1ee0efe143ea84461f3e898f7d96ee15782050c670f9a8d38ceb1f611a/aviatrix_migration-0.2.94-cp39-cp39-win_amd64.whl
+[2024-05-26 10:14:47] INFO root fetch - processPackages [cv-smart-house-camera]: Downloading https://files.pythonhosted.org/packages/ca/a8/cda08a4e9e430b26088673d80b744ab5875b7897cfe5724b354a25468f48/cv_smart_house_camera-0.1.7.tar.gz
+[2024-05-26 10:14:47] INFO root fetch - processPackages [aviatrix-discovery]: Downloading https://files.pythonhosted.org/packages/a3/e6/5b4a1c92cc68606150aa710aa009d996ab0c448c771c124e90cd5c1d7a0f/aviatrix_discovery-0.2.95-cp39-cp39-win_amd64.whl
+[2024-05-26 10:14:47] INFO root fetch - processPackages [cv-smart-house-camera]: executing diffoscope
+[2024-05-26 10:14:47] INFO root fetch - processPackages [cv-smart-house-camera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv_smart_house_camera-0.1.6.tar.gz tmp/cv_smart_house_camera-0.1.7.tar.gz --markdown 20240526/c/cv-smart-house-camera/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 10:14:47] INFO root fetch - processPackages [aviatrix-discovery]: executing diffoscope
+[2024-05-26 10:14:47] INFO root fetch - processPackages [aviatrix-discovery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aviatrix_discovery-0.2.94-cp39-cp39-win_amd64.whl.zip tmp/aviatrix_discovery-0.2.95-cp39-cp39-win_amd64.whl.zip --markdown 20240526/a/aviatrix-discovery/0.2.94-0.2.95/README.md --exclude *.pyd
+[2024-05-26 10:14:48] INFO root fetch - processPackages [aviatrix-migration]: Downloading https://files.pythonhosted.org/packages/9e/ca/d115b3202ab22f5a6b5aeb3fac0e2c4eb6661d9ab6aab5e21c77e1a318e5/aviatrix_migration-0.2.95-cp39-cp39-macosx_11_0_arm64.whl
+[2024-05-26 10:14:48] INFO root fetch - processPackages [cv-smart-house-camera]: Remove: archive file [/home/abi/fetcher/tmp/cv_smart_house_camera-0.1.6.tar.gz]
+[2024-05-26 10:14:48] INFO root fetch - processPackages [cv-smart-house-camera]: Remove: archive file [/home/abi/fetcher/tmp/cv_smart_house_camera-0.1.7.tar.gz]
+[2024-05-26 10:14:48] INFO root fetch - main [MainThread]: End processing [cv-smart-house-camera]: success
+[2024-05-26 10:14:48] INFO root fetch - processPackages [aviatrix-discovery]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_discovery-0.2.94-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 10:14:48] INFO root fetch - processPackages [aviatrix-discovery]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_discovery-0.2.95-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 10:14:48] INFO root fetch - main [MainThread]: End processing [aviatrix-discovery]: success
+[2024-05-26 10:14:49] INFO root fetch - processPackages [aviatrix-migration]: executing diffoscope
+[2024-05-26 10:14:49] INFO root fetch - processPackages [aviatrix-migration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aviatrix_migration-0.2.94-cp39-cp39-win_amd64.whl.zip tmp/aviatrix_migration-0.2.95-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240526/a/aviatrix-migration/0.2.94-0.2.95/README.md --exclude *.pyd
+[2024-05-26 10:14:50] INFO root fetch - processPackages [aviatrix-migration]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_migration-0.2.94-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 10:14:50] INFO root fetch - processPackages [aviatrix-migration]: Remove: archive file [/home/abi/fetcher/tmp/aviatrix_migration-0.2.95-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-05-26 10:14:50] INFO root fetch - main [MainThread]: End processing [aviatrix-migration]: success
+[2024-05-26 10:14:50] INFO root fetch - main [MainThread]: Store serial: [23380899]
