@@ -13314,3 +13314,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:14:15] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.2.5.tar.gz]
 [2024-05-26 17:14:15] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
 [2024-05-26 17:14:15] INFO root fetch - main [MainThread]: Store serial: [23384199]
+[2024-05-26 17:16:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384199]
+[2024-05-26 17:16:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 17:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xssbase
+[2024-05-26 17:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: playwright-page-pool
+[2024-05-26 17:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freetar
+[2024-05-26 17:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: playwright-network-spy
+[2024-05-26 17:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-cefran
+[2024-05-26 17:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simscv
+[2024-05-26 17:16:24] INFO root fetch - processPackages [playwright-page-pool]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 17:16:24] INFO root fetch - processPackages [django-cefran]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-26 17:16:24] INFO root fetch - processPackages [xssbase]: New version: [3.0.4] Old Version: [3.0.3]
+[2024-05-26 17:16:24] INFO root fetch - processPackages [playwright-network-spy]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 17:16:24] INFO root fetch - processPackages [django-cefran]: Downloading https://files.pythonhosted.org/packages/9a/d6/31ee7f51a77fd3f5c262b134ac98dd407a2c1adc32f6b01a974fede3a93d/django_cefran-0.0.3.tar.gz
+[2024-05-26 17:16:24] INFO root fetch - processPackages [freetar]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-26 17:16:24] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/32/87/c65929006a5419d99fa7a755f9a631092a3dadd7f2e89d35f832dce59f6a/xssbase-3.0.3.tar.gz
+[2024-05-26 17:16:24] WARNING root fetch - processPackages [simscv]: Skipping, unable to determine old version
+[2024-05-26 17:16:24] INFO root fetch - main [MainThread]: End processing [simscv] error
+[2024-05-26 17:16:24] INFO root fetch - processPackages [playwright-page-pool]: Downloading https://files.pythonhosted.org/packages/77/3e/126bf3798a77071fa891f619520536b592636a3c9c00f6544e910142a394/playwright_page_pool-0.1.0.tar.gz
+[2024-05-26 17:16:24] INFO root fetch - processPackages [playwright-network-spy]: Downloading https://files.pythonhosted.org/packages/cf/03/38014d225b2327e2e1f839e47d9f9b76906928c753360360dad9513b64aa/playwright_network_spy-0.1.0.tar.gz
+[2024-05-26 17:16:24] INFO root fetch - processPackages [freetar]: Downloading https://files.pythonhosted.org/packages/73/04/64f6d0e5147d9efe3ea49473a44d742d731e0b21f5c5595db76dcdd834a3/freetar-0.6.0.tar.gz
+[2024-05-26 17:16:24] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/d2/d7/e9c1ae2af07d8b45de42c963f50a56d36e7eb72114959fe39b83e7caed1d/xssbase-3.0.4.win-amd64.zip
+[2024-05-26 17:16:24] INFO root fetch - processPackages [playwright-page-pool]: Downloading https://files.pythonhosted.org/packages/d2/20/e4d9905291e3cc19a2b18387400a06736282b15573a1e28072df40b26e8d/playwright_page_pool-0.1.1.tar.gz
+[2024-05-26 17:16:25] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 17:16:25] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-3.0.3.tar.gz tmp/xssbase-3.0.4.win-amd64.zip --markdown 20240526/x/xssbase/3.0.3-3.0.4/README.md --exclude *.pyd
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-network-spy]: Downloading https://files.pythonhosted.org/packages/bf/df/743264ac1e47b1cd180c63993e4d1c59c27f5106af65835186687152dd17/playwright_network_spy-0.1.1.tar.gz
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-page-pool]: executing diffoscope
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-page-pool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playwright_page_pool-0.1.0.tar.gz tmp/playwright_page_pool-0.1.1.tar.gz --markdown 20240526/p/playwright-page-pool/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-network-spy]: executing diffoscope
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-network-spy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playwright_network_spy-0.1.0.tar.gz tmp/playwright_network_spy-0.1.1.tar.gz --markdown 20240526/p/playwright-network-spy/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 17:16:25] INFO root fetch - processPackages [django-cefran]: Downloading https://files.pythonhosted.org/packages/3b/67/89c1f9b41a2a74d946da2abaad5bfc1c0e159835bc56feae21a82121b125/django_cefran-0.0.4.tar.gz
+[2024-05-26 17:16:25] INFO root fetch - processPackages [freetar]: Downloading https://files.pythonhosted.org/packages/2b/d0/89db9deba6440eef4aef3005bb9300b56af4ae1abec205d52717e1ba3012/freetar-0.7.0.tar.gz
+[2024-05-26 17:16:25] INFO root fetch - processPackages [freetar]: executing diffoscope
+[2024-05-26 17:16:25] INFO root fetch - processPackages [freetar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freetar-0.6.0.tar.gz tmp/freetar-0.7.0.tar.gz --markdown 20240526/f/freetar/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-26 17:16:25] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-3.0.3.tar.gz]
+[2024-05-26 17:16:25] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-3.0.4.win-amd64.zip]
+[2024-05-26 17:16:25] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-page-pool]: Remove: archive file [/home/abi/fetcher/tmp/playwright_page_pool-0.1.0.tar.gz]
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-page-pool]: Remove: archive file [/home/abi/fetcher/tmp/playwright_page_pool-0.1.1.tar.gz]
+[2024-05-26 17:16:25] INFO root fetch - main [MainThread]: End processing [playwright-page-pool]: success
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-network-spy]: Remove: archive file [/home/abi/fetcher/tmp/playwright_network_spy-0.1.0.tar.gz]
+[2024-05-26 17:16:25] INFO root fetch - processPackages [playwright-network-spy]: Remove: archive file [/home/abi/fetcher/tmp/playwright_network_spy-0.1.1.tar.gz]
+[2024-05-26 17:16:25] INFO root fetch - main [MainThread]: End processing [playwright-network-spy]: success
+[2024-05-26 17:16:25] INFO root fetch - processPackages [django-cefran]: executing diffoscope
+[2024-05-26 17:16:25] INFO root fetch - processPackages [django-cefran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_cefran-0.0.3.tar.gz tmp/django_cefran-0.0.4.tar.gz --markdown 20240526/d/django-cefran/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-26 17:16:25] INFO root fetch - processPackages [freetar]: Remove: archive file [/home/abi/fetcher/tmp/freetar-0.6.0.tar.gz]
+[2024-05-26 17:16:25] INFO root fetch - processPackages [freetar]: Remove: archive file [/home/abi/fetcher/tmp/freetar-0.7.0.tar.gz]
+[2024-05-26 17:16:25] INFO root fetch - main [MainThread]: End processing [freetar]: success
+[2024-05-26 17:16:37] INFO root fetch - processPackages [django-cefran]: Remove: archive file [/home/abi/fetcher/tmp/django_cefran-0.0.3.tar.gz]
+[2024-05-26 17:16:37] INFO root fetch - processPackages [django-cefran]: Remove: archive file [/home/abi/fetcher/tmp/django_cefran-0.0.4.tar.gz]
+[2024-05-26 17:16:37] INFO root fetch - main [MainThread]: End processing [django-cefran]: success
+[2024-05-26 17:16:37] INFO root fetch - main [MainThread]: Store serial: [23384218]
