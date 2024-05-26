@@ -14950,3 +14950,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:52:23] INFO root fetch - processPackages [comicon]: Remove: archive file [/home/abi/fetcher/tmp/comicon-1.2.0.tar.gz]
 [2024-05-26 18:52:23] INFO root fetch - main [MainThread]: End processing [comicon]: success
 [2024-05-26 18:52:23] INFO root fetch - main [MainThread]: Store serial: [23384915]
+[2024-05-26 18:54:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384915]
+[2024-05-26 18:54:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 18:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 18:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-meteo-solar-forecast
+[2024-05-26 18:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-testinfra
+[2024-05-26 18:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfy-mlflow-client
+[2024-05-26 18:54:31] INFO root fetch - processPackages [open-meteo-solar-forecast]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 18:54:31] INFO root fetch - processPackages [tfy-mlflow-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 18:54:31] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 18:54:31] INFO root fetch - processPackages [tfy-mlflow-client]: Downloading https://files.pythonhosted.org/packages/43/f0/45be21abdff732bb8de13f178413b52bd098bb8395e239c8721423f39e0e/tfy-mlflow-client-0.0.8.tar.gz
+[2024-05-26 18:54:31] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/fa/47/712cd77cd1b687e7d0d819f13601562cb570d39884dd6851eb040e56414c/open_meteo_solar_forecast-0.1.3.tar.gz
+[2024-05-26 18:54:31] INFO root fetch - processPackages [pytest-testinfra]: New version: [9.0.0] Old Version: [8.1.0]
+[2024-05-26 18:54:31] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 18:54:32] INFO root fetch - processPackages [pytest-testinfra]: Downloading https://files.pythonhosted.org/packages/a7/11/a89294a3de86c821c77e0469dba9cddaeba8a6bc8b6a06214828136c73e7/pytest-testinfra-8.1.0.tar.gz
+[2024-05-26 18:54:32] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 18:54:32] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/5d/7c/39601dd74e1a335c1acca2db233233f543c68f084fdcefe42f526c5ddb0b/open_meteo_solar_forecast-0.1.4.tar.gz
+[2024-05-26 18:54:32] INFO root fetch - processPackages [open-meteo-solar-forecast]: executing diffoscope
+[2024-05-26 18:54:32] INFO root fetch - processPackages [open-meteo-solar-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_meteo_solar_forecast-0.1.3.tar.gz tmp/open_meteo_solar_forecast-0.1.4.tar.gz --markdown 20240526/o/open-meteo-solar-forecast/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 18:54:32] INFO root fetch - processPackages [tfy-mlflow-client]: Downloading https://files.pythonhosted.org/packages/99/46/ec87ff507a911f7eb4550bd758513440cf543ba1d9701b042b5caf64682a/tfy-mlflow-client-0.0.9.tar.gz
+[2024-05-26 18:54:32] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 18:54:32] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 18:54:32] INFO root fetch - processPackages [pytest-testinfra]: Downloading https://files.pythonhosted.org/packages/f2/01/feb87b61f7434351969beb48ea6b44bbdee3773c940832e33f6371bcea90/pytest-testinfra-9.0.0.tar.gz
+[2024-05-26 18:54:32] INFO root fetch - processPackages [pytest-testinfra]: executing diffoscope
+[2024-05-26 18:54:32] INFO root fetch - processPackages [pytest-testinfra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-testinfra-8.1.0.tar.gz tmp/pytest-testinfra-9.0.0.tar.gz --markdown 20240526/p/pytest-testinfra/8.1.0-9.0.0/README.md --exclude *.pyd
+[2024-05-26 18:54:32] INFO root fetch - processPackages [tfy-mlflow-client]: executing diffoscope
+[2024-05-26 18:54:32] INFO root fetch - processPackages [tfy-mlflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfy-mlflow-client-0.0.8.tar.gz tmp/tfy-mlflow-client-0.0.9.tar.gz --markdown 20240526/t/tfy-mlflow-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 18:54:33] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.3.tar.gz]
+[2024-05-26 18:54:33] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.4.tar.gz]
+[2024-05-26 18:54:33] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast]: success
+[2024-05-26 18:54:33] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 18:54:33] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 18:54:33] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 18:54:33] INFO root fetch - processPackages [pytest-testinfra]: Remove: archive file [/home/abi/fetcher/tmp/pytest-testinfra-8.1.0.tar.gz]
+[2024-05-26 18:54:33] INFO root fetch - processPackages [pytest-testinfra]: Remove: archive file [/home/abi/fetcher/tmp/pytest-testinfra-9.0.0.tar.gz]
+[2024-05-26 18:54:33] INFO root fetch - main [MainThread]: End processing [pytest-testinfra]: success
+[2024-05-26 18:54:34] INFO root fetch - processPackages [tfy-mlflow-client]: Remove: archive file [/home/abi/fetcher/tmp/tfy-mlflow-client-0.0.8.tar.gz]
+[2024-05-26 18:54:34] INFO root fetch - processPackages [tfy-mlflow-client]: Remove: archive file [/home/abi/fetcher/tmp/tfy-mlflow-client-0.0.9.tar.gz]
+[2024-05-26 18:54:34] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
+[2024-05-26 18:54:34] INFO root fetch - main [MainThread]: Store serial: [23384926]
