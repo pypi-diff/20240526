@@ -2093,3 +2093,51 @@
 [2024-05-26 03:49:59] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-26 03:49:59] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-26 03:49:59] INFO root fetch - main [MainThread]: Store serial: [23379099]
+[2024-05-26 03:52:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379099]
+[2024-05-26 03:52:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 03:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tiingo
+[2024-05-26 03:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llamascript
+[2024-05-26 03:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypomes-db
+[2024-05-26 03:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: liveflask
+[2024-05-26 03:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crondst
+[2024-05-26 03:52:08] INFO root fetch - processPackages [llamascript]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-26 03:52:08] INFO root fetch - processPackages [liveflask]: New version: [1.0.9rc6] Old Version: [1.0.9rc5]
+[2024-05-26 03:52:08] INFO root fetch - processPackages [llamascript]: Downloading https://files.pythonhosted.org/packages/fa/15/bb31a6a14b48940e74e517d9296ba646a49cfec2bba6eb28d15149af80d1/llamascript-0.6.1.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [liveflask]: Downloading https://files.pythonhosted.org/packages/4f/f7/9fa1b550df92979d3653b69ad0f8af57358884c417fc600ac326b87f6266/liveflask-1.0.9rc5.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [pypomes-db]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-26 03:52:08] INFO root fetch - processPackages [tiingo]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-26 03:52:08] INFO root fetch - processPackages [crondst]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-26 03:52:08] INFO root fetch - processPackages [llamascript]: Downloading https://files.pythonhosted.org/packages/5d/71/d71dfd164db21a39d687937f1bbc319f12f1d77c32b1b022ae6d543a3af4/llamascript-0.6.2.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/85/85/169864016f812b925a0efa24b84fbbe9d78029e5ebb8cc3b71a778a953e6/pypomes_db-0.8.8.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [liveflask]: Downloading https://files.pythonhosted.org/packages/c9/85/db794ba1759ab4e9865cd2537ac486073560649c795fb7212df21fe29eaf/liveflask-1.0.9rc6.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [tiingo]: Downloading https://files.pythonhosted.org/packages/d2/4c/416d44cd92e108e51a40bce09a60415b470a3956029dc975d371b71ae1e1/tiingo-0.8.0.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [crondst]: Downloading https://files.pythonhosted.org/packages/a7/ed/bb20eb9f1c1049008d16fb080de24689b0c4ca4e5b53285b775ff095bcad/crondst-1.0.2.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [llamascript]: executing diffoscope
+[2024-05-26 03:52:08] INFO root fetch - processPackages [llamascript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamascript-0.6.1.tar.gz tmp/llamascript-0.6.2.tar.gz --markdown 20240526/l/llamascript/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-26 03:52:08] INFO root fetch - processPackages [liveflask]: executing diffoscope
+[2024-05-26 03:52:08] INFO root fetch - processPackages [liveflask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liveflask-1.0.9rc5.tar.gz tmp/liveflask-1.0.9rc6.tar.gz --markdown 20240526/l/liveflask/1.0.9rc5-1.0.9rc6/README.md --exclude *.pyd
+[2024-05-26 03:52:08] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/f4/28/2910cd2366f4d4004108e4708d3f327030ebf28caa0a71ba984f7a340ffe/pypomes_db-0.8.9.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [tiingo]: Downloading https://files.pythonhosted.org/packages/cf/e8/2195737583738cd5a2f15182e3bb3caf411ee4fe671516cacf9afb26d954/tiingo-0.9.0.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-26 03:52:08] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.8.8.tar.gz tmp/pypomes_db-0.8.9.tar.gz --markdown 20240526/p/pypomes-db/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-26 03:52:08] INFO root fetch - processPackages [crondst]: Downloading https://files.pythonhosted.org/packages/a3/a8/08239f9434d2baf1979dab7521b61027c8e5aa5dae2defbcbc4b34c35600/crondst-1.0.3.tar.gz
+[2024-05-26 03:52:08] INFO root fetch - processPackages [tiingo]: executing diffoscope
+[2024-05-26 03:52:08] INFO root fetch - processPackages [tiingo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiingo-0.8.0.tar.gz tmp/tiingo-0.9.0.tar.gz --markdown 20240526/t/tiingo/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:52:09] INFO root fetch - processPackages [crondst]: executing diffoscope
+[2024-05-26 03:52:09] INFO root fetch - processPackages [crondst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crondst-1.0.2.tar.gz tmp/crondst-1.0.3.tar.gz --markdown 20240526/c/crondst/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-26 03:52:09] INFO root fetch - processPackages [llamascript]: Remove: archive file [/home/abi/fetcher/tmp/llamascript-0.6.1.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - processPackages [llamascript]: Remove: archive file [/home/abi/fetcher/tmp/llamascript-0.6.2.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - main [MainThread]: End processing [llamascript]: success
+[2024-05-26 03:52:09] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.9rc5.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.9rc6.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - main [MainThread]: End processing [liveflask]: success
+[2024-05-26 03:52:09] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.8.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.9.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-26 03:52:09] INFO root fetch - processPackages [crondst]: Remove: archive file [/home/abi/fetcher/tmp/crondst-1.0.2.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - processPackages [crondst]: Remove: archive file [/home/abi/fetcher/tmp/crondst-1.0.3.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - main [MainThread]: End processing [crondst]: success
+[2024-05-26 03:52:09] INFO root fetch - processPackages [tiingo]: Remove: archive file [/home/abi/fetcher/tmp/tiingo-0.8.0.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - processPackages [tiingo]: Remove: archive file [/home/abi/fetcher/tmp/tiingo-0.9.0.tar.gz]
+[2024-05-26 03:52:09] INFO root fetch - main [MainThread]: End processing [tiingo]: success
+[2024-05-26 03:52:09] INFO root fetch - main [MainThread]: Store serial: [23379115]
