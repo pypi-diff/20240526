@@ -799,3 +799,33 @@
 [2024-05-26 01:59:11] WARNING root fetch - processPackages [pytest-publish]: Skipping, unable to determine old version
 [2024-05-26 01:59:11] INFO root fetch - main [MainThread]: End processing [pytest-publish] error
 [2024-05-26 01:59:11] INFO root fetch - main [MainThread]: Store serial: [23378512]
+[2024-05-26 02:01:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378512]
+[2024-05-26 02:01:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 02:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: socialdataanalysis
+[2024-05-26 02:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tabswitcher
+[2024-05-26 02:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: osmdiff
+[2024-05-26 02:01:20] INFO root fetch - processPackages [tabswitcher]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 02:01:20] INFO root fetch - processPackages [osmdiff]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-05-26 02:01:20] INFO root fetch - processPackages [socialdataanalysis]: New version: [0.3] Old Version: [0.2]
+[2024-05-26 02:01:20] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/f7/91/f433b8119ee445f43f71a22e6d27d74386016540e0f55315d7975b675e3e/tabswitcher-0.0.7.tar.gz
+[2024-05-26 02:01:20] INFO root fetch - processPackages [osmdiff]: Downloading https://files.pythonhosted.org/packages/8d/cd/33689a92b94c6095e474b587100e6ec82331f7034fb48d7c008b7b2f7cf0/osmdiff-0.3.2.tar.gz
+[2024-05-26 02:01:20] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/74/eb/00219b4d0a9e40dd5e27260d4cde24701024b3f5cdbacfb36dfb1fc3dd0e/socialdataanalysis-0.2.tar.gz
+[2024-05-26 02:01:20] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/22/68/f8ff3b7d24d0d649f3c91fea86d62692e15f8184dd36d4bd29837389c9ba/socialdataanalysis-0.3.tar.gz
+[2024-05-26 02:01:20] INFO root fetch - processPackages [socialdataanalysis]: executing diffoscope
+[2024-05-26 02:01:20] INFO root fetch - processPackages [socialdataanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socialdataanalysis-0.2.tar.gz tmp/socialdataanalysis-0.3.tar.gz --markdown 20240526/s/socialdataanalysis/0.2-0.3/README.md --exclude *.pyd
+[2024-05-26 02:01:20] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/81/a9/3401facfe996959674b7d50054931eaeb0bf3086665b84654258cc7cc82e/tabswitcher-0.0.8.tar.gz
+[2024-05-26 02:01:20] INFO root fetch - processPackages [osmdiff]: Downloading https://files.pythonhosted.org/packages/bc/3f/b1b632f891d11e1682fdbf40f7da89587fa88ebf0a0c4a6234e558f351ae/osmdiff-0.4.0.tar.gz
+[2024-05-26 02:01:20] INFO root fetch - processPackages [tabswitcher]: executing diffoscope
+[2024-05-26 02:01:20] INFO root fetch - processPackages [tabswitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabswitcher-0.0.7.tar.gz tmp/tabswitcher-0.0.8.tar.gz --markdown 20240526/t/tabswitcher/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 02:01:20] INFO root fetch - processPackages [osmdiff]: executing diffoscope
+[2024-05-26 02:01:20] INFO root fetch - processPackages [osmdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osmdiff-0.3.2.tar.gz tmp/osmdiff-0.4.0.tar.gz --markdown 20240526/o/osmdiff/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-05-26 02:01:21] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.2.tar.gz]
+[2024-05-26 02:01:21] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.3.tar.gz]
+[2024-05-26 02:01:21] INFO root fetch - main [MainThread]: End processing [socialdataanalysis]: success
+[2024-05-26 02:01:21] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.7.tar.gz]
+[2024-05-26 02:01:21] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.8.tar.gz]
+[2024-05-26 02:01:21] INFO root fetch - main [MainThread]: End processing [tabswitcher]: success
+[2024-05-26 02:01:26] INFO root fetch - processPackages [osmdiff]: Remove: archive file [/home/abi/fetcher/tmp/osmdiff-0.3.2.tar.gz]
+[2024-05-26 02:01:26] INFO root fetch - processPackages [osmdiff]: Remove: archive file [/home/abi/fetcher/tmp/osmdiff-0.4.0.tar.gz]
+[2024-05-26 02:01:26] INFO root fetch - main [MainThread]: End processing [osmdiff]: success
+[2024-05-26 02:01:26] INFO root fetch - main [MainThread]: Store serial: [23378521]
