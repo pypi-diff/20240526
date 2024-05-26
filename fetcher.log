@@ -7607,3 +7607,39 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:06:10] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.7.tar.gz]
 [2024-05-26 11:06:10] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-26 11:06:10] INFO root fetch - main [MainThread]: Store serial: [23381539]
+[2024-05-26 11:08:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381539]
+[2024-05-26 11:08:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 11:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EcoStock
+[2024-05-26 11:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: my-cli-code-explorer
+[2024-05-26 11:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ArtColorAnalyzer-Hue-Adjustment-Tool
+[2024-05-26 11:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lantana
+[2024-05-26 11:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sdmxschemas
+[2024-05-26 11:08:22] INFO root fetch - processPackages [EcoStock]: New version: [1.3] Old Version: [1.2]
+[2024-05-26 11:08:22] INFO root fetch - processPackages [my-cli-code-explorer]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-05-26 11:08:22] INFO root fetch - processPackages [lantana]: New version: [2.9.8.2] Old Version: [2.9.8.1]
+[2024-05-26 11:08:22] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/59/d2/6dcffa0083625eb829a9c3dad160f677951c3b5966008190fada62b9bc79/ecostock-1.2.tar.gz
+[2024-05-26 11:08:22] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/4c/ae/ce831dceb9953696058373e6d69e118342a5bc62d08075fef6c83294812d/lantana-2.9.8.1.tar.gz
+[2024-05-26 11:08:22] INFO root fetch - processPackages [my-cli-code-explorer]: Downloading https://files.pythonhosted.org/packages/47/e2/4a699877540e245333f820b04a30b2111eed4f65d2fc2fbe10854c73e699/my_cli_code_explorer-0.1.4.tar.gz
+[2024-05-26 11:08:22] WARNING root fetch - processPackages [ArtColorAnalyzer-Hue-Adjustment-Tool]: Skipping, unable to determine old version
+[2024-05-26 11:08:22] INFO root fetch - main [MainThread]: End processing [ArtColorAnalyzer-Hue-Adjustment-Tool] error
+[2024-05-26 11:08:22] WARNING root fetch - processPackages [sdmxschemas]: Skipping, unable to determine old version
+[2024-05-26 11:08:22] INFO root fetch - main [MainThread]: End processing [sdmxschemas] error
+[2024-05-26 11:08:22] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/90/25/5be11fa3ca5fc808135b7e067f60521174d6faaed6f1fd9e0480c7310488/lantana-2.9.8.2.tar.gz
+[2024-05-26 11:08:22] INFO root fetch - processPackages [my-cli-code-explorer]: Downloading https://files.pythonhosted.org/packages/b5/f9/c3232d28604cb39dab2b3fbc052f16ea070fa15184a135c9b249c1ae6aa1/my_cli_code_explorer-0.1.6.tar.gz
+[2024-05-26 11:08:22] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/08/1e/a88fed5ead7a6625529e619a03cd244ab4898f925ec4e87d83be57398ccf/ecostock-1.3.tar.gz
+[2024-05-26 11:08:22] INFO root fetch - processPackages [my-cli-code-explorer]: executing diffoscope
+[2024-05-26 11:08:22] INFO root fetch - processPackages [my-cli-code-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_cli_code_explorer-0.1.4.tar.gz tmp/my_cli_code_explorer-0.1.6.tar.gz --markdown 20240526/m/my-cli-code-explorer/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-05-26 11:08:22] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-05-26 11:08:22] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecostock-1.2.tar.gz tmp/ecostock-1.3.tar.gz --markdown 20240526/E/EcoStock/1.2-1.3/README.md --exclude *.pyd
+[2024-05-26 11:08:22] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2024-05-26 11:08:22] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.9.8.1.tar.gz tmp/lantana-2.9.8.2.tar.gz --markdown 20240526/l/lantana/2.9.8.1-2.9.8.2/README.md --exclude *.pyd
+[2024-05-26 11:08:23] INFO root fetch - processPackages [my-cli-code-explorer]: Remove: archive file [/home/abi/fetcher/tmp/my_cli_code_explorer-0.1.4.tar.gz]
+[2024-05-26 11:08:23] INFO root fetch - processPackages [my-cli-code-explorer]: Remove: archive file [/home/abi/fetcher/tmp/my_cli_code_explorer-0.1.6.tar.gz]
+[2024-05-26 11:08:23] INFO root fetch - main [MainThread]: End processing [my-cli-code-explorer]: success
+[2024-05-26 11:08:23] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.2.tar.gz]
+[2024-05-26 11:08:23] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.3.tar.gz]
+[2024-05-26 11:08:23] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-05-26 11:08:23] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.1.tar.gz]
+[2024-05-26 11:08:23] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.2.tar.gz]
+[2024-05-26 11:08:23] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2024-05-26 11:08:23] INFO root fetch - main [MainThread]: Store serial: [23381559]
