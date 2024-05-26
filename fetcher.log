@@ -14735,3 +14735,39 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:39:14] INFO root fetch - processPackages [apeboiy]: Remove: archive file [/home/abi/fetcher/tmp/apeboiy-0.0.9.tar.gz]
 [2024-05-26 18:39:14] INFO root fetch - main [MainThread]: End processing [apeboiy]: success
 [2024-05-26 18:39:14] INFO root fetch - main [MainThread]: Store serial: [23384813]
+[2024-05-26 18:41:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384813]
+[2024-05-26 18:41:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gradio-agentchatbot
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ytsnippet
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ai-alchemy
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pqsdk
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: generate-temp-table-sql
+[2024-05-26 18:41:24] INFO root fetch - processPackages [pqsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 18:41:24] WARNING root fetch - processPackages [generate-temp-table-sql]: Skipping, unable to determine old version
+[2024-05-26 18:41:24] INFO root fetch - processPackages [gradio-agentchatbot]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-26 18:41:24] INFO root fetch - main [MainThread]: End processing [generate-temp-table-sql] error
+[2024-05-26 18:41:24] WARNING root fetch - processPackages [ytsnippet]: Skipping, unable to determine old version
+[2024-05-26 18:41:24] INFO root fetch - main [MainThread]: End processing [ytsnippet] error
+[2024-05-26 18:41:24] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/7d/ef/e1606d8c88536e329ff51d20c43d8c3a8fbf1f139463353e46ce9c5714b7/pqsdk-0.0.8.tar.gz
+[2024-05-26 18:41:24] INFO root fetch - processPackages [gradio-agentchatbot]: Downloading https://files.pythonhosted.org/packages/98/21/eff4fee6467de3f375fcba0be4a14755dbc2162bcddd1af162afe8fbecb1/gradio_agentchatbot-0.0.2.tar.gz
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/fe/91/a3117e58fb82be16e1bb454f9ca27e9e489a3223ac29b6868b787fdff37d/ai_alchemy-0.1.8.tar.gz
+[2024-05-26 18:41:24] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/fa/43/18693ceeb86b0759e282a7f78e07c1b9f619ad0a4c2cbb972444d8f2a224/pqsdk-0.0.9.tar.gz
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/46/87/7396855bd027de43e635cea5168d7491e3665556ed138f395c91892e00b6/ai_alchemy-0.1.9.tar.gz
+[2024-05-26 18:41:24] INFO root fetch - processPackages [gradio-agentchatbot]: Downloading https://files.pythonhosted.org/packages/70/5b/2a60916ca8d708568ed72a4c1e3e06dfcc9b62f36e7c385b91ec1e1e3c17/gradio_agentchatbot-0.0.4.tar.gz
+[2024-05-26 18:41:24] INFO root fetch - processPackages [pqsdk]: executing diffoscope
+[2024-05-26 18:41:24] INFO root fetch - processPackages [pqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqsdk-0.0.8.tar.gz tmp/pqsdk-0.0.9.tar.gz --markdown 20240526/p/pqsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 18:41:24] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.8.tar.gz tmp/ai_alchemy-0.1.9.tar.gz --markdown 20240526/a/ai-alchemy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 18:41:25] INFO root fetch - processPackages [gradio-agentchatbot]: executing diffoscope
+[2024-05-26 18:41:25] INFO root fetch - processPackages [gradio-agentchatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_agentchatbot-0.0.2.tar.gz tmp/gradio_agentchatbot-0.0.4.tar.gz --markdown 20240526/g/gradio-agentchatbot/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-26 18:41:25] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.8.tar.gz]
+[2024-05-26 18:41:25] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.9.tar.gz]
+[2024-05-26 18:41:25] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 18:41:25] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.8.tar.gz]
+[2024-05-26 18:41:25] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.9.tar.gz]
+[2024-05-26 18:41:25] INFO root fetch - main [MainThread]: End processing [pqsdk]: success
+[2024-05-26 18:41:29] INFO root fetch - processPackages [gradio-agentchatbot]: Remove: archive file [/home/abi/fetcher/tmp/gradio_agentchatbot-0.0.2.tar.gz]
+[2024-05-26 18:41:29] INFO root fetch - processPackages [gradio-agentchatbot]: Remove: archive file [/home/abi/fetcher/tmp/gradio_agentchatbot-0.0.4.tar.gz]
+[2024-05-26 18:41:29] INFO root fetch - main [MainThread]: End processing [gradio-agentchatbot]: success
+[2024-05-26 18:41:29] INFO root fetch - main [MainThread]: Store serial: [23384833]
