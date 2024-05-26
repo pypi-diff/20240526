@@ -4225,3 +4225,27 @@
 [2024-05-26 07:41:50] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.14.tar.gz]
 [2024-05-26 07:41:50] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
 [2024-05-26 07:41:50] INFO root fetch - main [MainThread]: Store serial: [23380081]
+[2024-05-26 07:43:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380081]
+[2024-05-26 07:43:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 07:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neginver
+[2024-05-26 07:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: marimo
+[2024-05-26 07:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SpotToBee
+[2024-05-26 07:43:59] WARNING root fetch - processPackages [SpotToBee]: Skipping, unable to determine old version
+[2024-05-26 07:43:59] INFO root fetch - processPackages [neginver]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 07:43:59] INFO root fetch - main [MainThread]: End processing [SpotToBee] error
+[2024-05-26 07:43:59] INFO root fetch - processPackages [marimo]: New version: [0.6.7] Old Version: [0.6.6]
+[2024-05-26 07:43:59] INFO root fetch - processPackages [neginver]: Downloading https://files.pythonhosted.org/packages/70/7d/4492d4c9e11a86aea9ded78a348b22d54dc375b256ff02462ae70eef83fa/neginver-0.0.1.tar.gz
+[2024-05-26 07:43:59] INFO root fetch - processPackages [marimo]: Downloading https://files.pythonhosted.org/packages/18/23/019163970a7f38f0cee140f4ed580af4ddb9143f08a2fc76c5d9915eaad4/marimo-0.6.6.tar.gz
+[2024-05-26 07:43:59] INFO root fetch - processPackages [neginver]: Downloading https://files.pythonhosted.org/packages/0a/bd/6da133f6580c1d809bd79289a4b1634057646b25930b57076d9873a02d2c/neginver-0.0.2.tar.gz
+[2024-05-26 07:43:59] INFO root fetch - processPackages [neginver]: executing diffoscope
+[2024-05-26 07:43:59] INFO root fetch - processPackages [neginver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neginver-0.0.1.tar.gz tmp/neginver-0.0.2.tar.gz --markdown 20240526/n/neginver/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 07:44:00] INFO root fetch - processPackages [neginver]: Remove: archive file [/home/abi/fetcher/tmp/neginver-0.0.1.tar.gz]
+[2024-05-26 07:44:00] INFO root fetch - processPackages [neginver]: Remove: archive file [/home/abi/fetcher/tmp/neginver-0.0.2.tar.gz]
+[2024-05-26 07:44:00] INFO root fetch - main [MainThread]: End processing [neginver]: success
+[2024-05-26 07:44:00] INFO root fetch - processPackages [marimo]: Downloading https://files.pythonhosted.org/packages/fb/5f/8b22f370ecc24aa872ca23cafdb1ceb101cae52be5aa0595089144561d6d/marimo-0.6.7.tar.gz
+[2024-05-26 07:44:00] INFO root fetch - processPackages [marimo]: executing diffoscope
+[2024-05-26 07:44:00] INFO root fetch - processPackages [marimo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marimo-0.6.6.tar.gz tmp/marimo-0.6.7.tar.gz --markdown 20240526/m/marimo/0.6.6-0.6.7/README.md --exclude *.pyd
+[2024-05-26 07:45:46] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.6.6.tar.gz]
+[2024-05-26 07:45:46] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.6.7.tar.gz]
+[2024-05-26 07:45:46] INFO root fetch - main [MainThread]: End processing [marimo]: success
+[2024-05-26 07:45:46] INFO root fetch - main [MainThread]: Store serial: [23380089]
