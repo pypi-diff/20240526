@@ -10839,3 +10839,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:05:15] INFO root fetch - processPackages [scipu]: Remove: archive file [/home/abi/fetcher/tmp/scipu-0.1.1.tar.gz]
 [2024-05-26 15:05:15] INFO root fetch - main [MainThread]: End processing [scipu]: success
 [2024-05-26 15:05:15] INFO root fetch - main [MainThread]: Store serial: [23383074]
+[2024-05-26 15:07:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383074]
+[2024-05-26 15:07:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 15:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smaht-submitr
+[2024-05-26 15:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: localstack-core
+[2024-05-26 15:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensorpc
+[2024-05-26 15:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: botrun-langgraph-agents
+[2024-05-26 15:07:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyjectify
+[2024-05-26 15:07:29] WARNING root fetch - processPackages [botrun-langgraph-agents]: Skipping, unable to determine old version
+[2024-05-26 15:07:29] INFO root fetch - main [MainThread]: End processing [botrun-langgraph-agents] error
+[2024-05-26 15:07:29] INFO root fetch - processPackages [tensorpc]: New version: [0.11.2] Old Version: [0.11.1]
+[2024-05-26 15:07:29] INFO root fetch - processPackages [smaht-submitr]: New version: [0.8.2.1b9] Old Version: [0.8.2.1b8]
+[2024-05-26 15:07:29] INFO root fetch - processPackages [pyjectify]: New version: [0.7] Old Version: [0.6]
+[2024-05-26 15:07:29] INFO root fetch - processPackages [tensorpc]: Downloading https://files.pythonhosted.org/packages/fd/4e/3529f8bcd29f740e5363750cbf28b02741429d340b9debda03c39ef29eea/tensorpc-0.11.1.tar.gz
+[2024-05-26 15:07:29] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/94/70/b34d2d34c394fc3e3b347e32bec8900b8b8643db5842d59991c4e84ea528/smaht_submitr-0.8.2.1b8.tar.gz
+[2024-05-26 15:07:29] INFO root fetch - processPackages [localstack-core]: New version: [3.4.1.dev20240526130534] Old Version: [3.4.1.dev20240524203423]
+[2024-05-26 15:07:29] INFO root fetch - processPackages [pyjectify]: Downloading https://files.pythonhosted.org/packages/4e/5f/feae2ef78cf4ad073c0d2797e0af7dce7500cbdc115f9b0c2c1346a9c376/pyjectify-0.6.tar.gz
+[2024-05-26 15:07:29] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/49/5f/4a0cbcc953b126fd89e8d3c5beafcab7cf195845995d05395f40952ad23c/smaht_submitr-0.8.2.1b9.tar.gz
+[2024-05-26 15:07:29] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/fc/b2/2c0784c7751048f968f5ea202a28a7a1c9455b101e5a13789b6a4527d236/localstack_core-3.4.1.dev20240524203423.tar.gz
+[2024-05-26 15:07:29] INFO root fetch - processPackages [tensorpc]: Downloading https://files.pythonhosted.org/packages/c3/c0/87a8dbf1850f91bd9dc9e7c61f6d4f49768594e049f616a6cc977556922f/tensorpc-0.11.2.tar.gz
+[2024-05-26 15:07:29] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-05-26 15:07:29] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.8.2.1b8.tar.gz tmp/smaht_submitr-0.8.2.1b9.tar.gz --markdown 20240526/s/smaht-submitr/0.8.2.1b8-0.8.2.1b9/README.md --exclude *.pyd
+[2024-05-26 15:07:30] INFO root fetch - processPackages [tensorpc]: executing diffoscope
+[2024-05-26 15:07:30] INFO root fetch - processPackages [tensorpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorpc-0.11.1.tar.gz tmp/tensorpc-0.11.2.tar.gz --markdown 20240526/t/tensorpc/0.11.1-0.11.2/README.md --exclude *.pyd
+[2024-05-26 15:07:30] INFO root fetch - processPackages [pyjectify]: Downloading https://files.pythonhosted.org/packages/04/e5/3c40bb71b305046e66c56fb9187d17169cc3f6cb89419c0266506b9929da/pyjectify-0.7.tar.gz
+[2024-05-26 15:07:30] INFO root fetch - processPackages [pyjectify]: executing diffoscope
+[2024-05-26 15:07:30] INFO root fetch - processPackages [pyjectify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjectify-0.6.tar.gz tmp/pyjectify-0.7.tar.gz --markdown 20240526/p/pyjectify/0.6-0.7/README.md --exclude *.pyd
+[2024-05-26 15:07:30] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/88/00/9f2665d3c6d9f0e2c5f8405f181047009533ed4bc38f790101cad25cfa29/localstack_core-3.4.1.dev20240526130534.tar.gz
+[2024-05-26 15:07:30] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2024-05-26 15:07:30] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack_core-3.4.1.dev20240524203423.tar.gz tmp/localstack_core-3.4.1.dev20240526130534.tar.gz --markdown 20240526/l/localstack-core/3.4.1.dev20240524203423-3.4.1.dev20240526130534/README.md --exclude *.pyd
+[2024-05-26 15:07:30] INFO root fetch - processPackages [pyjectify]: Remove: archive file [/home/abi/fetcher/tmp/pyjectify-0.6.tar.gz]
+[2024-05-26 15:07:30] INFO root fetch - processPackages [pyjectify]: Remove: archive file [/home/abi/fetcher/tmp/pyjectify-0.7.tar.gz]
+[2024-05-26 15:07:30] INFO root fetch - main [MainThread]: End processing [pyjectify]: success
+[2024-05-26 15:07:30] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.2.1b8.tar.gz]
+[2024-05-26 15:07:30] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.2.1b9.tar.gz]
+[2024-05-26 15:07:30] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-05-26 15:07:31] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.11.1.tar.gz]
+[2024-05-26 15:07:31] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.11.2.tar.gz]
+[2024-05-26 15:07:31] INFO root fetch - main [MainThread]: End processing [tensorpc]: success
+[2024-05-26 15:07:34] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240524203423.tar.gz]
+[2024-05-26 15:07:34] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240526130534.tar.gz]
+[2024-05-26 15:07:34] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2024-05-26 15:07:34] INFO root fetch - main [MainThread]: Store serial: [23383089]
