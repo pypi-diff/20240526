@@ -9474,3 +9474,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:12:11] INFO root fetch - processPackages [sounderpy]: Remove: archive file [/home/abi/fetcher/tmp/sounderpy-3.0.4.dev1.tar.gz]
 [2024-05-26 13:12:11] INFO root fetch - main [MainThread]: End processing [sounderpy]: success
 [2024-05-26 13:12:11] INFO root fetch - main [MainThread]: Store serial: [23382373]
+[2024-05-26 13:14:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382373]
+[2024-05-26 13:14:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 13:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-nightly
+[2024-05-26 13:14:24] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-05-26 13:14:24] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-05-26 13:14:25] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-05-26 13:14:25] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-05-26 13:14:25] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240526/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-05-26 13:14:27] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-05-26 13:14:27] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-05-26 13:14:27] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-05-26 13:14:27] INFO root fetch - main [MainThread]: Store serial: [23382375]
