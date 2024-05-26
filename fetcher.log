@@ -8998,3 +8998,56 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:27:36] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Remove: archive file [/home/abi/fetcher/tmp/tmc_2209_raspberry_pi-0.5.tar.gz]
 [2024-05-26 12:27:36] INFO root fetch - main [MainThread]: End processing [TMC-2209-Raspberry-Pi]: success
 [2024-05-26 12:27:36] INFO root fetch - main [MainThread]: Store serial: [23382176]
+[2024-05-26 12:29:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382176]
+[2024-05-26 12:29:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 12:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-tab-switch-counter
+[2024-05-26 12:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-tab-switch-counter
+[2024-05-26 12:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-tab-switch-counter
+[2024-05-26 12:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: squice
+[2024-05-26 12:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sevenapps-py-easy
+[2024-05-26 12:29:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CI-CloudConnector
+[2024-05-26 12:29:49] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 12:29:49] INFO root fetch - processPackages [squice]: New version: [0.3] Old Version: [0.2]
+[2024-05-26 12:29:49] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 12:29:49] INFO root fetch - processPackages [squice]: Downloading https://files.pythonhosted.org/packages/93/02/ca4ed06a6bebbee187e5e04b014a66b23e57a481a4218c3cd6e7a8dd4674/squice-0.2.tar.gz
+[2024-05-26 12:29:49] INFO root fetch - processPackages [streamlit-tab-switch-counter]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-05-26 12:29:49] INFO root fetch - processPackages [streamlit-tab-switch-counter]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-05-26 12:29:49] INFO root fetch - processPackages [streamlit-tab-switch-counter]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-05-26 12:29:49] INFO root fetch - processPackages [sevenapps-py-easy]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: Downloading https://files.pythonhosted.org/packages/99/c6/abac1edb4a2f670e2dd2d5369ff261c90dc75f332a6b06a91517a4009815/streamlit_tab_switch_counter-0.0.3.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: Downloading https://files.pythonhosted.org/packages/99/c6/abac1edb4a2f670e2dd2d5369ff261c90dc75f332a6b06a91517a4009815/streamlit_tab_switch_counter-0.0.3.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: Downloading https://files.pythonhosted.org/packages/99/c6/abac1edb4a2f670e2dd2d5369ff261c90dc75f332a6b06a91517a4009815/streamlit_tab_switch_counter-0.0.3.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [sevenapps-py-easy]: Downloading https://files.pythonhosted.org/packages/58/5f/929992abce4fee2ed2684aed6cf239ac981d84a305132b2f387d0d205480/sevenapps_py_easy-0.0.7.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 12:29:50] INFO root fetch - processPackages [squice]: Downloading https://files.pythonhosted.org/packages/48/ad/21ce11c83ef9cb7e17283ee249f3c2593f6b00d9761b5d734a38ac17ea7b/squice-0.3.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 12:29:50] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 12:29:50] INFO root fetch - processPackages [squice]: executing diffoscope
+[2024-05-26 12:29:50] INFO root fetch - processPackages [squice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squice-0.2.tar.gz tmp/squice-0.3.tar.gz --markdown 20240526/s/squice/0.2-0.3/README.md --exclude *.pyd
+[2024-05-26 12:29:50] INFO root fetch - processPackages [sevenapps-py-easy]: Downloading https://files.pythonhosted.org/packages/d3/df/71b9bf0b88a4bc0b5917a7855bec181ed8cae822e04ba48cc590310b67f0/sevenapps_py_easy-0.0.8.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: Downloading https://files.pythonhosted.org/packages/40/71/8cf05a6917e6a50a49961a5e850a83357e614a585c03a03575f5c5cf7690/streamlit_tab_switch_counter-0.1.0.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: Downloading https://files.pythonhosted.org/packages/40/71/8cf05a6917e6a50a49961a5e850a83357e614a585c03a03575f5c5cf7690/streamlit_tab_switch_counter-0.1.0.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: Downloading https://files.pythonhosted.org/packages/40/71/8cf05a6917e6a50a49961a5e850a83357e614a585c03a03575f5c5cf7690/streamlit_tab_switch_counter-0.1.0.tar.gz
+[2024-05-26 12:29:50] INFO root fetch - processPackages [sevenapps-py-easy]: executing diffoscope
+[2024-05-26 12:29:50] INFO root fetch - processPackages [sevenapps-py-easy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sevenapps_py_easy-0.0.7.tar.gz tmp/sevenapps_py_easy-0.0.8.tar.gz --markdown 20240526/s/sevenapps-py-easy/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: executing diffoscope
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_tab_switch_counter-0.0.3.tar.gz tmp/streamlit_tab_switch_counter-0.1.0.tar.gz --markdown 20240526/s/streamlit-tab-switch-counter/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: executing diffoscope
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_tab_switch_counter-0.0.3.tar.gz tmp/streamlit_tab_switch_counter-0.1.0.tar.gz --markdown 20240526/s/streamlit-tab-switch-counter/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: executing diffoscope
+[2024-05-26 12:29:50] INFO root fetch - processPackages [streamlit-tab-switch-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_tab_switch_counter-0.0.3.tar.gz tmp/streamlit_tab_switch_counter-0.1.0.tar.gz --markdown 20240526/s/streamlit-tab-switch-counter/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-05-26 12:29:51] INFO root fetch - processPackages [squice]: Remove: archive file [/home/abi/fetcher/tmp/squice-0.2.tar.gz]
+[2024-05-26 12:29:51] INFO root fetch - processPackages [squice]: Remove: archive file [/home/abi/fetcher/tmp/squice-0.3.tar.gz]
+[2024-05-26 12:29:51] INFO root fetch - main [MainThread]: End processing [squice]: success
+[2024-05-26 12:29:51] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 12:29:51] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 12:29:51] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 12:29:51] INFO root fetch - processPackages [sevenapps-py-easy]: Remove: archive file [/home/abi/fetcher/tmp/sevenapps_py_easy-0.0.7.tar.gz]
+[2024-05-26 12:29:51] INFO root fetch - processPackages [sevenapps-py-easy]: Remove: archive file [/home/abi/fetcher/tmp/sevenapps_py_easy-0.0.8.tar.gz]
+[2024-05-26 12:29:51] INFO root fetch - main [MainThread]: End processing [sevenapps-py-easy]: success
+[2024-05-26 12:29:51] INFO root fetch - processPackages [streamlit-tab-switch-counter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_tab_switch_counter-0.0.3.tar.gz]
+[2024-05-26 12:29:51] INFO root fetch - processPackages [streamlit-tab-switch-counter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_tab_switch_counter-0.1.0.tar.gz]
+[2024-05-26 12:29:51] INFO root fetch - main [MainThread]: End processing [streamlit-tab-switch-counter]: success
+[2024-05-26 12:29:51] INFO root fetch - main [MainThread]: End processing [streamlit-tab-switch-counter]: success
+[2024-05-26 12:29:51] INFO root fetch - main [MainThread]: End processing [streamlit-tab-switch-counter]: success
+[2024-05-26 12:29:51] INFO root fetch - main [MainThread]: Store serial: [23382195]
