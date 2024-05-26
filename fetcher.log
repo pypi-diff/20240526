@@ -9378,3 +9378,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:03:10] INFO root fetch - processPackages [killercoda-cli]: Remove: archive file [/home/abi/fetcher/tmp/killercoda_cli-1.0.3.tar.gz]
 [2024-05-26 13:03:10] INFO root fetch - main [MainThread]: End processing [killercoda-cli]: success
 [2024-05-26 13:03:10] INFO root fetch - main [MainThread]: Store serial: [23382339]
+[2024-05-26 13:05:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382339]
+[2024-05-26 13:05:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 13:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cv-smart-house-camera
+[2024-05-26 13:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xssbase
+[2024-05-26 13:05:23] INFO root fetch - processPackages [xssbase]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-26 13:05:23] INFO root fetch - processPackages [cv-smart-house-camera]: New version: [0.1.8.1] Old Version: [0.1.8]
+[2024-05-26 13:05:23] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/8b/0f/0d7d2b3197c174ef4ca65a41da8cb5d8bde8eb6f233aae2ef8c01ec53088/xssbase-2.0.8.tar.gz
+[2024-05-26 13:05:23] INFO root fetch - processPackages [cv-smart-house-camera]: Downloading https://files.pythonhosted.org/packages/d0/ae/32a8916dea6fdb3437eba21e9a7967811650c5824e3fbbfe7a5d84a0d1af/cv_smart_house_camera-0.1.8.tar.gz
+[2024-05-26 13:05:24] INFO root fetch - processPackages [cv-smart-house-camera]: Downloading https://files.pythonhosted.org/packages/02/7e/bd9d22e91af32071c3c5b175764818be7d71550dab7a70d7828e2b13af31/cv_smart_house_camera-0.1.8.1.tar.gz
+[2024-05-26 13:05:24] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/48/16/69c2c35e1fab7f453726d36ad8eb18e316238221bf89a57efa79f59f40c6/xssbase-2.0.9.tar.gz
+[2024-05-26 13:05:24] INFO root fetch - processPackages [cv-smart-house-camera]: executing diffoscope
+[2024-05-26 13:05:24] INFO root fetch - processPackages [cv-smart-house-camera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv_smart_house_camera-0.1.8.tar.gz tmp/cv_smart_house_camera-0.1.8.1.tar.gz --markdown 20240526/c/cv-smart-house-camera/0.1.8-0.1.8.1/README.md --exclude *.pyd
+[2024-05-26 13:05:24] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 13:05:24] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-2.0.8.tar.gz tmp/xssbase-2.0.9.tar.gz --markdown 20240526/x/xssbase/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-26 13:05:24] INFO root fetch - processPackages [cv-smart-house-camera]: Remove: archive file [/home/abi/fetcher/tmp/cv_smart_house_camera-0.1.8.tar.gz]
+[2024-05-26 13:05:24] INFO root fetch - processPackages [cv-smart-house-camera]: Remove: archive file [/home/abi/fetcher/tmp/cv_smart_house_camera-0.1.8.1.tar.gz]
+[2024-05-26 13:05:24] INFO root fetch - main [MainThread]: End processing [cv-smart-house-camera]: success
+[2024-05-26 13:05:24] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.8.tar.gz]
+[2024-05-26 13:05:24] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.9.tar.gz]
+[2024-05-26 13:05:24] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 13:05:24] INFO root fetch - main [MainThread]: Store serial: [23382345]
