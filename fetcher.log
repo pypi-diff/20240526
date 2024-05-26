@@ -11835,3 +11835,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:04:49] INFO root fetch - processPackages [burny_common]: Remove: archive file [/home/abi/fetcher/tmp/burny_common-0.0.9.tar.gz]
 [2024-05-26 16:04:49] INFO root fetch - main [MainThread]: End processing [burny_common]: success
 [2024-05-26 16:04:49] INFO root fetch - main [MainThread]: Store serial: [23383595]
+[2024-05-26 16:07:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383595]
+[2024-05-26 16:07:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: burny_common
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ambit-fe
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monopoly-sg
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-alchemy
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Simple-ToDo-List
+[2024-05-26 16:07:18] INFO root fetch - processPackages [burny_common]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 16:07:18] INFO root fetch - processPackages [monopoly-sg]: New version: [0.8.1] Old Version: [0.7.8]
+[2024-05-26 16:07:18] WARNING root fetch - processPackages [Simple-ToDo-List]: Skipping, unable to determine old version
+[2024-05-26 16:07:18] INFO root fetch - main [MainThread]: End processing [Simple-ToDo-List] error
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ambit-fe]: New version: [1.2.8] Old Version: [1.2.7]
+[2024-05-26 16:07:18] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/94/66/1a27e18be57e113f0a136a3e04a0613a2bf771068048c92a8d7ab31fe2ff/monopoly_sg-0.7.8.tar.gz
+[2024-05-26 16:07:18] INFO root fetch - processPackages [burny_common]: Downloading https://files.pythonhosted.org/packages/cb/fd/94afdbbfe96bf985cb8f2ce4990fbac907749bef1b4babc81ee01556590f/burny_common-0.0.8.tar.gz
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ambit-fe]: Downloading https://files.pythonhosted.org/packages/f7/11/52c17746f5b909fd0d79bac6441377912cf2b9ac9ea8211c41f94587285c/ambit_fe-1.2.7.tar.gz
+[2024-05-26 16:07:18] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/ba/9a/726cf48dd347a1b2addeedffe09e179df4c6c01862cea634ef38022578c4/ai_alchemy-0.1.1.tar.gz
+[2024-05-26 16:07:18] INFO root fetch - processPackages [burny_common]: Downloading https://files.pythonhosted.org/packages/23/4a/2559afa35b918543da5f953ce7a09cf3629307828fa528048b38ac26e8a1/burny_common-0.0.9.tar.gz
+[2024-05-26 16:07:18] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/55/6c/727f0415cd45b2e1fbf5c1b4b85af1c7c0e6159d166986b5b09f3e4dfda8/monopoly_sg-0.8.1.tar.gz
+[2024-05-26 16:07:19] INFO root fetch - processPackages [burny_common]: executing diffoscope
+[2024-05-26 16:07:19] INFO root fetch - processPackages [burny_common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burny_common-0.0.8.tar.gz tmp/burny_common-0.0.9.tar.gz --markdown 20240526/b/burny_common/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 16:07:19] INFO root fetch - processPackages [monopoly-sg]: executing diffoscope
+[2024-05-26 16:07:19] INFO root fetch - processPackages [monopoly-sg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monopoly_sg-0.7.8.tar.gz tmp/monopoly_sg-0.8.1.tar.gz --markdown 20240526/m/monopoly-sg/0.7.8-0.8.1/README.md --exclude *.pyd
+[2024-05-26 16:07:19] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/fa/1d/5923247cd1f7b887918f6c08c2415d44b3d2190067bb6a29175d6d8c1871/ai_alchemy-0.1.2.tar.gz
+[2024-05-26 16:07:19] INFO root fetch - processPackages [ambit-fe]: Downloading https://files.pythonhosted.org/packages/d1/ed/c0a05c7a179f216720a57d67b32b91f2b31aa1952399be63cf50f306663f/ambit_fe-1.2.8.tar.gz
+[2024-05-26 16:07:19] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 16:07:19] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.1.tar.gz tmp/ai_alchemy-0.1.2.tar.gz --markdown 20240526/a/ai-alchemy/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 16:07:19] INFO root fetch - processPackages [ambit-fe]: executing diffoscope
+[2024-05-26 16:07:19] INFO root fetch - processPackages [ambit-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambit_fe-1.2.7.tar.gz tmp/ambit_fe-1.2.8.tar.gz --markdown 20240526/a/ambit-fe/1.2.7-1.2.8/README.md --exclude *.pyd
+[2024-05-26 16:07:19] INFO root fetch - processPackages [burny_common]: Remove: archive file [/home/abi/fetcher/tmp/burny_common-0.0.8.tar.gz]
+[2024-05-26 16:07:19] INFO root fetch - processPackages [burny_common]: Remove: archive file [/home/abi/fetcher/tmp/burny_common-0.0.9.tar.gz]
+[2024-05-26 16:07:19] INFO root fetch - main [MainThread]: End processing [burny_common]: success
+[2024-05-26 16:07:19] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.8.tar.gz]
+[2024-05-26 16:07:19] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.8.1.tar.gz]
+[2024-05-26 16:07:19] INFO root fetch - main [MainThread]: End processing [monopoly-sg]: success
+[2024-05-26 16:07:19] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.1.tar.gz]
+[2024-05-26 16:07:19] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.2.tar.gz]
+[2024-05-26 16:07:19] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 16:07:20] INFO root fetch - processPackages [ambit-fe]: Remove: archive file [/home/abi/fetcher/tmp/ambit_fe-1.2.7.tar.gz]
+[2024-05-26 16:07:20] INFO root fetch - processPackages [ambit-fe]: Remove: archive file [/home/abi/fetcher/tmp/ambit_fe-1.2.8.tar.gz]
+[2024-05-26 16:07:20] INFO root fetch - main [MainThread]: End processing [ambit-fe]: success
+[2024-05-26 16:07:20] INFO root fetch - main [MainThread]: Store serial: [23383612]
