@@ -6127,3 +6127,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:23:25] INFO root fetch - processPackages [khu-llm-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/khu_llm_toolkit-0.1.7.tar.gz]
 [2024-05-26 10:23:25] INFO root fetch - main [MainThread]: End processing [khu-llm-toolkit]: success
 [2024-05-26 10:23:25] INFO root fetch - main [MainThread]: Store serial: [23380937]
+[2024-05-26 10:25:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380937]
+[2024-05-26 10:25:36] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 10:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-mortgagecalculator
+[2024-05-26 10:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-news
+[2024-05-26 10:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-numbertowords
+[2024-05-26 10:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cv-smart-house-camera
+[2024-05-26 10:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apiverve-passwordgenerator
+[2024-05-26 10:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CryptoParser
+[2024-05-26 10:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apiverve-phonevalidator
+[2024-05-26 10:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apiverve-playstorescraper
+[2024-05-26 10:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: inoutlists
+[2024-05-26 10:25:37] INFO root fetch - processPackages [cv-smart-house-camera]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 10:25:37] INFO root fetch - processPackages [cv-smart-house-camera]: Downloading https://files.pythonhosted.org/packages/58/c3/4eed0f1d20b0b2011fa598dc4fca30d3d3470ac654a954f626e5657fe1b4/cv_smart_house_camera-0.1.6.tar.gz
+[2024-05-26 10:25:37] WARNING root fetch - processPackages [apiverve-playstorescraper]: Skipping, unable to determine old version
+[2024-05-26 10:25:37] INFO root fetch - main [MainThread]: End processing [apiverve-playstorescraper] error
+[2024-05-26 10:25:37] WARNING root fetch - processPackages [apiverve-numbertowords]: Skipping, unable to determine old version
+[2024-05-26 10:25:37] INFO root fetch - main [MainThread]: End processing [apiverve-numbertowords] error
+[2024-05-26 10:25:37] WARNING root fetch - processPackages [apiverve-phonevalidator]: Skipping, unable to determine old version
+[2024-05-26 10:25:37] INFO root fetch - main [MainThread]: End processing [apiverve-phonevalidator] error
+[2024-05-26 10:25:37] WARNING root fetch - processPackages [apiverve-passwordgenerator]: Skipping, unable to determine old version
+[2024-05-26 10:25:37] INFO root fetch - main [MainThread]: End processing [apiverve-passwordgenerator] error
+[2024-05-26 10:25:37] INFO root fetch - processPackages [CryptoParser]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-26 10:25:37] WARNING root fetch - processPackages [apiverve-news]: Skipping, unable to determine old version
+[2024-05-26 10:25:37] INFO root fetch - main [MainThread]: End processing [apiverve-news] error
+[2024-05-26 10:25:37] WARNING root fetch - processPackages [apiverve-mortgagecalculator]: Skipping, unable to determine old version
+[2024-05-26 10:25:37] INFO root fetch - main [MainThread]: End processing [apiverve-mortgagecalculator] error
+[2024-05-26 10:25:37] WARNING root fetch - processPackages [inoutlists]: Skipping, unable to determine old version
+[2024-05-26 10:25:37] INFO root fetch - main [MainThread]: End processing [inoutlists] error
+[2024-05-26 10:25:37] INFO root fetch - processPackages [cv-smart-house-camera]: Downloading https://files.pythonhosted.org/packages/ca/a8/cda08a4e9e430b26088673d80b744ab5875b7897cfe5724b354a25468f48/cv_smart_house_camera-0.1.7.tar.gz
+[2024-05-26 10:25:37] INFO root fetch - processPackages [CryptoParser]: Downloading https://files.pythonhosted.org/packages/3d/df/9f58b2db53b5684d5a815aa265a97047745a4e0375ef2c5221e6c73b7f76/cryptoparser-0.9.0.tar.gz
+[2024-05-26 10:25:37] INFO root fetch - processPackages [cv-smart-house-camera]: executing diffoscope
+[2024-05-26 10:25:37] INFO root fetch - processPackages [cv-smart-house-camera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv_smart_house_camera-0.1.6.tar.gz tmp/cv_smart_house_camera-0.1.7.tar.gz --markdown 20240526/c/cv-smart-house-camera/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 10:25:37] INFO root fetch - processPackages [CryptoParser]: Downloading https://files.pythonhosted.org/packages/b2/82/34b72d223e7acd0b43e6849f717d1546c715bb7ae97058bbe08de7f94a90/CryptoParser-0.9.1.tar.gz
+[2024-05-26 10:25:37] INFO root fetch - processPackages [CryptoParser]: executing diffoscope
+[2024-05-26 10:25:37] INFO root fetch - processPackages [CryptoParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptoparser-0.9.0.tar.gz tmp/CryptoParser-0.9.1.tar.gz --markdown 20240526/C/CryptoParser/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-26 10:25:38] INFO root fetch - processPackages [cv-smart-house-camera]: Remove: archive file [/home/abi/fetcher/tmp/cv_smart_house_camera-0.1.6.tar.gz]
+[2024-05-26 10:25:38] INFO root fetch - processPackages [cv-smart-house-camera]: Remove: archive file [/home/abi/fetcher/tmp/cv_smart_house_camera-0.1.7.tar.gz]
+[2024-05-26 10:25:38] INFO root fetch - main [MainThread]: End processing [cv-smart-house-camera]: success
+[2024-05-26 10:25:38] INFO root fetch - processPackages [CryptoParser]: Remove: archive file [/home/abi/fetcher/tmp/cryptoparser-0.9.0.tar.gz]
+[2024-05-26 10:25:38] INFO root fetch - processPackages [CryptoParser]: Remove: archive file [/home/abi/fetcher/tmp/CryptoParser-0.9.1.tar.gz]
+[2024-05-26 10:25:38] INFO root fetch - main [MainThread]: End processing [CryptoParser]: success
+[2024-05-26 10:25:38] INFO root fetch - main [MainThread]: Store serial: [23380974]
