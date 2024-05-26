@@ -2254,3 +2254,20 @@
 [2024-05-26 04:07:15] INFO root fetch - processPackages [rshf]: Remove: archive file [/home/abi/fetcher/tmp/rshf-0.0.3.tar.gz]
 [2024-05-26 04:07:15] INFO root fetch - main [MainThread]: End processing [rshf]: success
 [2024-05-26 04:07:15] INFO root fetch - main [MainThread]: Store serial: [23379153]
+[2024-05-26 04:09:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379153]
+[2024-05-26 04:09:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 04:11:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379154]
+[2024-05-26 04:11:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 04:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipackager
+[2024-05-26 04:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llamacrew
+[2024-05-26 04:11:28] WARNING root fetch - processPackages [llamacrew]: Skipping, unable to determine old version
+[2024-05-26 04:11:28] INFO root fetch - main [MainThread]: End processing [llamacrew] error
+[2024-05-26 04:11:28] INFO root fetch - processPackages [pipackager]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-26 04:11:29] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/6a/c9/9aaa3c2302037a442ed96dcc27a668a20999d537e67d75a890e20f5b8df2/pipackager-0.3.0.tar.gz
+[2024-05-26 04:11:29] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/ec/cc/f22c7376d88c94ae4d294b2c3b8396b4ed9e828f8fbf6fdc1372162bbb1e/pipackager-0.3.1.tar.gz
+[2024-05-26 04:11:29] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 04:11:29] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.3.0.tar.gz tmp/pipackager-0.3.1.tar.gz --markdown 20240526/p/pipackager/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-26 04:11:30] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.3.0.tar.gz]
+[2024-05-26 04:11:30] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.3.1.tar.gz]
+[2024-05-26 04:11:30] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 04:11:30] INFO root fetch - main [MainThread]: Store serial: [23379164]
