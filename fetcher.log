@@ -13775,3 +13775,78 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:40:29] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.3.tar.gz]
 [2024-05-26 17:40:29] INFO root fetch - main [MainThread]: End processing [opteryx]: success
 [2024-05-26 17:40:29] INFO root fetch - main [MainThread]: Store serial: [23384378]
+[2024-05-26 17:42:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384378]
+[2024-05-26 17:42:38] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: optframe
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embedprepro
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ai-alchemy
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: biliup
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ZeroXRequests
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zenaura
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xssbase
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bota
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 17:42:38] INFO root fetch - processPackages [embedprepro]: New version: [0.2] Old Version: [0.1]
+[2024-05-26 17:42:38] INFO root fetch - processPackages [zenaura]: New version: [0.9.51] Old Version: [0.9.50]
+[2024-05-26 17:42:38] INFO root fetch - processPackages [bota]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ZeroXRequests]: New version: [1.1] Old Version: [1.0]
+[2024-05-26 17:42:38] INFO root fetch - processPackages [xssbase]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-05-26 17:42:38] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-26 17:42:38] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/20/a9/4f637666fa83c508695967d807e33c729d659786a5de468b4289f5bff8b4/bota-4.0.8.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [optframe]: New version: [5.1.0] Old Version: [5.0.8rc0]
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/24/c7/7b37c9a68de5fbf1640a99233ecfd1dd36b1f759a5f5b220e0447ffaf76f/ai_alchemy-0.1.6.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/3b/01/03143af2b58eefa06276bd3de2a0a016d92cfcca6be49cc3369373ba6eac/zenaura-0.9.50.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [embedprepro]: Downloading https://files.pythonhosted.org/packages/23/1a/f4d77aa970638c60c682649597ba7db31684538cafbbe99b8b9d7d3a1a61/embedprepro-0.1.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/d1/94/c64d88b2188802bd367c1533175994a6023c1f3633056cce8037a240a29a/xssbase-3.0.5.win-amd64.zip
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ZeroXRequests]: Downloading https://files.pythonhosted.org/packages/71/06/f74b66c6e1dcc1edb2d0a34ca68cba22f519ff8607891a63d7c3e75e1e24/ZeroXRequests-1.0.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [optframe]: Downloading https://files.pythonhosted.org/packages/f2/1e/442ae5d3abe358f8f91a01aa005c4fbe610a166d6349cf13da36c98bf462/optframe-5.0.8rc0.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/a4/5f/24c14d0a7d609507557baf5369feaca8b3459d111f35e9258e9d0396f9a8/bota-4.0.9.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [embedprepro]: Downloading https://files.pythonhosted.org/packages/96/dd/83de9a029318d39990e3bcd911ae5c12983066d69369c5063736549bd007/embedprepro-0.2.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/67/eb/4225dd0322e3b0470fe7dc5f4ca48a03ae6098c7532ee0e2430b6dd85e18/ai_alchemy-0.1.7.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [bota]: executing diffoscope
+[2024-05-26 17:42:38] INFO root fetch - processPackages [bota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bota-4.0.8.tar.gz tmp/bota-4.0.9.tar.gz --markdown 20240526/b/bota/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 17:42:38] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/03/54/28af9a86a69aab24c7ae1057de6d85fd3782b67847d9fdeeb739d9d7a5d1/zenaura-0.9.51.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [embedprepro]: executing diffoscope
+[2024-05-26 17:42:38] INFO root fetch - processPackages [embedprepro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedprepro-0.1.tar.gz tmp/embedprepro-0.2.tar.gz --markdown 20240526/e/embedprepro/0.1-0.2/README.md --exclude *.pyd
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.6.tar.gz tmp/ai_alchemy-0.1.7.tar.gz --markdown 20240526/a/ai-alchemy/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 17:42:38] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/9f/2c/daa247aee728f411b79080e20069c9d1e06a57101a37816f47e4ef3323ba/xssbase-3.0.6.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [ZeroXRequests]: Downloading https://files.pythonhosted.org/packages/12/33/b545fe193211a94633372e4fc4630c97acc4abdc4e5be2dbbf964cba580a/ZeroXRequests-1.1.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 17:42:38] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.50.tar.gz tmp/zenaura-0.9.51.tar.gz --markdown 20240526/z/zenaura/0.9.50-0.9.51/README.md --exclude *.pyd
+[2024-05-26 17:42:38] INFO root fetch - processPackages [optframe]: Downloading https://files.pythonhosted.org/packages/ec/3d/d3f02561670f82966d8a51bbca33e4f5b6e1942d077e01926c7fd12cd0e1/optframe-5.1.0.tar.gz
+[2024-05-26 17:42:38] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 17:42:38] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-3.0.5.win-amd64.zip tmp/xssbase-3.0.6.tar.gz --markdown 20240526/x/xssbase/3.0.5-3.0.6/README.md --exclude *.pyd
+[2024-05-26 17:42:39] INFO root fetch - processPackages [ZeroXRequests]: executing diffoscope
+[2024-05-26 17:42:39] INFO root fetch - processPackages [ZeroXRequests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ZeroXRequests-1.0.tar.gz tmp/ZeroXRequests-1.1.tar.gz --markdown 20240526/Z/ZeroXRequests/1.0-1.1/README.md --exclude *.pyd
+[2024-05-26 17:42:39] INFO root fetch - processPackages [optframe]: executing diffoscope
+[2024-05-26 17:42:39] INFO root fetch - processPackages [optframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optframe-5.0.8rc0.tar.gz tmp/optframe-5.1.0.tar.gz --markdown 20240526/o/optframe/5.0.8rc0-5.1.0/README.md --exclude *.pyd
+[2024-05-26 17:42:39] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-05-26 17:42:39] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-05-26 17:42:39] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240526/b/biliup/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-26 17:42:39] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.6.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.7.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 17:42:39] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.8.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - main [MainThread]: End processing [bota]: success
+[2024-05-26 17:42:39] INFO root fetch - processPackages [embedprepro]: Remove: archive file [/home/abi/fetcher/tmp/embedprepro-0.1.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - processPackages [embedprepro]: Remove: archive file [/home/abi/fetcher/tmp/embedprepro-0.2.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - main [MainThread]: End processing [embedprepro]: success
+[2024-05-26 17:42:39] INFO root fetch - processPackages [ZeroXRequests]: Remove: archive file [/home/abi/fetcher/tmp/ZeroXRequests-1.0.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - processPackages [ZeroXRequests]: Remove: archive file [/home/abi/fetcher/tmp/ZeroXRequests-1.1.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - main [MainThread]: End processing [ZeroXRequests]: success
+[2024-05-26 17:42:39] INFO root fetch - processPackages [optframe]: Remove: archive file [/home/abi/fetcher/tmp/optframe-5.0.8rc0.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - processPackages [optframe]: Remove: archive file [/home/abi/fetcher/tmp/optframe-5.1.0.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - main [MainThread]: End processing [optframe]: success
+[2024-05-26 17:42:39] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-3.0.5.win-amd64.zip]
+[2024-05-26 17:42:39] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-3.0.6.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 17:42:39] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.50.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.51.tar.gz]
+[2024-05-26 17:42:39] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 17:42:40] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-05-26 17:42:40] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-05-26 17:42:40] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-05-26 17:42:40] INFO root fetch - main [MainThread]: Store serial: [23384406]
