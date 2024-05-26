@@ -11977,3 +11977,49 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:12:20] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.4.tar.gz]
 [2024-05-26 16:12:20] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
 [2024-05-26 16:12:20] INFO root fetch - main [MainThread]: Store serial: [23383652]
+[2024-05-26 16:14:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383652]
+[2024-05-26 16:14:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 16:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: random-slugs
+[2024-05-26 16:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-26 16:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pi-awning-webthing
+[2024-05-26 16:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-05-26 16:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: contacts-assistant
+[2024-05-26 16:14:50] INFO root fetch - processPackages [contacts-assistant]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 16:14:50] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 16:14:50] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/4e/89/80808884db55a0f7439de1562bd08fde7163e1fee6b7158fb96374b824fe/contacts_assistant-0.0.5.tar.gz
+[2024-05-26 16:14:50] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f3/91/ba07c9e27dbb568d0143cb8eab18a7b153f080c095d6be2a900c7fd69332/pi_awning_webthing-0.3.8.tar.gz
+[2024-05-26 16:14:50] INFO root fetch - processPackages [random-slugs]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-05-26 16:14:50] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-26 16:14:50] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-26 16:14:50] INFO root fetch - processPackages [random-slugs]: Downloading https://files.pythonhosted.org/packages/7b/c1/72d118a00cbf5976b6d7d32bba6b07c25fc32fefa6ed64e4035ebbe9237e/random_slugs-1.0.0.tar.gz
+[2024-05-26 16:14:51] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/e2/cf/d1feb350760601cf75314f2d07e2d5f0be8f051f95b29fb10220af6373c9/contacts_assistant-0.0.6.tar.gz
+[2024-05-26 16:14:51] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:14:51] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-26 16:14:51] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-26 16:14:51] INFO root fetch - processPackages [contacts-assistant]: executing diffoscope
+[2024-05-26 16:14:51] INFO root fetch - processPackages [contacts-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contacts_assistant-0.0.5.tar.gz tmp/contacts_assistant-0.0.6.tar.gz --markdown 20240526/c/contacts-assistant/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 16:14:51] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:14:51] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.8.tar.gz tmp/pi_awning_webthing-0.3.9.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 16:14:51] INFO root fetch - processPackages [random-slugs]: Downloading https://files.pythonhosted.org/packages/5d/86/0a92775a37a45d22c45452f243841c696cd9f8bd7f50e3bc913e9d6f4152/random_slugs-1.0.2.tar.gz
+[2024-05-26 16:14:51] INFO root fetch - processPackages [random-slugs]: executing diffoscope
+[2024-05-26 16:14:51] INFO root fetch - processPackages [random-slugs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/random_slugs-1.0.0.tar.gz tmp/random_slugs-1.0.2.tar.gz --markdown 20240526/r/random-slugs/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-05-26 16:14:51] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-26 16:14:51] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-26 16:14:51] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-26 16:14:51] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240526/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-26 16:14:51] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-26 16:14:51] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240526/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-26 16:14:51] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.5.tar.gz]
+[2024-05-26 16:14:51] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.6.tar.gz]
+[2024-05-26 16:14:51] INFO root fetch - main [MainThread]: End processing [contacts-assistant]: success
+[2024-05-26 16:14:51] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.8.tar.gz]
+[2024-05-26 16:14:51] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:14:51] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:14:52] INFO root fetch - processPackages [random-slugs]: Remove: archive file [/home/abi/fetcher/tmp/random_slugs-1.0.0.tar.gz]
+[2024-05-26 16:14:52] INFO root fetch - processPackages [random-slugs]: Remove: archive file [/home/abi/fetcher/tmp/random_slugs-1.0.2.tar.gz]
+[2024-05-26 16:14:52] INFO root fetch - main [MainThread]: End processing [random-slugs]: success
+[2024-05-26 16:14:52] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-26 16:14:52] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-26 16:14:52] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-26 16:14:52] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-26 16:14:52] INFO root fetch - main [MainThread]: Store serial: [23383665]
