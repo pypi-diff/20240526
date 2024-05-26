@@ -16704,3 +16704,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:35:16] INFO root fetch - processPackages [pretix-sumup-payment]: Remove: archive file [/home/abi/fetcher/tmp/pretix_sumup_payment-1.1.4.tar.gz]
 [2024-05-26 20:35:16] INFO root fetch - main [MainThread]: End processing [pretix-sumup-payment]: success
 [2024-05-26 20:35:16] INFO root fetch - main [MainThread]: Store serial: [23385777]
+[2024-05-26 20:37:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385777]
+[2024-05-26 20:37:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 20:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: z2m-log-parser
+[2024-05-26 20:37:26] INFO root fetch - processPackages [z2m-log-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 20:37:26] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/3c/bf/045aab314e9a6c6ba6648f7196be4382d805417677bd4ab8597079a40eec/z2m_log_parser-0.0.8.tar.gz
+[2024-05-26 20:37:26] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/71/97/7033f666d3eb6726fdd071cf1160a1c1a82f0c16dce62d13168b432e6ac1/z2m_log_parser-0.0.9.tar.gz
+[2024-05-26 20:37:26] INFO root fetch - processPackages [z2m-log-parser]: executing diffoscope
+[2024-05-26 20:37:26] INFO root fetch - processPackages [z2m-log-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z2m_log_parser-0.0.8.tar.gz tmp/z2m_log_parser-0.0.9.tar.gz --markdown 20240526/z/z2m-log-parser/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 20:37:27] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.8.tar.gz]
+[2024-05-26 20:37:27] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.9.tar.gz]
+[2024-05-26 20:37:27] INFO root fetch - main [MainThread]: End processing [z2m-log-parser]: success
+[2024-05-26 20:37:27] INFO root fetch - main [MainThread]: Store serial: [23385780]
