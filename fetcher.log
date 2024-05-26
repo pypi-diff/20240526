@@ -4923,3 +4923,15 @@
 [2024-05-26 08:50:48] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b4.tar.gz]
 [2024-05-26 08:50:48] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-26 08:50:48] INFO root fetch - main [MainThread]: Store serial: [23380422]
+[2024-05-26 08:52:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380422]
+[2024-05-26 08:52:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 08:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapegraphai
+[2024-05-26 08:52:56] INFO root fetch - processPackages [scrapegraphai]: New version: [1.5.0b5] Old Version: [1.5.0b4]
+[2024-05-26 08:52:56] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/9d/4b/2c0807a27bcfe16f14874bc003b81e0f633772e84be5866d67505ff31eef/scrapegraphai-1.5.0b4.tar.gz
+[2024-05-26 08:52:57] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/5c/04/23c289dddb7a11eb123baf20ae002b5ba74ce2e9142cf5a9b9f8b0d7837f/scrapegraphai-1.5.0b5.tar.gz
+[2024-05-26 08:52:57] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-26 08:52:57] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.5.0b4.tar.gz tmp/scrapegraphai-1.5.0b5.tar.gz --markdown 20240526/s/scrapegraphai/1.5.0b4-1.5.0b5/README.md --exclude *.pyd
+[2024-05-26 08:52:59] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b4.tar.gz]
+[2024-05-26 08:52:59] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b5.tar.gz]
+[2024-05-26 08:52:59] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-26 08:52:59] INFO root fetch - main [MainThread]: Store serial: [23380426]
