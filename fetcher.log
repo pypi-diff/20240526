@@ -8595,3 +8595,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:57:56] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
 [2024-05-26 11:57:56] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-26 11:57:56] INFO root fetch - main [MainThread]: Store serial: [23381983]
+[2024-05-26 12:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381983]
+[2024-05-26 12:00:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 12:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cappa-sqlplag
+[2024-05-26 12:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bstk-notitia
+[2024-05-26 12:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: text-compare-tool
+[2024-05-26 12:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: riskparityportfolio
+[2024-05-26 12:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-keras-nightly
+[2024-05-26 12:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: djdynatable
+[2024-05-26 12:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CI-CloudConnector
+[2024-05-26 12:00:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Modul-Wrapper
+[2024-05-26 12:00:09] WARNING root fetch - processPackages [cappa-sqlplag]: Skipping, unable to determine old version
+[2024-05-26 12:00:09] INFO root fetch - main [MainThread]: End processing [cappa-sqlplag] error
+[2024-05-26 12:00:09] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 12:00:09] INFO root fetch - processPackages [djdynatable]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 12:00:09] WARNING root fetch - processPackages [Modul-Wrapper]: Skipping, unable to determine old version
+[2024-05-26 12:00:09] INFO root fetch - main [MainThread]: End processing [Modul-Wrapper] error
+[2024-05-26 12:00:09] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024052509] Old Version: [2.17.0.dev2024052409]
+[2024-05-26 12:00:09] INFO root fetch - processPackages [bstk-notitia]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-26 12:00:09] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 12:00:09] INFO root fetch - processPackages [riskparityportfolio]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-05-26 12:00:09] WARNING root fetch - processPackages [text-compare-tool]: Skipping, unable to determine old version
+[2024-05-26 12:00:09] INFO root fetch - main [MainThread]: End processing [text-compare-tool] error
+[2024-05-26 12:00:09] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/00/47/0c69686e21ebae503c771c4b97f0de4e227ceb0d8dac45d7ae864998b9ce/tf_keras_nightly-2.17.0.dev2024052409.tar.gz
+[2024-05-26 12:00:09] INFO root fetch - processPackages [djdynatable]: Downloading https://files.pythonhosted.org/packages/83/21/a1dc21dc477b0c8c369ff48cacfa12217a16057cc45271ed463fd2a12680/djdynatable-1.0.1.tar.gz
+[2024-05-26 12:00:09] INFO root fetch - processPackages [bstk-notitia]: Downloading https://files.pythonhosted.org/packages/d8/a2/8439cd87bbcb17856a492a8414d61dbe9186694a5dad480fd98c84e272a1/bstk_notitia-0.5.0.tar.gz
+[2024-05-26 12:00:09] INFO root fetch - processPackages [riskparityportfolio]: Downloading https://files.pythonhosted.org/packages/f5/46/721eec7e7f8adf582510e70acc6396d4e29fe9e7482d05c7596d4b5d3d38/riskparityportfolio-0.5.1.tar.gz
+[2024-05-26 12:00:09] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 12:00:09] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 12:00:09] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 12:00:09] INFO root fetch - processPackages [djdynatable]: Downloading https://files.pythonhosted.org/packages/c4/66/f7a488595a5c00b5262357b1962bc59953cb445916de0ee43794f4413b44/djdynatable-1.0.2.tar.gz
+[2024-05-26 12:00:09] INFO root fetch - processPackages [djdynatable]: executing diffoscope
+[2024-05-26 12:00:09] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/51/79/d54499bd1549368c1c7e9e75b0f99c89f6a54ae3ef79aaa6887d6b489807/tf_keras_nightly-2.17.0.dev2024052509.tar.gz
+[2024-05-26 12:00:09] INFO root fetch - processPackages [djdynatable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djdynatable-1.0.1.tar.gz tmp/djdynatable-1.0.2.tar.gz --markdown 20240526/d/djdynatable/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 12:00:09] INFO root fetch - processPackages [bstk-notitia]: Downloading https://files.pythonhosted.org/packages/8d/93/20b1f52db9f1f08a4fa1f4682ec693018a77f62411a6e43a8b7b9d8432fd/bstk_notitia-0.5.1.tar.gz
+[2024-05-26 12:00:09] INFO root fetch - processPackages [bstk-notitia]: executing diffoscope
+[2024-05-26 12:00:09] INFO root fetch - processPackages [bstk-notitia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bstk_notitia-0.5.0.tar.gz tmp/bstk_notitia-0.5.1.tar.gz --markdown 20240526/b/bstk-notitia/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-26 12:00:09] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-05-26 12:00:09] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024052409.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024052509.tar.gz --markdown 20240526/t/tf-keras-nightly/2.17.0.dev2024052409-2.17.0.dev2024052509/README.md --exclude *.pyd
+[2024-05-26 12:00:10] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 12:00:10] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 12:00:10] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 12:00:10] INFO root fetch - processPackages [riskparityportfolio]: Downloading https://files.pythonhosted.org/packages/04/35/544f0fc6aa6e31013e9a7111a086045765367b1c9c21baa3ec1df5fe3388/riskparityportfolio-0.6.0.tar.gz
+[2024-05-26 12:00:10] INFO root fetch - processPackages [djdynatable]: Remove: archive file [/home/abi/fetcher/tmp/djdynatable-1.0.1.tar.gz]
+[2024-05-26 12:00:10] INFO root fetch - processPackages [djdynatable]: Remove: archive file [/home/abi/fetcher/tmp/djdynatable-1.0.2.tar.gz]
+[2024-05-26 12:00:10] INFO root fetch - main [MainThread]: End processing [djdynatable]: success
+[2024-05-26 12:00:10] INFO root fetch - processPackages [riskparityportfolio]: executing diffoscope
+[2024-05-26 12:00:10] INFO root fetch - processPackages [riskparityportfolio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riskparityportfolio-0.5.1.tar.gz tmp/riskparityportfolio-0.6.0.tar.gz --markdown 20240526/r/riskparityportfolio/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-05-26 12:00:10] INFO root fetch - processPackages [bstk-notitia]: Remove: archive file [/home/abi/fetcher/tmp/bstk_notitia-0.5.0.tar.gz]
+[2024-05-26 12:00:10] INFO root fetch - processPackages [bstk-notitia]: Remove: archive file [/home/abi/fetcher/tmp/bstk_notitia-0.5.1.tar.gz]
+[2024-05-26 12:00:10] INFO root fetch - main [MainThread]: End processing [bstk-notitia]: success
+[2024-05-26 12:00:12] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024052409.tar.gz]
+[2024-05-26 12:00:12] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024052509.tar.gz]
+[2024-05-26 12:00:12] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-05-26 12:00:15] INFO root fetch - processPackages [riskparityportfolio]: Remove: archive file [/home/abi/fetcher/tmp/riskparityportfolio-0.5.1.tar.gz]
+[2024-05-26 12:00:15] INFO root fetch - processPackages [riskparityportfolio]: Remove: archive file [/home/abi/fetcher/tmp/riskparityportfolio-0.6.0.tar.gz]
+[2024-05-26 12:00:15] INFO root fetch - main [MainThread]: End processing [riskparityportfolio]: success
+[2024-05-26 12:00:15] INFO root fetch - main [MainThread]: Store serial: [23382012]
