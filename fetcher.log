@@ -2879,3 +2879,24 @@
 [2024-05-26 05:20:55] INFO root fetch - processPackages [blueness]: Remove: archive file [/home/abi/fetcher/tmp/blueness-3.9.1.tar.gz]
 [2024-05-26 05:20:55] INFO root fetch - main [MainThread]: End processing [blueness]: success
 [2024-05-26 05:20:55] INFO root fetch - main [MainThread]: Store serial: [23379427]
+[2024-05-26 05:22:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379427]
+[2024-05-26 05:23:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 05:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abcli
+[2024-05-26 05:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nightly
+[2024-05-26 05:23:04] INFO root fetch - processPackages [abcli]: New version: [8.225.1] Old Version: [8.223.1]
+[2024-05-26 05:23:04] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024052503] Old Version: [3.3.3.dev2024052403]
+[2024-05-26 05:23:04] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/71/7b/8f2763016cc80ea9e15fa01226926e68c8f0fda6e84ddc592741d94bdd84/abcli-8.223.1.tar.gz
+[2024-05-26 05:23:04] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/f7/fc/462e17a2aabf45065b8f4f7289570145d2b446ca520585bea514a0a8124f/keras_nightly-3.3.3.dev2024052403.tar.gz
+[2024-05-26 05:23:04] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/a3/3f/c1aa22d908275ef014c96e43d67d5771aab3deec2e1d7111bce62ab98877/abcli-8.225.1.tar.gz
+[2024-05-26 05:23:04] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/b9/48/ff8d1fe9b181c11e08b185931499a7cdac18728897fd95faa8f1349ac545/keras_nightly-3.3.3.dev2024052503.tar.gz
+[2024-05-26 05:23:04] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-26 05:23:04] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.223.1.tar.gz tmp/abcli-8.225.1.tar.gz --markdown 20240526/a/abcli/8.223.1-8.225.1/README.md --exclude *.pyd
+[2024-05-26 05:23:04] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-05-26 05:23:04] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.3.dev2024052403.tar.gz tmp/keras_nightly-3.3.3.dev2024052503.tar.gz --markdown 20240526/k/keras-nightly/3.3.3.dev2024052403-3.3.3.dev2024052503/README.md --exclude *.pyd
+[2024-05-26 05:23:05] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.223.1.tar.gz]
+[2024-05-26 05:23:05] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.225.1.tar.gz]
+[2024-05-26 05:23:05] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-26 05:23:06] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024052403.tar.gz]
+[2024-05-26 05:23:06] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024052503.tar.gz]
+[2024-05-26 05:23:06] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-05-26 05:23:06] INFO root fetch - main [MainThread]: Store serial: [23379433]
