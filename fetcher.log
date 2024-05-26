@@ -11237,3 +11237,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:29:20] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.99.tar.gz]
 [2024-05-26 15:29:20] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2024-05-26 15:29:20] INFO root fetch - main [MainThread]: Store serial: [23383308]
+[2024-05-26 15:31:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383308]
+[2024-05-26 15:31:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 15:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alita-tools
+[2024-05-26 15:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: comtrade-pysharp
+[2024-05-26 15:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gdtransform
+[2024-05-26 15:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paginx
+[2024-05-26 15:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: database-mysql-local
+[2024-05-26 15:31:46] INFO root fetch - processPackages [alita-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 15:31:46] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.337] Old Version: [0.0.336]
+[2024-05-26 15:31:46] INFO root fetch - processPackages [gdtransform]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 15:31:46] INFO root fetch - processPackages [paginx]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-05-26 15:31:46] INFO root fetch - processPackages [alita-tools]: Downloading https://files.pythonhosted.org/packages/11/7e/f89b7d2fb29b664d4a1b772c0a8757857534dc4981d9d9547b1410352f8b/alita_tools-0.0.8.tar.gz
+[2024-05-26 15:31:46] INFO root fetch - processPackages [comtrade-pysharp]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 15:31:46] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/97/77/ad73e135fb73eb898164ad98cff2e33cf5251dcc47f5da0cf63b4ee4805d/gdtransform-0.0.8.tar.gz
+[2024-05-26 15:31:46] INFO root fetch - processPackages [paginx]: Downloading https://files.pythonhosted.org/packages/1c/63/ad2fd0706ecc5d360abb2f2931e11f71c7a6c9a3932c978199022876490c/paginx-0.0.6.tar.gz
+[2024-05-26 15:31:46] INFO root fetch - processPackages [alita-tools]: Downloading https://files.pythonhosted.org/packages/b2/e0/efa7908f0bf622856778acf50ffea9fd834a7e4b47167ee967dc96ba217d/alita_tools-0.0.9.tar.gz
+[2024-05-26 15:31:46] INFO root fetch - processPackages [comtrade-pysharp]: Downloading https://files.pythonhosted.org/packages/f8/2d/52fdac4edb0e7213aeab72da049de9af3c7174cd2048836846aba0afb09e/comtrade_pysharp-0.0.1-cp39-none-win32.whl
+[2024-05-26 15:31:46] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/b6/26/c2e4011de7b05b6cd2a86dd78f711506e9f7d81ce829f5135fb53359716d/database_mysql_local-0.0.336.tar.gz
+[2024-05-26 15:31:46] INFO root fetch - processPackages [alita-tools]: executing diffoscope
+[2024-05-26 15:31:46] INFO root fetch - processPackages [alita-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alita_tools-0.0.8.tar.gz tmp/alita_tools-0.0.9.tar.gz --markdown 20240526/a/alita-tools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 15:31:46] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/5e/11/4928400a38eb4e9f0b091aafed8e1090209d68dc75803e7bcfcce3985472/gdtransform-0.0.9.tar.gz
+[2024-05-26 15:31:46] INFO root fetch - processPackages [paginx]: Downloading https://files.pythonhosted.org/packages/b6/4f/30cef8c7c51bb1780da6c919737c64f344e054b7502052ab923e574bd46a/paginx-0.0.8.tar.gz
+[2024-05-26 15:31:46] INFO root fetch - processPackages [gdtransform]: executing diffoscope
+[2024-05-26 15:31:46] INFO root fetch - processPackages [gdtransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdtransform-0.0.8.tar.gz tmp/gdtransform-0.0.9.tar.gz --markdown 20240526/g/gdtransform/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 15:31:46] INFO root fetch - processPackages [paginx]: executing diffoscope
+[2024-05-26 15:31:46] INFO root fetch - processPackages [paginx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paginx-0.0.6.tar.gz tmp/paginx-0.0.8.tar.gz --markdown 20240526/p/paginx/0.0.6-0.0.8/README.md --exclude *.pyd
+[2024-05-26 15:31:46] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/b9/81/0d0375373f6c61823d00cc9ceca0726a0cd05170297f1df9182d3b40b507/database_mysql_local-0.0.337.tar.gz
+[2024-05-26 15:31:47] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 15:31:47] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.336.tar.gz tmp/database_mysql_local-0.0.337.tar.gz --markdown 20240526/d/database-mysql-local/0.0.336-0.0.337/README.md --exclude *.pyd
+[2024-05-26 15:31:47] INFO root fetch - processPackages [comtrade-pysharp]: Downloading https://files.pythonhosted.org/packages/8d/68/f567a98c2d3728d4a3d87e18e558b8876efbf9a0655c1d6074e35355bbd4/comtrade_pysharp-0.0.2.tar.gz
+[2024-05-26 15:31:47] INFO root fetch - processPackages [alita-tools]: Remove: archive file [/home/abi/fetcher/tmp/alita_tools-0.0.8.tar.gz]
+[2024-05-26 15:31:47] INFO root fetch - processPackages [alita-tools]: Remove: archive file [/home/abi/fetcher/tmp/alita_tools-0.0.9.tar.gz]
+[2024-05-26 15:31:47] INFO root fetch - main [MainThread]: End processing [alita-tools]: success
+[2024-05-26 15:31:47] INFO root fetch - processPackages [comtrade-pysharp]: executing diffoscope
+[2024-05-26 15:31:47] INFO root fetch - processPackages [comtrade-pysharp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comtrade_pysharp-0.0.1-cp39-none-win32.whl.zip tmp/comtrade_pysharp-0.0.2.tar.gz --markdown 20240526/c/comtrade-pysharp/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 15:31:47] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.0.8.tar.gz]
+[2024-05-26 15:31:47] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.0.9.tar.gz]
+[2024-05-26 15:31:47] INFO root fetch - main [MainThread]: End processing [gdtransform]: success
+[2024-05-26 15:31:47] INFO root fetch - processPackages [paginx]: Remove: archive file [/home/abi/fetcher/tmp/paginx-0.0.6.tar.gz]
+[2024-05-26 15:31:47] INFO root fetch - processPackages [paginx]: Remove: archive file [/home/abi/fetcher/tmp/paginx-0.0.8.tar.gz]
+[2024-05-26 15:31:47] INFO root fetch - main [MainThread]: End processing [paginx]: success
+[2024-05-26 15:31:47] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.336.tar.gz]
+[2024-05-26 15:31:47] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.337.tar.gz]
+[2024-05-26 15:31:47] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 15:31:50] INFO root fetch - processPackages [comtrade-pysharp]: Remove: archive file [/home/abi/fetcher/tmp/comtrade_pysharp-0.0.1-cp39-none-win32.whl.zip]
+[2024-05-26 15:31:50] INFO root fetch - processPackages [comtrade-pysharp]: Remove: archive file [/home/abi/fetcher/tmp/comtrade_pysharp-0.0.2.tar.gz]
+[2024-05-26 15:31:50] INFO root fetch - main [MainThread]: End processing [comtrade-pysharp]: success
+[2024-05-26 15:31:50] INFO root fetch - main [MainThread]: Store serial: [23383326]
