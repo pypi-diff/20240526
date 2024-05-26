@@ -13970,3 +13970,72 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:49:15] INFO root fetch - processPackages [Flask-OpenID]: Remove: archive file [/home/abi/fetcher/tmp/flask_openid-1.3.1.tar.gz]
 [2024-05-26 17:49:15] INFO root fetch - main [MainThread]: End processing [Flask-OpenID]: success
 [2024-05-26 17:49:15] INFO root fetch - main [MainThread]: Store serial: [23384443]
+[2024-05-26 17:51:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384443]
+[2024-05-26 17:51:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 17:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Flask-OpenID
+[2024-05-26 17:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aanalytics2
+[2024-05-26 17:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: felicien
+[2024-05-26 17:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Maslib
+[2024-05-26 17:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: direnumerate
+[2024-05-26 17:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zenaura
+[2024-05-26 17:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: remotion-lambda
+[2024-05-26 17:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ytsnippet
+[2024-05-26 17:51:24] INFO root fetch - processPackages [zenaura]: New version: [0.9.53] Old Version: [0.9.52]
+[2024-05-26 17:51:24] INFO root fetch - processPackages [Maslib]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 17:51:24] INFO root fetch - processPackages [Flask-OpenID]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-26 17:51:24] WARNING root fetch - processPackages [ytsnippet]: Skipping, unable to determine old version
+[2024-05-26 17:51:24] INFO root fetch - main [MainThread]: End processing [ytsnippet] error
+[2024-05-26 17:51:24] INFO root fetch - processPackages [direnumerate]: New version: [4.0a6] Old Version: [4.0a5]
+[2024-05-26 17:51:24] INFO root fetch - processPackages [felicien]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-26 17:51:24] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/22/0d/ea4b1dcb284f8f5de2adf8903fefe563c395cf869efcc0fc42c19d774885/zenaura-0.9.52.tar.gz
+[2024-05-26 17:51:24] INFO root fetch - processPackages [Flask-OpenID]: Downloading https://files.pythonhosted.org/packages/b6/73/9a566fa46061b58f05b33fdd874e238ed13c66563e4f93530d684b2279d8/Flask-OpenID-1.3.0.tar.gz
+[2024-05-26 17:51:24] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/6e/64/bf821fad9989013be9cb4607d5b6ff921e88c5383e759571bf164858a4bb/Maslib-0.1.3.tar.gz
+[2024-05-26 17:51:24] INFO root fetch - processPackages [remotion-lambda]: New version: [4.1.0a12] Old Version: [4.0.98]
+[2024-05-26 17:51:24] INFO root fetch - processPackages [aanalytics2]: New version: [0.4.2] Old Version: [0.4.1.post2]
+[2024-05-26 17:51:24] INFO root fetch - processPackages [direnumerate]: Downloading https://files.pythonhosted.org/packages/bc/27/4263483a0c03febc7d23d92be0b795690a08252d03a05fd0446fbd63b1f2/direnumerate-4.0a5.tar.gz
+[2024-05-26 17:51:24] INFO root fetch - processPackages [felicien]: Downloading https://files.pythonhosted.org/packages/96/59/9fe327f88dd233e132791917f556d0fbe10cbc138ac2971cfc805a643abe/felicien-0.4.0.tar.gz
+[2024-05-26 17:51:24] INFO root fetch - processPackages [aanalytics2]: Downloading https://files.pythonhosted.org/packages/cf/4c/23fd914158d7872e82774b24260c00383d27d0768458637f3c583827a26f/aanalytics2-0.4.1.post2.tar.gz
+[2024-05-26 17:51:24] INFO root fetch - processPackages [remotion-lambda]: Downloading https://files.pythonhosted.org/packages/3f/c5/94eff7677b9dca598bdba065311eeb371512d0bb7b2ded018d2bffb1597a/remotion_lambda-4.0.98.tar.gz
+[2024-05-26 17:51:25] INFO root fetch - processPackages [Flask-OpenID]: Downloading https://files.pythonhosted.org/packages/69/c1/58cf6947fc8b0a92085df8be085960e70200b50606ff62673ef83127d609/flask_openid-1.3.1.tar.gz
+[2024-05-26 17:51:25] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/aa/f6/63b65418701af24cd1be71aec4596f80b8dc6e22db91d44bfaec1a235253/zenaura-0.9.53.tar.gz
+[2024-05-26 17:51:25] INFO root fetch - processPackages [Maslib]: Downloading https://files.pythonhosted.org/packages/e0/91/ec8110dca6096c48d1e74d66074462a9a00f655f67dce858405b68fe9edf/Maslib-0.1.4.tar.gz
+[2024-05-26 17:51:25] INFO root fetch - processPackages [direnumerate]: Downloading https://files.pythonhosted.org/packages/ed/d1/74736fa81439c1b7caf003105fdd3e138e635491041c739693408ade5c8e/direnumerate-4.0a6.tar.gz
+[2024-05-26 17:51:25] INFO root fetch - processPackages [Flask-OpenID]: executing diffoscope
+[2024-05-26 17:51:25] INFO root fetch - processPackages [Flask-OpenID]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-OpenID-1.3.0.tar.gz tmp/flask_openid-1.3.1.tar.gz --markdown 20240526/F/Flask-OpenID/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-26 17:51:25] INFO root fetch - processPackages [Maslib]: executing diffoscope
+[2024-05-26 17:51:25] INFO root fetch - processPackages [Maslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Maslib-0.1.3.tar.gz tmp/Maslib-0.1.4.tar.gz --markdown 20240526/M/Maslib/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 17:51:25] INFO root fetch - processPackages [felicien]: Downloading https://files.pythonhosted.org/packages/04/7f/cd7bcfdac22eba870b1a87f0039d8c363efa8fa84517d19191868483df9a/felicien-0.5.0.tar.gz
+[2024-05-26 17:51:25] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 17:51:25] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.52.tar.gz tmp/zenaura-0.9.53.tar.gz --markdown 20240526/z/zenaura/0.9.52-0.9.53/README.md --exclude *.pyd
+[2024-05-26 17:51:25] INFO root fetch - processPackages [remotion-lambda]: Downloading https://files.pythonhosted.org/packages/e2/46/7d3e726fcba2427f51b340f14b65270f6df2b6123085c439b9855a0ab1cd/remotion_lambda-4.1.0a12.tar.gz
+[2024-05-26 17:51:25] INFO root fetch - processPackages [felicien]: executing diffoscope
+[2024-05-26 17:51:25] INFO root fetch - processPackages [felicien]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/felicien-0.4.0.tar.gz tmp/felicien-0.5.0.tar.gz --markdown 20240526/f/felicien/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-26 17:51:25] INFO root fetch - processPackages [direnumerate]: executing diffoscope
+[2024-05-26 17:51:25] INFO root fetch - processPackages [direnumerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/direnumerate-4.0a5.tar.gz tmp/direnumerate-4.0a6.tar.gz --markdown 20240526/d/direnumerate/4.0a5-4.0a6/README.md --exclude *.pyd
+[2024-05-26 17:51:25] INFO root fetch - processPackages [aanalytics2]: Downloading https://files.pythonhosted.org/packages/67/58/fe430cbeb3467f7283527ff4d6b6e43757e93794e3fe795a023aaea57e21/aanalytics2-0.4.2.tar.gz
+[2024-05-26 17:51:25] INFO root fetch - processPackages [remotion-lambda]: executing diffoscope
+[2024-05-26 17:51:25] INFO root fetch - processPackages [remotion-lambda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remotion_lambda-4.0.98.tar.gz tmp/remotion_lambda-4.1.0a12.tar.gz --markdown 20240526/r/remotion-lambda/4.0.98-4.1.0a12/README.md --exclude *.pyd
+[2024-05-26 17:51:25] INFO root fetch - processPackages [aanalytics2]: executing diffoscope
+[2024-05-26 17:51:25] INFO root fetch - processPackages [aanalytics2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aanalytics2-0.4.1.post2.tar.gz tmp/aanalytics2-0.4.2.tar.gz --markdown 20240526/a/aanalytics2/0.4.1.post2-0.4.2/README.md --exclude *.pyd
+[2024-05-26 17:51:25] INFO root fetch - processPackages [Flask-OpenID]: Remove: archive file [/home/abi/fetcher/tmp/Flask-OpenID-1.3.0.tar.gz]
+[2024-05-26 17:51:25] INFO root fetch - processPackages [Flask-OpenID]: Remove: archive file [/home/abi/fetcher/tmp/flask_openid-1.3.1.tar.gz]
+[2024-05-26 17:51:25] INFO root fetch - main [MainThread]: End processing [Flask-OpenID]: success
+[2024-05-26 17:51:25] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.52.tar.gz]
+[2024-05-26 17:51:25] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.53.tar.gz]
+[2024-05-26 17:51:25] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 17:51:26] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.1.3.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - processPackages [Maslib]: Remove: archive file [/home/abi/fetcher/tmp/Maslib-0.1.4.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - main [MainThread]: End processing [Maslib]: success
+[2024-05-26 17:51:26] INFO root fetch - processPackages [felicien]: Remove: archive file [/home/abi/fetcher/tmp/felicien-0.4.0.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - processPackages [felicien]: Remove: archive file [/home/abi/fetcher/tmp/felicien-0.5.0.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - main [MainThread]: End processing [felicien]: success
+[2024-05-26 17:51:26] INFO root fetch - processPackages [remotion-lambda]: Remove: archive file [/home/abi/fetcher/tmp/remotion_lambda-4.0.98.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - processPackages [remotion-lambda]: Remove: archive file [/home/abi/fetcher/tmp/remotion_lambda-4.1.0a12.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - main [MainThread]: End processing [remotion-lambda]: success
+[2024-05-26 17:51:26] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-4.0a5.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-4.0a6.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - main [MainThread]: End processing [direnumerate]: success
+[2024-05-26 17:51:26] INFO root fetch - processPackages [aanalytics2]: Remove: archive file [/home/abi/fetcher/tmp/aanalytics2-0.4.1.post2.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - processPackages [aanalytics2]: Remove: archive file [/home/abi/fetcher/tmp/aanalytics2-0.4.2.tar.gz]
+[2024-05-26 17:51:26] INFO root fetch - main [MainThread]: End processing [aanalytics2]: success
+[2024-05-26 17:51:26] INFO root fetch - main [MainThread]: Store serial: [23384468]
