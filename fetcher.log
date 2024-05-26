@@ -15981,3 +15981,18 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:49:21] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.18.1.tar.gz]
 [2024-05-26 19:49:21] INFO root fetch - main [MainThread]: End processing [abadpour]: success
 [2024-05-26 19:49:21] INFO root fetch - main [MainThread]: Store serial: [23385399]
+[2024-05-26 19:51:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385399]
+[2024-05-26 19:51:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 19:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lanmonitor
+[2024-05-26 19:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wp2genes
+[2024-05-26 19:51:29] INFO root fetch - processPackages [lanmonitor]: New version: [3.2.2] Old Version: [3.2.1]
+[2024-05-26 19:51:29] WARNING root fetch - processPackages [wp2genes]: Skipping, unable to determine old version
+[2024-05-26 19:51:29] INFO root fetch - main [MainThread]: End processing [wp2genes] error
+[2024-05-26 19:51:30] INFO root fetch - processPackages [lanmonitor]: Downloading https://files.pythonhosted.org/packages/9d/4d/c792b017f9a149be381f5bf7614d383a8a294d82d749719bdda5b8ad9efc/lanmonitor-3.2.1.tar.gz
+[2024-05-26 19:51:30] INFO root fetch - processPackages [lanmonitor]: Downloading https://files.pythonhosted.org/packages/7f/98/991df3eb742a3f2c712d81377ee44fa3451d7d28687f123573ee769acbf4/lanmonitor-3.2.2.tar.gz
+[2024-05-26 19:51:30] INFO root fetch - processPackages [lanmonitor]: executing diffoscope
+[2024-05-26 19:51:30] INFO root fetch - processPackages [lanmonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanmonitor-3.2.1.tar.gz tmp/lanmonitor-3.2.2.tar.gz --markdown 20240526/l/lanmonitor/3.2.1-3.2.2/README.md --exclude *.pyd
+[2024-05-26 19:51:31] INFO root fetch - processPackages [lanmonitor]: Remove: archive file [/home/abi/fetcher/tmp/lanmonitor-3.2.1.tar.gz]
+[2024-05-26 19:51:31] INFO root fetch - processPackages [lanmonitor]: Remove: archive file [/home/abi/fetcher/tmp/lanmonitor-3.2.2.tar.gz]
+[2024-05-26 19:51:31] INFO root fetch - main [MainThread]: End processing [lanmonitor]: success
+[2024-05-26 19:51:31] INFO root fetch - main [MainThread]: Store serial: [23385407]
