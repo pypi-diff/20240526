@@ -18982,3 +18982,78 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 22:26:57] INFO root fetch - processPackages [tencentcloud-sdk-python-bm]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bm-3.0.999.tar.gz]
 [2024-05-26 22:26:57] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-bm]: success
 [2024-05-26 22:26:57] INFO root fetch - main [MainThread]: Store serial: [23386820]
+[2024-05-26 22:29:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386820]
+[2024-05-26 22:29:07] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-bma
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-bmeip
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tencentcloud-sdk-python-bmlb
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tencentcloud-sdk-python-bmvpc
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tencentcloud-sdk-python-bpaas
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fm-tools
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: WinDeklar
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ollama-chat
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ollama-chat]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-26 22:29:07] INFO root fetch - processPackages [ollama-chat]: Downloading https://files.pythonhosted.org/packages/4f/76/786953faeae9cc66490d375a64f1c68682c6cc90629180e2cdb2f491ee5e/ollama_chat-0.9.4.tar.gz
+[2024-05-26 22:29:07] INFO root fetch - processPackages [WinDeklar]: New version: [0.3.3] Old Version: [0.3.1]
+[2024-05-26 22:29:07] INFO root fetch - processPackages [fm-tools]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 22:29:07] INFO root fetch - processPackages [tencentcloud-sdk-python-bmeip]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bpaas]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bma]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmlb]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmvpc]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-26 22:29:08] INFO root fetch - processPackages [ollama-chat]: Downloading https://files.pythonhosted.org/packages/3e/f9/9ccacabc19c1ae3687c0345310a26aa93424e43f03bc2dbe2403c5b5d1ec/ollama_chat-0.9.5.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [WinDeklar]: Downloading https://files.pythonhosted.org/packages/8a/52/71f4cdc23c48dc89b23886d5e0da99442adbde75205d2cbb1df8fa72b3f3/windeklar-0.3.1.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmeip]: Downloading https://files.pythonhosted.org/packages/08/07/50b04234f7d2186c868c4a6240ec0fb207103b471734db3250e66b6e7305/tencentcloud-sdk-python-bmeip-3.0.998.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [fm-tools]: Downloading https://files.pythonhosted.org/packages/83/07/5a3d08135fa8d9415f00d03a7fb8aa9e79fcc12383af73842e2a51e1014e/fm_tools-0.2.2.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bma]: Downloading https://files.pythonhosted.org/packages/1f/80/2087f8229c3800365b5ed599421f1c812aab22dc669fc5dde78dfc261b01/tencentcloud-sdk-python-bma-3.0.998.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmvpc]: Downloading https://files.pythonhosted.org/packages/16/43/a6059ca02b533147e88c95803d08eaf023629ff25d9d025b7a976bd5ffea/tencentcloud-sdk-python-bmvpc-3.0.998.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bpaas]: Downloading https://files.pythonhosted.org/packages/ba/08/5288d1f005c662185b74a01d4fa40c2b5da397a8627e4470151f0516f0d3/tencentcloud-sdk-python-bpaas-3.0.998.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmlb]: Downloading https://files.pythonhosted.org/packages/d3/b2/14e22128fa27abcfabf5a351a3c3bee0a30ec0c7fcc4e0b994425e1b2e86/tencentcloud-sdk-python-bmlb-3.0.998.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [ollama-chat]: executing diffoscope
+[2024-05-26 22:29:08] INFO root fetch - processPackages [ollama-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ollama_chat-0.9.4.tar.gz tmp/ollama_chat-0.9.5.tar.gz --markdown 20240526/o/ollama-chat/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-26 22:29:08] INFO root fetch - processPackages [WinDeklar]: Downloading https://files.pythonhosted.org/packages/e0/94/28dfb63a63ef3580ade7893f75600cb34b8ae68b61f52ec83af21b52328c/windeklar-0.3.3.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [fm-tools]: Downloading https://files.pythonhosted.org/packages/d2/c1/1a185c6772d6900475bc2634ed43b48aa39082cd09aec6e30accbcc61599/fm_tools-0.2.3.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmeip]: Downloading https://files.pythonhosted.org/packages/1c/95/2baff7d4f4c1eeffa5bbcf74973a379bf9f6f42b23817e5f891535ff3ff5/tencentcloud-sdk-python-bmeip-3.0.999.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bma]: Downloading https://files.pythonhosted.org/packages/c1/b8/8ea74081f4f187f0ea20a99d0462b7035a7032b675d1eca65b352280517c/tencentcloud-sdk-python-bma-3.0.999.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmvpc]: Downloading https://files.pythonhosted.org/packages/85/ae/2990efac19f637cb27cdf5c21b2e1900c00bae800b413e03ac7129a7a112/tencentcloud-sdk-python-bmvpc-3.0.999.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bpaas]: Downloading https://files.pythonhosted.org/packages/ce/d8/cb2c79582a88e780fe8493cf8e6fd85dacc5448246de28fad7bb5a78df16/tencentcloud-sdk-python-bpaas-3.0.999.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [WinDeklar]: executing diffoscope
+[2024-05-26 22:29:08] INFO root fetch - processPackages [WinDeklar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windeklar-0.3.1.tar.gz tmp/windeklar-0.3.3.tar.gz --markdown 20240526/W/WinDeklar/0.3.1-0.3.3/README.md --exclude *.pyd
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmlb]: Downloading https://files.pythonhosted.org/packages/e2/5f/4bd592a8aeef6729cda1cdf6f3188f79088e42ba4fa7ebe83e744a2abe10/tencentcloud-sdk-python-bmlb-3.0.999.tar.gz
+[2024-05-26 22:29:08] INFO root fetch - processPackages [fm-tools]: executing diffoscope
+[2024-05-26 22:29:08] INFO root fetch - processPackages [fm-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fm_tools-0.2.2.tar.gz tmp/fm_tools-0.2.3.tar.gz --markdown 20240526/f/fm-tools/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmeip]: executing diffoscope
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmeip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-bmeip-3.0.998.tar.gz tmp/tencentcloud-sdk-python-bmeip-3.0.999.tar.gz --markdown 20240526/t/tencentcloud-sdk-python-bmeip/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bma]: executing diffoscope
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-bma-3.0.998.tar.gz tmp/tencentcloud-sdk-python-bma-3.0.999.tar.gz --markdown 20240526/t/tencentcloud-sdk-python-bma/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bpaas]: executing diffoscope
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bpaas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-bpaas-3.0.998.tar.gz tmp/tencentcloud-sdk-python-bpaas-3.0.999.tar.gz --markdown 20240526/t/tencentcloud-sdk-python-bpaas/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmvpc]: executing diffoscope
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmvpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-bmvpc-3.0.998.tar.gz tmp/tencentcloud-sdk-python-bmvpc-3.0.999.tar.gz --markdown 20240526/t/tencentcloud-sdk-python-bmvpc/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmlb]: executing diffoscope
+[2024-05-26 22:29:08] INFO root fetch - processPackages [tencentcloud-sdk-python-bmlb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-bmlb-3.0.998.tar.gz tmp/tencentcloud-sdk-python-bmlb-3.0.999.tar.gz --markdown 20240526/t/tencentcloud-sdk-python-bmlb/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-26 22:29:09] INFO root fetch - processPackages [ollama-chat]: Remove: archive file [/home/abi/fetcher/tmp/ollama_chat-0.9.4.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - processPackages [ollama-chat]: Remove: archive file [/home/abi/fetcher/tmp/ollama_chat-0.9.5.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: End processing [ollama-chat]: success
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bmeip]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bmeip-3.0.998.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bmeip]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bmeip-3.0.999.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-bmeip]: success
+[2024-05-26 22:29:09] INFO root fetch - processPackages [fm-tools]: Remove: archive file [/home/abi/fetcher/tmp/fm_tools-0.2.2.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - processPackages [fm-tools]: Remove: archive file [/home/abi/fetcher/tmp/fm_tools-0.2.3.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: End processing [fm-tools]: success
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bmlb]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bmlb-3.0.998.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bmlb]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bmlb-3.0.999.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-bmlb]: success
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bmvpc]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bmvpc-3.0.998.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bmvpc]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bmvpc-3.0.999.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-bmvpc]: success
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bpaas]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bpaas-3.0.998.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bpaas]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bpaas-3.0.999.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-bpaas]: success
+[2024-05-26 22:29:09] INFO root fetch - processPackages [WinDeklar]: Remove: archive file [/home/abi/fetcher/tmp/windeklar-0.3.1.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - processPackages [WinDeklar]: Remove: archive file [/home/abi/fetcher/tmp/windeklar-0.3.3.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: End processing [WinDeklar]: success
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bma]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bma-3.0.998.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - processPackages [tencentcloud-sdk-python-bma]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-bma-3.0.999.tar.gz]
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-bma]: success
+[2024-05-26 22:29:09] INFO root fetch - main [MainThread]: Store serial: [23386845]
