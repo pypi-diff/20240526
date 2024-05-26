@@ -4392,3 +4392,26 @@
 [2024-05-26 07:54:27] INFO root fetch - processPackages [half-orm]: Remove: archive file [/home/abi/fetcher/tmp/half_orm-0.9.9.tar.gz]
 [2024-05-26 07:54:27] INFO root fetch - main [MainThread]: End processing [half-orm]: success
 [2024-05-26 07:54:27] INFO root fetch - main [MainThread]: Store serial: [23380176]
+[2024-05-26 07:56:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380176]
+[2024-05-26 07:56:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 07:58:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380176]
+[2024-05-26 07:58:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 07:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qspace
+[2024-05-26 07:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-26 07:58:42] INFO root fetch - processPackages [qspace]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 07:58:42] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.26a1716684593] Old Version: [0.0.26a1716673050]
+[2024-05-26 07:58:42] INFO root fetch - processPackages [qspace]: Downloading https://files.pythonhosted.org/packages/a4/91/07f827a03bd4c454dab5402cbd9a43754d123a1cafcce8560dc06d27f19d/qspace-0.0.4.tar.gz
+[2024-05-26 07:58:42] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/de/d3/895244ad01f18f2290aa5d1935397301d2dac91fbc0bf4ff0add876b1e69/pulumi_kubernetes_the_hard_way-0.0.26a1716673050.tar.gz
+[2024-05-26 07:58:43] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/6d/4a/38986e9504b3cccdb2570a321e9712e8a5c983a050685a269cb048ada531/pulumi_kubernetes_the_hard_way-0.0.26a1716684593.tar.gz
+[2024-05-26 07:58:43] INFO root fetch - processPackages [qspace]: Downloading https://files.pythonhosted.org/packages/a7/88/adbf31acfdbae9c9f28adef312728d705ea2d02b072f56ee91d6937de157/qspace-0.0.5.tar.gz
+[2024-05-26 07:58:43] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-26 07:58:43] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716673050.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716684593.tar.gz --markdown 20240526/p/pulumi-kubernetes-the-hard-way/0.0.26a1716673050-0.0.26a1716684593/README.md --exclude *.pyd
+[2024-05-26 07:58:43] INFO root fetch - processPackages [qspace]: executing diffoscope
+[2024-05-26 07:58:43] INFO root fetch - processPackages [qspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qspace-0.0.4.tar.gz tmp/qspace-0.0.5.tar.gz --markdown 20240526/q/qspace/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 07:58:43] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.4.tar.gz]
+[2024-05-26 07:58:43] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.5.tar.gz]
+[2024-05-26 07:58:43] INFO root fetch - main [MainThread]: End processing [qspace]: success
+[2024-05-26 07:58:43] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716673050.tar.gz]
+[2024-05-26 07:58:43] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716684593.tar.gz]
+[2024-05-26 07:58:43] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-26 07:58:43] INFO root fetch - main [MainThread]: Store serial: [23380182]
