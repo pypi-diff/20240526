@@ -5014,3 +5014,24 @@
 [2024-05-26 08:57:50] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.3.tar.gz]
 [2024-05-26 08:57:50] INFO root fetch - main [MainThread]: End processing [structables]: success
 [2024-05-26 08:57:50] INFO root fetch - main [MainThread]: Store serial: [23380454]
+[2024-05-26 08:59:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380454]
+[2024-05-26 08:59:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 08:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: better-web3
+[2024-05-26 08:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xingpyc
+[2024-05-26 08:59:58] INFO root fetch - processPackages [better-web3]: New version: [4.0.0b8] Old Version: [4.0.0b7]
+[2024-05-26 08:59:58] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/05/96/d00289a025b289d688e9fc0d38ab89995811538680fe8b41c1aeb678154e/better_web3-4.0.0b7.tar.gz
+[2024-05-26 08:59:58] INFO root fetch - processPackages [xingpyc]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-26 08:59:58] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/4a/23/0baa0536e5752bfa2c738567e0e1eb0523796010b8df279cb7fba1298f62/xingpyc-0.1.9.tar.gz
+[2024-05-26 08:59:58] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/3b/2a/ee1954845518e5af352311a3d33ec3dc359dafb48cc00dda9c24a5ce9712/better_web3-4.0.0b8.tar.gz
+[2024-05-26 08:59:59] INFO root fetch - processPackages [better-web3]: executing diffoscope
+[2024-05-26 08:59:59] INFO root fetch - processPackages [better-web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_web3-4.0.0b7.tar.gz tmp/better_web3-4.0.0b8.tar.gz --markdown 20240526/b/better-web3/4.0.0b7-4.0.0b8/README.md --exclude *.pyd
+[2024-05-26 08:59:59] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/69/62/b6a5bf9b2bb2d264761d00aa23b01073ee6b0e635fc74a150cf0b8c91cb8/xingpyc-0.2.0.tar.gz
+[2024-05-26 08:59:59] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b7.tar.gz]
+[2024-05-26 08:59:59] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b8.tar.gz]
+[2024-05-26 08:59:59] INFO root fetch - main [MainThread]: End processing [better-web3]: success
+[2024-05-26 08:59:59] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-26 08:59:59] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.9.tar.gz tmp/xingpyc-0.2.0.tar.gz --markdown 20240526/x/xingpyc/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-26 09:00:00] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.9.tar.gz]
+[2024-05-26 09:00:00] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.2.0.tar.gz]
+[2024-05-26 09:00:00] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-26 09:00:00] INFO root fetch - main [MainThread]: Store serial: [23380457]
