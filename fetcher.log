@@ -5119,3 +5119,15 @@
 [2024-05-26 09:04:30] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.9.tar.gz]
 [2024-05-26 09:04:30] INFO root fetch - main [MainThread]: End processing [contact-location-local]: success
 [2024-05-26 09:04:30] INFO root fetch - main [MainThread]: Store serial: [23380513]
+[2024-05-26 09:06:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380513]
+[2024-05-26 09:06:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 09:06:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-qualitator
+[2024-05-26 09:06:40] INFO root fetch - processPackages [data-qualitator]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-26 09:06:40] INFO root fetch - processPackages [data-qualitator]: Downloading https://files.pythonhosted.org/packages/03/96/a6db5130c61ade40e223b72cf1c73ae45f50325d13c0cb062165fe8adaea/data_qualitator-1.0.0.tar.gz
+[2024-05-26 09:06:41] INFO root fetch - processPackages [data-qualitator]: Downloading https://files.pythonhosted.org/packages/58/c6/e9222e1d1eae13d2226f113b50766e3e23ca0c831b20f4f49242c9e6591d/data_qualitator-1.0.1.tar.gz
+[2024-05-26 09:06:41] INFO root fetch - processPackages [data-qualitator]: executing diffoscope
+[2024-05-26 09:06:41] INFO root fetch - processPackages [data-qualitator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_qualitator-1.0.0.tar.gz tmp/data_qualitator-1.0.1.tar.gz --markdown 20240526/d/data-qualitator/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-26 09:06:41] INFO root fetch - processPackages [data-qualitator]: Remove: archive file [/home/abi/fetcher/tmp/data_qualitator-1.0.0.tar.gz]
+[2024-05-26 09:06:41] INFO root fetch - processPackages [data-qualitator]: Remove: archive file [/home/abi/fetcher/tmp/data_qualitator-1.0.1.tar.gz]
+[2024-05-26 09:06:41] INFO root fetch - main [MainThread]: End processing [data-qualitator]: success
+[2024-05-26 09:06:41] INFO root fetch - main [MainThread]: Store serial: [23380515]
