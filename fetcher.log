@@ -12104,3 +12104,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:19:54] INFO root fetch - processPackages [rimc-engine]: Remove: archive file [/home/abi/fetcher/tmp/rimc_engine-0.5.2.tar.gz]
 [2024-05-26 16:19:54] INFO root fetch - main [MainThread]: End processing [rimc-engine]: success
 [2024-05-26 16:19:54] INFO root fetch - main [MainThread]: Store serial: [23383696]
+[2024-05-26 16:22:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383696]
+[2024-05-26 16:22:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 16:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contacts-assistant
+[2024-05-26 16:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-26 16:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pi-awning-webthing
+[2024-05-26 16:22:23] INFO root fetch - processPackages [contacts-assistant]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-26 16:22:23] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 16:22:23] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:22:23] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/e2/cf/d1feb350760601cf75314f2d07e2d5f0be8f051f95b29fb10220af6373c9/contacts_assistant-0.0.6.tar.gz
+[2024-05-26 16:22:23] INFO root fetch - processPackages [zenaura]: New version: [0.9.50] Old Version: [0.9.33]
+[2024-05-26 16:22:23] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/c0/ab/cc9340e3736fdc8b9ce91d1421daea59c715bfb215303cc68f2f002bebab/zenaura-0.9.33.tar.gz
+[2024-05-26 16:22:23] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 16:22:23] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/ac/b9/638f0728ca085c53b6f2d151623af4706b839392c2b72336c4af9ec8e4f0/contacts_assistant-0.0.7.tar.gz
+[2024-05-26 16:22:24] INFO root fetch - processPackages [contacts-assistant]: executing diffoscope
+[2024-05-26 16:22:24] INFO root fetch - processPackages [contacts-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contacts_assistant-0.0.6.tar.gz tmp/contacts_assistant-0.0.7.tar.gz --markdown 20240526/c/contacts-assistant/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-26 16:22:24] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:22:24] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 16:22:24] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/3b/01/03143af2b58eefa06276bd3de2a0a016d92cfcca6be49cc3369373ba6eac/zenaura-0.9.50.tar.gz
+[2024-05-26 16:22:24] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 16:22:24] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.33.tar.gz tmp/zenaura-0.9.50.tar.gz --markdown 20240526/z/zenaura/0.9.33-0.9.50/README.md --exclude *.pyd
+[2024-05-26 16:22:24] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.6.tar.gz]
+[2024-05-26 16:22:24] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.7.tar.gz]
+[2024-05-26 16:22:24] INFO root fetch - main [MainThread]: End processing [contacts-assistant]: success
+[2024-05-26 16:22:24] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:22:24] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 16:22:24] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:22:24] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.33.tar.gz]
+[2024-05-26 16:22:24] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.50.tar.gz]
+[2024-05-26 16:22:24] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 16:22:24] INFO root fetch - main [MainThread]: Store serial: [23383705]
