@@ -8388,3 +8388,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:46:36] INFO root fetch - processPackages [openvoicechat]: Remove: archive file [/home/abi/fetcher/tmp/openvoicechat-0.1.5.tar.gz]
 [2024-05-26 11:46:36] INFO root fetch - main [MainThread]: End processing [openvoicechat]: success
 [2024-05-26 11:46:36] INFO root fetch - main [MainThread]: Store serial: [23381901]
+[2024-05-26 11:48:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381901]
+[2024-05-26 11:48:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 11:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: owlmixin
+[2024-05-26 11:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-26 11:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-adx
+[2024-05-26 11:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyAthena
+[2024-05-26 11:48:48] INFO root fetch - processPackages [mimllearning]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-26 11:48:48] WARNING root fetch - processPackages [django-adx]: Skipping, unable to determine old version
+[2024-05-26 11:48:48] INFO root fetch - main [MainThread]: End processing [django-adx] error
+[2024-05-26 11:48:48] INFO root fetch - processPackages [owlmixin]: New version: [6.2.2] Old Version: [6.2.1]
+[2024-05-26 11:48:48] INFO root fetch - processPackages [PyAthena]: New version: [3.8.3] Old Version: [3.8.2]
+[2024-05-26 11:48:48] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-05-26 11:48:49] INFO root fetch - processPackages [owlmixin]: Downloading https://files.pythonhosted.org/packages/15/9d/6af40e50858ea2f609d2397657c89ddf8a46093bbde7ecdc4d06c9db5e59/owlmixin-6.2.1-py3-none-any.whl
+[2024-05-26 11:48:49] INFO root fetch - processPackages [PyAthena]: Downloading https://files.pythonhosted.org/packages/df/37/dfa51e65bfa55d819dd64150d477822d412fc430c00ac78198cf42a2f8f2/pyathena-3.8.2.tar.gz
+[2024-05-26 11:48:49] INFO root fetch - processPackages [owlmixin]: Downloading https://files.pythonhosted.org/packages/85/5d/f0c61759684e778b02340fb9bafd639476c47f87f3da26583e8d1acf06f1/owlmixin-6.2.2-py3-none-any.whl
+[2024-05-26 11:48:49] INFO root fetch - processPackages [owlmixin]: executing diffoscope
+[2024-05-26 11:48:49] INFO root fetch - processPackages [owlmixin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owlmixin-6.2.1-py3-none-any.whl.zip tmp/owlmixin-6.2.2-py3-none-any.whl.zip --markdown 20240526/o/owlmixin/6.2.1-6.2.2/README.md --exclude *.pyd
+[2024-05-26 11:48:49] INFO root fetch - processPackages [PyAthena]: Downloading https://files.pythonhosted.org/packages/6a/af/f89ca615d8808e5d79da00b92be684c6d034080c17b9da462702dfd89249/pyathena-3.8.3.tar.gz
+[2024-05-26 11:48:49] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-05-26 11:48:49] INFO root fetch - processPackages [PyAthena]: executing diffoscope
+[2024-05-26 11:48:49] INFO root fetch - processPackages [PyAthena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyathena-3.8.2.tar.gz tmp/pyathena-3.8.3.tar.gz --markdown 20240526/P/PyAthena/3.8.2-3.8.3/README.md --exclude *.pyd
+[2024-05-26 11:48:49] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-26 11:48:49] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.8.tar.gz tmp/mimllearning-0.5.9.tar.gz --markdown 20240526/m/mimllearning/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-26 11:48:50] INFO root fetch - processPackages [owlmixin]: Remove: archive file [/home/abi/fetcher/tmp/owlmixin-6.2.1-py3-none-any.whl.zip]
+[2024-05-26 11:48:50] INFO root fetch - processPackages [owlmixin]: Remove: archive file [/home/abi/fetcher/tmp/owlmixin-6.2.2-py3-none-any.whl.zip]
+[2024-05-26 11:48:50] INFO root fetch - main [MainThread]: End processing [owlmixin]: success
+[2024-05-26 11:48:50] INFO root fetch - processPackages [PyAthena]: Remove: archive file [/home/abi/fetcher/tmp/pyathena-3.8.2.tar.gz]
+[2024-05-26 11:48:50] INFO root fetch - processPackages [PyAthena]: Remove: archive file [/home/abi/fetcher/tmp/pyathena-3.8.3.tar.gz]
+[2024-05-26 11:48:50] INFO root fetch - main [MainThread]: End processing [PyAthena]: success
+[2024-05-26 11:48:53] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-05-26 11:48:53] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-05-26 11:48:53] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-26 11:48:53] INFO root fetch - main [MainThread]: Store serial: [23381918]
