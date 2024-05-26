@@ -2798,3 +2798,15 @@
 [2024-05-26 05:10:06] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-3.0.tar.gz]
 [2024-05-26 05:10:06] INFO root fetch - main [MainThread]: End processing [blackboxai]: success
 [2024-05-26 05:10:06] INFO root fetch - main [MainThread]: Store serial: [23379401]
+[2024-05-26 05:12:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379401]
+[2024-05-26 05:12:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 05:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipackager
+[2024-05-26 05:12:15] INFO root fetch - processPackages [pipackager]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-26 05:12:15] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/22/37/419e8dda74fe55125b947096438fdc617e084178126ff4acadec7ec214cf/pipackager-0.4.1.tar.gz
+[2024-05-26 05:12:15] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/16/f5/3fc6ee40bde46e0006d4ada2d36ff075f68f3fcb0e8eb2e4eb65a8a99249/pipackager-0.4.2.tar.gz
+[2024-05-26 05:12:16] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 05:12:16] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.4.1.tar.gz tmp/pipackager-0.4.2.tar.gz --markdown 20240526/p/pipackager/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-26 05:12:16] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.1.tar.gz]
+[2024-05-26 05:12:16] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.2.tar.gz]
+[2024-05-26 05:12:16] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 05:12:16] INFO root fetch - main [MainThread]: Store serial: [23379404]
