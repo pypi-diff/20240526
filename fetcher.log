@@ -2598,3 +2598,12 @@
 [2024-05-26 04:44:19] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
 [2024-05-26 04:44:19] INFO root fetch - main [MainThread]: End processing [baseball]: success
 [2024-05-26 04:44:19] INFO root fetch - main [MainThread]: Store serial: [23379290]
+[2024-05-26 04:46:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379290]
+[2024-05-26 04:46:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 04:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psalm
+[2024-05-26 04:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-airportslookup
+[2024-05-26 04:46:27] WARNING root fetch - processPackages [apiverve-airportslookup]: Skipping, unable to determine old version
+[2024-05-26 04:46:27] INFO root fetch - main [MainThread]: End processing [apiverve-airportslookup] error
+[2024-05-26 04:46:27] WARNING root fetch - processPackages [psalm]: Skipping, unable to determine old version
+[2024-05-26 04:46:27] INFO root fetch - main [MainThread]: End processing [psalm] error
+[2024-05-26 04:46:27] INFO root fetch - main [MainThread]: Store serial: [23379300]
