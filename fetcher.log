@@ -3486,3 +3486,30 @@
 [2024-05-26 06:23:43] INFO root fetch - processPackages [imagededup-cli]: Remove: archive file [/home/abi/fetcher/tmp/imagededup-cli-1.0.4.tar.gz]
 [2024-05-26 06:23:43] INFO root fetch - main [MainThread]: End processing [imagededup-cli]: success
 [2024-05-26 06:23:43] INFO root fetch - main [MainThread]: Store serial: [23379642]
+[2024-05-26 06:25:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379642]
+[2024-05-26 06:25:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 06:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: winfetch-gamerjamer43
+[2024-05-26 06:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abcli
+[2024-05-26 06:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sole-bili-get
+[2024-05-26 06:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: winfetch
+[2024-05-26 06:25:51] INFO root fetch - processPackages [abcli]: New version: [9.2.1] Old Version: [8.227.1]
+[2024-05-26 06:25:51] ERROR root fetch - processPackages [winfetch-gamerjamer43]: Unable to get metadata: No such project 'winfetch-gamerjamer43'
+[2024-05-26 06:25:51] INFO root fetch - main [MainThread]: End processing [winfetch-gamerjamer43] error
+[2024-05-26 06:25:51] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/3e/0d/f110c84796523bca6b8098cb42928b972d7a52d2fdef6794dbf74ee123e4/abcli-8.227.1.tar.gz
+[2024-05-26 06:25:51] INFO root fetch - processPackages [sole-bili-get]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 06:25:51] WARNING root fetch - processPackages [winfetch]: Skipping, unable to determine old version
+[2024-05-26 06:25:51] INFO root fetch - main [MainThread]: End processing [winfetch] error
+[2024-05-26 06:25:51] INFO root fetch - processPackages [sole-bili-get]: Downloading https://files.pythonhosted.org/packages/9e/14/5a27271dc88e114801f5116b60d57940e7061080422c50dcb7b7b71f9349/sole_bili_get-0.0.4.tar.gz
+[2024-05-26 06:25:51] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/5b/19/d0e6e72f3d45ac08c0239df3fd3f0aeac3aad914a52cd17dade958adea0b/abcli-9.2.1.tar.gz
+[2024-05-26 06:25:52] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-26 06:25:52] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.227.1.tar.gz tmp/abcli-9.2.1.tar.gz --markdown 20240526/a/abcli/8.227.1-9.2.1/README.md --exclude *.pyd
+[2024-05-26 06:25:52] INFO root fetch - processPackages [sole-bili-get]: Downloading https://files.pythonhosted.org/packages/c7/a2/ce4df140bc6a9e5348184cb5f99935eea9a1d97e14469475798aa798927c/sole_bili_get-0.0.5.tar.gz
+[2024-05-26 06:25:52] INFO root fetch - processPackages [sole-bili-get]: executing diffoscope
+[2024-05-26 06:25:52] INFO root fetch - processPackages [sole-bili-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sole_bili_get-0.0.4.tar.gz tmp/sole_bili_get-0.0.5.tar.gz --markdown 20240526/s/sole-bili-get/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 06:25:52] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.227.1.tar.gz]
+[2024-05-26 06:25:52] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.2.1.tar.gz]
+[2024-05-26 06:25:52] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-26 06:25:52] INFO root fetch - processPackages [sole-bili-get]: Remove: archive file [/home/abi/fetcher/tmp/sole_bili_get-0.0.4.tar.gz]
+[2024-05-26 06:25:52] INFO root fetch - processPackages [sole-bili-get]: Remove: archive file [/home/abi/fetcher/tmp/sole_bili_get-0.0.5.tar.gz]
+[2024-05-26 06:25:52] INFO root fetch - main [MainThread]: End processing [sole-bili-get]: success
+[2024-05-26 06:25:52] INFO root fetch - main [MainThread]: Store serial: [23379660]
