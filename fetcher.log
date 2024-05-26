@@ -12370,3 +12370,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:37:29] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.9.tar.gz]
 [2024-05-26 16:37:29] INFO root fetch - main [MainThread]: End processing [wei-office-simptool]: success
 [2024-05-26 16:37:29] INFO root fetch - main [MainThread]: Store serial: [23383792]
+[2024-05-26 16:39:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383792]
+[2024-05-26 16:39:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 16:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apconfig
+[2024-05-26 16:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dscontexai
+[2024-05-26 16:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: funky-modifiers
+[2024-05-26 16:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pi-awning-webthing
+[2024-05-26 16:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrapegraphai
+[2024-05-26 16:39:58] INFO root fetch - processPackages [funky-modifiers]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 16:39:58] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 16:39:58] INFO root fetch - processPackages [scrapegraphai]: New version: [1.5.1] Old Version: [1.5.0b5]
+[2024-05-26 16:39:58] INFO root fetch - processPackages [dscontexai]: New version: [0.1.0] Old Version: [0.0.5]
+[2024-05-26 16:39:58] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/c4/4b/f53217aae4b01bd6c1cc1642e24bc2665b61ab32c9e871bd2a1446965b61/funky_modifiers-0.2.2.tar.gz
+[2024-05-26 16:39:58] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:39:58] INFO root fetch - processPackages [apconfig]: New version: [0.0.110] Old Version: [0.0.109]
+[2024-05-26 16:39:58] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/5c/04/23c289dddb7a11eb123baf20ae002b5ba74ce2e9142cf5a9b9f8b0d7837f/scrapegraphai-1.5.0b5.tar.gz
+[2024-05-26 16:39:59] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/92/7f/59be8569285acf9f2f12785cabc379354c8212daf6f41bb310ff602570e8/dscontexai-0.0.5.tar.gz
+[2024-05-26 16:39:59] INFO root fetch - processPackages [apconfig]: Downloading https://files.pythonhosted.org/packages/c8/c5/4a994e26a815089c37d059d0c69f3d10f522d95352c616f68a7bb5e1b0e8/apconfig-0.0.109.tar.gz
+[2024-05-26 16:39:59] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 16:39:59] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/94/d9/a91652e8739fb952e46cc9bdb4234e6d0702adbf48fe6eaf28d6b2c211e3/dscontexai-0.1.0.tar.gz
+[2024-05-26 16:39:59] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/8b/a5/10b5574ed8e037287880b2315302142bc8d07644a311070e1bbd554180f3/funky_modifiers-0.2.3.tar.gz
+[2024-05-26 16:39:59] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:39:59] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 16:39:59] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 16:39:59] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.0.5.tar.gz tmp/dscontexai-0.1.0.tar.gz --markdown 20240526/d/dscontexai/0.0.5-0.1.0/README.md --exclude *.pyd
+[2024-05-26 16:39:59] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-26 16:39:59] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.2.2.tar.gz tmp/funky_modifiers-0.2.3.tar.gz --markdown 20240526/f/funky-modifiers/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 16:39:59] INFO root fetch - processPackages [apconfig]: Downloading https://files.pythonhosted.org/packages/9a/85/d89f4519e10e81f79312af44ee6bd7c5a9494f67b067e87d5ef99d8b1679/apconfig-0.0.110.tar.gz
+[2024-05-26 16:39:59] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/44/96/b7f7fc446614dc0e8cddcb2e765d5649be7114ce4cc10d84dd1a5acaca43/scrapegraphai-1.5.1.tar.gz
+[2024-05-26 16:39:59] INFO root fetch - processPackages [apconfig]: executing diffoscope
+[2024-05-26 16:39:59] INFO root fetch - processPackages [apconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apconfig-0.0.109.tar.gz tmp/apconfig-0.0.110.tar.gz --markdown 20240526/a/apconfig/0.0.109-0.0.110/README.md --exclude *.pyd
+[2024-05-26 16:39:59] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-26 16:39:59] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.5.0b5.tar.gz tmp/scrapegraphai-1.5.1.tar.gz --markdown 20240526/s/scrapegraphai/1.5.0b5-1.5.1/README.md --exclude *.pyd
+[2024-05-26 16:39:59] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:39:59] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 16:39:59] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:40:00] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.2.tar.gz]
+[2024-05-26 16:40:00] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.3.tar.gz]
+[2024-05-26 16:40:00] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-26 16:40:00] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.5.tar.gz]
+[2024-05-26 16:40:00] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.1.0.tar.gz]
+[2024-05-26 16:40:00] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 16:40:00] INFO root fetch - processPackages [apconfig]: Remove: archive file [/home/abi/fetcher/tmp/apconfig-0.0.109.tar.gz]
+[2024-05-26 16:40:00] INFO root fetch - processPackages [apconfig]: Remove: archive file [/home/abi/fetcher/tmp/apconfig-0.0.110.tar.gz]
+[2024-05-26 16:40:00] INFO root fetch - main [MainThread]: End processing [apconfig]: success
+[2024-05-26 16:40:01] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b5.tar.gz]
+[2024-05-26 16:40:01] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.1.tar.gz]
+[2024-05-26 16:40:01] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-26 16:40:01] INFO root fetch - main [MainThread]: Store serial: [23383807]
