@@ -12994,3 +12994,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:02:51] INFO root fetch - processPackages [TB2J]: Remove: archive file [/home/abi/fetcher/tmp/TB2J-0.9.0.1.tar.gz]
 [2024-05-26 17:02:51] INFO root fetch - main [MainThread]: End processing [TB2J]: success
 [2024-05-26 17:02:51] INFO root fetch - main [MainThread]: Store serial: [23384086]
+[2024-05-26 17:04:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384086]
+[2024-05-26 17:05:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 17:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bgutils-hddly
+[2024-05-26 17:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wei-office-simptool
+[2024-05-26 17:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fermo-core
+[2024-05-26 17:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: location-local
+[2024-05-26 17:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bota
+[2024-05-26 17:05:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ns-search-saved-export
+[2024-05-26 17:05:00] WARNING root fetch - processPackages [ns-search-saved-export]: Skipping, unable to determine old version
+[2024-05-26 17:05:00] INFO root fetch - main [MainThread]: End processing [ns-search-saved-export] error
+[2024-05-26 17:05:00] INFO root fetch - processPackages [bota]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 17:05:00] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 17:05:00] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-26 17:05:00] INFO root fetch - processPackages [wei-office-simptool]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 17:05:00] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/20/a9/4f637666fa83c508695967d807e33c729d659786a5de468b4289f5bff8b4/bota-4.0.8.tar.gz
+[2024-05-26 17:05:00] INFO root fetch - processPackages [fermo-core]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-26 17:05:00] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-05-26 17:05:00] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-05-26 17:05:00] INFO root fetch - processPackages [wei-office-simptool]: Downloading https://files.pythonhosted.org/packages/d4/d0/be9405ce71183a255f101474ba4e11063f70403b4b0426d1a92dbfbfada1/wei_office_simptool-0.0.8.tar.gz
+[2024-05-26 17:05:00] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/a4/5f/24c14d0a7d609507557baf5369feaca8b3459d111f35e9258e9d0396f9a8/bota-4.0.9.tar.gz
+[2024-05-26 17:05:00] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-05-26 17:05:00] INFO root fetch - processPackages [fermo-core]: Downloading https://files.pythonhosted.org/packages/6e/33/4a01af55d692313095e94f34a3f3ca74c07e197c09ad76e2fef725a61b24/fermo_core-0.1.1.tar.gz
+[2024-05-26 17:05:00] INFO root fetch - processPackages [bota]: executing diffoscope
+[2024-05-26 17:05:00] INFO root fetch - processPackages [bota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bota-4.0.8.tar.gz tmp/bota-4.0.9.tar.gz --markdown 20240526/b/bota/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 17:05:00] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-05-26 17:05:00] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240526/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 17:05:00] INFO root fetch - processPackages [wei-office-simptool]: Downloading https://files.pythonhosted.org/packages/18/9f/8bdb57d2d9f84f9c8c2ee436c57ae7c9a08c0e8749c620baec09149e9c12/wei_office_simptool-0.0.9.tar.gz
+[2024-05-26 17:05:00] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-05-26 17:05:00] INFO root fetch - processPackages [wei-office-simptool]: executing diffoscope
+[2024-05-26 17:05:00] INFO root fetch - processPackages [wei-office-simptool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wei_office_simptool-0.0.8.tar.gz tmp/wei_office_simptool-0.0.9.tar.gz --markdown 20240526/w/wei-office-simptool/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 17:05:01] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-05-26 17:05:01] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240526/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-26 17:05:01] INFO root fetch - processPackages [fermo-core]: Downloading https://files.pythonhosted.org/packages/4e/b5/0be3f9ea6712a4a7aebd241fa061bc04bd1efc66ab8ae0da502e5d4dba27/fermo_core-0.2.0.tar.gz
+[2024-05-26 17:05:01] INFO root fetch - processPackages [fermo-core]: executing diffoscope
+[2024-05-26 17:05:01] INFO root fetch - processPackages [fermo-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fermo_core-0.1.1.tar.gz tmp/fermo_core-0.2.0.tar.gz --markdown 20240526/f/fermo-core/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-26 17:05:01] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.8.tar.gz]
+[2024-05-26 17:05:01] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
+[2024-05-26 17:05:01] INFO root fetch - main [MainThread]: End processing [bota]: success
+[2024-05-26 17:05:01] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-05-26 17:05:01] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-05-26 17:05:01] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-05-26 17:05:01] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-05-26 17:05:01] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-05-26 17:05:01] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-05-26 17:05:01] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.8.tar.gz]
+[2024-05-26 17:05:01] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.9.tar.gz]
+[2024-05-26 17:05:01] INFO root fetch - main [MainThread]: End processing [wei-office-simptool]: success
+[2024-05-26 17:05:02] INFO root fetch - processPackages [fermo-core]: Remove: archive file [/home/abi/fetcher/tmp/fermo_core-0.1.1.tar.gz]
+[2024-05-26 17:05:02] INFO root fetch - processPackages [fermo-core]: Remove: archive file [/home/abi/fetcher/tmp/fermo_core-0.2.0.tar.gz]
+[2024-05-26 17:05:02] INFO root fetch - main [MainThread]: End processing [fermo-core]: success
+[2024-05-26 17:05:02] INFO root fetch - main [MainThread]: Store serial: [23384099]
