@@ -10800,3 +10800,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:03:00] INFO root fetch - processPackages [ltasg]: Remove: archive file [/home/abi/fetcher/tmp/ltasg-0.0.2.tar.gz]
 [2024-05-26 15:03:00] INFO root fetch - main [MainThread]: End processing [ltasg]: success
 [2024-05-26 15:03:00] INFO root fetch - main [MainThread]: Store serial: [23383050]
+[2024-05-26 15:05:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383050]
+[2024-05-26 15:05:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 15:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pi-awning-webthing
+[2024-05-26 15:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phylogenetic-tree-vis
+[2024-05-26 15:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scipu
+[2024-05-26 15:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: algogears
+[2024-05-26 15:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NsparkleLog
+[2024-05-26 15:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dsConteXAI
+[2024-05-26 15:05:14] INFO root fetch - processPackages [algogears]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-26 15:05:14] INFO root fetch - processPackages [scipu]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-26 15:05:14] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-26 15:05:14] INFO root fetch - processPackages [algogears]: Downloading https://files.pythonhosted.org/packages/23/a0/79ecfa2c8e7d01edec97b5583c917f0d49d39320bf04d14d17fbf67724e7/algogears-1.1.0.tar.gz
+[2024-05-26 15:05:14] WARNING root fetch - processPackages [NsparkleLog]: Skipping, unable to determine old version
+[2024-05-26 15:05:14] INFO root fetch - main [MainThread]: End processing [NsparkleLog] error
+[2024-05-26 15:05:14] WARNING root fetch - processPackages [phylogenetic-tree-vis]: Skipping, unable to determine old version
+[2024-05-26 15:05:14] WARNING root fetch - processPackages [dsConteXAI]: Skipping, unable to determine old version
+[2024-05-26 15:05:14] INFO root fetch - main [MainThread]: End processing [phylogenetic-tree-vis] error
+[2024-05-26 15:05:14] INFO root fetch - main [MainThread]: End processing [dsConteXAI] error
+[2024-05-26 15:05:14] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f1/2f/dababe8ec1ff31324459c7a29b5aec267c7ea11687bd982647b004a8b58c/pi_awning_webthing-0.3.6.tar.gz
+[2024-05-26 15:05:14] INFO root fetch - processPackages [scipu]: Downloading https://files.pythonhosted.org/packages/b2/5c/4196a966260182b618b6426e8dfdceb3b2394313b44f42972f5fd77820f7/scipu-0.1.tar.gz
+[2024-05-26 15:05:14] INFO root fetch - processPackages [algogears]: Downloading https://files.pythonhosted.org/packages/ad/e4/b8b2094f8c6864e7eeb35befb514a575d6e71009f634f78487242c9afaf3/algogears-1.1.1.tar.gz
+[2024-05-26 15:05:14] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/02/db/9b06a4670df61ce1f680a1a21c7e17e8ab7889de6de233212088eedc62fb/pi_awning_webthing-0.3.7.tar.gz
+[2024-05-26 15:05:14] INFO root fetch - processPackages [algogears]: executing diffoscope
+[2024-05-26 15:05:14] INFO root fetch - processPackages [algogears]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algogears-1.1.0.tar.gz tmp/algogears-1.1.1.tar.gz --markdown 20240526/a/algogears/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-26 15:05:14] INFO root fetch - processPackages [scipu]: Downloading https://files.pythonhosted.org/packages/06/1e/2b5c16668756f231e74e1ad61e225aa7baa082d263b1cad54c2592e6c265/scipu-0.1.1.tar.gz
+[2024-05-26 15:05:14] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 15:05:14] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.6.tar.gz tmp/pi_awning_webthing-0.3.7.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-26 15:05:14] INFO root fetch - processPackages [scipu]: executing diffoscope
+[2024-05-26 15:05:14] INFO root fetch - processPackages [scipu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scipu-0.1.tar.gz tmp/scipu-0.1.1.tar.gz --markdown 20240526/s/scipu/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-26 15:05:15] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.6.tar.gz]
+[2024-05-26 15:05:15] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.7.tar.gz]
+[2024-05-26 15:05:15] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 15:05:15] INFO root fetch - processPackages [algogears]: Remove: archive file [/home/abi/fetcher/tmp/algogears-1.1.0.tar.gz]
+[2024-05-26 15:05:15] INFO root fetch - processPackages [algogears]: Remove: archive file [/home/abi/fetcher/tmp/algogears-1.1.1.tar.gz]
+[2024-05-26 15:05:15] INFO root fetch - main [MainThread]: End processing [algogears]: success
+[2024-05-26 15:05:15] INFO root fetch - processPackages [scipu]: Remove: archive file [/home/abi/fetcher/tmp/scipu-0.1.tar.gz]
+[2024-05-26 15:05:15] INFO root fetch - processPackages [scipu]: Remove: archive file [/home/abi/fetcher/tmp/scipu-0.1.1.tar.gz]
+[2024-05-26 15:05:15] INFO root fetch - main [MainThread]: End processing [scipu]: success
+[2024-05-26 15:05:15] INFO root fetch - main [MainThread]: Store serial: [23383074]
