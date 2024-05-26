@@ -2930,3 +2930,15 @@
 [2024-05-26 05:25:16] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.6.1.tar.gz]
 [2024-05-26 05:25:16] INFO root fetch - main [MainThread]: End processing [hubblescope]: success
 [2024-05-26 05:25:16] INFO root fetch - main [MainThread]: Store serial: [23379439]
+[2024-05-26 05:27:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379439]
+[2024-05-26 05:27:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 05:27:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hubblescope
+[2024-05-26 05:27:24] INFO root fetch - processPackages [hubblescope]: New version: [4.8.1] Old Version: [4.6.1]
+[2024-05-26 05:27:24] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/b5/6f/4f0a41f0d92645c658e6ac840df2f52567ed4a8a759e20090563ebe58108/hubblescope-4.6.1.tar.gz
+[2024-05-26 05:27:25] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/78/9a/5ed5f10da658c0d47a86d64ecd6655197cc75c0317ba317b9c6f82be243d/hubblescope-4.8.1.tar.gz
+[2024-05-26 05:27:25] INFO root fetch - processPackages [hubblescope]: executing diffoscope
+[2024-05-26 05:27:25] INFO root fetch - processPackages [hubblescope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubblescope-4.6.1.tar.gz tmp/hubblescope-4.8.1.tar.gz --markdown 20240526/h/hubblescope/4.6.1-4.8.1/README.md --exclude *.pyd
+[2024-05-26 05:27:25] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.6.1.tar.gz]
+[2024-05-26 05:27:25] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.8.1.tar.gz]
+[2024-05-26 05:27:25] INFO root fetch - main [MainThread]: End processing [hubblescope]: success
+[2024-05-26 05:27:25] INFO root fetch - main [MainThread]: Store serial: [23379442]
