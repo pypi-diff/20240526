@@ -2966,3 +2966,42 @@
 [2024-05-26 05:31:45] INFO root fetch - processPackages [apeboiy]: Remove: archive file [/home/abi/fetcher/tmp/apeboiy-0.0.9.tar.gz]
 [2024-05-26 05:31:45] INFO root fetch - main [MainThread]: End processing [apeboiy]: success
 [2024-05-26 05:31:45] INFO root fetch - main [MainThread]: Store serial: [23379448]
+[2024-05-26 05:33:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379448]
+[2024-05-26 05:33:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 05:33:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-nlp-nightly
+[2024-05-26 05:33:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chemfunc
+[2024-05-26 05:33:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-mysql-local
+[2024-05-26 05:33:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crewai-logging-patch
+[2024-05-26 05:33:55] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-05-26 05:33:55] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.333] Old Version: [0.0.332]
+[2024-05-26 05:33:55] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-05-26 05:33:55] INFO root fetch - processPackages [chemfunc]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-26 05:33:55] INFO root fetch - processPackages [crewai-logging-patch]: New version: [0.2] Old Version: [0.1]
+[2024-05-26 05:33:55] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/4e/f9/679fe796b511bc9b021a357f545f27905ed756f4d95ad81c1d84eddfdd21/database_mysql_local-0.0.332.tar.gz
+[2024-05-26 05:33:55] INFO root fetch - processPackages [chemfunc]: Downloading https://files.pythonhosted.org/packages/d4/bb/357145ab3d20bc18f5eaa961cb5323f2431c88b96d91dcd0df0dba6caf39/chemfunc-1.0.5.tar.gz
+[2024-05-26 05:33:55] INFO root fetch - processPackages [crewai-logging-patch]: Downloading https://files.pythonhosted.org/packages/fa/74/9b9ca2fdd1d75ec74da6e198557f6dcb11cf955f5c49abfa6e59c1d3bb0b/crewai_logging_patch-0.1-py3-none-any.whl
+[2024-05-26 05:33:55] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-05-26 05:33:55] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/42/33/e97bdfab504782245f72985fc58aa8c79e2de7113a8f2ec2ccb197f023ec/database_mysql_local-0.0.333.tar.gz
+[2024-05-26 05:33:55] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-05-26 05:33:55] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240526/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-05-26 05:33:55] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 05:33:55] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.332.tar.gz tmp/database_mysql_local-0.0.333.tar.gz --markdown 20240526/d/database-mysql-local/0.0.332-0.0.333/README.md --exclude *.pyd
+[2024-05-26 05:33:55] INFO root fetch - processPackages [crewai-logging-patch]: Downloading https://files.pythonhosted.org/packages/f7/b3/c41ae83c7ea99f8bdb858a241341f767dcf9c85e8d31aa60329845d3f809/crewai_logging_patch-0.2.tar.gz
+[2024-05-26 05:33:56] INFO root fetch - processPackages [chemfunc]: Downloading https://files.pythonhosted.org/packages/d4/9d/2410b74bc0cf6a43c335ac8e312bccc95d7082b6ae719186f218206cc252/chemfunc-1.0.6.tar.gz
+[2024-05-26 05:33:56] INFO root fetch - processPackages [chemfunc]: executing diffoscope
+[2024-05-26 05:33:56] INFO root fetch - processPackages [chemfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemfunc-1.0.5.tar.gz tmp/chemfunc-1.0.6.tar.gz --markdown 20240526/c/chemfunc/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-26 05:33:56] INFO root fetch - processPackages [crewai-logging-patch]: executing diffoscope
+[2024-05-26 05:33:56] INFO root fetch - processPackages [crewai-logging-patch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai_logging_patch-0.1-py3-none-any.whl.zip tmp/crewai_logging_patch-0.2.tar.gz --markdown 20240526/c/crewai-logging-patch/0.1-0.2/README.md --exclude *.pyd
+[2024-05-26 05:33:56] INFO root fetch - processPackages [crewai-logging-patch]: Remove: archive file [/home/abi/fetcher/tmp/crewai_logging_patch-0.1-py3-none-any.whl.zip]
+[2024-05-26 05:33:56] INFO root fetch - processPackages [crewai-logging-patch]: Remove: archive file [/home/abi/fetcher/tmp/crewai_logging_patch-0.2.tar.gz]
+[2024-05-26 05:33:56] INFO root fetch - main [MainThread]: End processing [crewai-logging-patch]: success
+[2024-05-26 05:33:56] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.332.tar.gz]
+[2024-05-26 05:33:56] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.333.tar.gz]
+[2024-05-26 05:33:56] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 05:33:56] INFO root fetch - processPackages [chemfunc]: Remove: archive file [/home/abi/fetcher/tmp/chemfunc-1.0.5.tar.gz]
+[2024-05-26 05:33:56] INFO root fetch - processPackages [chemfunc]: Remove: archive file [/home/abi/fetcher/tmp/chemfunc-1.0.6.tar.gz]
+[2024-05-26 05:33:56] INFO root fetch - main [MainThread]: End processing [chemfunc]: success
+[2024-05-26 05:33:57] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-05-26 05:33:57] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-05-26 05:33:57] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-05-26 05:33:57] INFO root fetch - main [MainThread]: Store serial: [23379459]
