@@ -2673,3 +2673,45 @@
 [2024-05-26 04:55:04] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.99.tar.gz]
 [2024-05-26 04:55:04] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-05-26 04:55:04] INFO root fetch - main [MainThread]: Store serial: [23379352]
+[2024-05-26 04:57:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379352]
+[2024-05-26 04:57:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 04:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cns
+[2024-05-26 04:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upicvision
+[2024-05-26 04:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alphaiq-sdk
+[2024-05-26 04:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coltrane
+[2024-05-26 04:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gemini-webapi
+[2024-05-26 04:57:12] INFO root fetch - processPackages [gemini-webapi]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-05-26 04:57:12] WARNING root fetch - processPackages [cns]: Skipping, unable to determine old version
+[2024-05-26 04:57:13] INFO root fetch - main [MainThread]: End processing [cns] error
+[2024-05-26 04:57:13] INFO root fetch - processPackages [upicvision]: New version: [0.1.0.1] Old Version: [0.1.0]
+[2024-05-26 04:57:13] INFO root fetch - processPackages [coltrane]: New version: [0.35.4] Old Version: [0.35.3]
+[2024-05-26 04:57:13] INFO root fetch - processPackages [alphaiq-sdk]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-26 04:57:13] INFO root fetch - processPackages [gemini-webapi]: Downloading https://files.pythonhosted.org/packages/06/7b/615decd7d2f23298cffe3d105c5a2507580b29c2f7cb76b1fce40523ad4b/gemini_webapi-1.4.0.tar.gz
+[2024-05-26 04:57:13] INFO root fetch - processPackages [upicvision]: Downloading https://files.pythonhosted.org/packages/12/ce/7df736b7cf50ba8ac1184e8eedb696d38ceb6539ff8b05025ac5c87f7fc7/upicvision-0.1.0.tar.gz
+[2024-05-26 04:57:13] INFO root fetch - processPackages [coltrane]: Downloading https://files.pythonhosted.org/packages/a4/13/5aa039f445d68dd3f98ee5b03775a8b5447ad1fc589077fbe14767ba001c/coltrane-0.35.3.tar.gz
+[2024-05-26 04:57:13] INFO root fetch - processPackages [alphaiq-sdk]: Downloading https://files.pythonhosted.org/packages/7d/70/72a62ee8ba770845be69b2c5617fa3359ee1d3e073f2812c2114df88beca/alphaiq-sdk-0.2.7.tar.gz
+[2024-05-26 04:57:13] INFO root fetch - processPackages [gemini-webapi]: Downloading https://files.pythonhosted.org/packages/b8/e7/da378369550a8de470f6347e1f391867ec2277cbf6f4294b6a4e5c8b9257/gemini_webapi-1.4.1.tar.gz
+[2024-05-26 04:57:13] INFO root fetch - processPackages [gemini-webapi]: executing diffoscope
+[2024-05-26 04:57:13] INFO root fetch - processPackages [gemini-webapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini_webapi-1.4.0.tar.gz tmp/gemini_webapi-1.4.1.tar.gz --markdown 20240526/g/gemini-webapi/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-05-26 04:57:13] INFO root fetch - processPackages [upicvision]: Downloading https://files.pythonhosted.org/packages/85/e8/bf8006b7847388254298a39c8458cc7875a5ee09ea67bb6374e027df029c/upicvision-0.1.0.1.tar.gz
+[2024-05-26 04:57:13] INFO root fetch - processPackages [coltrane]: Downloading https://files.pythonhosted.org/packages/1e/4a/852e548c9325f8b92610b6e69ff4e653abf5a0addfb0304a3759acb9b53c/coltrane-0.35.4.tar.gz
+[2024-05-26 04:57:13] INFO root fetch - processPackages [alphaiq-sdk]: Downloading https://files.pythonhosted.org/packages/e7/eb/59df356771feb0f5257afeb4da5009725199e0af3ce517a35e8cf388437b/alphaiq_sdk-0.2.8.tar.gz
+[2024-05-26 04:57:13] INFO root fetch - processPackages [upicvision]: executing diffoscope
+[2024-05-26 04:57:13] INFO root fetch - processPackages [upicvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upicvision-0.1.0.tar.gz tmp/upicvision-0.1.0.1.tar.gz --markdown 20240526/u/upicvision/0.1.0-0.1.0.1/README.md --exclude *.pyd
+[2024-05-26 04:57:13] INFO root fetch - processPackages [coltrane]: executing diffoscope
+[2024-05-26 04:57:13] INFO root fetch - processPackages [coltrane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coltrane-0.35.3.tar.gz tmp/coltrane-0.35.4.tar.gz --markdown 20240526/c/coltrane/0.35.3-0.35.4/README.md --exclude *.pyd
+[2024-05-26 04:57:13] INFO root fetch - processPackages [alphaiq-sdk]: executing diffoscope
+[2024-05-26 04:57:13] INFO root fetch - processPackages [alphaiq-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaiq-sdk-0.2.7.tar.gz tmp/alphaiq_sdk-0.2.8.tar.gz --markdown 20240526/a/alphaiq-sdk/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-26 04:57:14] INFO root fetch - processPackages [upicvision]: Remove: archive file [/home/abi/fetcher/tmp/upicvision-0.1.0.tar.gz]
+[2024-05-26 04:57:14] INFO root fetch - processPackages [upicvision]: Remove: archive file [/home/abi/fetcher/tmp/upicvision-0.1.0.1.tar.gz]
+[2024-05-26 04:57:14] INFO root fetch - main [MainThread]: End processing [upicvision]: success
+[2024-05-26 04:57:14] INFO root fetch - processPackages [gemini-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gemini_webapi-1.4.0.tar.gz]
+[2024-05-26 04:57:14] INFO root fetch - processPackages [gemini-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gemini_webapi-1.4.1.tar.gz]
+[2024-05-26 04:57:14] INFO root fetch - main [MainThread]: End processing [gemini-webapi]: success
+[2024-05-26 04:57:14] INFO root fetch - processPackages [alphaiq-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alphaiq-sdk-0.2.7.tar.gz]
+[2024-05-26 04:57:14] INFO root fetch - processPackages [alphaiq-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alphaiq_sdk-0.2.8.tar.gz]
+[2024-05-26 04:57:14] INFO root fetch - main [MainThread]: End processing [alphaiq-sdk]: success
+[2024-05-26 04:57:14] INFO root fetch - processPackages [coltrane]: Remove: archive file [/home/abi/fetcher/tmp/coltrane-0.35.3.tar.gz]
+[2024-05-26 04:57:14] INFO root fetch - processPackages [coltrane]: Remove: archive file [/home/abi/fetcher/tmp/coltrane-0.35.4.tar.gz]
+[2024-05-26 04:57:14] INFO root fetch - main [MainThread]: End processing [coltrane]: success
+[2024-05-26 04:57:14] INFO root fetch - main [MainThread]: Store serial: [23379367]
