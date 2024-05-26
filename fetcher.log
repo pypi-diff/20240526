@@ -5643,3 +5643,69 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:44:00] WARNING root fetch - processPackages [myicemammoth-common]: Skipping, unable to determine old version
 [2024-05-26 09:44:00] INFO root fetch - main [MainThread]: End processing [myicemammoth-common] error
 [2024-05-26 09:44:00] INFO root fetch - main [MainThread]: Store serial: [23380692]
+[2024-05-26 09:46:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380692]
+[2024-05-26 09:46:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heatmap_cli
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cadprox
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GraphRetrieval
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-contest-template
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webcheck-strings
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scatcluster
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mlrun-pipelines-kfp-common
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mlrun-pipelines-kfp-v1-8
+[2024-05-26 09:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mlrun-pipelines-kfp-v2
+[2024-05-26 09:46:10] INFO root fetch - processPackages [cadprox]: New version: [4.4] Old Version: [4.3]
+[2024-05-26 09:46:10] INFO root fetch - processPackages [GraphRetrieval]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-26 09:46:10] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.59]
+[2024-05-26 09:46:10] WARNING root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: Skipping, unable to determine old version
+[2024-05-26 09:46:10] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-v1-8] error
+[2024-05-26 09:46:10] WARNING root fetch - processPackages [mlrun-pipelines-kfp-v2]: Skipping, unable to determine old version
+[2024-05-26 09:46:10] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-v2] error
+[2024-05-26 09:46:10] INFO root fetch - processPackages [python-contest-template]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 09:46:10] WARNING root fetch - processPackages [mlrun-pipelines-kfp-common]: Skipping, unable to determine old version
+[2024-05-26 09:46:10] INFO root fetch - processPackages [webcheck-strings]: New version: [1.600] Old Version: [1.59]
+[2024-05-26 09:46:10] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-common] error
+[2024-05-26 09:46:10] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/b9/19/0dfa54b51f844d8b9ed62f1a1ddc5ade6bc49a5c95b87eb641bb753801a3/cadprox-4.3.tar.gz
+[2024-05-26 09:46:10] INFO root fetch - processPackages [heatmap_cli]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-26 09:46:10] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/28/72/8b33ab4499887d6c0896c33e6a39610d42daab4427a1f76f81d7eb6608f8/scatcluster-0.0.59.tar.gz
+[2024-05-26 09:46:10] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/be/9a/74a7b6a050ec0efcd070ce3e1534cfc68f748447bc2e5a6be92ce9c0cf8a/graphretrieval-0.1.5.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [python-contest-template]: Downloading https://files.pythonhosted.org/packages/47/4f/11861342183d0483968bfd4f40cd3ab1a96f0f1ef301ef30a04ed3b75fa4/python_contest_template-0.0.4.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/89/3e/1667a0d6257328a7ee164f2d02fa5cb906e15b8317152b4e5b6389990a48/heatmap_cli-0.9.2.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [webcheck-strings]: Downloading https://files.pythonhosted.org/packages/fa/40/84cda93ed119118a5d5b6a8e3af366ef0e8c095b1eba19b7756779b1e0b5/webcheck_strings-1.59.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/de/50/e23baa05db1d1b20b9759f3c31a92cdae4c5b6a0fd66459bfe844398d0fe/graphretrieval-0.1.6.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/ad/ea/1cd4060f9d530223f50f2a3dadd33867a34990f801b5700121d3d30a9529/cadprox-4.4.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 09:46:11] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.59.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.59-0.0.6/README.md --exclude *.pyd
+[2024-05-26 09:46:11] INFO root fetch - processPackages [GraphRetrieval]: executing diffoscope
+[2024-05-26 09:46:11] INFO root fetch - processPackages [GraphRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphretrieval-0.1.5.tar.gz tmp/graphretrieval-0.1.6.tar.gz --markdown 20240526/G/GraphRetrieval/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-26 09:46:11] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 09:46:11] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-4.3.tar.gz tmp/cadprox-4.4.tar.gz --markdown 20240526/c/cadprox/4.3-4.4/README.md --exclude *.pyd
+[2024-05-26 09:46:11] INFO root fetch - processPackages [webcheck-strings]: Downloading https://files.pythonhosted.org/packages/d7/b2/36c7a32e7efbbf68960e080f47d093f9d5c494c50ef0e5aa80954b40673e/webcheck_strings-1.600.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/cc/a1/f410c7350b196bcf8384439baacdbf7e8db2363ac46eb6d4872308462d8e/heatmap_cli-0.9.3.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [python-contest-template]: Downloading https://files.pythonhosted.org/packages/34/6b/ed05524c7d16287affad3507f75d4e1f32e5f19e501947c42988afb34eda/python_contest_template-0.0.5.tar.gz
+[2024-05-26 09:46:11] INFO root fetch - processPackages [webcheck-strings]: executing diffoscope
+[2024-05-26 09:46:11] INFO root fetch - processPackages [webcheck-strings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webcheck_strings-1.59.tar.gz tmp/webcheck_strings-1.600.tar.gz --markdown 20240526/w/webcheck-strings/1.59-1.600/README.md --exclude *.pyd
+[2024-05-26 09:46:11] INFO root fetch - processPackages [heatmap_cli]: executing diffoscope
+[2024-05-26 09:46:11] INFO root fetch - processPackages [heatmap_cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heatmap_cli-0.9.2.tar.gz tmp/heatmap_cli-0.9.3.tar.gz --markdown 20240526/h/heatmap_cli/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-26 09:46:11] INFO root fetch - processPackages [python-contest-template]: executing diffoscope
+[2024-05-26 09:46:11] INFO root fetch - processPackages [python-contest-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_contest_template-0.0.4.tar.gz tmp/python_contest_template-0.0.5.tar.gz --markdown 20240526/p/python-contest-template/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 09:46:11] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.59.tar.gz]
+[2024-05-26 09:46:11] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 09:46:11] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 09:46:12] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.5.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.6.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - main [MainThread]: End processing [GraphRetrieval]: success
+[2024-05-26 09:46:12] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.3.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.4.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 09:46:12] INFO root fetch - processPackages [python-contest-template]: Remove: archive file [/home/abi/fetcher/tmp/python_contest_template-0.0.4.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - processPackages [python-contest-template]: Remove: archive file [/home/abi/fetcher/tmp/python_contest_template-0.0.5.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - main [MainThread]: End processing [python-contest-template]: success
+[2024-05-26 09:46:12] INFO root fetch - processPackages [webcheck-strings]: Remove: archive file [/home/abi/fetcher/tmp/webcheck_strings-1.59.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - processPackages [webcheck-strings]: Remove: archive file [/home/abi/fetcher/tmp/webcheck_strings-1.600.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - main [MainThread]: End processing [webcheck-strings]: success
+[2024-05-26 09:46:12] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.2.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.3.tar.gz]
+[2024-05-26 09:46:12] INFO root fetch - main [MainThread]: End processing [heatmap_cli]: success
+[2024-05-26 09:46:12] INFO root fetch - main [MainThread]: Store serial: [23380724]
