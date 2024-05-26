@@ -12676,3 +12676,81 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:49:44] INFO root fetch - processPackages [jaaql-monitor]: Remove: archive file [/home/abi/fetcher/tmp/jaaql-monitor-1.2.99.tar.gz]
 [2024-05-26 16:49:44] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
 [2024-05-26 16:49:44] INFO root fetch - main [MainThread]: Store serial: [23383901]
+[2024-05-26 16:51:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383901]
+[2024-05-26 16:51:52] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-shutdown-hook
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: json-repair
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sequifier
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dicio-py
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asteca
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: novelWriter
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: funky-modifiers
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: GameStorageAPI
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: contacts-assistant
+[2024-05-26 16:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pypstk
+[2024-05-26 16:51:52] INFO root fetch - processPackages [contacts-assistant]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 16:51:52] INFO root fetch - processPackages [funky-modifiers]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-26 16:51:52] WARNING root fetch - processPackages [GameStorageAPI]: Skipping, unable to determine old version
+[2024-05-26 16:51:52] INFO root fetch - processPackages [GameStorageAPI]: Start processing: clipboardhist
+[2024-05-26 16:51:52] INFO root fetch - main [MainThread]: End processing [GameStorageAPI] error
+[2024-05-26 16:51:52] WARNING root fetch - processPackages [nonebot-plugin-shutdown-hook]: Skipping, unable to determine old version
+[2024-05-26 16:51:52] WARNING root fetch - processPackages [pypstk]: Skipping, unable to determine old version
+[2024-05-26 16:51:52] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-shutdown-hook] error
+[2024-05-26 16:51:52] INFO root fetch - main [MainThread]: End processing [pypstk] error
+[2024-05-26 16:51:52] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/8b/a5/10b5574ed8e037287880b2315302142bc8d07644a311070e1bbd554180f3/funky_modifiers-0.2.3.tar.gz
+[2024-05-26 16:51:52] INFO root fetch - processPackages [asteca]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-26 16:51:52] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/33/9f/108164fb8e65a632c839913b99da06157f0acb9d53884bc0a3e99ba6a572/contacts_assistant-0.0.8.tar.gz
+[2024-05-26 16:51:52] WARNING root fetch - processPackages [dicio-py]: Skipping, unable to determine old version
+[2024-05-26 16:51:52] INFO root fetch - main [MainThread]: End processing [dicio-py] error
+[2024-05-26 16:51:52] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-26 16:51:53] INFO root fetch - processPackages [sequifier]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-05-26 16:51:53] INFO root fetch - processPackages [novelWriter]: New version: [2.5b1] Old Version: [2.4rc1]
+[2024-05-26 16:51:53] INFO root fetch - processPackages [clipboardhist]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-26 16:51:53] INFO root fetch - processPackages [asteca]: Downloading https://files.pythonhosted.org/packages/ab/14/74b6afc9075b663858dc8465db540aad113bce30bb58a8abcad9240a30d4/asteca-0.5.2.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [novelWriter]: Downloading https://files.pythonhosted.org/packages/e6/0b/c3f12c4f384eb527e53ef4e12e1c3a2a10405ba7b70b29dc8a343232e412/novelWriter-2.4rc1.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [sequifier]: Downloading https://files.pythonhosted.org/packages/16/aa/b83169ec14f7a3793c189f130241381809d136f288eef49443afa4f5f69a/sequifier-2.1.0.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [clipboardhist]: Downloading https://files.pythonhosted.org/packages/ca/c9/498bd22a45ab1ed3388dfd599aa511a404233b0cd88b9a970bf08ff39b83/clipboardhist-1.0.4.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/58/95/997a96ce86f7fd842856d5dba30e9987ba9891456196e2a073db3dab5750/contacts_assistant-0.0.9.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/a5/f2/658045ab8e4a55b2792476b6910bc326863f6a71ea130cc7153cee278409/funky_modifiers-0.2.4.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [contacts-assistant]: executing diffoscope
+[2024-05-26 16:51:53] INFO root fetch - processPackages [contacts-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contacts_assistant-0.0.8.tar.gz tmp/contacts_assistant-0.0.9.tar.gz --markdown 20240526/c/contacts-assistant/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 16:51:53] INFO root fetch - processPackages [asteca]: Downloading https://files.pythonhosted.org/packages/ce/ec/495d85a559a12630191794c71d27a7a674e43155acab04d2b1edf1c3e358/asteca-0.5.3.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-26 16:51:53] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.2.3.tar.gz tmp/funky_modifiers-0.2.4.tar.gz --markdown 20240526/f/funky-modifiers/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-26 16:51:53] INFO root fetch - processPackages [sequifier]: Downloading https://files.pythonhosted.org/packages/cd/d3/d0f355baefe44a25c1a7194898050623cbf94f4e188ffbdf8568ff9a5847/sequifier-2.2.0.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-05-26 16:51:53] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240526/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-26 16:51:53] INFO root fetch - processPackages [asteca]: executing diffoscope
+[2024-05-26 16:51:53] INFO root fetch - processPackages [asteca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asteca-0.5.2.tar.gz tmp/asteca-0.5.3.tar.gz --markdown 20240526/a/asteca/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-26 16:51:53] INFO root fetch - processPackages [clipboardhist]: Downloading https://files.pythonhosted.org/packages/5e/b7/e97f552741e53315f8964204c5124eda88a53831e4ff61f479f8dc30b90f/clipboardhist-1.0.5.tar.gz
+[2024-05-26 16:51:53] INFO root fetch - processPackages [sequifier]: executing diffoscope
+[2024-05-26 16:51:53] INFO root fetch - processPackages [sequifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequifier-2.1.0.tar.gz tmp/sequifier-2.2.0.tar.gz --markdown 20240526/s/sequifier/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-05-26 16:51:53] INFO root fetch - processPackages [clipboardhist]: executing diffoscope
+[2024-05-26 16:51:53] INFO root fetch - processPackages [clipboardhist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipboardhist-1.0.4.tar.gz tmp/clipboardhist-1.0.5.tar.gz --markdown 20240526/c/clipboardhist/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-26 16:51:54] INFO root fetch - processPackages [novelWriter]: Downloading https://files.pythonhosted.org/packages/d3/df/6102f3eea83840b13cf08b05db0606abefd7f5cca4bb5bd01fb0b03eb82a/novelwriter-2.5b1.tar.gz
+[2024-05-26 16:51:54] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.3.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.2.4.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-26 16:51:54] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.8.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.9.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - main [MainThread]: End processing [contacts-assistant]: success
+[2024-05-26 16:51:54] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-05-26 16:51:54] INFO root fetch - processPackages [novelWriter]: executing diffoscope
+[2024-05-26 16:51:54] INFO root fetch - processPackages [novelWriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelWriter-2.4rc1.tar.gz tmp/novelwriter-2.5b1.tar.gz --markdown 20240526/n/novelWriter/2.4rc1-2.5b1/README.md --exclude *.pyd
+[2024-05-26 16:51:54] INFO root fetch - processPackages [asteca]: Remove: archive file [/home/abi/fetcher/tmp/asteca-0.5.2.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - processPackages [asteca]: Remove: archive file [/home/abi/fetcher/tmp/asteca-0.5.3.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - main [MainThread]: End processing [asteca]: success
+[2024-05-26 16:51:54] INFO root fetch - processPackages [sequifier]: Remove: archive file [/home/abi/fetcher/tmp/sequifier-2.1.0.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - processPackages [sequifier]: Remove: archive file [/home/abi/fetcher/tmp/sequifier-2.2.0.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - main [MainThread]: End processing [sequifier]: success
+[2024-05-26 16:51:54] INFO root fetch - processPackages [clipboardhist]: Remove: archive file [/home/abi/fetcher/tmp/clipboardhist-1.0.4.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - processPackages [clipboardhist]: Remove: archive file [/home/abi/fetcher/tmp/clipboardhist-1.0.5.tar.gz]
+[2024-05-26 16:51:54] INFO root fetch - main [MainThread]: End processing [clipboardhist]: success
+[2024-05-26 16:51:58] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelWriter-2.4rc1.tar.gz]
+[2024-05-26 16:51:58] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelwriter-2.5b1.tar.gz]
+[2024-05-26 16:51:58] INFO root fetch - main [MainThread]: End processing [novelWriter]: success
+[2024-05-26 16:51:58] INFO root fetch - main [MainThread]: Store serial: [23383939]
