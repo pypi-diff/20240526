@@ -7222,3 +7222,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:41:43] INFO root fetch - processPackages [inoutlists]: Remove: archive file [/home/abi/fetcher/tmp/inoutlists-0.0.2.tar.gz]
 [2024-05-26 10:41:43] INFO root fetch - main [MainThread]: End processing [inoutlists]: success
 [2024-05-26 10:41:43] INFO root fetch - main [MainThread]: Store serial: [23381405]
+[2024-05-26 10:43:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381405]
+[2024-05-26 10:43:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 10:43:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-meteo-solar-forecast
+[2024-05-26 10:43:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ParticleDetection
+[2024-05-26 10:43:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magyar
+[2024-05-26 10:43:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdmn
+[2024-05-26 10:43:54] INFO root fetch - processPackages [ParticleDetection]: New version: [0.4.2.dev6] Old Version: [0.4.2.dev3]
+[2024-05-26 10:43:54] INFO root fetch - processPackages [open-meteo-solar-forecast]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 10:43:54] INFO root fetch - processPackages [magyar]: New version: [4.0.6] Old Version: [4.0.5]
+[2024-05-26 10:43:54] INFO root fetch - processPackages [ParticleDetection]: Downloading https://files.pythonhosted.org/packages/1d/76/1be171876f4c69278d68a3f3fe16d1e3718a9a1bb40e1080d7f6107ec784/particledetection-0.4.2.dev3.tar.gz
+[2024-05-26 10:43:54] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/f1/4b/cede27127a05545318cc698a2b1ea83e27e2d2971f7c740c89d7c7b1c031/open_meteo_solar_forecast-0.0.4.tar.gz
+[2024-05-26 10:43:54] INFO root fetch - processPackages [cdmn]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-05-26 10:43:54] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/5a/4a/8e02800d9de191030e81ff95ec0a2a36bb25c5c7bf6741e49eb5eb9421b2/magyar-4.0.5.tar.gz
+[2024-05-26 10:43:55] INFO root fetch - processPackages [ParticleDetection]: Downloading https://files.pythonhosted.org/packages/36/d7/236542d481ec8aee7460c4b01fc92f0dd43d514fbca14ba505944b214bd9/particledetection-0.4.2.dev6-py3-none-any.whl
+[2024-05-26 10:43:55] INFO root fetch - processPackages [cdmn]: Downloading https://files.pythonhosted.org/packages/62/82/42e0d26a63f60896916b210638ac3f526e09b72c457835944c7ba4481d3f/cdmn-2.1.1.tar.gz
+[2024-05-26 10:43:55] INFO root fetch - processPackages [ParticleDetection]: executing diffoscope
+[2024-05-26 10:43:55] INFO root fetch - processPackages [ParticleDetection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/particledetection-0.4.2.dev3.tar.gz tmp/particledetection-0.4.2.dev6-py3-none-any.whl.zip --markdown 20240526/P/ParticleDetection/0.4.2.dev3-0.4.2.dev6/README.md --exclude *.pyd
+[2024-05-26 10:43:55] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/93/68/23665f08424e62b9a2519c95bd5f61ccd049bc9519dd5d2e82b4ac5d76fc/magyar-4.0.6.tar.gz
+[2024-05-26 10:43:55] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/7e/a9/a16910d41bc499f3712ce505f2b68b8b72aceae7c6da2a235d82c7183da1/open_meteo_solar_forecast-0.0.5.tar.gz
+[2024-05-26 10:43:55] INFO root fetch - processPackages [open-meteo-solar-forecast]: executing diffoscope
+[2024-05-26 10:43:55] INFO root fetch - processPackages [open-meteo-solar-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_meteo_solar_forecast-0.0.4.tar.gz tmp/open_meteo_solar_forecast-0.0.5.tar.gz --markdown 20240526/o/open-meteo-solar-forecast/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 10:43:55] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2024-05-26 10:43:55] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-4.0.5.tar.gz tmp/magyar-4.0.6.tar.gz --markdown 20240526/m/magyar/4.0.5-4.0.6/README.md --exclude *.pyd
+[2024-05-26 10:43:55] INFO root fetch - processPackages [cdmn]: Downloading https://files.pythonhosted.org/packages/e8/bc/35dadc552d4fc019429f31ff5406185269d49096b538473129efed973730/cdmn-2.1.2.tar.gz
+[2024-05-26 10:43:55] INFO root fetch - processPackages [cdmn]: executing diffoscope
+[2024-05-26 10:43:55] INFO root fetch - processPackages [cdmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdmn-2.1.1.tar.gz tmp/cdmn-2.1.2.tar.gz --markdown 20240526/c/cdmn/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-05-26 10:43:55] INFO root fetch - processPackages [ParticleDetection]: Remove: archive file [/home/abi/fetcher/tmp/particledetection-0.4.2.dev3.tar.gz]
+[2024-05-26 10:43:55] INFO root fetch - processPackages [ParticleDetection]: Remove: archive file [/home/abi/fetcher/tmp/particledetection-0.4.2.dev6-py3-none-any.whl.zip]
+[2024-05-26 10:43:55] INFO root fetch - main [MainThread]: End processing [ParticleDetection]: success
+[2024-05-26 10:43:56] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.0.4.tar.gz]
+[2024-05-26 10:43:56] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.0.5.tar.gz]
+[2024-05-26 10:43:56] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast]: success
+[2024-05-26 10:43:56] INFO root fetch - processPackages [cdmn]: Remove: archive file [/home/abi/fetcher/tmp/cdmn-2.1.1.tar.gz]
+[2024-05-26 10:43:56] INFO root fetch - processPackages [cdmn]: Remove: archive file [/home/abi/fetcher/tmp/cdmn-2.1.2.tar.gz]
+[2024-05-26 10:43:56] INFO root fetch - main [MainThread]: End processing [cdmn]: success
+[2024-05-26 10:43:57] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.5.tar.gz]
+[2024-05-26 10:43:57] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.6.tar.gz]
+[2024-05-26 10:43:57] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2024-05-26 10:43:57] INFO root fetch - main [MainThread]: Store serial: [23381417]
