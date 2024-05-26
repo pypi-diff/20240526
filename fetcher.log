@@ -15783,3 +15783,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:33:50] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-26 19:33:50] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-26 19:33:50] INFO root fetch - main [MainThread]: Store serial: [23385285]
+[2024-05-26 19:35:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385285]
+[2024-05-26 19:35:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 19:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyper-shell
+[2024-05-26 19:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prometheus-pve-exporter
+[2024-05-26 19:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-ydotool
+[2024-05-26 19:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uv
+[2024-05-26 19:35:59] INFO root fetch - processPackages [python-ydotool]: New version: [1.0.4.post1] Old Version: [1.0.4]
+[2024-05-26 19:35:59] INFO root fetch - processPackages [hyper-shell]: New version: [2.5.1] Old Version: [2.5.0]
+[2024-05-26 19:35:59] INFO root fetch - processPackages [prometheus-pve-exporter]: New version: [3.4.2] Old Version: [3.4.1]
+[2024-05-26 19:35:59] INFO root fetch - processPackages [uv]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-26 19:35:59] INFO root fetch - processPackages [python-ydotool]: Downloading https://files.pythonhosted.org/packages/f5/09/093d86055b551238c047c93166f3fcc42fd37bc126250b9904c84445dfbf/python_ydotool-1.0.4.tar.gz
+[2024-05-26 19:35:59] INFO root fetch - processPackages [prometheus-pve-exporter]: Downloading https://files.pythonhosted.org/packages/ce/e6/46b708339e1c7f96baa9c50f02be7b3abe1cdf0afdd45c0bbb77b93a759f/prometheus_pve_exporter-3.4.1.tar.gz
+[2024-05-26 19:35:59] INFO root fetch - processPackages [hyper-shell]: Downloading https://files.pythonhosted.org/packages/f9/d4/4b5c3059c901160358ede414e0510f8df07ce0d48091041b4217d76780b8/hyper_shell-2.5.0.tar.gz
+[2024-05-26 19:35:59] INFO root fetch - processPackages [uv]: Downloading https://files.pythonhosted.org/packages/5e/22/5d90cc6cfd6bcdd4f2159892ad8f8ee803dda98778e45c468cf79584ab13/uv-0.2.3.tar.gz
+[2024-05-26 19:35:59] INFO root fetch - processPackages [python-ydotool]: Downloading https://files.pythonhosted.org/packages/78/49/929d9c409ce378a87928a9b1ae62a2273f33588a5b233274a03e629b9ab1/python_ydotool-1.0.4.post1.tar.gz
+[2024-05-26 19:35:59] INFO root fetch - processPackages [prometheus-pve-exporter]: Downloading https://files.pythonhosted.org/packages/6e/98/170c0be3850931335647bb4cd86a7a989a188f7f611dae0e407bed9cb42a/prometheus_pve_exporter-3.4.2.tar.gz
+[2024-05-26 19:35:59] INFO root fetch - processPackages [hyper-shell]: Downloading https://files.pythonhosted.org/packages/31/37/7b57a7c9b6527f2b56354a5a0ad21833cfc400c346d7849b4e2e87dae5af/hyper_shell-2.5.1-2-py3-none-any.whl
+[2024-05-26 19:35:59] INFO root fetch - processPackages [python-ydotool]: executing diffoscope
+[2024-05-26 19:35:59] INFO root fetch - processPackages [python-ydotool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_ydotool-1.0.4.tar.gz tmp/python_ydotool-1.0.4.post1.tar.gz --markdown 20240526/p/python-ydotool/1.0.4-1.0.4.post1/README.md --exclude *.pyd
+[2024-05-26 19:35:59] INFO root fetch - processPackages [prometheus-pve-exporter]: executing diffoscope
+[2024-05-26 19:35:59] INFO root fetch - processPackages [prometheus-pve-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prometheus_pve_exporter-3.4.1.tar.gz tmp/prometheus_pve_exporter-3.4.2.tar.gz --markdown 20240526/p/prometheus-pve-exporter/3.4.1-3.4.2/README.md --exclude *.pyd
+[2024-05-26 19:35:59] INFO root fetch - processPackages [hyper-shell]: executing diffoscope
+[2024-05-26 19:35:59] INFO root fetch - processPackages [hyper-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyper_shell-2.5.0.tar.gz tmp/hyper_shell-2.5.1-2-py3-none-any.whl.zip --markdown 20240526/h/hyper-shell/2.5.0-2.5.1/README.md --exclude *.pyd
+[2024-05-26 19:35:59] INFO root fetch - processPackages [uv]: Downloading https://files.pythonhosted.org/packages/b8/c8/687090c0aabc1c1609c898c2f4e7883c325d9b03c18cc721f8a1443ce8f9/uv-0.2.4.tar.gz
+[2024-05-26 19:36:00] INFO root fetch - processPackages [uv]: executing diffoscope
+[2024-05-26 19:36:00] INFO root fetch - processPackages [uv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uv-0.2.3.tar.gz tmp/uv-0.2.4.tar.gz --markdown 20240526/u/uv/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-26 19:36:00] INFO root fetch - processPackages [python-ydotool]: Remove: archive file [/home/abi/fetcher/tmp/python_ydotool-1.0.4.tar.gz]
+[2024-05-26 19:36:00] INFO root fetch - processPackages [python-ydotool]: Remove: archive file [/home/abi/fetcher/tmp/python_ydotool-1.0.4.post1.tar.gz]
+[2024-05-26 19:36:00] INFO root fetch - main [MainThread]: End processing [python-ydotool]: success
+[2024-05-26 19:36:00] INFO root fetch - processPackages [prometheus-pve-exporter]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_pve_exporter-3.4.1.tar.gz]
+[2024-05-26 19:36:00] INFO root fetch - processPackages [prometheus-pve-exporter]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_pve_exporter-3.4.2.tar.gz]
+[2024-05-26 19:36:00] INFO root fetch - main [MainThread]: End processing [prometheus-pve-exporter]: success
+[2024-05-26 19:36:00] INFO root fetch - processPackages [hyper-shell]: Remove: archive file [/home/abi/fetcher/tmp/hyper_shell-2.5.0.tar.gz]
+[2024-05-26 19:36:00] INFO root fetch - processPackages [hyper-shell]: Remove: archive file [/home/abi/fetcher/tmp/hyper_shell-2.5.1-2-py3-none-any.whl.zip]
+[2024-05-26 19:36:00] INFO root fetch - main [MainThread]: End processing [hyper-shell]: success
+[2024-05-26 19:36:02] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.2.3.tar.gz]
+[2024-05-26 19:36:02] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.2.4.tar.gz]
+[2024-05-26 19:36:02] INFO root fetch - main [MainThread]: End processing [uv]: success
+[2024-05-26 19:36:02] INFO root fetch - main [MainThread]: Store serial: [23385310]
