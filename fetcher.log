@@ -2069,3 +2069,15 @@
 [2024-05-26 03:45:40] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.9.tar.gz]
 [2024-05-26 03:45:40] INFO root fetch - main [MainThread]: End processing [llama-cpp-agent]: success
 [2024-05-26 03:45:40] INFO root fetch - main [MainThread]: Store serial: [23379083]
+[2024-05-26 03:47:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379083]
+[2024-05-26 03:47:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 03:47:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lenlp
+[2024-05-26 03:47:49] INFO root fetch - processPackages [lenlp]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-26 03:47:49] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/c6/80/ff8e65f272f0c53e28f0502558e0c7e767dbd4bf4844d201962b985d57ee/lenlp-1.0.0.tar.gz
+[2024-05-26 03:47:49] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/4c/0f/9ffc2198a1f5b2d7b9a218689c872852ef6bdd4eb717ff70841209f83658/lenlp-1.0.1.tar.gz
+[2024-05-26 03:47:49] INFO root fetch - processPackages [lenlp]: executing diffoscope
+[2024-05-26 03:47:49] INFO root fetch - processPackages [lenlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lenlp-1.0.0.tar.gz tmp/lenlp-1.0.1.tar.gz --markdown 20240526/l/lenlp/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-26 03:47:50] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.0.tar.gz]
+[2024-05-26 03:47:50] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.1.tar.gz]
+[2024-05-26 03:47:50] INFO root fetch - main [MainThread]: End processing [lenlp]: success
+[2024-05-26 03:47:50] INFO root fetch - main [MainThread]: Store serial: [23379097]
