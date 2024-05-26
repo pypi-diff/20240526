@@ -22182,3 +22182,38 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:45:16] INFO root fetch - processPackages [leechcorepyc]: Remove: archive file [/home/abi/fetcher/tmp/leechcorepyc-2.8.1.tar.gz]
 [2024-05-26 23:45:16] INFO root fetch - main [MainThread]: End processing [leechcorepyc]: success
 [2024-05-26 23:45:16] INFO root fetch - main [MainThread]: Store serial: [23388068]
+[2024-05-26 23:47:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23388068]
+[2024-05-26 23:47:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 23:49:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23388068]
+[2024-05-26 23:49:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 23:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sakke
+[2024-05-26 23:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: area-converter
+[2024-05-26 23:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abcli
+[2024-05-26 23:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ioxplugin
+[2024-05-26 23:49:33] INFO root fetch - processPackages [sakke]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-26 23:49:33] INFO root fetch - processPackages [ioxplugin]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-26 23:49:33] INFO root fetch - processPackages [abcli]: New version: [9.3.1] Old Version: [9.26.1]
+[2024-05-26 23:49:33] INFO root fetch - processPackages [sakke]: Downloading https://files.pythonhosted.org/packages/5e/0c/4a13e5206c22cb7ca2fcd9ab4e6bfff0ef8ab7038439ab08cdb0f7ee7fce/sakke-2.0.8-py3-none-any.whl
+[2024-05-26 23:49:33] WARNING root fetch - processPackages [area-converter]: Skipping, unable to determine old version
+[2024-05-26 23:49:33] INFO root fetch - main [MainThread]: End processing [area-converter] error
+[2024-05-26 23:49:33] INFO root fetch - processPackages [ioxplugin]: Downloading https://files.pythonhosted.org/packages/ac/ca/c1ad785233b250c4b74b54aecc1f3ab7dc316333d8787959853d7b846d8a/ioxplugin-1.1.4.tar.gz
+[2024-05-26 23:49:33] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/90/a5/32fd11e886cbc7881d22d3e13d74f2f3ede3f7f5e4aa4c911a0375fe82e8/abcli-9.26.1.tar.gz
+[2024-05-26 23:49:33] INFO root fetch - processPackages [sakke]: Downloading https://files.pythonhosted.org/packages/e5/51/31aa1e2e0cf41981c0b5ef52179a1c66977a1a5c13a262627e97c9d6fbaa/sakke-2.0.9-py3-none-any.whl
+[2024-05-26 23:49:33] INFO root fetch - processPackages [sakke]: executing diffoscope
+[2024-05-26 23:49:33] INFO root fetch - processPackages [sakke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sakke-2.0.8-py3-none-any.whl.zip tmp/sakke-2.0.9-py3-none-any.whl.zip --markdown 20240526/s/sakke/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-26 23:49:33] INFO root fetch - processPackages [ioxplugin]: Downloading https://files.pythonhosted.org/packages/59/b6/1dbd7411345777053ae691ca3ccb44f9b908b40d2e51d0a2c13c9a2d4b6a/ioxplugin-1.1.5.tar.gz
+[2024-05-26 23:49:33] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/27/0f/c18b5fa4712b3f6bcc42462d85618b5a3c37cc5d4c765462ebfab12d9c8f/abcli-9.3.1.tar.gz
+[2024-05-26 23:49:34] INFO root fetch - processPackages [ioxplugin]: executing diffoscope
+[2024-05-26 23:49:34] INFO root fetch - processPackages [ioxplugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioxplugin-1.1.4.tar.gz tmp/ioxplugin-1.1.5.tar.gz --markdown 20240526/i/ioxplugin/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-26 23:49:34] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-26 23:49:34] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-9.26.1.tar.gz tmp/abcli-9.3.1.tar.gz --markdown 20240526/a/abcli/9.26.1-9.3.1/README.md --exclude *.pyd
+[2024-05-26 23:49:34] INFO root fetch - processPackages [sakke]: Remove: archive file [/home/abi/fetcher/tmp/sakke-2.0.8-py3-none-any.whl.zip]
+[2024-05-26 23:49:34] INFO root fetch - processPackages [sakke]: Remove: archive file [/home/abi/fetcher/tmp/sakke-2.0.9-py3-none-any.whl.zip]
+[2024-05-26 23:49:34] INFO root fetch - main [MainThread]: End processing [sakke]: success
+[2024-05-26 23:49:34] INFO root fetch - processPackages [ioxplugin]: Remove: archive file [/home/abi/fetcher/tmp/ioxplugin-1.1.4.tar.gz]
+[2024-05-26 23:49:34] INFO root fetch - processPackages [ioxplugin]: Remove: archive file [/home/abi/fetcher/tmp/ioxplugin-1.1.5.tar.gz]
+[2024-05-26 23:49:34] INFO root fetch - main [MainThread]: End processing [ioxplugin]: success
+[2024-05-26 23:49:34] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.26.1.tar.gz]
+[2024-05-26 23:49:34] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.3.1.tar.gz]
+[2024-05-26 23:49:34] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-26 23:49:34] INFO root fetch - main [MainThread]: Store serial: [23388079]
