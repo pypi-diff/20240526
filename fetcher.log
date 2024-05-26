@@ -4098,3 +4098,33 @@
 [2024-05-26 07:28:26] ERROR root fetch - processPackages [new-gfpgan]: Unable to get metadata: No such project 'new-gfpgan'
 [2024-05-26 07:28:26] INFO root fetch - main [MainThread]: End processing [new-gfpgan] error
 [2024-05-26 07:28:26] INFO root fetch - main [MainThread]: Store serial: [23379998]
+[2024-05-26 07:30:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379998]
+[2024-05-26 07:30:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 07:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ab-test-advanced-toolkit
+[2024-05-26 07:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: api-pipe
+[2024-05-26 07:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2024-05-26 07:30:36] INFO root fetch - processPackages [api-pipe]: New version: [2.0.13] Old Version: [2.0.12]
+[2024-05-26 07:30:36] INFO root fetch - processPackages [ab-test-advanced-toolkit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 07:30:36] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-26 07:30:36] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/57/7f/641ed7d2a39fc883b95a494b1ca405dbd3d5bf5841467f2d05b73a3882cc/api_pipe-2.0.12.tar.gz
+[2024-05-26 07:30:36] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Downloading https://files.pythonhosted.org/packages/d8/42/ab004b4ccd6255554b61e818ddbed6d3124273a7fb9d64d2805cb852d1bf/ab_test_advanced_toolkit-0.0.8.tar.gz
+[2024-05-26 07:30:36] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-26 07:30:36] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-26 07:30:36] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Downloading https://files.pythonhosted.org/packages/83/21/c8975e01e119d8bd94b24149ac6babca6fd2e5707a3bf6814a00df981294/ab_test_advanced_toolkit-0.0.9.tar.gz
+[2024-05-26 07:30:36] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/39/84/3a799dc6941e4fd272900eabc67fb7a9fd1ac7ba91737e41fb5ac737675e/api_pipe-2.0.13.tar.gz
+[2024-05-26 07:30:36] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-26 07:30:36] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240526/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-26 07:30:36] INFO root fetch - processPackages [ab-test-advanced-toolkit]: executing diffoscope
+[2024-05-26 07:30:36] INFO root fetch - processPackages [ab-test-advanced-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ab_test_advanced_toolkit-0.0.8.tar.gz tmp/ab_test_advanced_toolkit-0.0.9.tar.gz --markdown 20240526/a/ab-test-advanced-toolkit/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 07:30:36] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-05-26 07:30:36] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.12.tar.gz tmp/api_pipe-2.0.13.tar.gz --markdown 20240526/a/api-pipe/2.0.12-2.0.13/README.md --exclude *.pyd
+[2024-05-26 07:30:37] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.12.tar.gz]
+[2024-05-26 07:30:37] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.13.tar.gz]
+[2024-05-26 07:30:37] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-05-26 07:30:37] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-26 07:30:37] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-26 07:30:37] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-26 07:30:37] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/ab_test_advanced_toolkit-0.0.8.tar.gz]
+[2024-05-26 07:30:37] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/ab_test_advanced_toolkit-0.0.9.tar.gz]
+[2024-05-26 07:30:37] INFO root fetch - main [MainThread]: End processing [ab-test-advanced-toolkit]: success
+[2024-05-26 07:30:37] INFO root fetch - main [MainThread]: Store serial: [23380007]
