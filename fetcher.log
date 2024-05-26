@@ -13557,3 +13557,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:27:27] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-2.0.8.tar.gz]
 [2024-05-26 17:27:27] INFO root fetch - main [MainThread]: End processing [tsugu]: success
 [2024-05-26 17:27:27] INFO root fetch - main [MainThread]: Store serial: [23384295]
+[2024-05-26 17:29:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384295]
+[2024-05-26 17:29:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 17:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dscontexai
+[2024-05-26 17:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absbox
+[2024-05-26 17:29:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AlgoGrade
+[2024-05-26 17:29:36] INFO root fetch - processPackages [dscontexai]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-26 17:29:36] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/07/9e/427f38cfceda01b8cfa811636311dfaa46dedb96cb6b68a85511ebbb3ab5/dscontexai-0.0.9.tar.gz
+[2024-05-26 17:29:36] INFO root fetch - processPackages [AlgoGrade]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-05-26 17:29:36] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-05-26 17:29:36] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/f3/8c/50a21ccffcb9d6f18d7b27b3039f1e90a1b91fe9721d89295f083a8bf52c/AlgoGrade-1.0.9.tar.gz
+[2024-05-26 17:29:36] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/94/d9/a91652e8739fb952e46cc9bdb4234e6d0702adbf48fe6eaf28d6b2c211e3/dscontexai-0.1.0.tar.gz
+[2024-05-26 17:29:36] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-05-26 17:29:36] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 17:29:36] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.0.9.tar.gz tmp/dscontexai-0.1.0.tar.gz --markdown 20240526/d/dscontexai/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-26 17:29:36] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/8d/65/4e1f5d841c87970be5acaa8c1fd77fcb1815c4c848afe9d04e1260aaa1d9/AlgoGrade-1.1.0.tar.gz
+[2024-05-26 17:29:36] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-05-26 17:29:36] INFO root fetch - processPackages [AlgoGrade]: executing diffoscope
+[2024-05-26 17:29:36] INFO root fetch - processPackages [AlgoGrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AlgoGrade-1.0.9.tar.gz tmp/AlgoGrade-1.1.0.tar.gz --markdown 20240526/A/AlgoGrade/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-05-26 17:29:36] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-05-26 17:29:36] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240526/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-05-26 17:29:37] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.9.tar.gz]
+[2024-05-26 17:29:37] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.1.0.tar.gz]
+[2024-05-26 17:29:37] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 17:29:37] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-05-26 17:29:37] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-05-26 17:29:37] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-05-26 17:29:37] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.9.tar.gz]
+[2024-05-26 17:29:37] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.1.0.tar.gz]
+[2024-05-26 17:29:37] INFO root fetch - main [MainThread]: End processing [AlgoGrade]: success
+[2024-05-26 17:29:37] INFO root fetch - main [MainThread]: Store serial: [23384304]
