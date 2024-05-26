@@ -10643,3 +10643,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:51:44] INFO root fetch - processPackages [alita-tools]: Remove: archive file [/home/abi/fetcher/tmp/alita_tools-0.0.9.tar.gz]
 [2024-05-26 14:51:44] INFO root fetch - main [MainThread]: End processing [alita-tools]: success
 [2024-05-26 14:51:44] INFO root fetch - main [MainThread]: Store serial: [23382956]
+[2024-05-26 14:53:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382956]
+[2024-05-26 14:53:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 14:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pi-awning-webthing
+[2024-05-26 14:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: turftopic
+[2024-05-26 14:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sole-bili-get
+[2024-05-26 14:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: findanywhere
+[2024-05-26 14:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crx-utils
+[2024-05-26 14:53:58] INFO root fetch - processPackages [crx-utils]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-26 14:53:58] INFO root fetch - processPackages [findanywhere]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-05-26 14:53:58] INFO root fetch - processPackages [sole-bili-get]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 14:53:58] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-05-26 14:53:58] INFO root fetch - processPackages [findanywhere]: Downloading https://files.pythonhosted.org/packages/dc/96/3b7799c1e6b5d5271a82d45e321d783f8a6b7f3331b7feefb4974ac0c943/findanywhere-0.1.0.tar.gz
+[2024-05-26 14:53:58] INFO root fetch - processPackages [turftopic]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 14:53:58] INFO root fetch - processPackages [sole-bili-get]: Downloading https://files.pythonhosted.org/packages/9e/14/5a27271dc88e114801f5116b60d57940e7061080422c50dcb7b7b71f9349/sole_bili_get-0.0.4.tar.gz
+[2024-05-26 14:53:58] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/c4/99/3188536dbd0fb0f3eaa5a2da8d6e35ab530ee6eed13397aa921a9061fc34/pi_awning_webthing-0.3.5.tar.gz
+[2024-05-26 14:53:58] INFO root fetch - processPackages [crx-utils]: Downloading https://files.pythonhosted.org/packages/1c/66/200e3e3028cead3930d4b78dd1ac8480354faaf3f2c829b3fc0d664170bb/crx_utils-1.0.0.tar.gz
+[2024-05-26 14:53:58] INFO root fetch - processPackages [turftopic]: Downloading https://files.pythonhosted.org/packages/46/64/5c82fd372f4d71a9549b23b10c367d389ac69e34c5829e1b3c7134e4ba58/turftopic-0.2.8.tar.gz
+[2024-05-26 14:53:58] INFO root fetch - processPackages [findanywhere]: Downloading https://files.pythonhosted.org/packages/fb/8b/9b00b9ac150162672f219b25bb0f02bdf0796abd5befea89e6e9f0bd2390/findanywhere-1.0.0.tar.gz
+[2024-05-26 14:53:58] INFO root fetch - processPackages [sole-bili-get]: Downloading https://files.pythonhosted.org/packages/c7/a2/ce4df140bc6a9e5348184cb5f99935eea9a1d97e14469475798aa798927c/sole_bili_get-0.0.5.tar.gz
+[2024-05-26 14:53:58] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f1/2f/dababe8ec1ff31324459c7a29b5aec267c7ea11687bd982647b004a8b58c/pi_awning_webthing-0.3.6.tar.gz
+[2024-05-26 14:53:58] INFO root fetch - processPackages [findanywhere]: executing diffoscope
+[2024-05-26 14:53:58] INFO root fetch - processPackages [findanywhere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findanywhere-0.1.0.tar.gz tmp/findanywhere-1.0.0.tar.gz --markdown 20240526/f/findanywhere/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-05-26 14:53:58] INFO root fetch - processPackages [sole-bili-get]: executing diffoscope
+[2024-05-26 14:53:58] INFO root fetch - processPackages [sole-bili-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sole_bili_get-0.0.4.tar.gz tmp/sole_bili_get-0.0.5.tar.gz --markdown 20240526/s/sole-bili-get/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 14:53:59] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 14:53:59] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.5.tar.gz tmp/pi_awning_webthing-0.3.6.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-05-26 14:53:59] INFO root fetch - processPackages [crx-utils]: Downloading https://files.pythonhosted.org/packages/29/59/4eda06d92e6fe36af671b58522009ce9077bd8cef7834fab5be9df906937/crx_utils-1.1.0.tar.gz
+[2024-05-26 14:53:59] INFO root fetch - processPackages [turftopic]: Downloading https://files.pythonhosted.org/packages/a3/0c/872e64a5d7aa8c34619ed1edcd6d06abe24297fa4965a0e51d4760a37e6a/turftopic-0.2.9.tar.gz
+[2024-05-26 14:53:59] INFO root fetch - processPackages [crx-utils]: executing diffoscope
+[2024-05-26 14:53:59] INFO root fetch - processPackages [crx-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crx_utils-1.0.0.tar.gz tmp/crx_utils-1.1.0.tar.gz --markdown 20240526/c/crx-utils/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-26 14:53:59] INFO root fetch - processPackages [turftopic]: executing diffoscope
+[2024-05-26 14:53:59] INFO root fetch - processPackages [turftopic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turftopic-0.2.8.tar.gz tmp/turftopic-0.2.9.tar.gz --markdown 20240526/t/turftopic/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 14:53:59] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.5.tar.gz]
+[2024-05-26 14:53:59] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.6.tar.gz]
+[2024-05-26 14:53:59] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 14:53:59] INFO root fetch - processPackages [sole-bili-get]: Remove: archive file [/home/abi/fetcher/tmp/sole_bili_get-0.0.4.tar.gz]
+[2024-05-26 14:53:59] INFO root fetch - processPackages [sole-bili-get]: Remove: archive file [/home/abi/fetcher/tmp/sole_bili_get-0.0.5.tar.gz]
+[2024-05-26 14:53:59] INFO root fetch - main [MainThread]: End processing [sole-bili-get]: success
+[2024-05-26 14:53:59] INFO root fetch - processPackages [crx-utils]: Remove: archive file [/home/abi/fetcher/tmp/crx_utils-1.0.0.tar.gz]
+[2024-05-26 14:53:59] INFO root fetch - processPackages [crx-utils]: Remove: archive file [/home/abi/fetcher/tmp/crx_utils-1.1.0.tar.gz]
+[2024-05-26 14:53:59] INFO root fetch - main [MainThread]: End processing [crx-utils]: success
+[2024-05-26 14:53:59] INFO root fetch - processPackages [findanywhere]: Remove: archive file [/home/abi/fetcher/tmp/findanywhere-0.1.0.tar.gz]
+[2024-05-26 14:53:59] INFO root fetch - processPackages [findanywhere]: Remove: archive file [/home/abi/fetcher/tmp/findanywhere-1.0.0.tar.gz]
+[2024-05-26 14:53:59] INFO root fetch - main [MainThread]: End processing [findanywhere]: success
+[2024-05-26 14:54:00] INFO root fetch - processPackages [turftopic]: Remove: archive file [/home/abi/fetcher/tmp/turftopic-0.2.8.tar.gz]
+[2024-05-26 14:54:00] INFO root fetch - processPackages [turftopic]: Remove: archive file [/home/abi/fetcher/tmp/turftopic-0.2.9.tar.gz]
+[2024-05-26 14:54:00] INFO root fetch - main [MainThread]: End processing [turftopic]: success
+[2024-05-26 14:54:00] INFO root fetch - main [MainThread]: Store serial: [23382971]
