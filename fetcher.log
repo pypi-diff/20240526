@@ -4347,3 +4347,18 @@
 [2024-05-26 07:50:06] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.4.tar.gz]
 [2024-05-26 07:50:06] INFO root fetch - main [MainThread]: End processing [qspace]: success
 [2024-05-26 07:50:06] INFO root fetch - main [MainThread]: Store serial: [23380159]
+[2024-05-26 07:52:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380159]
+[2024-05-26 07:52:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 07:52:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbt-run-visualizer
+[2024-05-26 07:52:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neginver
+[2024-05-26 07:52:15] INFO root fetch - processPackages [neginver]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 07:52:15] INFO root fetch - processPackages [neginver]: Downloading https://files.pythonhosted.org/packages/de/fb/cc257377316ec1d95fa46babafb8320341b3b00cab0ea3c30c731fd6cba4/neginver-0.0.5.tar.gz
+[2024-05-26 07:52:15] WARNING root fetch - processPackages [dbt-run-visualizer]: Skipping, unable to determine old version
+[2024-05-26 07:52:15] INFO root fetch - main [MainThread]: End processing [dbt-run-visualizer] error
+[2024-05-26 07:52:15] INFO root fetch - processPackages [neginver]: Downloading https://files.pythonhosted.org/packages/0e/bf/ea15e75b373422aabea49b49b868a78800af350b345e12eaea66872ea2c0/neginver-0.0.6.tar.gz
+[2024-05-26 07:52:15] INFO root fetch - processPackages [neginver]: executing diffoscope
+[2024-05-26 07:52:15] INFO root fetch - processPackages [neginver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neginver-0.0.5.tar.gz tmp/neginver-0.0.6.tar.gz --markdown 20240526/n/neginver/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 07:52:16] INFO root fetch - processPackages [neginver]: Remove: archive file [/home/abi/fetcher/tmp/neginver-0.0.5.tar.gz]
+[2024-05-26 07:52:16] INFO root fetch - processPackages [neginver]: Remove: archive file [/home/abi/fetcher/tmp/neginver-0.0.6.tar.gz]
+[2024-05-26 07:52:16] INFO root fetch - main [MainThread]: End processing [neginver]: success
+[2024-05-26 07:52:16] INFO root fetch - main [MainThread]: Store serial: [23380167]
