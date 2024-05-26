@@ -13515,3 +13515,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:25:18] INFO root fetch - processPackages [financial-datasets]: Remove: archive file [/home/abi/fetcher/tmp/financial_datasets-0.1.9.tar.gz]
 [2024-05-26 17:25:18] INFO root fetch - main [MainThread]: End processing [financial-datasets]: success
 [2024-05-26 17:25:18] INFO root fetch - main [MainThread]: Store serial: [23384280]
+[2024-05-26 17:27:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384280]
+[2024-05-26 17:27:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zenaura
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tsugu
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dashai-test-tabular-classification-package
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: custom-development-standardisation
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ai-alchemy
+[2024-05-26 17:27:26] INFO root fetch - processPackages [zenaura]: New version: [0.9.50] Old Version: [0.9.33]
+[2024-05-26 17:27:26] INFO root fetch - processPackages [dashai-test-tabular-classification-package]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 17:27:26] WARNING root fetch - processPackages [custom-development-standardisation]: Skipping, unable to determine old version
+[2024-05-26 17:27:26] INFO root fetch - main [MainThread]: End processing [custom-development-standardisation] error
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-26 17:27:26] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/c0/ab/cc9340e3736fdc8b9ce91d1421daea59c715bfb215303cc68f2f002bebab/zenaura-0.9.33.tar.gz
+[2024-05-26 17:27:26] INFO root fetch - processPackages [tsugu]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-05-26 17:27:26] INFO root fetch - processPackages [dashai-test-tabular-classification-package]: Downloading https://files.pythonhosted.org/packages/6e/b5/eae42d85332e20036e7a262e79175128b27c7ec1ad04f614e35c3ac0c808/dashai_test_tabular_classification_package-0.1.1.tar.gz
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/3a/1b/a6230d9a9a5d24df60c18d943a55f40d55732dd5a701f5605119fe6bf7ca/ai_alchemy-0.1.5.tar.gz
+[2024-05-26 17:27:26] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/2d/1f/17296e26d4cc880f518cc1498c561fea1ba7287e11c39afee854a5903be8/tsugu-2.0.7.tar.gz
+[2024-05-26 17:27:26] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/3b/01/03143af2b58eefa06276bd3de2a0a016d92cfcca6be49cc3369373ba6eac/zenaura-0.9.50.tar.gz
+[2024-05-26 17:27:26] INFO root fetch - processPackages [dashai-test-tabular-classification-package]: Downloading https://files.pythonhosted.org/packages/30/cc/a8269fbe958c40bc14aacfe78fbb2bc9a7242dca66deff4953c909bc3e0c/dashai_test_tabular_classification_package-0.1.2.tar.gz
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/24/c7/7b37c9a68de5fbf1640a99233ecfd1dd36b1f759a5f5b220e0447ffaf76f/ai_alchemy-0.1.6.tar.gz
+[2024-05-26 17:27:26] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 17:27:26] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.33.tar.gz tmp/zenaura-0.9.50.tar.gz --markdown 20240526/z/zenaura/0.9.33-0.9.50/README.md --exclude *.pyd
+[2024-05-26 17:27:26] INFO root fetch - processPackages [dashai-test-tabular-classification-package]: executing diffoscope
+[2024-05-26 17:27:26] INFO root fetch - processPackages [dashai-test-tabular-classification-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashai_test_tabular_classification_package-0.1.1.tar.gz tmp/dashai_test_tabular_classification_package-0.1.2.tar.gz --markdown 20240526/d/dashai-test-tabular-classification-package/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 17:27:26] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.5.tar.gz tmp/ai_alchemy-0.1.6.tar.gz --markdown 20240526/a/ai-alchemy/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-26 17:27:27] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/de/c8/5ec3c9a081419a2f76eb6209074a5bc721b7a294e69f0bc43023e7fd5463/tsugu-2.0.8.tar.gz
+[2024-05-26 17:27:27] INFO root fetch - processPackages [tsugu]: executing diffoscope
+[2024-05-26 17:27:27] INFO root fetch - processPackages [tsugu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsugu-2.0.7.tar.gz tmp/tsugu-2.0.8.tar.gz --markdown 20240526/t/tsugu/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-05-26 17:27:27] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.33.tar.gz]
+[2024-05-26 17:27:27] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.50.tar.gz]
+[2024-05-26 17:27:27] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 17:27:27] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.5.tar.gz]
+[2024-05-26 17:27:27] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.6.tar.gz]
+[2024-05-26 17:27:27] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 17:27:27] INFO root fetch - processPackages [dashai-test-tabular-classification-package]: Remove: archive file [/home/abi/fetcher/tmp/dashai_test_tabular_classification_package-0.1.1.tar.gz]
+[2024-05-26 17:27:27] INFO root fetch - processPackages [dashai-test-tabular-classification-package]: Remove: archive file [/home/abi/fetcher/tmp/dashai_test_tabular_classification_package-0.1.2.tar.gz]
+[2024-05-26 17:27:27] INFO root fetch - main [MainThread]: End processing [dashai-test-tabular-classification-package]: success
+[2024-05-26 17:27:27] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-2.0.7.tar.gz]
+[2024-05-26 17:27:27] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-2.0.8.tar.gz]
+[2024-05-26 17:27:27] INFO root fetch - main [MainThread]: End processing [tsugu]: success
+[2024-05-26 17:27:27] INFO root fetch - main [MainThread]: Store serial: [23384295]
