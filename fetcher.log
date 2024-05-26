@@ -9633,3 +9633,62 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:25:56] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
 [2024-05-26 13:25:56] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2024-05-26 13:25:56] INFO root fetch - main [MainThread]: Store serial: [23382485]
+[2024-05-26 13:28:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382485]
+[2024-05-26 13:28:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchx-nightly
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchtnt-nightly
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-21
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostcli
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymail2
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ascii-colors
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pip2deb
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: port-ocean
+[2024-05-26 13:28:09] WARNING root fetch - processPackages [pymail2]: Skipping, unable to determine old version
+[2024-05-26 13:28:09] INFO root fetch - main [MainThread]: End processing [pymail2] error
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ascii-colors]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-26 13:28:09] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2024.5.25] Old Version: [2024.5.24]
+[2024-05-26 13:28:09] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-26 13:28:09] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240526] Old Version: [2.5.0b20240525]
+[2024-05-26 13:28:09] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 13:28:09] WARNING root fetch - processPackages [pip2deb]: Skipping, unable to determine old version
+[2024-05-26 13:28:09] INFO root fetch - main [MainThread]: End processing [pip2deb] error
+[2024-05-26 13:28:09] INFO root fetch - processPackages [ascii-colors]: Downloading https://files.pythonhosted.org/packages/2b/94/1a289d876af1adf8560ac52f97cf54f11038ff08e9982088399cc3526607/ascii_colors-0.3.0.tar.gz
+[2024-05-26 13:28:09] INFO root fetch - processPackages [port-ocean]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-26 13:28:09] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/4f/2c/1b1fd11c1eb29345cef72d90c551ee6ca39cb1ca91dcb13a62e39d09d3e9/torchx_nightly-2024.5.8-py3-none-any.whl
+[2024-05-26 13:28:09] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/95/a4/ea19eab2628506be242cb3aad58405135f4ce873a47b68def7c40702dab3/torchtnt_nightly-2024.5.24.tar.gz
+[2024-05-26 13:28:09] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/41/1a/9e19a9be0503f46f411ca6915c533c39df0d7d803720cb8508e0e2ed8923/bigdl_core_xe_21-2.5.0b20240525-cp39-cp39-manylinux2010_x86_64.whl
+[2024-05-26 13:28:09] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-26 13:28:10] INFO root fetch - processPackages [port-ocean]: Downloading https://files.pythonhosted.org/packages/78/bc/7cc9e8e2e79075a3c79c00273aaeb13f895d17585c027c53b61f77bdaba4/port_ocean-0.5.8.tar.gz
+[2024-05-26 13:28:10] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/77/19/3475ceeec15466054f155b399d006faaf128258c35d771397c04ac9cf1e4/torchx_nightly-2024.5.9-py3-none-any.whl
+[2024-05-26 13:28:10] INFO root fetch - processPackages [ascii-colors]: Downloading https://files.pythonhosted.org/packages/a2/59/1a1549cdeb5b66f64b5e00a6196641657d36bf62015704de5aba85dcfeb8/ascii_colors-0.3.1.tar.gz
+[2024-05-26 13:28:10] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 99334689>=10485760
+[2024-05-26 13:28:10] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-05-26 13:28:10] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/34/ea/e7433819af9612dcb911c786636dc6546368105bb31639f6645fb10b0f8c/torchtnt_nightly-2024.5.25.tar.gz
+[2024-05-26 13:28:10] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-05-26 13:28:10] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240526/t/torchx-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-26 13:28:10] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-26 13:28:10] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2024-05-26 13:28:10] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt_nightly-2024.5.24.tar.gz tmp/torchtnt_nightly-2024.5.25.tar.gz --markdown 20240526/t/torchtnt-nightly/2024.5.24-2024.5.25/README.md --exclude *.pyd
+[2024-05-26 13:28:10] INFO root fetch - processPackages [ascii-colors]: executing diffoscope
+[2024-05-26 13:28:10] INFO root fetch - processPackages [ascii-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ascii_colors-0.3.0.tar.gz tmp/ascii_colors-0.3.1.tar.gz --markdown 20240526/a/ascii-colors/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-26 13:28:10] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-26 13:28:10] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240526/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 13:28:10] INFO root fetch - processPackages [port-ocean]: Downloading https://files.pythonhosted.org/packages/9a/b8/b4b21f5c3d509271ff988cb9644c8429ce3f2eb23c44e309e16fc3f2c3d6/port_ocean-0.5.9.tar.gz
+[2024-05-26 13:28:10] INFO root fetch - processPackages [port-ocean]: executing diffoscope
+[2024-05-26 13:28:10] INFO root fetch - processPackages [port-ocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/port_ocean-0.5.8.tar.gz tmp/port_ocean-0.5.9.tar.gz --markdown 20240526/p/port-ocean/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-26 13:28:11] INFO root fetch - processPackages [ascii-colors]: Remove: archive file [/home/abi/fetcher/tmp/ascii_colors-0.3.0.tar.gz]
+[2024-05-26 13:28:11] INFO root fetch - processPackages [ascii-colors]: Remove: archive file [/home/abi/fetcher/tmp/ascii_colors-0.3.1.tar.gz]
+[2024-05-26 13:28:11] INFO root fetch - main [MainThread]: End processing [ascii-colors]: success
+[2024-05-26 13:28:11] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-26 13:28:11] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-26 13:28:11] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-26 13:28:11] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-26 13:28:11] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-26 13:28:11] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-05-26 13:28:11] INFO root fetch - processPackages [torchtnt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchtnt_nightly-2024.5.24.tar.gz]
+[2024-05-26 13:28:11] INFO root fetch - processPackages [torchtnt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchtnt_nightly-2024.5.25.tar.gz]
+[2024-05-26 13:28:11] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2024-05-26 13:28:11] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.8.tar.gz]
+[2024-05-26 13:28:11] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.9.tar.gz]
+[2024-05-26 13:28:11] INFO root fetch - main [MainThread]: End processing [port-ocean]: success
+[2024-05-26 13:28:11] INFO root fetch - main [MainThread]: Store serial: [23382511]
