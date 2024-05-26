@@ -16346,3 +16346,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:17:46] INFO root fetch - processPackages [cdk-ecr-deployment]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecr-deployment-3.0.9.tar.gz]
 [2024-05-26 20:17:46] INFO root fetch - main [MainThread]: End processing [cdk-ecr-deployment]: success
 [2024-05-26 20:17:46] INFO root fetch - main [MainThread]: Store serial: [23385644]
+[2024-05-26 20:19:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385644]
+[2024-05-26 20:19:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 20:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CryptoLyzer
+[2024-05-26 20:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchret
+[2024-05-26 20:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-grid-utils
+[2024-05-26 20:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: todoist-auto
+[2024-05-26 20:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ploomber-cloud
+[2024-05-26 20:19:54] INFO root fetch - processPackages [torchret]: New version: [0.1.0] Old Version: [0.0.7]
+[2024-05-26 20:19:54] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-05-26 20:19:54] INFO root fetch - processPackages [CryptoLyzer]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-26 20:19:54] WARNING root fetch - processPackages [torch-grid-utils]: Skipping, unable to determine old version
+[2024-05-26 20:19:54] INFO root fetch - main [MainThread]: End processing [torch-grid-utils] error
+[2024-05-26 20:19:54] INFO root fetch - processPackages [torchret]: Downloading https://files.pythonhosted.org/packages/ef/e4/32a2ba055d851b7acf99a3b13390ca7ad64bc70a29e1e2c8f6f26a037b57/torchret-0.0.7.tar.gz
+[2024-05-26 20:19:54] INFO root fetch - processPackages [ploomber-cloud]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 20:19:55] INFO root fetch - processPackages [CryptoLyzer]: Downloading https://files.pythonhosted.org/packages/5d/87/fd43a7a0c9ce446dda1c01266a4cf2f62026c1a37decf9f245b77f1ea2df/CryptoLyzer-0.9.0.tar.gz
+[2024-05-26 20:19:55] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-05-26 20:19:55] INFO root fetch - processPackages [torchret]: Downloading https://files.pythonhosted.org/packages/6a/6c/3b867b552b035a3e470915beb3f0e58ce761c952a70824ca6b151e0d3cb0/torchret-0.1.0.tar.gz
+[2024-05-26 20:19:55] INFO root fetch - processPackages [ploomber-cloud]: Downloading https://files.pythonhosted.org/packages/44/02/2939a122c298a4626319ed84948a420969ac264a167792faf057f26f6315/ploomber-cloud-0.2.8.tar.gz
+[2024-05-26 20:19:55] INFO root fetch - processPackages [torchret]: executing diffoscope
+[2024-05-26 20:19:55] INFO root fetch - processPackages [torchret]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchret-0.0.7.tar.gz tmp/torchret-0.1.0.tar.gz --markdown 20240526/t/torchret/0.0.7-0.1.0/README.md --exclude *.pyd
+[2024-05-26 20:19:55] INFO root fetch - processPackages [CryptoLyzer]: Downloading https://files.pythonhosted.org/packages/82/f6/dd4fd3151e4c1cb48102dbb19f5625b8be8d72dfbcc78d2f60b2db49ec7c/CryptoLyzer-0.9.1.tar.gz
+[2024-05-26 20:19:55] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-05-26 20:19:55] INFO root fetch - processPackages [ploomber-cloud]: Downloading https://files.pythonhosted.org/packages/64/73/d72bdffdf80ee8b9a69b4ee823321aee2e2e03f5319058c39a09cceb2c0f/ploomber-cloud-0.2.9.tar.gz
+[2024-05-26 20:19:55] INFO root fetch - processPackages [CryptoLyzer]: executing diffoscope
+[2024-05-26 20:19:55] INFO root fetch - processPackages [CryptoLyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CryptoLyzer-0.9.0.tar.gz tmp/CryptoLyzer-0.9.1.tar.gz --markdown 20240526/C/CryptoLyzer/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-26 20:19:55] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-05-26 20:19:55] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240526/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-05-26 20:19:55] INFO root fetch - processPackages [ploomber-cloud]: executing diffoscope
+[2024-05-26 20:19:55] INFO root fetch - processPackages [ploomber-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ploomber-cloud-0.2.8.tar.gz tmp/ploomber-cloud-0.2.9.tar.gz --markdown 20240526/p/ploomber-cloud/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 20:19:55] INFO root fetch - processPackages [torchret]: Remove: archive file [/home/abi/fetcher/tmp/torchret-0.0.7.tar.gz]
+[2024-05-26 20:19:55] INFO root fetch - processPackages [torchret]: Remove: archive file [/home/abi/fetcher/tmp/torchret-0.1.0.tar.gz]
+[2024-05-26 20:19:55] INFO root fetch - main [MainThread]: End processing [torchret]: success
+[2024-05-26 20:19:56] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-05-26 20:19:56] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-05-26 20:19:56] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-05-26 20:19:56] INFO root fetch - processPackages [ploomber-cloud]: Remove: archive file [/home/abi/fetcher/tmp/ploomber-cloud-0.2.8.tar.gz]
+[2024-05-26 20:19:56] INFO root fetch - processPackages [ploomber-cloud]: Remove: archive file [/home/abi/fetcher/tmp/ploomber-cloud-0.2.9.tar.gz]
+[2024-05-26 20:19:56] INFO root fetch - main [MainThread]: End processing [ploomber-cloud]: success
+[2024-05-26 20:19:56] INFO root fetch - processPackages [CryptoLyzer]: Remove: archive file [/home/abi/fetcher/tmp/CryptoLyzer-0.9.0.tar.gz]
+[2024-05-26 20:19:56] INFO root fetch - processPackages [CryptoLyzer]: Remove: archive file [/home/abi/fetcher/tmp/CryptoLyzer-0.9.1.tar.gz]
+[2024-05-26 20:19:56] INFO root fetch - main [MainThread]: End processing [CryptoLyzer]: success
+[2024-05-26 20:19:56] INFO root fetch - main [MainThread]: Store serial: [23385661]
