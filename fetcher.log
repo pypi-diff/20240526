@@ -5525,3 +5525,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:30:52] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
 [2024-05-26 09:30:52] INFO root fetch - main [MainThread]: End processing [cutseq]: success
 [2024-05-26 09:30:52] INFO root fetch - main [MainThread]: Store serial: [23380630]
+[2024-05-26 09:32:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380630]
+[2024-05-26 09:33:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 09:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GraphRetrieval
+[2024-05-26 09:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cutseq
+[2024-05-26 09:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypi-wukunhuan
+[2024-05-26 09:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scatcluster
+[2024-05-26 09:33:02] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.59]
+[2024-05-26 09:33:02] INFO root fetch - processPackages [cutseq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 09:33:02] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/28/72/8b33ab4499887d6c0896c33e6a39610d42daab4427a1f76f81d7eb6608f8/scatcluster-0.0.59.tar.gz
+[2024-05-26 09:33:02] INFO root fetch - processPackages [GraphRetrieval]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-26 09:33:02] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-05-26 09:33:02] WARNING root fetch - processPackages [pypi-wukunhuan]: Skipping, unable to determine old version
+[2024-05-26 09:33:02] INFO root fetch - main [MainThread]: End processing [pypi-wukunhuan] error
+[2024-05-26 09:33:02] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/be/9a/74a7b6a050ec0efcd070ce3e1534cfc68f748447bc2e5a6be92ce9c0cf8a/graphretrieval-0.1.5.tar.gz
+[2024-05-26 09:33:02] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 09:33:02] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/e5/82/45b103e58b439dac0cf4c7f6ef6957633721ec0f4553abfabba5ed961a0f/cutseq-0.0.9.tar.gz
+[2024-05-26 09:33:02] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 09:33:02] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.59.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.59-0.0.6/README.md --exclude *.pyd
+[2024-05-26 09:33:02] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-05-26 09:33:02] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.8.tar.gz tmp/cutseq-0.0.9.tar.gz --markdown 20240526/c/cutseq/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 09:33:02] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/de/50/e23baa05db1d1b20b9759f3c31a92cdae4c5b6a0fd66459bfe844398d0fe/graphretrieval-0.1.6.tar.gz
+[2024-05-26 09:33:03] INFO root fetch - processPackages [GraphRetrieval]: executing diffoscope
+[2024-05-26 09:33:03] INFO root fetch - processPackages [GraphRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphretrieval-0.1.5.tar.gz tmp/graphretrieval-0.1.6.tar.gz --markdown 20240526/G/GraphRetrieval/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-26 09:33:03] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.59.tar.gz]
+[2024-05-26 09:33:03] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 09:33:03] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 09:33:03] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-05-26 09:33:03] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
+[2024-05-26 09:33:03] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-05-26 09:33:03] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.5.tar.gz]
+[2024-05-26 09:33:03] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.6.tar.gz]
+[2024-05-26 09:33:03] INFO root fetch - main [MainThread]: End processing [GraphRetrieval]: success
+[2024-05-26 09:33:03] INFO root fetch - main [MainThread]: Store serial: [23380644]
