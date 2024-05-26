@@ -18395,3 +18395,30 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 22:07:51] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.1.4.tar.gz]
 [2024-05-26 22:07:51] INFO root fetch - main [MainThread]: End processing [pyiso20022]: success
 [2024-05-26 22:07:51] INFO root fetch - main [MainThread]: Store serial: [23386567]
+[2024-05-26 22:09:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386567]
+[2024-05-26 22:10:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 22:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matematikk
+[2024-05-26 22:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vizrecurse
+[2024-05-26 22:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mamba-ssm
+[2024-05-26 22:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: audiopro
+[2024-05-26 22:10:01] WARNING root fetch - processPackages [vizrecurse]: Skipping, unable to determine old version
+[2024-05-26 22:10:01] INFO root fetch - main [MainThread]: End processing [vizrecurse] error
+[2024-05-26 22:10:01] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 22:10:01] INFO root fetch - processPackages [mamba-ssm]: New version: [1.2.1] Old Version: [1.2.0.post1]
+[2024-05-26 22:10:01] WARNING root fetch - processPackages [audiopro]: Skipping, unable to determine old version
+[2024-05-26 22:10:01] INFO root fetch - main [MainThread]: End processing [audiopro] error
+[2024-05-26 22:10:01] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 22:10:01] INFO root fetch - processPackages [mamba-ssm]: Downloading https://files.pythonhosted.org/packages/d3/12/dc792f3136fc8969ac6404f091135ab1aa9260a978a625a77a3cce5299dd/mamba_ssm-1.2.0.post1.tar.gz
+[2024-05-26 22:10:01] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 22:10:01] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 22:10:01] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 22:10:01] INFO root fetch - processPackages [mamba-ssm]: Downloading https://files.pythonhosted.org/packages/c3/bd/648ff75f376b0bc7b60b91b10f5a6dd62b3ab7aa1c56794d86a84dff40bc/mamba_ssm-1.2.1.tar.gz
+[2024-05-26 22:10:02] INFO root fetch - processPackages [mamba-ssm]: executing diffoscope
+[2024-05-26 22:10:02] INFO root fetch - processPackages [mamba-ssm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mamba_ssm-1.2.0.post1.tar.gz tmp/mamba_ssm-1.2.1.tar.gz --markdown 20240526/m/mamba-ssm/1.2.0.post1-1.2.1/README.md --exclude *.pyd
+[2024-05-26 22:10:02] INFO root fetch - processPackages [mamba-ssm]: Remove: archive file [/home/abi/fetcher/tmp/mamba_ssm-1.2.0.post1.tar.gz]
+[2024-05-26 22:10:02] INFO root fetch - processPackages [mamba-ssm]: Remove: archive file [/home/abi/fetcher/tmp/mamba_ssm-1.2.1.tar.gz]
+[2024-05-26 22:10:02] INFO root fetch - main [MainThread]: End processing [mamba-ssm]: success
+[2024-05-26 22:10:02] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 22:10:02] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 22:10:02] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 22:10:02] INFO root fetch - main [MainThread]: Store serial: [23386582]
