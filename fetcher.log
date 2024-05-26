@@ -7502,3 +7502,108 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:03:55] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.7.tar.gz]
 [2024-05-26 11:03:55] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-26 11:03:55] INFO root fetch - main [MainThread]: Store serial: [23381501]
+[2024-05-26 11:06:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381501]
+[2024-05-26 11:06:06] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.common
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon.core
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.features
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autogluon.cloud
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autogluon.tabular
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autogluon.multimodal
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: neuralnetlib
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autogluon.timeseries
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autogluon
+[2024-05-26 11:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: opentelemetry-instrumentation-mistralai
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.cloud]: New version: [0.4.0b20240525] Old Version: [0.4.0b20240524]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.core]: New version: [1.1.1b20240525] Old Version: [1.1.1b20240524]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.features]: New version: [1.1.1b20240525] Old Version: [1.1.1b20240524]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.multimodal]: New version: [1.1.1b20240525] Old Version: [1.1.1b20240524]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.timeseries]: New version: [1.1.1b20240525] Old Version: [1.1.1b20240524]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.tabular]: New version: [1.1.1b20240525] Old Version: [1.1.1b20240524]
+[2024-05-26 11:06:07] WARNING root fetch - processPackages [opentelemetry-instrumentation-mistralai]: Skipping, unable to determine old version
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.common]: New version: [1.1.1b20240525] Old Version: [1.1.1b20240524]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [opentelemetry-instrumentation-mistralai]: Start processing: mimllearning
+[2024-05-26 11:06:07] INFO root fetch - main [MainThread]: End processing [opentelemetry-instrumentation-mistralai] error
+[2024-05-26 11:06:07] INFO root fetch - processPackages [neuralnetlib]: New version: [2.6.2] Old Version: [2.6.1]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240525] Old Version: [1.1.1b20240524]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.cloud]: Downloading https://files.pythonhosted.org/packages/31/ff/3adabe26bd44946318977e73aa0a98a13e0d51db43cf606eb973e515508b/autogluon.cloud-0.4.0b20240524.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [mimllearning]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/b1/c2/e62ed61d98a3cdcdbbbe3185b41d0026b8518bc9f804f6425152b10d36fc/autogluon.core-1.1.1b20240524.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/37/5e/5a0c2528dad3e88f239096f7cc8005380e2338af2eac98f903e975e39898/autogluon.common-1.1.1b20240524.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/5b/3d/ffdd22e265f0b2f54c13b265677fdf2ac16397c538a4c098407c6f4b04ad/autogluon.features-1.1.1b20240524.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/45/3f/16f163d26f3f2edf1bd9b125d3d8f9386db588a8a37f95526ff15068cb1d/autogluon.multimodal-1.1.1b20240524.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/95/c4/a6fb6a47c971c35309d3cbf563f4b88a393b18a35a6a7d1cf923a0441429/autogluon.timeseries-1.1.1b20240524.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/a7/ee/9c56108bf91c32125e45c63127ce3ac9367a9d69fb9795eeb5006116f3be/autogluon.tabular-1.1.1b20240524.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/f5/0d/b9527b81a255cf75f94f4a578ab5143731b3665ebce93218eb8c5a362a28/autogluon-1.1.1b20240524.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/99/7d/802a2d92078c0ecd263a094fefd350101de2dec99164c870fd688d7c8552/mimllearning-0.5.6.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/d3/cf/267fd8f15bc890b9698213e6b11cd81dacb6c2916f23068b32cd971390e2/neuralnetlib-2.6.1.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.cloud]: Downloading https://files.pythonhosted.org/packages/07/fa/e733023adee7d840f09379c162d8c762ed30ce5743bb44ccb464ebd0b3c6/autogluon.cloud-0.4.0b20240525.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/2a/03/126ef5ab274c13ada35d447cf5044c365d8f8133494825b39271787139cf/autogluon.features-1.1.1b20240525.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/aa/f1/5e620f043b2134328b51fbd81b4c976fb687c384555fa51f6dd93d4496cd/autogluon.common-1.1.1b20240525.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/48/ea/a7eaff7a330760049733c06e78fef221653747109c8a707acea0e80ae50b/autogluon.core-1.1.1b20240525.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.cloud]: executing diffoscope
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.cloud-0.4.0b20240524.tar.gz tmp/autogluon.cloud-0.4.0b20240525.tar.gz --markdown 20240526/a/autogluon.cloud/0.4.0b20240524-0.4.0b20240525/README.md --exclude *.pyd
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/e2/70/b2166800eb4a3b5136eea05b055d9f1e120d2ec97d24514d8099f71ad1c6/autogluon.timeseries-1.1.1b20240525.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/62/dd/ac80bee6176e1ec0a8ae41391d0b75b2e82027cdd57b00d7bdc4892b5d16/autogluon.multimodal-1.1.1b20240525.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/cd/00/80059bd3594591f0bb1c21665bac30259511e06a008154ce1814883fb860/autogluon.tabular-1.1.1b20240525.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/c1/fa/90b10dd6a0903f46e62534871cc110ff1efc5c94ff06aedca63495a73ab0/autogluon-1.1.1b20240525.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d5/17/e2d99c8d3537d9956e2a41ed63ef20062c5ef5dab07ab8aaae96e149e217/mimllearning-0.5.7.tar.gz
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2024-05-26 11:06:07] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-1.1.1b20240524.tar.gz tmp/autogluon.features-1.1.1b20240525.tar.gz --markdown 20240526/a/autogluon.features/1.1.1b20240524-1.1.1b20240525/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-1.1.1b20240524.tar.gz tmp/autogluon.core-1.1.1b20240525.tar.gz --markdown 20240526/a/autogluon.core/1.1.1b20240524-1.1.1b20240525/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.1.1b20240524.tar.gz tmp/autogluon.common-1.1.1b20240525.tar.gz --markdown 20240526/a/autogluon.common/1.1.1b20240524-1.1.1b20240525/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240524.tar.gz tmp/autogluon-1.1.1b20240525.tar.gz --markdown 20240526/a/autogluon/1.1.1b20240524-1.1.1b20240525/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-1.1.1b20240524.tar.gz tmp/autogluon.timeseries-1.1.1b20240525.tar.gz --markdown 20240526/a/autogluon.timeseries/1.1.1b20240524-1.1.1b20240525/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/b8/c7/2ae00b9e0d4b36483bf8ee2d5d8e976d9a3bc290bdb5efc3f638ce93b615/neuralnetlib-2.6.2.tar.gz
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-1.1.1b20240524.tar.gz tmp/autogluon.tabular-1.1.1b20240525.tar.gz --markdown 20240526/a/autogluon.tabular/1.1.1b20240524-1.1.1b20240525/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-1.1.1b20240524.tar.gz tmp/autogluon.multimodal-1.1.1b20240525.tar.gz --markdown 20240526/a/autogluon.multimodal/1.1.1b20240524-1.1.1b20240525/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [neuralnetlib]: executing diffoscope
+[2024-05-26 11:06:08] INFO root fetch - processPackages [neuralnetlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralnetlib-2.6.1.tar.gz tmp/neuralnetlib-2.6.2.tar.gz --markdown 20240526/n/neuralnetlib/2.6.1-2.6.2/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-26 11:06:08] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.6.tar.gz tmp/mimllearning-0.5.7.tar.gz --markdown 20240526/m/mimllearning/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240524.tar.gz]
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240525.tar.gz]
+[2024-05-26 11:06:08] INFO root fetch - processPackages [autogluon.features]: Start processing: EcoStock
+[2024-05-26 11:06:08] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [EcoStock]: New version: [1.2] Old Version: [1.1]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240524.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240525.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.cloud]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.cloud-0.4.0b20240524.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.cloud]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.cloud-0.4.0b20240525.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - main [MainThread]: End processing [autogluon.cloud]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240524.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240525.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/3b/af/bfa8913eb6cb74422445a91bdc6d25cfb21d0c597c61c36400a9d85bc98d/ecostock-1.1.tar.gz
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240524.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240525.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.6.1.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.6.2.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - main [MainThread]: End processing [neuralnetlib]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240524.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240525.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240524.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240525.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240524.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240525.tar.gz]
+[2024-05-26 11:06:09] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
+[2024-05-26 11:06:09] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/59/d2/6dcffa0083625eb829a9c3dad160f677951c3b5966008190fada62b9bc79/ecostock-1.2.tar.gz
+[2024-05-26 11:06:09] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-05-26 11:06:09] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecostock-1.1.tar.gz tmp/ecostock-1.2.tar.gz --markdown 20240526/E/EcoStock/1.1-1.2/README.md --exclude *.pyd
+[2024-05-26 11:06:10] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.1.tar.gz]
+[2024-05-26 11:06:10] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.2.tar.gz]
+[2024-05-26 11:06:10] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-05-26 11:06:10] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.6.tar.gz]
+[2024-05-26 11:06:10] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.7.tar.gz]
+[2024-05-26 11:06:10] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-26 11:06:10] INFO root fetch - main [MainThread]: Store serial: [23381539]
