@@ -4675,3 +4675,24 @@
 [2024-05-26 08:26:55] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.88.tar.gz]
 [2024-05-26 08:26:55] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
 [2024-05-26 08:26:55] INFO root fetch - main [MainThread]: Store serial: [23380317]
+[2024-05-26 08:28:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380317]
+[2024-05-26 08:29:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 08:29:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-pipe
+[2024-05-26 08:29:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ahmedHossam
+[2024-05-26 08:29:03] INFO root fetch - processPackages [api-pipe]: New version: [2.0.17] Old Version: [2.0.16]
+[2024-05-26 08:29:04] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/42/c2/1fb64f8d24e00abbe67bd56812bfcd37f759a2301cf9b10de28943061826/api_pipe-2.0.16.tar.gz
+[2024-05-26 08:29:04] INFO root fetch - processPackages [ahmedHossam]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 08:29:04] INFO root fetch - processPackages [ahmedHossam]: Downloading https://files.pythonhosted.org/packages/3e/c4/a226eda6420413ea8b469d050adae0f9b7906858481d4146e6a5f40ee1ba/ahmedhossam-0.0.5.tar.gz
+[2024-05-26 08:29:04] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/b3/e9/a1edb9caec5ca8e0fdb20a4b3291f867977a0b0d1d08a04bd0f66cb04e74/api_pipe-2.0.17.tar.gz
+[2024-05-26 08:29:04] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-05-26 08:29:04] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.16.tar.gz tmp/api_pipe-2.0.17.tar.gz --markdown 20240526/a/api-pipe/2.0.16-2.0.17/README.md --exclude *.pyd
+[2024-05-26 08:29:04] INFO root fetch - processPackages [ahmedHossam]: Downloading https://files.pythonhosted.org/packages/f5/a7/be148729fc337d2fac091ee109a110e4469371ce0e50794396d88c3f6188/ahmedHossam-0.0.6.tar.gz
+[2024-05-26 08:29:04] INFO root fetch - processPackages [ahmedHossam]: executing diffoscope
+[2024-05-26 08:29:04] INFO root fetch - processPackages [ahmedHossam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ahmedhossam-0.0.5.tar.gz tmp/ahmedHossam-0.0.6.tar.gz --markdown 20240526/a/ahmedHossam/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 08:29:05] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.16.tar.gz]
+[2024-05-26 08:29:05] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.17.tar.gz]
+[2024-05-26 08:29:05] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-05-26 08:29:05] INFO root fetch - processPackages [ahmedHossam]: Remove: archive file [/home/abi/fetcher/tmp/ahmedhossam-0.0.5.tar.gz]
+[2024-05-26 08:29:05] INFO root fetch - processPackages [ahmedHossam]: Remove: archive file [/home/abi/fetcher/tmp/ahmedHossam-0.0.6.tar.gz]
+[2024-05-26 08:29:05] INFO root fetch - main [MainThread]: End processing [ahmedHossam]: success
+[2024-05-26 08:29:05] INFO root fetch - main [MainThread]: Store serial: [23380322]
