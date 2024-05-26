@@ -4002,3 +4002,30 @@
 [2024-05-26 07:17:39] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
 [2024-05-26 07:17:39] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2024-05-26 07:17:39] INFO root fetch - main [MainThread]: Store serial: [23379912]
+[2024-05-26 07:19:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379912]
+[2024-05-26 07:19:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 07:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-linkscraper
+[2024-05-26 07:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-loancalculator
+[2024-05-26 07:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: liveflask
+[2024-05-26 07:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-loremipsumgenerator
+[2024-05-26 07:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apiverve-lovecalculator
+[2024-05-26 07:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apiverve-marineweather
+[2024-05-26 07:19:48] INFO root fetch - processPackages [liveflask]: New version: [1.0.9rc6] Old Version: [1.0.9rc5]
+[2024-05-26 07:19:48] INFO root fetch - processPackages [liveflask]: Downloading https://files.pythonhosted.org/packages/4f/f7/9fa1b550df92979d3653b69ad0f8af57358884c417fc600ac326b87f6266/liveflask-1.0.9rc5.tar.gz
+[2024-05-26 07:19:48] WARNING root fetch - processPackages [apiverve-lovecalculator]: Skipping, unable to determine old version
+[2024-05-26 07:19:48] INFO root fetch - main [MainThread]: End processing [apiverve-lovecalculator] error
+[2024-05-26 07:19:48] WARNING root fetch - processPackages [apiverve-loremipsumgenerator]: Skipping, unable to determine old version
+[2024-05-26 07:19:48] INFO root fetch - main [MainThread]: End processing [apiverve-loremipsumgenerator] error
+[2024-05-26 07:19:48] WARNING root fetch - processPackages [apiverve-linkscraper]: Skipping, unable to determine old version
+[2024-05-26 07:19:48] INFO root fetch - main [MainThread]: End processing [apiverve-linkscraper] error
+[2024-05-26 07:19:48] WARNING root fetch - processPackages [apiverve-loancalculator]: Skipping, unable to determine old version
+[2024-05-26 07:19:48] INFO root fetch - main [MainThread]: End processing [apiverve-loancalculator] error
+[2024-05-26 07:19:48] WARNING root fetch - processPackages [apiverve-marineweather]: Skipping, unable to determine old version
+[2024-05-26 07:19:48] INFO root fetch - main [MainThread]: End processing [apiverve-marineweather] error
+[2024-05-26 07:19:48] INFO root fetch - processPackages [liveflask]: Downloading https://files.pythonhosted.org/packages/c9/85/db794ba1759ab4e9865cd2537ac486073560649c795fb7212df21fe29eaf/liveflask-1.0.9rc6.tar.gz
+[2024-05-26 07:19:48] INFO root fetch - processPackages [liveflask]: executing diffoscope
+[2024-05-26 07:19:48] INFO root fetch - processPackages [liveflask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liveflask-1.0.9rc5.tar.gz tmp/liveflask-1.0.9rc6.tar.gz --markdown 20240526/l/liveflask/1.0.9rc5-1.0.9rc6/README.md --exclude *.pyd
+[2024-05-26 07:19:49] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.9rc5.tar.gz]
+[2024-05-26 07:19:49] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.9rc6.tar.gz]
+[2024-05-26 07:19:49] INFO root fetch - main [MainThread]: End processing [liveflask]: success
+[2024-05-26 07:19:49] INFO root fetch - main [MainThread]: Store serial: [23379939]
