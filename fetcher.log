@@ -1318,3 +1318,27 @@
 [2024-05-26 02:36:11] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240525.tar.gz]
 [2024-05-26 02:36:11] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
 [2024-05-26 02:36:11] INFO root fetch - main [MainThread]: Store serial: [23378691]
+[2024-05-26 02:38:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378691]
+[2024-05-26 02:38:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 02:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchao-nightly
+[2024-05-26 02:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baseball
+[2024-05-26 02:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rshf
+[2024-05-26 02:38:19] INFO root fetch - processPackages [torchao-nightly]: New version: [2024.5.25] Old Version: [2024.5.24]
+[2024-05-26 02:38:19] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-26 02:38:19] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/bc/1b/a4ee925f9e354e852735e5b642f4c094474df66aeb36ed673f260096007c/torchao_nightly-2024.5.24-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-26 02:38:19] ERROR root fetch - processPackages [rshf]: Unable to get metadata: No such project 'rshf'
+[2024-05-26 02:38:19] INFO root fetch - main [MainThread]: End processing [rshf] error
+[2024-05-26 02:38:19] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-26 02:38:19] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-26 02:38:19] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-26 02:38:19] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240526/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-26 02:38:19] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/49/c3/2832d84e01dd3435a1d743716a735c7d17118572bc4fad7adb4c4206d9ac/torchao_nightly-2024.5.25-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-26 02:38:20] INFO root fetch - processPackages [torchao-nightly]: executing diffoscope
+[2024-05-26 02:38:20] INFO root fetch - processPackages [torchao-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchao_nightly-2024.5.24-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/torchao_nightly-2024.5.25-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240526/t/torchao-nightly/2024.5.24-2024.5.25/README.md --exclude *.pyd
+[2024-05-26 02:38:20] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-26 02:38:20] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-26 02:38:20] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-26 02:38:22] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao_nightly-2024.5.24-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-26 02:38:22] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao_nightly-2024.5.25-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-26 02:38:22] INFO root fetch - main [MainThread]: End processing [torchao-nightly]: success
+[2024-05-26 02:38:22] INFO root fetch - main [MainThread]: Store serial: [23378706]
