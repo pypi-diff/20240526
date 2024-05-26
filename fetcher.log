@@ -1112,3 +1112,56 @@
 [2024-05-26 02:21:00] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.4.1.tar.gz]
 [2024-05-26 02:21:00] INFO root fetch - main [MainThread]: End processing [eras]: success
 [2024-05-26 02:21:00] INFO root fetch - main [MainThread]: Store serial: [23378612]
+[2024-05-26 02:23:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378612]
+[2024-05-26 02:23:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 02:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightning-thunder
+[2024-05-26 02:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.cdk-ethereum-node
+[2024-05-26 02:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-05-26 02:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lightning
+[2024-05-26 02:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-cr-constructs
+[2024-05-26 02:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-aurora-globaldatabase
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-05-26 02:23:09] INFO root fetch - processPackages [lightning-thunder]: New version: [0.2.0.dev20240526] Old Version: [0.2.0.dev20240519]
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.467] Old Version: [2.1.466]
+[2024-05-26 02:23:09] INFO root fetch - processPackages [lightning]: New version: [2.3.0.dev20240526] Old Version: [2.3.0.dev20240519]
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/45/d1/379bd91f80e639ea056f92f86de81a7359ae7b75b355c031f2fafccf4129/lightning_thunder-0.2.0.dev20240519.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/90/df/76078f96d1e00dbac3dc04e658af7ba2c2119e91bcb081356501c43e34cb/cdk-cr-constructs-2.1.466.tar.gz
+[2024-05-26 02:23:09] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15123568>=10485760
+[2024-05-26 02:23:09] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-05-26 02:23:09] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/40/31/4c750dd40f7e923538f270afac190050310360f8baf8a3501e3a2fc598a8/lightning-2.3.0.dev20240519.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240526/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240526/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-26 02:23:09] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/3e/ef/afe9592fcca5dc5bb00dff8546a13cefb5d4debea96c0c774c32c4f6c080/lightning_thunder-0.2.0.dev20240526.tar.gz
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-05-26 02:23:09] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240526/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-05-26 02:23:10] INFO root fetch - processPackages [lightning-thunder]: executing diffoscope
+[2024-05-26 02:23:10] INFO root fetch - processPackages [lightning-thunder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning_thunder-0.2.0.dev20240519.tar.gz tmp/lightning_thunder-0.2.0.dev20240526.tar.gz --markdown 20240526/l/lightning-thunder/0.2.0.dev20240519-0.2.0.dev20240526/README.md --exclude *.pyd
+[2024-05-26 02:23:10] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/d4/70/0df73dd1e03eeb8a6cbd79e52c4f7bddb02e6f97829f5eab945aaffbe7c7/lightning-2.3.0.dev20240526.tar.gz
+[2024-05-26 02:23:10] INFO root fetch - processPackages [lightning]: executing diffoscope
+[2024-05-26 02:23:10] INFO root fetch - processPackages [lightning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-2.3.0.dev20240519.tar.gz tmp/lightning-2.3.0.dev20240526.tar.gz --markdown 20240526/l/lightning/2.3.0.dev20240519-2.3.0.dev20240526/README.md --exclude *.pyd
+[2024-05-26 02:23:10] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-05-26 02:23:10] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-05-26 02:23:10] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-05-26 02:23:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-05-26 02:23:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-05-26 02:23:10] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-05-26 02:23:10] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-05-26 02:23:10] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-05-26 02:23:10] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-05-26 02:23:11] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240519.tar.gz]
+[2024-05-26 02:23:11] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240526.tar.gz]
+[2024-05-26 02:23:11] INFO root fetch - main [MainThread]: End processing [lightning-thunder]: success
+[2024-05-26 02:23:13] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240519.tar.gz]
+[2024-05-26 02:23:13] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240526.tar.gz]
+[2024-05-26 02:23:13] INFO root fetch - main [MainThread]: End processing [lightning]: success
+[2024-05-26 02:23:13] INFO root fetch - main [MainThread]: Store serial: [23378630]
