@@ -11465,3 +11465,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:44:34] INFO root fetch - processPackages [django-cefran]: Remove: archive file [/home/abi/fetcher/tmp/django_cefran-0.0.3.tar.gz]
 [2024-05-26 15:44:34] INFO root fetch - main [MainThread]: End processing [django-cefran]: success
 [2024-05-26 15:44:34] INFO root fetch - main [MainThread]: Store serial: [23383404]
+[2024-05-26 15:46:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383404]
+[2024-05-26 15:47:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 15:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moval
+[2024-05-26 15:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: benchmarkfcns
+[2024-05-26 15:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pi-awning-webthing
+[2024-05-26 15:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybrowsers
+[2024-05-26 15:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: html-to-jira
+[2024-05-26 15:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dscontexai
+[2024-05-26 15:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pypstk
+[2024-05-26 15:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: slack-machine
+[2024-05-26 15:47:03] WARNING root fetch - processPackages [dscontexai]: Skipping, unable to determine old version
+[2024-05-26 15:47:03] INFO root fetch - main [MainThread]: End processing [dscontexai] error
+[2024-05-26 15:47:03] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 15:47:03] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f3/91/ba07c9e27dbb568d0143cb8eab18a7b153f080c095d6be2a900c7fd69332/pi_awning_webthing-0.3.8.tar.gz
+[2024-05-26 15:47:03] INFO root fetch - processPackages [benchmarkfcns]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-26 15:47:03] INFO root fetch - processPackages [pybrowsers]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-05-26 15:47:03] WARNING root fetch - processPackages [html-to-jira]: Skipping, unable to determine old version
+[2024-05-26 15:47:03] INFO root fetch - main [MainThread]: End processing [html-to-jira] error
+[2024-05-26 15:47:03] WARNING root fetch - processPackages [pypstk]: Skipping, unable to determine old version
+[2024-05-26 15:47:03] INFO root fetch - main [MainThread]: End processing [pypstk] error
+[2024-05-26 15:47:03] INFO root fetch - processPackages [moval]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 15:47:03] INFO root fetch - processPackages [slack-machine]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 15:47:03] INFO root fetch - processPackages [benchmarkfcns]: Downloading https://files.pythonhosted.org/packages/c1/62/d17641b5dd48ad4ba99cd4d8241b33d73dfc5b7d80ee77944d47fb2fce56/benchmarkfcns-2.0.0.tar.gz
+[2024-05-26 15:47:03] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/8a/aa/b16fe864612aedce9b33655b5aa4b6529ca2716bc8af23353d0c5850bae7/moval-0.3.8.tar.gz
+[2024-05-26 15:47:03] INFO root fetch - processPackages [pybrowsers]: Downloading https://files.pythonhosted.org/packages/fd/ed/d219657626e3cdc948787eacb645701c62608dd257650b659d862681f4e1/pybrowsers-0.5.2.tar.gz
+[2024-05-26 15:47:03] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 15:47:03] INFO root fetch - processPackages [slack-machine]: Downloading https://files.pythonhosted.org/packages/12/d8/f79d8c4179393b9acd82d41104f6e03458622eedbe19b4773916f9ecea66/slack-machine-0.8.tar.gz
+[2024-05-26 15:47:03] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 15:47:03] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.8.tar.gz tmp/pi_awning_webthing-0.3.9.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 15:47:04] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/b4/3b/6db51dc55940cdbf87faccdbbdb0feff90bf5743a5ba796f48046c862b4b/moval-0.3.9.tar.gz
+[2024-05-26 15:47:04] INFO root fetch - processPackages [pybrowsers]: Downloading https://files.pythonhosted.org/packages/12/73/11f9a84df5fdc5d88b33b992af9a6caf96e09ad84cf3c0026f76af0e1bac/pybrowsers-0.6.0.tar.gz
+[2024-05-26 15:47:04] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-05-26 15:47:04] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.3.8.tar.gz tmp/moval-0.3.9.tar.gz --markdown 20240526/m/moval/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 15:47:04] INFO root fetch - processPackages [slack-machine]: Downloading https://files.pythonhosted.org/packages/36/73/e01dbd3c0c33de47093013946f646bfe5609f3219568a043c87eb0abb404/slack-machine-0.9.tar.gz
+[2024-05-26 15:47:04] INFO root fetch - processPackages [pybrowsers]: executing diffoscope
+[2024-05-26 15:47:04] INFO root fetch - processPackages [pybrowsers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrowsers-0.5.2.tar.gz tmp/pybrowsers-0.6.0.tar.gz --markdown 20240526/p/pybrowsers/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-05-26 15:47:04] INFO root fetch - processPackages [benchmarkfcns]: Downloading https://files.pythonhosted.org/packages/ad/d5/5151e40fca9cf3dc5ea1806d68e6b06025f3722ff043b85d7a11e53d2d01/benchmarkfcns-2.1.0.tar.gz
+[2024-05-26 15:47:04] INFO root fetch - processPackages [slack-machine]: executing diffoscope
+[2024-05-26 15:47:04] INFO root fetch - processPackages [slack-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slack-machine-0.8.tar.gz tmp/slack-machine-0.9.tar.gz --markdown 20240526/s/slack-machine/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 15:47:04] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.8.tar.gz]
+[2024-05-26 15:47:04] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 15:47:04] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 15:47:04] INFO root fetch - processPackages [pybrowsers]: Remove: archive file [/home/abi/fetcher/tmp/pybrowsers-0.5.2.tar.gz]
+[2024-05-26 15:47:04] INFO root fetch - processPackages [pybrowsers]: Remove: archive file [/home/abi/fetcher/tmp/pybrowsers-0.6.0.tar.gz]
+[2024-05-26 15:47:04] INFO root fetch - main [MainThread]: End processing [pybrowsers]: success
+[2024-05-26 15:47:04] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.8.tar.gz]
+[2024-05-26 15:47:04] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.9.tar.gz]
+[2024-05-26 15:47:04] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-05-26 15:47:04] INFO root fetch - processPackages [benchmarkfcns]: executing diffoscope
+[2024-05-26 15:47:04] INFO root fetch - processPackages [benchmarkfcns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchmarkfcns-2.0.0.tar.gz tmp/benchmarkfcns-2.1.0.tar.gz --markdown 20240526/b/benchmarkfcns/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-26 15:47:05] INFO root fetch - processPackages [slack-machine]: Remove: archive file [/home/abi/fetcher/tmp/slack-machine-0.8.tar.gz]
+[2024-05-26 15:47:05] INFO root fetch - processPackages [slack-machine]: Remove: archive file [/home/abi/fetcher/tmp/slack-machine-0.9.tar.gz]
+[2024-05-26 15:47:05] INFO root fetch - main [MainThread]: End processing [slack-machine]: success
+[2024-05-26 15:47:11] INFO root fetch - processPackages [benchmarkfcns]: Remove: archive file [/home/abi/fetcher/tmp/benchmarkfcns-2.0.0.tar.gz]
+[2024-05-26 15:47:11] INFO root fetch - processPackages [benchmarkfcns]: Remove: archive file [/home/abi/fetcher/tmp/benchmarkfcns-2.1.0.tar.gz]
+[2024-05-26 15:47:11] INFO root fetch - main [MainThread]: End processing [benchmarkfcns]: success
+[2024-05-26 15:47:11] INFO root fetch - main [MainThread]: Store serial: [23383467]
