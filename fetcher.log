@@ -4128,3 +4128,51 @@
 [2024-05-26 07:30:37] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/ab_test_advanced_toolkit-0.0.9.tar.gz]
 [2024-05-26 07:30:37] INFO root fetch - main [MainThread]: End processing [ab-test-advanced-toolkit]: success
 [2024-05-26 07:30:37] INFO root fetch - main [MainThread]: Store serial: [23380007]
+[2024-05-26 07:32:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380007]
+[2024-05-26 07:32:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 07:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: angle-emb
+[2024-05-26 07:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-core
+[2024-05-26 07:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wi1-bot
+[2024-05-26 07:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tflite-runtime-nightly
+[2024-05-26 07:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trade-lib
+[2024-05-26 07:32:45] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.17.0.dev20240524] Old Version: [2.17.0.dev20240522]
+[2024-05-26 07:32:45] INFO root fetch - processPackages [trade-lib]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-26 07:32:45] INFO root fetch - processPackages [angle-emb]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-26 07:32:45] INFO root fetch - processPackages [wi1-bot]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-05-26 07:32:45] INFO root fetch - processPackages [pypomes-core]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-26 07:32:46] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/43/52/5c8adc0b7cb85236aaff3d1e9d3351970afa0c5b43a8aff98877cdd9f94e/tflite_runtime_nightly-2.17.0.dev20240522-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-26 07:32:46] INFO root fetch - processPackages [wi1-bot]: Downloading https://files.pythonhosted.org/packages/b4/56/cf11f9a0a4e25aec64bf5ff3a5586b2bba033b3a8711311f4a46424b81b4/wi1-bot-1.4.3.tar.gz
+[2024-05-26 07:32:46] INFO root fetch - processPackages [angle-emb]: Downloading https://files.pythonhosted.org/packages/13/1e/b7adfbad568ff9e8fe26551fcca6bea5a418db8246a45a3a4ffe63e8b905/angle_emb-0.4.2.tar.gz
+[2024-05-26 07:32:46] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/91/87/57883279880eedc3c326852007afe550a8bf1f2167d32684650bd8ad2cb7/pypomes_core-1.0.7.tar.gz
+[2024-05-26 07:32:46] INFO root fetch - processPackages [trade-lib]: Downloading https://files.pythonhosted.org/packages/fa/09/8ef2c4ffc5a8b1fcb2ddd7d79455b057a8d951c15de730af156351b230cf/trade_lib-0.2.0.tar.gz
+[2024-05-26 07:32:46] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/49/6c/cfff1fc0aae90f30a6b7f6fdaf9de9c3b8dc12183519e1af6c48d0b6bd50/tflite_runtime_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-26 07:32:46] INFO root fetch - processPackages [angle-emb]: Downloading https://files.pythonhosted.org/packages/3d/05/669dfd85b2d06171340e936f3ad376fc64ff48e11a9cab7a1f168d7f5fc4/angle_emb-0.4.3.tar.gz
+[2024-05-26 07:32:46] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/0b/45/236c965fe5a3d3d7bc396c1080139b17052416506c7e4bec71cef09ca702/pypomes_core-1.0.8.tar.gz
+[2024-05-26 07:32:46] INFO root fetch - processPackages [wi1-bot]: Downloading https://files.pythonhosted.org/packages/46/e6/812d605c7fd337879921865f01fb93962240a923e376f499ad4c035f2a6d/wi1-bot-1.4.4.tar.gz
+[2024-05-26 07:32:46] INFO root fetch - processPackages [trade-lib]: Downloading https://files.pythonhosted.org/packages/80/9a/701cb26e1e43fbb351303c03a4c99714c58c23a4f37b1182acc8e74bd48a/trade_lib-0.2.1.tar.gz
+[2024-05-26 07:32:46] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2024-05-26 07:32:46] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.17.0.dev20240522-cp39-cp39-manylinux_2_34_armv7l.whl.zip tmp/tflite_runtime_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_34_armv7l.whl.zip --markdown 20240526/t/tflite-runtime-nightly/2.17.0.dev20240522-2.17.0.dev20240524/README.md --exclude *.pyd
+[2024-05-26 07:32:46] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-05-26 07:32:46] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-1.0.7.tar.gz tmp/pypomes_core-1.0.8.tar.gz --markdown 20240526/p/pypomes-core/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-26 07:32:46] INFO root fetch - processPackages [angle-emb]: executing diffoscope
+[2024-05-26 07:32:46] INFO root fetch - processPackages [angle-emb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angle_emb-0.4.2.tar.gz tmp/angle_emb-0.4.3.tar.gz --markdown 20240526/a/angle-emb/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-26 07:32:46] INFO root fetch - processPackages [wi1-bot]: executing diffoscope
+[2024-05-26 07:32:46] INFO root fetch - processPackages [wi1-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wi1-bot-1.4.3.tar.gz tmp/wi1-bot-1.4.4.tar.gz --markdown 20240526/w/wi1-bot/1.4.3-1.4.4/README.md --exclude *.pyd
+[2024-05-26 07:32:46] INFO root fetch - processPackages [trade-lib]: executing diffoscope
+[2024-05-26 07:32:46] INFO root fetch - processPackages [trade-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trade_lib-0.2.0.tar.gz tmp/trade_lib-0.2.1.tar.gz --markdown 20240526/t/trade-lib/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-26 07:32:47] INFO root fetch - processPackages [wi1-bot]: Remove: archive file [/home/abi/fetcher/tmp/wi1-bot-1.4.3.tar.gz]
+[2024-05-26 07:32:47] INFO root fetch - processPackages [wi1-bot]: Remove: archive file [/home/abi/fetcher/tmp/wi1-bot-1.4.4.tar.gz]
+[2024-05-26 07:32:47] INFO root fetch - main [MainThread]: End processing [wi1-bot]: success
+[2024-05-26 07:32:47] INFO root fetch - processPackages [angle-emb]: Remove: archive file [/home/abi/fetcher/tmp/angle_emb-0.4.2.tar.gz]
+[2024-05-26 07:32:47] INFO root fetch - processPackages [angle-emb]: Remove: archive file [/home/abi/fetcher/tmp/angle_emb-0.4.3.tar.gz]
+[2024-05-26 07:32:47] INFO root fetch - main [MainThread]: End processing [angle-emb]: success
+[2024-05-26 07:32:47] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-1.0.7.tar.gz]
+[2024-05-26 07:32:47] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-1.0.8.tar.gz]
+[2024-05-26 07:32:47] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-05-26 07:32:47] INFO root fetch - processPackages [trade-lib]: Remove: archive file [/home/abi/fetcher/tmp/trade_lib-0.2.0.tar.gz]
+[2024-05-26 07:32:47] INFO root fetch - processPackages [trade-lib]: Remove: archive file [/home/abi/fetcher/tmp/trade_lib-0.2.1.tar.gz]
+[2024-05-26 07:32:47] INFO root fetch - main [MainThread]: End processing [trade-lib]: success
+[2024-05-26 07:33:09] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240522-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-26 07:33:09] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-26 07:33:09] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2024-05-26 07:33:09] INFO root fetch - main [MainThread]: Store serial: [23380029]
