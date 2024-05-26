@@ -18422,3 +18422,58 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 22:10:02] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
 [2024-05-26 22:10:02] INFO root fetch - main [MainThread]: End processing [matematikk]: success
 [2024-05-26 22:10:02] INFO root fetch - main [MainThread]: Store serial: [23386582]
+[2024-05-26 22:12:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386582]
+[2024-05-26 22:12:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ricklib
+[2024-05-26 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sdss-hal
+[2024-05-26 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beets-yearfixer
+[2024-05-26 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: infn-ophyd-hal
+[2024-05-26 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: infn-ophyd-hal
+[2024-05-26 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tccli
+[2024-05-26 22:12:11] INFO root fetch - processPackages [infn-ophyd-hal]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-26 22:12:11] INFO root fetch - processPackages [ricklib]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 22:12:11] INFO root fetch - processPackages [infn-ophyd-hal]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-26 22:12:11] INFO root fetch - processPackages [infn-ophyd-hal]: Downloading https://files.pythonhosted.org/packages/ba/35/b02e6e7914ed540029809f93557afee1fee9bf45043c410beb4011d60362/infn_ophyd_hal-1.0.2.tar.gz
+[2024-05-26 22:12:11] INFO root fetch - processPackages [infn-ophyd-hal]: Downloading https://files.pythonhosted.org/packages/ba/35/b02e6e7914ed540029809f93557afee1fee9bf45043c410beb4011d60362/infn_ophyd_hal-1.0.2.tar.gz
+[2024-05-26 22:12:11] INFO root fetch - processPackages [sdss-hal]: New version: [1.2.0] Old Version: [1.1.9]
+[2024-05-26 22:12:11] INFO root fetch - processPackages [beets-yearfixer]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 22:12:11] INFO root fetch - processPackages [tccli]: New version: [3.0.999.1] Old Version: [3.0.998.1]
+[2024-05-26 22:12:12] INFO root fetch - processPackages [ricklib]: Downloading https://files.pythonhosted.org/packages/3a/a1/782045b8d9133b62c581d69bf1f5738e63ef5c756bb8ba7c7758e71db7f9/ricklib-0.0.1.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [sdss-hal]: Downloading https://files.pythonhosted.org/packages/a3/09/faf633927b9e2f31f433423ab2f8a675b6dc8e7161ae4d3527af1249f078/sdss_hal-1.1.9.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [beets-yearfixer]: Downloading https://files.pythonhosted.org/packages/c4/f6/a8d525f5ef6ec12738e10f243af8b97bd88cf408e8f96f3b5c63d4342008/beets-yearfixer-0.0.4.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [tccli]: Downloading https://files.pythonhosted.org/packages/4b/45/a3b0e2cc7f86f87ffa99bd6f833796de67aee82386f88a6d4a85073532e9/tccli-3.0.998.1.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [infn-ophyd-hal]: Downloading https://files.pythonhosted.org/packages/d6/92/6b16e951e19687ed62d53730bf206b7efe1f6acb72ba0693bf01fc424228/infn_ophyd_hal-1.0.3.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [infn-ophyd-hal]: Downloading https://files.pythonhosted.org/packages/d6/92/6b16e951e19687ed62d53730bf206b7efe1f6acb72ba0693bf01fc424228/infn_ophyd_hal-1.0.3.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [ricklib]: Downloading https://files.pythonhosted.org/packages/26/50/daf0c2e53572c6a7fac83fcfaa881dc0bda7d8033fa866f482c0f1ddeb80/ricklib-0.0.2.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [sdss-hal]: Downloading https://files.pythonhosted.org/packages/8b/b7/4fc476ba8f54e2ab210652ee8c9d4bedff7429f996572cc9abecf598510b/sdss_hal-1.2.0.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [infn-ophyd-hal]: executing diffoscope
+[2024-05-26 22:12:12] INFO root fetch - processPackages [infn-ophyd-hal]: executing diffoscope
+[2024-05-26 22:12:12] INFO root fetch - processPackages [infn-ophyd-hal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infn_ophyd_hal-1.0.2.tar.gz tmp/infn_ophyd_hal-1.0.3.tar.gz --markdown 20240526/i/infn-ophyd-hal/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-26 22:12:12] INFO root fetch - processPackages [infn-ophyd-hal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infn_ophyd_hal-1.0.2.tar.gz tmp/infn_ophyd_hal-1.0.3.tar.gz --markdown 20240526/i/infn-ophyd-hal/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-26 22:12:12] INFO root fetch - processPackages [beets-yearfixer]: Downloading https://files.pythonhosted.org/packages/83/c3/b0dada861071604a0b9994d504f6ef8d51b8e5fff74123150d0fe3842ff0/beets_yearfixer-0.0.5.tar.gz
+[2024-05-26 22:12:12] INFO root fetch - processPackages [ricklib]: executing diffoscope
+[2024-05-26 22:12:12] INFO root fetch - processPackages [ricklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ricklib-0.0.1.tar.gz tmp/ricklib-0.0.2.tar.gz --markdown 20240526/r/ricklib/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 22:12:12] INFO root fetch - processPackages [sdss-hal]: executing diffoscope
+[2024-05-26 22:12:12] INFO root fetch - processPackages [sdss-hal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdss_hal-1.1.9.tar.gz tmp/sdss_hal-1.2.0.tar.gz --markdown 20240526/s/sdss-hal/1.1.9-1.2.0/README.md --exclude *.pyd
+[2024-05-26 22:12:12] INFO root fetch - processPackages [beets-yearfixer]: executing diffoscope
+[2024-05-26 22:12:12] INFO root fetch - processPackages [beets-yearfixer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets-yearfixer-0.0.4.tar.gz tmp/beets_yearfixer-0.0.5.tar.gz --markdown 20240526/b/beets-yearfixer/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 22:12:13] INFO root fetch - processPackages [ricklib]: Remove: archive file [/home/abi/fetcher/tmp/ricklib-0.0.1.tar.gz]
+[2024-05-26 22:12:13] INFO root fetch - processPackages [ricklib]: Remove: archive file [/home/abi/fetcher/tmp/ricklib-0.0.2.tar.gz]
+[2024-05-26 22:12:13] INFO root fetch - main [MainThread]: End processing [ricklib]: success
+[2024-05-26 22:12:13] INFO root fetch - processPackages [infn-ophyd-hal]: Remove: archive file [/home/abi/fetcher/tmp/infn_ophyd_hal-1.0.2.tar.gz]
+[2024-05-26 22:12:13] INFO root fetch - processPackages [infn-ophyd-hal]: Remove: archive file [/home/abi/fetcher/tmp/infn_ophyd_hal-1.0.3.tar.gz]
+[2024-05-26 22:12:13] INFO root fetch - main [MainThread]: End processing [infn-ophyd-hal]: success
+[2024-05-26 22:12:13] INFO root fetch - main [MainThread]: End processing [infn-ophyd-hal]: success
+[2024-05-26 22:12:13] INFO root fetch - processPackages [beets-yearfixer]: Remove: archive file [/home/abi/fetcher/tmp/beets-yearfixer-0.0.4.tar.gz]
+[2024-05-26 22:12:13] INFO root fetch - processPackages [beets-yearfixer]: Remove: archive file [/home/abi/fetcher/tmp/beets_yearfixer-0.0.5.tar.gz]
+[2024-05-26 22:12:13] INFO root fetch - main [MainThread]: End processing [beets-yearfixer]: success
+[2024-05-26 22:12:13] INFO root fetch - processPackages [sdss-hal]: Remove: archive file [/home/abi/fetcher/tmp/sdss_hal-1.1.9.tar.gz]
+[2024-05-26 22:12:13] INFO root fetch - processPackages [sdss-hal]: Remove: archive file [/home/abi/fetcher/tmp/sdss_hal-1.2.0.tar.gz]
+[2024-05-26 22:12:13] INFO root fetch - main [MainThread]: End processing [sdss-hal]: success
+[2024-05-26 22:12:17] INFO root fetch - processPackages [tccli]: Downloading https://files.pythonhosted.org/packages/06/41/78d3ee9b2ead17ab0876618d203995653100fb27e524f51810d16df1bc97/tccli-3.0.999.1.tar.gz
+[2024-05-26 22:12:17] INFO root fetch - processPackages [tccli]: executing diffoscope
+[2024-05-26 22:12:17] INFO root fetch - processPackages [tccli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tccli-3.0.998.1.tar.gz tmp/tccli-3.0.999.1.tar.gz --markdown 20240526/t/tccli/3.0.998.1-3.0.999.1/README.md --exclude *.pyd
+[2024-05-26 22:13:35] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.998.1.tar.gz]
+[2024-05-26 22:13:35] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.999.1.tar.gz]
+[2024-05-26 22:13:35] INFO root fetch - main [MainThread]: End processing [tccli]: success
+[2024-05-26 22:13:35] INFO root fetch - main [MainThread]: Store serial: [23386602]
