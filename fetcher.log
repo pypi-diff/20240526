@@ -9692,3 +9692,22 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:28:11] INFO root fetch - processPackages [port-ocean]: Remove: archive file [/home/abi/fetcher/tmp/port_ocean-0.5.9.tar.gz]
 [2024-05-26 13:28:11] INFO root fetch - main [MainThread]: End processing [port-ocean]: success
 [2024-05-26 13:28:11] INFO root fetch - main [MainThread]: Store serial: [23382511]
+[2024-05-26 13:30:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382511]
+[2024-05-26 13:30:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 13:32:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382514]
+[2024-05-26 13:32:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 13:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: altvmasterlist
+[2024-05-26 13:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-esimd-21
+[2024-05-26 13:32:29] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240526] Old Version: [2.5.0b20240525]
+[2024-05-26 13:32:29] INFO root fetch - processPackages [altvmasterlist]: New version: [3.2.0] Old Version: [3.1.0]
+[2024-05-26 13:32:30] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/04/2b/c10dec0ffd9bbc4f86f91382020009dac851a04cfbf0f22821273f635531/bigdl_core_xe_esimd_21-2.5.0b20240525-cp39-cp39-manylinux2010_x86_64.whl
+[2024-05-26 13:32:30] INFO root fetch - processPackages [altvmasterlist]: Downloading https://files.pythonhosted.org/packages/b4/08/75464b6cc6886578e8746d119eccfa6835553b40765d3672d69ac5611027/altvmasterlist-3.1.0.tar.gz
+[2024-05-26 13:32:30] WARNING root fetch - processPackages [bigdl-core-xe-esimd-21]: Skipping package: exceeds size limit 46711129>=10485760
+[2024-05-26 13:32:30] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-05-26 13:32:30] INFO root fetch - processPackages [altvmasterlist]: Downloading https://files.pythonhosted.org/packages/d2/8b/9941d0c1c76d33d9791c47674c79acf3d17bd4378f4452407a599ce2870b/altvmasterlist-3.2.0.tar.gz
+[2024-05-26 13:32:30] INFO root fetch - processPackages [altvmasterlist]: executing diffoscope
+[2024-05-26 13:32:30] INFO root fetch - processPackages [altvmasterlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altvmasterlist-3.1.0.tar.gz tmp/altvmasterlist-3.2.0.tar.gz --markdown 20240526/a/altvmasterlist/3.1.0-3.2.0/README.md --exclude *.pyd
+[2024-05-26 13:32:31] INFO root fetch - processPackages [altvmasterlist]: Remove: archive file [/home/abi/fetcher/tmp/altvmasterlist-3.1.0.tar.gz]
+[2024-05-26 13:32:31] INFO root fetch - processPackages [altvmasterlist]: Remove: archive file [/home/abi/fetcher/tmp/altvmasterlist-3.2.0.tar.gz]
+[2024-05-26 13:32:31] INFO root fetch - main [MainThread]: End processing [altvmasterlist]: success
+[2024-05-26 13:32:31] INFO root fetch - main [MainThread]: Store serial: [23382519]
