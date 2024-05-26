@@ -958,3 +958,67 @@
 [2024-05-26 02:12:19] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.332.tar.gz]
 [2024-05-26 02:12:19] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
 [2024-05-26 02:12:19] INFO root fetch - main [MainThread]: Store serial: [23378564]
+[2024-05-26 02:14:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378564]
+[2024-05-26 02:14:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 02:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-events-notify
+[2024-05-26 02:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: annonition
+[2024-05-26 02:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-nag
+[2024-05-26 02:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eras
+[2024-05-26 02:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-skylight
+[2024-05-26 02:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdktf-gitlab-runner
+[2024-05-26 02:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-events-notify
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-nag]: New version: [2.9.7] Old Version: [2.9.6]
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-26 02:14:28] INFO root fetch - processPackages [annonition]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [eras]: New version: [0.4.0] Old Version: [0.3.7]
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/86/f2/01b58f6183b48ce1105016a7f5045925a49464b8c20408459bd101fe5f25/cdk-skylight-1.1.98.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/8a/6e/f1c520e407ce3adf90b51d2d1ca84d283a08c808fc00c9deeff4f4734d82/cdktf-gitlab-runner-0.0.98.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-nag]: Downloading https://files.pythonhosted.org/packages/26/bc/b8768e307b8d360b78f45303ac30baa4232637f372296203b0005cd07cd4/cdk-nag-2.9.6.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/bf/87/379fbbea0aa9b238d958ae7a16d0fb216cc1d09007431efd77f99021dee0/eras-0.3.7.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [annonition]: Downloading https://files.pythonhosted.org/packages/70/24/1be44116d72dc7c914fc48b42f28ac3a6f0891d479447271a55dc2906ad1/annonition-0.0.9.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/59/49/3e035cb98d5f97f79c174e211129a2dbe596df70c5df50ac701242fabea2/cdk-skylight-1.1.99.tar.gz
+[2024-05-26 02:14:28] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/59/f2/0d7ab5ec05a2b43bd92c00fd237afddb1e2770c7edaf03b1f7ddef6c0793/cdktf-gitlab-runner-0.0.99.tar.gz
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240526/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-nag]: Downloading https://files.pythonhosted.org/packages/71/78/6a2d0c627f1033774d5be3d2faca465e0bc0b07cf97cec491c795775999a/cdk-nag-2.9.7.tar.gz
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.98.tar.gz tmp/cdk-skylight-1.1.99.tar.gz --markdown 20240526/c/cdk-skylight/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-05-26 02:14:29] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/03/87/e39c6aff04cf046d038cf249cd7434bba16e857e83545b9b55f913337d47/eras-0.4.0.tar.gz
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20240526/c/cdktf-gitlab-runner/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240526/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-26 02:14:29] INFO root fetch - processPackages [annonition]: Downloading https://files.pythonhosted.org/packages/9b/48/f0223e1213ab064918d329943e1226422e01330c56fec88b35bfcfa752ff/annonition-0.1.0.tar.gz
+[2024-05-26 02:14:29] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-26 02:14:29] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.3.7.tar.gz tmp/eras-0.4.0.tar.gz --markdown 20240526/e/eras/0.3.7-0.4.0/README.md --exclude *.pyd
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-nag]: executing diffoscope
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-nag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-nag-2.9.6.tar.gz tmp/cdk-nag-2.9.7.tar.gz --markdown 20240526/c/cdk-nag/2.9.6-2.9.7/README.md --exclude *.pyd
+[2024-05-26 02:14:29] INFO root fetch - processPackages [annonition]: executing diffoscope
+[2024-05-26 02:14:29] INFO root fetch - processPackages [annonition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/annonition-0.0.9.tar.gz tmp/annonition-0.1.0.tar.gz --markdown 20240526/a/annonition/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-05-26 02:14:29] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-26 02:14:29] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.98.tar.gz]
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.99.tar.gz]
+[2024-05-26 02:14:29] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.98.tar.gz]
+[2024-05-26 02:14:29] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.99.tar.gz]
+[2024-05-26 02:14:29] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2024-05-26 02:14:30] INFO root fetch - processPackages [annonition]: Remove: archive file [/home/abi/fetcher/tmp/annonition-0.0.9.tar.gz]
+[2024-05-26 02:14:30] INFO root fetch - processPackages [annonition]: Remove: archive file [/home/abi/fetcher/tmp/annonition-0.1.0.tar.gz]
+[2024-05-26 02:14:30] INFO root fetch - main [MainThread]: End processing [annonition]: success
+[2024-05-26 02:14:30] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.6.tar.gz]
+[2024-05-26 02:14:30] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.7.tar.gz]
+[2024-05-26 02:14:30] INFO root fetch - main [MainThread]: End processing [cdk-nag]: success
+[2024-05-26 02:14:30] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.3.7.tar.gz]
+[2024-05-26 02:14:30] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.4.0.tar.gz]
+[2024-05-26 02:14:30] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-26 02:14:30] INFO root fetch - main [MainThread]: Store serial: [23378584]
