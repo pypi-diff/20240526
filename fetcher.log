@@ -15957,3 +15957,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:47:11] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.3.1.tar.gz]
 [2024-05-26 19:47:11] INFO root fetch - main [MainThread]: End processing [abcli]: success
 [2024-05-26 19:47:11] INFO root fetch - main [MainThread]: Store serial: [23385389]
+[2024-05-26 19:49:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385389]
+[2024-05-26 19:49:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 19:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openrouter-selector
+[2024-05-26 19:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pl-nightly
+[2024-05-26 19:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abadpour
+[2024-05-26 19:49:20] INFO root fetch - processPackages [openrouter-selector]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 19:49:20] INFO root fetch - processPackages [abadpour]: New version: [6.18.1] Old Version: [6.17.1]
+[2024-05-26 19:49:20] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/26/12/9fec98d91d2dc4b80f95a61dca4ef753e0ba629820153dd5373d00fa02bd/abadpour-6.17.1.tar.gz
+[2024-05-26 19:49:20] WARNING root fetch - processPackages [pl-nightly]: Skipping, unable to determine old version
+[2024-05-26 19:49:20] INFO root fetch - main [MainThread]: End processing [pl-nightly] error
+[2024-05-26 19:49:20] INFO root fetch - processPackages [openrouter-selector]: Downloading https://files.pythonhosted.org/packages/fd/cf/f1ca6ce573aaf061ba76c77f4348f2a393c639307adc7e4bc28d1f310092/openrouter_selector-0.0.1.tar.gz
+[2024-05-26 19:49:20] INFO root fetch - processPackages [openrouter-selector]: Downloading https://files.pythonhosted.org/packages/1a/9a/7aebb263f13cdd01e8f6059370ef7f78bfa56610313bc737f2167273f6f5/openrouter_selector-0.0.2.tar.gz
+[2024-05-26 19:49:20] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/c9/f8/c1986be388431dc3f1f38939b49175c5061d3ed1d01e102998f3b5d1cb4e/abadpour-6.18.1.tar.gz
+[2024-05-26 19:49:20] INFO root fetch - processPackages [openrouter-selector]: executing diffoscope
+[2024-05-26 19:49:20] INFO root fetch - processPackages [openrouter-selector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openrouter_selector-0.0.1.tar.gz tmp/openrouter_selector-0.0.2.tar.gz --markdown 20240526/o/openrouter-selector/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 19:49:20] INFO root fetch - processPackages [abadpour]: executing diffoscope
+[2024-05-26 19:49:20] INFO root fetch - processPackages [abadpour]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abadpour-6.17.1.tar.gz tmp/abadpour-6.18.1.tar.gz --markdown 20240526/a/abadpour/6.17.1-6.18.1/README.md --exclude *.pyd
+[2024-05-26 19:49:21] INFO root fetch - processPackages [openrouter-selector]: Remove: archive file [/home/abi/fetcher/tmp/openrouter_selector-0.0.1.tar.gz]
+[2024-05-26 19:49:21] INFO root fetch - processPackages [openrouter-selector]: Remove: archive file [/home/abi/fetcher/tmp/openrouter_selector-0.0.2.tar.gz]
+[2024-05-26 19:49:21] INFO root fetch - main [MainThread]: End processing [openrouter-selector]: success
+[2024-05-26 19:49:21] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.17.1.tar.gz]
+[2024-05-26 19:49:21] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.18.1.tar.gz]
+[2024-05-26 19:49:21] INFO root fetch - main [MainThread]: End processing [abadpour]: success
+[2024-05-26 19:49:21] INFO root fetch - main [MainThread]: Store serial: [23385399]
