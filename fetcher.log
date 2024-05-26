@@ -2495,3 +2495,9 @@
 [2024-05-26 04:29:14] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240525.tar.gz]
 [2024-05-26 04:29:14] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-05-26 04:29:14] INFO root fetch - main [MainThread]: Store serial: [23379252]
+[2024-05-26 04:31:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379252]
+[2024-05-26 04:31:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 04:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qspace
+[2024-05-26 04:31:23] WARNING root fetch - processPackages [qspace]: Skipping, unable to determine old version
+[2024-05-26 04:31:23] INFO root fetch - main [MainThread]: End processing [qspace] error
+[2024-05-26 04:31:23] INFO root fetch - main [MainThread]: Store serial: [23379256]
