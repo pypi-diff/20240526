@@ -10332,3 +10332,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:26:52] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
 [2024-05-26 14:26:52] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
 [2024-05-26 14:26:52] INFO root fetch - main [MainThread]: Store serial: [23382816]
+[2024-05-26 14:29:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382816]
+[2024-05-26 14:29:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 14:29:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gliner
+[2024-05-26 14:29:05] INFO root fetch - processPackages [gliner]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-26 14:29:05] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/54/53/182c5c1b761ab40ca0d4b9b3dfdd6aa606d105eb3ad7d4c743fbcca13471/gliner-0.1.9.tar.gz
+[2024-05-26 14:29:06] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/99/0f/0c07f92fdcf204f672b875dbf9792f8399c9819d69e83ddc8772b6ae744b/gliner-0.2.0.tar.gz
+[2024-05-26 14:29:06] INFO root fetch - processPackages [gliner]: executing diffoscope
+[2024-05-26 14:29:06] INFO root fetch - processPackages [gliner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gliner-0.1.9.tar.gz tmp/gliner-0.2.0.tar.gz --markdown 20240526/g/gliner/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-26 14:29:06] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.9.tar.gz]
+[2024-05-26 14:29:06] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.2.0.tar.gz]
+[2024-05-26 14:29:06] INFO root fetch - main [MainThread]: End processing [gliner]: success
+[2024-05-26 14:29:06] INFO root fetch - main [MainThread]: Store serial: [23382819]
