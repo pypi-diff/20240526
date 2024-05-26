@@ -16047,3 +16047,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:53:42] INFO root fetch - processPackages [mkdocs-torillic]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_torillic-2.3.0.tar.gz]
 [2024-05-26 19:53:42] INFO root fetch - main [MainThread]: End processing [mkdocs-torillic]: success
 [2024-05-26 19:53:42] INFO root fetch - main [MainThread]: Store serial: [23385428]
+[2024-05-26 19:55:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385428]
+[2024-05-26 19:55:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 19:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-sdk
+[2024-05-26 19:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lusid-sdk-preview
+[2024-05-26 19:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quspin-extensions
+[2024-05-26 19:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ferfereh
+[2024-05-26 19:55:50] INFO root fetch - processPackages [ferfereh]: New version: [1.128.1] Old Version: [1.127.1]
+[2024-05-26 19:55:50] INFO root fetch - processPackages [lusid-sdk]: New version: [2.1.99] Old Version: [2.1.98]
+[2024-05-26 19:55:50] WARNING root fetch - processPackages [quspin-extensions]: Skipping, unable to determine old version
+[2024-05-26 19:55:50] INFO root fetch - main [MainThread]: End processing [quspin-extensions] error
+[2024-05-26 19:55:50] INFO root fetch - processPackages [ferfereh]: Downloading https://files.pythonhosted.org/packages/d6/d4/a1d7b4e8c181aacd4675401917af0f1d7b25d29d984e43e230f29cc4e805/ferfereh-1.127.1.tar.gz
+[2024-05-26 19:55:50] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/15/56/0526e0499d9414b698f8c1260f8aac2e2a3209a0dc66949600aff2c28199/lusid_sdk-2.1.98.tar.gz
+[2024-05-26 19:55:50] INFO root fetch - processPackages [lusid-sdk-preview]: New version: [1.1.98] Old Version: [1.1.97]
+[2024-05-26 19:55:50] INFO root fetch - processPackages [lusid-sdk-preview]: Downloading https://files.pythonhosted.org/packages/f9/fb/fc53cb5d0455e9bbd1207566684f6f2cd700268ae435d3172e9489e357d8/lusid-sdk-preview-1.1.97.tar.gz
+[2024-05-26 19:55:50] INFO root fetch - processPackages [ferfereh]: Downloading https://files.pythonhosted.org/packages/2f/41/be223ca99c37d946edee5f71a66fe254a4a2456509d817cec95798721c5d/ferfereh-1.128.1.tar.gz
+[2024-05-26 19:55:50] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/2c/d6/b08aeae5c238a1e7a8cd3ba4a93d6c65acd45e317b927d0f06091d65479d/lusid_sdk-2.1.99.tar.gz
+[2024-05-26 19:55:51] INFO root fetch - processPackages [ferfereh]: executing diffoscope
+[2024-05-26 19:55:51] INFO root fetch - processPackages [ferfereh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ferfereh-1.127.1.tar.gz tmp/ferfereh-1.128.1.tar.gz --markdown 20240526/f/ferfereh/1.127.1-1.128.1/README.md --exclude *.pyd
+[2024-05-26 19:55:51] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2024-05-26 19:55:51] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_sdk-2.1.98.tar.gz tmp/lusid_sdk-2.1.99.tar.gz --markdown 20240526/l/lusid-sdk/2.1.98-2.1.99/README.md --exclude *.pyd
+[2024-05-26 19:55:51] INFO root fetch - processPackages [lusid-sdk-preview]: Downloading https://files.pythonhosted.org/packages/c5/34/68330ec346008829c8b0f483665ee7ae8ba394a18406fd563696f8ee59e8/lusid-sdk-preview-1.1.98.tar.gz
+[2024-05-26 19:55:51] INFO root fetch - processPackages [lusid-sdk-preview]: executing diffoscope
+[2024-05-26 19:55:51] INFO root fetch - processPackages [lusid-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-preview-1.1.97.tar.gz tmp/lusid-sdk-preview-1.1.98.tar.gz --markdown 20240526/l/lusid-sdk-preview/1.1.97-1.1.98/README.md --exclude *.pyd
+[2024-05-26 19:55:51] INFO root fetch - processPackages [ferfereh]: Remove: archive file [/home/abi/fetcher/tmp/ferfereh-1.127.1.tar.gz]
+[2024-05-26 19:55:51] INFO root fetch - processPackages [ferfereh]: Remove: archive file [/home/abi/fetcher/tmp/ferfereh-1.128.1.tar.gz]
+[2024-05-26 19:55:51] INFO root fetch - main [MainThread]: End processing [ferfereh]: success
+[2024-05-26 19:55:55] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.98.tar.gz]
+[2024-05-26 19:55:55] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.99.tar.gz]
+[2024-05-26 19:55:55] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2024-05-26 19:56:05] INFO root fetch - processPackages [lusid-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-sdk-preview-1.1.97.tar.gz]
+[2024-05-26 19:56:05] INFO root fetch - processPackages [lusid-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-sdk-preview-1.1.98.tar.gz]
+[2024-05-26 19:56:05] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
+[2024-05-26 19:56:05] INFO root fetch - main [MainThread]: Store serial: [23385440]
