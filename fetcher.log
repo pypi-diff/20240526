@@ -17010,3 +17010,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:54:54] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.4.tar.gz]
 [2024-05-26 20:54:54] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
 [2024-05-26 20:54:54] INFO root fetch - main [MainThread]: Store serial: [23385898]
+[2024-05-26 20:56:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385898]
+[2024-05-26 20:57:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 20:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: btgitserver
+[2024-05-26 20:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xumes
+[2024-05-26 20:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zenaura
+[2024-05-26 20:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sayhellosravanthi
+[2024-05-26 20:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: grid-engine-Nitebound
+[2024-05-26 20:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: class-cache
+[2024-05-26 20:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: MedatechUK.Landlord
+[2024-05-26 20:57:03] INFO root fetch - processPackages [zenaura]: New version: [0.9.75] Old Version: [0.9.74]
+[2024-05-26 20:57:03] INFO root fetch - processPackages [MedatechUK.Landlord]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 20:57:03] INFO root fetch - processPackages [btgitserver]: New version: [2.0] Old Version: [1.0.5]
+[2024-05-26 20:57:03] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/29/87/771eb3ca310f68908e0be50fc384b8e7e7b359fbca0bf7d92204d1c5cba3/zenaura-0.9.74.tar.gz
+[2024-05-26 20:57:03] WARNING root fetch - processPackages [sayhellosravanthi]: Skipping, unable to determine old version
+[2024-05-26 20:57:03] INFO root fetch - main [MainThread]: End processing [sayhellosravanthi] error
+[2024-05-26 20:57:03] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/cd/21/dfc40ff05fc9ff9a16d6214022e6450b1e6b3a6474603fcc2e4845e3d631/medatechuk_landlord-0.0.4.tar.gz
+[2024-05-26 20:57:03] INFO root fetch - processPackages [class-cache]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-05-26 20:57:03] WARNING root fetch - processPackages [xumes]: Skipping, unable to determine old version
+[2024-05-26 20:57:03] INFO root fetch - main [MainThread]: End processing [xumes] error
+[2024-05-26 20:57:03] WARNING root fetch - processPackages [grid-engine-Nitebound]: Skipping, unable to determine old version
+[2024-05-26 20:57:03] INFO root fetch - main [MainThread]: End processing [grid-engine-Nitebound] error
+[2024-05-26 20:57:03] INFO root fetch - processPackages [btgitserver]: Downloading https://files.pythonhosted.org/packages/a6/87/312938a3115cf8248511588c5d1ed9b383b63e957c5825a428bf336e9131/btgitserver-1.0.5.tar.gz
+[2024-05-26 20:57:03] INFO root fetch - processPackages [class-cache]: Downloading https://files.pythonhosted.org/packages/79/2a/1ef14d86bd4f21b7441b31bc96a59ba11b0fed2e311c5b214e1ffd669008/class_cache-0.0.1.tar.gz
+[2024-05-26 20:57:03] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/bb/9d/4274bb540ecac288c461f8a7ffc573d016161fd32a22e527f3f36db699ee/zenaura-0.9.75.tar.gz
+[2024-05-26 20:57:03] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/d2/fb/ac34a87bb21bdbedb60c2536d9a029c2ef973a53588c9798b3011acb15e9/medatechuk_landlord-0.0.5.tar.gz
+[2024-05-26 20:57:03] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 20:57:03] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.74.tar.gz tmp/zenaura-0.9.75.tar.gz --markdown 20240526/z/zenaura/0.9.74-0.9.75/README.md --exclude *.pyd
+[2024-05-26 20:57:03] INFO root fetch - processPackages [btgitserver]: Downloading https://files.pythonhosted.org/packages/5a/a6/30b4a288f29ecce83b6b9874a2cc4cd786d2c8bf25ed0d3e45297add128d/btgitserver-2.0.tar.gz
+[2024-05-26 20:57:03] INFO root fetch - processPackages [class-cache]: Downloading https://files.pythonhosted.org/packages/93/8c/625a079353f8d83e34efc96936a6b355b99c9f83b8d337d1a471362d7edb/class_cache-0.1.0.tar.gz
+[2024-05-26 20:57:03] INFO root fetch - processPackages [MedatechUK.Landlord]: executing diffoscope
+[2024-05-26 20:57:03] INFO root fetch - processPackages [MedatechUK.Landlord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medatechuk_landlord-0.0.4.tar.gz tmp/medatechuk_landlord-0.0.5.tar.gz --markdown 20240526/M/MedatechUK.Landlord/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 20:57:03] INFO root fetch - processPackages [btgitserver]: executing diffoscope
+[2024-05-26 20:57:03] INFO root fetch - processPackages [btgitserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/btgitserver-1.0.5.tar.gz tmp/btgitserver-2.0.tar.gz --markdown 20240526/b/btgitserver/1.0.5-2.0/README.md --exclude *.pyd
+[2024-05-26 20:57:03] INFO root fetch - processPackages [class-cache]: executing diffoscope
+[2024-05-26 20:57:03] INFO root fetch - processPackages [class-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/class_cache-0.0.1.tar.gz tmp/class_cache-0.1.0.tar.gz --markdown 20240526/c/class-cache/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-05-26 20:57:04] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.74.tar.gz]
+[2024-05-26 20:57:04] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.75.tar.gz]
+[2024-05-26 20:57:04] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 20:57:04] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.4.tar.gz]
+[2024-05-26 20:57:04] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.5.tar.gz]
+[2024-05-26 20:57:04] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
+[2024-05-26 20:57:04] INFO root fetch - processPackages [class-cache]: Remove: archive file [/home/abi/fetcher/tmp/class_cache-0.0.1.tar.gz]
+[2024-05-26 20:57:04] INFO root fetch - processPackages [class-cache]: Remove: archive file [/home/abi/fetcher/tmp/class_cache-0.1.0.tar.gz]
+[2024-05-26 20:57:04] INFO root fetch - main [MainThread]: End processing [class-cache]: success
+[2024-05-26 20:57:04] INFO root fetch - processPackages [btgitserver]: Remove: archive file [/home/abi/fetcher/tmp/btgitserver-1.0.5.tar.gz]
+[2024-05-26 20:57:04] INFO root fetch - processPackages [btgitserver]: Remove: archive file [/home/abi/fetcher/tmp/btgitserver-2.0.tar.gz]
+[2024-05-26 20:57:04] INFO root fetch - main [MainThread]: End processing [btgitserver]: success
+[2024-05-26 20:57:04] INFO root fetch - main [MainThread]: Store serial: [23385921]
