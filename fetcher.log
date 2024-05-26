@@ -5883,3 +5883,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:03:45] WARNING root fetch - processPackages [sqlalchemy-altibase7]: Skipping, unable to determine old version
 [2024-05-26 10:03:45] INFO root fetch - main [MainThread]: End processing [sqlalchemy-altibase7] error
 [2024-05-26 10:03:45] INFO root fetch - main [MainThread]: Store serial: [23380805]
+[2024-05-26 10:05:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380805]
+[2024-05-26 10:05:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 10:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langfun
+[2024-05-26 10:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymongo_inmemory
+[2024-05-26 10:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ragdaemon
+[2024-05-26 10:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymodins
+[2024-05-26 10:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cadprox
+[2024-05-26 10:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CryptoDataHub
+[2024-05-26 10:05:55] INFO root fetch - processPackages [ragdaemon]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-05-26 10:05:55] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240525] Old Version: [0.0.2.dev20240524]
+[2024-05-26 10:05:55] INFO root fetch - processPackages [cadprox]: New version: [4.6] Old Version: [4.5]
+[2024-05-26 10:05:55] INFO root fetch - processPackages [pymongo_inmemory]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-26 10:05:55] INFO root fetch - processPackages [CryptoDataHub]: New version: [0.9.1] Old Version: [0.8.5]
+[2024-05-26 10:05:55] INFO root fetch - processPackages [pymodins]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-26 10:05:55] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/f1/ab/94a02c656d913a08d0fda6b2bf62c96c8a9e6bf299d42813aca1add9fa59/ragdaemon-0.6.2.tar.gz
+[2024-05-26 10:05:55] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/d8/bb/4aa1dfc63c436fb54f2cc506a6dbd4d4201750141c45aa964128d6da2e51/cadprox-4.5.tar.gz
+[2024-05-26 10:05:55] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/15/7a/051227e446fa6d2db4152b2319238710ba7bcaabadbe69d276a2055de981/langfun-0.0.2.dev20240524.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [CryptoDataHub]: Downloading https://files.pythonhosted.org/packages/16/2a/e49c1f620040d87ec11bfec152d5d7480a8b8050c5fc31028e58b0cf4b65/cryptodatahub-0.8.5-py3-none-any.whl
+[2024-05-26 10:05:56] INFO root fetch - processPackages [pymongo_inmemory]: Downloading https://files.pythonhosted.org/packages/b6/dc/b75d76feb600bba5dd89831df0289bf14236316f3b6b1dc50a9821d6e7a6/pymongo_inmemory-0.4.1.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/1b/2e/cdcdb532cccf738044b1818ef112766ea36a05aafcf1584a72b6b52197fa/pymodins-2.0.1.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/e0/1f/9a539dfa4e779ef75a6b70bb9dd109e6fea52577734c1448a1f95d745f4a/cadprox-4.6.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/71/bd/582685def24d67b70c36470136566498664b2729103d089a96aaee5a2bce/langfun-0.0.2.dev20240525.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [CryptoDataHub]: Downloading https://files.pythonhosted.org/packages/58/fd/fe3defc023c073df8d78934822c8ad8d54d1a0f38f9c75589c11e7d543a0/CryptoDataHub-0.9.1.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/e1/03/c5c10d282085ac8cb3725d41a25e526f75e5dbf1c5365c16fd88511c770c/ragdaemon-0.7.0.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [pymongo_inmemory]: Downloading https://files.pythonhosted.org/packages/3a/54/80a24c13089b1c848581cacd1fe7035b16693c7bb835ca4b6aa8f00a2440/pymongo_inmemory-0.4.2.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 10:05:56] INFO root fetch - processPackages [pymodins]: Downloading https://files.pythonhosted.org/packages/57/6b/d15e412d2bc45f283539e134ef03d7598203ba8133d3e261d5ce05466a60/pymodins-2.0.2.tar.gz
+[2024-05-26 10:05:56] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-4.5.tar.gz tmp/cadprox-4.6.tar.gz --markdown 20240526/c/cadprox/4.5-4.6/README.md --exclude *.pyd
+[2024-05-26 10:05:56] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-05-26 10:05:56] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240524.tar.gz tmp/langfun-0.0.2.dev20240525.tar.gz --markdown 20240526/l/langfun/0.0.2.dev20240524-0.0.2.dev20240525/README.md --exclude *.pyd
+[2024-05-26 10:05:56] INFO root fetch - processPackages [CryptoDataHub]: executing diffoscope
+[2024-05-26 10:05:56] INFO root fetch - processPackages [CryptoDataHub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptodatahub-0.8.5-py3-none-any.whl.zip tmp/CryptoDataHub-0.9.1.tar.gz --markdown 20240526/C/CryptoDataHub/0.8.5-0.9.1/README.md --exclude *.pyd
+[2024-05-26 10:05:56] INFO root fetch - processPackages [pymongo_inmemory]: executing diffoscope
+[2024-05-26 10:05:56] INFO root fetch - processPackages [pymongo_inmemory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymongo_inmemory-0.4.1.tar.gz tmp/pymongo_inmemory-0.4.2.tar.gz --markdown 20240526/p/pymongo_inmemory/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-26 10:05:56] INFO root fetch - processPackages [ragdaemon]: executing diffoscope
+[2024-05-26 10:05:56] INFO root fetch - processPackages [ragdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragdaemon-0.6.2.tar.gz tmp/ragdaemon-0.7.0.tar.gz --markdown 20240526/r/ragdaemon/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-05-26 10:05:56] INFO root fetch - processPackages [pymodins]: executing diffoscope
+[2024-05-26 10:05:56] INFO root fetch - processPackages [pymodins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymodins-2.0.1.tar.gz tmp/pymodins-2.0.2.tar.gz --markdown 20240526/p/pymodins/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-26 10:05:57] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.5.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.6.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 10:05:57] INFO root fetch - processPackages [pymongo_inmemory]: Remove: archive file [/home/abi/fetcher/tmp/pymongo_inmemory-0.4.1.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - processPackages [pymongo_inmemory]: Remove: archive file [/home/abi/fetcher/tmp/pymongo_inmemory-0.4.2.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - main [MainThread]: End processing [pymongo_inmemory]: success
+[2024-05-26 10:05:57] INFO root fetch - processPackages [CryptoDataHub]: Remove: archive file [/home/abi/fetcher/tmp/cryptodatahub-0.8.5-py3-none-any.whl.zip]
+[2024-05-26 10:05:57] INFO root fetch - processPackages [CryptoDataHub]: Remove: archive file [/home/abi/fetcher/tmp/CryptoDataHub-0.9.1.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - main [MainThread]: End processing [CryptoDataHub]: success
+[2024-05-26 10:05:57] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.1.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - processPackages [pymodins]: Remove: archive file [/home/abi/fetcher/tmp/pymodins-2.0.2.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - main [MainThread]: End processing [pymodins]: success
+[2024-05-26 10:05:57] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.6.2.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.7.0.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
+[2024-05-26 10:05:57] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240524.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240525.tar.gz]
+[2024-05-26 10:05:57] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-05-26 10:05:57] INFO root fetch - main [MainThread]: Store serial: [23380823]
