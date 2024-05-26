@@ -12976,3 +12976,21 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:00:41] INFO root fetch - processPackages [granian]: Remove: archive file [/home/abi/fetcher/tmp/granian-1.3.2.tar.gz]
 [2024-05-26 17:00:41] INFO root fetch - main [MainThread]: End processing [granian]: success
 [2024-05-26 17:00:41] INFO root fetch - main [MainThread]: Store serial: [23384041]
+[2024-05-26 17:02:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384041]
+[2024-05-26 17:02:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 17:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: playwright-page-pool
+[2024-05-26 17:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TB2J
+[2024-05-26 17:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: playwright-network-spy
+[2024-05-26 17:02:49] WARNING root fetch - processPackages [playwright-page-pool]: Skipping, unable to determine old version
+[2024-05-26 17:02:49] INFO root fetch - main [MainThread]: End processing [playwright-page-pool] error
+[2024-05-26 17:02:49] WARNING root fetch - processPackages [playwright-network-spy]: Skipping, unable to determine old version
+[2024-05-26 17:02:49] INFO root fetch - main [MainThread]: End processing [playwright-network-spy] error
+[2024-05-26 17:02:50] INFO root fetch - processPackages [TB2J]: New version: [0.9.0.1] Old Version: [0.9.0]
+[2024-05-26 17:02:50] INFO root fetch - processPackages [TB2J]: Downloading https://files.pythonhosted.org/packages/b2/a4/e09cf393a342166135374d289b003645c6098e6d7e59c6688102d6cf9e6e/TB2J-0.9.0.tar.gz
+[2024-05-26 17:02:50] INFO root fetch - processPackages [TB2J]: Downloading https://files.pythonhosted.org/packages/2c/d3/21a7da6abe4b70131cda12838ae73d7484bffbe770ee9e521168f7a0d023/TB2J-0.9.0.1.tar.gz
+[2024-05-26 17:02:50] INFO root fetch - processPackages [TB2J]: executing diffoscope
+[2024-05-26 17:02:50] INFO root fetch - processPackages [TB2J]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TB2J-0.9.0.tar.gz tmp/TB2J-0.9.0.1.tar.gz --markdown 20240526/T/TB2J/0.9.0-0.9.0.1/README.md --exclude *.pyd
+[2024-05-26 17:02:51] INFO root fetch - processPackages [TB2J]: Remove: archive file [/home/abi/fetcher/tmp/TB2J-0.9.0.tar.gz]
+[2024-05-26 17:02:51] INFO root fetch - processPackages [TB2J]: Remove: archive file [/home/abi/fetcher/tmp/TB2J-0.9.0.1.tar.gz]
+[2024-05-26 17:02:51] INFO root fetch - main [MainThread]: End processing [TB2J]: success
+[2024-05-26 17:02:51] INFO root fetch - main [MainThread]: Store serial: [23384086]
