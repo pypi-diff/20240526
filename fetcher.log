@@ -829,3 +829,24 @@
 [2024-05-26 02:01:26] INFO root fetch - processPackages [osmdiff]: Remove: archive file [/home/abi/fetcher/tmp/osmdiff-0.4.0.tar.gz]
 [2024-05-26 02:01:26] INFO root fetch - main [MainThread]: End processing [osmdiff]: success
 [2024-05-26 02:01:26] INFO root fetch - main [MainThread]: Store serial: [23378521]
+[2024-05-26 02:03:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378521]
+[2024-05-26 02:03:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 02:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lime-stable
+[2024-05-26 02:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ibis-framework
+[2024-05-26 02:03:35] INFO root fetch - processPackages [lime-stable]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-26 02:03:35] INFO root fetch - processPackages [ibis-framework]: New version: [v0.6.0] Old Version: [9.0.0.dev686]
+[2024-05-26 02:03:35] INFO root fetch - processPackages [lime-stable]: Downloading https://files.pythonhosted.org/packages/86/72/405337cf27d818d1d16479f09ad87f4758c211c2a2d60f58b4dd91bf43ab/lime-stable-1.0.4.tar.gz
+[2024-05-26 02:03:35] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/25/27/d42cad7d2f3e8dfcb90f08cf43c86239cd0e143735dd698a882ee93975cc/ibis_framework-9.0.0.dev686.tar.gz
+[2024-05-26 02:03:35] INFO root fetch - processPackages [lime-stable]: Downloading https://files.pythonhosted.org/packages/96/b6/1c64722fff74219928119016ebcaccbed7bed999345388ac1eb913eed4bf/lime-stable-1.0.5.tar.gz
+[2024-05-26 02:03:35] INFO root fetch - processPackages [lime-stable]: executing diffoscope
+[2024-05-26 02:03:35] INFO root fetch - processPackages [lime-stable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lime-stable-1.0.4.tar.gz tmp/lime-stable-1.0.5.tar.gz --markdown 20240526/l/lime-stable/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-26 02:03:36] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/0b/3d/fbf4278e9e436717a6fe476a81d1abec511869bba1cf642b601472bf6408/ibis-framework-v0.6.0.tar.gz
+[2024-05-26 02:03:36] INFO root fetch - processPackages [ibis-framework]: executing diffoscope
+[2024-05-26 02:03:36] INFO root fetch - processPackages [ibis-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibis_framework-9.0.0.dev686.tar.gz tmp/ibis-framework-v0.6.0.tar.gz --markdown 20240526/i/ibis-framework/9.0.0.dev686-v0.6.0/README.md --exclude *.pyd
+[2024-05-26 02:03:36] INFO root fetch - processPackages [lime-stable]: Remove: archive file [/home/abi/fetcher/tmp/lime-stable-1.0.4.tar.gz]
+[2024-05-26 02:03:36] INFO root fetch - processPackages [lime-stable]: Remove: archive file [/home/abi/fetcher/tmp/lime-stable-1.0.5.tar.gz]
+[2024-05-26 02:03:36] INFO root fetch - main [MainThread]: End processing [lime-stable]: success
+[2024-05-26 02:03:37] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis_framework-9.0.0.dev686.tar.gz]
+[2024-05-26 02:03:37] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
+[2024-05-26 02:03:37] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
+[2024-05-26 02:03:37] INFO root fetch - main [MainThread]: Store serial: [23378527]
