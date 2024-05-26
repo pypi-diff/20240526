@@ -17227,3 +17227,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:06:01] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-26 21:06:01] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-26 21:06:01] INFO root fetch - main [MainThread]: Store serial: [23385996]
+[2024-05-26 21:08:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385996]
+[2024-05-26 21:08:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 21:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nadl
+[2024-05-26 21:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-26 21:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: networkx-graph
+[2024-05-26 21:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydantic-prompter
+[2024-05-26 21:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phylokrr
+[2024-05-26 21:08:11] INFO root fetch - processPackages [zenaura]: New version: [0.9.80] Old Version: [0.9.79]
+[2024-05-26 21:08:11] INFO root fetch - processPackages [pydantic-prompter]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 21:08:11] INFO root fetch - processPackages [phylokrr]: New version: [0.5.0] Old Version: [0.4.9]
+[2024-05-26 21:08:11] INFO root fetch - processPackages [nadl]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-05-26 21:08:11] INFO root fetch - processPackages [networkx-graph]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-26 21:08:11] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/9b/0f/9f454c2abb48014f956f62a58431b812b51a016635536eb3d9caab88f962/zenaura-0.9.79.tar.gz
+[2024-05-26 21:08:11] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/bd/6a/e21d602cad57ff5a76933d98c1da601a98d0dcb9e844b33af7abd822e45b/phylokrr-0.4.9.tar.gz
+[2024-05-26 21:08:11] INFO root fetch - processPackages [pydantic-prompter]: Downloading https://files.pythonhosted.org/packages/d0/ae/30699b10fcbef779ac2d02556eaaf57dc9d275de626d980fce2b993aed15/pydantic_prompter-0.1.8.tar.gz
+[2024-05-26 21:08:11] INFO root fetch - processPackages [nadl]: Downloading https://files.pythonhosted.org/packages/64/8f/10c2b4fd0de6a18f5cf9e226125611b2fb8e3ff13f0e6774415ae014e26b/nadl-1.4.6.tar.gz
+[2024-05-26 21:08:11] INFO root fetch - processPackages [networkx-graph]: Downloading https://files.pythonhosted.org/packages/77/74/edd5c41b15207231fa0ff384742a21c345d33089f487d3002ccca39da72f/networkx_graph-0.2.3.tar.gz
+[2024-05-26 21:08:11] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/55/ee/bd803406ac566de7d3c98e77e5849605461b10951c4bca122172495b35a8/zenaura-0.9.80.tar.gz
+[2024-05-26 21:08:12] INFO root fetch - processPackages [pydantic-prompter]: Downloading https://files.pythonhosted.org/packages/18/fc/acc5a7f2375e89641a9f32c26ff68822c95ccb59951ad4a39f3ab3c88e5b/pydantic_prompter-0.1.9.tar.gz
+[2024-05-26 21:08:12] INFO root fetch - processPackages [nadl]: Downloading https://files.pythonhosted.org/packages/fe/44/8658e8776d8e0c3eef46009c463fd63de9231ddc90b441b5690db6fbb2d4/nadl-1.4.7.tar.gz
+[2024-05-26 21:08:12] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 21:08:12] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.79.tar.gz tmp/zenaura-0.9.80.tar.gz --markdown 20240526/z/zenaura/0.9.79-0.9.80/README.md --exclude *.pyd
+[2024-05-26 21:08:12] INFO root fetch - processPackages [networkx-graph]: Downloading https://files.pythonhosted.org/packages/90/45/9911674db510e39367fd5c2de78e84f75f9e2f5e1fa49d09189e5823807b/networkx_graph-0.2.4-cp38-cp38-win_amd64.whl
+[2024-05-26 21:08:12] INFO root fetch - processPackages [nadl]: executing diffoscope
+[2024-05-26 21:08:12] INFO root fetch - processPackages [nadl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nadl-1.4.6.tar.gz tmp/nadl-1.4.7.tar.gz --markdown 20240526/n/nadl/1.4.6-1.4.7/README.md --exclude *.pyd
+[2024-05-26 21:08:12] INFO root fetch - processPackages [pydantic-prompter]: executing diffoscope
+[2024-05-26 21:08:12] INFO root fetch - processPackages [pydantic-prompter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_prompter-0.1.8.tar.gz tmp/pydantic_prompter-0.1.9.tar.gz --markdown 20240526/p/pydantic-prompter/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 21:08:12] INFO root fetch - processPackages [networkx-graph]: executing diffoscope
+[2024-05-26 21:08:12] INFO root fetch - processPackages [networkx-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_graph-0.2.3.tar.gz tmp/networkx_graph-0.2.4-cp38-cp38-win_amd64.whl.zip --markdown 20240526/n/networkx-graph/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-26 21:08:12] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/a5/0f/c85d9186bd8db81a11faee629ae4eb18cf0d325491adfdca8e363912cfb9/phylokrr-0.5.0.tar.gz
+[2024-05-26 21:08:12] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.4.6.tar.gz]
+[2024-05-26 21:08:12] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.4.7.tar.gz]
+[2024-05-26 21:08:12] INFO root fetch - main [MainThread]: End processing [nadl]: success
+[2024-05-26 21:08:12] INFO root fetch - processPackages [phylokrr]: executing diffoscope
+[2024-05-26 21:08:12] INFO root fetch - processPackages [phylokrr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phylokrr-0.4.9.tar.gz tmp/phylokrr-0.5.0.tar.gz --markdown 20240526/p/phylokrr/0.4.9-0.5.0/README.md --exclude *.pyd
+[2024-05-26 21:08:12] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.79.tar.gz]
+[2024-05-26 21:08:12] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.80.tar.gz]
+[2024-05-26 21:08:12] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 21:08:12] INFO root fetch - processPackages [pydantic-prompter]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_prompter-0.1.8.tar.gz]
+[2024-05-26 21:08:12] INFO root fetch - processPackages [pydantic-prompter]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_prompter-0.1.9.tar.gz]
+[2024-05-26 21:08:12] INFO root fetch - main [MainThread]: End processing [pydantic-prompter]: success
+[2024-05-26 21:08:13] INFO root fetch - processPackages [networkx-graph]: Remove: archive file [/home/abi/fetcher/tmp/networkx_graph-0.2.3.tar.gz]
+[2024-05-26 21:08:13] INFO root fetch - processPackages [networkx-graph]: Remove: archive file [/home/abi/fetcher/tmp/networkx_graph-0.2.4-cp38-cp38-win_amd64.whl.zip]
+[2024-05-26 21:08:13] INFO root fetch - main [MainThread]: End processing [networkx-graph]: success
+[2024-05-26 21:08:13] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.9.tar.gz]
+[2024-05-26 21:08:13] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.5.0.tar.gz]
+[2024-05-26 21:08:13] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
+[2024-05-26 21:08:13] INFO root fetch - main [MainThread]: Store serial: [23386045]
