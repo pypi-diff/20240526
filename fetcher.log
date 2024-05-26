@@ -21889,3 +21889,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:25:33] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.5.tar.gz]
 [2024-05-26 23:25:33] INFO root fetch - main [MainThread]: End processing [pip2deb]: success
 [2024-05-26 23:25:33] INFO root fetch - main [MainThread]: Store serial: [23387924]
+[2024-05-26 23:27:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387924]
+[2024-05-26 23:27:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 23:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioreqs
+[2024-05-26 23:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adelie
+[2024-05-26 23:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chemfunc
+[2024-05-26 23:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yet-another-io-channels-library
+[2024-05-26 23:27:43] INFO root fetch - processPackages [adelie]: New version: [1.1.32.dev1] Old Version: [1.1.32]
+[2024-05-26 23:27:43] INFO root fetch - processPackages [aioreqs]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-26 23:27:43] INFO root fetch - processPackages [adelie]: Downloading https://files.pythonhosted.org/packages/a2/98/6eb5b82282f10a50f60a4d4606f975cf42e400ec5add318c2ff1eb18a97e/adelie-1.1.32.tar.gz
+[2024-05-26 23:27:43] INFO root fetch - processPackages [chemfunc]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-26 23:27:43] INFO root fetch - processPackages [yet-another-io-channels-library]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 23:27:43] INFO root fetch - processPackages [chemfunc]: Downloading https://files.pythonhosted.org/packages/d4/9d/2410b74bc0cf6a43c335ac8e312bccc95d7082b6ae719186f218206cc252/chemfunc-1.0.6.tar.gz
+[2024-05-26 23:27:43] INFO root fetch - processPackages [aioreqs]: Downloading https://files.pythonhosted.org/packages/7b/b2/7d1259f90148bba5eed5e4eb5be2f883f5a2f475ca46231072f85090f8b1/aioreqs-1.0.0.tar.gz
+[2024-05-26 23:27:43] INFO root fetch - processPackages [yet-another-io-channels-library]: Downloading https://files.pythonhosted.org/packages/eb/e2/512a537cdb2dbd6fef19d4b87275d4ca14b5c1581abf4880cd6b2094aad4/yet-another-io-channels-library-0.2.2.tar.gz
+[2024-05-26 23:27:43] INFO root fetch - processPackages [adelie]: Downloading https://files.pythonhosted.org/packages/07/25/25560075051b0acff29708d08e19ef8629e9095697f9fedc2423e9987fc5/adelie-1.1.32.dev1.tar.gz
+[2024-05-26 23:27:44] INFO root fetch - processPackages [aioreqs]: Downloading https://files.pythonhosted.org/packages/c8/49/c292b5cd9e8ba9ce60eb908180203a91e6d396b3b7453f7e43c1c19c5f08/aioreqs-1.0.1.tar.gz
+[2024-05-26 23:27:44] INFO root fetch - processPackages [chemfunc]: Downloading https://files.pythonhosted.org/packages/39/bb/c38cc0098fa6bd15763b3c63939ae4eb3ae3c7d3244e605151b1f5a2f257/chemfunc-1.0.7.tar.gz
+[2024-05-26 23:27:44] INFO root fetch - processPackages [aioreqs]: executing diffoscope
+[2024-05-26 23:27:44] INFO root fetch - processPackages [aioreqs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioreqs-1.0.0.tar.gz tmp/aioreqs-1.0.1.tar.gz --markdown 20240526/a/aioreqs/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-26 23:27:44] INFO root fetch - processPackages [chemfunc]: executing diffoscope
+[2024-05-26 23:27:44] INFO root fetch - processPackages [chemfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemfunc-1.0.6.tar.gz tmp/chemfunc-1.0.7.tar.gz --markdown 20240526/c/chemfunc/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-26 23:27:44] INFO root fetch - processPackages [adelie]: executing diffoscope
+[2024-05-26 23:27:44] INFO root fetch - processPackages [adelie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adelie-1.1.32.tar.gz tmp/adelie-1.1.32.dev1.tar.gz --markdown 20240526/a/adelie/1.1.32-1.1.32.dev1/README.md --exclude *.pyd
+[2024-05-26 23:27:44] INFO root fetch - processPackages [yet-another-io-channels-library]: Downloading https://files.pythonhosted.org/packages/14/cb/64c08f79fa6211c8d30f386d8c28797e24b9a48d9c1922e959459fd7b11d/yet_another_io_channels_library-0.2.3.tar.gz
+[2024-05-26 23:27:44] INFO root fetch - processPackages [yet-another-io-channels-library]: executing diffoscope
+[2024-05-26 23:27:44] INFO root fetch - processPackages [yet-another-io-channels-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yet-another-io-channels-library-0.2.2.tar.gz tmp/yet_another_io_channels_library-0.2.3.tar.gz --markdown 20240526/y/yet-another-io-channels-library/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 23:27:44] INFO root fetch - processPackages [aioreqs]: Remove: archive file [/home/abi/fetcher/tmp/aioreqs-1.0.0.tar.gz]
+[2024-05-26 23:27:44] INFO root fetch - processPackages [aioreqs]: Remove: archive file [/home/abi/fetcher/tmp/aioreqs-1.0.1.tar.gz]
+[2024-05-26 23:27:44] INFO root fetch - main [MainThread]: End processing [aioreqs]: success
+[2024-05-26 23:27:44] INFO root fetch - processPackages [chemfunc]: Remove: archive file [/home/abi/fetcher/tmp/chemfunc-1.0.6.tar.gz]
+[2024-05-26 23:27:44] INFO root fetch - processPackages [chemfunc]: Remove: archive file [/home/abi/fetcher/tmp/chemfunc-1.0.7.tar.gz]
+[2024-05-26 23:27:44] INFO root fetch - main [MainThread]: End processing [chemfunc]: success
+[2024-05-26 23:27:45] INFO root fetch - processPackages [yet-another-io-channels-library]: Remove: archive file [/home/abi/fetcher/tmp/yet-another-io-channels-library-0.2.2.tar.gz]
+[2024-05-26 23:27:45] INFO root fetch - processPackages [yet-another-io-channels-library]: Remove: archive file [/home/abi/fetcher/tmp/yet_another_io_channels_library-0.2.3.tar.gz]
+[2024-05-26 23:27:45] INFO root fetch - main [MainThread]: End processing [yet-another-io-channels-library]: success
+[2024-05-26 23:27:47] INFO root fetch - processPackages [adelie]: Remove: archive file [/home/abi/fetcher/tmp/adelie-1.1.32.tar.gz]
+[2024-05-26 23:27:47] INFO root fetch - processPackages [adelie]: Remove: archive file [/home/abi/fetcher/tmp/adelie-1.1.32.dev1.tar.gz]
+[2024-05-26 23:27:47] INFO root fetch - main [MainThread]: End processing [adelie]: success
+[2024-05-26 23:27:47] INFO root fetch - main [MainThread]: Store serial: [23387947]
