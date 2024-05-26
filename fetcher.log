@@ -21613,3 +21613,69 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:12:13] ERROR root fetch - processPackages [chickenstats]: Timeout during execution of pkgdiff
 [2024-05-26 23:12:13] INFO root fetch - main [MainThread]: End processing [chickenstats] error
 [2024-05-26 23:12:13] INFO root fetch - main [MainThread]: Store serial: [23387769]
+[2024-05-26 23:14:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387769]
+[2024-05-26 23:14:23] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dscontexai
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maesyorikun
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ansar-connect
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: areqs
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: silero-tts
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: muvi
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: surfkit
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pip2deb
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: devsetgo-lib
+[2024-05-26 23:14:23] INFO root fetch - processPackages [pip2deb]: New version: [1.3] Old Version: [1.2]
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.266] Old Version: [0.1.265]
+[2024-05-26 23:14:23] INFO root fetch - processPackages [dscontexai]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-26 23:14:23] WARNING root fetch - processPackages [maesyorikun]: Skipping, unable to determine old version
+[2024-05-26 23:14:23] INFO root fetch - main [MainThread]: End processing [maesyorikun] error
+[2024-05-26 23:14:23] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-26 23:14:23] ERROR root fetch - processPackages [areqs]: Unable to get metadata: No such project 'areqs'
+[2024-05-26 23:14:23] INFO root fetch - main [MainThread]: End processing [areqs] error
+[2024-05-26 23:14:23] WARNING root fetch - processPackages [silero-tts]: Skipping, unable to determine old version
+[2024-05-26 23:14:23] INFO root fetch - processPackages [muvi]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 23:14:23] INFO root fetch - main [MainThread]: End processing [silero-tts] error
+[2024-05-26 23:14:23] INFO root fetch - processPackages [devsetgo-lib]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-26 23:14:23] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/83/97/957bd2abae6826f8205ad01ce01ba9b9cbe8d8720e2f8119c9c5f1f1ba68/pip2deb-1.2.tar.gz
+[2024-05-26 23:14:23] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/d1/78/791f3289d28ebd99e00b7f2d78ff9de592a5b5316e5ec86f085b2e5ec27b/ansar_connect-0.1.265.tar.gz
+[2024-05-26 23:14:23] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/72/b3/1f9029edd12391338329d297f3bdc28d4f9e4b3e876e4b8aab07cef1d502/dscontexai-1.0.8.tar.gz
+[2024-05-26 23:14:23] INFO root fetch - processPackages [muvi]: Downloading https://files.pythonhosted.org/packages/09/84/a7787b3588fadf0ddeecfb996c9a139b161d153b58bbbc73b6d524abea96/muvi-0.1.1.tar.gz
+[2024-05-26 23:14:23] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-26 23:14:23] INFO root fetch - processPackages [devsetgo-lib]: Downloading https://files.pythonhosted.org/packages/80/d1/13b2fa7c65d6301d543ee4c8fa8d75b9f4a8b8f159402d83ba72fce6cc76/devsetgo_lib-0.8.0.tar.gz
+[2024-05-26 23:14:24] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/a9/01/0d7f8b3e0ea6cfe899889aa30212475bc7e204df2a17224ceaff75fa6182/dscontexai-1.0.9.tar.gz
+[2024-05-26 23:14:24] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/6e/39/88f69b0a1f007c58b495d77bb79e33d06e053d6d6bbeb394167370db4e8f/pip2deb-1.3.tar.gz
+[2024-05-26 23:14:24] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/00/59/e3fc506d558ce924de31859dd5046e62e321b2be446262427223588e54f0/ansar_connect-0.1.266.tar.gz
+[2024-05-26 23:14:24] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 23:14:24] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-1.0.8.tar.gz tmp/dscontexai-1.0.9.tar.gz --markdown 20240526/d/dscontexai/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-26 23:14:24] INFO root fetch - processPackages [pip2deb]: executing diffoscope
+[2024-05-26 23:14:24] INFO root fetch - processPackages [pip2deb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip2deb-1.2.tar.gz tmp/pip2deb-1.3.tar.gz --markdown 20240526/p/pip2deb/1.2-1.3/README.md --exclude *.pyd
+[2024-05-26 23:14:24] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-26 23:14:24] INFO root fetch - processPackages [devsetgo-lib]: Downloading https://files.pythonhosted.org/packages/63/93/489336428397fca52e6dacdf59c5f3a6f9b91d43f3ee9bbf9c8ecdeb9238/devsetgo_lib-0.9.0.tar.gz
+[2024-05-26 23:14:24] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-05-26 23:14:24] INFO root fetch - processPackages [muvi]: Downloading https://files.pythonhosted.org/packages/bc/94/5c4c385f85c9b958b641e23bf6fdd9db50093af00876b1a1ab58e368c185/muvi-0.1.2.tar.gz
+[2024-05-26 23:14:24] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.265.tar.gz tmp/ansar_connect-0.1.266.tar.gz --markdown 20240526/a/ansar-connect/0.1.265-0.1.266/README.md --exclude *.pyd
+[2024-05-26 23:14:24] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-26 23:14:24] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240526/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-26 23:14:24] INFO root fetch - processPackages [devsetgo-lib]: executing diffoscope
+[2024-05-26 23:14:24] INFO root fetch - processPackages [devsetgo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devsetgo_lib-0.8.0.tar.gz tmp/devsetgo_lib-0.9.0.tar.gz --markdown 20240526/d/devsetgo-lib/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-26 23:14:24] INFO root fetch - processPackages [muvi]: executing diffoscope
+[2024-05-26 23:14:24] INFO root fetch - processPackages [muvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muvi-0.1.1.tar.gz tmp/muvi-0.1.2.tar.gz --markdown 20240526/m/muvi/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 23:14:24] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-1.0.8.tar.gz]
+[2024-05-26 23:14:24] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-1.0.9.tar.gz]
+[2024-05-26 23:14:24] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 23:14:24] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.2.tar.gz]
+[2024-05-26 23:14:24] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.3.tar.gz]
+[2024-05-26 23:14:24] INFO root fetch - main [MainThread]: End processing [pip2deb]: success
+[2024-05-26 23:14:25] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.265.tar.gz]
+[2024-05-26 23:14:25] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.266.tar.gz]
+[2024-05-26 23:14:25] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-05-26 23:14:25] INFO root fetch - processPackages [devsetgo-lib]: Remove: archive file [/home/abi/fetcher/tmp/devsetgo_lib-0.8.0.tar.gz]
+[2024-05-26 23:14:25] INFO root fetch - processPackages [devsetgo-lib]: Remove: archive file [/home/abi/fetcher/tmp/devsetgo_lib-0.9.0.tar.gz]
+[2024-05-26 23:14:25] INFO root fetch - main [MainThread]: End processing [devsetgo-lib]: success
+[2024-05-26 23:14:25] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-26 23:14:25] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-26 23:14:25] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-26 23:14:25] INFO root fetch - processPackages [muvi]: Remove: archive file [/home/abi/fetcher/tmp/muvi-0.1.1.tar.gz]
+[2024-05-26 23:14:25] INFO root fetch - processPackages [muvi]: Remove: archive file [/home/abi/fetcher/tmp/muvi-0.1.2.tar.gz]
+[2024-05-26 23:14:25] INFO root fetch - main [MainThread]: End processing [muvi]: success
+[2024-05-26 23:14:25] INFO root fetch - main [MainThread]: Store serial: [23387818]
