@@ -10438,3 +10438,48 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:38:07] INFO root fetch - processPackages [syft]: Remove: archive file [/home/abi/fetcher/tmp/syft-0.8.7b8.tar.gz]
 [2024-05-26 14:38:07] INFO root fetch - main [MainThread]: End processing [syft]: success
 [2024-05-26 14:38:07] INFO root fetch - main [MainThread]: Store serial: [23382870]
+[2024-05-26 14:40:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382870]
+[2024-05-26 14:40:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 14:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solathon
+[2024-05-26 14:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorcircuit-nightly
+[2024-05-26 14:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcicutils
+[2024-05-26 14:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: example-package-gspranesh
+[2024-05-26 14:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scTail
+[2024-05-26 14:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lapa-authentication
+[2024-05-26 14:40:21] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230608] Old Version: [0.9.1.dev20230607]
+[2024-05-26 14:40:21] INFO root fetch - processPackages [dcicutils]: New version: [8.9.0.0b0] Old Version: [8.8.6.1b1]
+[2024-05-26 14:40:21] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/79/2a/50740b6f8b7e1d0c4223c72c789f41baca7a4e77f32e8f52bd91e7ebff20/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz
+[2024-05-26 14:40:21] INFO root fetch - processPackages [lapa-authentication]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 14:40:21] WARNING root fetch - processPackages [scTail]: Skipping, unable to determine old version
+[2024-05-26 14:40:21] INFO root fetch - main [MainThread]: End processing [scTail] error
+[2024-05-26 14:40:21] WARNING root fetch - processPackages [example-package-gspranesh]: Skipping, unable to determine old version
+[2024-05-26 14:40:21] INFO root fetch - main [MainThread]: End processing [example-package-gspranesh] error
+[2024-05-26 14:40:21] INFO root fetch - processPackages [solathon]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 14:40:21] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/7c/32/08768139343640fff87a3f0cfb50a8c8e9408bb94fdd467df1d5c83fc1ea/dcicutils-8.8.6.1b1.tar.gz
+[2024-05-26 14:40:21] INFO root fetch - processPackages [solathon]: Downloading https://files.pythonhosted.org/packages/f0/c3/58a328b3f0d6b53193e4db91f13969968e5babc93fdb15ba157824e0a895/solathon-1.0.1.tar.gz
+[2024-05-26 14:40:21] INFO root fetch - processPackages [lapa-authentication]: Downloading https://files.pythonhosted.org/packages/e4/81/0147afd631665625024e3fd8d46c8583702b5670db8ba001ee02e08e5bdd/lapa_authentication-0.0.8.tar.gz
+[2024-05-26 14:40:21] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/2f/cc/671276320457670987d1eb503de15ee19924e63c7ec9c99b14c240d5aa18/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz
+[2024-05-26 14:40:21] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/5b/de/ac87d1c9583f507046be7724343035a3e363814633eea93612ca13f3adba/dcicutils-8.9.0.0b0.tar.gz
+[2024-05-26 14:40:22] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2024-05-26 14:40:22] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz --markdown 20240526/t/tensorcircuit-nightly/0.9.1.dev20230607-0.9.1.dev20230608/README.md --exclude *.pyd
+[2024-05-26 14:40:22] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-05-26 14:40:22] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.6.1b1.tar.gz tmp/dcicutils-8.9.0.0b0.tar.gz --markdown 20240526/d/dcicutils/8.8.6.1b1-8.9.0.0b0/README.md --exclude *.pyd
+[2024-05-26 14:40:22] INFO root fetch - processPackages [solathon]: Downloading https://files.pythonhosted.org/packages/d0/1c/77e2a365268fad233cc2a00a24209cf1daccd422713d74309f35b245411e/solathon-1.0.2.tar.gz
+[2024-05-26 14:40:22] INFO root fetch - processPackages [lapa-authentication]: Downloading https://files.pythonhosted.org/packages/93/c0/03721c8dad872ab6d551fde61c36e0304a43fb6afe00c5037f5e7e16a865/lapa_authentication-0.0.9.tar.gz
+[2024-05-26 14:40:22] INFO root fetch - processPackages [solathon]: executing diffoscope
+[2024-05-26 14:40:22] INFO root fetch - processPackages [solathon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solathon-1.0.1.tar.gz tmp/solathon-1.0.2.tar.gz --markdown 20240526/s/solathon/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 14:40:22] INFO root fetch - processPackages [lapa-authentication]: executing diffoscope
+[2024-05-26 14:40:22] INFO root fetch - processPackages [lapa-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_authentication-0.0.8.tar.gz tmp/lapa_authentication-0.0.9.tar.gz --markdown 20240526/l/lapa-authentication/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 14:40:23] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz]
+[2024-05-26 14:40:23] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
+[2024-05-26 14:40:23] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2024-05-26 14:40:23] INFO root fetch - processPackages [solathon]: Remove: archive file [/home/abi/fetcher/tmp/solathon-1.0.1.tar.gz]
+[2024-05-26 14:40:23] INFO root fetch - processPackages [solathon]: Remove: archive file [/home/abi/fetcher/tmp/solathon-1.0.2.tar.gz]
+[2024-05-26 14:40:23] INFO root fetch - main [MainThread]: End processing [solathon]: success
+[2024-05-26 14:40:23] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.8.tar.gz]
+[2024-05-26 14:40:23] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.9.tar.gz]
+[2024-05-26 14:40:23] INFO root fetch - main [MainThread]: End processing [lapa-authentication]: success
+[2024-05-26 14:40:23] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.6.1b1.tar.gz]
+[2024-05-26 14:40:23] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.9.0.0b0.tar.gz]
+[2024-05-26 14:40:23] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-05-26 14:40:23] INFO root fetch - main [MainThread]: Store serial: [23382891]
