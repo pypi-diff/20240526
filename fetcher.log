@@ -1731,3 +1731,17 @@
 [2024-05-26 03:22:01] INFO root fetch - processPackages [hyssop-aiodb]: Remove: archive file [/home/abi/fetcher/tmp/hyssop_aiodb-0.0.9.tar.gz]
 [2024-05-26 03:22:01] INFO root fetch - main [MainThread]: End processing [hyssop-aiodb]: success
 [2024-05-26 03:22:01] INFO root fetch - main [MainThread]: Store serial: [23378924]
+[2024-05-26 03:24:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378924]
+[2024-05-26 03:24:11] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 03:26:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378924]
+[2024-05-26 03:26:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 03:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blaze-double-bot
+[2024-05-26 03:26:16] INFO root fetch - processPackages [blaze-double-bot]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-26 03:26:16] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/e9/e6/ada3458a695636d0e95a536941c1b2a6f70c119e31efa48afc2ca8b51bfa/blaze_double_bot-0.2.3.tar.gz
+[2024-05-26 03:26:16] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/f9/22/17e8a20206020b8d6fdd710f8112da6470c83a9216f54ba1f35f326fd7fa/blaze_double_bot-0.2.4.tar.gz
+[2024-05-26 03:26:16] INFO root fetch - processPackages [blaze-double-bot]: executing diffoscope
+[2024-05-26 03:26:16] INFO root fetch - processPackages [blaze-double-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaze_double_bot-0.2.3.tar.gz tmp/blaze_double_bot-0.2.4.tar.gz --markdown 20240526/b/blaze-double-bot/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-26 03:26:17] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-0.2.3.tar.gz]
+[2024-05-26 03:26:17] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-0.2.4.tar.gz]
+[2024-05-26 03:26:17] INFO root fetch - main [MainThread]: End processing [blaze-double-bot]: success
+[2024-05-26 03:26:17] INFO root fetch - main [MainThread]: Store serial: [23378926]
