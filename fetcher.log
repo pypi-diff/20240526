@@ -16101,3 +16101,29 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:58:16] INFO root fetch - processPackages [ultranest]: Remove: archive file [/home/abi/fetcher/tmp/ultranest-4.3.1.tar.gz]
 [2024-05-26 19:58:16] INFO root fetch - main [MainThread]: End processing [ultranest]: success
 [2024-05-26 19:58:16] INFO root fetch - main [MainThread]: Store serial: [23385450]
+[2024-05-26 20:00:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385450]
+[2024-05-26 20:00:25] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 20:02:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385458]
+[2024-05-26 20:02:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wp2genes
+[2024-05-26 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ASMRManager
+[2024-05-26 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oakestra-utils
+[2024-05-26 20:02:31] WARNING root fetch - processPackages [oakestra-utils]: Skipping, unable to determine old version
+[2024-05-26 20:02:31] INFO root fetch - main [MainThread]: End processing [oakestra-utils] error
+[2024-05-26 20:02:31] INFO root fetch - processPackages [wp2genes]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 20:02:31] INFO root fetch - processPackages [ASMRManager]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-26 20:02:31] INFO root fetch - processPackages [wp2genes]: Downloading https://files.pythonhosted.org/packages/b3/d2/b5c3900f85e07a9d8b9cfa242252b9604ba3f80410a0b94f5c8580d2ce05/wp2genes-0.0.1.tar.gz
+[2024-05-26 20:02:31] INFO root fetch - processPackages [ASMRManager]: Downloading https://files.pythonhosted.org/packages/b6/11/956d35411f646ab221594e8daebae78bb02d14d491159cbd74816a4307f6/asmrmanager-2.0.0.tar.gz
+[2024-05-26 20:02:31] INFO root fetch - processPackages [wp2genes]: Downloading https://files.pythonhosted.org/packages/83/8c/1cb33a8fe59b9d93d79ee7eac6b4d4ca26717e6089db206c68fa20a5d9b0/wp2genes-0.0.2.tar.gz
+[2024-05-26 20:02:31] INFO root fetch - processPackages [ASMRManager]: Downloading https://files.pythonhosted.org/packages/68/ac/6e9eaaad05dba4a90fe2f7ee819aa9193adcfaa7694a226f4adb429520e7/asmrmanager-2.0.1.tar.gz
+[2024-05-26 20:02:32] INFO root fetch - processPackages [wp2genes]: executing diffoscope
+[2024-05-26 20:02:32] INFO root fetch - processPackages [wp2genes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wp2genes-0.0.1.tar.gz tmp/wp2genes-0.0.2.tar.gz --markdown 20240526/w/wp2genes/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 20:02:32] INFO root fetch - processPackages [ASMRManager]: executing diffoscope
+[2024-05-26 20:02:32] INFO root fetch - processPackages [ASMRManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asmrmanager-2.0.0.tar.gz tmp/asmrmanager-2.0.1.tar.gz --markdown 20240526/A/ASMRManager/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-26 20:02:32] INFO root fetch - processPackages [wp2genes]: Remove: archive file [/home/abi/fetcher/tmp/wp2genes-0.0.1.tar.gz]
+[2024-05-26 20:02:32] INFO root fetch - processPackages [wp2genes]: Remove: archive file [/home/abi/fetcher/tmp/wp2genes-0.0.2.tar.gz]
+[2024-05-26 20:02:32] INFO root fetch - main [MainThread]: End processing [wp2genes]: success
+[2024-05-26 20:02:32] INFO root fetch - processPackages [ASMRManager]: Remove: archive file [/home/abi/fetcher/tmp/asmrmanager-2.0.0.tar.gz]
+[2024-05-26 20:02:32] INFO root fetch - processPackages [ASMRManager]: Remove: archive file [/home/abi/fetcher/tmp/asmrmanager-2.0.1.tar.gz]
+[2024-05-26 20:02:32] INFO root fetch - main [MainThread]: End processing [ASMRManager]: success
+[2024-05-26 20:02:32] INFO root fetch - main [MainThread]: Store serial: [23385480]
