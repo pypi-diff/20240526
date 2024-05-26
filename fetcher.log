@@ -8664,3 +8664,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:02:30] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.4.tar.gz]
 [2024-05-26 12:02:30] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
 [2024-05-26 12:02:30] INFO root fetch - main [MainThread]: Store serial: [23382015]
+[2024-05-26 12:04:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382015]
+[2024-05-26 12:04:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 12:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-extensions
+[2024-05-26 12:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xssbase
+[2024-05-26 12:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: setux-core
+[2024-05-26 12:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: starrailres
+[2024-05-26 12:04:43] INFO root fetch - processPackages [xssbase]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-26 12:04:43] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/d5/88/5b4026a56339c32319c9d9722ae24ca8c167a2cb7d3e3708a7f289026576/xssbase-2.0.2.tar.gz
+[2024-05-26 12:04:43] INFO root fetch - processPackages [starrailres]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-26 12:04:43] INFO root fetch - processPackages [setux-core]: New version: [0.4.0] Old Version: [0.3.5]
+[2024-05-26 12:04:43] INFO root fetch - processPackages [dash-extensions]: New version: [1.0.9] Old Version: [1.0.8rc2]
+[2024-05-26 12:04:44] INFO root fetch - processPackages [setux-core]: Downloading https://files.pythonhosted.org/packages/07/0a/b0f125d0ea0fb024a5a25895fb9ec8cbd58d601a9544621a3b97e8ea5651/setux_core-0.3.5.tar.gz
+[2024-05-26 12:04:44] INFO root fetch - processPackages [dash-extensions]: Downloading https://files.pythonhosted.org/packages/90/bf/520c9147ab71abc1f0767745c2d2975c9d4d0642417c596ca28877805f25/dash_extensions-1.0.8rc2.tar.gz
+[2024-05-26 12:04:44] INFO root fetch - processPackages [starrailres]: Downloading https://files.pythonhosted.org/packages/a6/ef/6d4eb5ba5fb4c2a2e5501b89cae2d381d208b522957f7683228d936af5b4/starrailres-2.0.0.tar.gz
+[2024-05-26 12:04:44] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/b0/82/81189004da665dab678029206db62d4c5221abb5815bad31bc7217ad8e98/xssbase-2.0.3.tar.gz
+[2024-05-26 12:04:44] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 12:04:44] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-2.0.2.tar.gz tmp/xssbase-2.0.3.tar.gz --markdown 20240526/x/xssbase/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-26 12:04:44] INFO root fetch - processPackages [setux-core]: Downloading https://files.pythonhosted.org/packages/ed/77/65720bbda554ab48f737d9ea9e1bf46b03caba7bea3fc61056ef42ecce6a/setux_core-0.4.0.tar.gz
+[2024-05-26 12:04:44] INFO root fetch - processPackages [starrailres]: Downloading https://files.pythonhosted.org/packages/e6/39/eff431edc32b58f85840888720cadf5a3f3f2b72817a2c8a1b0b274f844e/starrailres-2.1.0.tar.gz
+[2024-05-26 12:04:44] INFO root fetch - processPackages [setux-core]: executing diffoscope
+[2024-05-26 12:04:44] INFO root fetch - processPackages [setux-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux_core-0.3.5.tar.gz tmp/setux_core-0.4.0.tar.gz --markdown 20240526/s/setux-core/0.3.5-0.4.0/README.md --exclude *.pyd
+[2024-05-26 12:04:44] INFO root fetch - processPackages [dash-extensions]: Downloading https://files.pythonhosted.org/packages/7f/63/564061f316598022f17cdd48ab443dfc7d05ab959799a2a196f52b2921a1/dash_extensions-1.0.9.tar.gz
+[2024-05-26 12:04:44] INFO root fetch - processPackages [starrailres]: executing diffoscope
+[2024-05-26 12:04:44] INFO root fetch - processPackages [starrailres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrailres-2.0.0.tar.gz tmp/starrailres-2.1.0.tar.gz --markdown 20240526/s/starrailres/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-26 12:04:44] INFO root fetch - processPackages [dash-extensions]: executing diffoscope
+[2024-05-26 12:04:44] INFO root fetch - processPackages [dash-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_extensions-1.0.8rc2.tar.gz tmp/dash_extensions-1.0.9.tar.gz --markdown 20240526/d/dash-extensions/1.0.8rc2-1.0.9/README.md --exclude *.pyd
+[2024-05-26 12:04:44] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.2.tar.gz]
+[2024-05-26 12:04:44] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.3.tar.gz]
+[2024-05-26 12:04:44] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 12:04:45] INFO root fetch - processPackages [setux-core]: Remove: archive file [/home/abi/fetcher/tmp/setux_core-0.3.5.tar.gz]
+[2024-05-26 12:04:45] INFO root fetch - processPackages [setux-core]: Remove: archive file [/home/abi/fetcher/tmp/setux_core-0.4.0.tar.gz]
+[2024-05-26 12:04:45] INFO root fetch - main [MainThread]: End processing [setux-core]: success
+[2024-05-26 12:04:45] INFO root fetch - processPackages [starrailres]: Remove: archive file [/home/abi/fetcher/tmp/starrailres-2.0.0.tar.gz]
+[2024-05-26 12:04:45] INFO root fetch - processPackages [starrailres]: Remove: archive file [/home/abi/fetcher/tmp/starrailres-2.1.0.tar.gz]
+[2024-05-26 12:04:45] INFO root fetch - main [MainThread]: End processing [starrailres]: success
+[2024-05-26 12:05:20] INFO root fetch - processPackages [dash-extensions]: Remove: archive file [/home/abi/fetcher/tmp/dash_extensions-1.0.8rc2.tar.gz]
+[2024-05-26 12:05:20] INFO root fetch - processPackages [dash-extensions]: Remove: archive file [/home/abi/fetcher/tmp/dash_extensions-1.0.9.tar.gz]
+[2024-05-26 12:05:20] INFO root fetch - main [MainThread]: End processing [dash-extensions]: success
+[2024-05-26 12:05:20] INFO root fetch - main [MainThread]: Store serial: [23382027]
