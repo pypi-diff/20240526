@@ -2942,3 +2942,15 @@
 [2024-05-26 05:27:25] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.8.1.tar.gz]
 [2024-05-26 05:27:25] INFO root fetch - main [MainThread]: End processing [hubblescope]: success
 [2024-05-26 05:27:25] INFO root fetch - main [MainThread]: Store serial: [23379442]
+[2024-05-26 05:29:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379442]
+[2024-05-26 05:29:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QuizEngine4Trivia-TirsvadCLI
+[2024-05-26 05:29:34] INFO root fetch - processPackages [QuizEngine4Trivia-TirsvadCLI]: New version: [0.0.5] Old Version: [0.0.4.post2]
+[2024-05-26 05:29:34] INFO root fetch - processPackages [QuizEngine4Trivia-TirsvadCLI]: Downloading https://files.pythonhosted.org/packages/c6/ed/ae1c09a388f9e091376146a52d2e89b3d3f78514dc20be00e2ff4905b073/quizengine4trivia_tirsvadcli-0.0.4.post2.tar.gz
+[2024-05-26 05:29:35] INFO root fetch - processPackages [QuizEngine4Trivia-TirsvadCLI]: Downloading https://files.pythonhosted.org/packages/97/20/61385724c8cc8a9d9b644478b9da82f2d1997e6cb245cf852e9e1eb46c70/quizengine4trivia_tirsvadcli-0.0.5.tar.gz
+[2024-05-26 05:29:35] INFO root fetch - processPackages [QuizEngine4Trivia-TirsvadCLI]: executing diffoscope
+[2024-05-26 05:29:35] INFO root fetch - processPackages [QuizEngine4Trivia-TirsvadCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quizengine4trivia_tirsvadcli-0.0.4.post2.tar.gz tmp/quizengine4trivia_tirsvadcli-0.0.5.tar.gz --markdown 20240526/Q/QuizEngine4Trivia-TirsvadCLI/0.0.4.post2-0.0.5/README.md --exclude *.pyd
+[2024-05-26 05:29:36] INFO root fetch - processPackages [QuizEngine4Trivia-TirsvadCLI]: Remove: archive file [/home/abi/fetcher/tmp/quizengine4trivia_tirsvadcli-0.0.4.post2.tar.gz]
+[2024-05-26 05:29:36] INFO root fetch - processPackages [QuizEngine4Trivia-TirsvadCLI]: Remove: archive file [/home/abi/fetcher/tmp/quizengine4trivia_tirsvadcli-0.0.5.tar.gz]
+[2024-05-26 05:29:36] INFO root fetch - main [MainThread]: End processing [QuizEngine4Trivia-TirsvadCLI]: success
+[2024-05-26 05:29:36] INFO root fetch - main [MainThread]: Store serial: [23379445]
