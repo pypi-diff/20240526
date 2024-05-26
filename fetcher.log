@@ -22382,3 +22382,84 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:56:12] INFO root fetch - processPackages [ebrow]: Remove: archive file [/home/abi/fetcher/tmp/ebrow-0.1.80.tar.gz]
 [2024-05-26 23:56:12] INFO root fetch - main [MainThread]: End processing [ebrow]: success
 [2024-05-26 23:56:12] INFO root fetch - main [MainThread]: Store serial: [23388141]
+[2024-05-26 23:58:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23388141]
+[2024-05-26 23:58:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hubblescope
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gizai
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moto
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yet-another-io-channels-library
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easy-pay-website
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: area-converter
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: funky-modifiers
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytask-parallel
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ferfereh
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: li-pagador
+[2024-05-26 23:58:23] INFO root fetch - processPackages [gizai]: New version: [5.9.1] Old Version: [5.6.1]
+[2024-05-26 23:58:23] INFO root fetch - processPackages [hubblescope]: New version: [4.8.1] Old Version: [4.6.1]
+[2024-05-26 23:58:23] INFO root fetch - processPackages [yet-another-io-channels-library]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 23:58:23] INFO root fetch - processPackages [ferfereh]: New version: [1.135.1] Old Version: [1.134.1]
+[2024-05-26 23:58:23] INFO root fetch - processPackages [funky-modifiers]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-26 23:58:23] WARNING root fetch - processPackages [area-converter]: Skipping, unable to determine old version
+[2024-05-26 23:58:23] INFO root fetch - main [MainThread]: End processing [area-converter] error
+[2024-05-26 23:58:23] INFO root fetch - processPackages [moto]: New version: [5.0.8.dev9] Old Version: [5.0.8.dev8]
+[2024-05-26 23:58:23] INFO root fetch - processPackages [easy-pay-website]: New version: [0.5.0] Old Version: [0.4.5]
+[2024-05-26 23:58:24] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/b5/6f/4f0a41f0d92645c658e6ac840df2f52567ed4a8a759e20090563ebe58108/hubblescope-4.6.1.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/01/83/b0110f05b1480d30f378d727382dac2b2e091afab0e8b384fd19699747f7/gizai-5.6.1.tar.gz
+[2024-05-26 23:58:24] WARNING root fetch - processPackages [li-pagador]: Skipping, unable to determine old version
+[2024-05-26 23:58:24] INFO root fetch - main [MainThread]: End processing [li-pagador] error
+[2024-05-26 23:58:24] INFO root fetch - processPackages [pytask-parallel]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-05-26 23:58:24] INFO root fetch - processPackages [yet-another-io-channels-library]: Downloading https://files.pythonhosted.org/packages/eb/e2/512a537cdb2dbd6fef19d4b87275d4ca14b5c1581abf4880cd6b2094aad4/yet-another-io-channels-library-0.2.2.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [ferfereh]: Downloading https://files.pythonhosted.org/packages/93/50/a4b87e03fa55fb40e2118b24c93c58510b4d9fa334e30f9ed1425fea8eb3/ferfereh-1.134.1.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/d6/76/3e3b9c4b3b32b54bbf1b48b788fcaa2bb622645f342a52d9c75fe9a0c227/funky_modifiers-0.3.2.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/3b/ac/06a0859bde65d51176d1bc211894343ba012b690fa8ca460b05853a4cc62/moto-5.0.8.dev8.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [easy-pay-website]: Downloading https://files.pythonhosted.org/packages/41/1f/cca110b3fc4cc0121616c5f600cab24e483f9b372f2389a79845c2372062/easy_pay_website-0.4.5.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [pytask-parallel]: Downloading https://files.pythonhosted.org/packages/a4/9c/fd5f4398159aa9742d60c8c16decdc736ee93e53bc4f1d0e488cade0e11d/pytask_parallel-0.4.1.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/78/9a/5ed5f10da658c0d47a86d64ecd6655197cc75c0317ba317b9c6f82be243d/hubblescope-4.8.1.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/bd/e0/e34a72b06da9054a2c2be6561feb68d8df248f033dea7576bd6df6bb25a9/gizai-5.9.1.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [yet-another-io-channels-library]: Downloading https://files.pythonhosted.org/packages/14/cb/64c08f79fa6211c8d30f386d8c28797e24b9a48d9c1922e959459fd7b11d/yet_another_io_channels_library-0.2.3.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [gizai]: executing diffoscope
+[2024-05-26 23:58:24] INFO root fetch - processPackages [gizai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gizai-5.6.1.tar.gz tmp/gizai-5.9.1.tar.gz --markdown 20240526/g/gizai/5.6.1-5.9.1/README.md --exclude *.pyd
+[2024-05-26 23:58:24] INFO root fetch - processPackages [hubblescope]: executing diffoscope
+[2024-05-26 23:58:24] INFO root fetch - processPackages [hubblescope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubblescope-4.6.1.tar.gz tmp/hubblescope-4.8.1.tar.gz --markdown 20240526/h/hubblescope/4.6.1-4.8.1/README.md --exclude *.pyd
+[2024-05-26 23:58:24] INFO root fetch - processPackages [yet-another-io-channels-library]: executing diffoscope
+[2024-05-26 23:58:24] INFO root fetch - processPackages [yet-another-io-channels-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yet-another-io-channels-library-0.2.2.tar.gz tmp/yet_another_io_channels_library-0.2.3.tar.gz --markdown 20240526/y/yet-another-io-channels-library/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 23:58:24] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/e8/a4/654bda915068edbc02f8615e3aac1d70fd02bffc3e201d3d1cbd2fdf3df5/funky_modifiers-0.3.3.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [ferfereh]: Downloading https://files.pythonhosted.org/packages/3d/36/9b23718fdda3a50f25693fb5f024990a8398782d700542b7f9649c7a0b07/ferfereh-1.135.1.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [easy-pay-website]: Downloading https://files.pythonhosted.org/packages/66/b5/56f34b9d65b2052fbccf3b87c29a3d699e6827012f73ba5d47d0115dcdcb/easy_pay_website-0.5.0.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [ferfereh]: executing diffoscope
+[2024-05-26 23:58:24] INFO root fetch - processPackages [ferfereh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ferfereh-1.134.1.tar.gz tmp/ferfereh-1.135.1.tar.gz --markdown 20240526/f/ferfereh/1.134.1-1.135.1/README.md --exclude *.pyd
+[2024-05-26 23:58:24] INFO root fetch - processPackages [pytask-parallel]: Downloading https://files.pythonhosted.org/packages/dd/4e/a4cad348c89b53d1ad964ae4fdac211bd90ccdb79a91ed8396e5ca343ca3/pytask_parallel-0.5.0.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-26 23:58:24] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.3.2.tar.gz tmp/funky_modifiers-0.3.3.tar.gz --markdown 20240526/f/funky-modifiers/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-26 23:58:24] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cd/82/43857467531c1b56b16670bf50e2d4a85619a54c84ae9aaf1d5deccd41ca/moto-5.0.8.dev9.tar.gz
+[2024-05-26 23:58:24] INFO root fetch - processPackages [pytask-parallel]: executing diffoscope
+[2024-05-26 23:58:24] INFO root fetch - processPackages [pytask-parallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytask_parallel-0.4.1.tar.gz tmp/pytask_parallel-0.5.0.tar.gz --markdown 20240526/p/pytask-parallel/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-05-26 23:58:24] INFO root fetch - processPackages [easy-pay-website]: executing diffoscope
+[2024-05-26 23:58:24] INFO root fetch - processPackages [easy-pay-website]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_pay_website-0.4.5.tar.gz tmp/easy_pay_website-0.5.0.tar.gz --markdown 20240526/e/easy-pay-website/0.4.5-0.5.0/README.md --exclude *.pyd
+[2024-05-26 23:58:25] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-26 23:58:25] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.8.dev8.tar.gz tmp/moto-5.0.8.dev9.tar.gz --markdown 20240526/m/moto/5.0.8.dev8-5.0.8.dev9/README.md --exclude *.pyd
+[2024-05-26 23:58:25] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.6.1.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.8.1.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - main [MainThread]: End processing [hubblescope]: success
+[2024-05-26 23:58:25] INFO root fetch - processPackages [yet-another-io-channels-library]: Remove: archive file [/home/abi/fetcher/tmp/yet-another-io-channels-library-0.2.2.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - processPackages [yet-another-io-channels-library]: Remove: archive file [/home/abi/fetcher/tmp/yet_another_io_channels_library-0.2.3.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - main [MainThread]: End processing [yet-another-io-channels-library]: success
+[2024-05-26 23:58:25] INFO root fetch - processPackages [gizai]: Remove: archive file [/home/abi/fetcher/tmp/gizai-5.6.1.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - processPackages [gizai]: Remove: archive file [/home/abi/fetcher/tmp/gizai-5.9.1.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - main [MainThread]: End processing [gizai]: success
+[2024-05-26 23:58:25] INFO root fetch - processPackages [ferfereh]: Remove: archive file [/home/abi/fetcher/tmp/ferfereh-1.134.1.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - processPackages [ferfereh]: Remove: archive file [/home/abi/fetcher/tmp/ferfereh-1.135.1.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - main [MainThread]: End processing [ferfereh]: success
+[2024-05-26 23:58:25] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.3.2.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.3.3.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-26 23:58:25] INFO root fetch - processPackages [pytask-parallel]: Remove: archive file [/home/abi/fetcher/tmp/pytask_parallel-0.4.1.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - processPackages [pytask-parallel]: Remove: archive file [/home/abi/fetcher/tmp/pytask_parallel-0.5.0.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - main [MainThread]: End processing [pytask-parallel]: success
+[2024-05-26 23:58:25] INFO root fetch - processPackages [easy-pay-website]: Remove: archive file [/home/abi/fetcher/tmp/easy_pay_website-0.4.5.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - processPackages [easy-pay-website]: Remove: archive file [/home/abi/fetcher/tmp/easy_pay_website-0.5.0.tar.gz]
+[2024-05-26 23:58:25] INFO root fetch - main [MainThread]: End processing [easy-pay-website]: success
+[2024-05-26 23:58:37] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev8.tar.gz]
+[2024-05-26 23:58:37] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev9.tar.gz]
+[2024-05-26 23:58:37] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-05-26 23:58:37] INFO root fetch - main [MainThread]: Store serial: [23388172]
