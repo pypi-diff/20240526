@@ -3918,3 +3918,54 @@
 [2024-05-26 07:11:11] WARNING root fetch - processPackages [my-reverse-string]: Skipping, unable to determine old version
 [2024-05-26 07:11:11] INFO root fetch - main [MainThread]: End processing [my-reverse-string] error
 [2024-05-26 07:11:11] INFO root fetch - main [MainThread]: Store serial: [23379835]
+[2024-05-26 07:13:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379835]
+[2024-05-26 07:13:19] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-pipe
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-emoji
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-fullyqualifieddomain
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-genderdetector
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: e4ting
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apiverve-gravatarlookup
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: patch-conv
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: my-reverse-string
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: apiverve-hashtaggenerator
+[2024-05-26 07:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: apiverve-historicalevents
+[2024-05-26 07:13:19] WARNING root fetch - processPackages [my-reverse-string]: Skipping, unable to determine old version
+[2024-05-26 07:13:19] INFO root fetch - main [MainThread]: End processing [my-reverse-string] error
+[2024-05-26 07:13:20] WARNING root fetch - processPackages [apiverve-fullyqualifieddomain]: Skipping, unable to determine old version
+[2024-05-26 07:13:20] INFO root fetch - main [MainThread]: End processing [apiverve-fullyqualifieddomain] error
+[2024-05-26 07:13:20] WARNING root fetch - processPackages [apiverve-genderdetector]: Skipping, unable to determine old version
+[2024-05-26 07:13:20] INFO root fetch - main [MainThread]: End processing [apiverve-genderdetector] error
+[2024-05-26 07:13:20] WARNING root fetch - processPackages [apiverve-hashtaggenerator]: Skipping, unable to determine old version
+[2024-05-26 07:13:20] INFO root fetch - main [MainThread]: End processing [apiverve-hashtaggenerator] error
+[2024-05-26 07:13:20] WARNING root fetch - processPackages [apiverve-historicalevents]: Skipping, unable to determine old version
+[2024-05-26 07:13:20] INFO root fetch - main [MainThread]: End processing [apiverve-historicalevents] error
+[2024-05-26 07:13:20] WARNING root fetch - processPackages [apiverve-emoji]: Skipping, unable to determine old version
+[2024-05-26 07:13:20] INFO root fetch - main [MainThread]: End processing [apiverve-emoji] error
+[2024-05-26 07:13:20] WARNING root fetch - processPackages [apiverve-gravatarlookup]: Skipping, unable to determine old version
+[2024-05-26 07:13:20] INFO root fetch - main [MainThread]: End processing [apiverve-gravatarlookup] error
+[2024-05-26 07:13:20] INFO root fetch - processPackages [patch-conv]: New version: [0.0.1b0] Old Version: [0.0.0b0]
+[2024-05-26 07:13:20] INFO root fetch - processPackages [e4ting]: New version: [1.1.3485] Old Version: [1.1.3319]
+[2024-05-26 07:13:20] INFO root fetch - processPackages [api-pipe]: New version: [2.0.12] Old Version: [2.0.10]
+[2024-05-26 07:13:20] INFO root fetch - processPackages [patch-conv]: Downloading https://files.pythonhosted.org/packages/0a/d4/73767104d83a476ca547c9ce81c9f49596173b04e1214771e74ddade2f24/patch_conv-0.0.0b0.tar.gz
+[2024-05-26 07:13:20] INFO root fetch - processPackages [e4ting]: Downloading https://files.pythonhosted.org/packages/cd/1f/cbe08224118da3b9cdd990847e6ce17f91ffbd9eed9daacffb09053dc5eb/e4ting-1.1.3319-py3-none-any.whl
+[2024-05-26 07:13:20] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/2f/a8/767295a52d04e5682cc9cad99b68bb7444178ccc8742c2c8840d6e5987ec/api_pipe-2.0.10.tar.gz
+[2024-05-26 07:13:20] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/57/7f/641ed7d2a39fc883b95a494b1ca405dbd3d5bf5841467f2d05b73a3882cc/api_pipe-2.0.12.tar.gz
+[2024-05-26 07:13:20] INFO root fetch - processPackages [e4ting]: Downloading https://files.pythonhosted.org/packages/e8/33/7a57b0ea3101e5771126c786f517634eb978575420e8f2e0a95f0adf4a94/e4ting-1.1.3485-py3-none-any.whl
+[2024-05-26 07:13:20] INFO root fetch - processPackages [patch-conv]: Downloading https://files.pythonhosted.org/packages/9b/ae/555a6c2ff8c73f3208c335c46c081dbb71d4287e2b956a64d6f33f3fd10c/patch_conv-0.0.1b0.tar.gz
+[2024-05-26 07:13:20] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-05-26 07:13:20] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.10.tar.gz tmp/api_pipe-2.0.12.tar.gz --markdown 20240526/a/api-pipe/2.0.10-2.0.12/README.md --exclude *.pyd
+[2024-05-26 07:13:20] INFO root fetch - processPackages [e4ting]: executing diffoscope
+[2024-05-26 07:13:20] INFO root fetch - processPackages [e4ting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e4ting-1.1.3319-py3-none-any.whl.zip tmp/e4ting-1.1.3485-py3-none-any.whl.zip --markdown 20240526/e/e4ting/1.1.3319-1.1.3485/README.md --exclude *.pyd
+[2024-05-26 07:13:20] INFO root fetch - processPackages [patch-conv]: executing diffoscope
+[2024-05-26 07:13:20] INFO root fetch - processPackages [patch-conv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patch_conv-0.0.0b0.tar.gz tmp/patch_conv-0.0.1b0.tar.gz --markdown 20240526/p/patch-conv/0.0.0b0-0.0.1b0/README.md --exclude *.pyd
+[2024-05-26 07:13:21] INFO root fetch - processPackages [patch-conv]: Remove: archive file [/home/abi/fetcher/tmp/patch_conv-0.0.0b0.tar.gz]
+[2024-05-26 07:13:21] INFO root fetch - processPackages [patch-conv]: Remove: archive file [/home/abi/fetcher/tmp/patch_conv-0.0.1b0.tar.gz]
+[2024-05-26 07:13:21] INFO root fetch - main [MainThread]: End processing [patch-conv]: success
+[2024-05-26 07:13:21] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.10.tar.gz]
+[2024-05-26 07:13:21] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.12.tar.gz]
+[2024-05-26 07:13:21] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-05-26 07:13:21] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.3319-py3-none-any.whl.zip]
+[2024-05-26 07:13:21] INFO root fetch - processPackages [e4ting]: Remove: archive file [/home/abi/fetcher/tmp/e4ting-1.1.3485-py3-none-any.whl.zip]
+[2024-05-26 07:13:21] INFO root fetch - main [MainThread]: End processing [e4ting]: success
+[2024-05-26 07:13:21] INFO root fetch - main [MainThread]: Store serial: [23379876]
