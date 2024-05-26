@@ -1,0 +1,287 @@
+# Comparing `tmp/apache_airflow_providers_segment-3.5.0rc2.tar.gz` & `tmp/apache_airflow_providers_segment-3.5.1rc1.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "apache_airflow_providers_segment-3.5.0rc2.tar", last modified: Tue Apr 30 11:44:12 2024, max compression
++gzip compressed data, was "apache_airflow_providers_segment-3.5.1rc1.tar", last modified: Tue May 21 10:56:35 2024, max compression
+```
+
+## Comparing `apache_airflow_providers_segment-3.5.0rc2.tar` & `apache_airflow_providers_segment-3.5.1rc1.tar`
+
+### file list
+
+```diff
+@@ -1,10 +1,10 @@
+--rw-r--r--   0        0        0     3068 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/README.rst
+--rw-r--r--   0        0        0    13569 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/LICENSE
+--rw-r--r--   0        0        0     1582 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/__init__.py
+--rw-r--r--   0        0        0     2544 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/get_provider_info.py
+--rw-r--r--   0        0        0      787 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/hooks/__init__.py
+--rw-r--r--   0        0        0     3428 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/hooks/segment.py
+--rw-r--r--   0        0        0      787 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/operators/__init__.py
+--rw-r--r--   0        0        0     2646 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/operators/segment_track_event.py
+--rw-r--r--   0        0        0     2979 2024-04-30 11:44:12.000000 apache_airflow_providers_segment-3.5.0rc2/pyproject.toml
+--rw-r--r--   0        0        0     4772 1970-01-01 00:00:00.000000 apache_airflow_providers_segment-3.5.0rc2/PKG-INFO
++-rw-r--r--   0        0        0     3068 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/README.rst
++-rw-r--r--   0        0        0    13569 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/LICENSE
++-rw-r--r--   0        0        0     1494 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/__init__.py
++-rw-r--r--   0        0        0     2565 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/get_provider_info.py
++-rw-r--r--   0        0        0      787 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/hooks/__init__.py
++-rw-r--r--   0        0        0     3428 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/hooks/segment.py
++-rw-r--r--   0        0        0      787 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/operators/__init__.py
++-rw-r--r--   0        0        0     2646 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/operators/segment_track_event.py
++-rw-r--r--   0        0        0     2979 2024-05-21 10:56:35.000000 apache_airflow_providers_segment-3.5.1rc1/pyproject.toml
++-rw-r--r--   0        0        0     4772 1970-01-01 00:00:00.000000 apache_airflow_providers_segment-3.5.1rc1/PKG-INFO
+```
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/README.rst` & `apache_airflow_providers_segment-3.5.1rc1/README.rst`
+
+ * *Files 0% similar despite different names*
+
+```diff
+@@ -38,28 +38,28 @@
+ 
+  .. IF YOU WANT TO MODIFY TEMPLATE FOR THIS FILE, YOU SHOULD MODIFY THE TEMPLATE
+     `PROVIDER_README_TEMPLATE.rst.jinja2` IN the `dev/breeze/src/airflow_breeze/templates` DIRECTORY
+ 
+ 
+ Package ``apache-airflow-providers-segment``
+ 
+-Release: ``3.5.0.rc2``
++Release: ``3.5.1.rc1``
+ 
+ 
+ `Segment <https://segment.com/>`__
+ 
+ 
+ Provider package
+ ----------------
+ 
+ This is a provider package for ``segment`` provider. All classes for this provider package
+ are in ``airflow.providers.segment`` python package.
+ 
+ You can find package information and changelog for the provider
+-in the `documentation <https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.0/>`_.
++in the `documentation <https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.1/>`_.
+ 
+ Installation
+ ------------
+ 
+ You can install this package on top of an existing Airflow 2 installation (see ``Requirements`` below
+ for the minimum Airflow version supported) via
+ ``pip install apache-airflow-providers-segment``
+@@ -73,8 +73,8 @@
+ PIP package           Version required
+ ====================  ==================
+ ``apache-airflow``    ``>=2.7.0``
+ ``analytics-python``  ``>=1.2.9``
+ ====================  ==================
+ 
+ The changelog for the provider package can be found in the
+-`changelog <https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.0/changelog.html>`_.
++`changelog <https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.1/changelog.html>`_.
+```
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/LICENSE` & `apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/__init__.py` & `apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/__init__.py`
+
+ * *Files 19% similar despite different names*
+
+```diff
+@@ -21,22 +21,19 @@
+ # IF YOU WANT TO MODIFY THIS FILE, YOU SHOULD MODIFY THE TEMPLATE
+ # `PROVIDER__INIT__PY_TEMPLATE.py.jinja2` IN the `dev/breeze/src/airflow_breeze/templates` DIRECTORY
+ #
+ from __future__ import annotations
+ 
+ import packaging.version
+ 
+-__all__ = ["__version__"]
++from airflow import __version__ as airflow_version
+ 
+-__version__ = "3.5.0"
++__all__ = ["__version__"]
+ 
+-try:
+-    from airflow import __version__ as airflow_version
+-except ImportError:
+-    from airflow.version import version as airflow_version
++__version__ = "3.5.1"
+ 
+ if packaging.version.parse(packaging.version.parse(airflow_version).base_version) < packaging.version.parse(
+     "2.7.0"
+ ):
+     raise RuntimeError(
+         f"The package `apache-airflow-providers-segment:{__version__}` needs Apache Airflow 2.7.0+"
+     )
+```
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/get_provider_info.py` & `apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/get_provider_info.py`
+
+ * *Files 6% similar despite different names*
+
+```diff
+@@ -24,16 +24,17 @@
+ 
+ def get_provider_info():
+     return {
+         "package-name": "apache-airflow-providers-segment",
+         "name": "Segment",
+         "description": "`Segment <https://segment.com/>`__\n",
+         "state": "ready",
+-        "source-date-epoch": 1714477452,
++        "source-date-epoch": 1716288995,
+         "versions": [
++            "3.5.1",
+             "3.5.0",
+             "3.4.0",
+             "3.3.0",
+             "3.2.1",
+             "3.2.0",
+             "3.1.0",
+             "3.0.0",
+```
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/hooks/__init__.py` & `apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/hooks/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/hooks/segment.py` & `apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/hooks/segment.py`
+
+ * *Files identical despite different names*
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/operators/__init__.py` & `apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/operators/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/airflow/providers/segment/operators/segment_track_event.py` & `apache_airflow_providers_segment-3.5.1rc1/airflow/providers/segment/operators/segment_track_event.py`
+
+ * *Files identical despite different names*
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/pyproject.toml` & `apache_airflow_providers_segment-3.5.1rc1/pyproject.toml`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -24,15 +24,15 @@
+ #
+ [build-system]
+ requires = ["flit_core >=3.2,<4"]
+ build-backend = "flit_core.buildapi"
+ 
+ [project]
+ name = "apache-airflow-providers-segment"
+-version = "3.5.0.rc2"
++version = "3.5.1.rc1"
+ description = "Provider package apache-airflow-providers-segment for Apache Airflow"
+ readme = "README.rst"
+ authors = [
+     {name="Apache Software Foundation", email="dev@airflow.apache.org"},
+ ]
+ maintainers = [
+     {name="Apache Software Foundation", email="dev@airflow.apache.org"},
+@@ -57,16 +57,16 @@
+ requires-python = "~=3.8"
+ dependencies = [
+     "analytics-python>=1.2.9",
+     "apache-airflow>=2.7.0rc0",
+ ]
+ 
+ [project.urls]
+-"Documentation" = "https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.0"
+-"Changelog" = "https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.0/changelog.html"
++"Documentation" = "https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.1"
++"Changelog" = "https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.1/changelog.html"
+ "Bug Tracker" = "https://github.com/apache/airflow/issues"
+ "Source Code" = "https://github.com/apache/airflow"
+ "Slack Chat" = "https://s.apache.org/airflow-slack"
+ "Twitter" = "https://twitter.com/ApacheAirflow"
+ "YouTube" = "https://www.youtube.com/channel/UCSXwxpWZQ7XZ1WL3wqevChA/"
+ 
+ [project.entry-points."apache_airflow_provider"]
+```
+
+### Comparing `apache_airflow_providers_segment-3.5.0rc2/PKG-INFO` & `apache_airflow_providers_segment-3.5.1rc1/PKG-INFO`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: apache-airflow-providers-segment
+-Version: 3.5.0rc2
++Version: 3.5.1rc1
+ Summary: Provider package apache-airflow-providers-segment for Apache Airflow
+ Keywords: airflow-provider,segment,airflow,integration
+ Author-email: Apache Software Foundation <dev@airflow.apache.org>
+ Maintainer-email: Apache Software Foundation <dev@airflow.apache.org>
+ Requires-Python: ~=3.8
+ Description-Content-Type: text/x-rst
+ Classifier: Development Status :: 5 - Production/Stable
+@@ -20,16 +20,16 @@
+ Classifier: Programming Language :: Python :: 3.10
+ Classifier: Programming Language :: Python :: 3.11
+ Classifier: Programming Language :: Python :: 3.12
+ Classifier: Topic :: System :: Monitoring
+ Requires-Dist: analytics-python>=1.2.9
+ Requires-Dist: apache-airflow>=2.7.0rc0
+ Project-URL: Bug Tracker, https://github.com/apache/airflow/issues
+-Project-URL: Changelog, https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.0/changelog.html
+-Project-URL: Documentation, https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.0
++Project-URL: Changelog, https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.1/changelog.html
++Project-URL: Documentation, https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.1
+ Project-URL: Slack Chat, https://s.apache.org/airflow-slack
+ Project-URL: Source Code, https://github.com/apache/airflow
+ Project-URL: Twitter, https://twitter.com/ApacheAirflow
+ Project-URL: YouTube, https://www.youtube.com/channel/UCSXwxpWZQ7XZ1WL3wqevChA/
+ 
+ 
+ .. Licensed to the Apache Software Foundation (ASF) under one
+@@ -71,28 +71,28 @@
+ 
+  .. IF YOU WANT TO MODIFY TEMPLATE FOR THIS FILE, YOU SHOULD MODIFY THE TEMPLATE
+     `PROVIDER_README_TEMPLATE.rst.jinja2` IN the `dev/breeze/src/airflow_breeze/templates` DIRECTORY
+ 
+ 
+ Package ``apache-airflow-providers-segment``
+ 
+-Release: ``3.5.0.rc2``
++Release: ``3.5.1.rc1``
+ 
+ 
+ `Segment <https://segment.com/>`__
+ 
+ 
+ Provider package
+ ----------------
+ 
+ This is a provider package for ``segment`` provider. All classes for this provider package
+ are in ``airflow.providers.segment`` python package.
+ 
+ You can find package information and changelog for the provider
+-in the `documentation <https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.0/>`_.
++in the `documentation <https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.1/>`_.
+ 
+ Installation
+ ------------
+ 
+ You can install this package on top of an existing Airflow 2 installation (see ``Requirements`` below
+ for the minimum Airflow version supported) via
+ ``pip install apache-airflow-providers-segment``
+@@ -106,8 +106,8 @@
+ PIP package           Version required
+ ====================  ==================
+ ``apache-airflow``    ``>=2.7.0``
+ ``analytics-python``  ``>=1.2.9``
+ ====================  ==================
+ 
+ The changelog for the provider package can be found in the
+-`changelog <https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.0/changelog.html>`_.
++`changelog <https://airflow.apache.org/docs/apache-airflow-providers-segment/3.5.1/changelog.html>`_.
+```
+
