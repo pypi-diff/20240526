@@ -14529,3 +14529,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:28:24] INFO root fetch - processPackages [zipp]: Remove: archive file [/home/abi/fetcher/tmp/zipp-3.9.1.tar.gz]
 [2024-05-26 18:28:24] INFO root fetch - main [MainThread]: End processing [zipp]: success
 [2024-05-26 18:28:24] INFO root fetch - main [MainThread]: Store serial: [23384727]
+[2024-05-26 18:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384727]
+[2024-05-26 18:30:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 18:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ADViewpy
+[2024-05-26 18:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matematikk
+[2024-05-26 18:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: examon-pcep-package
+[2024-05-26 18:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchbringer
+[2024-05-26 18:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cf2tf
+[2024-05-26 18:30:32] WARNING root fetch - processPackages [torchbringer]: Skipping, unable to determine old version
+[2024-05-26 18:30:32] INFO root fetch - main [MainThread]: End processing [torchbringer] error
+[2024-05-26 18:30:32] INFO root fetch - processPackages [ADViewpy]: New version: [0.7a0] Old Version: [0.6a0]
+[2024-05-26 18:30:32] INFO root fetch - processPackages [examon-pcep-package]: New version: [0.4.0] Old Version: [0.2.2]
+[2024-05-26 18:30:32] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 18:30:32] INFO root fetch - processPackages [cf2tf]: New version: [0.8.1a8] Old Version: [0.8.1a7]
+[2024-05-26 18:30:32] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 18:30:32] INFO root fetch - processPackages [ADViewpy]: Downloading https://files.pythonhosted.org/packages/c8/1b/e5e492292a5b1d45b17988657fbdb3ad42aa370c76be553b8964e2366dd6/ADViewpy-0.6a0.tar.gz
+[2024-05-26 18:30:32] INFO root fetch - processPackages [examon-pcep-package]: Downloading https://files.pythonhosted.org/packages/ee/fc/f899a762d4c81c4b2f8360af3313015eba08b7f263e334205c9e66267322/examon_pcep_package-0.2.2.tar.gz
+[2024-05-26 18:30:32] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/c4/99/87092269d15540e0cdec58909cc7a0f5552c0d6fdb6c4d6d428be0ff0ea7/cf2tf-0.8.1a7.tar.gz
+[2024-05-26 18:30:32] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 18:30:33] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 18:30:33] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 18:30:33] INFO root fetch - processPackages [ADViewpy]: Downloading https://files.pythonhosted.org/packages/dc/a9/6f32803f945fded71a05c361d8a8c916500e045b15e5a7f13770ff290eb8/ADViewpy-0.7a0.tar.gz
+[2024-05-26 18:30:33] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/83/b3/6d61c2a6a0bc1192370a33895b5ec774cf1df8a50cbadcf2d4ebc12971cd/cf2tf-0.8.1a8.tar.gz
+[2024-05-26 18:30:33] INFO root fetch - processPackages [examon-pcep-package]: Downloading https://files.pythonhosted.org/packages/a3/c1/015a5abffd280b23b49d2547704083d9f94bef7412289fa78bf4ee006b73/examon_pcep_package-0.4.0.tar.gz
+[2024-05-26 18:30:33] INFO root fetch - processPackages [ADViewpy]: executing diffoscope
+[2024-05-26 18:30:33] INFO root fetch - processPackages [ADViewpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ADViewpy-0.6a0.tar.gz tmp/ADViewpy-0.7a0.tar.gz --markdown 20240526/A/ADViewpy/0.6a0-0.7a0/README.md --exclude *.pyd
+[2024-05-26 18:30:33] INFO root fetch - processPackages [examon-pcep-package]: executing diffoscope
+[2024-05-26 18:30:33] INFO root fetch - processPackages [examon-pcep-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/examon_pcep_package-0.2.2.tar.gz tmp/examon_pcep_package-0.4.0.tar.gz --markdown 20240526/e/examon-pcep-package/0.2.2-0.4.0/README.md --exclude *.pyd
+[2024-05-26 18:30:33] INFO root fetch - processPackages [cf2tf]: executing diffoscope
+[2024-05-26 18:30:33] INFO root fetch - processPackages [cf2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf2tf-0.8.1a7.tar.gz tmp/cf2tf-0.8.1a8.tar.gz --markdown 20240526/c/cf2tf/0.8.1a7-0.8.1a8/README.md --exclude *.pyd
+[2024-05-26 18:30:33] INFO root fetch - processPackages [examon-pcep-package]: Remove: archive file [/home/abi/fetcher/tmp/examon_pcep_package-0.2.2.tar.gz]
+[2024-05-26 18:30:33] INFO root fetch - processPackages [examon-pcep-package]: Remove: archive file [/home/abi/fetcher/tmp/examon_pcep_package-0.4.0.tar.gz]
+[2024-05-26 18:30:33] INFO root fetch - main [MainThread]: End processing [examon-pcep-package]: success
+[2024-05-26 18:30:33] INFO root fetch - processPackages [ADViewpy]: Remove: archive file [/home/abi/fetcher/tmp/ADViewpy-0.6a0.tar.gz]
+[2024-05-26 18:30:33] INFO root fetch - processPackages [ADViewpy]: Remove: archive file [/home/abi/fetcher/tmp/ADViewpy-0.7a0.tar.gz]
+[2024-05-26 18:30:33] INFO root fetch - main [MainThread]: End processing [ADViewpy]: success
+[2024-05-26 18:30:33] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.8.1a7.tar.gz]
+[2024-05-26 18:30:33] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.8.1a8.tar.gz]
+[2024-05-26 18:30:33] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
+[2024-05-26 18:30:34] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 18:30:34] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 18:30:34] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 18:30:34] INFO root fetch - main [MainThread]: Store serial: [23384741]
