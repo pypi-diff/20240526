@@ -12231,3 +12231,34 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:29:57] INFO root fetch - processPackages [henxel]: Remove: archive file [/home/abi/fetcher/tmp/henxel-0.3.2.tar.gz]
 [2024-05-26 16:29:57] INFO root fetch - main [MainThread]: End processing [henxel]: success
 [2024-05-26 16:29:57] INFO root fetch - main [MainThread]: Store serial: [23383743]
+[2024-05-26 16:32:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383743]
+[2024-05-26 16:32:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 16:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tse-motion
+[2024-05-26 16:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlpaf
+[2024-05-26 16:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-26 16:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: VisualShape3D
+[2024-05-26 16:32:27] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 16:32:27] INFO root fetch - processPackages [VisualShape3D]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-26 16:32:27] INFO root fetch - processPackages [tse-motion]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-26 16:32:27] INFO root fetch - processPackages [nlpaf]: New version: [2.8.8] Old Version: [2.8.7]
+[2024-05-26 16:32:27] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 16:32:27] INFO root fetch - processPackages [tse-motion]: Downloading https://files.pythonhosted.org/packages/36/38/be59025a5a378c788615306fa50c02ee383527586d7792feb4c14aefb231/tse_motion-0.2.5.tar.gz
+[2024-05-26 16:32:27] INFO root fetch - processPackages [nlpaf]: Downloading https://files.pythonhosted.org/packages/5d/da/1b92550f6bc1e7b62d9eca934cf2d4d57ebcc3fb29072424036f138d98af/nlpaf-2.8.7.tar.gz
+[2024-05-26 16:32:28] INFO root fetch - processPackages [VisualShape3D]: Downloading https://files.pythonhosted.org/packages/df/ad/a9304a31959f069e3997ebcdda274aa1cbb94b18d87dab86f591a0453360/VisualShape3D-1.1.2.tar.gz
+[2024-05-26 16:32:28] WARNING root fetch - processPackages [tse-motion]: Skipping package: exceeds size limit 26164885>=10485760
+[2024-05-26 16:32:28] INFO root fetch - main [MainThread]: End processing [tse-motion] error
+[2024-05-26 16:32:28] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 16:32:28] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 16:32:28] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 16:32:28] INFO root fetch - processPackages [VisualShape3D]: Downloading https://files.pythonhosted.org/packages/a6/5b/4a8bbb388239f1e41f4b5d0340b4e2e63783e265fca52c3af23fdc11ee21/VisualShape3D-1.1.3.tar.gz
+[2024-05-26 16:32:28] INFO root fetch - processPackages [VisualShape3D]: executing diffoscope
+[2024-05-26 16:32:28] INFO root fetch - processPackages [VisualShape3D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VisualShape3D-1.1.2.tar.gz tmp/VisualShape3D-1.1.3.tar.gz --markdown 20240526/V/VisualShape3D/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-26 16:32:28] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 16:32:28] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 16:32:28] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 16:32:29] INFO root fetch - processPackages [VisualShape3D]: Remove: archive file [/home/abi/fetcher/tmp/VisualShape3D-1.1.2.tar.gz]
+[2024-05-26 16:32:29] INFO root fetch - processPackages [VisualShape3D]: Remove: archive file [/home/abi/fetcher/tmp/VisualShape3D-1.1.3.tar.gz]
+[2024-05-26 16:32:29] INFO root fetch - main [MainThread]: End processing [VisualShape3D]: success
+[2024-05-26 16:32:29] WARNING root fetch - processPackages [nlpaf]: Skipping package: exceeds size limit 24324747>=10485760
+[2024-05-26 16:32:29] INFO root fetch - main [MainThread]: End processing [nlpaf] error
+[2024-05-26 16:32:29] INFO root fetch - main [MainThread]: Store serial: [23383754]
