@@ -2831,3 +2831,33 @@
 [2024-05-26 05:14:26] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.2.tar.gz]
 [2024-05-26 05:14:26] INFO root fetch - main [MainThread]: End processing [qspace]: success
 [2024-05-26 05:14:26] INFO root fetch - main [MainThread]: Store serial: [23379410]
+[2024-05-26 05:16:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379410]
+[2024-05-26 05:16:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 05:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-cv-nightly
+[2024-05-26 05:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipackager
+[2024-05-26 05:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-05-26 05:16:35] INFO root fetch - processPackages [pipackager]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-26 05:16:35] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-05-26 05:16:35] INFO root fetch - processPackages [flatpack]: New version: [3.4.99] Old Version: [3.4.98]
+[2024-05-26 05:16:35] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/1d/ec/a8f84938aa3a78ec101670b73870c08b4d211b25853e8e07c4b41751d51b/pipackager-0.4.3.tar.gz
+[2024-05-26 05:16:35] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-05-26 05:16:35] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/cb/39/adcd388eba8071e3318b3a2224e5c96179761da6dbd7cfa96b20311e810f/flatpack-3.4.98.tar.gz
+[2024-05-26 05:16:36] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/52/68/fa38c1877cc761208df74ec612d2921f2109c600ef2493afeffcad65c9ca/pipackager-0.4.4.tar.gz
+[2024-05-26 05:16:36] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/89/20/a694f72cbfa96253cdb38b9f65c7cfd5f3a4fb145d2fe2483132b80dafd4/flatpack-3.4.99.tar.gz
+[2024-05-26 05:16:36] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-05-26 05:16:36] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 05:16:36] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.4.3.tar.gz tmp/pipackager-0.4.4.tar.gz --markdown 20240526/p/pipackager/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-26 05:16:36] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-26 05:16:36] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.98.tar.gz tmp/flatpack-3.4.99.tar.gz --markdown 20240526/f/flatpack/3.4.98-3.4.99/README.md --exclude *.pyd
+[2024-05-26 05:16:36] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-05-26 05:16:36] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240526/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-05-26 05:16:36] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.3.tar.gz]
+[2024-05-26 05:16:36] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.4.tar.gz]
+[2024-05-26 05:16:36] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 05:16:36] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.98.tar.gz]
+[2024-05-26 05:16:36] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.99.tar.gz]
+[2024-05-26 05:16:36] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-26 05:16:37] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-05-26 05:16:37] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-05-26 05:16:37] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-05-26 05:16:37] INFO root fetch - main [MainThread]: Store serial: [23379419]
