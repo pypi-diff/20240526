@@ -4576,3 +4576,15 @@
 [2024-05-26 08:13:59] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240525.tar.gz]
 [2024-05-26 08:13:59] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-05-26 08:13:59] INFO root fetch - main [MainThread]: Store serial: [23380284]
+[2024-05-26 08:16:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380284]
+[2024-05-26 08:16:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 08:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: promptulate
+[2024-05-26 08:16:09] INFO root fetch - processPackages [promptulate]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-26 08:16:09] INFO root fetch - processPackages [promptulate]: Downloading https://files.pythonhosted.org/packages/79/c8/f923c24d433b393cefb02de1adab5e235b34375a5246ccfea81321c71342/promptulate-1.9.0.tar.gz
+[2024-05-26 08:16:09] INFO root fetch - processPackages [promptulate]: Downloading https://files.pythonhosted.org/packages/42/5e/24a2ff6654285a7e63449f1c4c60597a1c617a0bb121d4f95cde1b406f59/promptulate-1.9.1.tar.gz
+[2024-05-26 08:16:09] INFO root fetch - processPackages [promptulate]: executing diffoscope
+[2024-05-26 08:16:09] INFO root fetch - processPackages [promptulate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptulate-1.9.0.tar.gz tmp/promptulate-1.9.1.tar.gz --markdown 20240526/p/promptulate/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-26 08:16:10] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.0.tar.gz]
+[2024-05-26 08:16:10] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.1.tar.gz]
+[2024-05-26 08:16:10] INFO root fetch - main [MainThread]: End processing [promptulate]: success
+[2024-05-26 08:16:10] INFO root fetch - main [MainThread]: Store serial: [23380288]
