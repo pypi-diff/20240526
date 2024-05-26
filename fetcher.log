@@ -12561,3 +12561,66 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:45:03] INFO root fetch - processPackages [openvisuspy]: Remove: archive file [/home/abi/fetcher/tmp/openvisuspy-1.0.9-py3-none-any.whl.zip]
 [2024-05-26 16:45:03] INFO root fetch - main [MainThread]: End processing [openvisuspy]: success
 [2024-05-26 16:45:03] INFO root fetch - main [MainThread]: Store serial: [23383856]
+[2024-05-26 16:47:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383856]
+[2024-05-26 16:47:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 16:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gdtransform
+[2024-05-26 16:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-debug-toolbar
+[2024-05-26 16:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: goit-phone-book-bot
+[2024-05-26 16:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pi-awning-webthing
+[2024-05-26 16:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: c64img
+[2024-05-26 16:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: satsure-core-test
+[2024-05-26 16:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aigic
+[2024-05-26 16:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyDEMATEL
+[2024-05-26 16:47:32] INFO root fetch - processPackages [gdtransform]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-26 16:47:32] INFO root fetch - processPackages [c64img]: New version: [3.2] Old Version: [3.1]
+[2024-05-26 16:47:32] WARNING root fetch - processPackages [pyDEMATEL]: Skipping, unable to determine old version
+[2024-05-26 16:47:32] INFO root fetch - processPackages [goit-phone-book-bot]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 16:47:32] INFO root fetch - main [MainThread]: End processing [pyDEMATEL] error
+[2024-05-26 16:47:32] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 16:47:32] INFO root fetch - processPackages [satsure-core-test]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-26 16:47:32] INFO root fetch - processPackages [django-debug-toolbar]: New version: [4.3.0] Old Version: [4.2.0]
+[2024-05-26 16:47:32] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/5e/11/4928400a38eb4e9f0b091aafed8e1090209d68dc75803e7bcfcce3985472/gdtransform-0.0.9.tar.gz
+[2024-05-26 16:47:32] WARNING root fetch - processPackages [aigic]: Skipping, unable to determine old version
+[2024-05-26 16:47:32] INFO root fetch - main [MainThread]: End processing [aigic] error
+[2024-05-26 16:47:32] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/e0/f7/41c016ffafc059d20a7a77b536db06953c65a886c0224d99dbaab3507a73/satsure-core-test-0.3.2.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/a5/77/c885eee2f2b1c6f37d8d2e30cbaf960d930708bcafc088a243806a30d4a5/goit_phone_book_bot-0.1.0.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [c64img]: Downloading https://files.pythonhosted.org/packages/b0/e6/4b9efb98ab2ef8c60b53d55a8b37d942d9dce193d0d581ecc5342a9943e7/c64img-3.1.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [django-debug-toolbar]: Downloading https://files.pythonhosted.org/packages/65/bd/81b812b3a69874f382514a8982f1e7c30e9851e86c9d976eef4960da97ac/django_debug_toolbar-4.2.0.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [c64img]: Downloading https://files.pythonhosted.org/packages/3a/01/f3f210bcbf048799963a7322c6a6be859d7c26b6ede175eccbb2aa186c00/c64img-3.2.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/31/24/bca16a1aeac013df0ddd9bebfe7705999814b1da355808e90f7858e99f12/gdtransform-0.1.0.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/02/c7/a5a85c05a3052fdcaad6c3ca296ad6f8b36b6bbab140ed12b1745d5ce23c/satsure-core-test-0.3.3.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/58/a6/b9478ba67ce959ec4c11592178224e6e98c48e1ea43e04c9c003d9fdd99e/goit_phone_book_bot-0.1.1.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [gdtransform]: executing diffoscope
+[2024-05-26 16:47:32] INFO root fetch - processPackages [gdtransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdtransform-0.0.9.tar.gz tmp/gdtransform-0.1.0.tar.gz --markdown 20240526/g/gdtransform/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-26 16:47:32] INFO root fetch - processPackages [c64img]: executing diffoscope
+[2024-05-26 16:47:32] INFO root fetch - processPackages [c64img]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c64img-3.1.tar.gz tmp/c64img-3.2.tar.gz --markdown 20240526/c/c64img/3.1-3.2/README.md --exclude *.pyd
+[2024-05-26 16:47:32] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:47:32] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 16:47:32] INFO root fetch - processPackages [satsure-core-test]: executing diffoscope
+[2024-05-26 16:47:32] INFO root fetch - processPackages [satsure-core-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satsure-core-test-0.3.2.tar.gz tmp/satsure-core-test-0.3.3.tar.gz --markdown 20240526/s/satsure-core-test/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-26 16:47:32] INFO root fetch - processPackages [django-debug-toolbar]: Downloading https://files.pythonhosted.org/packages/61/ff/b6d3cc2c31f9a6cf68eda0f7a640ada743f5c39122a0c14db8d3eee3f412/django_debug_toolbar-4.3.0.tar.gz
+[2024-05-26 16:47:32] INFO root fetch - processPackages [goit-phone-book-bot]: executing diffoscope
+[2024-05-26 16:47:32] INFO root fetch - processPackages [goit-phone-book-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goit_phone_book_bot-0.1.0.tar.gz tmp/goit_phone_book_bot-0.1.1.tar.gz --markdown 20240526/g/goit-phone-book-bot/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 16:47:32] INFO root fetch - processPackages [django-debug-toolbar]: executing diffoscope
+[2024-05-26 16:47:32] INFO root fetch - processPackages [django-debug-toolbar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_debug_toolbar-4.2.0.tar.gz tmp/django_debug_toolbar-4.3.0.tar.gz --markdown 20240526/d/django-debug-toolbar/4.2.0-4.3.0/README.md --exclude *.pyd
+[2024-05-26 16:47:33] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.0.9.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.1.0.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - main [MainThread]: End processing [gdtransform]: success
+[2024-05-26 16:47:33] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.2.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.3.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - main [MainThread]: End processing [satsure-core-test]: success
+[2024-05-26 16:47:33] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:47:33] INFO root fetch - processPackages [c64img]: Remove: archive file [/home/abi/fetcher/tmp/c64img-3.1.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - processPackages [c64img]: Remove: archive file [/home/abi/fetcher/tmp/c64img-3.2.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - main [MainThread]: End processing [c64img]: success
+[2024-05-26 16:47:33] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit_phone_book_bot-0.1.0.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit_phone_book_bot-0.1.1.tar.gz]
+[2024-05-26 16:47:33] INFO root fetch - main [MainThread]: End processing [goit-phone-book-bot]: success
+[2024-05-26 16:47:34] INFO root fetch - processPackages [django-debug-toolbar]: Remove: archive file [/home/abi/fetcher/tmp/django_debug_toolbar-4.2.0.tar.gz]
+[2024-05-26 16:47:34] INFO root fetch - processPackages [django-debug-toolbar]: Remove: archive file [/home/abi/fetcher/tmp/django_debug_toolbar-4.3.0.tar.gz]
+[2024-05-26 16:47:34] INFO root fetch - main [MainThread]: End processing [django-debug-toolbar]: success
+[2024-05-26 16:47:34] INFO root fetch - main [MainThread]: Store serial: [23383882]
