@@ -4213,3 +4213,15 @@
 [2024-05-26 07:39:41] INFO root fetch - processPackages [readme-ation]: Remove: archive file [/home/abi/fetcher/tmp/readme-ation-0.1.2.tar.gz]
 [2024-05-26 07:39:41] INFO root fetch - main [MainThread]: End processing [readme-ation]: success
 [2024-05-26 07:39:41] INFO root fetch - main [MainThread]: Store serial: [23380077]
+[2024-05-26 07:41:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380077]
+[2024-05-26 07:41:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 07:41:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-pipe
+[2024-05-26 07:41:49] INFO root fetch - processPackages [api-pipe]: New version: [2.0.14] Old Version: [2.0.13]
+[2024-05-26 07:41:49] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/39/84/3a799dc6941e4fd272900eabc67fb7a9fd1ac7ba91737e41fb5ac737675e/api_pipe-2.0.13.tar.gz
+[2024-05-26 07:41:50] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/6c/5e/a6ccc77cbd57caf671dd1594384e6dd6cc0412d5da2ee118c29f711e5db0/api_pipe-2.0.14.tar.gz
+[2024-05-26 07:41:50] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-05-26 07:41:50] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.13.tar.gz tmp/api_pipe-2.0.14.tar.gz --markdown 20240526/a/api-pipe/2.0.13-2.0.14/README.md --exclude *.pyd
+[2024-05-26 07:41:50] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.13.tar.gz]
+[2024-05-26 07:41:50] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.14.tar.gz]
+[2024-05-26 07:41:50] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-05-26 07:41:50] INFO root fetch - main [MainThread]: Store serial: [23380081]
