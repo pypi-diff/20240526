@@ -18321,3 +18321,12 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 22:01:26] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
 [2024-05-26 22:01:26] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
 [2024-05-26 22:01:26] INFO root fetch - main [MainThread]: Store serial: [23386531]
+[2024-05-26 22:03:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386531]
+[2024-05-26 22:03:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 22:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grid-engine-Nitebound
+[2024-05-26 22:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vizrecurse
+[2024-05-26 22:03:35] WARNING root fetch - processPackages [vizrecurse]: Skipping, unable to determine old version
+[2024-05-26 22:03:35] INFO root fetch - main [MainThread]: End processing [vizrecurse] error
+[2024-05-26 22:03:35] WARNING root fetch - processPackages [grid-engine-Nitebound]: Skipping, unable to determine old version
+[2024-05-26 22:03:35] INFO root fetch - main [MainThread]: End processing [grid-engine-Nitebound] error
+[2024-05-26 22:03:35] INFO root fetch - main [MainThread]: Store serial: [23386539]
