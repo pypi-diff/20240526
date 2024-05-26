@@ -15263,3 +15263,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:07:38] INFO root fetch - processPackages [infn-ophyd-hal]: Remove: archive file [/home/abi/fetcher/tmp/infn_ophyd_hal-1.0.2.tar.gz]
 [2024-05-26 19:07:38] INFO root fetch - main [MainThread]: End processing [infn-ophyd-hal]: success
 [2024-05-26 19:07:38] INFO root fetch - main [MainThread]: Store serial: [23385045]
+[2024-05-26 19:09:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385045]
+[2024-05-26 19:09:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NetHyTech-DeepTTS
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: git-assistente
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hat-controller
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ai-alchemy
+[2024-05-26 19:09:47] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.59]
+[2024-05-26 19:09:47] WARNING root fetch - processPackages [NetHyTech-DeepTTS]: Skipping, unable to determine old version
+[2024-05-26 19:09:47] INFO root fetch - main [MainThread]: End processing [NetHyTech-DeepTTS] error
+[2024-05-26 19:09:47] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 19:09:47] INFO root fetch - processPackages [git-assistente]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ai-alchemy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:09:47] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/28/72/8b33ab4499887d6c0896c33e6a39610d42daab4427a1f76f81d7eb6608f8/scatcluster-0.0.59.tar.gz
+[2024-05-26 19:09:47] INFO root fetch - processPackages [hat-controller]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:09:47] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/fe/91/a3117e58fb82be16e1bb454f9ca27e9e489a3223ac29b6868b787fdff37d/ai_alchemy-0.1.8.tar.gz
+[2024-05-26 19:09:47] INFO root fetch - processPackages [git-assistente]: Downloading https://files.pythonhosted.org/packages/ba/fc/368c548a65354f21d8cd457e3bb056610c363e019f7dc49d59da247dd983/git_assistente-0.1.8.tar.gz
+[2024-05-26 19:09:47] INFO root fetch - processPackages [hat-controller]: Downloading https://files.pythonhosted.org/packages/70/68/0b9d0d20f3db509f3f5119e7aa86e3c611b0fbd6f2295945b6aab1a9e54c/hat_controller-0.1.8-cp310.cp311.cp312-abi3-win_amd64.whl
+[2024-05-26 19:09:47] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 19:09:47] INFO root fetch - processPackages [ai-alchemy]: Downloading https://files.pythonhosted.org/packages/46/87/7396855bd027de43e635cea5168d7491e3665556ed138f395c91892e00b6/ai_alchemy-0.1.9.tar.gz
+[2024-05-26 19:09:47] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 19:09:47] INFO root fetch - processPackages [git-assistente]: Downloading https://files.pythonhosted.org/packages/ae/1b/038078deab5856f697a312289bca43cd0f0fef0aadee9330623e48d2b863/git_assistente-0.1.9.tar.gz
+[2024-05-26 19:09:48] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 19:09:48] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.59.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.59-0.0.6/README.md --exclude *.pyd
+[2024-05-26 19:09:48] INFO root fetch - processPackages [ai-alchemy]: executing diffoscope
+[2024-05-26 19:09:48] INFO root fetch - processPackages [ai-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_alchemy-0.1.8.tar.gz tmp/ai_alchemy-0.1.9.tar.gz --markdown 20240526/a/ai-alchemy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 19:09:48] INFO root fetch - processPackages [git-assistente]: executing diffoscope
+[2024-05-26 19:09:48] INFO root fetch - processPackages [git-assistente]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git_assistente-0.1.8.tar.gz tmp/git_assistente-0.1.9.tar.gz --markdown 20240526/g/git-assistente/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 19:09:48] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 19:09:48] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 19:09:48] INFO root fetch - processPackages [hat-controller]: Downloading https://files.pythonhosted.org/packages/e9/a4/445776da40836a8ec6da698b00d9813f2115831b891ffdb25503491918f8/hat_controller-0.1.9-cp310.cp311.cp312-abi3-win_amd64.whl
+[2024-05-26 19:09:48] INFO root fetch - processPackages [hat-controller]: executing diffoscope
+[2024-05-26 19:09:48] INFO root fetch - processPackages [hat-controller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_controller-0.1.8-cp310.cp311.cp312-abi3-win_amd64.whl.zip tmp/hat_controller-0.1.9-cp310.cp311.cp312-abi3-win_amd64.whl.zip --markdown 20240526/h/hat-controller/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 19:09:48] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.59.tar.gz]
+[2024-05-26 19:09:48] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 19:09:48] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 19:09:48] INFO root fetch - processPackages [git-assistente]: Remove: archive file [/home/abi/fetcher/tmp/git_assistente-0.1.8.tar.gz]
+[2024-05-26 19:09:48] INFO root fetch - processPackages [git-assistente]: Remove: archive file [/home/abi/fetcher/tmp/git_assistente-0.1.9.tar.gz]
+[2024-05-26 19:09:48] INFO root fetch - main [MainThread]: End processing [git-assistente]: success
+[2024-05-26 19:09:48] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.8.tar.gz]
+[2024-05-26 19:09:48] INFO root fetch - processPackages [ai-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ai_alchemy-0.1.9.tar.gz]
+[2024-05-26 19:09:48] INFO root fetch - main [MainThread]: End processing [ai-alchemy]: success
+[2024-05-26 19:09:48] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 19:09:48] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 19:09:48] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 19:09:49] INFO root fetch - processPackages [hat-controller]: Remove: archive file [/home/abi/fetcher/tmp/hat_controller-0.1.8-cp310.cp311.cp312-abi3-win_amd64.whl.zip]
+[2024-05-26 19:09:49] INFO root fetch - processPackages [hat-controller]: Remove: archive file [/home/abi/fetcher/tmp/hat_controller-0.1.9-cp310.cp311.cp312-abi3-win_amd64.whl.zip]
+[2024-05-26 19:09:49] INFO root fetch - main [MainThread]: End processing [hat-controller]: success
+[2024-05-26 19:09:49] INFO root fetch - main [MainThread]: Store serial: [23385066]
