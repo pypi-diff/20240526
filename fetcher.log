@@ -13922,3 +13922,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:47:05] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.79.tar.gz]
 [2024-05-26 17:47:05] INFO root fetch - main [MainThread]: End processing [affixapi]: success
 [2024-05-26 17:47:05] INFO root fetch - main [MainThread]: Store serial: [23384431]
+[2024-05-26 17:49:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384431]
+[2024-05-26 17:49:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 17:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vistutils
+[2024-05-26 17:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: train-traveler-api
+[2024-05-26 17:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zenaura
+[2024-05-26 17:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: open-meteo-solar-forecast
+[2024-05-26 17:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Flask-OpenID
+[2024-05-26 17:49:13] INFO root fetch - processPackages [zenaura]: New version: [0.9.52] Old Version: [0.9.51]
+[2024-05-26 17:49:13] INFO root fetch - processPackages [vistutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 17:49:13] INFO root fetch - processPackages [open-meteo-solar-forecast]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 17:49:13] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/03/54/28af9a86a69aab24c7ae1057de6d85fd3782b67847d9fdeeb739d9d7a5d1/zenaura-0.9.51.tar.gz
+[2024-05-26 17:49:13] INFO root fetch - processPackages [Flask-OpenID]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-26 17:49:13] INFO root fetch - processPackages [vistutils]: Downloading https://files.pythonhosted.org/packages/03/ab/4cec8e0c3fdfbe38de2cf19925a3540bca6347e9df74b83c06d7ef70bf56/vistutils-0.1.8.tar.gz
+[2024-05-26 17:49:13] INFO root fetch - processPackages [train-traveler-api]: New version: [0.1.0a1716738338] Old Version: [0.1.0a1716563972]
+[2024-05-26 17:49:14] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/75/ce/0a07713910796bd9240983bc00e2e7f11a0d101d52a0c279928f0f3a55e9/open_meteo_solar_forecast-0.1.1.tar.gz
+[2024-05-26 17:49:14] INFO root fetch - processPackages [train-traveler-api]: Downloading https://files.pythonhosted.org/packages/4f/71/1e0ce1cf0272492185c500b37698143d14a831d854c90d81e3a2b1242b4a/train_traveler_api-0.1.0a1716563972.tar.gz
+[2024-05-26 17:49:14] INFO root fetch - processPackages [Flask-OpenID]: Downloading https://files.pythonhosted.org/packages/b6/73/9a566fa46061b58f05b33fdd874e238ed13c66563e4f93530d684b2279d8/Flask-OpenID-1.3.0.tar.gz
+[2024-05-26 17:49:14] INFO root fetch - processPackages [vistutils]: Downloading https://files.pythonhosted.org/packages/b6/b2/2ba6145790f8f33dc77703df6cfa0dbe27354032a5e534b93d69337ca6c7/vistutils-0.1.9.tar.gz
+[2024-05-26 17:49:14] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/22/0d/ea4b1dcb284f8f5de2adf8903fefe563c395cf869efcc0fc42c19d774885/zenaura-0.9.52.tar.gz
+[2024-05-26 17:49:14] INFO root fetch - processPackages [vistutils]: executing diffoscope
+[2024-05-26 17:49:14] INFO root fetch - processPackages [vistutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vistutils-0.1.8.tar.gz tmp/vistutils-0.1.9.tar.gz --markdown 20240526/v/vistutils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 17:49:14] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 17:49:14] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.51.tar.gz tmp/zenaura-0.9.52.tar.gz --markdown 20240526/z/zenaura/0.9.51-0.9.52/README.md --exclude *.pyd
+[2024-05-26 17:49:14] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/02/3d/40ade2e50c9b9ad2818ba8ce9a772a09b43d6069ceed658c2477a44949d1/open_meteo_solar_forecast-0.1.2.tar.gz
+[2024-05-26 17:49:14] INFO root fetch - processPackages [open-meteo-solar-forecast]: executing diffoscope
+[2024-05-26 17:49:14] INFO root fetch - processPackages [open-meteo-solar-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_meteo_solar_forecast-0.1.1.tar.gz tmp/open_meteo_solar_forecast-0.1.2.tar.gz --markdown 20240526/o/open-meteo-solar-forecast/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 17:49:14] INFO root fetch - processPackages [Flask-OpenID]: Downloading https://files.pythonhosted.org/packages/69/c1/58cf6947fc8b0a92085df8be085960e70200b50606ff62673ef83127d609/flask_openid-1.3.1.tar.gz
+[2024-05-26 17:49:14] INFO root fetch - processPackages [train-traveler-api]: Downloading https://files.pythonhosted.org/packages/27/c7/07123f58f6edef2db37869714927c6227a24b260f9d386ac4ce7030e978f/train_traveler_api-0.1.0a1716738338.tar.gz
+[2024-05-26 17:49:14] INFO root fetch - processPackages [train-traveler-api]: executing diffoscope
+[2024-05-26 17:49:14] INFO root fetch - processPackages [train-traveler-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/train_traveler_api-0.1.0a1716563972.tar.gz tmp/train_traveler_api-0.1.0a1716738338.tar.gz --markdown 20240526/t/train-traveler-api/0.1.0a1716563972-0.1.0a1716738338/README.md --exclude *.pyd
+[2024-05-26 17:49:14] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.51.tar.gz]
+[2024-05-26 17:49:14] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.52.tar.gz]
+[2024-05-26 17:49:14] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 17:49:15] INFO root fetch - processPackages [vistutils]: Remove: archive file [/home/abi/fetcher/tmp/vistutils-0.1.8.tar.gz]
+[2024-05-26 17:49:15] INFO root fetch - processPackages [vistutils]: Remove: archive file [/home/abi/fetcher/tmp/vistutils-0.1.9.tar.gz]
+[2024-05-26 17:49:15] INFO root fetch - main [MainThread]: End processing [vistutils]: success
+[2024-05-26 17:49:15] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.1.tar.gz]
+[2024-05-26 17:49:15] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.2.tar.gz]
+[2024-05-26 17:49:15] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast]: success
+[2024-05-26 17:49:15] INFO root fetch - processPackages [Flask-OpenID]: executing diffoscope
+[2024-05-26 17:49:15] INFO root fetch - processPackages [Flask-OpenID]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-OpenID-1.3.0.tar.gz tmp/flask_openid-1.3.1.tar.gz --markdown 20240526/F/Flask-OpenID/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-26 17:49:15] INFO root fetch - processPackages [train-traveler-api]: Remove: archive file [/home/abi/fetcher/tmp/train_traveler_api-0.1.0a1716563972.tar.gz]
+[2024-05-26 17:49:15] INFO root fetch - processPackages [train-traveler-api]: Remove: archive file [/home/abi/fetcher/tmp/train_traveler_api-0.1.0a1716738338.tar.gz]
+[2024-05-26 17:49:15] INFO root fetch - main [MainThread]: End processing [train-traveler-api]: success
+[2024-05-26 17:49:15] INFO root fetch - processPackages [Flask-OpenID]: Remove: archive file [/home/abi/fetcher/tmp/Flask-OpenID-1.3.0.tar.gz]
+[2024-05-26 17:49:15] INFO root fetch - processPackages [Flask-OpenID]: Remove: archive file [/home/abi/fetcher/tmp/flask_openid-1.3.1.tar.gz]
+[2024-05-26 17:49:15] INFO root fetch - main [MainThread]: End processing [Flask-OpenID]: success
+[2024-05-26 17:49:15] INFO root fetch - main [MainThread]: Store serial: [23384443]
