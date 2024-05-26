@@ -8297,3 +8297,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:42:05] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
 [2024-05-26 11:42:05] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-26 11:42:05] INFO root fetch - main [MainThread]: Store serial: [23381859]
+[2024-05-26 11:44:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381859]
+[2024-05-26 11:44:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 11:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ParseBuilder
+[2024-05-26 11:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imas-tools
+[2024-05-26 11:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-26 11:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lantana
+[2024-05-26 11:44:17] INFO root fetch - processPackages [imas-tools]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-26 11:44:17] INFO root fetch - processPackages [mimllearning]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-26 11:44:17] INFO root fetch - processPackages [imas-tools]: Downloading https://files.pythonhosted.org/packages/08/7f/483776ff7e581bf4591270d874f5537ddc0bccdd69b97e61ca244743c8a8/imas_tools-0.4.5.tar.gz
+[2024-05-26 11:44:17] WARNING root fetch - processPackages [ParseBuilder]: Skipping, unable to determine old version
+[2024-05-26 11:44:17] INFO root fetch - main [MainThread]: End processing [ParseBuilder] error
+[2024-05-26 11:44:17] INFO root fetch - processPackages [lantana]: New version: [2.9.8.4] Old Version: [2.9.8.3]
+[2024-05-26 11:44:17] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-05-26 11:44:18] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/8d/48/b9d878dbe66bbdf8a711fbc9726d3a8afcc8b6edb55bf9ee6d3e2b61ca00/lantana-2.9.8.3.tar.gz
+[2024-05-26 11:44:18] INFO root fetch - processPackages [imas-tools]: Downloading https://files.pythonhosted.org/packages/38/d3/424a3a678115fa8a2a24b297998b188848b4bbd65cc18ff0638f64221e29/imas_tools-0.4.6.tar.gz
+[2024-05-26 11:44:18] INFO root fetch - processPackages [imas-tools]: executing diffoscope
+[2024-05-26 11:44:18] INFO root fetch - processPackages [imas-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imas_tools-0.4.5.tar.gz tmp/imas_tools-0.4.6.tar.gz --markdown 20240526/i/imas-tools/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-26 11:44:18] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/4f/d1/a30803875de4354e1ef11b3c9672aad2c477a2dbf6bd73b49a9f9bc3c32f/lantana-2.9.8.4.tar.gz
+[2024-05-26 11:44:18] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/41/4c/aef517b03341ea8031423a65e9a40cfa58845de36d6cbca2d6c4a11eb61c/mimllearning-0.5.9.tar.gz
+[2024-05-26 11:44:18] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2024-05-26 11:44:18] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.9.8.3.tar.gz tmp/lantana-2.9.8.4.tar.gz --markdown 20240526/l/lantana/2.9.8.3-2.9.8.4/README.md --exclude *.pyd
+[2024-05-26 11:44:18] INFO root fetch - processPackages [imas-tools]: Remove: archive file [/home/abi/fetcher/tmp/imas_tools-0.4.5.tar.gz]
+[2024-05-26 11:44:18] INFO root fetch - processPackages [imas-tools]: Remove: archive file [/home/abi/fetcher/tmp/imas_tools-0.4.6.tar.gz]
+[2024-05-26 11:44:18] INFO root fetch - main [MainThread]: End processing [imas-tools]: success
+[2024-05-26 11:44:18] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-26 11:44:18] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.8.tar.gz tmp/mimllearning-0.5.9.tar.gz --markdown 20240526/m/mimllearning/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-26 11:44:19] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.3.tar.gz]
+[2024-05-26 11:44:19] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.4.tar.gz]
+[2024-05-26 11:44:19] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2024-05-26 11:44:22] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-05-26 11:44:22] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.9.tar.gz]
+[2024-05-26 11:44:22] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-26 11:44:22] INFO root fetch - main [MainThread]: Store serial: [23381876]
