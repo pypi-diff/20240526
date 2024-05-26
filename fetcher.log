@@ -10169,3 +10169,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:15:31] INFO root fetch - processPackages [varorm]: Remove: archive file [/home/abi/fetcher/tmp/varorm-0.1.2.tar.gz]
 [2024-05-26 14:15:31] INFO root fetch - main [MainThread]: End processing [varorm]: success
 [2024-05-26 14:15:31] INFO root fetch - main [MainThread]: Store serial: [23382748]
+[2024-05-26 14:17:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382748]
+[2024-05-26 14:17:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 14:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contacts-assistant
+[2024-05-26 14:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biodata
+[2024-05-26 14:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myfaasmctl
+[2024-05-26 14:17:45] INFO root fetch - processPackages [myfaasmctl]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 14:17:45] INFO root fetch - processPackages [contacts-assistant]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 14:17:45] INFO root fetch - processPackages [biodata]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 14:17:46] INFO root fetch - processPackages [myfaasmctl]: Downloading https://files.pythonhosted.org/packages/f3/bb/eb513be411b1ad46e620356cd7014378867b7ec59c46927ade464bebe68c/myfaasmctl-0.0.4.tar.gz
+[2024-05-26 14:17:46] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/4e/89/80808884db55a0f7439de1562bd08fde7163e1fee6b7158fb96374b824fe/contacts_assistant-0.0.5.tar.gz
+[2024-05-26 14:17:46] INFO root fetch - processPackages [biodata]: Downloading https://files.pythonhosted.org/packages/8d/e9/2983f97a3f51df2676210929a7b11f43f219a4220b31798146de4464a39b/biodata-0.0.8.tar.gz
+[2024-05-26 14:17:46] INFO root fetch - processPackages [myfaasmctl]: Downloading https://files.pythonhosted.org/packages/c9/3e/3d32ee69181d13d57d26f7e204c3b361561036d6026376dd8cfe42804206/myfaasmctl-0.0.5.tar.gz
+[2024-05-26 14:17:46] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/e2/cf/d1feb350760601cf75314f2d07e2d5f0be8f051f95b29fb10220af6373c9/contacts_assistant-0.0.6.tar.gz
+[2024-05-26 14:17:46] INFO root fetch - processPackages [biodata]: Downloading https://files.pythonhosted.org/packages/3e/ea/d7f86d41a6df99a80b42c8aa0e896bf7e7037b02446b70e4fd6c51dd06ac/biodata-0.0.9.tar.gz
+[2024-05-26 14:17:46] INFO root fetch - processPackages [contacts-assistant]: executing diffoscope
+[2024-05-26 14:17:46] INFO root fetch - processPackages [contacts-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contacts_assistant-0.0.5.tar.gz tmp/contacts_assistant-0.0.6.tar.gz --markdown 20240526/c/contacts-assistant/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 14:17:46] INFO root fetch - processPackages [biodata]: executing diffoscope
+[2024-05-26 14:17:46] INFO root fetch - processPackages [biodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biodata-0.0.8.tar.gz tmp/biodata-0.0.9.tar.gz --markdown 20240526/b/biodata/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 14:17:46] INFO root fetch - processPackages [myfaasmctl]: executing diffoscope
+[2024-05-26 14:17:46] INFO root fetch - processPackages [myfaasmctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfaasmctl-0.0.4.tar.gz tmp/myfaasmctl-0.0.5.tar.gz --markdown 20240526/m/myfaasmctl/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 14:17:47] INFO root fetch - processPackages [biodata]: Remove: archive file [/home/abi/fetcher/tmp/biodata-0.0.8.tar.gz]
+[2024-05-26 14:17:47] INFO root fetch - processPackages [biodata]: Remove: archive file [/home/abi/fetcher/tmp/biodata-0.0.9.tar.gz]
+[2024-05-26 14:17:47] INFO root fetch - main [MainThread]: End processing [biodata]: success
+[2024-05-26 14:17:47] INFO root fetch - processPackages [myfaasmctl]: Remove: archive file [/home/abi/fetcher/tmp/myfaasmctl-0.0.4.tar.gz]
+[2024-05-26 14:17:47] INFO root fetch - processPackages [myfaasmctl]: Remove: archive file [/home/abi/fetcher/tmp/myfaasmctl-0.0.5.tar.gz]
+[2024-05-26 14:17:47] INFO root fetch - main [MainThread]: End processing [myfaasmctl]: success
+[2024-05-26 14:17:47] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.5.tar.gz]
+[2024-05-26 14:17:47] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.6.tar.gz]
+[2024-05-26 14:17:47] INFO root fetch - main [MainThread]: End processing [contacts-assistant]: success
+[2024-05-26 14:17:47] INFO root fetch - main [MainThread]: Store serial: [23382757]
