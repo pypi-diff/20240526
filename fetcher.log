@@ -15918,3 +15918,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:45:00] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.5.tar.gz]
 [2024-05-26 19:45:00] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast]: success
 [2024-05-26 19:45:00] INFO root fetch - main [MainThread]: Store serial: [23385374]
+[2024-05-26 19:47:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385374]
+[2024-05-26 19:47:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 19:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abcli
+[2024-05-26 19:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scocli
+[2024-05-26 19:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: light-database
+[2024-05-26 19:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: z2m-log-parser
+[2024-05-26 19:47:10] INFO root fetch - processPackages [z2m-log-parser]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 19:47:10] INFO root fetch - processPackages [abcli]: New version: [9.3.1] Old Version: [9.25.1]
+[2024-05-26 19:47:10] INFO root fetch - processPackages [light-database]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-26 19:47:10] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/33/3a/78dd6e42b1d4bcad7b129c6856c8adbab3298dce14efefa312bf4a6d917e/z2m_log_parser-0.0.7.tar.gz
+[2024-05-26 19:47:10] INFO root fetch - processPackages [scocli]: New version: [1.3.1] Old Version: [1.2]
+[2024-05-26 19:47:10] INFO root fetch - processPackages [light-database]: Downloading https://files.pythonhosted.org/packages/77/f0/4c1ec954b1386b4ff20678a4879a35f80c45012f05d28c2b2495e3986699/light_database-0.1.9-cp311-cp311-win_amd64.whl
+[2024-05-26 19:47:10] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/87/60/669976501e908c26c1e2912bf3d49f9cf0949ca72d3c6e91e3b59a3bda67/abcli-9.25.1.tar.gz
+[2024-05-26 19:47:10] INFO root fetch - processPackages [scocli]: Downloading https://files.pythonhosted.org/packages/e0/84/b1ae7cb8dc45b537f37b77d28b5f5e0168e1ccb54bbcd2c5ebc661241a8d/scocli-1.2.tar.gz
+[2024-05-26 19:47:10] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/3c/bf/045aab314e9a6c6ba6648f7196be4382d805417677bd4ab8597079a40eec/z2m_log_parser-0.0.8.tar.gz
+[2024-05-26 19:47:10] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/27/0f/c18b5fa4712b3f6bcc42462d85618b5a3c37cc5d4c765462ebfab12d9c8f/abcli-9.3.1.tar.gz
+[2024-05-26 19:47:11] INFO root fetch - processPackages [light-database]: Downloading https://files.pythonhosted.org/packages/31/b5/2ae78971a6bcb5205071e565a731581c69edc22407afa3609747bb19c0d9/light_database-0.2.0-cp311-cp311-win_amd64.whl
+[2024-05-26 19:47:11] INFO root fetch - processPackages [z2m-log-parser]: executing diffoscope
+[2024-05-26 19:47:11] INFO root fetch - processPackages [z2m-log-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z2m_log_parser-0.0.7.tar.gz tmp/z2m_log_parser-0.0.8.tar.gz --markdown 20240526/z/z2m-log-parser/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 19:47:11] INFO root fetch - processPackages [scocli]: Downloading https://files.pythonhosted.org/packages/5c/f6/2c0571d9df8757b0eac00fda7955c6691a73dd3678131d747783cf84b799/scocli-1.3.1.tar.gz
+[2024-05-26 19:47:11] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-26 19:47:11] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-9.25.1.tar.gz tmp/abcli-9.3.1.tar.gz --markdown 20240526/a/abcli/9.25.1-9.3.1/README.md --exclude *.pyd
+[2024-05-26 19:47:11] INFO root fetch - processPackages [scocli]: executing diffoscope
+[2024-05-26 19:47:11] INFO root fetch - processPackages [scocli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scocli-1.2.tar.gz tmp/scocli-1.3.1.tar.gz --markdown 20240526/s/scocli/1.2-1.3.1/README.md --exclude *.pyd
+[2024-05-26 19:47:11] INFO root fetch - processPackages [light-database]: executing diffoscope
+[2024-05-26 19:47:11] INFO root fetch - processPackages [light-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/light_database-0.1.9-cp311-cp311-win_amd64.whl.zip tmp/light_database-0.2.0-cp311-cp311-win_amd64.whl.zip --markdown 20240526/l/light-database/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-26 19:47:11] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.7.tar.gz]
+[2024-05-26 19:47:11] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.8.tar.gz]
+[2024-05-26 19:47:11] INFO root fetch - main [MainThread]: End processing [z2m-log-parser]: success
+[2024-05-26 19:47:11] INFO root fetch - processPackages [scocli]: Remove: archive file [/home/abi/fetcher/tmp/scocli-1.2.tar.gz]
+[2024-05-26 19:47:11] INFO root fetch - processPackages [scocli]: Remove: archive file [/home/abi/fetcher/tmp/scocli-1.3.1.tar.gz]
+[2024-05-26 19:47:11] INFO root fetch - main [MainThread]: End processing [scocli]: success
+[2024-05-26 19:47:11] INFO root fetch - processPackages [light-database]: Remove: archive file [/home/abi/fetcher/tmp/light_database-0.1.9-cp311-cp311-win_amd64.whl.zip]
+[2024-05-26 19:47:11] INFO root fetch - processPackages [light-database]: Remove: archive file [/home/abi/fetcher/tmp/light_database-0.2.0-cp311-cp311-win_amd64.whl.zip]
+[2024-05-26 19:47:11] INFO root fetch - main [MainThread]: End processing [light-database]: success
+[2024-05-26 19:47:11] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.25.1.tar.gz]
+[2024-05-26 19:47:11] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.3.1.tar.gz]
+[2024-05-26 19:47:11] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-26 19:47:11] INFO root fetch - main [MainThread]: Store serial: [23385389]
