@@ -16812,3 +16812,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:44:00] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-05-26 20:44:00] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-05-26 20:44:00] INFO root fetch - main [MainThread]: Store serial: [23385819]
+[2024-05-26 20:46:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385819]
+[2024-05-26 20:46:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 20:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 20:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: turbocase
+[2024-05-26 20:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ubo-gui
+[2024-05-26 20:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: model-explorer-onnx
+[2024-05-26 20:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zenaura
+[2024-05-26 20:46:08] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 20:46:08] INFO root fetch - processPackages [zenaura]: New version: [0.9.71] Old Version: [0.9.33]
+[2024-05-26 20:46:08] INFO root fetch - processPackages [model-explorer-onnx]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-26 20:46:08] INFO root fetch - processPackages [ubo-gui]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 20:46:08] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 20:46:08] INFO root fetch - processPackages [turbocase]: New version: [1.4] Old Version: [1.3]
+[2024-05-26 20:46:08] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/c0/ab/cc9340e3736fdc8b9ce91d1421daea59c715bfb215303cc68f2f002bebab/zenaura-0.9.33.tar.gz
+[2024-05-26 20:46:08] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/10/38/5a3e5ddbfbf91db41761047c3870a20dfaff516f4d583f19e9305f878057/model_explorer_onnx-0.2.4.tar.gz
+[2024-05-26 20:46:08] INFO root fetch - processPackages [ubo-gui]: Downloading https://files.pythonhosted.org/packages/52/ff/3d11671b088eea21a50272125230db635fc5cebc64b0112631f2264aa075/ubo_gui-0.9.8.tar.gz
+[2024-05-26 20:46:08] INFO root fetch - processPackages [turbocase]: Downloading https://files.pythonhosted.org/packages/6f/76/244aee2e47354d4cf5cf0ebddf841eca2aa2a45630ed9dd32d1256cb7ef9/turbocase-1.3.tar.gz
+[2024-05-26 20:46:08] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/4f/2a/c5a686eca238ddcc853ca7a985c5f911337a512608f8335dcaa331e1b3c8/zenaura-0.9.71.tar.gz
+[2024-05-26 20:46:09] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 20:46:09] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 20:46:09] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.33.tar.gz tmp/zenaura-0.9.71.tar.gz --markdown 20240526/z/zenaura/0.9.33-0.9.71/README.md --exclude *.pyd
+[2024-05-26 20:46:09] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 20:46:09] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 20:46:09] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/2e/d4/1bf40b06291f6d01d8c7e7518fd94b417f46be10046195d1d3949dad2367/model_explorer_onnx-0.2.5.tar.gz
+[2024-05-26 20:46:09] INFO root fetch - processPackages [turbocase]: Downloading https://files.pythonhosted.org/packages/65/a6/39ec5789fa83a8476c4a4862a464b7ebd8432f912da0321ca79a5c98312a/turbocase-1.4.tar.gz
+[2024-05-26 20:46:09] INFO root fetch - processPackages [turbocase]: executing diffoscope
+[2024-05-26 20:46:09] INFO root fetch - processPackages [turbocase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbocase-1.3.tar.gz tmp/turbocase-1.4.tar.gz --markdown 20240526/t/turbocase/1.3-1.4/README.md --exclude *.pyd
+[2024-05-26 20:46:09] INFO root fetch - processPackages [model-explorer-onnx]: executing diffoscope
+[2024-05-26 20:46:09] INFO root fetch - processPackages [model-explorer-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer_onnx-0.2.4.tar.gz tmp/model_explorer_onnx-0.2.5.tar.gz --markdown 20240526/m/model-explorer-onnx/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-26 20:46:09] INFO root fetch - processPackages [ubo-gui]: Downloading https://files.pythonhosted.org/packages/49/be/d5e94619625fa02651110d759ce75c827dbed83a0a373d6609eabcdde8af/ubo_gui-0.9.9.tar.gz
+[2024-05-26 20:46:09] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.33.tar.gz]
+[2024-05-26 20:46:09] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.71.tar.gz]
+[2024-05-26 20:46:09] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 20:46:09] INFO root fetch - processPackages [turbocase]: Remove: archive file [/home/abi/fetcher/tmp/turbocase-1.3.tar.gz]
+[2024-05-26 20:46:09] INFO root fetch - processPackages [turbocase]: Remove: archive file [/home/abi/fetcher/tmp/turbocase-1.4.tar.gz]
+[2024-05-26 20:46:09] INFO root fetch - main [MainThread]: End processing [turbocase]: success
+[2024-05-26 20:46:09] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 20:46:09] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 20:46:10] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 20:46:10] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.2.4.tar.gz]
+[2024-05-26 20:46:10] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.2.5.tar.gz]
+[2024-05-26 20:46:10] INFO root fetch - main [MainThread]: End processing [model-explorer-onnx]: success
+[2024-05-26 20:46:10] INFO root fetch - processPackages [ubo-gui]: executing diffoscope
+[2024-05-26 20:46:10] INFO root fetch - processPackages [ubo-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubo_gui-0.9.8.tar.gz tmp/ubo_gui-0.9.9.tar.gz --markdown 20240526/u/ubo-gui/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 20:46:11] INFO root fetch - processPackages [ubo-gui]: Remove: archive file [/home/abi/fetcher/tmp/ubo_gui-0.9.8.tar.gz]
+[2024-05-26 20:46:11] INFO root fetch - processPackages [ubo-gui]: Remove: archive file [/home/abi/fetcher/tmp/ubo_gui-0.9.9.tar.gz]
+[2024-05-26 20:46:11] INFO root fetch - main [MainThread]: End processing [ubo-gui]: success
+[2024-05-26 20:46:11] INFO root fetch - main [MainThread]: Store serial: [23385836]
