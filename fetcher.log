@@ -3152,3 +3152,45 @@
 [2024-05-26 05:49:08] INFO root fetch - processPackages [pypomes-soap]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_soap-0.1.8.tar.gz]
 [2024-05-26 05:49:08] INFO root fetch - main [MainThread]: End processing [pypomes-soap]: success
 [2024-05-26 05:49:08] INFO root fetch - main [MainThread]: Store serial: [23379500]
+[2024-05-26 05:51:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379500]
+[2024-05-26 05:51:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 05:51:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eras
+[2024-05-26 05:51:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blackboxai
+[2024-05-26 05:51:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ImbalancedLearningRegression
+[2024-05-26 05:51:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atomic-bomb-engine
+[2024-05-26 05:51:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: invoicing-pdf23
+[2024-05-26 05:51:17] INFO root fetch - processPackages [eras]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-26 05:51:17] INFO root fetch - processPackages [blackboxai]: New version: [3.1] Old Version: [3.0]
+[2024-05-26 05:51:17] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/e3/f4/ca6cb20905b25ca8274c5fa0191583e48cf6d61de35c1c1b42c05a57fd22/blackboxai-3.0.tar.gz
+[2024-05-26 05:51:17] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/98/07/640dc0be99713f5ffd96ddd79ffcdee13cfce38b39338f0e18d1da3f41e2/eras-0.4.4.tar.gz
+[2024-05-26 05:51:17] INFO root fetch - processPackages [ImbalancedLearningRegression]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 05:51:17] ERROR root fetch - processPackages [invoicing-pdf23]: Unable to get metadata: No such project 'invoicing-pdf23'
+[2024-05-26 05:51:17] INFO root fetch - main [MainThread]: End processing [invoicing-pdf23] error
+[2024-05-26 05:51:17] INFO root fetch - processPackages [atomic-bomb-engine]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-26 05:51:17] INFO root fetch - processPackages [ImbalancedLearningRegression]: Downloading https://files.pythonhosted.org/packages/60/e5/ab9913d6aad727020fcc9f620b7d954fb67c24532e73181682d3a63cd718/ImbalancedLearningRegression-0.0.1.tar.gz
+[2024-05-26 05:51:17] INFO root fetch - processPackages [atomic-bomb-engine]: Downloading https://files.pythonhosted.org/packages/de/47/589c78a3caf02bccdff9d1da27ba01989773662faca9c96280fad2e297e6/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl
+[2024-05-26 05:51:17] INFO root fetch - processPackages [eras]: Downloading https://files.pythonhosted.org/packages/1c/93/d6f22460914472913c3188dd96e6bb0ab834497131fc7e7135aac1955f81/eras-0.4.5.tar.gz
+[2024-05-26 05:51:17] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/17/13/5be8ce9759f86a49840a9a089f42d317046151eb26d7e44feb567b02ec47/blackboxai-3.1.tar.gz
+[2024-05-26 05:51:17] INFO root fetch - processPackages [eras]: executing diffoscope
+[2024-05-26 05:51:17] INFO root fetch - processPackages [eras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eras-0.4.4.tar.gz tmp/eras-0.4.5.tar.gz --markdown 20240526/e/eras/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-26 05:51:17] INFO root fetch - processPackages [blackboxai]: executing diffoscope
+[2024-05-26 05:51:17] INFO root fetch - processPackages [blackboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackboxai-3.0.tar.gz tmp/blackboxai-3.1.tar.gz --markdown 20240526/b/blackboxai/3.0-3.1/README.md --exclude *.pyd
+[2024-05-26 05:51:17] INFO root fetch - processPackages [ImbalancedLearningRegression]: Downloading https://files.pythonhosted.org/packages/19/2e/e2759996b048be5ac12b06eac279094639424aa22c7775d0c87f77c9b23b/imbalancedlearningregression-0.0.2.tar.gz
+[2024-05-26 05:51:17] INFO root fetch - processPackages [ImbalancedLearningRegression]: executing diffoscope
+[2024-05-26 05:51:17] INFO root fetch - processPackages [ImbalancedLearningRegression]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ImbalancedLearningRegression-0.0.1.tar.gz tmp/imbalancedlearningregression-0.0.2.tar.gz --markdown 20240526/I/ImbalancedLearningRegression/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 05:51:18] INFO root fetch - processPackages [atomic-bomb-engine]: Downloading https://files.pythonhosted.org/packages/f2/d0/587dc5dedb6e3e81c2ce988350e6322864b47905247529e088c7b811f975/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl
+[2024-05-26 05:51:18] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.4.4.tar.gz]
+[2024-05-26 05:51:18] INFO root fetch - processPackages [eras]: Remove: archive file [/home/abi/fetcher/tmp/eras-0.4.5.tar.gz]
+[2024-05-26 05:51:18] INFO root fetch - main [MainThread]: End processing [eras]: success
+[2024-05-26 05:51:18] INFO root fetch - processPackages [ImbalancedLearningRegression]: Remove: archive file [/home/abi/fetcher/tmp/ImbalancedLearningRegression-0.0.1.tar.gz]
+[2024-05-26 05:51:18] INFO root fetch - processPackages [ImbalancedLearningRegression]: Remove: archive file [/home/abi/fetcher/tmp/imbalancedlearningregression-0.0.2.tar.gz]
+[2024-05-26 05:51:18] INFO root fetch - main [MainThread]: End processing [ImbalancedLearningRegression]: success
+[2024-05-26 05:51:18] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-3.0.tar.gz]
+[2024-05-26 05:51:18] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-3.1.tar.gz]
+[2024-05-26 05:51:18] INFO root fetch - main [MainThread]: End processing [blackboxai]: success
+[2024-05-26 05:51:18] INFO root fetch - processPackages [atomic-bomb-engine]: executing diffoscope
+[2024-05-26 05:51:18] INFO root fetch - processPackages [atomic-bomb-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl.zip tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip --markdown 20240526/a/atomic-bomb-engine/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-26 05:51:19] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl.zip]
+[2024-05-26 05:51:19] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip]
+[2024-05-26 05:51:19] INFO root fetch - main [MainThread]: End processing [atomic-bomb-engine]: success
+[2024-05-26 05:51:19] INFO root fetch - main [MainThread]: Store serial: [23379515]
