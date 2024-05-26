@@ -1165,3 +1165,18 @@
 [2024-05-26 02:23:13] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240526.tar.gz]
 [2024-05-26 02:23:13] INFO root fetch - main [MainThread]: End processing [lightning]: success
 [2024-05-26 02:23:13] INFO root fetch - main [MainThread]: Store serial: [23378630]
+[2024-05-26 02:25:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378630]
+[2024-05-26 02:25:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 02:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discordautoreact
+[2024-05-26 02:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: subarulink
+[2024-05-26 02:25:22] WARNING root fetch - processPackages [discordautoreact]: Skipping, unable to determine old version
+[2024-05-26 02:25:22] INFO root fetch - main [MainThread]: End processing [discordautoreact] error
+[2024-05-26 02:25:22] INFO root fetch - processPackages [subarulink]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-26 02:25:22] INFO root fetch - processPackages [subarulink]: Downloading https://files.pythonhosted.org/packages/b4/5a/cf1e5723b4e5301dca96f64b270d46ae3bc27d5cd32038fd595502fa3965/subarulink-0.7.8.tar.gz
+[2024-05-26 02:25:22] INFO root fetch - processPackages [subarulink]: Downloading https://files.pythonhosted.org/packages/84/3b/af19364e044675c332a6e206c010234316546f19374c90e056d470bf92b2/subarulink-0.7.9.tar.gz
+[2024-05-26 02:25:23] INFO root fetch - processPackages [subarulink]: executing diffoscope
+[2024-05-26 02:25:23] INFO root fetch - processPackages [subarulink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subarulink-0.7.8.tar.gz tmp/subarulink-0.7.9.tar.gz --markdown 20240526/s/subarulink/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-26 02:25:23] INFO root fetch - processPackages [subarulink]: Remove: archive file [/home/abi/fetcher/tmp/subarulink-0.7.8.tar.gz]
+[2024-05-26 02:25:23] INFO root fetch - processPackages [subarulink]: Remove: archive file [/home/abi/fetcher/tmp/subarulink-0.7.9.tar.gz]
+[2024-05-26 02:25:23] INFO root fetch - main [MainThread]: End processing [subarulink]: success
+[2024-05-26 02:25:23] INFO root fetch - main [MainThread]: Store serial: [23378639]
