@@ -1991,3 +1991,18 @@
 [2024-05-26 03:34:44] INFO root fetch - processPackages [flet]: Remove: archive file [/home/abi/fetcher/tmp/flet-0.9.0.tar.gz]
 [2024-05-26 03:34:44] INFO root fetch - main [MainThread]: End processing [flet]: success
 [2024-05-26 03:34:44] INFO root fetch - main [MainThread]: Store serial: [23379017]
+[2024-05-26 03:36:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379017]
+[2024-05-26 03:37:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 03:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: demo-dimo-damo
+[2024-05-26 03:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lyriks
+[2024-05-26 03:37:00] INFO root fetch - processPackages [lyriks]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-26 03:37:00] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/44/9f/383bf04e0a79a9c425573ffb938e6a8b36f09026f68e6b1ee204cfeac0e0/lyriks-0.2.4.tar.gz
+[2024-05-26 03:37:00] WARNING root fetch - processPackages [demo-dimo-damo]: Skipping, unable to determine old version
+[2024-05-26 03:37:00] INFO root fetch - main [MainThread]: End processing [demo-dimo-damo] error
+[2024-05-26 03:37:00] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/64/f2/691c826ba8ca4adfdfd82a8edca15c7c56f7e482dcbd5283b5e3feba2350/lyriks-0.2.5.tar.gz
+[2024-05-26 03:37:00] INFO root fetch - processPackages [lyriks]: executing diffoscope
+[2024-05-26 03:37:00] INFO root fetch - processPackages [lyriks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyriks-0.2.4.tar.gz tmp/lyriks-0.2.5.tar.gz --markdown 20240526/l/lyriks/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-26 03:37:01] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.4.tar.gz]
+[2024-05-26 03:37:01] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.5.tar.gz]
+[2024-05-26 03:37:01] INFO root fetch - main [MainThread]: End processing [lyriks]: success
+[2024-05-26 03:37:01] INFO root fetch - main [MainThread]: Store serial: [23379033]
