@@ -5203,3 +5203,36 @@
 [2024-05-26 09:11:06] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b5.tar.gz]
 [2024-05-26 09:11:06] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-26 09:11:06] INFO root fetch - main [MainThread]: Store serial: [23380542]
+[2024-05-26 09:13:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380542]
+[2024-05-26 09:13:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 09:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easyplot-tool
+[2024-05-26 09:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-models-nightly
+[2024-05-26 09:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrtmp
+[2024-05-26 09:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: magyar
+[2024-05-26 09:13:17] INFO root fetch - processPackages [magyar]: New version: [4.0.5] Old Version: [4.0.4]
+[2024-05-26 09:13:17] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/37/4e/861a6e6adbb4746c2b2f5127c19f1de6ccf1ac4ea10667448c7e36c45ea8/magyar-4.0.4.tar.gz
+[2024-05-26 09:13:17] WARNING root fetch - processPackages [easyplot-tool]: Skipping, unable to determine old version
+[2024-05-26 09:13:17] INFO root fetch - main [MainThread]: End processing [easyplot-tool] error
+[2024-05-26 09:13:17] INFO root fetch - processPackages [pyrtmp]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-26 09:13:18] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2024-05-26 09:13:18] INFO root fetch - processPackages [pyrtmp]: Downloading https://files.pythonhosted.org/packages/f9/9f/2e20c12c99253e562fd40141c15afa939bcc3e29e9a3147bb1483defe771/pyrtmp-0.3.0.tar.gz
+[2024-05-26 09:13:18] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/73/e9/06af7a12cda1722ec668213b9e91a8a2e918011d3ef8e9a98146ee4f76ef/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl
+[2024-05-26 09:13:18] INFO root fetch - processPackages [pyrtmp]: Downloading https://files.pythonhosted.org/packages/c5/5b/c44361d8681f7c79610ecbdffab30c6ba4ebf0651e8511e64bdc915c491a/pyrtmp-0.3.1.tar.gz
+[2024-05-26 09:13:18] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/5a/4a/8e02800d9de191030e81ff95ec0a2a36bb25c5c7bf6741e49eb5eb9421b2/magyar-4.0.5.tar.gz
+[2024-05-26 09:13:18] INFO root fetch - processPackages [pyrtmp]: executing diffoscope
+[2024-05-26 09:13:18] INFO root fetch - processPackages [pyrtmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrtmp-0.3.0.tar.gz tmp/pyrtmp-0.3.1.tar.gz --markdown 20240526/p/pyrtmp/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-26 09:13:18] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/e2/76/79c5fb2cd23f346ee912b9c289c2a9bab6fc8d178658f931ac9a023224c6/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl
+[2024-05-26 09:13:18] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2024-05-26 09:13:18] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-4.0.4.tar.gz tmp/magyar-4.0.5.tar.gz --markdown 20240526/m/magyar/4.0.4-4.0.5/README.md --exclude *.pyd
+[2024-05-26 09:13:19] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2024-05-26 09:13:19] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20240526/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/README.md --exclude *.pyd
+[2024-05-26 09:13:19] INFO root fetch - processPackages [pyrtmp]: Remove: archive file [/home/abi/fetcher/tmp/pyrtmp-0.3.0.tar.gz]
+[2024-05-26 09:13:19] INFO root fetch - processPackages [pyrtmp]: Remove: archive file [/home/abi/fetcher/tmp/pyrtmp-0.3.1.tar.gz]
+[2024-05-26 09:13:19] INFO root fetch - main [MainThread]: End processing [pyrtmp]: success
+[2024-05-26 09:13:19] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.4.tar.gz]
+[2024-05-26 09:13:19] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.5.tar.gz]
+[2024-05-26 09:13:19] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2024-05-26 09:13:22] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip]
+[2024-05-26 09:13:22] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
+[2024-05-26 09:13:22] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2024-05-26 09:13:22] INFO root fetch - main [MainThread]: Store serial: [23380554]
