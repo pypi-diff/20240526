@@ -16934,3 +16934,67 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:50:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-05-26 20:50:31] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-05-26 20:50:31] INFO root fetch - main [MainThread]: Store serial: [23385869]
+[2024-05-26 20:52:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385869]
+[2024-05-26 20:52:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 20:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 20:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-26 20:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: photobooth-app
+[2024-05-26 20:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keggpathway2genes
+[2024-05-26 20:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-otp-webauthn
+[2024-05-26 20:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prophet-tools
+[2024-05-26 20:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: roofAI
+[2024-05-26 20:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lotterybr
+[2024-05-26 20:52:41] INFO root fetch - processPackages [keggpathway2genes]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 20:52:41] INFO root fetch - processPackages [zenaura]: New version: [0.9.74] Old Version: [0.9.33]
+[2024-05-26 20:52:41] INFO root fetch - processPackages [roofAI]: New version: [4.25.1] Old Version: [4.23.1]
+[2024-05-26 20:52:41] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 20:52:41] INFO root fetch - processPackages [django-otp-webauthn]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 20:52:41] INFO root fetch - processPackages [prophet-tools]: New version: [0.94] Old Version: [0.93]
+[2024-05-26 20:52:41] INFO root fetch - processPackages [roofAI]: Downloading https://files.pythonhosted.org/packages/89/4d/ba3d8e273afbb95ab10f6259f8cebce62f2118d02b756b9f1e7f49f1ee18/roofai-4.23.1.tar.gz
+[2024-05-26 20:52:41] INFO root fetch - processPackages [photobooth-app]: New version: [3.1b0] Old Version: [3.0a4]
+[2024-05-26 20:52:41] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 20:52:41] WARNING root fetch - processPackages [lotterybr]: Skipping, unable to determine old version
+[2024-05-26 20:52:41] INFO root fetch - main [MainThread]: End processing [lotterybr] error
+[2024-05-26 20:52:41] INFO root fetch - processPackages [keggpathway2genes]: Downloading https://files.pythonhosted.org/packages/bf/20/7067a6c63a7af1f9ff8782371071ecd448d948397aaf841d0a905b2615c8/keggpathway2genes-0.0.1.tar.gz
+[2024-05-26 20:52:41] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/29/87/771eb3ca310f68908e0be50fc384b8e7e7b359fbca0bf7d92204d1c5cba3/zenaura-0.9.74.tar.gz
+[2024-05-26 20:52:41] INFO root fetch - processPackages [django-otp-webauthn]: Downloading https://files.pythonhosted.org/packages/35/d6/84644b3fd939bd778ef057a68046304a0901d1ab8e13ed5445397e66a341/django_otp_webauthn-0.1.0.tar.gz
+[2024-05-26 20:52:41] INFO root fetch - processPackages [photobooth-app]: Downloading https://files.pythonhosted.org/packages/02/76/e371617bcca352acb10f0eb771f40a9095c5761c5dc1d03f39f756e91d63/photobooth_app-3.0a4.tar.gz
+[2024-05-26 20:52:41] INFO root fetch - processPackages [prophet-tools]: Downloading https://files.pythonhosted.org/packages/ca/16/598c86da0e7dfc2deacee68c51bb7b8d9d53dd4cfd76a80f271ef86bb923/prophet_tools-0.93.tar.gz
+[2024-05-26 20:52:41] WARNING root fetch - processPackages [photobooth-app]: Skipping package: exceeds size limit 40330068>=10485760
+[2024-05-26 20:52:41] INFO root fetch - main [MainThread]: End processing [photobooth-app] error
+[2024-05-26 20:52:41] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 20:52:41] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.33.tar.gz tmp/zenaura-0.9.74.tar.gz --markdown 20240526/z/zenaura/0.9.33-0.9.74/README.md --exclude *.pyd
+[2024-05-26 20:52:41] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 20:52:42] INFO root fetch - processPackages [keggpathway2genes]: Downloading https://files.pythonhosted.org/packages/df/e9/94506672926d8a4fcaba24ffefe9782cd0f825084cb458fd4e8106ab4ae3/keggpathway2genes-0.0.2.tar.gz
+[2024-05-26 20:52:42] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 20:52:42] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 20:52:42] INFO root fetch - processPackages [roofAI]: Downloading https://files.pythonhosted.org/packages/a5/f6/93f5de381875da06ba497a3f9bf0cd28d24c16f9da4c7f30299404149e82/roofai-4.25.1.tar.gz
+[2024-05-26 20:52:42] INFO root fetch - processPackages [keggpathway2genes]: executing diffoscope
+[2024-05-26 20:52:42] INFO root fetch - processPackages [keggpathway2genes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keggpathway2genes-0.0.1.tar.gz tmp/keggpathway2genes-0.0.2.tar.gz --markdown 20240526/k/keggpathway2genes/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 20:52:42] INFO root fetch - processPackages [django-otp-webauthn]: Downloading https://files.pythonhosted.org/packages/62/ed/bad73bd12382cc51fe00168f66ed0c9afb3698b08196fcb589549b3765d4/django_otp_webauthn-0.1.1.tar.gz
+[2024-05-26 20:52:42] INFO root fetch - processPackages [prophet-tools]: Downloading https://files.pythonhosted.org/packages/aa/5a/ddf5678baf7abc4cf5b0d0b60d9e194024e973f3dc11321021bf7fd38611/prophet_tools-0.94.tar.gz
+[2024-05-26 20:52:42] INFO root fetch - processPackages [roofAI]: executing diffoscope
+[2024-05-26 20:52:42] INFO root fetch - processPackages [roofAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roofai-4.23.1.tar.gz tmp/roofai-4.25.1.tar.gz --markdown 20240526/r/roofAI/4.23.1-4.25.1/README.md --exclude *.pyd
+[2024-05-26 20:52:42] INFO root fetch - processPackages [prophet-tools]: executing diffoscope
+[2024-05-26 20:52:42] INFO root fetch - processPackages [prophet-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prophet_tools-0.93.tar.gz tmp/prophet_tools-0.94.tar.gz --markdown 20240526/p/prophet-tools/0.93-0.94/README.md --exclude *.pyd
+[2024-05-26 20:52:42] INFO root fetch - processPackages [django-otp-webauthn]: executing diffoscope
+[2024-05-26 20:52:42] INFO root fetch - processPackages [django-otp-webauthn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_otp_webauthn-0.1.0.tar.gz tmp/django_otp_webauthn-0.1.1.tar.gz --markdown 20240526/d/django-otp-webauthn/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 20:52:42] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.33.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.74.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 20:52:42] INFO root fetch - processPackages [keggpathway2genes]: Remove: archive file [/home/abi/fetcher/tmp/keggpathway2genes-0.0.1.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - processPackages [keggpathway2genes]: Remove: archive file [/home/abi/fetcher/tmp/keggpathway2genes-0.0.2.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - main [MainThread]: End processing [keggpathway2genes]: success
+[2024-05-26 20:52:42] INFO root fetch - processPackages [roofAI]: Remove: archive file [/home/abi/fetcher/tmp/roofai-4.23.1.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - processPackages [roofAI]: Remove: archive file [/home/abi/fetcher/tmp/roofai-4.25.1.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - main [MainThread]: End processing [roofAI]: success
+[2024-05-26 20:52:42] INFO root fetch - processPackages [prophet-tools]: Remove: archive file [/home/abi/fetcher/tmp/prophet_tools-0.93.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - processPackages [prophet-tools]: Remove: archive file [/home/abi/fetcher/tmp/prophet_tools-0.94.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - main [MainThread]: End processing [prophet-tools]: success
+[2024-05-26 20:52:42] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 20:52:42] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 20:52:43] INFO root fetch - processPackages [django-otp-webauthn]: Remove: archive file [/home/abi/fetcher/tmp/django_otp_webauthn-0.1.0.tar.gz]
+[2024-05-26 20:52:43] INFO root fetch - processPackages [django-otp-webauthn]: Remove: archive file [/home/abi/fetcher/tmp/django_otp_webauthn-0.1.1.tar.gz]
+[2024-05-26 20:52:43] INFO root fetch - main [MainThread]: End processing [django-otp-webauthn]: success
+[2024-05-26 20:52:43] INFO root fetch - main [MainThread]: Store serial: [23385894]
