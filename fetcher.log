@@ -7973,3 +7973,68 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:19:41] INFO root fetch - processPackages [ampform-dpd]: Remove: archive file [/home/abi/fetcher/tmp/ampform_dpd-0.2.1rc0.tar.gz]
 [2024-05-26 11:19:41] INFO root fetch - main [MainThread]: End processing [ampform-dpd]: success
 [2024-05-26 11:19:41] INFO root fetch - main [MainThread]: Store serial: [23381746]
+[2024-05-26 11:21:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381746]
+[2024-05-26 11:21:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 11:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dsptoolbox
+[2024-05-26 11:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: platypush
+[2024-05-26 11:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: numint
+[2024-05-26 11:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CI-CloudConnector
+[2024-05-26 11:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xssbase
+[2024-05-26 11:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: djdynatable
+[2024-05-26 11:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: RodTracker
+[2024-05-26 11:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lantana
+[2024-05-26 11:21:54] INFO root fetch - processPackages [platypush]: New version: [1.0.1] Old Version: [0.99.11]
+[2024-05-26 11:21:54] INFO root fetch - processPackages [djdynatable]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-26 11:21:54] INFO root fetch - processPackages [lantana]: New version: [2.9.8.3] Old Version: [2.9.8.2]
+[2024-05-26 11:21:54] INFO root fetch - processPackages [xssbase]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-26 11:21:54] INFO root fetch - processPackages [RodTracker]: New version: [0.6.2.dev39] Old Version: [0.6.2.dev37]
+[2024-05-26 11:21:54] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 11:21:54] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/b0/4a/7bfa8b8259d21fcc996d2d6f86dc897af86f4b8769240a48c6e27eaf861b/xssbase-1.0.4.tar.gz
+[2024-05-26 11:21:54] INFO root fetch - processPackages [djdynatable]: Downloading https://files.pythonhosted.org/packages/05/a6/00f931b4d56bbb1d60dc65ceacc88545d2d47883836ba7239c42cff15029/djdynatable-1.0.0.tar.gz
+[2024-05-26 11:21:54] WARNING root fetch - processPackages [numint]: Skipping, unable to determine old version
+[2024-05-26 11:21:54] INFO root fetch - main [MainThread]: End processing [numint] error
+[2024-05-26 11:21:54] INFO root fetch - processPackages [dsptoolbox]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-26 11:21:54] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/03/31/c588be986ee8fdd7cb29932c20bdc4998e8af74e476f3764af7761c244de/platypush-0.99.11.tar.gz
+[2024-05-26 11:21:54] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/90/25/5be11fa3ca5fc808135b7e067f60521174d6faaed6f1fd9e0480c7310488/lantana-2.9.8.2.tar.gz
+[2024-05-26 11:21:54] INFO root fetch - processPackages [RodTracker]: Downloading https://files.pythonhosted.org/packages/5a/0d/4b14b495b2756bbd9c4b4bc6b33d01b28b8e2df5e57021270c3c0ad15886/rodtracker-0.6.2.dev37.tar.gz
+[2024-05-26 11:21:54] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 11:21:54] WARNING root fetch - processPackages [RodTracker]: Skipping package: exceeds size limit 16671962>=10485760
+[2024-05-26 11:21:54] INFO root fetch - main [MainThread]: End processing [RodTracker] error
+[2024-05-26 11:21:54] INFO root fetch - processPackages [dsptoolbox]: Downloading https://files.pythonhosted.org/packages/2e/06/71960708f161f2d9706ba2d1133b2b4b0855bab7d3d88c6ae761a616a019/dsptoolbox-0.3.7.tar.gz
+[2024-05-26 11:21:54] INFO root fetch - processPackages [djdynatable]: Downloading https://files.pythonhosted.org/packages/83/21/a1dc21dc477b0c8c369ff48cacfa12217a16057cc45271ed463fd2a12680/djdynatable-1.0.1.tar.gz
+[2024-05-26 11:21:54] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 11:21:54] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/79/cc/79cdeeea0531d1bdf1437c7193a3a2e47b390bd61b004c22f7a4a26759b6/xssbase-1.0.5.tar.gz
+[2024-05-26 11:21:54] INFO root fetch - processPackages [djdynatable]: executing diffoscope
+[2024-05-26 11:21:54] INFO root fetch - processPackages [djdynatable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djdynatable-1.0.0.tar.gz tmp/djdynatable-1.0.1.tar.gz --markdown 20240526/d/djdynatable/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-26 11:21:54] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 11:21:54] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 11:21:54] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/8d/48/b9d878dbe66bbdf8a711fbc9726d3a8afcc8b6edb55bf9ee6d3e2b61ca00/lantana-2.9.8.3.tar.gz
+[2024-05-26 11:21:54] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 11:21:54] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-1.0.4.tar.gz tmp/xssbase-1.0.5.tar.gz --markdown 20240526/x/xssbase/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-26 11:21:54] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2024-05-26 11:21:54] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.9.8.2.tar.gz tmp/lantana-2.9.8.3.tar.gz --markdown 20240526/l/lantana/2.9.8.2-2.9.8.3/README.md --exclude *.pyd
+[2024-05-26 11:21:55] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 11:21:55] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 11:21:55] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 11:21:55] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/b4/fa/48bb228269fee7469b4a9b3265f7e40ff517984fb41a936d06714a589d4e/platypush-1.0.1.tar.gz
+[2024-05-26 11:21:55] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.4.tar.gz]
+[2024-05-26 11:21:55] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.5.tar.gz]
+[2024-05-26 11:21:55] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 11:21:55] INFO root fetch - processPackages [djdynatable]: Remove: archive file [/home/abi/fetcher/tmp/djdynatable-1.0.0.tar.gz]
+[2024-05-26 11:21:55] INFO root fetch - processPackages [djdynatable]: Remove: archive file [/home/abi/fetcher/tmp/djdynatable-1.0.1.tar.gz]
+[2024-05-26 11:21:55] INFO root fetch - main [MainThread]: End processing [djdynatable]: success
+[2024-05-26 11:21:55] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.2.tar.gz]
+[2024-05-26 11:21:55] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.3.tar.gz]
+[2024-05-26 11:21:55] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2024-05-26 11:21:55] INFO root fetch - processPackages [dsptoolbox]: Downloading https://files.pythonhosted.org/packages/54/7a/52894c0b6d1f29bef44941db87f34afb7690ae68f037126556dbb83a3eea/dsptoolbox-0.3.8.tar.gz
+[2024-05-26 11:21:55] INFO root fetch - processPackages [platypush]: executing diffoscope
+[2024-05-26 11:21:55] INFO root fetch - processPackages [platypush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/platypush-0.99.11.tar.gz tmp/platypush-1.0.1.tar.gz --markdown 20240526/p/platypush/0.99.11-1.0.1/README.md --exclude *.pyd
+[2024-05-26 11:21:56] INFO root fetch - processPackages [dsptoolbox]: executing diffoscope
+[2024-05-26 11:21:56] INFO root fetch - processPackages [dsptoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsptoolbox-0.3.7.tar.gz tmp/dsptoolbox-0.3.8.tar.gz --markdown 20240526/d/dsptoolbox/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-26 11:21:57] INFO root fetch - processPackages [dsptoolbox]: Remove: archive file [/home/abi/fetcher/tmp/dsptoolbox-0.3.7.tar.gz]
+[2024-05-26 11:21:57] INFO root fetch - processPackages [dsptoolbox]: Remove: archive file [/home/abi/fetcher/tmp/dsptoolbox-0.3.8.tar.gz]
+[2024-05-26 11:21:57] INFO root fetch - main [MainThread]: End processing [dsptoolbox]: success
+[2024-05-26 11:22:03] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-0.99.11.tar.gz]
+[2024-05-26 11:22:03] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.1.tar.gz]
+[2024-05-26 11:22:03] INFO root fetch - main [MainThread]: End processing [platypush]: success
+[2024-05-26 11:22:03] INFO root fetch - main [MainThread]: Store serial: [23381765]
