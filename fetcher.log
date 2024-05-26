@@ -8972,3 +8972,29 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:25:21] INFO root fetch - processPackages [mtai]: Remove: archive file [/home/abi/fetcher/tmp/mtai-0.0.4.tar.gz]
 [2024-05-26 12:25:21] INFO root fetch - main [MainThread]: End processing [mtai]: success
 [2024-05-26 12:25:21] INFO root fetch - main [MainThread]: Store serial: [23382168]
+[2024-05-26 12:27:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382168]
+[2024-05-26 12:27:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 12:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TMC-2209-Raspberry-Pi
+[2024-05-26 12:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: algogears
+[2024-05-26 12:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wolfhece
+[2024-05-26 12:27:35] INFO root fetch - processPackages [algogears]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-26 12:27:35] INFO root fetch - processPackages [wolfhece]: New version: [2.0.54] Old Version: [2.0.53]
+[2024-05-26 12:27:35] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: New version: [0.5] Old Version: [0.4.5]
+[2024-05-26 12:27:35] INFO root fetch - processPackages [wolfhece]: Downloading https://files.pythonhosted.org/packages/80/cc/66fe44255de381385e8bda8a2e316f4e76bb4a38d1056da38a8665abf40b/wolfhece-2.0.53-py3-none-any.whl
+[2024-05-26 12:27:35] INFO root fetch - processPackages [algogears]: Downloading https://files.pythonhosted.org/packages/23/a0/79ecfa2c8e7d01edec97b5583c917f0d49d39320bf04d14d17fbf67724e7/algogears-1.1.0.tar.gz
+[2024-05-26 12:27:35] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Downloading https://files.pythonhosted.org/packages/21/39/d47aae502a7a7b0b63ad889e25ecb6fd192272255652b9cebad184fc570b/tmc_2209_raspberry_pi-0.4.5.tar.gz
+[2024-05-26 12:27:35] WARNING root fetch - processPackages [wolfhece]: Skipping package: exceeds size limit 160033491>=10485760
+[2024-05-26 12:27:35] INFO root fetch - main [MainThread]: End processing [wolfhece] error
+[2024-05-26 12:27:35] INFO root fetch - processPackages [algogears]: Downloading https://files.pythonhosted.org/packages/ad/e4/b8b2094f8c6864e7eeb35befb514a575d6e71009f634f78487242c9afaf3/algogears-1.1.1.tar.gz
+[2024-05-26 12:27:35] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Downloading https://files.pythonhosted.org/packages/83/bb/3ae861ec7ea06918a1cc96ff8dabf984404f6152d87437daa1c123efcee9/tmc_2209_raspberry_pi-0.5.tar.gz
+[2024-05-26 12:27:35] INFO root fetch - processPackages [algogears]: executing diffoscope
+[2024-05-26 12:27:35] INFO root fetch - processPackages [algogears]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algogears-1.1.0.tar.gz tmp/algogears-1.1.1.tar.gz --markdown 20240526/a/algogears/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-26 12:27:35] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: executing diffoscope
+[2024-05-26 12:27:35] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmc_2209_raspberry_pi-0.4.5.tar.gz tmp/tmc_2209_raspberry_pi-0.5.tar.gz --markdown 20240526/T/TMC-2209-Raspberry-Pi/0.4.5-0.5/README.md --exclude *.pyd
+[2024-05-26 12:27:36] INFO root fetch - processPackages [algogears]: Remove: archive file [/home/abi/fetcher/tmp/algogears-1.1.0.tar.gz]
+[2024-05-26 12:27:36] INFO root fetch - processPackages [algogears]: Remove: archive file [/home/abi/fetcher/tmp/algogears-1.1.1.tar.gz]
+[2024-05-26 12:27:36] INFO root fetch - main [MainThread]: End processing [algogears]: success
+[2024-05-26 12:27:36] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Remove: archive file [/home/abi/fetcher/tmp/tmc_2209_raspberry_pi-0.4.5.tar.gz]
+[2024-05-26 12:27:36] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Remove: archive file [/home/abi/fetcher/tmp/tmc_2209_raspberry_pi-0.5.tar.gz]
+[2024-05-26 12:27:36] INFO root fetch - main [MainThread]: End processing [TMC-2209-Raspberry-Pi]: success
+[2024-05-26 12:27:36] INFO root fetch - main [MainThread]: Store serial: [23382176]
