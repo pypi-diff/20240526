@@ -10729,3 +10729,47 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:58:29] WARNING root fetch - processPackages [phylogenetic-tree-vis-comp]: Skipping, unable to determine old version
 [2024-05-26 14:58:29] INFO root fetch - main [MainThread]: End processing [phylogenetic-tree-vis-comp] error
 [2024-05-26 14:58:29] INFO root fetch - main [MainThread]: Store serial: [23383004]
+[2024-05-26 15:00:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383004]
+[2024-05-26 15:00:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 15:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gazou0526
+[2024-05-26 15:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netbox-otp-plugin
+[2024-05-26 15:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CloudConnector
+[2024-05-26 15:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CI-CloudConnector
+[2024-05-26 15:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scipu
+[2024-05-26 15:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aiy-worker
+[2024-05-26 15:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: smaht-submitr
+[2024-05-26 15:00:43] INFO root fetch - processPackages [aiy-worker]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-26 15:00:43] WARNING root fetch - processPackages [scipu]: Skipping, unable to determine old version
+[2024-05-26 15:00:43] INFO root fetch - main [MainThread]: End processing [scipu] error
+[2024-05-26 15:00:43] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.80]
+[2024-05-26 15:00:43] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.80]
+[2024-05-26 15:00:43] INFO root fetch - processPackages [aiy-worker]: Downloading https://files.pythonhosted.org/packages/6a/47/ef2dbc6f9c39801e7091c57b398938202dbcdaaa7cd81fb7b517338651ad/aiy_worker-0.0.6.tar.gz
+[2024-05-26 15:00:43] INFO root fetch - processPackages [netbox-otp-plugin]: New version: [1.1.0] Old Version: [1.0.7]
+[2024-05-26 15:00:43] WARNING root fetch - processPackages [gazou0526]: Skipping, unable to determine old version
+[2024-05-26 15:00:43] INFO root fetch - main [MainThread]: End processing [gazou0526] error
+[2024-05-26 15:00:43] INFO root fetch - processPackages [smaht-submitr]: New version: [0.8.2.1b9] Old Version: [0.8.2.1b8]
+[2024-05-26 15:00:43] ERROR root fetch - processPackages [CI-CloudConnector]: Unable to fetch info: No such project/version 'CI-CloudConnector' 0.80
+[2024-05-26 15:00:43] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector] error
+[2024-05-26 15:00:43] ERROR root fetch - processPackages [CI-CloudConnector]: Unable to fetch info: No such project/version 'CI-CloudConnector' 0.80
+[2024-05-26 15:00:43] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector] error
+[2024-05-26 15:00:43] INFO root fetch - processPackages [netbox-otp-plugin]: Downloading https://files.pythonhosted.org/packages/f2/a7/65d92b0cca25b4dc2510a8c677f47e3a3de485fb8f891417cbf1a281d5e5/netbox_otp_plugin-1.0.7-py3-none-any.whl
+[2024-05-26 15:00:43] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/94/70/b34d2d34c394fc3e3b347e32bec8900b8b8643db5842d59991c4e84ea528/smaht_submitr-0.8.2.1b8.tar.gz
+[2024-05-26 15:00:43] INFO root fetch - processPackages [aiy-worker]: Downloading https://files.pythonhosted.org/packages/b6/50/85f64eae69f2a8317a7f262b2e1566612f69191dcdda872411dff610a3c2/aiy_worker-0.0.7.tar.gz
+[2024-05-26 15:00:43] INFO root fetch - processPackages [aiy-worker]: executing diffoscope
+[2024-05-26 15:00:43] INFO root fetch - processPackages [aiy-worker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiy_worker-0.0.6.tar.gz tmp/aiy_worker-0.0.7.tar.gz --markdown 20240526/a/aiy-worker/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-26 15:00:44] INFO root fetch - processPackages [netbox-otp-plugin]: Downloading https://files.pythonhosted.org/packages/44/bf/758fd4938816443c2b6822fdf2545dafd8414c991a0d14a567695f2e8ee1/netbox_otp_plugin-1.1.0-py3-none-any.whl
+[2024-05-26 15:00:44] INFO root fetch - processPackages [netbox-otp-plugin]: executing diffoscope
+[2024-05-26 15:00:44] INFO root fetch - processPackages [netbox-otp-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox_otp_plugin-1.0.7-py3-none-any.whl.zip tmp/netbox_otp_plugin-1.1.0-py3-none-any.whl.zip --markdown 20240526/n/netbox-otp-plugin/1.0.7-1.1.0/README.md --exclude *.pyd
+[2024-05-26 15:00:44] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/49/5f/4a0cbcc953b126fd89e8d3c5beafcab7cf195845995d05395f40952ad23c/smaht_submitr-0.8.2.1b9.tar.gz
+[2024-05-26 15:00:44] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-05-26 15:00:44] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.8.2.1b8.tar.gz tmp/smaht_submitr-0.8.2.1b9.tar.gz --markdown 20240526/s/smaht-submitr/0.8.2.1b8-0.8.2.1b9/README.md --exclude *.pyd
+[2024-05-26 15:00:44] INFO root fetch - processPackages [aiy-worker]: Remove: archive file [/home/abi/fetcher/tmp/aiy_worker-0.0.6.tar.gz]
+[2024-05-26 15:00:44] INFO root fetch - processPackages [aiy-worker]: Remove: archive file [/home/abi/fetcher/tmp/aiy_worker-0.0.7.tar.gz]
+[2024-05-26 15:00:44] INFO root fetch - main [MainThread]: End processing [aiy-worker]: success
+[2024-05-26 15:00:44] INFO root fetch - processPackages [netbox-otp-plugin]: Remove: archive file [/home/abi/fetcher/tmp/netbox_otp_plugin-1.0.7-py3-none-any.whl.zip]
+[2024-05-26 15:00:44] INFO root fetch - processPackages [netbox-otp-plugin]: Remove: archive file [/home/abi/fetcher/tmp/netbox_otp_plugin-1.1.0-py3-none-any.whl.zip]
+[2024-05-26 15:00:44] INFO root fetch - main [MainThread]: End processing [netbox-otp-plugin]: success
+[2024-05-26 15:00:45] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.2.1b8.tar.gz]
+[2024-05-26 15:00:45] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.2.1b9.tar.gz]
+[2024-05-26 15:00:45] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-05-26 15:00:45] INFO root fetch - main [MainThread]: Store serial: [23383037]
