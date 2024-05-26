@@ -3810,3 +3810,18 @@
 [2024-05-26 06:58:14] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
 [2024-05-26 06:58:14] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
 [2024-05-26 06:58:14] INFO root fetch - main [MainThread]: Store serial: [23379780]
+[2024-05-26 07:00:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379780]
+[2024-05-26 07:00:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 07:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aigist
+[2024-05-26 07:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: new-gfpgan
+[2024-05-26 07:00:22] INFO root fetch - processPackages [aigist]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 07:00:22] WARNING root fetch - processPackages [new-gfpgan]: Skipping, unable to determine old version
+[2024-05-26 07:00:22] INFO root fetch - main [MainThread]: End processing [new-gfpgan] error
+[2024-05-26 07:00:22] INFO root fetch - processPackages [aigist]: Downloading https://files.pythonhosted.org/packages/64/20/25ca13175f96209b370520e478728362e97be3a43f9c996106f7efd65f28/aigist-0.0.1.tar.gz
+[2024-05-26 07:00:23] INFO root fetch - processPackages [aigist]: Downloading https://files.pythonhosted.org/packages/95/8e/1812e0fd783297936ae7e2356fecf0dbb3f5e0ef8a912fec3c11b70388e3/aigist-0.0.2.tar.gz
+[2024-05-26 07:00:23] INFO root fetch - processPackages [aigist]: executing diffoscope
+[2024-05-26 07:00:23] INFO root fetch - processPackages [aigist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aigist-0.0.1.tar.gz tmp/aigist-0.0.2.tar.gz --markdown 20240526/a/aigist/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 07:00:23] INFO root fetch - processPackages [aigist]: Remove: archive file [/home/abi/fetcher/tmp/aigist-0.0.1.tar.gz]
+[2024-05-26 07:00:23] INFO root fetch - processPackages [aigist]: Remove: archive file [/home/abi/fetcher/tmp/aigist-0.0.2.tar.gz]
+[2024-05-26 07:00:23] INFO root fetch - main [MainThread]: End processing [aigist]: success
+[2024-05-26 07:00:23] INFO root fetch - main [MainThread]: Store serial: [23379788]
