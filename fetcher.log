@@ -15239,3 +15239,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:05:29] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-26 19:05:29] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-26 19:05:29] INFO root fetch - main [MainThread]: Store serial: [23385033]
+[2024-05-26 19:07:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385033]
+[2024-05-26 19:07:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 19:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zenaura
+[2024-05-26 19:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: infn-ophyd-hal
+[2024-05-26 19:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yahoo-fin-cheese
+[2024-05-26 19:07:37] INFO root fetch - processPackages [zenaura]: New version: [0.9.62] Old Version: [0.9.61]
+[2024-05-26 19:07:37] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/0f/9f/c2ba484bd0ad8bb4bbaaaf4a56cf9be5986974646d8553cea7ea2e677393/zenaura-0.9.61.tar.gz
+[2024-05-26 19:07:37] WARNING root fetch - processPackages [yahoo-fin-cheese]: Skipping, unable to determine old version
+[2024-05-26 19:07:37] INFO root fetch - main [MainThread]: End processing [yahoo-fin-cheese] error
+[2024-05-26 19:07:37] INFO root fetch - processPackages [infn-ophyd-hal]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-05-26 19:07:38] INFO root fetch - processPackages [infn-ophyd-hal]: Downloading https://files.pythonhosted.org/packages/3d/c6/5e133706fa3d7773a8213eb7e647b12c3a2bb534fdea0018c940e27ce230/infn_ophyd_hal-1.0.0.tar.gz
+[2024-05-26 19:07:38] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/5e/c6/511de5c3382107bc476a0892e4f099624f1148a770c3efa9597edbce249d/zenaura-0.9.62.tar.gz
+[2024-05-26 19:07:38] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 19:07:38] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.61.tar.gz tmp/zenaura-0.9.62.tar.gz --markdown 20240526/z/zenaura/0.9.61-0.9.62/README.md --exclude *.pyd
+[2024-05-26 19:07:38] INFO root fetch - processPackages [infn-ophyd-hal]: Downloading https://files.pythonhosted.org/packages/ba/35/b02e6e7914ed540029809f93557afee1fee9bf45043c410beb4011d60362/infn_ophyd_hal-1.0.2.tar.gz
+[2024-05-26 19:07:38] INFO root fetch - processPackages [infn-ophyd-hal]: executing diffoscope
+[2024-05-26 19:07:38] INFO root fetch - processPackages [infn-ophyd-hal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infn_ophyd_hal-1.0.0.tar.gz tmp/infn_ophyd_hal-1.0.2.tar.gz --markdown 20240526/i/infn-ophyd-hal/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-05-26 19:07:38] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.61.tar.gz]
+[2024-05-26 19:07:38] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.62.tar.gz]
+[2024-05-26 19:07:38] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 19:07:38] INFO root fetch - processPackages [infn-ophyd-hal]: Remove: archive file [/home/abi/fetcher/tmp/infn_ophyd_hal-1.0.0.tar.gz]
+[2024-05-26 19:07:38] INFO root fetch - processPackages [infn-ophyd-hal]: Remove: archive file [/home/abi/fetcher/tmp/infn_ophyd_hal-1.0.2.tar.gz]
+[2024-05-26 19:07:38] INFO root fetch - main [MainThread]: End processing [infn-ophyd-hal]: success
+[2024-05-26 19:07:38] INFO root fetch - main [MainThread]: Store serial: [23385045]
