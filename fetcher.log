@@ -10370,3 +10370,39 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:31:21] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
 [2024-05-26 14:31:21] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
 [2024-05-26 14:31:21] INFO root fetch - main [MainThread]: Store serial: [23382839]
+[2024-05-26 14:33:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382839]
+[2024-05-26 14:33:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 14:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-cpp-agent
+[2024-05-26 14:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dashai-test-tabular-classification-package
+[2024-05-26 14:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-islands
+[2024-05-26 14:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fcsSchool
+[2024-05-26 14:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cadziu
+[2024-05-26 14:33:35] WARNING root fetch - processPackages [dashai-test-tabular-classification-package]: Skipping, unable to determine old version
+[2024-05-26 14:33:35] INFO root fetch - main [MainThread]: End processing [dashai-test-tabular-classification-package] error
+[2024-05-26 14:33:35] INFO root fetch - processPackages [llama-cpp-agent]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 14:33:35] INFO root fetch - processPackages [cadziu]: New version: [0.3] Old Version: [0.2]
+[2024-05-26 14:33:35] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/a0/ba/e28b4ffe7b86f6d15ba5b9672537e66bc8273c02bbb8fa06f1337493886a/llama_cpp_agent-0.2.8.tar.gz
+[2024-05-26 14:33:35] WARNING root fetch - processPackages [fcsSchool]: Skipping, unable to determine old version
+[2024-05-26 14:33:35] INFO root fetch - main [MainThread]: End processing [fcsSchool] error
+[2024-05-26 14:33:35] INFO root fetch - processPackages [streamlit-islands]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 14:33:35] INFO root fetch - processPackages [cadziu]: Downloading https://files.pythonhosted.org/packages/7d/f9/4c1c51284b11bd81b1873f2fb5914d42129072c106796bb30e7022f6e845/cadziu-0.2.tar.gz
+[2024-05-26 14:33:35] INFO root fetch - processPackages [streamlit-islands]: Downloading https://files.pythonhosted.org/packages/17/0a/64780277853dd89361babd2e531af2d12ed5e523e43dbb8dbd8fb42f0c27/streamlit-islands-0.0.1.tar.gz
+[2024-05-26 14:33:35] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/e5/bb/9a16b289d7453095ab2485d73acf22968e24e78ddee8f364f962860bc7e1/llama_cpp_agent-0.2.9.tar.gz
+[2024-05-26 14:33:35] INFO root fetch - processPackages [llama-cpp-agent]: executing diffoscope
+[2024-05-26 14:33:35] INFO root fetch - processPackages [llama-cpp-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_agent-0.2.8.tar.gz tmp/llama_cpp_agent-0.2.9.tar.gz --markdown 20240526/l/llama-cpp-agent/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 14:33:36] INFO root fetch - processPackages [cadziu]: Downloading https://files.pythonhosted.org/packages/3c/98/d296940e8791fdfc03ea8096d6213a481e0e9b26db345e6ffb4b911a20c0/cadziu-0.3.tar.gz
+[2024-05-26 14:33:36] INFO root fetch - processPackages [streamlit-islands]: Downloading https://files.pythonhosted.org/packages/12/fa/89a284f415441cd2c9344ae6b83a009ebc71e65e1ae087c784eb9ddeeb28/streamlit-islands-0.0.2.tar.gz
+[2024-05-26 14:33:36] INFO root fetch - processPackages [cadziu]: executing diffoscope
+[2024-05-26 14:33:36] INFO root fetch - processPackages [cadziu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadziu-0.2.tar.gz tmp/cadziu-0.3.tar.gz --markdown 20240526/c/cadziu/0.2-0.3/README.md --exclude *.pyd
+[2024-05-26 14:33:36] INFO root fetch - processPackages [streamlit-islands]: executing diffoscope
+[2024-05-26 14:33:36] INFO root fetch - processPackages [streamlit-islands]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-islands-0.0.1.tar.gz tmp/streamlit-islands-0.0.2.tar.gz --markdown 20240526/s/streamlit-islands/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 14:33:36] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.8.tar.gz]
+[2024-05-26 14:33:36] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.9.tar.gz]
+[2024-05-26 14:33:36] INFO root fetch - main [MainThread]: End processing [llama-cpp-agent]: success
+[2024-05-26 14:33:36] INFO root fetch - processPackages [cadziu]: Remove: archive file [/home/abi/fetcher/tmp/cadziu-0.2.tar.gz]
+[2024-05-26 14:33:36] INFO root fetch - processPackages [cadziu]: Remove: archive file [/home/abi/fetcher/tmp/cadziu-0.3.tar.gz]
+[2024-05-26 14:33:36] INFO root fetch - main [MainThread]: End processing [cadziu]: success
+[2024-05-26 14:33:36] INFO root fetch - processPackages [streamlit-islands]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-islands-0.0.1.tar.gz]
+[2024-05-26 14:33:36] INFO root fetch - processPackages [streamlit-islands]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-islands-0.0.2.tar.gz]
+[2024-05-26 14:33:36] INFO root fetch - main [MainThread]: End processing [streamlit-islands]: success
+[2024-05-26 14:33:36] INFO root fetch - main [MainThread]: Store serial: [23382856]
