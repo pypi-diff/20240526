@@ -14329,3 +14329,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:13:15] INFO root fetch - processPackages [wiggle-camera]: Remove: archive file [/home/abi/fetcher/tmp/wiggle_camera-0.0.2.tar.gz]
 [2024-05-26 18:13:15] INFO root fetch - main [MainThread]: End processing [wiggle-camera]: success
 [2024-05-26 18:13:15] INFO root fetch - main [MainThread]: Store serial: [23384590]
+[2024-05-26 18:15:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384590]
+[2024-05-26 18:15:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 18:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wakepy
+[2024-05-26 18:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pqsdk
+[2024-05-26 18:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MedatechUK.Landlord
+[2024-05-26 18:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyerualjetwork
+[2024-05-26 18:15:24] INFO root fetch - processPackages [pyerualjetwork]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-26 18:15:24] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/8b/6a/e81613275be69b8becef48ddc6a16a879a60d3d554179d896f4a8f62c821/pyerualjetwork-1.2.2.tar.gz
+[2024-05-26 18:15:24] WARNING root fetch - processPackages [MedatechUK.Landlord]: Skipping, unable to determine old version
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pqsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 18:15:25] INFO root fetch - processPackages [wakepy]: New version: [0.8.0] Old Version: [0.7.2]
+[2024-05-26 18:15:25] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord] error
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/7d/ef/e1606d8c88536e329ff51d20c43d8c3a8fbf1f139463353e46ce9c5714b7/pqsdk-0.0.8.tar.gz
+[2024-05-26 18:15:25] INFO root fetch - processPackages [wakepy]: Downloading https://files.pythonhosted.org/packages/3d/4b/ddd29056ecae39f897d1c5b4e87d439dc24f7cc9f9c299b6b272a0152afd/wakepy-0.7.2-py3-none-any.whl
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pyerualjetwork]: Downloading https://files.pythonhosted.org/packages/99/a8/24c0c6ef97a1655cff856d25646e082cdc4004490ede5819f8e4a6ab24c0/pyerualjetwork-1.2.3.tar.gz
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pyerualjetwork]: executing diffoscope
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pyerualjetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyerualjetwork-1.2.2.tar.gz tmp/pyerualjetwork-1.2.3.tar.gz --markdown 20240526/p/pyerualjetwork/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/fa/43/18693ceeb86b0759e282a7f78e07c1b9f619ad0a4c2cbb972444d8f2a224/pqsdk-0.0.9.tar.gz
+[2024-05-26 18:15:25] INFO root fetch - processPackages [wakepy]: Downloading https://files.pythonhosted.org/packages/2b/30/8ab9affb6886dfe80101f652f5c605c11e0e3774dceed2e1f99f65d0ef73/wakepy-0.8.0.tar.gz
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pqsdk]: executing diffoscope
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqsdk-0.0.8.tar.gz tmp/pqsdk-0.0.9.tar.gz --markdown 20240526/p/pqsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 18:15:25] INFO root fetch - processPackages [wakepy]: executing diffoscope
+[2024-05-26 18:15:25] INFO root fetch - processPackages [wakepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wakepy-0.7.2-py3-none-any.whl.zip tmp/wakepy-0.8.0.tar.gz --markdown 20240526/w/wakepy/0.7.2-0.8.0/README.md --exclude *.pyd
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-1.2.2.tar.gz]
+[2024-05-26 18:15:25] INFO root fetch - processPackages [pyerualjetwork]: Remove: archive file [/home/abi/fetcher/tmp/pyerualjetwork-1.2.3.tar.gz]
+[2024-05-26 18:15:25] INFO root fetch - main [MainThread]: End processing [pyerualjetwork]: success
+[2024-05-26 18:15:26] INFO root fetch - processPackages [wakepy]: Remove: archive file [/home/abi/fetcher/tmp/wakepy-0.7.2-py3-none-any.whl.zip]
+[2024-05-26 18:15:26] INFO root fetch - processPackages [wakepy]: Remove: archive file [/home/abi/fetcher/tmp/wakepy-0.8.0.tar.gz]
+[2024-05-26 18:15:26] INFO root fetch - main [MainThread]: End processing [wakepy]: success
+[2024-05-26 18:15:26] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.8.tar.gz]
+[2024-05-26 18:15:26] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.9.tar.gz]
+[2024-05-26 18:15:26] INFO root fetch - main [MainThread]: End processing [pqsdk]: success
+[2024-05-26 18:15:26] INFO root fetch - main [MainThread]: Store serial: [23384603]
