@@ -5131,3 +5131,36 @@
 [2024-05-26 09:06:41] INFO root fetch - processPackages [data-qualitator]: Remove: archive file [/home/abi/fetcher/tmp/data_qualitator-1.0.1.tar.gz]
 [2024-05-26 09:06:41] INFO root fetch - main [MainThread]: End processing [data-qualitator]: success
 [2024-05-26 09:06:41] INFO root fetch - main [MainThread]: Store serial: [23380515]
+[2024-05-26 09:08:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380515]
+[2024-05-26 09:08:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 09:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muko
+[2024-05-26 09:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-hub-nightly
+[2024-05-26 09:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: goslide-api
+[2024-05-26 09:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: elevenlabs-bulk
+[2024-05-26 09:08:52] INFO root fetch - processPackages [goslide-api]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-26 09:08:52] INFO root fetch - processPackages [muko]: New version: [2.57] Old Version: [2.56]
+[2024-05-26 09:08:52] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-05-26 09:08:52] WARNING root fetch - processPackages [elevenlabs-bulk]: Skipping, unable to determine old version
+[2024-05-26 09:08:52] INFO root fetch - main [MainThread]: End processing [elevenlabs-bulk] error
+[2024-05-26 09:08:52] INFO root fetch - processPackages [goslide-api]: Downloading https://files.pythonhosted.org/packages/f2/96/641e32544a7fe6fc5fa046696094d00cc2d30e20ef81dc23d9d3e1641bf4/goslide-api-0.6.8.tar.gz
+[2024-05-26 09:08:52] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/21/bd/57bc5c5d2e6e7c60acd3e951c990d7a0a741e8d97285e369e7c159ea847d/muko-2.56-py3-none-any.whl
+[2024-05-26 09:08:52] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-05-26 09:08:52] INFO root fetch - processPackages [goslide-api]: Downloading https://files.pythonhosted.org/packages/7a/e9/2462a950375505256657c5e58e03804866a74a4c2e8abb01a4d33630a5e5/goslide-api-0.6.9.tar.gz
+[2024-05-26 09:08:52] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-05-26 09:08:52] INFO root fetch - processPackages [goslide-api]: executing diffoscope
+[2024-05-26 09:08:52] INFO root fetch - processPackages [goslide-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goslide-api-0.6.8.tar.gz tmp/goslide-api-0.6.9.tar.gz --markdown 20240526/g/goslide-api/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-26 09:08:52] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-05-26 09:08:52] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240526/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-05-26 09:08:53] INFO root fetch - processPackages [goslide-api]: Remove: archive file [/home/abi/fetcher/tmp/goslide-api-0.6.8.tar.gz]
+[2024-05-26 09:08:53] INFO root fetch - processPackages [goslide-api]: Remove: archive file [/home/abi/fetcher/tmp/goslide-api-0.6.9.tar.gz]
+[2024-05-26 09:08:53] INFO root fetch - main [MainThread]: End processing [goslide-api]: success
+[2024-05-26 09:08:53] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/e7/db/838b44fde26fcea0b24921773b66eb691bb861a358be2c805a670ea30de1/muko-2.57-py3-none-any.whl
+[2024-05-26 09:08:53] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-05-26 09:08:53] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-05-26 09:08:53] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-05-26 09:08:53] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-05-26 09:08:53] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.56-py3-none-any.whl.zip tmp/muko-2.57-py3-none-any.whl.zip --markdown 20240526/m/muko/2.56-2.57/README.md --exclude *.pyd
+[2024-05-26 09:08:54] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.56-py3-none-any.whl.zip]
+[2024-05-26 09:08:54] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.57-py3-none-any.whl.zip]
+[2024-05-26 09:08:54] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-05-26 09:08:54] INFO root fetch - main [MainThread]: Store serial: [23380529]
