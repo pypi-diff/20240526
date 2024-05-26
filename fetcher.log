@@ -15076,3 +15076,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:58:56] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.59.tar.gz]
 [2024-05-26 18:58:56] INFO root fetch - main [MainThread]: End processing [zenaura]: success
 [2024-05-26 18:58:56] INFO root fetch - main [MainThread]: Store serial: [23384973]
+[2024-05-26 19:01:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384973]
+[2024-05-26 19:01:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 19:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: git-assistente
+[2024-05-26 19:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-26 19:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MedatechUK.APY
+[2024-05-26 19:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bota
+[2024-05-26 19:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mandown
+[2024-05-26 19:01:06] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 19:01:06] INFO root fetch - processPackages [bota]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 19:01:06] INFO root fetch - processPackages [git-assistente]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:01:06] INFO root fetch - processPackages [MedatechUK.APY]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 19:01:06] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/20/a9/4f637666fa83c508695967d807e33c729d659786a5de468b4289f5bff8b4/bota-4.0.8.tar.gz
+[2024-05-26 19:01:06] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 19:01:06] INFO root fetch - processPackages [mandown]: New version: [1.9.0] Old Version: [1.8.2]
+[2024-05-26 19:01:06] INFO root fetch - processPackages [git-assistente]: Downloading https://files.pythonhosted.org/packages/ba/fc/368c548a65354f21d8cd457e3bb056610c363e019f7dc49d59da247dd983/git_assistente-0.1.8.tar.gz
+[2024-05-26 19:01:06] INFO root fetch - processPackages [MedatechUK.APY]: Downloading https://files.pythonhosted.org/packages/54/66/e44b04686d59238130935715b731408212eda9289254d189b3b770933a45/MedatechUK.APY-0.0.8.tar.gz
+[2024-05-26 19:01:06] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/a4/5f/24c14d0a7d609507557baf5369feaca8b3459d111f35e9258e9d0396f9a8/bota-4.0.9.tar.gz
+[2024-05-26 19:01:07] INFO root fetch - processPackages [mandown]: Downloading https://files.pythonhosted.org/packages/22/4b/41ea86807628d1181c1752ab7f0176d56a481b37e42e05a82857d2422c38/mandown-1.8.2.tar.gz
+[2024-05-26 19:01:07] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 19:01:07] INFO root fetch - processPackages [bota]: executing diffoscope
+[2024-05-26 19:01:07] INFO root fetch - processPackages [bota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bota-4.0.8.tar.gz tmp/bota-4.0.9.tar.gz --markdown 20240526/b/bota/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 19:01:07] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 19:01:07] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 19:01:07] INFO root fetch - processPackages [git-assistente]: Downloading https://files.pythonhosted.org/packages/ae/1b/038078deab5856f697a312289bca43cd0f0fef0aadee9330623e48d2b863/git_assistente-0.1.9.tar.gz
+[2024-05-26 19:01:07] INFO root fetch - processPackages [git-assistente]: executing diffoscope
+[2024-05-26 19:01:07] INFO root fetch - processPackages [git-assistente]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git_assistente-0.1.8.tar.gz tmp/git_assistente-0.1.9.tar.gz --markdown 20240526/g/git-assistente/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 19:01:07] INFO root fetch - processPackages [mandown]: Downloading https://files.pythonhosted.org/packages/85/2f/9ca16a99aa990ae651243be92b2eda554d58eefdb19ca82aeace1ef11eb4/mandown-1.9.0.tar.gz
+[2024-05-26 19:01:07] INFO root fetch - processPackages [MedatechUK.APY]: Downloading https://files.pythonhosted.org/packages/52/05/0fec0481da7efd13dbcc9f6a4f846a517422a23374a1f4e257f08e1315e9/MedatechUK.APY-0.0.9.tar.gz
+[2024-05-26 19:01:07] INFO root fetch - processPackages [MedatechUK.APY]: executing diffoscope
+[2024-05-26 19:01:07] INFO root fetch - processPackages [MedatechUK.APY]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MedatechUK.APY-0.0.8.tar.gz tmp/MedatechUK.APY-0.0.9.tar.gz --markdown 20240526/M/MedatechUK.APY/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 19:01:07] INFO root fetch - processPackages [mandown]: executing diffoscope
+[2024-05-26 19:01:07] INFO root fetch - processPackages [mandown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mandown-1.8.2.tar.gz tmp/mandown-1.9.0.tar.gz --markdown 20240526/m/mandown/1.8.2-1.9.0/README.md --exclude *.pyd
+[2024-05-26 19:01:07] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.8.tar.gz]
+[2024-05-26 19:01:07] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
+[2024-05-26 19:01:07] INFO root fetch - main [MainThread]: End processing [bota]: success
+[2024-05-26 19:01:07] INFO root fetch - processPackages [git-assistente]: Remove: archive file [/home/abi/fetcher/tmp/git_assistente-0.1.8.tar.gz]
+[2024-05-26 19:01:07] INFO root fetch - processPackages [git-assistente]: Remove: archive file [/home/abi/fetcher/tmp/git_assistente-0.1.9.tar.gz]
+[2024-05-26 19:01:07] INFO root fetch - main [MainThread]: End processing [git-assistente]: success
+[2024-05-26 19:01:08] INFO root fetch - processPackages [MedatechUK.APY]: Remove: archive file [/home/abi/fetcher/tmp/MedatechUK.APY-0.0.8.tar.gz]
+[2024-05-26 19:01:08] INFO root fetch - processPackages [MedatechUK.APY]: Remove: archive file [/home/abi/fetcher/tmp/MedatechUK.APY-0.0.9.tar.gz]
+[2024-05-26 19:01:08] INFO root fetch - main [MainThread]: End processing [MedatechUK.APY]: success
+[2024-05-26 19:01:08] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 19:01:08] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 19:01:08] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 19:01:08] INFO root fetch - processPackages [mandown]: Remove: archive file [/home/abi/fetcher/tmp/mandown-1.8.2.tar.gz]
+[2024-05-26 19:01:08] INFO root fetch - processPackages [mandown]: Remove: archive file [/home/abi/fetcher/tmp/mandown-1.9.0.tar.gz]
+[2024-05-26 19:01:08] INFO root fetch - main [MainThread]: End processing [mandown]: success
+[2024-05-26 19:01:08] INFO root fetch - main [MainThread]: Store serial: [23384988]
