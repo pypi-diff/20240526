@@ -9884,3 +9884,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:48:17] INFO root fetch - processPackages [tsdae]: Remove: archive file [/home/abi/fetcher/tmp/tsdae-1.1.0.tar.gz]
 [2024-05-26 13:48:17] INFO root fetch - main [MainThread]: End processing [tsdae]: success
 [2024-05-26 13:48:17] INFO root fetch - main [MainThread]: Store serial: [23382602]
+[2024-05-26 13:50:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382602]
+[2024-05-26 13:50:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 13:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BigEDA
+[2024-05-26 13:50:32] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 13:50:33] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-26 13:50:33] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-26 13:50:33] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-26 13:50:33] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240526/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 13:50:33] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-26 13:50:33] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-26 13:50:33] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-26 13:50:33] INFO root fetch - main [MainThread]: Store serial: [23382606]
