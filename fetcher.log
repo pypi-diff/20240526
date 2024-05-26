@@ -15687,3 +15687,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:29:28] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-26 19:29:28] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-26 19:29:28] INFO root fetch - main [MainThread]: Store serial: [23385253]
+[2024-05-26 19:31:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385253]
+[2024-05-26 19:31:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 19:31:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2024-05-26 19:31:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pytdbot
+[2024-05-26 19:31:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: satsure-core-test
+[2024-05-26 19:31:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ambient-backend-api-client
+[2024-05-26 19:31:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gdtransform
+[2024-05-26 19:31:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dicio-py
+[2024-05-26 19:31:36] INFO root fetch - processPackages [dicio-py]: New version: [1.2] Old Version: [1.1]
+[2024-05-26 19:31:36] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:31:36] INFO root fetch - processPackages [gdtransform]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 19:31:36] INFO root fetch - processPackages [satsure-core-test]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-26 19:31:36] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-26 19:31:37] INFO root fetch - processPackages [Pytdbot]: New version: [0.8.8.dev0] Old Version: [0.8.8]
+[2024-05-26 19:31:37] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/f6/eb/59da8ec681d918996a898f98dd992f0dd01c4e66248583c87fd5d597e6bb/ambient_backend_api_client-0.1.8.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/31/24/bca16a1aeac013df0ddd9bebfe7705999814b1da355808e90f7858e99f12/gdtransform-0.1.0.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [dicio-py]: Downloading https://files.pythonhosted.org/packages/c7/c0/8a8dff4284149f9c2b4f18511b89fb27f6f326b303824774bb0d43fa8830/dicio_py-1.1.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/c0/aa/7ff7141f4b7d38585b999df3060005a161c483a0d0da39af83151a1f8ef0/satsure-core-test-0.3.4.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [Pytdbot]: Downloading https://files.pythonhosted.org/packages/f0/23/aba5cae8321df85dab61c92556ac8e0b22efbd9653c1474e12dd2753085b/Pytdbot-0.8.8.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/0b/1f/b717fb08cbd4446f6c3ef2f503b2b7cf7489a90af64d9e8982283ae67928/ambient_backend_api_client-0.1.9.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [dicio-py]: Downloading https://files.pythonhosted.org/packages/e5/cb/f85694f6d9abb10d6f14651e6906bcdc24c74478d874104223540676ae61/dicio_py-1.2.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/2a/f8/a8bf969ca77ff7a8ba4f198830cc50c5d6273b86813337c1aeec8a0de33a/satsure-core-test-0.3.5.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-26 19:31:37] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240526/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-26 19:31:37] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-05-26 19:31:37] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.8.tar.gz tmp/ambient_backend_api_client-0.1.9.tar.gz --markdown 20240526/a/ambient-backend-api-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 19:31:37] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/0b/fe/6749d005f2f68710637cb9a0f554f88679bd2080bbd591be4a9d2c910b76/gdtransform-0.1.1.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [dicio-py]: executing diffoscope
+[2024-05-26 19:31:37] INFO root fetch - processPackages [dicio-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicio_py-1.1.tar.gz tmp/dicio_py-1.2.tar.gz --markdown 20240526/d/dicio-py/1.1-1.2/README.md --exclude *.pyd
+[2024-05-26 19:31:37] INFO root fetch - processPackages [satsure-core-test]: executing diffoscope
+[2024-05-26 19:31:37] INFO root fetch - processPackages [satsure-core-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satsure-core-test-0.3.4.tar.gz tmp/satsure-core-test-0.3.5.tar.gz --markdown 20240526/s/satsure-core-test/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-26 19:31:37] INFO root fetch - processPackages [Pytdbot]: Downloading https://files.pythonhosted.org/packages/72/a6/d558f4baa9ef184f90d2891b44b7add8be2d2a1f6a070075cddb16e5a7eb/Pytdbot-0.8.8.dev0.tar.gz
+[2024-05-26 19:31:37] INFO root fetch - processPackages [gdtransform]: executing diffoscope
+[2024-05-26 19:31:37] INFO root fetch - processPackages [gdtransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdtransform-0.1.0.tar.gz tmp/gdtransform-0.1.1.tar.gz --markdown 20240526/g/gdtransform/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 19:31:37] INFO root fetch - processPackages [Pytdbot]: executing diffoscope
+[2024-05-26 19:31:37] INFO root fetch - processPackages [Pytdbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pytdbot-0.8.8.tar.gz tmp/Pytdbot-0.8.8.dev0.tar.gz --markdown 20240526/P/Pytdbot/0.8.8-0.8.8.dev0/README.md --exclude *.pyd
+[2024-05-26 19:31:38] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-26 19:31:38] INFO root fetch - processPackages [dicio-py]: Remove: archive file [/home/abi/fetcher/tmp/dicio_py-1.1.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - processPackages [dicio-py]: Remove: archive file [/home/abi/fetcher/tmp/dicio_py-1.2.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - main [MainThread]: End processing [dicio-py]: success
+[2024-05-26 19:31:38] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.1.0.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.1.1.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - main [MainThread]: End processing [gdtransform]: success
+[2024-05-26 19:31:38] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.4.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.5.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - main [MainThread]: End processing [satsure-core-test]: success
+[2024-05-26 19:31:38] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.8.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.9.tar.gz]
+[2024-05-26 19:31:38] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-05-26 19:31:39] INFO root fetch - processPackages [Pytdbot]: Remove: archive file [/home/abi/fetcher/tmp/Pytdbot-0.8.8.tar.gz]
+[2024-05-26 19:31:39] INFO root fetch - processPackages [Pytdbot]: Remove: archive file [/home/abi/fetcher/tmp/Pytdbot-0.8.8.dev0.tar.gz]
+[2024-05-26 19:31:39] INFO root fetch - main [MainThread]: End processing [Pytdbot]: success
+[2024-05-26 19:31:39] INFO root fetch - main [MainThread]: Store serial: [23385271]
