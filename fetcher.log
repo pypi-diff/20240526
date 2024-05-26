@@ -16722,3 +16722,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:39:37] WARNING root fetch - processPackages [keggpathway2genes]: Skipping, unable to determine old version
 [2024-05-26 20:39:37] INFO root fetch - main [MainThread]: End processing [keggpathway2genes] error
 [2024-05-26 20:39:37] INFO root fetch - main [MainThread]: Store serial: [23385786]
+[2024-05-26 20:41:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385786]
+[2024-05-26 20:41:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 20:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 20:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MedatechUK.Landlord
+[2024-05-26 20:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-axe
+[2024-05-26 20:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ork.build
+[2024-05-26 20:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-image-select-jun
+[2024-05-26 20:41:45] INFO root fetch - processPackages [MedatechUK.Landlord]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-26 20:41:45] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/65/3d/e9ad8b078d683510a1e8f6dce8dfcfd52927afd1b482771f2289edd9c2a5/medatechuk_landlord-0.0.2.tar.gz
+[2024-05-26 20:41:45] WARNING root fetch - processPackages [streamlit-image-select-jun]: Skipping, unable to determine old version
+[2024-05-26 20:41:45] INFO root fetch - main [MainThread]: End processing [streamlit-image-select-jun] error
+[2024-05-26 20:41:45] INFO root fetch - processPackages [llm-axe]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-26 20:41:45] INFO root fetch - processPackages [ork.build]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 20:41:45] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 20:41:45] INFO root fetch - processPackages [ork.build]: Downloading https://files.pythonhosted.org/packages/3d/f4/8ad5f3e93d32785fbcc2c448d2821991024fbf7a8add8d1ce6def33a2c89/ork.build-0.0.98.tar.gz
+[2024-05-26 20:41:46] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/82/cd/b324a516f3680a3fe2dafbbf3f053a76403c079a80998ef41b527c79cdc5/llm_axe-1.1.1.tar.gz
+[2024-05-26 20:41:46] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 20:41:46] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 20:41:46] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/83/72/61fb45bbedc49ee84e03d98b8ace9da9c0073dd74aeaedabf2c74a050667/llm_axe-1.1.2.tar.gz
+[2024-05-26 20:41:46] INFO root fetch - processPackages [ork.build]: Downloading https://files.pythonhosted.org/packages/57/6c/cdc688ee4714601fa2294fce5ed69c29405197d09e82485271d2ba7a76c2/ork.build-0.0.99.tar.gz
+[2024-05-26 20:41:46] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 20:41:46] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 20:41:46] INFO root fetch - processPackages [llm-axe]: executing diffoscope
+[2024-05-26 20:41:46] INFO root fetch - processPackages [llm-axe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_axe-1.1.1.tar.gz tmp/llm_axe-1.1.2.tar.gz --markdown 20240526/l/llm-axe/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-26 20:41:46] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/46/27/40d1292cdd2d1643bcb215fecacc4e409e02cbc9d75398f67ad9eb4cae20/medatechuk_landlord-0.0.3.tar.gz
+[2024-05-26 20:41:46] INFO root fetch - processPackages [ork.build]: executing diffoscope
+[2024-05-26 20:41:46] INFO root fetch - processPackages [ork.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ork.build-0.0.98.tar.gz tmp/ork.build-0.0.99.tar.gz --markdown 20240526/o/ork.build/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 20:41:46] INFO root fetch - processPackages [MedatechUK.Landlord]: executing diffoscope
+[2024-05-26 20:41:46] INFO root fetch - processPackages [MedatechUK.Landlord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medatechuk_landlord-0.0.2.tar.gz tmp/medatechuk_landlord-0.0.3.tar.gz --markdown 20240526/M/MedatechUK.Landlord/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-26 20:41:47] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.1.1.tar.gz]
+[2024-05-26 20:41:47] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.1.2.tar.gz]
+[2024-05-26 20:41:47] INFO root fetch - main [MainThread]: End processing [llm-axe]: success
+[2024-05-26 20:41:47] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 20:41:47] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 20:41:47] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 20:41:47] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.2.tar.gz]
+[2024-05-26 20:41:47] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.3.tar.gz]
+[2024-05-26 20:41:47] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
+[2024-05-26 20:41:47] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.98.tar.gz]
+[2024-05-26 20:41:47] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.99.tar.gz]
+[2024-05-26 20:41:47] INFO root fetch - main [MainThread]: End processing [ork.build]: success
+[2024-05-26 20:41:47] INFO root fetch - main [MainThread]: Store serial: [23385803]
