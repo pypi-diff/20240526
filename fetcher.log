@@ -14431,3 +14431,44 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:19:48] INFO root fetch - processPackages [give-up-the-func]: Remove: archive file [/home/abi/fetcher/tmp/give_up_the_func-0.0.3.tar.gz]
 [2024-05-26 18:19:48] INFO root fetch - main [MainThread]: End processing [give-up-the-func]: success
 [2024-05-26 18:19:48] INFO root fetch - main [MainThread]: Store serial: [23384674]
+[2024-05-26 18:21:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384674]
+[2024-05-26 18:21:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 18:23:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384675]
+[2024-05-26 18:24:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 18:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: json-dict-diff
+[2024-05-26 18:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: market-generic
+[2024-05-26 18:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: legopack
+[2024-05-26 18:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: open-meteo-solar-forecast
+[2024-05-26 18:24:02] INFO root fetch - processPackages [open-meteo-solar-forecast]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 18:24:02] INFO root fetch - processPackages [legopack]: New version: [0.2] Old Version: [0.12]
+[2024-05-26 18:24:02] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/02/3d/40ade2e50c9b9ad2818ba8ce9a772a09b43d6069ceed658c2477a44949d1/open_meteo_solar_forecast-0.1.2.tar.gz
+[2024-05-26 18:24:02] INFO root fetch - processPackages [legopack]: Downloading https://files.pythonhosted.org/packages/5f/6d/82172347eec295606889e4cf761fbf063a68755f778aad1fbfa0fb9da5cb/legopack-0.12.tar.gz
+[2024-05-26 18:24:02] INFO root fetch - processPackages [json-dict-diff]: New version: [1.0.3] Old Version: [1.0.1]
+[2024-05-26 18:24:02] INFO root fetch - processPackages [market-generic]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-05-26 18:24:02] INFO root fetch - processPackages [json-dict-diff]: Downloading https://files.pythonhosted.org/packages/84/4d/52ccd7aa0eba147f900ebfa7e77e8d6dece248665b24d4b6f92cbbb39ae7/json_dict_diff-1.0.1.tar.gz
+[2024-05-26 18:24:02] INFO root fetch - processPackages [market-generic]: Downloading https://files.pythonhosted.org/packages/2d/d2/4bdd688a3f5da29baab881fed3d8a10e11c4e8cc2d01a3ec0756062e08b9/market_generic-0.0.1.tar.gz
+[2024-05-26 18:24:02] INFO root fetch - processPackages [legopack]: Downloading https://files.pythonhosted.org/packages/ea/1f/0b529db2c7963c58423a84004fc43366ec825edd0b208d249b4bc1cbfbe7/legopack-0.2.tar.gz
+[2024-05-26 18:24:02] INFO root fetch - processPackages [open-meteo-solar-forecast]: Downloading https://files.pythonhosted.org/packages/fa/47/712cd77cd1b687e7d0d819f13601562cb570d39884dd6851eb040e56414c/open_meteo_solar_forecast-0.1.3.tar.gz
+[2024-05-26 18:24:02] INFO root fetch - processPackages [legopack]: executing diffoscope
+[2024-05-26 18:24:02] INFO root fetch - processPackages [legopack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legopack-0.12.tar.gz tmp/legopack-0.2.tar.gz --markdown 20240526/l/legopack/0.12-0.2/README.md --exclude *.pyd
+[2024-05-26 18:24:02] INFO root fetch - processPackages [open-meteo-solar-forecast]: executing diffoscope
+[2024-05-26 18:24:02] INFO root fetch - processPackages [open-meteo-solar-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_meteo_solar_forecast-0.1.2.tar.gz tmp/open_meteo_solar_forecast-0.1.3.tar.gz --markdown 20240526/o/open-meteo-solar-forecast/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 18:24:03] INFO root fetch - processPackages [market-generic]: Downloading https://files.pythonhosted.org/packages/08/db/fea3fdeeb0f041abac35ee81e4e5f7bb499e7bfc1dc671fd3bbbf033a4c4/market_generic-0.1.0.tar.gz
+[2024-05-26 18:24:03] INFO root fetch - processPackages [json-dict-diff]: Downloading https://files.pythonhosted.org/packages/8e/a8/5d36bea826d5846608c8728ed295c2a9edfba96c42cae1031b0415702885/json_dict_diff-1.0.3.tar.gz
+[2024-05-26 18:24:03] INFO root fetch - processPackages [market-generic]: executing diffoscope
+[2024-05-26 18:24:03] INFO root fetch - processPackages [market-generic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/market_generic-0.0.1.tar.gz tmp/market_generic-0.1.0.tar.gz --markdown 20240526/m/market-generic/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-05-26 18:24:03] INFO root fetch - processPackages [json-dict-diff]: executing diffoscope
+[2024-05-26 18:24:03] INFO root fetch - processPackages [json-dict-diff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_dict_diff-1.0.1.tar.gz tmp/json_dict_diff-1.0.3.tar.gz --markdown 20240526/j/json-dict-diff/1.0.1-1.0.3/README.md --exclude *.pyd
+[2024-05-26 18:24:03] INFO root fetch - processPackages [legopack]: Remove: archive file [/home/abi/fetcher/tmp/legopack-0.12.tar.gz]
+[2024-05-26 18:24:03] INFO root fetch - processPackages [legopack]: Remove: archive file [/home/abi/fetcher/tmp/legopack-0.2.tar.gz]
+[2024-05-26 18:24:03] INFO root fetch - main [MainThread]: End processing [legopack]: success
+[2024-05-26 18:24:03] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.2.tar.gz]
+[2024-05-26 18:24:03] INFO root fetch - processPackages [open-meteo-solar-forecast]: Remove: archive file [/home/abi/fetcher/tmp/open_meteo_solar_forecast-0.1.3.tar.gz]
+[2024-05-26 18:24:03] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast]: success
+[2024-05-26 18:24:03] INFO root fetch - processPackages [market-generic]: Remove: archive file [/home/abi/fetcher/tmp/market_generic-0.0.1.tar.gz]
+[2024-05-26 18:24:03] INFO root fetch - processPackages [market-generic]: Remove: archive file [/home/abi/fetcher/tmp/market_generic-0.1.0.tar.gz]
+[2024-05-26 18:24:03] INFO root fetch - main [MainThread]: End processing [market-generic]: success
+[2024-05-26 18:24:03] INFO root fetch - processPackages [json-dict-diff]: Remove: archive file [/home/abi/fetcher/tmp/json_dict_diff-1.0.1.tar.gz]
+[2024-05-26 18:24:03] INFO root fetch - processPackages [json-dict-diff]: Remove: archive file [/home/abi/fetcher/tmp/json_dict_diff-1.0.3.tar.gz]
+[2024-05-26 18:24:03] INFO root fetch - main [MainThread]: End processing [json-dict-diff]: success
+[2024-05-26 18:24:03] INFO root fetch - main [MainThread]: Store serial: [23384688]
