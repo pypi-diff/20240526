@@ -5838,3 +5838,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:57:11] WARNING root fetch - processPackages [tracor]: Skipping, unable to determine old version
 [2024-05-26 09:57:11] INFO root fetch - main [MainThread]: End processing [tracor] error
 [2024-05-26 09:57:11] INFO root fetch - main [MainThread]: Store serial: [23380780]
+[2024-05-26 09:59:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380780]
+[2024-05-26 09:59:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 09:59:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly
+[2024-05-26 09:59:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typing-test-sdd
+[2024-05-26 09:59:22] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240526] Old Version: [2.17.0.dev20240525]
+[2024-05-26 09:59:22] INFO root fetch - processPackages [typing-test-sdd]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-26 09:59:22] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/cc/3b/877c04f8a5ddb56a58914717f333b53ee1ae0b83eb9ff347b98d6a9d9899/tf_nightly-2.17.0.dev20240525-cp39-cp39-win_amd64.whl
+[2024-05-26 09:59:22] INFO root fetch - processPackages [typing-test-sdd]: Downloading https://files.pythonhosted.org/packages/f9/f0/32744e202e7032f2437b7cbd83b3ebc6e9c59cf4139279ea1543caf6f89f/typing_test_sdd-1.0.4.tar.gz
+[2024-05-26 09:59:23] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/2f/a2/1d3e195d0d0ef3f0d3326d23e079ffaf7164186d002f5e8a7c28fe3353e8/tf_nightly-2.17.0.dev20240526-cp39-cp39-win_amd64.whl
+[2024-05-26 09:59:23] INFO root fetch - processPackages [typing-test-sdd]: Downloading https://files.pythonhosted.org/packages/9d/f1/d93c01cb6eb7ab2856ba39832fd1ffbcd0fba81678a26f4b17535972238d/typing_test_sdd-1.0.5.tar.gz
+[2024-05-26 09:59:23] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-05-26 09:59:23] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240525-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240526-cp39-cp39-win_amd64.whl.zip --markdown 20240526/t/tf-nightly/2.17.0.dev20240525-2.17.0.dev20240526/README.md --exclude *.pyd
+[2024-05-26 09:59:23] INFO root fetch - processPackages [typing-test-sdd]: executing diffoscope
+[2024-05-26 09:59:23] INFO root fetch - processPackages [typing-test-sdd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typing_test_sdd-1.0.4.tar.gz tmp/typing_test_sdd-1.0.5.tar.gz --markdown 20240526/t/typing-test-sdd/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-26 09:59:23] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240525-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 09:59:23] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240526-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 09:59:23] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-05-26 09:59:23] INFO root fetch - processPackages [typing-test-sdd]: Remove: archive file [/home/abi/fetcher/tmp/typing_test_sdd-1.0.4.tar.gz]
+[2024-05-26 09:59:23] INFO root fetch - processPackages [typing-test-sdd]: Remove: archive file [/home/abi/fetcher/tmp/typing_test_sdd-1.0.5.tar.gz]
+[2024-05-26 09:59:23] INFO root fetch - main [MainThread]: End processing [typing-test-sdd]: success
+[2024-05-26 09:59:23] INFO root fetch - main [MainThread]: Store serial: [23380788]
