@@ -1793,3 +1793,123 @@
 [2024-05-26 03:28:31] INFO root fetch - processPackages [flet]: Remove: archive file [/home/abi/fetcher/tmp/flet-0.9.0.tar.gz]
 [2024-05-26 03:28:31] INFO root fetch - main [MainThread]: End processing [flet]: success
 [2024-05-26 03:28:31] INFO root fetch - main [MainThread]: Store serial: [23378935]
+[2024-05-26 03:30:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378935]
+[2024-05-26 03:30:49] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rds-scheduler
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: node-ec2-instance
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-api-core
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-rds-dump
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flet-pyodide
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sweetrpg-web-core
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: policyengine-us
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: otsucfgmng
+[2024-05-26 03:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: onediff
+[2024-05-26 03:30:49] INFO root fetch - processPackages [node-ec2-instance]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [flet]: New version: [0.9.0] Old Version: [0.23.0.dev2904]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [flet-pyodide]: New version: [0.9.0] Old Version: [0.23.0.dev2902]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [onediff]: New version: [1.1.0.dev202405250127] Old Version: [1.1.0.dev202405240128]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [rds-scheduler]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [node-ec2-instance]: Downloading https://files.pythonhosted.org/packages/b4/50/1ff0f36df19cdecddea74481f4bcb104aea054b915325a3054cf4a52e7db/node-ec2-instance-0.0.3.tar.gz
+[2024-05-26 03:30:49] INFO root fetch - processPackages [otsucfgmng]: New version: [1.3.5.311] Old Version: [1.3.4.37]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [cdk-rds-dump]: New version: [2.1.4] Old Version: [2.1.3]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/05/81/eb52f4f586dad163475cd80c171ddc868e42ec9fbae1c15d335598823846/flet-0.23.0.dev2904-py3-none-any.whl
+[2024-05-26 03:30:49] INFO root fetch - processPackages [policyengine-us]: New version: [0.777.6] Old Version: [0.777.5]
+[2024-05-26 03:30:49] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/4e/00/4513648c8cb1d78bda41a905d6b58d2611ed1dee84c648ced9b42e60819d/flet_pyodide-0.23.0.dev2902.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/a7/10/fb8b9b2d961fcacea79b42184318e9a885e6cd91ea2ab83068ef1afe8bdf/onediff-1.1.0.dev202405240128.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/5d/9d/2398efc534be1a806373637db31588bc65727faee8d3d4ad1e210310552e/sweetrpg-api-core-0.0.98.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [rds-scheduler]: Downloading https://files.pythonhosted.org/packages/ec/c6/7babd2e155059dc40a736191785dc087321ef611501ab1ca3a5b5bb034b9/rds-scheduler-1.0.8.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [cdk-rds-dump]: Downloading https://files.pythonhosted.org/packages/ec/ed/d1d5e8165412cc75a95c08b4b30bbf6a218bbf64a1398e1874be1e056160/cdk-rds-dump-2.1.3.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/a2/8f/c9047c3f355dc596e483d043e401bd7fe98eff4a00b6097cba218f4c62cf/policyengine-us-0.777.5.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/0b/26/a5b2ba93c30d3a89efc6b6734cc4db067c9d2ca16059ed4685281d46c1f7/flet_pyodide-0.9.0.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [otsucfgmng]: Downloading https://files.pythonhosted.org/packages/db/a1/d6ec721288da1e4f08926ce880ea9b25929dad70a85fd237c6e34efc678e/otsucfgmng-1.3.4.37.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [node-ec2-instance]: Downloading https://files.pythonhosted.org/packages/d8/31/cb8c74e539b78e6210c2cf24754efea35ac5f83028d6ba0aa7865167b1b2/node-ec2-instance-0.0.4.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/bf/6c/3cd8f95074a8f63967790523ccf02ffe9aef45c9c675b0a443c0371e8e04/sweetrpg-api-core-0.0.99.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [flet-pyodide]: executing diffoscope
+[2024-05-26 03:30:50] INFO root fetch - processPackages [flet-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_pyodide-0.23.0.dev2902.tar.gz tmp/flet_pyodide-0.9.0.tar.gz --markdown 20240526/f/flet-pyodide/0.23.0.dev2902-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:30:50] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/70/f1/c96f61c9817584ef31d84401520cb5d02e9b320f79d8aff85ba005ca6132/flet-0.9.0.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/99/4f/cba142e5903640d3bf442a8b882d1f168759eecb1ee5eaa4eb41af3626cb/onediff-1.1.0.dev202405250127.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [node-ec2-instance]: executing diffoscope
+[2024-05-26 03:30:50] INFO root fetch - processPackages [node-ec2-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/node-ec2-instance-0.0.3.tar.gz tmp/node-ec2-instance-0.0.4.tar.gz --markdown 20240526/n/node-ec2-instance/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-26 03:30:50] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-26 03:30:50] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240526/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 03:30:50] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2024-05-26 03:30:50] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20240526/s/sweetrpg-api-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 03:30:50] INFO root fetch - processPackages [rds-scheduler]: Downloading https://files.pythonhosted.org/packages/67/6f/a4aae445e430e109b1c95c9c975c1616d59e98eabc3243de33a35d234653/rds-scheduler-1.0.9.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-05-26 03:30:50] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.1.0.dev202405240128.tar.gz tmp/onediff-1.1.0.dev202405250127.tar.gz --markdown 20240526/o/onediff/1.1.0.dev202405240128-1.1.0.dev202405250127/README.md --exclude *.pyd
+[2024-05-26 03:30:50] INFO root fetch - processPackages [rds-scheduler]: executing diffoscope
+[2024-05-26 03:30:50] INFO root fetch - processPackages [rds-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rds-scheduler-1.0.8.tar.gz tmp/rds-scheduler-1.0.9.tar.gz --markdown 20240526/r/rds-scheduler/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-26 03:30:50] INFO root fetch - processPackages [otsucfgmng]: Downloading https://files.pythonhosted.org/packages/16/2f/1d02339ec1e169a6d585de44693c37f4fabab1fa581c3aaab71ac8960ba0/otsucfgmng-1.3.5.311-py3-none-any.whl
+[2024-05-26 03:30:50] INFO root fetch - processPackages [flet]: executing diffoscope
+[2024-05-26 03:30:50] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.23.0.dev2904-py3-none-any.whl.zip tmp/flet-0.9.0.tar.gz --markdown 20240526/f/flet/0.23.0.dev2904-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:30:50] INFO root fetch - processPackages [cdk-rds-dump]: Downloading https://files.pythonhosted.org/packages/9b/cc/118792a2a6f9887d2f3e3c6d5b7640bcf6a6647d7eebe2d6bb2e930280ad/cdk-rds-dump-2.1.4.tar.gz
+[2024-05-26 03:30:50] INFO root fetch - processPackages [otsucfgmng]: executing diffoscope
+[2024-05-26 03:30:50] INFO root fetch - processPackages [otsucfgmng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otsucfgmng-1.3.4.37.tar.gz tmp/otsucfgmng-1.3.5.311-py3-none-any.whl.zip --markdown 20240526/o/otsucfgmng/1.3.4.37-1.3.5.311/README.md --exclude *.pyd
+[2024-05-26 03:30:50] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/f8/6c/73273aa3ee4f20ba48a069f7d795d975fb36fa2d97683934f2c78b9a5f80/policyengine-us-0.777.6.tar.gz
+[2024-05-26 03:30:51] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2024-05-26 03:30:51] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.777.5.tar.gz tmp/policyengine-us-0.777.6.tar.gz --markdown 20240526/p/policyengine-us/0.777.5-0.777.6/README.md --exclude *.pyd
+[2024-05-26 03:30:51] INFO root fetch - processPackages [cdk-rds-dump]: executing diffoscope
+[2024-05-26 03:30:51] INFO root fetch - processPackages [cdk-rds-dump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-rds-dump-2.1.3.tar.gz tmp/cdk-rds-dump-2.1.4.tar.gz --markdown 20240526/c/cdk-rds-dump/2.1.3-2.1.4/README.md --exclude *.pyd
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_pyodide-0.23.0.dev2902.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_pyodide-0.9.0.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-pyodide]: Start processing: onediffx
+[2024-05-26 03:30:51] INFO root fetch - main [MainThread]: End processing [flet-pyodide]: success
+[2024-05-26 03:30:51] INFO root fetch - processPackages [node-ec2-instance]: Remove: archive file [/home/abi/fetcher/tmp/node-ec2-instance-0.0.3.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [node-ec2-instance]: Remove: archive file [/home/abi/fetcher/tmp/node-ec2-instance-0.0.4.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [node-ec2-instance]: Start processing: flet-core
+[2024-05-26 03:30:51] INFO root fetch - main [MainThread]: End processing [node-ec2-instance]: success
+[2024-05-26 03:30:51] INFO root fetch - processPackages [onediffx]: New version: [1.1.0.dev202405250127] Old Version: [1.1.0.dev202405240128]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-core]: New version: [0.9.0.dev1631] Old Version: [0.9.0.dev1630]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/f3/e0/42602142b7d0551e5f8f9b1d29a44677a7f239334eb300100f91e03743e8/onediffx-1.1.0.dev202405240128.tar.gz
+[2024-05-26 03:30:51] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.98.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [sweetrpg-api-core]: Start processing: flet-runtime
+[2024-05-26 03:30:51] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/06/78/2b607ba8cf90f09185f6b1de3138bf723d510d19ee11130a68433cce2d20/flet_core-0.9.0.dev1630.tar.gz
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-runtime]: New version: [0.9.0] Old Version: [0.23.0.dev2904]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-26 03:30:51] INFO root fetch - processPackages [rds-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/rds-scheduler-1.0.8.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [rds-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/rds-scheduler-1.0.9.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - main [MainThread]: End processing [rds-scheduler]: success
+[2024-05-26 03:30:51] INFO root fetch - processPackages [otsucfgmng]: Remove: archive file [/home/abi/fetcher/tmp/otsucfgmng-1.3.4.37.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [otsucfgmng]: Remove: archive file [/home/abi/fetcher/tmp/otsucfgmng-1.3.5.311-py3-none-any.whl.zip]
+[2024-05-26 03:30:51] INFO root fetch - main [MainThread]: End processing [otsucfgmng]: success
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/4f/c9/c2705045754a5e96e2a0e04c30f12e30cc27d1e60b1fb83e686da4c0a8e6/flet_core-0.9.0.dev1631.tar.gz
+[2024-05-26 03:30:51] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.1.0.dev202405240128.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.1.0.dev202405250127.tar.gz]
+[2024-05-26 03:30:51] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-runtime]: Downloading https://files.pythonhosted.org/packages/69/90/c15ad18b96fc33c61b8d0faf2845ebca79aeff2892c4fd4ba53f950a993e/flet_runtime-0.23.0.dev2904.tar.gz
+[2024-05-26 03:30:51] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/a6/90/facf163dd553b5e73a7a482420032c8976cfcbf8921eeded768a6ad2b699/onediffx-1.1.0.dev202405250127.tar.gz
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-core]: executing diffoscope
+[2024-05-26 03:30:51] INFO root fetch - processPackages [flet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_core-0.9.0.dev1630.tar.gz tmp/flet_core-0.9.0.dev1631.tar.gz --markdown 20240526/f/flet-core/0.9.0.dev1630-0.9.0.dev1631/README.md --exclude *.pyd
+[2024-05-26 03:30:52] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-05-26 03:30:52] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.1.0.dev202405240128.tar.gz tmp/onediffx-1.1.0.dev202405250127.tar.gz --markdown 20240526/o/onediffx/1.1.0.dev202405240128-1.1.0.dev202405250127/README.md --exclude *.pyd
+[2024-05-26 03:30:52] INFO root fetch - processPackages [flet-runtime]: Downloading https://files.pythonhosted.org/packages/7d/21/4486f082fce6b7ee7174ae6b6c9bd62faeeb1cf712e65ccbd42d2a02b641/flet_runtime-0.9.0.tar.gz
+[2024-05-26 03:30:52] INFO root fetch - processPackages [cdk-rds-dump]: Remove: archive file [/home/abi/fetcher/tmp/cdk-rds-dump-2.1.3.tar.gz]
+[2024-05-26 03:30:52] INFO root fetch - processPackages [cdk-rds-dump]: Remove: archive file [/home/abi/fetcher/tmp/cdk-rds-dump-2.1.4.tar.gz]
+[2024-05-26 03:30:52] INFO root fetch - main [MainThread]: End processing [cdk-rds-dump]: success
+[2024-05-26 03:30:52] INFO root fetch - processPackages [flet-runtime]: executing diffoscope
+[2024-05-26 03:30:52] INFO root fetch - processPackages [flet-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_runtime-0.23.0.dev2904.tar.gz tmp/flet_runtime-0.9.0.tar.gz --markdown 20240526/f/flet-runtime/0.23.0.dev2904-0.9.0/README.md --exclude *.pyd
+[2024-05-26 03:30:52] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.1.0.dev202405240128.tar.gz]
+[2024-05-26 03:30:52] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.1.0.dev202405250127.tar.gz]
+[2024-05-26 03:30:52] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-05-26 03:30:52] INFO root fetch - processPackages [flet-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_runtime-0.23.0.dev2904.tar.gz]
+[2024-05-26 03:30:52] INFO root fetch - processPackages [flet-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_runtime-0.9.0.tar.gz]
+[2024-05-26 03:30:52] INFO root fetch - main [MainThread]: End processing [flet-runtime]: success
+[2024-05-26 03:30:53] INFO root fetch - processPackages [flet-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_core-0.9.0.dev1630.tar.gz]
+[2024-05-26 03:30:53] INFO root fetch - processPackages [flet-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_core-0.9.0.dev1631.tar.gz]
+[2024-05-26 03:30:53] INFO root fetch - main [MainThread]: End processing [flet-core]: success
+[2024-05-26 03:30:54] INFO root fetch - processPackages [flet]: Remove: archive file [/home/abi/fetcher/tmp/flet-0.23.0.dev2904-py3-none-any.whl.zip]
+[2024-05-26 03:30:54] INFO root fetch - processPackages [flet]: Remove: archive file [/home/abi/fetcher/tmp/flet-0.9.0.tar.gz]
+[2024-05-26 03:30:54] INFO root fetch - main [MainThread]: End processing [flet]: success
+[2024-05-26 03:31:24] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.777.5.tar.gz]
+[2024-05-26 03:31:24] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.777.6.tar.gz]
+[2024-05-26 03:31:24] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2024-05-26 03:31:24] INFO root fetch - main [MainThread]: Store serial: [23378980]
