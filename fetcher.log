@@ -11079,3 +11079,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:19:30] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
 [2024-05-26 15:19:30] INFO root fetch - main [MainThread]: End processing [textual]: success
 [2024-05-26 15:19:30] INFO root fetch - main [MainThread]: Store serial: [23383165]
+[2024-05-26 15:21:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383165]
+[2024-05-26 15:21:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 15:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: picodi
+[2024-05-26 15:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-cpp-agent
+[2024-05-26 15:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scipu
+[2024-05-26 15:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dcicutils
+[2024-05-26 15:21:55] INFO root fetch - processPackages [picodi]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-05-26 15:21:55] INFO root fetch - processPackages [scipu]: New version: [0.1.1.1] Old Version: [0.1.1]
+[2024-05-26 15:21:55] INFO root fetch - processPackages [llama-cpp-agent]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 15:21:55] INFO root fetch - processPackages [dcicutils]: New version: [8.9.0.0b0] Old Version: [8.8.6.1b2]
+[2024-05-26 15:21:55] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/71/11/ee888c97870633183fa8343540720078077426131dd3be1aea7c81401ae0/picodi-0.7.1.tar.gz
+[2024-05-26 15:21:55] INFO root fetch - processPackages [scipu]: Downloading https://files.pythonhosted.org/packages/06/1e/2b5c16668756f231e74e1ad61e225aa7baa082d263b1cad54c2592e6c265/scipu-0.1.1.tar.gz
+[2024-05-26 15:21:55] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/a0/ba/e28b4ffe7b86f6d15ba5b9672537e66bc8273c02bbb8fa06f1337493886a/llama_cpp_agent-0.2.8.tar.gz
+[2024-05-26 15:21:55] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/9b/b9/6a2d961f410c335acb8fe0aab6133c4443facc99cc7b524421e589d417b0/dcicutils-8.8.6.1b2.tar.gz
+[2024-05-26 15:21:55] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/57/13/1efcb2ce0a4d6b5cbe6d4031dff4f688120648f0d162a170f6b1127ee1c1/picodi-0.8.0.tar.gz
+[2024-05-26 15:21:55] INFO root fetch - processPackages [llama-cpp-agent]: Downloading https://files.pythonhosted.org/packages/e5/bb/9a16b289d7453095ab2485d73acf22968e24e78ddee8f364f962860bc7e1/llama_cpp_agent-0.2.9.tar.gz
+[2024-05-26 15:21:55] INFO root fetch - processPackages [picodi]: executing diffoscope
+[2024-05-26 15:21:55] INFO root fetch - processPackages [picodi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picodi-0.7.1.tar.gz tmp/picodi-0.8.0.tar.gz --markdown 20240526/p/picodi/0.7.1-0.8.0/README.md --exclude *.pyd
+[2024-05-26 15:21:55] INFO root fetch - processPackages [scipu]: Downloading https://files.pythonhosted.org/packages/d1/80/1481dcda6a532f4c34ac18fc4942d980040429ff8d921b87db5801485c8e/scipu-0.1.1.1.tar.gz
+[2024-05-26 15:21:55] INFO root fetch - processPackages [llama-cpp-agent]: executing diffoscope
+[2024-05-26 15:21:55] INFO root fetch - processPackages [llama-cpp-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_agent-0.2.8.tar.gz tmp/llama_cpp_agent-0.2.9.tar.gz --markdown 20240526/l/llama-cpp-agent/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 15:21:55] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/5b/de/ac87d1c9583f507046be7724343035a3e363814633eea93612ca13f3adba/dcicutils-8.9.0.0b0.tar.gz
+[2024-05-26 15:21:55] INFO root fetch - processPackages [scipu]: executing diffoscope
+[2024-05-26 15:21:55] INFO root fetch - processPackages [scipu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scipu-0.1.1.tar.gz tmp/scipu-0.1.1.1.tar.gz --markdown 20240526/s/scipu/0.1.1-0.1.1.1/README.md --exclude *.pyd
+[2024-05-26 15:21:55] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-05-26 15:21:55] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.6.1b2.tar.gz tmp/dcicutils-8.9.0.0b0.tar.gz --markdown 20240526/d/dcicutils/8.8.6.1b2-8.9.0.0b0/README.md --exclude *.pyd
+[2024-05-26 15:21:56] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.7.1.tar.gz]
+[2024-05-26 15:21:56] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.8.0.tar.gz]
+[2024-05-26 15:21:56] INFO root fetch - main [MainThread]: End processing [picodi]: success
+[2024-05-26 15:21:56] INFO root fetch - processPackages [scipu]: Remove: archive file [/home/abi/fetcher/tmp/scipu-0.1.1.tar.gz]
+[2024-05-26 15:21:56] INFO root fetch - processPackages [scipu]: Remove: archive file [/home/abi/fetcher/tmp/scipu-0.1.1.1.tar.gz]
+[2024-05-26 15:21:56] INFO root fetch - main [MainThread]: End processing [scipu]: success
+[2024-05-26 15:21:56] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.8.tar.gz]
+[2024-05-26 15:21:56] INFO root fetch - processPackages [llama-cpp-agent]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_agent-0.2.9.tar.gz]
+[2024-05-26 15:21:56] INFO root fetch - main [MainThread]: End processing [llama-cpp-agent]: success
+[2024-05-26 15:21:56] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.6.1b2.tar.gz]
+[2024-05-26 15:21:56] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.9.0.0b0.tar.gz]
+[2024-05-26 15:21:56] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-05-26 15:21:56] INFO root fetch - main [MainThread]: Store serial: [23383181]
