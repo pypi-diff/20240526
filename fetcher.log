@@ -12192,3 +12192,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:27:26] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
 [2024-05-26 16:27:26] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
 [2024-05-26 16:27:26] INFO root fetch - main [MainThread]: Store serial: [23383731]
+[2024-05-26 16:29:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383731]
+[2024-05-26 16:29:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 16:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dscontexai
+[2024-05-26 16:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pi-awning-webthing
+[2024-05-26 16:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: henxel
+[2024-05-26 16:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uk_bin_collection
+[2024-05-26 16:29:56] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 16:29:56] INFO root fetch - processPackages [uk_bin_collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-26 16:29:56] INFO root fetch - processPackages [dscontexai]: New version: [0.1.0] Old Version: [0.0.4]
+[2024-05-26 16:29:56] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:29:56] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-05-26 16:29:56] INFO root fetch - processPackages [henxel]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-26 16:29:56] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/66/c8/00893f09908175e8653eb1e08bff94f4cd336aa96a6866284902cc1d039a/dscontexai-0.0.4.tar.gz
+[2024-05-26 16:29:56] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 16:29:56] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-05-26 16:29:56] INFO root fetch - processPackages [henxel]: Downloading https://files.pythonhosted.org/packages/e5/ee/4f0c4547d324b7f07233e97e0c72fafec01da979e9134a90f3e0b2543f63/henxel-0.3.1.tar.gz
+[2024-05-26 16:29:56] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/94/d9/a91652e8739fb952e46cc9bdb4234e6d0702adbf48fe6eaf28d6b2c211e3/dscontexai-0.1.0.tar.gz
+[2024-05-26 16:29:56] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:29:56] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 16:29:56] INFO root fetch - processPackages [uk_bin_collection]: executing diffoscope
+[2024-05-26 16:29:56] INFO root fetch - processPackages [uk_bin_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240526/u/uk_bin_collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-26 16:29:56] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 16:29:56] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.0.4.tar.gz tmp/dscontexai-0.1.0.tar.gz --markdown 20240526/d/dscontexai/0.0.4-0.1.0/README.md --exclude *.pyd
+[2024-05-26 16:29:56] INFO root fetch - processPackages [henxel]: Downloading https://files.pythonhosted.org/packages/a8/ac/c5c3e2b07f914c1c4965c204d0cef6df6a3c912758e7ed36c19494ad13eb/henxel-0.3.2.tar.gz
+[2024-05-26 16:29:57] INFO root fetch - processPackages [henxel]: executing diffoscope
+[2024-05-26 16:29:57] INFO root fetch - processPackages [henxel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/henxel-0.3.1.tar.gz tmp/henxel-0.3.2.tar.gz --markdown 20240526/h/henxel/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-26 16:29:57] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:29:57] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 16:29:57] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:29:57] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.4.tar.gz]
+[2024-05-26 16:29:57] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.1.0.tar.gz]
+[2024-05-26 16:29:57] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 16:29:57] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-05-26 16:29:57] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-05-26 16:29:57] INFO root fetch - main [MainThread]: End processing [uk_bin_collection]: success
+[2024-05-26 16:29:57] INFO root fetch - processPackages [henxel]: Remove: archive file [/home/abi/fetcher/tmp/henxel-0.3.1.tar.gz]
+[2024-05-26 16:29:57] INFO root fetch - processPackages [henxel]: Remove: archive file [/home/abi/fetcher/tmp/henxel-0.3.2.tar.gz]
+[2024-05-26 16:29:57] INFO root fetch - main [MainThread]: End processing [henxel]: success
+[2024-05-26 16:29:57] INFO root fetch - main [MainThread]: Store serial: [23383743]
