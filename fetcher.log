@@ -9110,3 +9110,39 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:40:53] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240525.tar.gz]
 [2024-05-26 12:40:53] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-05-26 12:40:53] INFO root fetch - main [MainThread]: Store serial: [23382219]
+[2024-05-26 12:43:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382219]
+[2024-05-26 12:43:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 12:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymemgpt-nightly
+[2024-05-26 12:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: czsc
+[2024-05-26 12:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: icemammoth-common
+[2024-05-26 12:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: heflwr
+[2024-05-26 12:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crx-utils
+[2024-05-26 12:43:06] WARNING root fetch - processPackages [icemammoth-common]: Skipping, unable to determine old version
+[2024-05-26 12:43:06] INFO root fetch - main [MainThread]: End processing [icemammoth-common] error
+[2024-05-26 12:43:06] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-05-26 12:43:06] WARNING root fetch - processPackages [crx-utils]: Skipping, unable to determine old version
+[2024-05-26 12:43:06] INFO root fetch - main [MainThread]: End processing [crx-utils] error
+[2024-05-26 12:43:06] INFO root fetch - processPackages [heflwr]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-26 12:43:06] INFO root fetch - processPackages [czsc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 12:43:06] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-05-26 12:43:06] INFO root fetch - processPackages [heflwr]: Downloading https://files.pythonhosted.org/packages/10/38/24284abd04abe2db4c385e2aaa2a544658b76c1bcb417dbf085bb697bf75/heflwr-0.1.4.tar.gz
+[2024-05-26 12:43:06] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/ff/64/49e6809b474049632717e96f3a51bcdab728d63517d8ec0eb228e09ad52d/czsc-0.9.8.tar.gz
+[2024-05-26 12:43:06] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-05-26 12:43:06] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-05-26 12:43:06] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240526/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-05-26 12:43:06] INFO root fetch - processPackages [heflwr]: Downloading https://files.pythonhosted.org/packages/c1/7b/207afe05da369686df3d90046e1ab5a5761c856e72ddc1fad76fefb14af9/heflwr-0.1.5.tar.gz
+[2024-05-26 12:43:06] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/65/2a/c6b0017939d88546e65732fc499326433b075adecda347c5aca412e4fe77/czsc-0.9.9.tar.gz
+[2024-05-26 12:43:06] INFO root fetch - processPackages [czsc]: executing diffoscope
+[2024-05-26 12:43:06] INFO root fetch - processPackages [czsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czsc-0.9.8.tar.gz tmp/czsc-0.9.9.tar.gz --markdown 20240526/c/czsc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 12:43:06] INFO root fetch - processPackages [heflwr]: executing diffoscope
+[2024-05-26 12:43:06] INFO root fetch - processPackages [heflwr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heflwr-0.1.4.tar.gz tmp/heflwr-0.1.5.tar.gz --markdown 20240526/h/heflwr/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-26 12:43:07] INFO root fetch - processPackages [heflwr]: Remove: archive file [/home/abi/fetcher/tmp/heflwr-0.1.4.tar.gz]
+[2024-05-26 12:43:07] INFO root fetch - processPackages [heflwr]: Remove: archive file [/home/abi/fetcher/tmp/heflwr-0.1.5.tar.gz]
+[2024-05-26 12:43:07] INFO root fetch - main [MainThread]: End processing [heflwr]: success
+[2024-05-26 12:43:07] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.8.tar.gz]
+[2024-05-26 12:43:07] INFO root fetch - processPackages [czsc]: Remove: archive file [/home/abi/fetcher/tmp/czsc-0.9.9.tar.gz]
+[2024-05-26 12:43:07] INFO root fetch - main [MainThread]: End processing [czsc]: success
+[2024-05-26 12:43:07] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-05-26 12:43:07] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-05-26 12:43:07] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-05-26 12:43:07] INFO root fetch - main [MainThread]: Store serial: [23382237]
