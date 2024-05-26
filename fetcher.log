@@ -9896,3 +9896,29 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:50:33] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
 [2024-05-26 13:50:33] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
 [2024-05-26 13:50:33] INFO root fetch - main [MainThread]: Store serial: [23382606]
+[2024-05-26 13:52:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382606]
+[2024-05-26 13:52:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 13:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pih-plb-db
+[2024-05-26 13:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CI-CloudConnector
+[2024-05-26 13:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reportXlsx
+[2024-05-26 13:52:47] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 13:52:47] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 13:52:47] INFO root fetch - processPackages [pih-plb-db]: New version: [0.21] Old Version: [0.20.5]
+[2024-05-26 13:52:47] INFO root fetch - processPackages [reportXlsx]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-26 13:52:47] INFO root fetch - processPackages [pih-plb-db]: Downloading https://files.pythonhosted.org/packages/f7/38/73da801a4d5b1c4d57b6f0308d3f9e0f2a6afe0dfb03ec2b2a4533a32769/pih-plb_db-0.20.5.tar.gz
+[2024-05-26 13:52:47] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 13:52:47] INFO root fetch - processPackages [reportXlsx]: Downloading https://files.pythonhosted.org/packages/8b/93/357c63eae2e55a261f64fd80cd677e7a46bcc8eb8b48245d731dfd3ecb4a/reportXlsx-0.3.2.tar.gz
+[2024-05-26 13:52:47] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 13:52:47] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 13:52:47] WARNING root fetch - processPackages [reportXlsx]: Skipping package: exceeds size limit 15594184>=10485760
+[2024-05-26 13:52:47] INFO root fetch - main [MainThread]: End processing [reportXlsx] error
+[2024-05-26 13:52:47] INFO root fetch - processPackages [pih-plb-db]: Downloading https://files.pythonhosted.org/packages/10/7f/a865afb2cfa38a1b1d0fe2e35175666b30ac5a8dba2b83888f7108937110/pih-plb_db-0.21.tar.gz
+[2024-05-26 13:52:48] INFO root fetch - processPackages [pih-plb-db]: executing diffoscope
+[2024-05-26 13:52:48] INFO root fetch - processPackages [pih-plb-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pih-plb_db-0.20.5.tar.gz tmp/pih-plb_db-0.21.tar.gz --markdown 20240526/p/pih-plb-db/0.20.5-0.21/README.md --exclude *.pyd
+[2024-05-26 13:52:48] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 13:52:48] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 13:52:48] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 13:52:48] INFO root fetch - processPackages [pih-plb-db]: Remove: archive file [/home/abi/fetcher/tmp/pih-plb_db-0.20.5.tar.gz]
+[2024-05-26 13:52:48] INFO root fetch - processPackages [pih-plb-db]: Remove: archive file [/home/abi/fetcher/tmp/pih-plb_db-0.21.tar.gz]
+[2024-05-26 13:52:48] INFO root fetch - main [MainThread]: End processing [pih-plb-db]: success
+[2024-05-26 13:52:48] INFO root fetch - main [MainThread]: Store serial: [23382614]
