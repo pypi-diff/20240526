@@ -22048,3 +22048,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:34:22] INFO root fetch - processPackages [phones-local]: Remove: archive file [/home/abi/fetcher/tmp/phones_local-0.0.27.tar.gz]
 [2024-05-26 23:34:22] INFO root fetch - main [MainThread]: End processing [phones-local]: success
 [2024-05-26 23:34:22] INFO root fetch - main [MainThread]: Store serial: [23387994]
+[2024-05-26 23:36:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387994]
+[2024-05-26 23:36:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 23:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aplr
+[2024-05-26 23:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gobnb
+[2024-05-26 23:36:31] INFO root fetch - processPackages [gobnb]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 23:36:31] INFO root fetch - processPackages [gobnb]: Downloading https://files.pythonhosted.org/packages/63/ae/68017eed14eb6db105af37fdac266a3d01d1149fb6cc0f76efdc4d33300f/gobnb-0.0.7.tar.gz
+[2024-05-26 23:36:31] INFO root fetch - processPackages [aplr]: New version: [9.9.0] Old Version: [9.8.0]
+[2024-05-26 23:36:31] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/bd/12/400517a75bc0d71e5b66efaecdac811966af925f820da4472b9145ef4127/aplr-9.8.0.tar.gz
+[2024-05-26 23:36:31] INFO root fetch - processPackages [gobnb]: Downloading https://files.pythonhosted.org/packages/5d/35/e352d5a0b91385774e19799e921e2bad97ed52d205cdd0ef181a562aa07b/gobnb-0.0.8.tar.gz
+[2024-05-26 23:36:32] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/9d/7c/33597b328c136df1cecfe52f5b7446f6e24ef6da11ef10a8233103d791b6/aplr-9.9.0.tar.gz
+[2024-05-26 23:36:32] INFO root fetch - processPackages [gobnb]: executing diffoscope
+[2024-05-26 23:36:32] INFO root fetch - processPackages [gobnb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gobnb-0.0.7.tar.gz tmp/gobnb-0.0.8.tar.gz --markdown 20240526/g/gobnb/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 23:36:32] INFO root fetch - processPackages [aplr]: executing diffoscope
+[2024-05-26 23:36:32] INFO root fetch - processPackages [aplr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aplr-9.8.0.tar.gz tmp/aplr-9.9.0.tar.gz --markdown 20240526/a/aplr/9.8.0-9.9.0/README.md --exclude *.pyd
+[2024-05-26 23:36:32] INFO root fetch - processPackages [gobnb]: Remove: archive file [/home/abi/fetcher/tmp/gobnb-0.0.7.tar.gz]
+[2024-05-26 23:36:32] INFO root fetch - processPackages [gobnb]: Remove: archive file [/home/abi/fetcher/tmp/gobnb-0.0.8.tar.gz]
+[2024-05-26 23:36:32] INFO root fetch - main [MainThread]: End processing [gobnb]: success
+[2024-05-26 23:36:38] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.8.0.tar.gz]
+[2024-05-26 23:36:38] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.9.0.tar.gz]
+[2024-05-26 23:36:38] INFO root fetch - main [MainThread]: End processing [aplr]: success
+[2024-05-26 23:36:38] INFO root fetch - main [MainThread]: Store serial: [23388016]
