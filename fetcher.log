@@ -12754,3 +12754,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:51:58] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelwriter-2.5b1.tar.gz]
 [2024-05-26 16:51:58] INFO root fetch - main [MainThread]: End processing [novelWriter]: success
 [2024-05-26 16:51:58] INFO root fetch - main [MainThread]: Store serial: [23383939]
+[2024-05-26 16:54:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383939]
+[2024-05-26 16:54:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 16:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: goit-phone-book-bot
+[2024-05-26 16:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pi-awning-webthing
+[2024-05-26 16:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contacts-assistant
+[2024-05-26 16:54:09] INFO root fetch - processPackages [contacts-assistant]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 16:54:09] INFO root fetch - processPackages [pi-awning-webthing]: New version: [3.19] Old Version: [0.3.9]
+[2024-05-26 16:54:09] INFO root fetch - processPackages [goit-phone-book-bot]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 16:54:09] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/33/9f/108164fb8e65a632c839913b99da06157f0acb9d53884bc0a3e99ba6a572/contacts_assistant-0.0.8.tar.gz
+[2024-05-26 16:54:09] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:54:09] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/7f/10/bc30d9203392722efe615c8aeb6408d4e453c62f01e6e83b0a537afe184c/goit_phone_book_bot-0.1.3.tar.gz
+[2024-05-26 16:54:09] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/46/35/8646842765876340854648f3a5143d661a395de601ebb81b455c779a5ed8/pi_awning_webthing-3.19.tar.gz
+[2024-05-26 16:54:09] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/58/95/997a96ce86f7fd842856d5dba30e9987ba9891456196e2a073db3dab5750/contacts_assistant-0.0.9.tar.gz
+[2024-05-26 16:54:09] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:54:09] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.9.tar.gz tmp/pi_awning_webthing-3.19.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.9-3.19/README.md --exclude *.pyd
+[2024-05-26 16:54:09] INFO root fetch - processPackages [contacts-assistant]: executing diffoscope
+[2024-05-26 16:54:09] INFO root fetch - processPackages [contacts-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contacts_assistant-0.0.8.tar.gz tmp/contacts_assistant-0.0.9.tar.gz --markdown 20240526/c/contacts-assistant/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 16:54:09] INFO root fetch - processPackages [goit-phone-book-bot]: Downloading https://files.pythonhosted.org/packages/63/57/89a83523518756eec39044108443a67e050dced7d8804a9f2994aaca2053/goit_phone_book_bot-0.1.4.tar.gz
+[2024-05-26 16:54:09] INFO root fetch - processPackages [goit-phone-book-bot]: executing diffoscope
+[2024-05-26 16:54:09] INFO root fetch - processPackages [goit-phone-book-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goit_phone_book_bot-0.1.3.tar.gz tmp/goit_phone_book_bot-0.1.4.tar.gz --markdown 20240526/g/goit-phone-book-bot/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 16:54:10] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.8.tar.gz]
+[2024-05-26 16:54:10] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.9.tar.gz]
+[2024-05-26 16:54:10] INFO root fetch - main [MainThread]: End processing [contacts-assistant]: success
+[2024-05-26 16:54:10] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:54:10] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-3.19.tar.gz]
+[2024-05-26 16:54:10] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:54:10] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit_phone_book_bot-0.1.3.tar.gz]
+[2024-05-26 16:54:10] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit_phone_book_bot-0.1.4.tar.gz]
+[2024-05-26 16:54:10] INFO root fetch - main [MainThread]: End processing [goit-phone-book-bot]: success
+[2024-05-26 16:54:10] INFO root fetch - main [MainThread]: Store serial: [23383948]
