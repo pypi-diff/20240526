@@ -17829,3 +17829,63 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:30:40] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-05-26 21:30:40] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-05-26 21:30:40] INFO root fetch - main [MainThread]: Store serial: [23386295]
+[2024-05-26 21:32:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386295]
+[2024-05-26 21:32:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asapi
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bragi
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ops-py-cert-report
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kbve
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-custom-sidebar-test
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: matematikk
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dscontexai
+[2024-05-26 21:32:49] WARNING root fetch - processPackages [asapi]: Skipping, unable to determine old version
+[2024-05-26 21:32:49] INFO root fetch - main [MainThread]: End processing [asapi] error
+[2024-05-26 21:32:49] INFO root fetch - processPackages [dscontexai]: New version: [1.0.0] Old Version: [0.1.1]
+[2024-05-26 21:32:49] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 21:32:49] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/11/1a/34a67c4279df8b2aa76f6aec088914f1d2a96f165174b7f0a7db657cf8b7/dscontexai-0.1.1.tar.gz
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ops-py-cert-report]: New version: [2.0.0] Old Version: [1.0.1]
+[2024-05-26 21:32:49] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 21:32:49] INFO root fetch - processPackages [bragi]: New version: [0.6] Old Version: [0.5]
+[2024-05-26 21:32:49] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 21:32:49] INFO root fetch - processPackages [kbve]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-26 21:32:49] INFO root fetch - processPackages [ops-py-cert-report]: Downloading https://files.pythonhosted.org/packages/74/b1/d475c55f440edbe0ba72cb60ff5c465011c0a38c7e37ab60bf08c0b63413/ops-py-cert-report-1.0.1.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [kbve]: Downloading https://files.pythonhosted.org/packages/5c/d1/3a0064d65a65da5bf37bdd88302045d47261620acbedb568f5aa9bc2bab7/kbve-1.0.8.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [bragi]: Downloading https://files.pythonhosted.org/packages/25/59/a3b3b2b52a4083a0b96d62e6a653c849c8e9ec962a1ca48b8037bb70f4d7/bragi-0.5.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Downloading https://files.pythonhosted.org/packages/cc/e6/8d4f59b6132179599ee5d91de765169c2751c297e1bd4a7ad016c728d7af/streamlit-custom-sidebar-test-0.0.8.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 21:32:50] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 21:32:50] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/9b/49/88285c59df4233d65538202fd4e8d24dea10056337aee02aa5eb29058b91/dscontexai-1.0.0.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [kbve]: Downloading https://files.pythonhosted.org/packages/b3/2c/6bc178c921c5e75a33cbde662fd3b1aa7e3fac698ba0938bfc2d4eb484a9/kbve-1.0.9.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [ops-py-cert-report]: Downloading https://files.pythonhosted.org/packages/04/05/a94bb5866dd6a5f19dbcc496e65224da0dcbf7ad62d9974bf2115a8dd379/ops_py_cert_report-2.0.0.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 21:32:50] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.1.1.tar.gz tmp/dscontexai-1.0.0.tar.gz --markdown 20240526/d/dscontexai/0.1.1-1.0.0/README.md --exclude *.pyd
+[2024-05-26 21:32:50] INFO root fetch - processPackages [ops-py-cert-report]: executing diffoscope
+[2024-05-26 21:32:50] INFO root fetch - processPackages [ops-py-cert-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ops-py-cert-report-1.0.1.tar.gz tmp/ops_py_cert_report-2.0.0.tar.gz --markdown 20240526/o/ops-py-cert-report/1.0.1-2.0.0/README.md --exclude *.pyd
+[2024-05-26 21:32:50] INFO root fetch - processPackages [kbve]: executing diffoscope
+[2024-05-26 21:32:50] INFO root fetch - processPackages [kbve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kbve-1.0.8.tar.gz tmp/kbve-1.0.9.tar.gz --markdown 20240526/k/kbve/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-26 21:32:50] INFO root fetch - processPackages [bragi]: Downloading https://files.pythonhosted.org/packages/4b/68/824994a01651c9e06c1212a078564719e1799f97292a068bb12f1610fed1/bragi-0.6.tar.gz
+[2024-05-26 21:32:50] INFO root fetch - processPackages [bragi]: executing diffoscope
+[2024-05-26 21:32:50] INFO root fetch - processPackages [bragi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bragi-0.5.tar.gz tmp/bragi-0.6.tar.gz --markdown 20240526/b/bragi/0.5-0.6/README.md --exclude *.pyd
+[2024-05-26 21:32:50] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Downloading https://files.pythonhosted.org/packages/c5/64/f85ec0da55ad4dc310467708f0a8318497e138284aecaacfba3d552b4099/streamlit-custom-sidebar-test-0.0.9.tar.gz
+[2024-05-26 21:32:51] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: executing diffoscope
+[2024-05-26 21:32:51] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-custom-sidebar-test-0.0.8.tar.gz tmp/streamlit-custom-sidebar-test-0.0.9.tar.gz --markdown 20240526/s/streamlit-custom-sidebar-test/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 21:32:51] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.1.1.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-1.0.0.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 21:32:51] INFO root fetch - processPackages [kbve]: Remove: archive file [/home/abi/fetcher/tmp/kbve-1.0.8.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - processPackages [kbve]: Remove: archive file [/home/abi/fetcher/tmp/kbve-1.0.9.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - main [MainThread]: End processing [kbve]: success
+[2024-05-26 21:32:51] INFO root fetch - processPackages [ops-py-cert-report]: Remove: archive file [/home/abi/fetcher/tmp/ops-py-cert-report-1.0.1.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - processPackages [ops-py-cert-report]: Remove: archive file [/home/abi/fetcher/tmp/ops_py_cert_report-2.0.0.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - main [MainThread]: End processing [ops-py-cert-report]: success
+[2024-05-26 21:32:51] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 21:32:51] INFO root fetch - processPackages [bragi]: Remove: archive file [/home/abi/fetcher/tmp/bragi-0.5.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - processPackages [bragi]: Remove: archive file [/home/abi/fetcher/tmp/bragi-0.6.tar.gz]
+[2024-05-26 21:32:51] INFO root fetch - main [MainThread]: End processing [bragi]: success
+[2024-05-26 21:33:02] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-custom-sidebar-test-0.0.8.tar.gz]
+[2024-05-26 21:33:02] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-custom-sidebar-test-0.0.9.tar.gz]
+[2024-05-26 21:33:02] INFO root fetch - main [MainThread]: End processing [streamlit-custom-sidebar-test]: success
+[2024-05-26 21:33:02] INFO root fetch - main [MainThread]: Store serial: [23386315]
