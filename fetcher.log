@@ -1714,3 +1714,20 @@
 [2024-05-26 03:17:46] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
 [2024-05-26 03:17:46] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2024-05-26 03:17:46] INFO root fetch - main [MainThread]: Store serial: [23378916]
+[2024-05-26 03:19:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378916]
+[2024-05-26 03:19:55] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 03:21:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378916]
+[2024-05-26 03:22:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 03:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lenlp
+[2024-05-26 03:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyssop-aiodb
+[2024-05-26 03:22:00] INFO root fetch - processPackages [hyssop-aiodb]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 03:22:00] WARNING root fetch - processPackages [lenlp]: Skipping, unable to determine old version
+[2024-05-26 03:22:00] INFO root fetch - main [MainThread]: End processing [lenlp] error
+[2024-05-26 03:22:00] INFO root fetch - processPackages [hyssop-aiodb]: Downloading https://files.pythonhosted.org/packages/6f/d6/a251474273bd30f3c074354fa9073366523ea20d3031c0ed10ba50876baa/hyssop_aiodb-0.0.8.tar.gz
+[2024-05-26 03:22:00] INFO root fetch - processPackages [hyssop-aiodb]: Downloading https://files.pythonhosted.org/packages/eb/49/f915053a80c614961a015dfa6baa84d34d562331f8f055a3e1ca321b29bf/hyssop_aiodb-0.0.9.tar.gz
+[2024-05-26 03:22:01] INFO root fetch - processPackages [hyssop-aiodb]: executing diffoscope
+[2024-05-26 03:22:01] INFO root fetch - processPackages [hyssop-aiodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyssop_aiodb-0.0.8.tar.gz tmp/hyssop_aiodb-0.0.9.tar.gz --markdown 20240526/h/hyssop-aiodb/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 03:22:01] INFO root fetch - processPackages [hyssop-aiodb]: Remove: archive file [/home/abi/fetcher/tmp/hyssop_aiodb-0.0.8.tar.gz]
+[2024-05-26 03:22:01] INFO root fetch - processPackages [hyssop-aiodb]: Remove: archive file [/home/abi/fetcher/tmp/hyssop_aiodb-0.0.9.tar.gz]
+[2024-05-26 03:22:01] INFO root fetch - main [MainThread]: End processing [hyssop-aiodb]: success
+[2024-05-26 03:22:01] INFO root fetch - main [MainThread]: Store serial: [23378924]
