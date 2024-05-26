@@ -3253,3 +3253,24 @@
 [2024-05-26 05:55:38] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.3.0.tar.gz]
 [2024-05-26 05:55:38] INFO root fetch - main [MainThread]: End processing [omnijp]: success
 [2024-05-26 05:55:38] INFO root fetch - main [MainThread]: Store serial: [23379561]
+[2024-05-26 05:57:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379561]
+[2024-05-26 05:57:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 05:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yoto-api
+[2024-05-26 05:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inspect-py
+[2024-05-26 05:57:47] INFO root fetch - processPackages [yoto-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-26 05:57:47] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/0c/ce/e8631b9319eccf4ffbaef962e56044d41f29cb3f8c07be1556f741f2569a/yoto_api-1.8.0.tar.gz
+[2024-05-26 05:57:47] INFO root fetch - processPackages [inspect-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 05:57:47] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/28/bc/e9d37198654bf82ae9be692dd9ee95b753eb8ca5b6edf44ab69ecca38f17/yoto_api-1.9.0.tar.gz
+[2024-05-26 05:57:47] INFO root fetch - processPackages [inspect-py]: Downloading https://files.pythonhosted.org/packages/44/7a/6c0d4f1cffbb1303bf9b45a9c149587dc6cc7566c05b405d495cb463d099/inspect_py-0.1.0.tar.gz
+[2024-05-26 05:57:47] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-05-26 05:57:47] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.8.0.tar.gz tmp/yoto_api-1.9.0.tar.gz --markdown 20240526/y/yoto-api/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-26 05:57:47] INFO root fetch - processPackages [inspect-py]: Downloading https://files.pythonhosted.org/packages/94/aa/2112a83726a8487db043356d66dead1a3cd3493e30f289077b0b7d4aeec7/inspect_py-0.1.1-py3-none-any.whl
+[2024-05-26 05:57:48] INFO root fetch - processPackages [inspect-py]: executing diffoscope
+[2024-05-26 05:57:48] INFO root fetch - processPackages [inspect-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspect_py-0.1.0.tar.gz tmp/inspect_py-0.1.1-py3-none-any.whl.zip --markdown 20240526/i/inspect-py/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 05:57:48] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.8.0.tar.gz]
+[2024-05-26 05:57:48] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
+[2024-05-26 05:57:48] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-05-26 05:57:48] INFO root fetch - processPackages [inspect-py]: Remove: archive file [/home/abi/fetcher/tmp/inspect_py-0.1.0.tar.gz]
+[2024-05-26 05:57:48] INFO root fetch - processPackages [inspect-py]: Remove: archive file [/home/abi/fetcher/tmp/inspect_py-0.1.1-py3-none-any.whl.zip]
+[2024-05-26 05:57:48] INFO root fetch - main [MainThread]: End processing [inspect-py]: success
+[2024-05-26 05:57:48] INFO root fetch - main [MainThread]: Store serial: [23379569]
