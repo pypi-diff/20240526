@@ -18330,3 +18330,68 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 22:03:35] WARNING root fetch - processPackages [grid-engine-Nitebound]: Skipping, unable to determine old version
 [2024-05-26 22:03:35] INFO root fetch - main [MainThread]: End processing [grid-engine-Nitebound] error
 [2024-05-26 22:03:35] INFO root fetch - main [MainThread]: Store serial: [23386539]
+[2024-05-26 22:05:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386539]
+[2024-05-26 22:05:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 22:07:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386539]
+[2024-05-26 22:07:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: virustotal-python
+[2024-05-26 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: semantic-space
+[2024-05-26 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyiso20022
+[2024-05-26 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2024-05-26 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: articraft
+[2024-05-26 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aim-ui
+[2024-05-26 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: semantic-space
+[2024-05-26 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: RankChem
+[2024-05-26 22:07:49] INFO root fetch - processPackages [pyiso20022]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-26 22:07:49] WARNING root fetch - processPackages [RankChem]: Skipping, unable to determine old version
+[2024-05-26 22:07:49] INFO root fetch - main [MainThread]: End processing [RankChem] error
+[2024-05-26 22:07:49] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 22:07:49] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-05-26 22:07:49] INFO root fetch - processPackages [pyiso20022]: Downloading https://files.pythonhosted.org/packages/17/80/8738a2aca436eea436150c3bff5da9e9c868e9f7a59c27785e90ca05e35a/pyiso20022-0.1.3.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [semantic-space]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-26 22:07:49] INFO root fetch - processPackages [virustotal-python]: New version: [1.1.0] Old Version: [1.0.2]
+[2024-05-26 22:07:49] INFO root fetch - processPackages [semantic-space]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-26 22:07:49] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [articraft]: New version: [2.8.1] Old Version: [2.7.1]
+[2024-05-26 22:07:49] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [articraft]: Downloading https://files.pythonhosted.org/packages/6a/3b/cbab94b8835457bd1786297e78e64fc690fbaeb4a418d88fba9a51ed9290/articraft-2.7.1.tar.gz
+[2024-05-26 22:07:49] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-05-26 22:07:49] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-05-26 22:07:49] INFO root fetch - processPackages [semantic-space]: Downloading https://files.pythonhosted.org/packages/f9/db/663cd5bd1ae9c40dd1dc1ab5d006bb8f550c207c03bc7686d92282a58e8a/semantic_space-0.0.0.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [semantic-space]: Downloading https://files.pythonhosted.org/packages/f9/db/663cd5bd1ae9c40dd1dc1ab5d006bb8f550c207c03bc7686d92282a58e8a/semantic_space-0.0.0.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [virustotal-python]: Downloading https://files.pythonhosted.org/packages/84/d8/461ae6f5b27af520cb63f4ea538495c247d80f10ec1e3e2c72bd6e0892a6/virustotal_python-1.0.2.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [pyiso20022]: Downloading https://files.pythonhosted.org/packages/c5/c0/7660c0d52eda9e62ec296e521d2fc1dedce69c00df4808cb766395188607/pyiso20022-0.1.4.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [articraft]: Downloading https://files.pythonhosted.org/packages/4a/46/9314517d0294029f4bace17ae91b3647f7d6378c6995452eebcd6b7d01c6/articraft-2.8.1.tar.gz
+[2024-05-26 22:07:49] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 22:07:49] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 22:07:49] INFO root fetch - processPackages [articraft]: executing diffoscope
+[2024-05-26 22:07:49] INFO root fetch - processPackages [articraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/articraft-2.7.1.tar.gz tmp/articraft-2.8.1.tar.gz --markdown 20240526/a/articraft/2.7.1-2.8.1/README.md --exclude *.pyd
+[2024-05-26 22:07:50] INFO root fetch - processPackages [virustotal-python]: Downloading https://files.pythonhosted.org/packages/7e/a7/0da6f2eca204251c21e6e651c32910ad63c23763d86e217a589c8712a829/virustotal_python-1.1.0.tar.gz
+[2024-05-26 22:07:50] INFO root fetch - processPackages [semantic-space]: Downloading https://files.pythonhosted.org/packages/ba/29/5c0b1f5cf35419589d1ecee8d7dea4c956cce94f7353838718569fc39fe1/semantic_space-0.0.1.tar.gz
+[2024-05-26 22:07:50] INFO root fetch - processPackages [pyiso20022]: executing diffoscope
+[2024-05-26 22:07:50] INFO root fetch - processPackages [pyiso20022]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiso20022-0.1.3.tar.gz tmp/pyiso20022-0.1.4.tar.gz --markdown 20240526/p/pyiso20022/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-26 22:07:50] INFO root fetch - processPackages [semantic-space]: Downloading https://files.pythonhosted.org/packages/ba/29/5c0b1f5cf35419589d1ecee8d7dea4c956cce94f7353838718569fc39fe1/semantic_space-0.0.1.tar.gz
+[2024-05-26 22:07:50] INFO root fetch - processPackages [virustotal-python]: executing diffoscope
+[2024-05-26 22:07:50] INFO root fetch - processPackages [virustotal-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/virustotal_python-1.0.2.tar.gz tmp/virustotal_python-1.1.0.tar.gz --markdown 20240526/v/virustotal-python/1.0.2-1.1.0/README.md --exclude *.pyd
+[2024-05-26 22:07:50] INFO root fetch - processPackages [semantic-space]: executing diffoscope
+[2024-05-26 22:07:50] INFO root fetch - processPackages [semantic-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_space-0.0.0.tar.gz tmp/semantic_space-0.0.1.tar.gz --markdown 20240526/s/semantic-space/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-26 22:07:50] INFO root fetch - processPackages [semantic-space]: executing diffoscope
+[2024-05-26 22:07:50] INFO root fetch - processPackages [semantic-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_space-0.0.0.tar.gz tmp/semantic_space-0.0.1.tar.gz --markdown 20240526/s/semantic-space/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-26 22:07:50] INFO root fetch - processPackages [articraft]: Remove: archive file [/home/abi/fetcher/tmp/articraft-2.7.1.tar.gz]
+[2024-05-26 22:07:50] INFO root fetch - processPackages [articraft]: Remove: archive file [/home/abi/fetcher/tmp/articraft-2.8.1.tar.gz]
+[2024-05-26 22:07:50] INFO root fetch - main [MainThread]: End processing [articraft]: success
+[2024-05-26 22:07:50] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 22:07:50] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 22:07:50] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 22:07:50] INFO root fetch - processPackages [virustotal-python]: Remove: archive file [/home/abi/fetcher/tmp/virustotal_python-1.0.2.tar.gz]
+[2024-05-26 22:07:50] INFO root fetch - processPackages [virustotal-python]: Remove: archive file [/home/abi/fetcher/tmp/virustotal_python-1.1.0.tar.gz]
+[2024-05-26 22:07:50] INFO root fetch - main [MainThread]: End processing [virustotal-python]: success
+[2024-05-26 22:07:50] INFO root fetch - processPackages [semantic-space]: Remove: archive file [/home/abi/fetcher/tmp/semantic_space-0.0.0.tar.gz]
+[2024-05-26 22:07:50] INFO root fetch - processPackages [semantic-space]: Remove: archive file [/home/abi/fetcher/tmp/semantic_space-0.0.1.tar.gz]
+[2024-05-26 22:07:50] INFO root fetch - main [MainThread]: End processing [semantic-space]: success
+[2024-05-26 22:07:50] INFO root fetch - main [MainThread]: End processing [semantic-space]: success
+[2024-05-26 22:07:51] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.1.3.tar.gz]
+[2024-05-26 22:07:51] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.1.4.tar.gz]
+[2024-05-26 22:07:51] INFO root fetch - main [MainThread]: End processing [pyiso20022]: success
+[2024-05-26 22:07:51] INFO root fetch - main [MainThread]: Store serial: [23386567]
