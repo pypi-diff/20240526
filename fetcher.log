@@ -9551,3 +9551,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:18:59] INFO root fetch - processPackages [coverage]: Remove: archive file [/home/abi/fetcher/tmp/coverage-7.5.1.tar.gz]
 [2024-05-26 13:18:59] INFO root fetch - main [MainThread]: End processing [coverage]: success
 [2024-05-26 13:18:59] INFO root fetch - main [MainThread]: Store serial: [23382452]
+[2024-05-26 13:21:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382452]
+[2024-05-26 13:21:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 13:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-cefran
+[2024-05-26 13:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreamai
+[2024-05-26 13:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CloudConnector
+[2024-05-26 13:21:13] INFO root fetch - processPackages [django-cefran]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 13:21:13] INFO root fetch - processPackages [CI-CloudConnector]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 13:21:13] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/51/b8/77f85a45002d0bc958fe36abe794135494427fc2261660c76d81a005d6c8/CI_CloudConnector-0.8.zip
+[2024-05-26 13:21:13] INFO root fetch - processPackages [dreamai]: New version: [2.0.6] Old Version: [2.0.4]
+[2024-05-26 13:21:13] INFO root fetch - processPackages [django-cefran]: Downloading https://files.pythonhosted.org/packages/f4/65/bb9abd5eb1164f96fbdf6e832a904876dc7fa2253b4e92cb8b8f789596bf/django_cefran-0.0.1.tar.gz
+[2024-05-26 13:21:13] INFO root fetch - processPackages [dreamai]: Downloading https://files.pythonhosted.org/packages/b6/a8/903cb4a40b0b17bd1c23455a2b7c868cd4a48be3f0a79760842db3323bfe/dreamai-2.0.4.tar.gz
+[2024-05-26 13:21:13] INFO root fetch - processPackages [CI-CloudConnector]: Downloading https://files.pythonhosted.org/packages/4c/eb/b4639debe39d86d516b4aa0b9e6cdec32e0a06d0220a60ed52a6b5fada1f/CI_CloudConnector-0.9.zip
+[2024-05-26 13:21:13] INFO root fetch - processPackages [CI-CloudConnector]: executing diffoscope
+[2024-05-26 13:21:13] INFO root fetch - processPackages [CI-CloudConnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI_CloudConnector-0.8.zip tmp/CI_CloudConnector-0.9.zip --markdown 20240526/C/CI-CloudConnector/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 13:21:13] INFO root fetch - processPackages [dreamai]: Downloading https://files.pythonhosted.org/packages/86/4e/4af317cfb739d4e5394ab4b83b60cfc07da2f04a50e1afb891d410a7389e/dreamai-2.0.6.tar.gz
+[2024-05-26 13:21:13] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2024-05-26 13:21:13] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-2.0.4.tar.gz tmp/dreamai-2.0.6.tar.gz --markdown 20240526/d/dreamai/2.0.4-2.0.6/README.md --exclude *.pyd
+[2024-05-26 13:21:13] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.8.zip]
+[2024-05-26 13:21:13] INFO root fetch - processPackages [CI-CloudConnector]: Remove: archive file [/home/abi/fetcher/tmp/CI_CloudConnector-0.9.zip]
+[2024-05-26 13:21:13] INFO root fetch - main [MainThread]: End processing [CI-CloudConnector]: success
+[2024-05-26 13:21:13] INFO root fetch - processPackages [django-cefran]: Downloading https://files.pythonhosted.org/packages/2b/98/496f9c0848b7d70ff93a8f28a96811aa647b761c8f0d1bdfcc63aab422c4/django_cefran-0.0.2.tar.gz
+[2024-05-26 13:21:14] INFO root fetch - processPackages [dreamai]: Remove: archive file [/home/abi/fetcher/tmp/dreamai-2.0.4.tar.gz]
+[2024-05-26 13:21:14] INFO root fetch - processPackages [dreamai]: Remove: archive file [/home/abi/fetcher/tmp/dreamai-2.0.6.tar.gz]
+[2024-05-26 13:21:14] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2024-05-26 13:21:14] INFO root fetch - processPackages [django-cefran]: executing diffoscope
+[2024-05-26 13:21:14] INFO root fetch - processPackages [django-cefran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_cefran-0.0.1.tar.gz tmp/django_cefran-0.0.2.tar.gz --markdown 20240526/d/django-cefran/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 13:21:26] INFO root fetch - processPackages [django-cefran]: Remove: archive file [/home/abi/fetcher/tmp/django_cefran-0.0.1.tar.gz]
+[2024-05-26 13:21:26] INFO root fetch - processPackages [django-cefran]: Remove: archive file [/home/abi/fetcher/tmp/django_cefran-0.0.2.tar.gz]
+[2024-05-26 13:21:26] INFO root fetch - main [MainThread]: End processing [django-cefran]: success
+[2024-05-26 13:21:26] INFO root fetch - main [MainThread]: Store serial: [23382464]
