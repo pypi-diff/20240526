@@ -7643,3 +7643,48 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 11:08:23] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.2.tar.gz]
 [2024-05-26 11:08:23] INFO root fetch - main [MainThread]: End processing [lantana]: success
 [2024-05-26 11:08:23] INFO root fetch - main [MainThread]: Store serial: [23381559]
+[2024-05-26 11:10:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381559]
+[2024-05-26 11:10:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 11:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GraphRetrieval
+[2024-05-26 11:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magyar
+[2024-05-26 11:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rootify
+[2024-05-26 11:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-05-26 11:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mptradelib
+[2024-05-26 11:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sakurose
+[2024-05-26 11:10:35] INFO root fetch - processPackages [GraphRetrieval]: New version: [0.2.0a0] Old Version: [0.2.0]
+[2024-05-26 11:10:35] INFO root fetch - processPackages [mptradelib]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-26 11:10:35] INFO root fetch - processPackages [mimllearning]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-05-26 11:10:35] INFO root fetch - processPackages [magyar]: New version: [4.1.0] Old Version: [4.0.7]
+[2024-05-26 11:10:35] WARNING root fetch - processPackages [rootify]: Skipping, unable to determine old version
+[2024-05-26 11:10:35] INFO root fetch - main [MainThread]: End processing [rootify] error
+[2024-05-26 11:10:35] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/ba/12/2e6aad31df1930b323a86ba074900428b79f0401b69c7b3ab1b4114916e9/graphretrieval-0.2.0.tar.gz
+[2024-05-26 11:10:35] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/f9/ee/36a4b31802d28157c362cf1662a5e7aa2ae4bd05c50e3ac220d08849ac56/mptradelib-0.5.8.tar.gz
+[2024-05-26 11:10:35] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d5/17/e2d99c8d3537d9956e2a41ed63ef20062c5ef5dab07ab8aaae96e149e217/mimllearning-0.5.7.tar.gz
+[2024-05-26 11:10:35] WARNING root fetch - processPackages [sakurose]: Skipping, unable to determine old version
+[2024-05-26 11:10:35] INFO root fetch - main [MainThread]: End processing [sakurose] error
+[2024-05-26 11:10:35] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/f0/be/bacee9264b0e3dcc3b4252e10f3ab330f196bd573d22e96715b6b73e766b/magyar-4.0.7.tar.gz
+[2024-05-26 11:10:35] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/59/98/f397d1e17967937fd167012408e9052ba6fd348c0ae4755ee6e17bb3da97/mptradelib-0.5.9.tar.gz
+[2024-05-26 11:10:35] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/ec/78/780d93f989a88f1b5a3b299d726baeb82329e4811c9df9c8b60609f6d5a7/graphretrieval-0.2.0a0.tar.gz
+[2024-05-26 11:10:35] INFO root fetch - processPackages [GraphRetrieval]: executing diffoscope
+[2024-05-26 11:10:35] INFO root fetch - processPackages [GraphRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphretrieval-0.2.0.tar.gz tmp/graphretrieval-0.2.0a0.tar.gz --markdown 20240526/G/GraphRetrieval/0.2.0-0.2.0a0/README.md --exclude *.pyd
+[2024-05-26 11:10:35] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/5d/d1/c72a0d1c8c30a48ff6257bdd7047b74dceeca7ee067cac8e927eba34a9e1/magyar-4.1.0.tar.gz
+[2024-05-26 11:10:35] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-26 11:10:35] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.5.8.tar.gz tmp/mptradelib-0.5.9.tar.gz --markdown 20240526/m/mptradelib/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-26 11:10:35] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2024-05-26 11:10:35] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-4.0.7.tar.gz tmp/magyar-4.1.0.tar.gz --markdown 20240526/m/magyar/4.0.7-4.1.0/README.md --exclude *.pyd
+[2024-05-26 11:10:36] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.2.0.tar.gz]
+[2024-05-26 11:10:36] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.2.0a0.tar.gz]
+[2024-05-26 11:10:36] INFO root fetch - main [MainThread]: End processing [GraphRetrieval]: success
+[2024-05-26 11:10:36] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.8.tar.gz]
+[2024-05-26 11:10:36] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.9.tar.gz]
+[2024-05-26 11:10:36] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-26 11:10:36] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.7.tar.gz]
+[2024-05-26 11:10:36] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.1.0.tar.gz]
+[2024-05-26 11:10:36] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2024-05-26 11:10:36] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d2/b3/87b8f5c10d5ff5cbe23d28e3faecc4f6f19fc43cd453209ee58b914621c6/mimllearning-0.5.8.tar.gz
+[2024-05-26 11:10:37] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-26 11:10:37] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.5.7.tar.gz tmp/mimllearning-0.5.8.tar.gz --markdown 20240526/m/mimllearning/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-05-26 11:10:40] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.7.tar.gz]
+[2024-05-26 11:10:40] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.5.8.tar.gz]
+[2024-05-26 11:10:40] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-26 11:10:40] INFO root fetch - main [MainThread]: Store serial: [23381581]
