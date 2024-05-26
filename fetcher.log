@@ -3444,3 +3444,45 @@
 [2024-05-26 06:21:33] INFO root fetch - processPackages [ext4]: Remove: archive file [/home/abi/fetcher/tmp/ext4-1.0.3.tar.gz]
 [2024-05-26 06:21:33] INFO root fetch - main [MainThread]: End processing [ext4]: success
 [2024-05-26 06:21:33] INFO root fetch - main [MainThread]: Store serial: [23379625]
+[2024-05-26 06:23:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379625]
+[2024-05-26 06:23:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 06:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ext4
+[2024-05-26 06:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: database-mysql-local
+[2024-05-26 06:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abcli
+[2024-05-26 06:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: s3-toolkit
+[2024-05-26 06:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: imagededup-cli
+[2024-05-26 06:23:41] INFO root fetch - processPackages [ext4]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-26 06:23:42] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.334] Old Version: [0.0.333]
+[2024-05-26 06:23:42] INFO root fetch - processPackages [abcli]: New version: [8.227.1] Old Version: [8.225.1]
+[2024-05-26 06:23:42] INFO root fetch - processPackages [imagededup-cli]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-26 06:23:42] INFO root fetch - processPackages [ext4]: Downloading https://files.pythonhosted.org/packages/f2/e9/625c048676773aa9c7f0dbbc3e952c7bfdb89013dbeba3c0524179dc1e10/ext4-1.0.2.tar.gz
+[2024-05-26 06:23:42] WARNING root fetch - processPackages [s3-toolkit]: Skipping, unable to determine old version
+[2024-05-26 06:23:42] INFO root fetch - main [MainThread]: End processing [s3-toolkit] error
+[2024-05-26 06:23:42] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/42/33/e97bdfab504782245f72985fc58aa8c79e2de7113a8f2ec2ccb197f023ec/database_mysql_local-0.0.333.tar.gz
+[2024-05-26 06:23:42] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/a3/3f/c1aa22d908275ef014c96e43d67d5771aab3deec2e1d7111bce62ab98877/abcli-8.225.1.tar.gz
+[2024-05-26 06:23:42] INFO root fetch - processPackages [imagededup-cli]: Downloading https://files.pythonhosted.org/packages/0a/f3/9dc1229eb8990710ea8f788b486496165874d203f34c8856c613e6af7bb5/imagededup-cli-1.0.3.tar.gz
+[2024-05-26 06:23:42] INFO root fetch - processPackages [ext4]: Downloading https://files.pythonhosted.org/packages/4c/e6/bde4d3837cd2bf7e38ba350637ada0bbd84f35b160b1b47b1ba1d4fead80/ext4-1.0.3.tar.gz
+[2024-05-26 06:23:42] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/70/ac/1a4e8d1dfb91112764f768e834edce73d87ea463925721ecedc274f8e43a/database_mysql_local-0.0.334.tar.gz
+[2024-05-26 06:23:42] INFO root fetch - processPackages [ext4]: executing diffoscope
+[2024-05-26 06:23:42] INFO root fetch - processPackages [ext4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ext4-1.0.2.tar.gz tmp/ext4-1.0.3.tar.gz --markdown 20240526/e/ext4/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-26 06:23:42] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/3e/0d/f110c84796523bca6b8098cb42928b972d7a52d2fdef6794dbf74ee123e4/abcli-8.227.1.tar.gz
+[2024-05-26 06:23:42] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-26 06:23:42] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.333.tar.gz tmp/database_mysql_local-0.0.334.tar.gz --markdown 20240526/d/database-mysql-local/0.0.333-0.0.334/README.md --exclude *.pyd
+[2024-05-26 06:23:42] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-26 06:23:42] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.225.1.tar.gz tmp/abcli-8.227.1.tar.gz --markdown 20240526/a/abcli/8.225.1-8.227.1/README.md --exclude *.pyd
+[2024-05-26 06:23:42] INFO root fetch - processPackages [imagededup-cli]: Downloading https://files.pythonhosted.org/packages/ac/37/eba34e0a61a3c2ea821b7216393364b923c6186bb4d8c266b7b69dd29113/imagededup-cli-1.0.4.tar.gz
+[2024-05-26 06:23:42] INFO root fetch - processPackages [imagededup-cli]: executing diffoscope
+[2024-05-26 06:23:42] INFO root fetch - processPackages [imagededup-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imagededup-cli-1.0.3.tar.gz tmp/imagededup-cli-1.0.4.tar.gz --markdown 20240526/i/imagededup-cli/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-26 06:23:43] INFO root fetch - processPackages [ext4]: Remove: archive file [/home/abi/fetcher/tmp/ext4-1.0.2.tar.gz]
+[2024-05-26 06:23:43] INFO root fetch - processPackages [ext4]: Remove: archive file [/home/abi/fetcher/tmp/ext4-1.0.3.tar.gz]
+[2024-05-26 06:23:43] INFO root fetch - main [MainThread]: End processing [ext4]: success
+[2024-05-26 06:23:43] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.333.tar.gz]
+[2024-05-26 06:23:43] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.334.tar.gz]
+[2024-05-26 06:23:43] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-26 06:23:43] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.225.1.tar.gz]
+[2024-05-26 06:23:43] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.227.1.tar.gz]
+[2024-05-26 06:23:43] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-26 06:23:43] INFO root fetch - processPackages [imagededup-cli]: Remove: archive file [/home/abi/fetcher/tmp/imagededup-cli-1.0.3.tar.gz]
+[2024-05-26 06:23:43] INFO root fetch - processPackages [imagededup-cli]: Remove: archive file [/home/abi/fetcher/tmp/imagededup-cli-1.0.4.tar.gz]
+[2024-05-26 06:23:43] INFO root fetch - main [MainThread]: End processing [imagededup-cli]: success
+[2024-05-26 06:23:43] INFO root fetch - main [MainThread]: Store serial: [23379642]
