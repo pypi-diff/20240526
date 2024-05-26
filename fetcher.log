@@ -9922,3 +9922,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:52:48] INFO root fetch - processPackages [pih-plb-db]: Remove: archive file [/home/abi/fetcher/tmp/pih-plb_db-0.21.tar.gz]
 [2024-05-26 13:52:48] INFO root fetch - main [MainThread]: End processing [pih-plb-db]: success
 [2024-05-26 13:52:48] INFO root fetch - main [MainThread]: Store serial: [23382614]
+[2024-05-26 13:54:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382614]
+[2024-05-26 13:55:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 13:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aloha
+[2024-05-26 13:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-daily-task
+[2024-05-26 13:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: testbrojct2
+[2024-05-26 13:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sl2pm
+[2024-05-26 13:55:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: imanhari
+[2024-05-26 13:55:02] WARNING root fetch - processPackages [testbrojct2]: Skipping, unable to determine old version
+[2024-05-26 13:55:02] INFO root fetch - main [MainThread]: End processing [testbrojct2] error
+[2024-05-26 13:55:02] WARNING root fetch - processPackages [nonebot-plugin-daily-task]: Skipping, unable to determine old version
+[2024-05-26 13:55:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-daily-task] error
+[2024-05-26 13:55:02] WARNING root fetch - processPackages [sl2pm]: Skipping, unable to determine old version
+[2024-05-26 13:55:02] INFO root fetch - main [MainThread]: End processing [sl2pm] error
+[2024-05-26 13:55:02] WARNING root fetch - processPackages [imanhari]: Skipping, unable to determine old version
+[2024-05-26 13:55:02] INFO root fetch - main [MainThread]: End processing [imanhari] error
+[2024-05-26 13:55:02] INFO root fetch - processPackages [aloha]: New version: [2024.526.1153] Old Version: [2024.515.1337]
+[2024-05-26 13:55:02] INFO root fetch - processPackages [aloha]: Downloading https://files.pythonhosted.org/packages/68/57/9e9aa116b406ba302180e2089f5f511de69c3e30b93fa0c6b541237d29d7/aloha-2024.515.1337.tar.gz
+[2024-05-26 13:55:03] INFO root fetch - processPackages [aloha]: Downloading https://files.pythonhosted.org/packages/0b/4c/a44e2e19df7511890279a9450e92fbf78d79f42658a3b72916a9b0989139/aloha-2024.526.1153.tar.gz
+[2024-05-26 13:55:03] INFO root fetch - processPackages [aloha]: executing diffoscope
+[2024-05-26 13:55:03] INFO root fetch - processPackages [aloha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aloha-2024.515.1337.tar.gz tmp/aloha-2024.526.1153.tar.gz --markdown 20240526/a/aloha/2024.515.1337-2024.526.1153/README.md --exclude *.pyd
+[2024-05-26 13:55:03] INFO root fetch - processPackages [aloha]: Remove: archive file [/home/abi/fetcher/tmp/aloha-2024.515.1337.tar.gz]
+[2024-05-26 13:55:03] INFO root fetch - processPackages [aloha]: Remove: archive file [/home/abi/fetcher/tmp/aloha-2024.526.1153.tar.gz]
+[2024-05-26 13:55:03] INFO root fetch - main [MainThread]: End processing [aloha]: success
+[2024-05-26 13:55:03] INFO root fetch - main [MainThread]: Store serial: [23382637]
