@@ -17664,3 +17664,117 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:24:04] INFO root fetch - processPackages [zarr]: Remove: archive file [/home/abi/fetcher/tmp/zarr-2.9.5.tar.gz]
 [2024-05-26 21:24:04] INFO root fetch - main [MainThread]: End processing [zarr]: success
 [2024-05-26 21:24:04] INFO root fetch - main [MainThread]: Store serial: [23386241]
+[2024-05-26 21:26:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386241]
+[2024-05-26 21:26:14] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: txl_remote_terminals
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: txl_remote_kernels
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib-toggl
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: txl_text_editor
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: txl_markdown_viewer
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: txl_terminal
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: txl_launcher
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: txl_widgets
+[2024-05-26 21:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: brianmechanisms
+[2024-05-26 21:26:14] INFO root fetch - processPackages [brianmechanisms]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [txl_markdown_viewer]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [brianmechanisms]: Downloading https://files.pythonhosted.org/packages/ad/d4/9ae683fb1e983cb8efb22aa70b12ea0e935fa31eb272eb3ba5e64f147e32/brianmechanisms-0.1.4.tar.gz
+[2024-05-26 21:26:14] INFO root fetch - processPackages [txl_remote_terminals]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [lib-toggl]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [txl_terminal]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [txl_remote_kernels]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [txl_text_editor]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [txl_launcher]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:26:14] INFO root fetch - processPackages [txl_widgets]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:26:15] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_remote_terminals]: Downloading https://files.pythonhosted.org/packages/54/7d/f286947d219915c9d040d0decc3c033654d6d53164de03ecc9e125a7a572/txl_remote_terminals-0.2.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_markdown_viewer]: Downloading https://files.pythonhosted.org/packages/54/b9/803ac3d33cab8a7a40412cf16675822c303d4d59341fbaa8094fe25eaf96/txl_markdown_viewer-0.2.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_text_editor]: Downloading https://files.pythonhosted.org/packages/a8/32/c7dec1a479d0471d04cecac054e2ac1b237c6c136cde2544ca31ec3b0497/txl_text_editor-0.2.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [lib-toggl]: Downloading https://files.pythonhosted.org/packages/fb/66/b94b1c201d3512249a08395e65b66fa0c6c5a9f858c3d6f8dda551fed19c/lib_toggl-0.1.7.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_remote_kernels]: Downloading https://files.pythonhosted.org/packages/95/92/adbf3aaa6e67f72a710539c1255bd5288c0752fdb10cb47507111dabe7c2/txl_remote_kernels-0.2.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_widgets]: Downloading https://files.pythonhosted.org/packages/0a/22/ed91f2d25451da4f8a488df47d535dacebf12060cc693926df4740120d32/txl_widgets-0.2.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_launcher]: Downloading https://files.pythonhosted.org/packages/4d/37/394f25fb945b324b116e3645ca1d67443e3c7b38670618ce2c1a4bd7073d/txl_launcher-0.2.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_terminal]: Downloading https://files.pythonhosted.org/packages/22/a7/152169f22fbd3306db5c9571f35937a70667b061baab9db37b9136b56b0c/txl_terminal-0.2.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [brianmechanisms]: Downloading https://files.pythonhosted.org/packages/ce/e3/5694b05b8d36780685d4295e394575cab7e5eed8c28ca15a5a39d30d78e7/brianmechanisms-0.1.5.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_remote_terminals]: Downloading https://files.pythonhosted.org/packages/74/57/066c3ee3ca38ad0faf173f14d8ff36e39a98121ada20dab76421cb301851/txl_remote_terminals-0.2.9.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [brianmechanisms]: executing diffoscope
+[2024-05-26 21:26:15] INFO root fetch - processPackages [brianmechanisms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brianmechanisms-0.1.4.tar.gz tmp/brianmechanisms-0.1.5.tar.gz --markdown 20240526/b/brianmechanisms/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-26 21:26:15] INFO root fetch - processPackages [lib-toggl]: Downloading https://files.pythonhosted.org/packages/2e/9a/9f6d6205d1cb9b3104805228ddc9956bd195d030773655ea37f62c4f358c/lib_toggl-0.1.8.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 21:26:15] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_text_editor]: Downloading https://files.pythonhosted.org/packages/d5/08/b8cf1bc789d6722faae15de9f82c4a2d3172c9dad6903fb769a7d4befd8e/txl_text_editor-0.2.9.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_markdown_viewer]: Downloading https://files.pythonhosted.org/packages/fe/b0/70228b5781d4f15fe1b6acef832c174004d23a8bb5fc0ca792b7d8a859f5/txl_markdown_viewer-0.2.9.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [lib-toggl]: executing diffoscope
+[2024-05-26 21:26:15] INFO root fetch - processPackages [lib-toggl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_toggl-0.1.7.tar.gz tmp/lib_toggl-0.1.8.tar.gz --markdown 20240526/l/lib-toggl/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_remote_kernels]: Downloading https://files.pythonhosted.org/packages/4f/74/ede37be97a8120aefc391705b974a7821586f36d8181709b8567adc733e5/txl_remote_kernels-0.2.9.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_launcher]: Downloading https://files.pythonhosted.org/packages/63/8f/c2e2c1d74ccbf0ca5e754825c84e3e6105f0621de45cc7f8adac91a4dedd/txl_launcher-0.2.9.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_widgets]: Downloading https://files.pythonhosted.org/packages/a5/a7/148491c6eb17d9acf0cc531f16de0343aadf09027436ec88408cbfd3ac04/txl_widgets-0.2.9.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_text_editor]: executing diffoscope
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_text_editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_text_editor-0.2.8.tar.gz tmp/txl_text_editor-0.2.9.tar.gz --markdown 20240526/t/txl_text_editor/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_terminal]: Downloading https://files.pythonhosted.org/packages/37/cb/7aa106dc823a551d695822a95fbe6a047acdb518174e88812c9c575c66db/txl_terminal-0.2.9.tar.gz
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_remote_kernels]: executing diffoscope
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_remote_kernels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_remote_kernels-0.2.8.tar.gz tmp/txl_remote_kernels-0.2.9.tar.gz --markdown 20240526/t/txl_remote_kernels/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_markdown_viewer]: executing diffoscope
+[2024-05-26 21:26:15] INFO root fetch - processPackages [txl_markdown_viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_markdown_viewer-0.2.8.tar.gz tmp/txl_markdown_viewer-0.2.9.tar.gz --markdown 20240526/t/txl_markdown_viewer/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_terminal]: executing diffoscope
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_terminal-0.2.8.tar.gz tmp/txl_terminal-0.2.9.tar.gz --markdown 20240526/t/txl_terminal/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_widgets]: executing diffoscope
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_widgets-0.2.8.tar.gz tmp/txl_widgets-0.2.9.tar.gz --markdown 20240526/t/txl_widgets/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_launcher]: executing diffoscope
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_launcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_launcher-0.2.8.tar.gz tmp/txl_launcher-0.2.9.tar.gz --markdown 20240526/t/txl_launcher/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:26:16] INFO root fetch - processPackages [brianmechanisms]: Remove: archive file [/home/abi/fetcher/tmp/brianmechanisms-0.1.4.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [brianmechanisms]: Remove: archive file [/home/abi/fetcher/tmp/brianmechanisms-0.1.5.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [brianmechanisms]: Start processing: ricklib
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [brianmechanisms]: success
+[2024-05-26 21:26:16] WARNING root fetch - processPackages [ricklib]: Skipping, unable to determine old version
+[2024-05-26 21:26:16] INFO root fetch - processPackages [ricklib]: Start processing: ansible-taskrunner
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [ricklib] error
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_remote_terminals]: executing diffoscope
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_remote_terminals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_remote_terminals-0.2.8.tar.gz tmp/txl_remote_terminals-0.2.9.tar.gz --markdown 20240526/t/txl_remote_terminals/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:26:16] INFO root fetch - processPackages [lib-toggl]: Remove: archive file [/home/abi/fetcher/tmp/lib_toggl-0.1.7.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [lib-toggl]: Remove: archive file [/home/abi/fetcher/tmp/lib_toggl-0.1.8.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [lib-toggl]: Start processing: zenaura
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [lib-toggl]: success
+[2024-05-26 21:26:16] INFO root fetch - processPackages [zenaura]: New version: [0.9.82] Old Version: [0.9.81]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [ansible-taskrunner]: New version: [2.8.4] Old Version: [2.8.3]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/90/f5/ea3477e84206e924c8574c2584cfe0e04774a411aeb7b9b8796021909a3c/zenaura-0.9.81.tar.gz
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_text_editor]: Remove: archive file [/home/abi/fetcher/tmp/txl_text_editor-0.2.8.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_text_editor]: Remove: archive file [/home/abi/fetcher/tmp/txl_text_editor-0.2.9.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [txl_text_editor]: success
+[2024-05-26 21:26:16] INFO root fetch - processPackages [ansible-taskrunner]: Downloading https://files.pythonhosted.org/packages/00/68/006bb0778349494e15ad3b77bd668b135d03975405eedb188c5bf641e3c3/ansible_taskrunner-2.8.3.tar.gz
+[2024-05-26 21:26:16] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_remote_kernels]: Remove: archive file [/home/abi/fetcher/tmp/txl_remote_kernels-0.2.8.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_remote_kernels]: Remove: archive file [/home/abi/fetcher/tmp/txl_remote_kernels-0.2.9.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [txl_remote_kernels]: success
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_terminal]: Remove: archive file [/home/abi/fetcher/tmp/txl_terminal-0.2.8.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_terminal]: Remove: archive file [/home/abi/fetcher/tmp/txl_terminal-0.2.9.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [txl_terminal]: success
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_widgets]: Remove: archive file [/home/abi/fetcher/tmp/txl_widgets-0.2.8.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_widgets]: Remove: archive file [/home/abi/fetcher/tmp/txl_widgets-0.2.9.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [txl_widgets]: success
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_launcher]: Remove: archive file [/home/abi/fetcher/tmp/txl_launcher-0.2.8.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - processPackages [txl_launcher]: Remove: archive file [/home/abi/fetcher/tmp/txl_launcher-0.2.9.tar.gz]
+[2024-05-26 21:26:16] INFO root fetch - main [MainThread]: End processing [txl_launcher]: success
+[2024-05-26 21:26:17] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ba/8f/97b46e4de49a527fa185a857df0a7d66b6f6bb6fd91e256352b542f1b75f/zenaura-0.9.82.tar.gz
+[2024-05-26 21:26:17] INFO root fetch - processPackages [txl_remote_terminals]: Remove: archive file [/home/abi/fetcher/tmp/txl_remote_terminals-0.2.8.tar.gz]
+[2024-05-26 21:26:17] INFO root fetch - processPackages [txl_remote_terminals]: Remove: archive file [/home/abi/fetcher/tmp/txl_remote_terminals-0.2.9.tar.gz]
+[2024-05-26 21:26:17] INFO root fetch - main [MainThread]: End processing [txl_remote_terminals]: success
+[2024-05-26 21:26:17] INFO root fetch - processPackages [txl_markdown_viewer]: Remove: archive file [/home/abi/fetcher/tmp/txl_markdown_viewer-0.2.8.tar.gz]
+[2024-05-26 21:26:17] INFO root fetch - processPackages [txl_markdown_viewer]: Remove: archive file [/home/abi/fetcher/tmp/txl_markdown_viewer-0.2.9.tar.gz]
+[2024-05-26 21:26:17] INFO root fetch - main [MainThread]: End processing [txl_markdown_viewer]: success
+[2024-05-26 21:26:17] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 21:26:17] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.81.tar.gz tmp/zenaura-0.9.82.tar.gz --markdown 20240526/z/zenaura/0.9.81-0.9.82/README.md --exclude *.pyd
+[2024-05-26 21:26:17] INFO root fetch - processPackages [ansible-taskrunner]: Downloading https://files.pythonhosted.org/packages/cc/fa/88f8e735a8cd3d9a0024a67a5eb7a9c29f90e2a8979e3820a033dbb89c61/ansible_taskrunner-2.8.4.tar.gz
+[2024-05-26 21:26:17] INFO root fetch - processPackages [ansible-taskrunner]: executing diffoscope
+[2024-05-26 21:26:17] INFO root fetch - processPackages [ansible-taskrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible_taskrunner-2.8.3.tar.gz tmp/ansible_taskrunner-2.8.4.tar.gz --markdown 20240526/a/ansible-taskrunner/2.8.3-2.8.4/README.md --exclude *.pyd
+[2024-05-26 21:26:17] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.81.tar.gz]
+[2024-05-26 21:26:17] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.82.tar.gz]
+[2024-05-26 21:26:17] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 21:26:18] INFO root fetch - processPackages [ansible-taskrunner]: Remove: archive file [/home/abi/fetcher/tmp/ansible_taskrunner-2.8.3.tar.gz]
+[2024-05-26 21:26:18] INFO root fetch - processPackages [ansible-taskrunner]: Remove: archive file [/home/abi/fetcher/tmp/ansible_taskrunner-2.8.4.tar.gz]
+[2024-05-26 21:26:18] INFO root fetch - main [MainThread]: End processing [ansible-taskrunner]: success
+[2024-05-26 21:26:18] INFO root fetch - main [MainThread]: Store serial: [23386280]
