@@ -12023,3 +12023,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:14:52] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-26 16:14:52] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-26 16:14:52] INFO root fetch - main [MainThread]: Store serial: [23383665]
+[2024-05-26 16:17:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383665]
+[2024-05-26 16:17:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 16:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 16:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sanghyunjo
+[2024-05-26 16:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pi-awning-webthing
+[2024-05-26 16:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coguard-cli
+[2024-05-26 16:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wlogging
+[2024-05-26 16:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gdaicommons
+[2024-05-26 16:17:22] INFO root fetch - processPackages [sanghyunjo]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-26 16:17:22] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 16:17:22] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 16:17:22] WARNING root fetch - processPackages [gdaicommons]: Skipping, unable to determine old version
+[2024-05-26 16:17:22] INFO root fetch - main [MainThread]: End processing [gdaicommons] error
+[2024-05-26 16:17:22] INFO root fetch - processPackages [coguard-cli]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 16:17:22] INFO root fetch - processPackages [wlogging]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-26 16:17:22] INFO root fetch - processPackages [sanghyunjo]: Downloading https://files.pythonhosted.org/packages/88/6e/72436adaa416cf72bfe16079cf3b9ca681a5f39f547d8a6eaaf08ff7ce55/sanghyunjo-1.3.0.tar.gz
+[2024-05-26 16:17:22] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f3/91/ba07c9e27dbb568d0143cb8eab18a7b153f080c095d6be2a900c7fd69332/pi_awning_webthing-0.3.8.tar.gz
+[2024-05-26 16:17:22] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 16:17:22] INFO root fetch - processPackages [wlogging]: Downloading https://files.pythonhosted.org/packages/67/e9/cb84c7724dd7446e429b4c4c1c985cdae5bc6d50fcf3d2129df77d2d44ff/wlogging-0.1.2.tar.gz
+[2024-05-26 16:17:22] INFO root fetch - processPackages [coguard-cli]: Downloading https://files.pythonhosted.org/packages/b8/73/d9cba4d8c7d0f8c97547575fe2a6b760566e5cc0331c1e7ca04b0f494d8a/coguard-cli-0.2.8.tar.gz
+[2024-05-26 16:17:22] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 16:17:22] INFO root fetch - processPackages [sanghyunjo]: Downloading https://files.pythonhosted.org/packages/a0/8f/9c76d3ce997379eb898a79693f4c28831db3dfeeea0cc1a8f0dfe5ff6f8c/sanghyunjo-1.4.0.tar.gz
+[2024-05-26 16:17:22] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 16:17:22] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 16:17:22] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.8.tar.gz tmp/pi_awning_webthing-0.3.9.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 16:17:22] INFO root fetch - processPackages [sanghyunjo]: executing diffoscope
+[2024-05-26 16:17:22] INFO root fetch - processPackages [sanghyunjo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sanghyunjo-1.3.0.tar.gz tmp/sanghyunjo-1.4.0.tar.gz --markdown 20240526/s/sanghyunjo/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-26 16:17:22] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 16:17:22] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 16:17:23] INFO root fetch - processPackages [wlogging]: Downloading https://files.pythonhosted.org/packages/6d/5e/98f9f07a89967ce630ec7b479690279bb807597afbc880ac43f502b0df0d/wlogging-0.2.0.tar.gz
+[2024-05-26 16:17:23] INFO root fetch - processPackages [coguard-cli]: Downloading https://files.pythonhosted.org/packages/f1/d5/774d6c77526935394608b2fcb80ea9eabb52f7db94ff28edebe5ba23721e/coguard-cli-0.2.9.tar.gz
+[2024-05-26 16:17:23] INFO root fetch - processPackages [wlogging]: executing diffoscope
+[2024-05-26 16:17:23] INFO root fetch - processPackages [wlogging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wlogging-0.1.2.tar.gz tmp/wlogging-0.2.0.tar.gz --markdown 20240526/w/wlogging/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-26 16:17:23] INFO root fetch - processPackages [coguard-cli]: executing diffoscope
+[2024-05-26 16:17:23] INFO root fetch - processPackages [coguard-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coguard-cli-0.2.8.tar.gz tmp/coguard-cli-0.2.9.tar.gz --markdown 20240526/c/coguard-cli/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 16:17:23] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.8.tar.gz]
+[2024-05-26 16:17:23] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 16:17:23] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 16:17:23] INFO root fetch - processPackages [sanghyunjo]: Remove: archive file [/home/abi/fetcher/tmp/sanghyunjo-1.3.0.tar.gz]
+[2024-05-26 16:17:23] INFO root fetch - processPackages [sanghyunjo]: Remove: archive file [/home/abi/fetcher/tmp/sanghyunjo-1.4.0.tar.gz]
+[2024-05-26 16:17:23] INFO root fetch - main [MainThread]: End processing [sanghyunjo]: success
+[2024-05-26 16:17:23] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 16:17:23] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 16:17:23] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 16:17:23] INFO root fetch - processPackages [wlogging]: Remove: archive file [/home/abi/fetcher/tmp/wlogging-0.1.2.tar.gz]
+[2024-05-26 16:17:23] INFO root fetch - processPackages [wlogging]: Remove: archive file [/home/abi/fetcher/tmp/wlogging-0.2.0.tar.gz]
+[2024-05-26 16:17:23] INFO root fetch - main [MainThread]: End processing [wlogging]: success
+[2024-05-26 16:17:24] INFO root fetch - processPackages [coguard-cli]: Remove: archive file [/home/abi/fetcher/tmp/coguard-cli-0.2.8.tar.gz]
+[2024-05-26 16:17:24] INFO root fetch - processPackages [coguard-cli]: Remove: archive file [/home/abi/fetcher/tmp/coguard-cli-0.2.9.tar.gz]
+[2024-05-26 16:17:24] INFO root fetch - main [MainThread]: End processing [coguard-cli]: success
+[2024-05-26 16:17:24] INFO root fetch - main [MainThread]: Store serial: [23383686]
