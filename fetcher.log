@@ -17451,3 +17451,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:19:22] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.8.2.tar.gz]
 [2024-05-26 21:19:22] INFO root fetch - main [MainThread]: End processing [luma-ml]: success
 [2024-05-26 21:19:22] INFO root fetch - main [MainThread]: Store serial: [23386176]
+[2024-05-26 21:21:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386176]
+[2024-05-26 21:21:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 21:21:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: desktop-shop
+[2024-05-26 21:21:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyonwater
+[2024-05-26 21:21:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gammarers.aws-secure-flow-log-bucket
+[2024-05-26 21:21:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: causal-conv1d
+[2024-05-26 21:21:30] INFO root fetch - processPackages [desktop-shop]: New version: [1.1.0] Old Version: [1.0.5]
+[2024-05-26 21:21:30] INFO root fetch - processPackages [desktop-shop]: Downloading https://files.pythonhosted.org/packages/33/35/083cd39bec819e363001a6ba92c2dfefe15cc6bc61b62e6d900b58767bff/desktop_shop-1.0.5.tar.gz
+[2024-05-26 21:21:30] INFO root fetch - processPackages [pyonwater]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 21:21:30] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-05-26 21:21:30] INFO root fetch - processPackages [causal-conv1d]: New version: [1.2.1] Old Version: [1.2.0.post2]
+[2024-05-26 21:21:31] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Downloading https://files.pythonhosted.org/packages/cf/34/9d2aac9a3cfe5446ad5ba84d6659b748ee89974848d8884f4e8f5d34a2b5/gammarers.aws-secure-flow-log-bucket-1.4.3.tar.gz
+[2024-05-26 21:21:31] INFO root fetch - processPackages [pyonwater]: Downloading https://files.pythonhosted.org/packages/5b/d3/10d756c89c539a828e1e41caa7038ce867e29eb89b8f05005a56b02d9354/pyonwater-0.3.8.tar.gz
+[2024-05-26 21:21:31] INFO root fetch - processPackages [desktop-shop]: Downloading https://files.pythonhosted.org/packages/39/66/f7d8b866be359a2287622a3019bd4380a4b5e1293b27e16b2b4feb823240/desktop_shop-1.1.0.tar.gz
+[2024-05-26 21:21:31] INFO root fetch - processPackages [causal-conv1d]: Downloading https://files.pythonhosted.org/packages/7b/02/d2ff7b71358dadde5278b5a8c70b569124c64464a1f412469366fc639ac9/causal_conv1d-1.2.0.post2.tar.gz
+[2024-05-26 21:21:31] INFO root fetch - processPackages [desktop-shop]: executing diffoscope
+[2024-05-26 21:21:31] INFO root fetch - processPackages [desktop-shop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktop_shop-1.0.5.tar.gz tmp/desktop_shop-1.1.0.tar.gz --markdown 20240526/d/desktop-shop/1.0.5-1.1.0/README.md --exclude *.pyd
+[2024-05-26 21:21:31] INFO root fetch - processPackages [causal-conv1d]: Downloading https://files.pythonhosted.org/packages/6d/dd/07a28aa3a4d3b67a9d32ef6b2266b1657eb764d150385a07a12a17552308/causal_conv1d-1.2.1.tar.gz
+[2024-05-26 21:21:31] INFO root fetch - processPackages [pyonwater]: Downloading https://files.pythonhosted.org/packages/d4/a4/fadc41e91665581d75db084bd9cae251e8fcb9362ab96d9b85ae9c4fe5db/pyonwater-0.3.9.tar.gz
+[2024-05-26 21:21:31] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Downloading https://files.pythonhosted.org/packages/62/66/57253c9b5c0995efc34c62b89b77766e7326c14e5893bfcc02ee41d8e6a0/gammarers.aws-secure-flow-log-bucket-1.4.4.tar.gz
+[2024-05-26 21:21:31] INFO root fetch - processPackages [pyonwater]: executing diffoscope
+[2024-05-26 21:21:31] INFO root fetch - processPackages [pyonwater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyonwater-0.3.8.tar.gz tmp/pyonwater-0.3.9.tar.gz --markdown 20240526/p/pyonwater/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 21:21:31] INFO root fetch - processPackages [causal-conv1d]: executing diffoscope
+[2024-05-26 21:21:31] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: executing diffoscope
+[2024-05-26 21:21:31] INFO root fetch - processPackages [causal-conv1d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causal_conv1d-1.2.0.post2.tar.gz tmp/causal_conv1d-1.2.1.tar.gz --markdown 20240526/c/causal-conv1d/1.2.0.post2-1.2.1/README.md --exclude *.pyd
+[2024-05-26 21:21:31] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-flow-log-bucket-1.4.3.tar.gz tmp/gammarers.aws-secure-flow-log-bucket-1.4.4.tar.gz --markdown 20240526/g/gammarers.aws-secure-flow-log-bucket/1.4.3-1.4.4/README.md --exclude *.pyd
+[2024-05-26 21:21:31] INFO root fetch - processPackages [desktop-shop]: Remove: archive file [/home/abi/fetcher/tmp/desktop_shop-1.0.5.tar.gz]
+[2024-05-26 21:21:31] INFO root fetch - processPackages [desktop-shop]: Remove: archive file [/home/abi/fetcher/tmp/desktop_shop-1.1.0.tar.gz]
+[2024-05-26 21:21:31] INFO root fetch - main [MainThread]: End processing [desktop-shop]: success
+[2024-05-26 21:21:32] INFO root fetch - processPackages [pyonwater]: Remove: archive file [/home/abi/fetcher/tmp/pyonwater-0.3.8.tar.gz]
+[2024-05-26 21:21:32] INFO root fetch - processPackages [pyonwater]: Remove: archive file [/home/abi/fetcher/tmp/pyonwater-0.3.9.tar.gz]
+[2024-05-26 21:21:32] INFO root fetch - main [MainThread]: End processing [pyonwater]: success
+[2024-05-26 21:21:32] INFO root fetch - processPackages [causal-conv1d]: Remove: archive file [/home/abi/fetcher/tmp/causal_conv1d-1.2.0.post2.tar.gz]
+[2024-05-26 21:21:32] INFO root fetch - processPackages [causal-conv1d]: Remove: archive file [/home/abi/fetcher/tmp/causal_conv1d-1.2.1.tar.gz]
+[2024-05-26 21:21:32] INFO root fetch - main [MainThread]: End processing [causal-conv1d]: success
+[2024-05-26 21:21:32] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-flow-log-bucket-1.4.3.tar.gz]
+[2024-05-26 21:21:32] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-flow-log-bucket-1.4.4.tar.gz]
+[2024-05-26 21:21:32] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-flow-log-bucket]: success
+[2024-05-26 21:21:32] INFO root fetch - main [MainThread]: Store serial: [23386187]
