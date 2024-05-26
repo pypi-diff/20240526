@@ -10607,3 +10607,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:47:11] INFO root fetch - processPackages [ffun]: Remove: archive file [/home/abi/fetcher/tmp/ffun-1.5.5.tar.gz]
 [2024-05-26 14:47:11] INFO root fetch - main [MainThread]: End processing [ffun]: success
 [2024-05-26 14:47:11] INFO root fetch - main [MainThread]: Store serial: [23382942]
+[2024-05-26 14:49:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382942]
+[2024-05-26 14:49:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 14:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: calculate-savings
+[2024-05-26 14:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transdoc
+[2024-05-26 14:49:25] INFO root fetch - processPackages [calculate-savings]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 14:49:25] INFO root fetch - processPackages [transdoc]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-26 14:49:26] INFO root fetch - processPackages [calculate-savings]: Downloading https://files.pythonhosted.org/packages/94/f3/a3ecc2586dcca0e996b546255874a1a31a24909921452f0ee6538c123fa6/calculate_savings-0.1.2.tar.gz
+[2024-05-26 14:49:26] INFO root fetch - processPackages [transdoc]: Downloading https://files.pythonhosted.org/packages/14/42/57d98f38a65532a7bf674cd2b1ee65ebec04ee9378c16e69c905ce2bebb4/transdoc-0.2.2.tar.gz
+[2024-05-26 14:49:26] INFO root fetch - processPackages [transdoc]: Downloading https://files.pythonhosted.org/packages/b2/1f/6213963f0d0ac2508f76639128f75e552e6b487368b67cc16c192a9a83f4/transdoc-0.2.3.tar.gz
+[2024-05-26 14:49:26] INFO root fetch - processPackages [transdoc]: executing diffoscope
+[2024-05-26 14:49:26] INFO root fetch - processPackages [transdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transdoc-0.2.2.tar.gz tmp/transdoc-0.2.3.tar.gz --markdown 20240526/t/transdoc/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-26 14:49:26] INFO root fetch - processPackages [calculate-savings]: Downloading https://files.pythonhosted.org/packages/07/b5/fae396571eab731e519f00a8b4e0237c2da0f42dab81b567c2ef250a0548/calculate_savings-0.1.3.tar.gz
+[2024-05-26 14:49:27] INFO root fetch - processPackages [transdoc]: Remove: archive file [/home/abi/fetcher/tmp/transdoc-0.2.2.tar.gz]
+[2024-05-26 14:49:27] INFO root fetch - processPackages [transdoc]: Remove: archive file [/home/abi/fetcher/tmp/transdoc-0.2.3.tar.gz]
+[2024-05-26 14:49:27] INFO root fetch - main [MainThread]: End processing [transdoc]: success
+[2024-05-26 14:49:27] INFO root fetch - processPackages [calculate-savings]: executing diffoscope
+[2024-05-26 14:49:27] INFO root fetch - processPackages [calculate-savings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calculate_savings-0.1.2.tar.gz tmp/calculate_savings-0.1.3.tar.gz --markdown 20240526/c/calculate-savings/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 14:49:28] INFO root fetch - processPackages [calculate-savings]: Remove: archive file [/home/abi/fetcher/tmp/calculate_savings-0.1.2.tar.gz]
+[2024-05-26 14:49:28] INFO root fetch - processPackages [calculate-savings]: Remove: archive file [/home/abi/fetcher/tmp/calculate_savings-0.1.3.tar.gz]
+[2024-05-26 14:49:28] INFO root fetch - main [MainThread]: End processing [calculate-savings]: success
+[2024-05-26 14:49:28] INFO root fetch - main [MainThread]: Store serial: [23382948]
