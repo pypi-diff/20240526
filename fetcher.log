@@ -2271,3 +2271,32 @@
 [2024-05-26 04:11:30] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.3.1.tar.gz]
 [2024-05-26 04:11:30] INFO root fetch - main [MainThread]: End processing [pipackager]: success
 [2024-05-26 04:11:30] INFO root fetch - main [MainThread]: Store serial: [23379164]
+[2024-05-26 04:13:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379164]
+[2024-05-26 04:13:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 04:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atomea
+[2024-05-26 04:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docprompt
+[2024-05-26 04:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: platypush
+[2024-05-26 04:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipackager
+[2024-05-26 04:13:38] INFO root fetch - processPackages [pipackager]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-26 04:13:38] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/6a/c9/9aaa3c2302037a442ed96dcc27a668a20999d537e67d75a890e20f5b8df2/pipackager-0.3.0.tar.gz
+[2024-05-26 04:13:38] WARNING root fetch - processPackages [atomea]: Skipping, unable to determine old version
+[2024-05-26 04:13:38] INFO root fetch - main [MainThread]: End processing [atomea] error
+[2024-05-26 04:13:38] INFO root fetch - processPackages [docprompt]: New version: [0.6.0] Old Version: [0.5.4]
+[2024-05-26 04:13:38] INFO root fetch - processPackages [platypush]: New version: [0.99.11] Old Version: [0.9.6]
+[2024-05-26 04:13:38] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/ec/cc/f22c7376d88c94ae4d294b2c3b8396b4ed9e828f8fbf6fdc1372162bbb1e/pipackager-0.3.1.tar.gz
+[2024-05-26 04:13:38] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/7e/35/59d1ec1a6e1adbdae1077821c98c4771df412b7ffda91c342124c578d658/platypush-0.9.6.tar.gz
+[2024-05-26 04:13:38] INFO root fetch - processPackages [docprompt]: Downloading https://files.pythonhosted.org/packages/b4/65/0ce78e57905efc2f065da4a295e0fa48356bb40bb38f10b8053f29deeea9/docprompt-0.5.4.tar.gz
+[2024-05-26 04:13:38] WARNING root fetch - processPackages [docprompt]: Skipping package: exceeds size limit 19681090>=10485760
+[2024-05-26 04:13:38] INFO root fetch - main [MainThread]: End processing [docprompt] error
+[2024-05-26 04:13:39] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 04:13:39] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.3.0.tar.gz tmp/pipackager-0.3.1.tar.gz --markdown 20240526/p/pipackager/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-26 04:13:39] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.3.0.tar.gz]
+[2024-05-26 04:13:39] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.3.1.tar.gz]
+[2024-05-26 04:13:39] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 04:13:40] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/03/31/c588be986ee8fdd7cb29932c20bdc4998e8af74e476f3764af7761c244de/platypush-0.99.11.tar.gz
+[2024-05-26 04:13:40] INFO root fetch - processPackages [platypush]: executing diffoscope
+[2024-05-26 04:13:40] INFO root fetch - processPackages [platypush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/platypush-0.9.6.tar.gz tmp/platypush-0.99.11.tar.gz --markdown 20240526/p/platypush/0.9.6-0.99.11/README.md --exclude *.pyd
+[2024-05-26 04:13:46] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-0.9.6.tar.gz]
+[2024-05-26 04:13:46] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-0.99.11.tar.gz]
+[2024-05-26 04:13:46] INFO root fetch - main [MainThread]: End processing [platypush]: success
+[2024-05-26 04:13:46] INFO root fetch - main [MainThread]: Store serial: [23379179]
