@@ -16554,3 +16554,69 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:28:41] INFO root fetch - processPackages [bxa]: Remove: archive file [/home/abi/fetcher/tmp/bxa-4.1.3.tar.gz]
 [2024-05-26 20:28:41] INFO root fetch - main [MainThread]: End processing [bxa]: success
 [2024-05-26 20:28:41] INFO root fetch - main [MainThread]: Store serial: [23385719]
+[2024-05-26 20:30:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385719]
+[2024-05-26 20:30:51] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sayhello-sravanthi
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deposit
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mopepgen
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MedatechUK.Landlord
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: keyraser_client
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: deposit-gui
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: impyrialTest
+[2024-05-26 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flask_postgres
+[2024-05-26 20:30:51] INFO root fetch - processPackages [MedatechUK.Landlord]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 20:30:51] INFO root fetch - processPackages [flask_postgres]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-26 20:30:51] WARNING root fetch - processPackages [impyrialTest]: Skipping, unable to determine old version
+[2024-05-26 20:30:51] INFO root fetch - main [MainThread]: End processing [impyrialTest] error
+[2024-05-26 20:30:51] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 20:30:51] INFO root fetch - processPackages [deposit]: New version: [1.4.42] Old Version: [1.4.41]
+[2024-05-26 20:30:51] WARNING root fetch - processPackages [sayhello-sravanthi]: Skipping, unable to determine old version
+[2024-05-26 20:30:51] INFO root fetch - main [MainThread]: End processing [sayhello-sravanthi] error
+[2024-05-26 20:30:51] INFO root fetch - processPackages [mopepgen]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-05-26 20:30:51] WARNING root fetch - processPackages [keyraser_client]: Skipping, unable to determine old version
+[2024-05-26 20:30:51] INFO root fetch - main [MainThread]: End processing [keyraser_client] error
+[2024-05-26 20:30:51] INFO root fetch - processPackages [deposit-gui]: New version: [1.4.46] Old Version: [1.4.44]
+[2024-05-26 20:30:51] INFO root fetch - processPackages [flask_postgres]: Downloading https://files.pythonhosted.org/packages/35/a4/7e8159b0fa44cf7df4be645fdecc348015fa57713557cd7c97377eb56b30/flask_postgres-0.2.3.tar.gz
+[2024-05-26 20:30:51] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 20:30:51] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/1b/1d/7d43ab0dece612ba38c5a7d96114e1ae03b1fb79360ac732ebd73725995b/medatechuk_landlord-0.0.1.tar.gz
+[2024-05-26 20:30:51] INFO root fetch - processPackages [deposit]: Downloading https://files.pythonhosted.org/packages/52/7e/137fb2c99279b28fbb24fbfe728e9b66486aea3752a3c9b7cab39dd15bba/deposit-1.4.41.tar.gz
+[2024-05-26 20:30:51] INFO root fetch - processPackages [deposit-gui]: Downloading https://files.pythonhosted.org/packages/a3/aa/29d8501bd9ab61ebf769d0ad2fbfca89b0c720d8de5341651c5da3ec8738/deposit_gui-1.4.44.tar.gz
+[2024-05-26 20:30:51] INFO root fetch - processPackages [mopepgen]: Downloading https://files.pythonhosted.org/packages/3c/8e/a34255cdfaca364a2fcd650eee181f5dfa0936bc5f2002fcf7ad0f7da97d/mopepgen-1.4.0.tar.gz
+[2024-05-26 20:30:51] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 20:30:51] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/65/3d/e9ad8b078d683510a1e8f6dce8dfcfd52927afd1b482771f2289edd9c2a5/medatechuk_landlord-0.0.2.tar.gz
+[2024-05-26 20:30:51] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 20:30:51] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 20:30:51] INFO root fetch - processPackages [deposit]: Downloading https://files.pythonhosted.org/packages/2e/44/1dfeb03ed7cc05a90f390f193e23b064a6f6954f62a1a8d214c6311cdf74/deposit-1.4.42.tar.gz
+[2024-05-26 20:30:52] INFO root fetch - processPackages [mopepgen]: Downloading https://files.pythonhosted.org/packages/6c/ce/77711d6f960b88ee6121957c7314dab21b0098de8e2a845ff17a24a3f3d2/mopepgen-1.4.1.tar.gz
+[2024-05-26 20:30:52] INFO root fetch - processPackages [MedatechUK.Landlord]: executing diffoscope
+[2024-05-26 20:30:52] INFO root fetch - processPackages [MedatechUK.Landlord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medatechuk_landlord-0.0.1.tar.gz tmp/medatechuk_landlord-0.0.2.tar.gz --markdown 20240526/M/MedatechUK.Landlord/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 20:30:52] INFO root fetch - processPackages [deposit]: executing diffoscope
+[2024-05-26 20:30:52] INFO root fetch - processPackages [deposit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deposit-1.4.41.tar.gz tmp/deposit-1.4.42.tar.gz --markdown 20240526/d/deposit/1.4.41-1.4.42/README.md --exclude *.pyd
+[2024-05-26 20:30:52] INFO root fetch - processPackages [mopepgen]: executing diffoscope
+[2024-05-26 20:30:52] INFO root fetch - processPackages [mopepgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mopepgen-1.4.0.tar.gz tmp/mopepgen-1.4.1.tar.gz --markdown 20240526/m/mopepgen/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-05-26 20:30:52] INFO root fetch - processPackages [flask_postgres]: Downloading https://files.pythonhosted.org/packages/02/73/520f7d69d19ba2a480b7c94e8d466cbe4bac8dc96eb3e2f6a543c74f5d0d/flask_postgres-0.2.4.tar.gz
+[2024-05-26 20:30:52] INFO root fetch - processPackages [deposit-gui]: Downloading https://files.pythonhosted.org/packages/30/57/48567bbc185adf5cef736110a370fe887cf898f45cbf7b950624419fad92/deposit_gui-1.4.46.tar.gz
+[2024-05-26 20:30:52] INFO root fetch - processPackages [flask_postgres]: executing diffoscope
+[2024-05-26 20:30:52] INFO root fetch - processPackages [flask_postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_postgres-0.2.3.tar.gz tmp/flask_postgres-0.2.4.tar.gz --markdown 20240526/f/flask_postgres/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-26 20:30:52] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.1.tar.gz]
+[2024-05-26 20:30:52] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.2.tar.gz]
+[2024-05-26 20:30:52] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
+[2024-05-26 20:30:52] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 20:30:52] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 20:30:52] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 20:30:52] INFO root fetch - processPackages [deposit]: Remove: archive file [/home/abi/fetcher/tmp/deposit-1.4.41.tar.gz]
+[2024-05-26 20:30:52] INFO root fetch - processPackages [deposit]: Remove: archive file [/home/abi/fetcher/tmp/deposit-1.4.42.tar.gz]
+[2024-05-26 20:30:52] INFO root fetch - main [MainThread]: End processing [deposit]: success
+[2024-05-26 20:30:52] INFO root fetch - processPackages [deposit-gui]: executing diffoscope
+[2024-05-26 20:30:52] INFO root fetch - processPackages [deposit-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deposit_gui-1.4.44.tar.gz tmp/deposit_gui-1.4.46.tar.gz --markdown 20240526/d/deposit-gui/1.4.44-1.4.46/README.md --exclude *.pyd
+[2024-05-26 20:30:53] INFO root fetch - processPackages [mopepgen]: Remove: archive file [/home/abi/fetcher/tmp/mopepgen-1.4.0.tar.gz]
+[2024-05-26 20:30:53] INFO root fetch - processPackages [mopepgen]: Remove: archive file [/home/abi/fetcher/tmp/mopepgen-1.4.1.tar.gz]
+[2024-05-26 20:30:53] INFO root fetch - main [MainThread]: End processing [mopepgen]: success
+[2024-05-26 20:30:53] INFO root fetch - processPackages [flask_postgres]: Remove: archive file [/home/abi/fetcher/tmp/flask_postgres-0.2.3.tar.gz]
+[2024-05-26 20:30:53] INFO root fetch - processPackages [flask_postgres]: Remove: archive file [/home/abi/fetcher/tmp/flask_postgres-0.2.4.tar.gz]
+[2024-05-26 20:30:53] INFO root fetch - main [MainThread]: End processing [flask_postgres]: success
+[2024-05-26 20:30:54] INFO root fetch - processPackages [deposit-gui]: Remove: archive file [/home/abi/fetcher/tmp/deposit_gui-1.4.44.tar.gz]
+[2024-05-26 20:30:54] INFO root fetch - processPackages [deposit-gui]: Remove: archive file [/home/abi/fetcher/tmp/deposit_gui-1.4.46.tar.gz]
+[2024-05-26 20:30:54] INFO root fetch - main [MainThread]: End processing [deposit-gui]: success
+[2024-05-26 20:30:54] INFO root fetch - main [MainThread]: Store serial: [23385746]
