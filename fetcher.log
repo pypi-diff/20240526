@@ -9773,3 +9773,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:39:15] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.6.2.tar.gz]
 [2024-05-26 13:39:15] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
 [2024-05-26 13:39:15] INFO root fetch - main [MainThread]: Store serial: [23382563]
+[2024-05-26 13:41:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382563]
+[2024-05-26 13:41:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 13:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matematikk
+[2024-05-26 13:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aa-incursions
+[2024-05-26 13:41:28] INFO root fetch - processPackages [aa-incursions]: New version: [0.5.0a0] Old Version: [0.4.3a0]
+[2024-05-26 13:41:28] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 13:41:28] INFO root fetch - processPackages [aa-incursions]: Downloading https://files.pythonhosted.org/packages/b6/1a/169ec5170c6005cfd9a6342f0e2206b2ba405385c3d9ce1fea30705285f5/aa_incursions-0.4.3a0.tar.gz
+[2024-05-26 13:41:28] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 13:41:29] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 13:41:29] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 13:41:29] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 13:41:29] INFO root fetch - processPackages [aa-incursions]: Downloading https://files.pythonhosted.org/packages/dd/21/08d03196952f6fa5f982f939a002d68da59504c99983508e0bbc3b85760e/aa_incursions-0.5.0a0.tar.gz
+[2024-05-26 13:41:29] INFO root fetch - processPackages [aa-incursions]: executing diffoscope
+[2024-05-26 13:41:29] INFO root fetch - processPackages [aa-incursions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_incursions-0.4.3a0.tar.gz tmp/aa_incursions-0.5.0a0.tar.gz --markdown 20240526/a/aa-incursions/0.4.3a0-0.5.0a0/README.md --exclude *.pyd
+[2024-05-26 13:41:30] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 13:41:30] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 13:41:30] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 13:41:30] INFO root fetch - processPackages [aa-incursions]: Remove: archive file [/home/abi/fetcher/tmp/aa_incursions-0.4.3a0.tar.gz]
+[2024-05-26 13:41:30] INFO root fetch - processPackages [aa-incursions]: Remove: archive file [/home/abi/fetcher/tmp/aa_incursions-0.5.0a0.tar.gz]
+[2024-05-26 13:41:30] INFO root fetch - main [MainThread]: End processing [aa-incursions]: success
+[2024-05-26 13:41:30] INFO root fetch - main [MainThread]: Store serial: [23382572]
