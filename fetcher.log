@@ -9399,3 +9399,38 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:05:24] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-2.0.9.tar.gz]
 [2024-05-26 13:05:24] INFO root fetch - main [MainThread]: End processing [xssbase]: success
 [2024-05-26 13:05:24] INFO root fetch - main [MainThread]: Store serial: [23382345]
+[2024-05-26 13:07:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382345]
+[2024-05-26 13:07:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 13:09:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382345]
+[2024-05-26 13:09:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 13:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paginx
+[2024-05-26 13:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: steelseries-sonar-py
+[2024-05-26 13:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moto
+[2024-05-26 13:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: green-bit-llm
+[2024-05-26 13:09:43] INFO root fetch - processPackages [steelseries-sonar-py]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-26 13:09:43] INFO root fetch - processPackages [moto]: New version: [5.0.8.dev9] Old Version: [5.0.8.dev8]
+[2024-05-26 13:09:43] WARNING root fetch - processPackages [paginx]: Skipping, unable to determine old version
+[2024-05-26 13:09:43] INFO root fetch - main [MainThread]: End processing [paginx] error
+[2024-05-26 13:09:43] INFO root fetch - processPackages [green-bit-llm]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-05-26 13:09:43] INFO root fetch - processPackages [steelseries-sonar-py]: Downloading https://files.pythonhosted.org/packages/87/25/48ad03cc4fc60f48308ac6c8e3bbc6cf558b9b4c5e727447efe4d416838c/steelseries-sonar-py-1.0.1.tar.gz
+[2024-05-26 13:09:43] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/3b/ac/06a0859bde65d51176d1bc211894343ba012b690fa8ca460b05853a4cc62/moto-5.0.8.dev8.tar.gz
+[2024-05-26 13:09:43] INFO root fetch - processPackages [green-bit-llm]: Downloading https://files.pythonhosted.org/packages/cd/09/81555e6bb546fba77372374f3fd2ead1eb30171ce20333d305a48799f848/green-bit-llm-0.2.0.tar.gz
+[2024-05-26 13:09:43] INFO root fetch - processPackages [steelseries-sonar-py]: Downloading https://files.pythonhosted.org/packages/85/3f/3b12d5c5ebe7189750b5b6993587b113705857200bf98c45401ae79143fa/steelseries_sonar_py-1.1.0.tar.gz
+[2024-05-26 13:09:43] INFO root fetch - processPackages [steelseries-sonar-py]: executing diffoscope
+[2024-05-26 13:09:43] INFO root fetch - processPackages [steelseries-sonar-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steelseries-sonar-py-1.0.1.tar.gz tmp/steelseries_sonar_py-1.1.0.tar.gz --markdown 20240526/s/steelseries-sonar-py/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-26 13:09:43] INFO root fetch - processPackages [green-bit-llm]: Downloading https://files.pythonhosted.org/packages/63/da/eaecc8d376386fdcbcc77ed0493f0baa95a84a8c1c5ee4ffe0eb3d74dd2b/green_bit_llm-0.2.2.tar.gz
+[2024-05-26 13:09:43] INFO root fetch - processPackages [green-bit-llm]: executing diffoscope
+[2024-05-26 13:09:43] INFO root fetch - processPackages [green-bit-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/green-bit-llm-0.2.0.tar.gz tmp/green_bit_llm-0.2.2.tar.gz --markdown 20240526/g/green-bit-llm/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-05-26 13:09:44] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cd/82/43857467531c1b56b16670bf50e2d4a85619a54c84ae9aaf1d5deccd41ca/moto-5.0.8.dev9.tar.gz
+[2024-05-26 13:09:44] INFO root fetch - processPackages [steelseries-sonar-py]: Remove: archive file [/home/abi/fetcher/tmp/steelseries-sonar-py-1.0.1.tar.gz]
+[2024-05-26 13:09:44] INFO root fetch - processPackages [steelseries-sonar-py]: Remove: archive file [/home/abi/fetcher/tmp/steelseries_sonar_py-1.1.0.tar.gz]
+[2024-05-26 13:09:44] INFO root fetch - main [MainThread]: End processing [steelseries-sonar-py]: success
+[2024-05-26 13:09:44] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-26 13:09:44] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.8.dev8.tar.gz tmp/moto-5.0.8.dev9.tar.gz --markdown 20240526/m/moto/5.0.8.dev8-5.0.8.dev9/README.md --exclude *.pyd
+[2024-05-26 13:09:44] INFO root fetch - processPackages [green-bit-llm]: Remove: archive file [/home/abi/fetcher/tmp/green-bit-llm-0.2.0.tar.gz]
+[2024-05-26 13:09:44] INFO root fetch - processPackages [green-bit-llm]: Remove: archive file [/home/abi/fetcher/tmp/green_bit_llm-0.2.2.tar.gz]
+[2024-05-26 13:09:44] INFO root fetch - main [MainThread]: End processing [green-bit-llm]: success
+[2024-05-26 13:09:56] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev8.tar.gz]
+[2024-05-26 13:09:56] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.8.dev9.tar.gz]
+[2024-05-26 13:09:56] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-05-26 13:09:56] INFO root fetch - main [MainThread]: Store serial: [23382358]
