@@ -17910,3 +17910,32 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:35:13] INFO root fetch - processPackages [mkdocs-render-swagger-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_render_swagger_plugin-0.1.2-py3-none-any.whl.zip]
 [2024-05-26 21:35:13] INFO root fetch - main [MainThread]: End processing [mkdocs-render-swagger-plugin]: success
 [2024-05-26 21:35:13] INFO root fetch - main [MainThread]: Store serial: [23386320]
+[2024-05-26 21:37:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386320]
+[2024-05-26 21:37:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 21:37:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastsupabased-acl
+[2024-05-26 21:37:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: view.py
+[2024-05-26 21:37:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: marsilea
+[2024-05-26 21:37:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2024-05-26 21:37:22] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 21:37:22] WARNING root fetch - processPackages [fastsupabased-acl]: Skipping, unable to determine old version
+[2024-05-26 21:37:22] INFO root fetch - main [MainThread]: End processing [fastsupabased-acl] error
+[2024-05-26 21:37:22] INFO root fetch - processPackages [marsilea]: New version: [0.4.0] Old Version: [0.3.6]
+[2024-05-26 21:37:22] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 21:37:22] INFO root fetch - processPackages [view.py]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-05-26 21:37:22] INFO root fetch - processPackages [marsilea]: Downloading https://files.pythonhosted.org/packages/3a/39/321539e35aa9b8a30c7ad3927efabdd5a98798cacdcd45d2d5dff310f4f6/marsilea-0.3.6.tar.gz
+[2024-05-26 21:37:22] WARNING root fetch - processPackages [marsilea]: Skipping package: exceeds size limit 56890039>=10485760
+[2024-05-26 21:37:22] INFO root fetch - main [MainThread]: End processing [marsilea] error
+[2024-05-26 21:37:22] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 21:37:22] INFO root fetch - processPackages [view.py]: Downloading https://files.pythonhosted.org/packages/d5/61/48112d78dca64802f5914f9def9b435da465d9ea87e063cc19f346b32274/view.py-1.0.0a8-cp39-cp39-win_amd64.whl
+[2024-05-26 21:37:22] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 21:37:22] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 21:37:22] INFO root fetch - processPackages [view.py]: Downloading https://files.pythonhosted.org/packages/a3/8e/af597610242bf6c67d6b2db7aa2c29c25a5e2d0d6138b527d64c79873b0a/view.py-1.0.0a9-cp39-cp39-win_amd64.whl
+[2024-05-26 21:37:23] INFO root fetch - processPackages [view.py]: executing diffoscope
+[2024-05-26 21:37:23] INFO root fetch - processPackages [view.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/view.py-1.0.0a8-cp39-cp39-win_amd64.whl.zip tmp/view.py-1.0.0a9-cp39-cp39-win_amd64.whl.zip --markdown 20240526/v/view.py/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-05-26 21:37:23] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 21:37:23] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 21:37:23] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 21:37:23] INFO root fetch - processPackages [view.py]: Remove: archive file [/home/abi/fetcher/tmp/view.py-1.0.0a8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 21:37:23] INFO root fetch - processPackages [view.py]: Remove: archive file [/home/abi/fetcher/tmp/view.py-1.0.0a9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 21:37:23] INFO root fetch - main [MainThread]: End processing [view.py]: success
+[2024-05-26 21:37:23] INFO root fetch - main [MainThread]: Store serial: [23386345]
