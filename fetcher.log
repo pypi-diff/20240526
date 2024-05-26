@@ -8778,3 +8778,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:09:49] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.9.tar.gz]
 [2024-05-26 12:09:49] INFO root fetch - main [MainThread]: End processing [auto-coder]: success
 [2024-05-26 12:09:49] INFO root fetch - main [MainThread]: Store serial: [23382064]
+[2024-05-26 12:11:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382064]
+[2024-05-26 12:12:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 12:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reddit-tts-bot
+[2024-05-26 12:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enigma-workflow-14
+[2024-05-26 12:12:02] INFO root fetch - processPackages [reddit-tts-bot]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-26 12:12:02] INFO root fetch - processPackages [enigma-workflow-14]: New version: [14.0.3] Old Version: [14.0.2]
+[2024-05-26 12:12:02] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/d9/31/10485d514c4747b3d9dc86c1eddba7ca815fa23fd8ae8d080ada1be1190c/reddit_tts_bot-1.0.6.tar.gz
+[2024-05-26 12:12:02] INFO root fetch - processPackages [enigma-workflow-14]: Downloading https://files.pythonhosted.org/packages/b8/18/48e5de325b0d7d13db2ec2679d7119e01528e8f459bbf0ae81edb010a923/enigma_workflow_14-14.0.2-cp39-cp39-win_amd64.whl
+[2024-05-26 12:12:02] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/2b/f2/c45056ccbe7d7ac55c907c366b2153e1f5c584e47f47b7fe69580a041dac/reddit_tts_bot-1.0.7.tar.gz
+[2024-05-26 12:12:02] INFO root fetch - processPackages [enigma-workflow-14]: Downloading https://files.pythonhosted.org/packages/b2/d4/d97a55e08553e0851fd987492ec091b201d51c1b4f0f7d22020d634a7cb8/enigma_workflow_14-14.0.3-cp39-cp39-macosx_11_0_arm64.whl
+[2024-05-26 12:12:02] INFO root fetch - processPackages [reddit-tts-bot]: executing diffoscope
+[2024-05-26 12:12:02] INFO root fetch - processPackages [reddit-tts-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit_tts_bot-1.0.6.tar.gz tmp/reddit_tts_bot-1.0.7.tar.gz --markdown 20240526/r/reddit-tts-bot/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-26 12:12:03] INFO root fetch - processPackages [enigma-workflow-14]: executing diffoscope
+[2024-05-26 12:12:03] INFO root fetch - processPackages [enigma-workflow-14]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enigma_workflow_14-14.0.2-cp39-cp39-win_amd64.whl.zip tmp/enigma_workflow_14-14.0.3-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240526/e/enigma-workflow-14/14.0.2-14.0.3/README.md --exclude *.pyd
+[2024-05-26 12:12:03] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.6.tar.gz]
+[2024-05-26 12:12:03] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.7.tar.gz]
+[2024-05-26 12:12:03] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot]: success
+[2024-05-26 12:12:03] INFO root fetch - processPackages [enigma-workflow-14]: Remove: archive file [/home/abi/fetcher/tmp/enigma_workflow_14-14.0.2-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 12:12:03] INFO root fetch - processPackages [enigma-workflow-14]: Remove: archive file [/home/abi/fetcher/tmp/enigma_workflow_14-14.0.3-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-05-26 12:12:03] INFO root fetch - main [MainThread]: End processing [enigma-workflow-14]: success
+[2024-05-26 12:12:03] INFO root fetch - main [MainThread]: Store serial: [23382075]
