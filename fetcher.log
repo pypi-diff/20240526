@@ -21679,3 +21679,81 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:14:25] INFO root fetch - processPackages [muvi]: Remove: archive file [/home/abi/fetcher/tmp/muvi-0.1.2.tar.gz]
 [2024-05-26 23:14:25] INFO root fetch - main [MainThread]: End processing [muvi]: success
 [2024-05-26 23:14:25] INFO root fetch - main [MainThread]: Store serial: [23387818]
+[2024-05-26 23:16:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23387818]
+[2024-05-26 23:16:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hangman-solver-rs
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gruel
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-alpaca-daily-losers
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quiffen
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: elmat
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-l10n-fr-siret
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: glide-for-redis
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: accounting-sh
+[2024-05-26 23:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pip2deb
+[2024-05-26 23:16:35] INFO root fetch - processPackages [gruel]: New version: [4.2.2] Old Version: [4.2.1]
+[2024-05-26 23:16:35] INFO root fetch - processPackages [py-alpaca-daily-losers]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-26 23:16:35] INFO root fetch - processPackages [pip2deb]: New version: [1.4] Old Version: [1.3]
+[2024-05-26 23:16:35] WARNING root fetch - processPackages [accounting-sh]: Skipping, unable to determine old version
+[2024-05-26 23:16:35] INFO root fetch - main [MainThread]: End processing [accounting-sh] error
+[2024-05-26 23:16:35] INFO root fetch - processPackages [glide-for-redis]: New version: [0.4.0rc4] Old Version: [0.4.0rc0]
+[2024-05-26 23:16:35] INFO root fetch - processPackages [gruel]: Downloading https://files.pythonhosted.org/packages/18/30/58e5a73df08539604cee6d98036366e2efb4191512bff7f330f3f4604a31/gruel-4.2.1.tar.gz
+[2024-05-26 23:16:35] INFO root fetch - processPackages [hangman-solver-rs]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-26 23:16:35] INFO root fetch - processPackages [quiffen]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-26 23:16:35] INFO root fetch - processPackages [elmat]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 23:16:35] INFO root fetch - processPackages [odoo-addon-l10n-fr-siret]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-05-26 23:16:35] INFO root fetch - processPackages [py-alpaca-daily-losers]: Downloading https://files.pythonhosted.org/packages/24/dd/9314574fd3b6e260165a57f55e8d427ef121e337c15da348eff9e5e2efe3/py_alpaca_daily_losers-0.2.6.tar.gz
+[2024-05-26 23:16:35] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/6e/39/88f69b0a1f007c58b495d77bb79e33d06e053d6d6bbeb394167370db4e8f/pip2deb-1.3.tar.gz
+[2024-05-26 23:16:35] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/71/32/68b1ad56a54186d42865cff108a085dc5a1155621a6647fa4d76dd42e468/glide_for_redis-0.4.0rc0-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-05-26 23:16:35] INFO root fetch - processPackages [gruel]: Downloading https://files.pythonhosted.org/packages/35/4b/3a17d1a637271646fe0b7d9109ae87f558b188ec8af026441281ff3efc0c/gruel-4.2.2.tar.gz
+[2024-05-26 23:16:35] INFO root fetch - processPackages [py-alpaca-daily-losers]: Downloading https://files.pythonhosted.org/packages/c5/46/47071e1b984ee0e3439b6c9f28e9eb059147f6e23ed385e030d61b99c2c3/py_alpaca_daily_losers-0.2.7.tar.gz
+[2024-05-26 23:16:35] INFO root fetch - processPackages [odoo-addon-l10n-fr-siret]: Downloading https://files.pythonhosted.org/packages/86/ea/a871217ffa559ab01070abc02f96d54bcd57e9e7bf3fdcddc1ae943f58fb/odoo_addon_l10n_fr_siret-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-26 23:16:35] INFO root fetch - processPackages [gruel]: executing diffoscope
+[2024-05-26 23:16:35] INFO root fetch - processPackages [gruel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gruel-4.2.1.tar.gz tmp/gruel-4.2.2.tar.gz --markdown 20240526/g/gruel/4.2.1-4.2.2/README.md --exclude *.pyd
+[2024-05-26 23:16:35] INFO root fetch - processPackages [py-alpaca-daily-losers]: executing diffoscope
+[2024-05-26 23:16:35] INFO root fetch - processPackages [py-alpaca-daily-losers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_daily_losers-0.2.6.tar.gz tmp/py_alpaca_daily_losers-0.2.7.tar.gz --markdown 20240526/p/py-alpaca-daily-losers/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-26 23:16:35] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/31/43/2ed7bcebce8383419c343ee7ceb917348e23270486d4d808e850736f5660/pip2deb-1.4.tar.gz
+[2024-05-26 23:16:35] INFO root fetch - processPackages [glide-for-redis]: Downloading https://files.pythonhosted.org/packages/c5/ea/a36d5fd0dab7647960a2afd8cbc58f9f6ab84c6c903a2ae0d90b9954daec/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-05-26 23:16:36] INFO root fetch - processPackages [pip2deb]: executing diffoscope
+[2024-05-26 23:16:36] INFO root fetch - processPackages [pip2deb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip2deb-1.3.tar.gz tmp/pip2deb-1.4.tar.gz --markdown 20240526/p/pip2deb/1.3-1.4/README.md --exclude *.pyd
+[2024-05-26 23:16:36] INFO root fetch - processPackages [odoo-addon-l10n-fr-siret]: Downloading https://files.pythonhosted.org/packages/26/68/bb8d5f19a7b92b956fb51753e239f0d696010f42498ad224067a428ee940/odoo_addon_l10n_fr_siret-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-26 23:16:36] INFO root fetch - processPackages [hangman-solver-rs]: Downloading https://files.pythonhosted.org/packages/e6/7f/8dfd6896f5d7c0160cf84289e9db55abd5c5adef4484346571a482fefe0a/hangman_solver_rs-0.2.1.tar.gz
+[2024-05-26 23:16:36] INFO root fetch - processPackages [elmat]: Downloading https://files.pythonhosted.org/packages/af/d4/e0e85af6d81f9aafccafb31ffe0cd7485a83fa47e73b766648b391fb2fca/elmat-0.1.8.tar.gz
+[2024-05-26 23:16:36] INFO root fetch - processPackages [glide-for-redis]: executing diffoscope
+[2024-05-26 23:16:36] INFO root fetch - processPackages [glide-for-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glide_for_redis-0.4.0rc0-cp39-cp39-manylinux_2_28_aarch64.whl.zip tmp/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip --markdown 20240526/g/glide-for-redis/0.4.0rc0-0.4.0rc4/README.md --exclude *.pyd
+[2024-05-26 23:16:36] INFO root fetch - processPackages [odoo-addon-l10n-fr-siret]: executing diffoscope
+[2024-05-26 23:16:36] INFO root fetch - processPackages [odoo-addon-l10n-fr-siret]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_fr_siret-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_fr_siret-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240526/o/odoo-addon-l10n-fr-siret/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-05-26 23:16:36] INFO root fetch - processPackages [gruel]: Remove: archive file [/home/abi/fetcher/tmp/gruel-4.2.1.tar.gz]
+[2024-05-26 23:16:36] INFO root fetch - processPackages [gruel]: Remove: archive file [/home/abi/fetcher/tmp/gruel-4.2.2.tar.gz]
+[2024-05-26 23:16:36] INFO root fetch - main [MainThread]: End processing [gruel]: success
+[2024-05-26 23:16:36] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-0.2.6.tar.gz]
+[2024-05-26 23:16:36] INFO root fetch - processPackages [py-alpaca-daily-losers]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_daily_losers-0.2.7.tar.gz]
+[2024-05-26 23:16:36] INFO root fetch - main [MainThread]: End processing [py-alpaca-daily-losers]: success
+[2024-05-26 23:16:36] INFO root fetch - processPackages [elmat]: Downloading https://files.pythonhosted.org/packages/06/30/a465f60f19b23dca3230b87fec4e5b54f76d2aec7298f9e33e7d476ef78c/elmat-0.1.9.tar.gz
+[2024-05-26 23:16:36] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.3.tar.gz]
+[2024-05-26 23:16:36] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.4.tar.gz]
+[2024-05-26 23:16:36] INFO root fetch - main [MainThread]: End processing [pip2deb]: success
+[2024-05-26 23:16:36] INFO root fetch - processPackages [elmat]: executing diffoscope
+[2024-05-26 23:16:36] INFO root fetch - processPackages [elmat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elmat-0.1.8.tar.gz tmp/elmat-0.1.9.tar.gz --markdown 20240526/e/elmat/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 23:16:36] INFO root fetch - processPackages [quiffen]: Downloading https://files.pythonhosted.org/packages/38/a1/d4951e6c67853ae935baaef0683ff6bdbab09123110930a740c6b736ee73/quiffen-2.0.8.tar.gz
+[2024-05-26 23:16:37] INFO root fetch - processPackages [odoo-addon-l10n-fr-siret]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_fr_siret-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-26 23:16:37] INFO root fetch - processPackages [odoo-addon-l10n-fr-siret]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_fr_siret-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-26 23:16:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-fr-siret]: success
+[2024-05-26 23:16:37] INFO root fetch - processPackages [quiffen]: Downloading https://files.pythonhosted.org/packages/53/c3/6baa28cfee3fca1fe0bb23632da266d0b3e18dcecc2ab2433d2910aaed67/quiffen-2.0.9.tar.gz
+[2024-05-26 23:16:37] INFO root fetch - processPackages [elmat]: Remove: archive file [/home/abi/fetcher/tmp/elmat-0.1.8.tar.gz]
+[2024-05-26 23:16:37] INFO root fetch - processPackages [elmat]: Remove: archive file [/home/abi/fetcher/tmp/elmat-0.1.9.tar.gz]
+[2024-05-26 23:16:37] INFO root fetch - main [MainThread]: End processing [elmat]: success
+[2024-05-26 23:16:37] INFO root fetch - processPackages [quiffen]: executing diffoscope
+[2024-05-26 23:16:37] INFO root fetch - processPackages [quiffen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quiffen-2.0.8.tar.gz tmp/quiffen-2.0.9.tar.gz --markdown 20240526/q/quiffen/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-26 23:16:37] INFO root fetch - processPackages [quiffen]: Remove: archive file [/home/abi/fetcher/tmp/quiffen-2.0.8.tar.gz]
+[2024-05-26 23:16:37] INFO root fetch - processPackages [quiffen]: Remove: archive file [/home/abi/fetcher/tmp/quiffen-2.0.9.tar.gz]
+[2024-05-26 23:16:37] INFO root fetch - main [MainThread]: End processing [quiffen]: success
+[2024-05-26 23:16:38] INFO root fetch - processPackages [hangman-solver-rs]: Downloading https://files.pythonhosted.org/packages/44/a2/f9e37eda6efcf0437d8a9b9a34ef9f632824f17f2046518858bf292268c2/hangman_solver_rs-0.3.0.tar.gz
+[2024-05-26 23:16:39] INFO root fetch - processPackages [hangman-solver-rs]: executing diffoscope
+[2024-05-26 23:16:39] INFO root fetch - processPackages [hangman-solver-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hangman_solver_rs-0.2.1.tar.gz tmp/hangman_solver_rs-0.3.0.tar.gz --markdown 20240526/h/hangman-solver-rs/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-26 23:16:42] INFO root fetch - processPackages [hangman-solver-rs]: Remove: archive file [/home/abi/fetcher/tmp/hangman_solver_rs-0.2.1.tar.gz]
+[2024-05-26 23:16:42] INFO root fetch - processPackages [hangman-solver-rs]: Remove: archive file [/home/abi/fetcher/tmp/hangman_solver_rs-0.3.0.tar.gz]
+[2024-05-26 23:16:42] INFO root fetch - main [MainThread]: End processing [hangman-solver-rs]: success
+[2024-05-26 23:16:49] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.0rc0-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-05-26 23:16:49] INFO root fetch - processPackages [glide-for-redis]: Remove: archive file [/home/abi/fetcher/tmp/glide_for_redis-0.4.0rc4-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-05-26 23:16:49] INFO root fetch - main [MainThread]: End processing [glide-for-redis]: success
+[2024-05-26 23:16:49] INFO root fetch - main [MainThread]: Store serial: [23387862]
