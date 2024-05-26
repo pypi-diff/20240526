@@ -18576,3 +18576,79 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 22:17:58] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.3.9.tar.gz]
 [2024-05-26 22:17:58] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
 [2024-05-26 22:17:58] INFO root fetch - main [MainThread]: Store serial: [23386670]
+[2024-05-26 22:20:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386670]
+[2024-05-26 22:20:08] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lcr-api-2
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: muttfuzz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matematikk
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yeref
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shynggys-hello
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oresat-olaf
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: matematikk
+[2024-05-26 22:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fdk-asgi
+[2024-05-26 22:20:08] INFO root fetch - processPackages [lcr-api-2]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-05-26 22:20:08] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 22:20:08] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 22:20:08] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 22:20:08] INFO root fetch - processPackages [muttfuzz]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-26 22:20:08] WARNING root fetch - processPackages [shynggys-hello]: Skipping, unable to determine old version
+[2024-05-26 22:20:08] INFO root fetch - main [MainThread]: End processing [shynggys-hello] error
+[2024-05-26 22:20:08] INFO root fetch - processPackages [lcr-api-2]: Downloading https://files.pythonhosted.org/packages/e3/76/5d8063e4186feca2b880c74405daa5953d6b212f0cc189c626f2e074a74f/lcr_api_2-0.5.7.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [oresat-olaf]: New version: [3.6.2] Old Version: [3.6.1]
+[2024-05-26 22:20:08] INFO root fetch - processPackages [fdk-asgi]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-26 22:20:08] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [tencentcloud-sdk-python]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-05-26 22:20:08] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [muttfuzz]: Downloading https://files.pythonhosted.org/packages/6d/02/bfb348d592b033251e12d63a780b3386cc8f5b2cccc4f3d43810df20be17/muttfuzz-0.6.8-py3-none-any.whl
+[2024-05-26 22:20:08] INFO root fetch - processPackages [lcr-api-2]: Downloading https://files.pythonhosted.org/packages/5f/19/d074bbc2e9cf1b8d9e2cf0c08a967d057684bdc592c442d4698e12137d14/lcr_api_2-0.5.8.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/ed/45/8ca0acafcf486dbd85e8ec1629144ba85a32c52870321ad4a8f48cde6774/oresat_olaf-3.6.1.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [fdk-asgi]: Downloading https://files.pythonhosted.org/packages/f6/49/69103ef3ee664afce0f3812453fdc99c981303b77223684169e04f247ee1/fdk_asgi-0.5.0.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [tencentcloud-sdk-python]: Downloading https://files.pythonhosted.org/packages/0e/49/d3deea1dbe9eed3d486f850eab70b665bc903e06042c7b39c19585e01b6a/tencentcloud-sdk-python-3.0.998.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 22:20:08] INFO root fetch - processPackages [lcr-api-2]: executing diffoscope
+[2024-05-26 22:20:08] INFO root fetch - processPackages [lcr-api-2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcr_api_2-0.5.7.tar.gz tmp/lcr_api_2-0.5.8.tar.gz --markdown 20240526/l/lcr-api-2/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-05-26 22:20:09] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 22:20:09] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 22:20:09] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 22:20:09] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 22:20:09] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 22:20:09] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 22:20:09] INFO root fetch - processPackages [muttfuzz]: Downloading https://files.pythonhosted.org/packages/c7/1b/4180654abc46dd74d0a4b7357856d932903587ae8dc76007d959670ec390/muttfuzz-0.6.9-py3-none-any.whl
+[2024-05-26 22:20:09] INFO root fetch - processPackages [fdk-asgi]: Downloading https://files.pythonhosted.org/packages/81/fb/51e6872db703876a51c5a1e2624abfebf4dd13d22e2d4e663a3e64c6c285/fdk_asgi-0.6.0.tar.gz
+[2024-05-26 22:20:09] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/1a/ed/c62d0b3e521119c7407e3c8982cbff99f2f95ae8efc2f221ee22db60dd3d/oresat_olaf-3.6.2.tar.gz
+[2024-05-26 22:20:09] INFO root fetch - processPackages [muttfuzz]: executing diffoscope
+[2024-05-26 22:20:09] INFO root fetch - processPackages [muttfuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muttfuzz-0.6.8-py3-none-any.whl.zip tmp/muttfuzz-0.6.9-py3-none-any.whl.zip --markdown 20240526/m/muttfuzz/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-26 22:20:09] INFO root fetch - processPackages [oresat-olaf]: executing diffoscope
+[2024-05-26 22:20:09] INFO root fetch - processPackages [oresat-olaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat_olaf-3.6.1.tar.gz tmp/oresat_olaf-3.6.2.tar.gz --markdown 20240526/o/oresat-olaf/3.6.1-3.6.2/README.md --exclude *.pyd
+[2024-05-26 22:20:09] INFO root fetch - processPackages [fdk-asgi]: executing diffoscope
+[2024-05-26 22:20:09] INFO root fetch - processPackages [fdk-asgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fdk_asgi-0.5.0.tar.gz tmp/fdk_asgi-0.6.0.tar.gz --markdown 20240526/f/fdk-asgi/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-26 22:20:09] INFO root fetch - processPackages [lcr-api-2]: Remove: archive file [/home/abi/fetcher/tmp/lcr_api_2-0.5.7.tar.gz]
+[2024-05-26 22:20:09] INFO root fetch - processPackages [lcr-api-2]: Remove: archive file [/home/abi/fetcher/tmp/lcr_api_2-0.5.8.tar.gz]
+[2024-05-26 22:20:09] INFO root fetch - main [MainThread]: End processing [lcr-api-2]: success
+[2024-05-26 22:20:10] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 22:20:10] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 22:20:10] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 22:20:10] INFO root fetch - processPackages [muttfuzz]: Remove: archive file [/home/abi/fetcher/tmp/muttfuzz-0.6.8-py3-none-any.whl.zip]
+[2024-05-26 22:20:10] INFO root fetch - processPackages [muttfuzz]: Remove: archive file [/home/abi/fetcher/tmp/muttfuzz-0.6.9-py3-none-any.whl.zip]
+[2024-05-26 22:20:10] INFO root fetch - main [MainThread]: End processing [muttfuzz]: success
+[2024-05-26 22:20:10] INFO root fetch - processPackages [fdk-asgi]: Remove: archive file [/home/abi/fetcher/tmp/fdk_asgi-0.5.0.tar.gz]
+[2024-05-26 22:20:10] INFO root fetch - processPackages [fdk-asgi]: Remove: archive file [/home/abi/fetcher/tmp/fdk_asgi-0.6.0.tar.gz]
+[2024-05-26 22:20:10] INFO root fetch - main [MainThread]: End processing [fdk-asgi]: success
+[2024-05-26 22:20:10] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 22:20:10] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 22:20:10] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 22:20:10] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat_olaf-3.6.1.tar.gz]
+[2024-05-26 22:20:10] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat_olaf-3.6.2.tar.gz]
+[2024-05-26 22:20:10] INFO root fetch - main [MainThread]: End processing [oresat-olaf]: success
+[2024-05-26 22:20:10] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 22:20:10] INFO root fetch - processPackages [tencentcloud-sdk-python]: Downloading https://files.pythonhosted.org/packages/72/eb/b7f20f227c30beeb1298a5013dbd98cf616d9c321398cf216c1b15940a8b/tencentcloud-sdk-python-3.0.999.tar.gz
+[2024-05-26 22:20:11] INFO root fetch - processPackages [tencentcloud-sdk-python]: executing diffoscope
+[2024-05-26 22:20:11] INFO root fetch - processPackages [tencentcloud-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-3.0.998.tar.gz tmp/tencentcloud-sdk-python-3.0.999.tar.gz --markdown 20240526/t/tencentcloud-sdk-python/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-05-26 22:20:21] INFO root fetch - processPackages [tencentcloud-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-3.0.998.tar.gz]
+[2024-05-26 22:20:21] INFO root fetch - processPackages [tencentcloud-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-3.0.999.tar.gz]
+[2024-05-26 22:20:21] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python]: success
+[2024-05-26 22:20:21] INFO root fetch - main [MainThread]: Store serial: [23386700]
