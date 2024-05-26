@@ -2900,3 +2900,33 @@
 [2024-05-26 05:23:06] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024052503.tar.gz]
 [2024-05-26 05:23:06] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-05-26 05:23:06] INFO root fetch - main [MainThread]: Store serial: [23379433]
+[2024-05-26 05:25:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379433]
+[2024-05-26 05:25:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 05:25:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-05-26 05:25:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blue-plugin
+[2024-05-26 05:25:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hubblescope
+[2024-05-26 05:25:15] INFO root fetch - processPackages [hubblescope]: New version: [4.6.1] Old Version: [4.5.1]
+[2024-05-26 05:25:15] INFO root fetch - processPackages [blue-plugin]: New version: [3.48.1] Old Version: [3.47.1]
+[2024-05-26 05:25:15] INFO root fetch - processPackages [flatpack]: New version: [3.4.99] Old Version: [3.4.98]
+[2024-05-26 05:25:15] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/ee/d1/8981cb0e7f02aa2ae9cbf69b8261c1a1949db7371967c657b22e12db9383/blue_plugin-3.47.1.tar.gz
+[2024-05-26 05:25:15] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/0e/6f/dfd9e6a77bcc9a7afa06bc2512a44416b861fd887dd1ff6c071242154d59/hubblescope-4.5.1.tar.gz
+[2024-05-26 05:25:15] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/cb/39/adcd388eba8071e3318b3a2224e5c96179761da6dbd7cfa96b20311e810f/flatpack-3.4.98.tar.gz
+[2024-05-26 05:25:15] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/f4/4d/6077721b185cda9bd33c9ab4ffd1a00e86100c4f13c77a67bb41a5588073/blue_plugin-3.48.1.tar.gz
+[2024-05-26 05:25:15] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/89/20/a694f72cbfa96253cdb38b9f65c7cfd5f3a4fb145d2fe2483132b80dafd4/flatpack-3.4.99.tar.gz
+[2024-05-26 05:25:15] INFO root fetch - processPackages [blue-plugin]: executing diffoscope
+[2024-05-26 05:25:15] INFO root fetch - processPackages [blue-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_plugin-3.47.1.tar.gz tmp/blue_plugin-3.48.1.tar.gz --markdown 20240526/b/blue-plugin/3.47.1-3.48.1/README.md --exclude *.pyd
+[2024-05-26 05:25:15] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-26 05:25:15] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.98.tar.gz tmp/flatpack-3.4.99.tar.gz --markdown 20240526/f/flatpack/3.4.98-3.4.99/README.md --exclude *.pyd
+[2024-05-26 05:25:15] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/b5/6f/4f0a41f0d92645c658e6ac840df2f52567ed4a8a759e20090563ebe58108/hubblescope-4.6.1.tar.gz
+[2024-05-26 05:25:15] INFO root fetch - processPackages [hubblescope]: executing diffoscope
+[2024-05-26 05:25:15] INFO root fetch - processPackages [hubblescope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubblescope-4.5.1.tar.gz tmp/hubblescope-4.6.1.tar.gz --markdown 20240526/h/hubblescope/4.5.1-4.6.1/README.md --exclude *.pyd
+[2024-05-26 05:25:16] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.47.1.tar.gz]
+[2024-05-26 05:25:16] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.48.1.tar.gz]
+[2024-05-26 05:25:16] INFO root fetch - main [MainThread]: End processing [blue-plugin]: success
+[2024-05-26 05:25:16] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.98.tar.gz]
+[2024-05-26 05:25:16] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.99.tar.gz]
+[2024-05-26 05:25:16] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-26 05:25:16] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.5.1.tar.gz]
+[2024-05-26 05:25:16] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.6.1.tar.gz]
+[2024-05-26 05:25:16] INFO root fetch - main [MainThread]: End processing [hubblescope]: success
+[2024-05-26 05:25:16] INFO root fetch - main [MainThread]: Store serial: [23379439]
