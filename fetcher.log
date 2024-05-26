@@ -10020,3 +10020,24 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:01:52] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.9.tar.gz]
 [2024-05-26 14:01:52] INFO root fetch - main [MainThread]: End processing [agixtsdk]: success
 [2024-05-26 14:01:52] INFO root fetch - main [MainThread]: Store serial: [23382689]
+[2024-05-26 14:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382689]
+[2024-05-26 14:04:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 14:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strawberry-graphql-django
+[2024-05-26 14:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matematikk
+[2024-05-26 14:04:06] INFO root fetch - processPackages [strawberry-graphql-django]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-26 14:04:06] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 14:04:06] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/84/8d/02584438b57b9d8c0141a779dd091b2f10126fe1f369ea1852d45afa3eec/strawberry_graphql_django-0.9.4.tar.gz
+[2024-05-26 14:04:06] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 14:04:07] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/34/c7/6761d3816f5a7cf02928b5d035b4ed20b4e6d2a12ec6a4cf9400ce4d7cbb/strawberry_graphql_django-0.9.5.tar.gz
+[2024-05-26 14:04:07] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 14:04:07] INFO root fetch - processPackages [strawberry-graphql-django]: executing diffoscope
+[2024-05-26 14:04:07] INFO root fetch - processPackages [strawberry-graphql-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_graphql_django-0.9.4.tar.gz tmp/strawberry_graphql_django-0.9.5.tar.gz --markdown 20240526/s/strawberry-graphql-django/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-26 14:04:07] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 14:04:07] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 14:04:07] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.4.tar.gz]
+[2024-05-26 14:04:07] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.5.tar.gz]
+[2024-05-26 14:04:07] INFO root fetch - main [MainThread]: End processing [strawberry-graphql-django]: success
+[2024-05-26 14:04:08] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 14:04:08] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 14:04:08] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 14:04:08] INFO root fetch - main [MainThread]: Store serial: [23382698]
