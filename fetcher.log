@@ -17490,3 +17490,177 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:21:32] INFO root fetch - processPackages [gammarers.aws-secure-flow-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-flow-log-bucket-1.4.4.tar.gz]
 [2024-05-26 21:21:32] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-flow-log-bucket]: success
 [2024-05-26 21:21:32] INFO root fetch - main [MainThread]: Store serial: [23386187]
+[2024-05-26 21:23:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386187]
+[2024-05-26 21:23:40] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jpterm
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antsibull-changelog
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: txl
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: txl_cell
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: txl_console
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: txl_editors
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: txl_file_browser
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: txl_image_viewer
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: afeng-py-tools
+[2024-05-26 21:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: txl_jpterm
+[2024-05-26 21:23:41] INFO root fetch - processPackages [antsibull-changelog]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [jpterm]: New version: [0.2.12] Old Version: [0.2.11]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_editors]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_image_viewer]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_console]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_file_browser]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_jpterm]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_cell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:41] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [antsibull-changelog]: Downloading https://files.pythonhosted.org/packages/14/fe/950a5650dd6b3bf2b791ebb7b2c96d5c227149d65910436c7cf0b1bc5a5d/antsibull-changelog-0.8.1.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_console]: Downloading https://files.pythonhosted.org/packages/f4/42/7a95ca0192d1ec3868e59617ebf54cb7ccdb489828b0ee6e364ee576a2de/txl_console-0.2.8.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [jpterm]: Downloading https://files.pythonhosted.org/packages/f6/5a/c91420cab8c72a4c2e82712ff57e52c1eb808ba534eeca50d2472b2ab112/jpterm-0.2.11.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl]: Downloading https://files.pythonhosted.org/packages/f1/12/16ac9bb4a0cdfd8cf623088516a989ac7254a6b2013a8072848fd693925a/txl-0.2.8.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_editors]: Downloading https://files.pythonhosted.org/packages/d6/0a/4f3e8b7ba56fa1a727dc406a6d5acebdeff62b67cb45595397fcf68e621d/txl_editors-0.2.8.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_cell]: Downloading https://files.pythonhosted.org/packages/d4/fd/3723309339ae4295a761c7f42b489c1c52c398ed4c75a577aaa60fccc8e7/txl_cell-0.2.8.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_file_browser]: Downloading https://files.pythonhosted.org/packages/18/ef/2baa4a5c27fb48f483e60098d00b1f4eb651acc5b6213d53b049074b77af/txl_file_browser-0.2.8.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_jpterm]: Downloading https://files.pythonhosted.org/packages/58/ee/a702db45f38cacaa86a69ad50af955c4bf921ed53412c5cd44cce251812a/txl_jpterm-0.2.8.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_image_viewer]: Downloading https://files.pythonhosted.org/packages/90/c7/b6d46162475b634b93ffc5f606bc47867db16b1d6bf169e04bb95ccdc164/txl_image_viewer-0.2.8.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [antsibull-changelog]: Downloading https://files.pythonhosted.org/packages/1e/8d/da15c46573d12fe5e38a28c3a435c3e91ea977745013b67e6b6c7943c897/antsibull-changelog-0.9.0.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_console]: Downloading https://files.pythonhosted.org/packages/ee/c1/f09dbcb17f3f80bea5b6d4cfedd517647667417cb154015503d676b3a868/txl_console-0.2.9.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-05-26 21:23:41] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240526/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl]: Downloading https://files.pythonhosted.org/packages/d6/5a/4d19110d64120a195e78bafb33b8fc7c05f05235a37705bcb07ece183fd7/txl-0.2.9.tar.gz
+[2024-05-26 21:23:41] INFO root fetch - processPackages [txl_cell]: Downloading https://files.pythonhosted.org/packages/c1/e3/f91451a7fa10a94368b56536f9b19059fb9efc2ba38415fbd0c4e48d5cda/txl_cell-0.2.9.tar.gz
+[2024-05-26 21:23:42] INFO root fetch - processPackages [antsibull-changelog]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [antsibull-changelog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antsibull-changelog-0.8.1.tar.gz tmp/antsibull-changelog-0.9.0.tar.gz --markdown 20240526/a/antsibull-changelog/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_file_browser]: Downloading https://files.pythonhosted.org/packages/b5/14/38f4e04f74e7d452b6aff7092d0d232e5defc34f18e021b004198fe9193f/txl_file_browser-0.2.9.tar.gz
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_console]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_console-0.2.8.tar.gz tmp/txl_console-0.2.9.tar.gz --markdown 20240526/t/txl_console/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl-0.2.8.tar.gz tmp/txl-0.2.9.tar.gz --markdown 20240526/t/txl/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_jpterm]: Downloading https://files.pythonhosted.org/packages/a4/06/cc69e18ada60dc21b5925af20d19dc5813928b0182f69778989a0d9c8565/txl_jpterm-0.2.9.tar.gz
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_cell]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_cell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_cell-0.2.8.tar.gz tmp/txl_cell-0.2.9.tar.gz --markdown 20240526/t/txl_cell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_image_viewer]: Downloading https://files.pythonhosted.org/packages/33/7c/cf56e6202a9de599996dc8c1c87717e0c592d42e11345f5700337ffcd049/txl_image_viewer-0.2.9.tar.gz
+[2024-05-26 21:23:42] INFO root fetch - processPackages [jpterm]: Downloading https://files.pythonhosted.org/packages/b3/b9/b851a0e37c0a262c62c87842ea87bbe9275c4d45f0936924ef78c7a08169/jpterm-0.2.12.tar.gz
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_jpterm]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_jpterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_jpterm-0.2.8.tar.gz tmp/txl_jpterm-0.2.9.tar.gz --markdown 20240526/t/txl_jpterm/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_editors]: Downloading https://files.pythonhosted.org/packages/98/15/083ce24ae001bb7bbd42c18ac6d27824558506261ac383dcc858470a3208/txl_editors-0.2.9.tar.gz
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_image_viewer]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_image_viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_image_viewer-0.2.8.tar.gz tmp/txl_image_viewer-0.2.9.tar.gz --markdown 20240526/t/txl_image_viewer/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [jpterm]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [jpterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jpterm-0.2.11.tar.gz tmp/jpterm-0.2.12.tar.gz --markdown 20240526/j/jpterm/0.2.11-0.2.12/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_file_browser]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_file_browser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_file_browser-0.2.8.tar.gz tmp/txl_file_browser-0.2.9.tar.gz --markdown 20240526/t/txl_file_browser/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_editors]: executing diffoscope
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_editors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_editors-0.2.8.tar.gz tmp/txl_editors-0.2.9.tar.gz --markdown 20240526/t/txl_editors/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_console]: Remove: archive file [/home/abi/fetcher/tmp/txl_console-0.2.8.tar.gz]
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_console]: Remove: archive file [/home/abi/fetcher/tmp/txl_console-0.2.9.tar.gz]
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_console]: Start processing: txl_kernel
+[2024-05-26 21:23:42] INFO root fetch - main [MainThread]: End processing [txl_console]: success
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl]: Remove: archive file [/home/abi/fetcher/tmp/txl-0.2.8.tar.gz]
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl]: Remove: archive file [/home/abi/fetcher/tmp/txl-0.2.9.tar.gz]
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl]: Start processing: txl_local_contents
+[2024-05-26 21:23:42] INFO root fetch - main [MainThread]: End processing [txl]: success
+[2024-05-26 21:23:42] INFO root fetch - processPackages [txl_kernel]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_cell]: Remove: archive file [/home/abi/fetcher/tmp/txl_cell-0.2.8.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_cell]: Remove: archive file [/home/abi/fetcher/tmp/txl_cell-0.2.9.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_cell]: Start processing: txl_local_terminals
+[2024-05-26 21:23:43] INFO root fetch - main [MainThread]: End processing [txl_cell]: success
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_local_contents]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [antsibull-changelog]: Remove: archive file [/home/abi/fetcher/tmp/antsibull-changelog-0.8.1.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [antsibull-changelog]: Remove: archive file [/home/abi/fetcher/tmp/antsibull-changelog-0.9.0.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [antsibull-changelog]: Start processing: khoj-assistant
+[2024-05-26 21:23:43] INFO root fetch - main [MainThread]: End processing [antsibull-changelog]: success
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_local_terminals]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_jpterm]: Remove: archive file [/home/abi/fetcher/tmp/txl_jpterm-0.2.8.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_jpterm]: Remove: archive file [/home/abi/fetcher/tmp/txl_jpterm-0.2.9.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_jpterm]: Start processing: txl_local_kernels
+[2024-05-26 21:23:43] INFO root fetch - main [MainThread]: End processing [txl_jpterm]: success
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_kernel]: Downloading https://files.pythonhosted.org/packages/e6/09/48806448c673913f04c8ad0138c3460b74239137bcb43ddac25e94dfb56a/txl_kernel-0.2.8.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_image_viewer]: Remove: archive file [/home/abi/fetcher/tmp/txl_image_viewer-0.2.8.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_image_viewer]: Remove: archive file [/home/abi/fetcher/tmp/txl_image_viewer-0.2.9.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_image_viewer]: Start processing: txl_notebook_editor
+[2024-05-26 21:23:43] INFO root fetch - main [MainThread]: End processing [txl_image_viewer]: success
+[2024-05-26 21:23:43] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_local_contents]: Downloading https://files.pythonhosted.org/packages/e0/b3/bc889b648fe108baeff4c92a7379c2225715fa827419ee33ca2a99b96cd9/txl_local_contents-0.2.8.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_file_browser]: Remove: archive file [/home/abi/fetcher/tmp/txl_file_browser-0.2.8.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_file_browser]: Remove: archive file [/home/abi/fetcher/tmp/txl_file_browser-0.2.9.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_file_browser]: Start processing: txl_remote_contents
+[2024-05-26 21:23:43] INFO root fetch - main [MainThread]: End processing [txl_file_browser]: success
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_local_kernels]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_notebook_editor]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_local_terminals]: Downloading https://files.pythonhosted.org/packages/56/0c/3f00a5b6727e1cbe1e63fc06a94f6422748b41ca94cf447501c93a895502/txl_local_terminals-0.2.8.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_editors]: Remove: archive file [/home/abi/fetcher/tmp/txl_editors-0.2.8.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_editors]: Remove: archive file [/home/abi/fetcher/tmp/txl_editors-0.2.9.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_editors]: Start processing: zarr
+[2024-05-26 21:23:43] INFO root fetch - main [MainThread]: End processing [txl_editors]: success
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_remote_contents]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_local_kernels]: Downloading https://files.pythonhosted.org/packages/ae/07/a7897bdf9cf053b94ba34e4d30acbea36ad7fb58e55c1f521c36afceef40/txl_local_kernels-0.2.8.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [zarr]: New version: [2.9.5] Old Version: [2.9.4]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_notebook_editor]: Downloading https://files.pythonhosted.org/packages/27/8f/6dc082d968e4f743d8ab7be96cbf541373405e5bd18636ef3c0f92465dba/txl_notebook_editor-0.2.8.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [afeng-py-tools]: Start processing: yeref
+[2024-05-26 21:23:43] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-05-26 21:23:43] INFO root fetch - processPackages [jpterm]: Remove: archive file [/home/abi/fetcher/tmp/jpterm-0.2.11.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [jpterm]: Remove: archive file [/home/abi/fetcher/tmp/jpterm-0.2.12.tar.gz]
+[2024-05-26 21:23:43] INFO root fetch - main [MainThread]: End processing [jpterm]: success
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_kernel]: Downloading https://files.pythonhosted.org/packages/f9/ab/efdc4598b12c97d95801cc42ee59be79d18d7bccd5d0af1c43f2744d9a7a/txl_kernel-0.2.9.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_remote_contents]: Downloading https://files.pythonhosted.org/packages/f9/3f/9213941adfb1cfee06450acc3df447aa8df3a9e2f3355ffc78973b596dc4/txl_remote_contents-0.2.8.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_local_contents]: Downloading https://files.pythonhosted.org/packages/93/54/9a98aa745207dbc44ee548c34abc60775b69d5c1864569a5007c93d2724c/txl_local_contents-0.2.9.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [zarr]: Downloading https://files.pythonhosted.org/packages/e1/2a/5ff78005e06a0ba3648013ba012d73479cc1a6924bf1ac2ad1a27814f15f/zarr-2.9.4.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [txl_local_terminals]: Downloading https://files.pythonhosted.org/packages/8c/c8/d504b97eb6bbca15e682747a2751f4c268547bc8e2189060af3e2a567f08/txl_local_terminals-0.2.9.tar.gz
+[2024-05-26 21:23:43] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_kernel]: executing diffoscope
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_kernel-0.2.8.tar.gz tmp/txl_kernel-0.2.9.tar.gz --markdown 20240526/t/txl_kernel/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_kernels]: Downloading https://files.pythonhosted.org/packages/d9/4b/d97fb55373aa0c0da99714826b0d7f8392197aa2d76480dfdc4eaf576d6d/txl_local_kernels-0.2.9.tar.gz
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_contents]: executing diffoscope
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_contents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_local_contents-0.2.8.tar.gz tmp/txl_local_contents-0.2.9.tar.gz --markdown 20240526/t/txl_local_contents/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:44] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-05-26 21:23:44] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240526/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_terminals]: executing diffoscope
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_notebook_editor]: Downloading https://files.pythonhosted.org/packages/04/3d/b7345185cec5879284a96c17fcc82e752d41e7bbe13b4fc2530313f7c2ab/txl_notebook_editor-0.2.9.tar.gz
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_terminals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_local_terminals-0.2.8.tar.gz tmp/txl_local_terminals-0.2.9.tar.gz --markdown 20240526/t/txl_local_terminals/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:44] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_remote_contents]: Downloading https://files.pythonhosted.org/packages/c1/d6/423334ba9a8840659c187454303767bf5476599880c7623ab00b011566c9/txl_remote_contents-0.2.9.tar.gz
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_kernels]: executing diffoscope
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_kernels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_local_kernels-0.2.8.tar.gz tmp/txl_local_kernels-0.2.9.tar.gz --markdown 20240526/t/txl_local_kernels/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:44] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 21:23:44] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_notebook_editor]: executing diffoscope
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_notebook_editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_notebook_editor-0.2.8.tar.gz tmp/txl_notebook_editor-0.2.9.tar.gz --markdown 20240526/t/txl_notebook_editor/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_remote_contents]: executing diffoscope
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_remote_contents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txl_remote_contents-0.2.8.tar.gz tmp/txl_remote_contents-0.2.9.tar.gz --markdown 20240526/t/txl_remote_contents/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_kernel]: Remove: archive file [/home/abi/fetcher/tmp/txl_kernel-0.2.8.tar.gz]
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_kernel]: Remove: archive file [/home/abi/fetcher/tmp/txl_kernel-0.2.9.tar.gz]
+[2024-05-26 21:23:44] INFO root fetch - main [MainThread]: End processing [txl_kernel]: success
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_contents]: Remove: archive file [/home/abi/fetcher/tmp/txl_local_contents-0.2.8.tar.gz]
+[2024-05-26 21:23:44] INFO root fetch - processPackages [txl_local_contents]: Remove: archive file [/home/abi/fetcher/tmp/txl_local_contents-0.2.9.tar.gz]
+[2024-05-26 21:23:44] INFO root fetch - main [MainThread]: End processing [txl_local_contents]: success
+[2024-05-26 21:23:45] INFO root fetch - processPackages [txl_local_terminals]: Remove: archive file [/home/abi/fetcher/tmp/txl_local_terminals-0.2.8.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - processPackages [txl_local_terminals]: Remove: archive file [/home/abi/fetcher/tmp/txl_local_terminals-0.2.9.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - main [MainThread]: End processing [txl_local_terminals]: success
+[2024-05-26 21:23:45] INFO root fetch - processPackages [txl_remote_contents]: Remove: archive file [/home/abi/fetcher/tmp/txl_remote_contents-0.2.8.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - processPackages [txl_remote_contents]: Remove: archive file [/home/abi/fetcher/tmp/txl_remote_contents-0.2.9.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - processPackages [txl_notebook_editor]: Remove: archive file [/home/abi/fetcher/tmp/txl_notebook_editor-0.2.8.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - main [MainThread]: End processing [txl_remote_contents]: success
+[2024-05-26 21:23:45] INFO root fetch - processPackages [txl_notebook_editor]: Remove: archive file [/home/abi/fetcher/tmp/txl_notebook_editor-0.2.9.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - main [MainThread]: End processing [txl_notebook_editor]: success
+[2024-05-26 21:23:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 21:23:45] INFO root fetch - processPackages [txl_local_kernels]: Remove: archive file [/home/abi/fetcher/tmp/txl_local_kernels-0.2.8.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - processPackages [txl_local_kernels]: Remove: archive file [/home/abi/fetcher/tmp/txl_local_kernels-0.2.9.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - main [MainThread]: End processing [txl_local_kernels]: success
+[2024-05-26 21:23:45] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-05-26 21:23:45] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-05-26 21:23:46] INFO root fetch - processPackages [zarr]: Downloading https://files.pythonhosted.org/packages/d6/5c/79d0837d512a3f74c1a04ef9cd036fcf7872d3fa698aad3d68416a35c444/zarr-2.9.5.tar.gz
+[2024-05-26 21:23:47] INFO root fetch - processPackages [zarr]: executing diffoscope
+[2024-05-26 21:23:47] INFO root fetch - processPackages [zarr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zarr-2.9.4.tar.gz tmp/zarr-2.9.5.tar.gz --markdown 20240526/z/zarr/2.9.4-2.9.5/README.md --exclude *.pyd
+[2024-05-26 21:24:04] INFO root fetch - processPackages [zarr]: Remove: archive file [/home/abi/fetcher/tmp/zarr-2.9.4.tar.gz]
+[2024-05-26 21:24:04] INFO root fetch - processPackages [zarr]: Remove: archive file [/home/abi/fetcher/tmp/zarr-2.9.5.tar.gz]
+[2024-05-26 21:24:04] INFO root fetch - main [MainThread]: End processing [zarr]: success
+[2024-05-26 21:24:04] INFO root fetch - main [MainThread]: Store serial: [23386241]
