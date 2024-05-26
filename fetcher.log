@@ -4935,3 +4935,43 @@
 [2024-05-26 08:52:59] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b5.tar.gz]
 [2024-05-26 08:52:59] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-26 08:52:59] INFO root fetch - main [MainThread]: Store serial: [23380426]
+[2024-05-26 08:55:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380426]
+[2024-05-26 08:55:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 08:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: givemehelp
+[2024-05-26 08:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: givemehelp
+[2024-05-26 08:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gaussprot
+[2024-05-26 08:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ioligo
+[2024-05-26 08:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-nightly
+[2024-05-26 08:55:09] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.35.1.dev20240524] Old Version: [1.35.1.dev20240523]
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: New version: [0.15] Old Version: [0.14]
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: New version: [0.15] Old Version: [0.14]
+[2024-05-26 08:55:09] WARNING root fetch - processPackages [ioligo]: Skipping, unable to determine old version
+[2024-05-26 08:55:09] INFO root fetch - main [MainThread]: End processing [ioligo] error
+[2024-05-26 08:55:09] INFO root fetch - processPackages [gaussprot]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 08:55:09] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/e5/60/735d956611d5e3859ab71fc612f217cc25b9fb42d6e57e97c981291b8cc0/streamlit_nightly-1.35.1.dev20240523.tar.gz
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: Downloading https://files.pythonhosted.org/packages/0a/1b/051b32f3cec917c65a5b4bea6fe11b72839e6140b1afd8ba2513ab933b28/givemehelp-0.14.tar.gz
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: Downloading https://files.pythonhosted.org/packages/0a/1b/051b32f3cec917c65a5b4bea6fe11b72839e6140b1afd8ba2513ab933b28/givemehelp-0.14.tar.gz
+[2024-05-26 08:55:09] INFO root fetch - processPackages [gaussprot]: Downloading https://files.pythonhosted.org/packages/04/ae/04ef3a20cce8c2aebff39174ae8f287903b52525108e049b67a6fd2d5ece/gaussprot-0.0.1.tar.gz
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: Downloading https://files.pythonhosted.org/packages/bb/ac/0c3e41b30fb3809bfdd079f3d130bf5a7f72c5a1006b6fb26ee5b0084c84/givemehelp-0.15.tar.gz
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: Downloading https://files.pythonhosted.org/packages/bb/ac/0c3e41b30fb3809bfdd079f3d130bf5a7f72c5a1006b6fb26ee5b0084c84/givemehelp-0.15.tar.gz
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: executing diffoscope
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/givemehelp-0.14.tar.gz tmp/givemehelp-0.15.tar.gz --markdown 20240526/g/givemehelp/0.14-0.15/README.md --exclude *.pyd
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: executing diffoscope
+[2024-05-26 08:55:09] INFO root fetch - processPackages [givemehelp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/givemehelp-0.14.tar.gz tmp/givemehelp-0.15.tar.gz --markdown 20240526/g/givemehelp/0.14-0.15/README.md --exclude *.pyd
+[2024-05-26 08:55:09] INFO root fetch - processPackages [gaussprot]: Downloading https://files.pythonhosted.org/packages/48/fd/09f26dab198d16481796638d781711332c72159c234c3f01f2d7bad7697b/gaussprot-0.0.2.tar.gz
+[2024-05-26 08:55:09] INFO root fetch - processPackages [gaussprot]: executing diffoscope
+[2024-05-26 08:55:09] INFO root fetch - processPackages [gaussprot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaussprot-0.0.1.tar.gz tmp/gaussprot-0.0.2.tar.gz --markdown 20240526/g/gaussprot/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 08:55:09] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/34/ae/949335f48db02b39c7d0956c1bc6bb2bd75107e04edf52f9d00cd1e1e1b1/streamlit_nightly-1.35.1.dev20240524.tar.gz
+[2024-05-26 08:55:10] INFO root fetch - processPackages [givemehelp]: Remove: archive file [/home/abi/fetcher/tmp/givemehelp-0.14.tar.gz]
+[2024-05-26 08:55:10] INFO root fetch - processPackages [givemehelp]: Remove: archive file [/home/abi/fetcher/tmp/givemehelp-0.15.tar.gz]
+[2024-05-26 08:55:10] INFO root fetch - main [MainThread]: End processing [givemehelp]: success
+[2024-05-26 08:55:10] INFO root fetch - main [MainThread]: End processing [givemehelp]: success
+[2024-05-26 08:55:10] INFO root fetch - processPackages [gaussprot]: Remove: archive file [/home/abi/fetcher/tmp/gaussprot-0.0.1.tar.gz]
+[2024-05-26 08:55:10] INFO root fetch - processPackages [gaussprot]: Remove: archive file [/home/abi/fetcher/tmp/gaussprot-0.0.2.tar.gz]
+[2024-05-26 08:55:10] INFO root fetch - main [MainThread]: End processing [gaussprot]: success
+[2024-05-26 08:55:11] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-05-26 08:55:11] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_nightly-1.35.1.dev20240523.tar.gz tmp/streamlit_nightly-1.35.1.dev20240524.tar.gz --markdown 20240526/s/streamlit-nightly/1.35.1.dev20240523-1.35.1.dev20240524/README.md --exclude *.pyd
+[2024-05-26 08:55:39] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240523.tar.gz]
+[2024-05-26 08:55:39] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240524.tar.gz]
+[2024-05-26 08:55:39] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-05-26 08:55:39] INFO root fetch - main [MainThread]: Store serial: [23380444]
