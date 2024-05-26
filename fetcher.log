@@ -5035,3 +5035,63 @@
 [2024-05-26 09:00:00] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.2.0.tar.gz]
 [2024-05-26 09:00:00] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
 [2024-05-26 09:00:00] INFO root fetch - main [MainThread]: Store serial: [23380457]
+[2024-05-26 09:02:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380457]
+[2024-05-26 09:02:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 09:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xingpyc
+[2024-05-26 09:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lightrun
+[2024-05-26 09:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: better-web3
+[2024-05-26 09:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asgi-user-agents
+[2024-05-26 09:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scatcluster
+[2024-05-26 09:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: seqio-nightly
+[2024-05-26 09:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: AsadStack
+[2024-05-26 09:02:12] INFO root fetch - processPackages [xingpyc]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-26 09:02:12] INFO root fetch - processPackages [better-web3]: New version: [4.0.0b8] Old Version: [4.0.0b7]
+[2024-05-26 09:02:12] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 09:02:12] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-05-26 09:02:12] INFO root fetch - processPackages [lightrun]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-26 09:02:12] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/05/96/d00289a025b289d688e9fc0d38ab89995811538680fe8b41c1aeb678154e/better_web3-4.0.0b7.tar.gz
+[2024-05-26 09:02:12] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/4a/23/0baa0536e5752bfa2c738567e0e1eb0523796010b8df279cb7fba1298f62/xingpyc-0.1.9.tar.gz
+[2024-05-26 09:02:12] INFO root fetch - processPackages [AsadStack]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 09:02:12] WARNING root fetch - processPackages [asgi-user-agents]: Skipping, unable to determine old version
+[2024-05-26 09:02:12] INFO root fetch - main [MainThread]: End processing [asgi-user-agents] error
+[2024-05-26 09:02:12] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-05-26 09:02:12] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-05-26 09:02:12] INFO root fetch - processPackages [lightrun]: Downloading https://files.pythonhosted.org/packages/1c/fa/1f2db5b7b74d95d09b9552bfc814cd973a3977912207c6286d62da01940a/lightrun-1.8.0-cp39-cp39-win_amd64.whl
+[2024-05-26 09:02:12] INFO root fetch - processPackages [AsadStack]: Downloading https://files.pythonhosted.org/packages/d4/f2/b7eec2851b33fa9892e67b42293cd06857e71cb05438681d9b7cf0305b75/AsadStack-0.1.0.tar.gz
+[2024-05-26 09:02:12] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/69/62/b6a5bf9b2bb2d264761d00aa23b01073ee6b0e635fc74a150cf0b8c91cb8/xingpyc-0.2.0.tar.gz
+[2024-05-26 09:02:12] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 09:02:12] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/3b/2a/ee1954845518e5af352311a3d33ec3dc359dafb48cc00dda9c24a5ce9712/better_web3-4.0.0b8.tar.gz
+[2024-05-26 09:02:13] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-05-26 09:02:13] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 09:02:13] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 09:02:13] INFO root fetch - processPackages [better-web3]: executing diffoscope
+[2024-05-26 09:02:13] INFO root fetch - processPackages [better-web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_web3-4.0.0b7.tar.gz tmp/better_web3-4.0.0b8.tar.gz --markdown 20240526/b/better-web3/4.0.0b7-4.0.0b8/README.md --exclude *.pyd
+[2024-05-26 09:02:13] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-26 09:02:13] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.9.tar.gz tmp/xingpyc-0.2.0.tar.gz --markdown 20240526/x/xingpyc/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-26 09:02:13] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-05-26 09:02:13] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240526/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/README.md --exclude *.pyd
+[2024-05-26 09:02:13] INFO root fetch - processPackages [AsadStack]: Downloading https://files.pythonhosted.org/packages/06/28/4898a7161019877761039b61ad9cf7f8cb93235767f62d2f78456ce2b922/AsadStack-0.1.1.tar.gz
+[2024-05-26 09:02:13] INFO root fetch - processPackages [lightrun]: Downloading https://files.pythonhosted.org/packages/f3/f9/5b9aa0522b79061906e42d2d13697949e70a85f928f9ace8975f96b3785c/lightrun-1.9.0-cp39-cp39-win_amd64.whl
+[2024-05-26 09:02:13] INFO root fetch - processPackages [AsadStack]: executing diffoscope
+[2024-05-26 09:02:13] INFO root fetch - processPackages [AsadStack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AsadStack-0.1.0.tar.gz tmp/AsadStack-0.1.1.tar.gz --markdown 20240526/A/AsadStack/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 09:02:13] INFO root fetch - processPackages [lightrun]: executing diffoscope
+[2024-05-26 09:02:13] INFO root fetch - processPackages [lightrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightrun-1.8.0-cp39-cp39-win_amd64.whl.zip tmp/lightrun-1.9.0-cp39-cp39-win_amd64.whl.zip --markdown 20240526/l/lightrun/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-26 09:02:13] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-05-26 09:02:13] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 09:02:13] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 09:02:13] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.9.tar.gz]
+[2024-05-26 09:02:13] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.2.0.tar.gz]
+[2024-05-26 09:02:13] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-26 09:02:13] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b7.tar.gz]
+[2024-05-26 09:02:13] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b8.tar.gz]
+[2024-05-26 09:02:13] INFO root fetch - main [MainThread]: End processing [better-web3]: success
+[2024-05-26 09:02:13] INFO root fetch - processPackages [AsadStack]: Remove: archive file [/home/abi/fetcher/tmp/AsadStack-0.1.0.tar.gz]
+[2024-05-26 09:02:13] INFO root fetch - processPackages [AsadStack]: Remove: archive file [/home/abi/fetcher/tmp/AsadStack-0.1.1.tar.gz]
+[2024-05-26 09:02:13] INFO root fetch - main [MainThread]: End processing [AsadStack]: success
+[2024-05-26 09:02:14] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-05-26 09:02:14] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-05-26 09:02:14] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-05-26 09:02:18] INFO root fetch - processPackages [lightrun]: Remove: archive file [/home/abi/fetcher/tmp/lightrun-1.8.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 09:02:18] INFO root fetch - processPackages [lightrun]: Remove: archive file [/home/abi/fetcher/tmp/lightrun-1.9.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-26 09:02:18] INFO root fetch - main [MainThread]: End processing [lightrun]: success
+[2024-05-26 09:02:18] INFO root fetch - main [MainThread]: Store serial: [23380498]
