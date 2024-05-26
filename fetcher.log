@@ -6169,3 +6169,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:25:38] INFO root fetch - processPackages [CryptoParser]: Remove: archive file [/home/abi/fetcher/tmp/CryptoParser-0.9.1.tar.gz]
 [2024-05-26 10:25:38] INFO root fetch - main [MainThread]: End processing [CryptoParser]: success
 [2024-05-26 10:25:38] INFO root fetch - main [MainThread]: Store serial: [23380974]
+[2024-05-26 10:27:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380974]
+[2024-05-26 10:27:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inoutlists
+[2024-05-26 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-profanityfilter
+[2024-05-26 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-qrcodegenerator
+[2024-05-26 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-randomfacts
+[2024-05-26 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-l10n-ro-account-edi-ubl
+[2024-05-26 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apiverve-randomdatagenerator
+[2024-05-26 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: extrautilities
+[2024-05-26 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apiverve-randomidentity
+[2024-05-26 10:27:50] WARNING root fetch - processPackages [inoutlists]: Skipping, unable to determine old version
+[2024-05-26 10:27:50] INFO root fetch - main [MainThread]: End processing [inoutlists] error
+[2024-05-26 10:27:50] WARNING root fetch - processPackages [apiverve-randomfacts]: Skipping, unable to determine old version
+[2024-05-26 10:27:50] INFO root fetch - main [MainThread]: End processing [apiverve-randomfacts] error
+[2024-05-26 10:27:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: New version: [16.0.1.50.0.1] Old Version: [16.0.1.50.0]
+[2024-05-26 10:27:50] WARNING root fetch - processPackages [apiverve-qrcodegenerator]: Skipping, unable to determine old version
+[2024-05-26 10:27:50] INFO root fetch - main [MainThread]: End processing [apiverve-qrcodegenerator] error
+[2024-05-26 10:27:50] WARNING root fetch - processPackages [apiverve-profanityfilter]: Skipping, unable to determine old version
+[2024-05-26 10:27:50] INFO root fetch - main [MainThread]: End processing [apiverve-profanityfilter] error
+[2024-05-26 10:27:50] WARNING root fetch - processPackages [apiverve-randomdatagenerator]: Skipping, unable to determine old version
+[2024-05-26 10:27:50] INFO root fetch - main [MainThread]: End processing [apiverve-randomdatagenerator] error
+[2024-05-26 10:27:50] INFO root fetch - processPackages [extrautilities]: New version: [1.3] Old Version: [1.2]
+[2024-05-26 10:27:50] WARNING root fetch - processPackages [apiverve-randomidentity]: Skipping, unable to determine old version
+[2024-05-26 10:27:50] INFO root fetch - main [MainThread]: End processing [apiverve-randomidentity] error
+[2024-05-26 10:27:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/ee/b9/19f6b1720b5d9b6e4cb216afbccfe7ee38ffe9dff0d779433e48f36924a0/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0-py3-none-any.whl
+[2024-05-26 10:27:50] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/3a/d7/ec08a45561fe26c4127efb814f6ebe7365568340509d222e6e5eb4f26536/extrautilities-1.2.tar.gz
+[2024-05-26 10:27:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/dd/cc/a1dd2feafe19058b8f9fd9ebd7131dca063828d18678d47d3a700e95e12a/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0.1-py3-none-any.whl
+[2024-05-26 10:27:50] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/86/b8/9a781ae0cd50abe57060f42f347062a5b190c626056990e67cd93ca4fe41/extrautilities-1.3.tar.gz
+[2024-05-26 10:27:50] INFO root fetch - processPackages [extrautilities]: executing diffoscope
+[2024-05-26 10:27:50] INFO root fetch - processPackages [extrautilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extrautilities-1.2.tar.gz tmp/extrautilities-1.3.tar.gz --markdown 20240526/e/extrautilities/1.2-1.3/README.md --exclude *.pyd
+[2024-05-26 10:27:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: executing diffoscope
+[2024-05-26 10:27:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0.1-py3-none-any.whl.zip --markdown 20240526/o/odoo-addon-l10n-ro-account-edi-ubl/16.0.1.50.0-16.0.1.50.0.1/README.md --exclude *.pyd
+[2024-05-26 10:27:51] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.2.tar.gz]
+[2024-05-26 10:27:51] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.3.tar.gz]
+[2024-05-26 10:27:51] INFO root fetch - main [MainThread]: End processing [extrautilities]: success
+[2024-05-26 10:27:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0-py3-none-any.whl.zip]
+[2024-05-26 10:27:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0.1-py3-none-any.whl.zip]
+[2024-05-26 10:27:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-edi-ubl]: success
+[2024-05-26 10:27:51] INFO root fetch - main [MainThread]: Store serial: [23381004]
