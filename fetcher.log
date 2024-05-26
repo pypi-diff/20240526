@@ -4201,3 +4201,15 @@
 [2024-05-26 07:37:31] WARNING root fetch - processPackages [cx-Freeze]: Skipping package: exceeds size limit 21404115>=10485760
 [2024-05-26 07:37:31] INFO root fetch - main [MainThread]: End processing [cx-Freeze] error
 [2024-05-26 07:37:31] INFO root fetch - main [MainThread]: Store serial: [23380048]
+[2024-05-26 07:39:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380048]
+[2024-05-26 07:39:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 07:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: readme-ation
+[2024-05-26 07:39:40] INFO root fetch - processPackages [readme-ation]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 07:39:40] INFO root fetch - processPackages [readme-ation]: Downloading https://files.pythonhosted.org/packages/6f/95/206531ff3133bc20f70bb64b569ca86d7cb67ac9a13885608dcb08621cbf/readme_ation-0.1.1.tar.gz
+[2024-05-26 07:39:41] INFO root fetch - processPackages [readme-ation]: Downloading https://files.pythonhosted.org/packages/72/44/dd6ef5e3c133728e27190047cddb6edf12b7767fbcc5fdea27e8113dde75/readme-ation-0.1.2.tar.gz
+[2024-05-26 07:39:41] INFO root fetch - processPackages [readme-ation]: executing diffoscope
+[2024-05-26 07:39:41] INFO root fetch - processPackages [readme-ation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/readme_ation-0.1.1.tar.gz tmp/readme-ation-0.1.2.tar.gz --markdown 20240526/r/readme-ation/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 07:39:41] INFO root fetch - processPackages [readme-ation]: Remove: archive file [/home/abi/fetcher/tmp/readme_ation-0.1.1.tar.gz]
+[2024-05-26 07:39:41] INFO root fetch - processPackages [readme-ation]: Remove: archive file [/home/abi/fetcher/tmp/readme-ation-0.1.2.tar.gz]
+[2024-05-26 07:39:41] INFO root fetch - main [MainThread]: End processing [readme-ation]: success
+[2024-05-26 07:39:41] INFO root fetch - main [MainThread]: Store serial: [23380077]
