@@ -2810,3 +2810,24 @@
 [2024-05-26 05:12:16] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.2.tar.gz]
 [2024-05-26 05:12:16] INFO root fetch - main [MainThread]: End processing [pipackager]: success
 [2024-05-26 05:12:16] INFO root fetch - main [MainThread]: Store serial: [23379404]
+[2024-05-26 05:14:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379404]
+[2024-05-26 05:14:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 05:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipackager
+[2024-05-26 05:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qspace
+[2024-05-26 05:14:25] INFO root fetch - processPackages [qspace]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 05:14:25] INFO root fetch - processPackages [pipackager]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-26 05:14:25] INFO root fetch - processPackages [qspace]: Downloading https://files.pythonhosted.org/packages/f0/28/97d01b3d57242ac91725f5a236a2fcb25550c6db6cce84badacd1f900a48/qspace-0.0.1.tar.gz
+[2024-05-26 05:14:25] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/1d/ec/a8f84938aa3a78ec101670b73870c08b4d211b25853e8e07c4b41751d51b/pipackager-0.4.3.tar.gz
+[2024-05-26 05:14:25] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/52/68/fa38c1877cc761208df74ec612d2921f2109c600ef2493afeffcad65c9ca/pipackager-0.4.4.tar.gz
+[2024-05-26 05:14:25] INFO root fetch - processPackages [qspace]: Downloading https://files.pythonhosted.org/packages/e2/5b/d2f39cf3251f831a87173bab403ece62d2dcd6b229a3f5775ac7ca33eb76/qspace-0.0.2.tar.gz
+[2024-05-26 05:14:25] INFO root fetch - processPackages [qspace]: executing diffoscope
+[2024-05-26 05:14:25] INFO root fetch - processPackages [qspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qspace-0.0.1.tar.gz tmp/qspace-0.0.2.tar.gz --markdown 20240526/q/qspace/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 05:14:25] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-26 05:14:25] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.4.3.tar.gz tmp/pipackager-0.4.4.tar.gz --markdown 20240526/p/pipackager/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-26 05:14:26] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.3.tar.gz]
+[2024-05-26 05:14:26] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.4.4.tar.gz]
+[2024-05-26 05:14:26] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-26 05:14:26] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.1.tar.gz]
+[2024-05-26 05:14:26] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.2.tar.gz]
+[2024-05-26 05:14:26] INFO root fetch - main [MainThread]: End processing [qspace]: success
+[2024-05-26 05:14:26] INFO root fetch - main [MainThread]: Store serial: [23379410]
