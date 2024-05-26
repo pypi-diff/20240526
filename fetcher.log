@@ -13488,3 +13488,30 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:23:07] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
 [2024-05-26 17:23:07] INFO root fetch - main [MainThread]: End processing [absbox]: success
 [2024-05-26 17:23:07] INFO root fetch - main [MainThread]: Store serial: [23384265]
+[2024-05-26 17:25:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384265]
+[2024-05-26 17:25:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 17:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: infrastack
+[2024-05-26 17:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: financial-datasets
+[2024-05-26 17:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-location-local
+[2024-05-26 17:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: logging-configd
+[2024-05-26 17:25:16] INFO root fetch - processPackages [contact-location-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 17:25:16] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/2f/0c/a80370d5a9bb7d4535cdfd68c9e49af2fc39ef7974e7a123bd9fcc9ad854/contact-location-local-0.0.8.tar.gz
+[2024-05-26 17:25:16] WARNING root fetch - processPackages [logging-configd]: Skipping, unable to determine old version
+[2024-05-26 17:25:16] INFO root fetch - main [MainThread]: End processing [logging-configd] error
+[2024-05-26 17:25:16] INFO root fetch - processPackages [financial-datasets]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 17:25:16] WARNING root fetch - processPackages [infrastack]: Skipping, unable to determine old version
+[2024-05-26 17:25:16] INFO root fetch - main [MainThread]: End processing [infrastack] error
+[2024-05-26 17:25:17] INFO root fetch - processPackages [financial-datasets]: Downloading https://files.pythonhosted.org/packages/36/94/255abe9cb6d903e14abd37e03da6cf223d9808470f9dd5d79169b683cc32/financial_datasets-0.1.8.tar.gz
+[2024-05-26 17:25:17] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/17/5e/49b98779429d62238b93acafaaf4d268506159b2d1d0246a13b4e42b474d/contact-location-local-0.0.9.tar.gz
+[2024-05-26 17:25:17] INFO root fetch - processPackages [contact-location-local]: executing diffoscope
+[2024-05-26 17:25:17] INFO root fetch - processPackages [contact-location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-location-local-0.0.8.tar.gz tmp/contact-location-local-0.0.9.tar.gz --markdown 20240526/c/contact-location-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 17:25:17] INFO root fetch - processPackages [financial-datasets]: Downloading https://files.pythonhosted.org/packages/87/a1/22bd6c400ec0e79b048a16568be6b9aef6c214655800975327559d6f37fa/financial_datasets-0.1.9.tar.gz
+[2024-05-26 17:25:17] INFO root fetch - processPackages [financial-datasets]: executing diffoscope
+[2024-05-26 17:25:17] INFO root fetch - processPackages [financial-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/financial_datasets-0.1.8.tar.gz tmp/financial_datasets-0.1.9.tar.gz --markdown 20240526/f/financial-datasets/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 17:25:17] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.8.tar.gz]
+[2024-05-26 17:25:17] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.9.tar.gz]
+[2024-05-26 17:25:17] INFO root fetch - main [MainThread]: End processing [contact-location-local]: success
+[2024-05-26 17:25:18] INFO root fetch - processPackages [financial-datasets]: Remove: archive file [/home/abi/fetcher/tmp/financial_datasets-0.1.8.tar.gz]
+[2024-05-26 17:25:18] INFO root fetch - processPackages [financial-datasets]: Remove: archive file [/home/abi/fetcher/tmp/financial_datasets-0.1.9.tar.gz]
+[2024-05-26 17:25:18] INFO root fetch - main [MainThread]: End processing [financial-datasets]: success
+[2024-05-26 17:25:18] INFO root fetch - main [MainThread]: Store serial: [23384280]
