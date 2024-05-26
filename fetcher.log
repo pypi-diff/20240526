@@ -14926,3 +14926,27 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:50:12] INFO root fetch - processPackages [topologicpy]: Remove: archive file [/home/abi/fetcher/tmp/topologicpy-6.0.0-py3-none-any.whl.zip]
 [2024-05-26 18:50:12] INFO root fetch - main [MainThread]: End processing [topologicpy]: success
 [2024-05-26 18:50:12] INFO root fetch - main [MainThread]: Store serial: [23384906]
+[2024-05-26 18:52:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384906]
+[2024-05-26 18:52:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 18:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: z2m-log-parser
+[2024-05-26 18:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: comicon
+[2024-05-26 18:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openrouter-selector
+[2024-05-26 18:52:22] WARNING root fetch - processPackages [openrouter-selector]: Skipping, unable to determine old version
+[2024-05-26 18:52:22] INFO root fetch - main [MainThread]: End processing [openrouter-selector] error
+[2024-05-26 18:52:22] INFO root fetch - processPackages [z2m-log-parser]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-26 18:52:22] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/0e/8c/82aadba479a4faa70f3613ff2556d7539e72971e9ec6783ede1b0f11f7f5/z2m_log_parser-0.0.6.tar.gz
+[2024-05-26 18:52:22] INFO root fetch - processPackages [comicon]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-26 18:52:22] INFO root fetch - processPackages [comicon]: Downloading https://files.pythonhosted.org/packages/f7/53/6ad3940d6164f84abbb5c4f1cc3df77a9ac38d9a39ec107e193a638dd879/comicon-1.1.0.tar.gz
+[2024-05-26 18:52:22] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/33/3a/78dd6e42b1d4bcad7b129c6856c8adbab3298dce14efefa312bf4a6d917e/z2m_log_parser-0.0.7.tar.gz
+[2024-05-26 18:52:22] INFO root fetch - processPackages [z2m-log-parser]: executing diffoscope
+[2024-05-26 18:52:22] INFO root fetch - processPackages [z2m-log-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z2m_log_parser-0.0.6.tar.gz tmp/z2m_log_parser-0.0.7.tar.gz --markdown 20240526/z/z2m-log-parser/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-26 18:52:22] INFO root fetch - processPackages [comicon]: Downloading https://files.pythonhosted.org/packages/49/b8/6698a337d76de6947112effe1a9a119000e682901dd5759d03938ccb6b24/comicon-1.2.0.tar.gz
+[2024-05-26 18:52:22] INFO root fetch - processPackages [comicon]: executing diffoscope
+[2024-05-26 18:52:22] INFO root fetch - processPackages [comicon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comicon-1.1.0.tar.gz tmp/comicon-1.2.0.tar.gz --markdown 20240526/c/comicon/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-26 18:52:23] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.6.tar.gz]
+[2024-05-26 18:52:23] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.7.tar.gz]
+[2024-05-26 18:52:23] INFO root fetch - main [MainThread]: End processing [z2m-log-parser]: success
+[2024-05-26 18:52:23] INFO root fetch - processPackages [comicon]: Remove: archive file [/home/abi/fetcher/tmp/comicon-1.1.0.tar.gz]
+[2024-05-26 18:52:23] INFO root fetch - processPackages [comicon]: Remove: archive file [/home/abi/fetcher/tmp/comicon-1.2.0.tar.gz]
+[2024-05-26 18:52:23] INFO root fetch - main [MainThread]: End processing [comicon]: success
+[2024-05-26 18:52:23] INFO root fetch - main [MainThread]: Store serial: [23384915]
