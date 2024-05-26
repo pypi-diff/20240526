@@ -3525,3 +3525,24 @@
 [2024-05-26 06:28:02] INFO root fetch - processPackages [radprompter]: Remove: archive file [/home/abi/fetcher/tmp/radprompter-1.1.9.tar.gz]
 [2024-05-26 06:28:02] INFO root fetch - main [MainThread]: End processing [radprompter]: success
 [2024-05-26 06:28:02] INFO root fetch - main [MainThread]: Store serial: [23379665]
+[2024-05-26 06:30:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379665]
+[2024-05-26 06:30:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 06:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyper-shell
+[2024-05-26 06:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ext4
+[2024-05-26 06:30:10] INFO root fetch - processPackages [ext4]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-26 06:30:10] INFO root fetch - processPackages [ext4]: Downloading https://files.pythonhosted.org/packages/f2/e9/625c048676773aa9c7f0dbbc3e952c7bfdb89013dbeba3c0524179dc1e10/ext4-1.0.2.tar.gz
+[2024-05-26 06:30:10] INFO root fetch - processPackages [hyper-shell]: New version: [2.5.0] Old Version: [2.4.0]
+[2024-05-26 06:30:11] INFO root fetch - processPackages [hyper-shell]: Downloading https://files.pythonhosted.org/packages/cf/76/225150a72537a25a7d079998bd58191f8e5e329b3bfb5aa7986090b17a2d/hyper-shell-2.4.0.tar.gz
+[2024-05-26 06:30:11] INFO root fetch - processPackages [ext4]: Downloading https://files.pythonhosted.org/packages/4c/e6/bde4d3837cd2bf7e38ba350637ada0bbd84f35b160b1b47b1ba1d4fead80/ext4-1.0.3.tar.gz
+[2024-05-26 06:30:11] INFO root fetch - processPackages [ext4]: executing diffoscope
+[2024-05-26 06:30:11] INFO root fetch - processPackages [ext4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ext4-1.0.2.tar.gz tmp/ext4-1.0.3.tar.gz --markdown 20240526/e/ext4/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-26 06:30:11] INFO root fetch - processPackages [hyper-shell]: Downloading https://files.pythonhosted.org/packages/f9/d4/4b5c3059c901160358ede414e0510f8df07ce0d48091041b4217d76780b8/hyper_shell-2.5.0.tar.gz
+[2024-05-26 06:30:11] INFO root fetch - processPackages [hyper-shell]: executing diffoscope
+[2024-05-26 06:30:11] INFO root fetch - processPackages [hyper-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyper-shell-2.4.0.tar.gz tmp/hyper_shell-2.5.0.tar.gz --markdown 20240526/h/hyper-shell/2.4.0-2.5.0/README.md --exclude *.pyd
+[2024-05-26 06:30:11] INFO root fetch - processPackages [ext4]: Remove: archive file [/home/abi/fetcher/tmp/ext4-1.0.2.tar.gz]
+[2024-05-26 06:30:11] INFO root fetch - processPackages [ext4]: Remove: archive file [/home/abi/fetcher/tmp/ext4-1.0.3.tar.gz]
+[2024-05-26 06:30:11] INFO root fetch - main [MainThread]: End processing [ext4]: success
+[2024-05-26 06:30:12] INFO root fetch - processPackages [hyper-shell]: Remove: archive file [/home/abi/fetcher/tmp/hyper-shell-2.4.0.tar.gz]
+[2024-05-26 06:30:12] INFO root fetch - processPackages [hyper-shell]: Remove: archive file [/home/abi/fetcher/tmp/hyper_shell-2.5.0.tar.gz]
+[2024-05-26 06:30:12] INFO root fetch - main [MainThread]: End processing [hyper-shell]: success
+[2024-05-26 06:30:12] INFO root fetch - main [MainThread]: Store serial: [23379672]
