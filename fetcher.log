@@ -4513,3 +4513,24 @@
 [2024-05-26 08:09:37] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.6.tar.gz]
 [2024-05-26 08:09:37] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
 [2024-05-26 08:09:37] INFO root fetch - main [MainThread]: Store serial: [23380244]
+[2024-05-26 08:11:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380244]
+[2024-05-26 08:11:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 08:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-pipe
+[2024-05-26 08:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-pms
+[2024-05-26 08:11:46] INFO root fetch - processPackages [api-pipe]: New version: [2.0.16] Old Version: [2.0.15]
+[2024-05-26 08:11:46] INFO root fetch - processPackages [odoo14-addon-pms]: New version: [14.0.2.9.0] Old Version: [14.0.2.8.0]
+[2024-05-26 08:11:46] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/a1/c8/dbfffa068c20fad007d53d4f3b7d36cec95800d0808e9edc14c0e5ebdb0f/api_pipe-2.0.15.tar.gz
+[2024-05-26 08:11:46] INFO root fetch - processPackages [odoo14-addon-pms]: Downloading https://files.pythonhosted.org/packages/35/dd/9ca9ec4be1214b080d690d035081114d6c68515ac18307d8cb5edc8c7664/odoo14_addon_pms-14.0.2.8.0-py3-none-any.whl
+[2024-05-26 08:11:46] INFO root fetch - processPackages [api-pipe]: Downloading https://files.pythonhosted.org/packages/42/c2/1fb64f8d24e00abbe67bd56812bfcd37f759a2301cf9b10de28943061826/api_pipe-2.0.16.tar.gz
+[2024-05-26 08:11:46] INFO root fetch - processPackages [api-pipe]: executing diffoscope
+[2024-05-26 08:11:46] INFO root fetch - processPackages [api-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_pipe-2.0.15.tar.gz tmp/api_pipe-2.0.16.tar.gz --markdown 20240526/a/api-pipe/2.0.15-2.0.16/README.md --exclude *.pyd
+[2024-05-26 08:11:46] INFO root fetch - processPackages [odoo14-addon-pms]: Downloading https://files.pythonhosted.org/packages/6b/d2/872d4271026f02e164cdf6773633ee7c39723165f305fdf11e37a2224677/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl
+[2024-05-26 08:11:47] INFO root fetch - processPackages [odoo14-addon-pms]: executing diffoscope
+[2024-05-26 08:11:47] INFO root fetch - processPackages [odoo14-addon-pms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pms-14.0.2.8.0-py3-none-any.whl.zip tmp/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl.zip --markdown 20240526/o/odoo14-addon-pms/14.0.2.8.0-14.0.2.9.0/README.md --exclude *.pyd
+[2024-05-26 08:11:47] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.15.tar.gz]
+[2024-05-26 08:11:47] INFO root fetch - processPackages [api-pipe]: Remove: archive file [/home/abi/fetcher/tmp/api_pipe-2.0.16.tar.gz]
+[2024-05-26 08:11:47] INFO root fetch - main [MainThread]: End processing [api-pipe]: success
+[2024-05-26 08:11:48] INFO root fetch - processPackages [odoo14-addon-pms]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_pms-14.0.2.8.0-py3-none-any.whl.zip]
+[2024-05-26 08:11:48] INFO root fetch - processPackages [odoo14-addon-pms]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl.zip]
+[2024-05-26 08:11:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pms]: success
+[2024-05-26 08:11:48] INFO root fetch - main [MainThread]: Store serial: [23380269]
