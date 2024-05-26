@@ -14487,3 +14487,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:26:13] INFO root fetch - processPackages [clank-so-openinference-instrumentation-dspy]: Remove: archive file [/home/abi/fetcher/tmp/clank_so_openinference_instrumentation_dspy-0.1.9.tar.gz]
 [2024-05-26 18:26:13] INFO root fetch - main [MainThread]: End processing [clank-so-openinference-instrumentation-dspy]: success
 [2024-05-26 18:26:13] INFO root fetch - main [MainThread]: Store serial: [23384697]
+[2024-05-26 18:28:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384697]
+[2024-05-26 18:28:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-26 18:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myfans-client
+[2024-05-26 18:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myst-libre
+[2024-05-26 18:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymail2
+[2024-05-26 18:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zipp
+[2024-05-26 18:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SimpleVoiceAssistant
+[2024-05-26 18:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kalman-detector
+[2024-05-26 18:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openrouter-selector
+[2024-05-26 18:28:22] INFO root fetch - processPackages [zipp]: New version: [3.9.1] Old Version: [3.9.0]
+[2024-05-26 18:28:22] INFO root fetch - processPackages [kalman-detector]: New version: [0.5.0] Old Version: [0.0.5]
+[2024-05-26 18:28:22] WARNING root fetch - processPackages [SimpleVoiceAssistant]: Skipping, unable to determine old version
+[2024-05-26 18:28:22] INFO root fetch - main [MainThread]: End processing [SimpleVoiceAssistant] error
+[2024-05-26 18:28:22] WARNING root fetch - processPackages [pymail2]: Skipping, unable to determine old version
+[2024-05-26 18:28:22] INFO root fetch - main [MainThread]: End processing [pymail2] error
+[2024-05-26 18:28:22] INFO root fetch - processPackages [myfans-client]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 18:28:22] WARNING root fetch - processPackages [openrouter-selector]: Skipping, unable to determine old version
+[2024-05-26 18:28:22] INFO root fetch - main [MainThread]: End processing [openrouter-selector] error
+[2024-05-26 18:28:22] WARNING root fetch - processPackages [myst-libre]: Skipping, unable to determine old version
+[2024-05-26 18:28:22] INFO root fetch - main [MainThread]: End processing [myst-libre] error
+[2024-05-26 18:28:23] INFO root fetch - processPackages [zipp]: Downloading https://files.pythonhosted.org/packages/41/2e/1341c5634c25e7254df01ec1f6cbd2bcdee3e647709e7c3647d1b362e3ac/zipp-3.9.0.tar.gz
+[2024-05-26 18:28:23] INFO root fetch - processPackages [kalman-detector]: Downloading https://files.pythonhosted.org/packages/5a/84/c95e0c681afe9afc7b2984561d347942558c60497fa49b3f3a69577f327d/kalman_detector-0.0.5.tar.gz
+[2024-05-26 18:28:23] INFO root fetch - processPackages [myfans-client]: Downloading https://files.pythonhosted.org/packages/f1/09/9604e46e809fbaacd288132c59bf3e1639c5a2ec469837862d6f904b632f/myfans_client-0.0.1.tar.gz
+[2024-05-26 18:28:23] INFO root fetch - processPackages [zipp]: Downloading https://files.pythonhosted.org/packages/21/40/791c00c9788d8a8b005a20248a9ce2fb46aaf12fa12b0ff9e1639aea04af/zipp-3.9.1.tar.gz
+[2024-05-26 18:28:23] INFO root fetch - processPackages [kalman-detector]: Downloading https://files.pythonhosted.org/packages/a4/17/e2b88f3c5eac7688838f699fdf4ff85cbeef0e9a226a9e3eec75a639a067/kalman_detector-0.5.0.tar.gz
+[2024-05-26 18:28:23] INFO root fetch - processPackages [myfans-client]: Downloading https://files.pythonhosted.org/packages/7b/81/c1e9ff1d05189b4f085d025717a65f65cf36f669801da04e4f8ecb9c36e7/myfans_client-0.0.2.tar.gz
+[2024-05-26 18:28:23] INFO root fetch - processPackages [zipp]: executing diffoscope
+[2024-05-26 18:28:23] INFO root fetch - processPackages [zipp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zipp-3.9.0.tar.gz tmp/zipp-3.9.1.tar.gz --markdown 20240526/z/zipp/3.9.0-3.9.1/README.md --exclude *.pyd
+[2024-05-26 18:28:23] INFO root fetch - processPackages [kalman-detector]: executing diffoscope
+[2024-05-26 18:28:23] INFO root fetch - processPackages [kalman-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalman_detector-0.0.5.tar.gz tmp/kalman_detector-0.5.0.tar.gz --markdown 20240526/k/kalman-detector/0.0.5-0.5.0/README.md --exclude *.pyd
+[2024-05-26 18:28:23] INFO root fetch - processPackages [myfans-client]: executing diffoscope
+[2024-05-26 18:28:23] INFO root fetch - processPackages [myfans-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfans_client-0.0.1.tar.gz tmp/myfans_client-0.0.2.tar.gz --markdown 20240526/m/myfans-client/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 18:28:24] INFO root fetch - processPackages [kalman-detector]: Remove: archive file [/home/abi/fetcher/tmp/kalman_detector-0.0.5.tar.gz]
+[2024-05-26 18:28:24] INFO root fetch - processPackages [kalman-detector]: Remove: archive file [/home/abi/fetcher/tmp/kalman_detector-0.5.0.tar.gz]
+[2024-05-26 18:28:24] INFO root fetch - main [MainThread]: End processing [kalman-detector]: success
+[2024-05-26 18:28:24] INFO root fetch - processPackages [myfans-client]: Remove: archive file [/home/abi/fetcher/tmp/myfans_client-0.0.1.tar.gz]
+[2024-05-26 18:28:24] INFO root fetch - processPackages [myfans-client]: Remove: archive file [/home/abi/fetcher/tmp/myfans_client-0.0.2.tar.gz]
+[2024-05-26 18:28:24] INFO root fetch - main [MainThread]: End processing [myfans-client]: success
+[2024-05-26 18:28:24] INFO root fetch - processPackages [zipp]: Remove: archive file [/home/abi/fetcher/tmp/zipp-3.9.0.tar.gz]
+[2024-05-26 18:28:24] INFO root fetch - processPackages [zipp]: Remove: archive file [/home/abi/fetcher/tmp/zipp-3.9.1.tar.gz]
+[2024-05-26 18:28:24] INFO root fetch - main [MainThread]: End processing [zipp]: success
+[2024-05-26 18:28:24] INFO root fetch - main [MainThread]: Store serial: [23384727]
