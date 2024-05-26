@@ -17058,3 +17058,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:57:04] INFO root fetch - processPackages [btgitserver]: Remove: archive file [/home/abi/fetcher/tmp/btgitserver-2.0.tar.gz]
 [2024-05-26 20:57:04] INFO root fetch - main [MainThread]: End processing [btgitserver]: success
 [2024-05-26 20:57:04] INFO root fetch - main [MainThread]: Store serial: [23385921]
+[2024-05-26 20:59:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385921]
+[2024-05-26 20:59:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 20:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MedatechUK.Landlord
+[2024-05-26 20:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: btgitserver
+[2024-05-26 20:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neurometa
+[2024-05-26 20:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zenaura
+[2024-05-26 20:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blue-stability
+[2024-05-26 20:59:14] INFO root fetch - processPackages [btgitserver]: New version: [2.0] Old Version: [1.0.5]
+[2024-05-26 20:59:14] INFO root fetch - processPackages [MedatechUK.Landlord]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 20:59:14] INFO root fetch - processPackages [blue-stability]: New version: [4.31.1] Old Version: [4.30.1]
+[2024-05-26 20:59:14] INFO root fetch - processPackages [zenaura]: New version: [0.9.76] Old Version: [0.9.75]
+[2024-05-26 20:59:14] INFO root fetch - processPackages [neurometa]: New version: [1.2.1] Old Version: [1.1.1]
+[2024-05-26 20:59:14] INFO root fetch - processPackages [btgitserver]: Downloading https://files.pythonhosted.org/packages/a6/87/312938a3115cf8248511588c5d1ed9b383b63e957c5825a428bf336e9131/btgitserver-1.0.5.tar.gz
+[2024-05-26 20:59:14] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/d2/fb/ac34a87bb21bdbedb60c2536d9a029c2ef973a53588c9798b3011acb15e9/medatechuk_landlord-0.0.5.tar.gz
+[2024-05-26 20:59:14] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/bb/9d/4274bb540ecac288c461f8a7ffc573d016161fd32a22e527f3f36db699ee/zenaura-0.9.75.tar.gz
+[2024-05-26 20:59:14] INFO root fetch - processPackages [blue-stability]: Downloading https://files.pythonhosted.org/packages/59/be/8f04f0b5b66ed7f3ab6fe5ede583852d14f920b6e40dd8b468dffe7922e3/blue_stability-4.30.1.tar.gz
+[2024-05-26 20:59:14] INFO root fetch - processPackages [neurometa]: Downloading https://files.pythonhosted.org/packages/0d/09/985b0b6e6e59e79236dfae7c8cddbc705aef66ab93210fa9bce5b065f031/neurometa-1.1.1.tar.gz
+[2024-05-26 20:59:14] INFO root fetch - processPackages [btgitserver]: Downloading https://files.pythonhosted.org/packages/5a/a6/30b4a288f29ecce83b6b9874a2cc4cd786d2c8bf25ed0d3e45297add128d/btgitserver-2.0.tar.gz
+[2024-05-26 20:59:14] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/92/6b/4dcdbdb7cd01a5866f2b86671edf0840e72e5027071cd38293eb99a833fe/zenaura-0.9.76.tar.gz
+[2024-05-26 20:59:14] INFO root fetch - processPackages [blue-stability]: Downloading https://files.pythonhosted.org/packages/62/6f/baa342f504ef3333f711d24c488005c22533181d27789484f855146ab727/blue_stability-4.31.1.tar.gz
+[2024-05-26 20:59:14] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/b2/bc/88ebffc53281dffbbb6c5c74b6292b8864c065d71352c68e40780364bdc1/medatechuk_landlord-0.0.6.tar.gz
+[2024-05-26 20:59:15] INFO root fetch - processPackages [blue-stability]: executing diffoscope
+[2024-05-26 20:59:15] INFO root fetch - processPackages [blue-stability]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_stability-4.30.1.tar.gz tmp/blue_stability-4.31.1.tar.gz --markdown 20240526/b/blue-stability/4.30.1-4.31.1/README.md --exclude *.pyd
+[2024-05-26 20:59:15] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 20:59:15] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.75.tar.gz tmp/zenaura-0.9.76.tar.gz --markdown 20240526/z/zenaura/0.9.75-0.9.76/README.md --exclude *.pyd
+[2024-05-26 20:59:15] INFO root fetch - processPackages [btgitserver]: executing diffoscope
+[2024-05-26 20:59:15] INFO root fetch - processPackages [btgitserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/btgitserver-1.0.5.tar.gz tmp/btgitserver-2.0.tar.gz --markdown 20240526/b/btgitserver/1.0.5-2.0/README.md --exclude *.pyd
+[2024-05-26 20:59:15] INFO root fetch - processPackages [MedatechUK.Landlord]: executing diffoscope
+[2024-05-26 20:59:15] INFO root fetch - processPackages [MedatechUK.Landlord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medatechuk_landlord-0.0.5.tar.gz tmp/medatechuk_landlord-0.0.6.tar.gz --markdown 20240526/M/MedatechUK.Landlord/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 20:59:15] INFO root fetch - processPackages [neurometa]: Downloading https://files.pythonhosted.org/packages/c9/bf/4f8da1a78587acae85f072598444b794fb4b7da5d0d427e4c2647c39022c/neurometa-1.2.1.tar.gz
+[2024-05-26 20:59:15] INFO root fetch - processPackages [neurometa]: executing diffoscope
+[2024-05-26 20:59:15] INFO root fetch - processPackages [neurometa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurometa-1.1.1.tar.gz tmp/neurometa-1.2.1.tar.gz --markdown 20240526/n/neurometa/1.1.1-1.2.1/README.md --exclude *.pyd
+[2024-05-26 20:59:15] INFO root fetch - processPackages [blue-stability]: Remove: archive file [/home/abi/fetcher/tmp/blue_stability-4.30.1.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - processPackages [blue-stability]: Remove: archive file [/home/abi/fetcher/tmp/blue_stability-4.31.1.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - main [MainThread]: End processing [blue-stability]: success
+[2024-05-26 20:59:15] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.5.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.6.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
+[2024-05-26 20:59:15] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.75.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.76.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 20:59:15] INFO root fetch - processPackages [neurometa]: Remove: archive file [/home/abi/fetcher/tmp/neurometa-1.1.1.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - processPackages [neurometa]: Remove: archive file [/home/abi/fetcher/tmp/neurometa-1.2.1.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - main [MainThread]: End processing [neurometa]: success
+[2024-05-26 20:59:15] INFO root fetch - processPackages [btgitserver]: Remove: archive file [/home/abi/fetcher/tmp/btgitserver-1.0.5.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - processPackages [btgitserver]: Remove: archive file [/home/abi/fetcher/tmp/btgitserver-2.0.tar.gz]
+[2024-05-26 20:59:15] INFO root fetch - main [MainThread]: End processing [btgitserver]: success
+[2024-05-26 20:59:15] INFO root fetch - main [MainThread]: Store serial: [23385936]
