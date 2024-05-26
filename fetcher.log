@@ -4534,3 +4534,45 @@
 [2024-05-26 08:11:48] INFO root fetch - processPackages [odoo14-addon-pms]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl.zip]
 [2024-05-26 08:11:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pms]: success
 [2024-05-26 08:11:48] INFO root fetch - main [MainThread]: Store serial: [23380269]
+[2024-05-26 08:13:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380269]
+[2024-05-26 08:13:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 08:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2024-05-26 08:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FinMind
+[2024-05-26 08:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myscipy
+[2024-05-26 08:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xingpyc
+[2024-05-26 08:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dycw-utilities
+[2024-05-26 08:13:56] INFO root fetch - processPackages [xingpyc]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-26 08:13:56] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240525] Old Version: [2.6.0.dev20240524]
+[2024-05-26 08:13:56] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-05-26 08:13:56] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/2c/0b/728828e2f83b2332767f863d787d8c39bd93f0ab6ed4009ae4d8625e57f2/xingpyc-0.1.5.tar.gz
+[2024-05-26 08:13:56] WARNING root fetch - processPackages [myscipy]: Skipping, unable to determine old version
+[2024-05-26 08:13:56] INFO root fetch - main [MainThread]: End processing [myscipy] error
+[2024-05-26 08:13:56] INFO root fetch - processPackages [FinMind]: New version: [1.6.8] Old Version: [1.6.7]
+[2024-05-26 08:13:56] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-05-26 08:13:56] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/99/6c/31feec1e23abb3383c9bbea855ccbc53ae5a74452f852f5ed2433b06b7d0/pyg_nightly-2.6.0.dev20240524.tar.gz
+[2024-05-26 08:13:56] INFO root fetch - processPackages [FinMind]: Downloading https://files.pythonhosted.org/packages/95/6a/612c976fa98c87318858c8cdf4a88c531575e0a473eb0026c3492391dfdf/FinMind-1.6.7-py3-none-any.whl
+[2024-05-26 08:13:56] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/19/a5/75aee1c45d6f3329066cb3bec74e680d28307bdfb95544a4cb6866a3130a/xingpyc-0.1.6.tar.gz
+[2024-05-26 08:13:57] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-05-26 08:13:57] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-26 08:13:57] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.5.tar.gz tmp/xingpyc-0.1.6.tar.gz --markdown 20240526/x/xingpyc/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-26 08:13:57] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-05-26 08:13:57] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240526/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-05-26 08:13:57] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/f8/75/26bc3f7c7a1003738000dfb8dd4618434396a26cc98e3ebbf62431875a96/pyg_nightly-2.6.0.dev20240525.tar.gz
+[2024-05-26 08:13:57] INFO root fetch - processPackages [FinMind]: Downloading https://files.pythonhosted.org/packages/d3/36/3829e8c9f952b5c6d1c2b20667addc4185dc3611e3199efa262db59aee4c/FinMind-1.6.8-py3-none-any.whl
+[2024-05-26 08:13:57] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-05-26 08:13:57] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240524.tar.gz tmp/pyg_nightly-2.6.0.dev20240525.tar.gz --markdown 20240526/p/pyg-nightly/2.6.0.dev20240524-2.6.0.dev20240525/README.md --exclude *.pyd
+[2024-05-26 08:13:57] INFO root fetch - processPackages [FinMind]: executing diffoscope
+[2024-05-26 08:13:57] INFO root fetch - processPackages [FinMind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FinMind-1.6.7-py3-none-any.whl.zip tmp/FinMind-1.6.8-py3-none-any.whl.zip --markdown 20240526/F/FinMind/1.6.7-1.6.8/README.md --exclude *.pyd
+[2024-05-26 08:13:57] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.5.tar.gz]
+[2024-05-26 08:13:57] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.6.tar.gz]
+[2024-05-26 08:13:57] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-26 08:13:58] INFO root fetch - processPackages [FinMind]: Remove: archive file [/home/abi/fetcher/tmp/FinMind-1.6.7-py3-none-any.whl.zip]
+[2024-05-26 08:13:58] INFO root fetch - processPackages [FinMind]: Remove: archive file [/home/abi/fetcher/tmp/FinMind-1.6.8-py3-none-any.whl.zip]
+[2024-05-26 08:13:58] INFO root fetch - main [MainThread]: End processing [FinMind]: success
+[2024-05-26 08:13:58] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-05-26 08:13:58] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-05-26 08:13:58] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-05-26 08:13:59] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240524.tar.gz]
+[2024-05-26 08:13:59] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240525.tar.gz]
+[2024-05-26 08:13:59] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-05-26 08:13:59] INFO root fetch - main [MainThread]: Store serial: [23380284]
