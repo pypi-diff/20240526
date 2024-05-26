@@ -2727,3 +2727,18 @@
 [2024-05-26 04:59:23] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.99.tar.gz]
 [2024-05-26 04:59:23] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-05-26 04:59:23] INFO root fetch - main [MainThread]: Store serial: [23379370]
+[2024-05-26 05:01:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379370]
+[2024-05-26 05:01:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 05:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blueness
+[2024-05-26 05:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: c01-hello-pyo3
+[2024-05-26 05:01:32] INFO root fetch - processPackages [blueness]: New version: [3.9.1] Old Version: [3.7.1]
+[2024-05-26 05:01:32] INFO root fetch - processPackages [blueness]: Downloading https://files.pythonhosted.org/packages/86/d4/e8b769417baf31b335408a29a80b371b6421e59db03087a6e1c943bb5d84/blueness-3.7.1.tar.gz
+[2024-05-26 05:01:32] WARNING root fetch - processPackages [c01-hello-pyo3]: Skipping, unable to determine old version
+[2024-05-26 05:01:32] INFO root fetch - main [MainThread]: End processing [c01-hello-pyo3] error
+[2024-05-26 05:01:32] INFO root fetch - processPackages [blueness]: Downloading https://files.pythonhosted.org/packages/bb/6c/4f8063f6de43bbfcce0c161a49b6afe38d15dfecb071f23bc7663a1b1714/blueness-3.9.1.tar.gz
+[2024-05-26 05:01:32] INFO root fetch - processPackages [blueness]: executing diffoscope
+[2024-05-26 05:01:32] INFO root fetch - processPackages [blueness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blueness-3.7.1.tar.gz tmp/blueness-3.9.1.tar.gz --markdown 20240526/b/blueness/3.7.1-3.9.1/README.md --exclude *.pyd
+[2024-05-26 05:01:32] INFO root fetch - processPackages [blueness]: Remove: archive file [/home/abi/fetcher/tmp/blueness-3.7.1.tar.gz]
+[2024-05-26 05:01:32] INFO root fetch - processPackages [blueness]: Remove: archive file [/home/abi/fetcher/tmp/blueness-3.9.1.tar.gz]
+[2024-05-26 05:01:32] INFO root fetch - main [MainThread]: End processing [blueness]: success
+[2024-05-26 05:01:32] INFO root fetch - main [MainThread]: Store serial: [23379379]
