@@ -2021,3 +2021,27 @@
 [2024-05-26 03:39:11] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-05-26 03:39:11] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-05-26 03:39:11] INFO root fetch - main [MainThread]: Store serial: [23379069]
+[2024-05-26 03:41:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379069]
+[2024-05-26 03:41:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 03:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-fasthtml
+[2024-05-26 03:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysymstat
+[2024-05-26 03:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastsql
+[2024-05-26 03:41:19] INFO root fetch - processPackages [fastsql]: New version: [1.0.0] Old Version: [0.0.1]
+[2024-05-26 03:41:19] INFO root fetch - processPackages [python-fasthtml]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-26 03:41:19] ERROR root fetch - processPackages [pysymstat]: Unable to get metadata: No such project 'pysymstat'
+[2024-05-26 03:41:19] INFO root fetch - main [MainThread]: End processing [pysymstat] error
+[2024-05-26 03:41:19] INFO root fetch - processPackages [python-fasthtml]: Downloading https://files.pythonhosted.org/packages/3d/8f/ddc55f69e555612296b7b624e202b2efe188ac62eb2e844042ed0ae58abb/python-fasthtml-0.0.1.tar.gz
+[2024-05-26 03:41:20] INFO root fetch - processPackages [fastsql]: Downloading https://files.pythonhosted.org/packages/e9/15/ff53de642f01acaea1f47016216c14e4f997def5a0e22433e4baf620136a/fastsql-0.0.1.tar.gz
+[2024-05-26 03:41:20] INFO root fetch - processPackages [python-fasthtml]: Downloading https://files.pythonhosted.org/packages/92/b7/15790287ac5394f918b603351914155b436884311210b47faf757b094db9/python-fasthtml-0.0.2.tar.gz
+[2024-05-26 03:41:20] INFO root fetch - processPackages [python-fasthtml]: executing diffoscope
+[2024-05-26 03:41:20] INFO root fetch - processPackages [python-fasthtml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-fasthtml-0.0.1.tar.gz tmp/python-fasthtml-0.0.2.tar.gz --markdown 20240526/p/python-fasthtml/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-26 03:41:20] INFO root fetch - processPackages [fastsql]: Downloading https://files.pythonhosted.org/packages/8b/f5/7a94afce9e6ca87a18e6ca250b9767ed88b2926204dc80d0589cb491a2d4/fastsql-1.0.0.tar.gz
+[2024-05-26 03:41:20] INFO root fetch - processPackages [fastsql]: executing diffoscope
+[2024-05-26 03:41:20] INFO root fetch - processPackages [fastsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsql-0.0.1.tar.gz tmp/fastsql-1.0.0.tar.gz --markdown 20240526/f/fastsql/0.0.1-1.0.0/README.md --exclude *.pyd
+[2024-05-26 03:41:21] INFO root fetch - processPackages [python-fasthtml]: Remove: archive file [/home/abi/fetcher/tmp/python-fasthtml-0.0.1.tar.gz]
+[2024-05-26 03:41:21] INFO root fetch - processPackages [python-fasthtml]: Remove: archive file [/home/abi/fetcher/tmp/python-fasthtml-0.0.2.tar.gz]
+[2024-05-26 03:41:21] INFO root fetch - main [MainThread]: End processing [python-fasthtml]: success
+[2024-05-26 03:41:21] INFO root fetch - processPackages [fastsql]: Remove: archive file [/home/abi/fetcher/tmp/fastsql-0.0.1.tar.gz]
+[2024-05-26 03:41:21] INFO root fetch - processPackages [fastsql]: Remove: archive file [/home/abi/fetcher/tmp/fastsql-1.0.0.tar.gz]
+[2024-05-26 03:41:21] INFO root fetch - main [MainThread]: End processing [fastsql]: success
+[2024-05-26 03:41:21] INFO root fetch - main [MainThread]: Store serial: [23379077]
