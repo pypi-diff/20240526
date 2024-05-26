@@ -15822,3 +15822,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:36:02] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.2.4.tar.gz]
 [2024-05-26 19:36:02] INFO root fetch - main [MainThread]: End processing [uv]: success
 [2024-05-26 19:36:02] INFO root fetch - main [MainThread]: Store serial: [23385310]
+[2024-05-26 19:38:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385310]
+[2024-05-26 19:38:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 19:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: not-again-ai
+[2024-05-26 19:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: financial-datasets
+[2024-05-26 19:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zenaura
+[2024-05-26 19:38:12] INFO root fetch - processPackages [financial-datasets]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-26 19:38:12] INFO root fetch - processPackages [zenaura]: New version: [0.9.66] Old Version: [0.9.65]
+[2024-05-26 19:38:12] INFO root fetch - processPackages [financial-datasets]: Downloading https://files.pythonhosted.org/packages/36/94/255abe9cb6d903e14abd37e03da6cf223d9808470f9dd5d79169b683cc32/financial_datasets-0.1.8.tar.gz
+[2024-05-26 19:38:12] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/cf/f0/d2eb403a57fb4ec12aa75162c8c900a6a64e7b43c6fb5b69a78602909e9f/zenaura-0.9.65.tar.gz
+[2024-05-26 19:38:12] INFO root fetch - processPackages [not-again-ai]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-26 19:38:13] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/9d/d7/1552702a48a62ffecf6074a71da8f810dd1b749cd3b6e251acbe4b03745d/not_again_ai-0.8.2.tar.gz
+[2024-05-26 19:38:13] INFO root fetch - processPackages [financial-datasets]: Downloading https://files.pythonhosted.org/packages/87/a1/22bd6c400ec0e79b048a16568be6b9aef6c214655800975327559d6f37fa/financial_datasets-0.1.9.tar.gz
+[2024-05-26 19:38:13] INFO root fetch - processPackages [financial-datasets]: executing diffoscope
+[2024-05-26 19:38:13] INFO root fetch - processPackages [financial-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/financial_datasets-0.1.8.tar.gz tmp/financial_datasets-0.1.9.tar.gz --markdown 20240526/f/financial-datasets/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-26 19:38:13] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/25/c7/fb4b1da965a582c7db1d6094ac56c2569392975f53a12c9786dfcb26923c/not_again_ai-0.9.0.tar.gz
+[2024-05-26 19:38:13] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/b2/8d/18eefb3d77b97599b36fafcd37c5428e4c3b5e3cac9fac7d1ad98645f5c7/zenaura-0.9.66.tar.gz
+[2024-05-26 19:38:13] INFO root fetch - processPackages [not-again-ai]: executing diffoscope
+[2024-05-26 19:38:13] INFO root fetch - processPackages [not-again-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not_again_ai-0.8.2.tar.gz tmp/not_again_ai-0.9.0.tar.gz --markdown 20240526/n/not-again-ai/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-26 19:38:13] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 19:38:13] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.65.tar.gz tmp/zenaura-0.9.66.tar.gz --markdown 20240526/z/zenaura/0.9.65-0.9.66/README.md --exclude *.pyd
+[2024-05-26 19:38:13] INFO root fetch - processPackages [financial-datasets]: Remove: archive file [/home/abi/fetcher/tmp/financial_datasets-0.1.8.tar.gz]
+[2024-05-26 19:38:13] INFO root fetch - processPackages [financial-datasets]: Remove: archive file [/home/abi/fetcher/tmp/financial_datasets-0.1.9.tar.gz]
+[2024-05-26 19:38:13] INFO root fetch - main [MainThread]: End processing [financial-datasets]: success
+[2024-05-26 19:38:14] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.8.2.tar.gz]
+[2024-05-26 19:38:14] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.9.0.tar.gz]
+[2024-05-26 19:38:14] INFO root fetch - main [MainThread]: End processing [not-again-ai]: success
+[2024-05-26 19:38:14] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.65.tar.gz]
+[2024-05-26 19:38:14] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.66.tar.gz]
+[2024-05-26 19:38:14] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 19:38:14] INFO root fetch - main [MainThread]: Store serial: [23385319]
