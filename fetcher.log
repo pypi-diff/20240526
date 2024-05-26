@@ -5733,3 +5733,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:48:24] INFO root fetch - processPackages [patchpy]: Remove: archive file [/home/abi/fetcher/tmp/patchpy-2.0.3.tar.gz]
 [2024-05-26 09:48:24] INFO root fetch - main [MainThread]: End processing [patchpy]: success
 [2024-05-26 09:48:24] INFO root fetch - main [MainThread]: Store serial: [23380733]
+[2024-05-26 09:50:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380733]
+[2024-05-26 09:50:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 09:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-manipulation
+[2024-05-26 09:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatcluster
+[2024-05-26 09:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlrun-pipelines-kfp-common
+[2024-05-26 09:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlrun-pipelines-kfp-v1-8
+[2024-05-26 09:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlrun-pipelines-kfp-v2
+[2024-05-26 09:50:34] INFO root fetch - processPackages [data-manipulation]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 09:50:34] WARNING root fetch - processPackages [mlrun-pipelines-kfp-common]: Skipping, unable to determine old version
+[2024-05-26 09:50:34] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-common] error
+[2024-05-26 09:50:34] WARNING root fetch - processPackages [mlrun-pipelines-kfp-v1-8]: Skipping, unable to determine old version
+[2024-05-26 09:50:34] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-v1-8] error
+[2024-05-26 09:50:34] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.59]
+[2024-05-26 09:50:34] WARNING root fetch - processPackages [mlrun-pipelines-kfp-v2]: Skipping, unable to determine old version
+[2024-05-26 09:50:34] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-v2] error
+[2024-05-26 09:50:34] INFO root fetch - processPackages [data-manipulation]: Downloading https://files.pythonhosted.org/packages/11/e3/4b1ec8449e9e36a6057de278e11d627e1da10527371c7c3f13d668f3c2d4/data_manipulation-0.8.tar.gz
+[2024-05-26 09:50:34] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/28/72/8b33ab4499887d6c0896c33e6a39610d42daab4427a1f76f81d7eb6608f8/scatcluster-0.0.59.tar.gz
+[2024-05-26 09:50:34] INFO root fetch - processPackages [data-manipulation]: Downloading https://files.pythonhosted.org/packages/45/5a/fcb54c7d4023096be4bcedc594a44ad9cb8e93a6258c07807b914f7af380/data_manipulation-0.9.tar.gz
+[2024-05-26 09:50:34] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 09:50:35] INFO root fetch - processPackages [data-manipulation]: executing diffoscope
+[2024-05-26 09:50:35] INFO root fetch - processPackages [data-manipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_manipulation-0.8.tar.gz tmp/data_manipulation-0.9.tar.gz --markdown 20240526/d/data-manipulation/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 09:50:35] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 09:50:35] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.59.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.59-0.0.6/README.md --exclude *.pyd
+[2024-05-26 09:50:35] INFO root fetch - processPackages [data-manipulation]: Remove: archive file [/home/abi/fetcher/tmp/data_manipulation-0.8.tar.gz]
+[2024-05-26 09:50:35] INFO root fetch - processPackages [data-manipulation]: Remove: archive file [/home/abi/fetcher/tmp/data_manipulation-0.9.tar.gz]
+[2024-05-26 09:50:35] INFO root fetch - main [MainThread]: End processing [data-manipulation]: success
+[2024-05-26 09:50:35] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.59.tar.gz]
+[2024-05-26 09:50:35] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 09:50:35] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 09:50:35] INFO root fetch - main [MainThread]: Store serial: [23380749]
