@@ -18243,3 +18243,33 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 21:57:03] INFO root fetch - processPackages [profile-metrics-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-metrics-local-0.0.9.tar.gz]
 [2024-05-26 21:57:03] INFO root fetch - main [MainThread]: End processing [profile-metrics-local]: success
 [2024-05-26 21:57:03] INFO root fetch - main [MainThread]: Store serial: [23386506]
+[2024-05-26 21:59:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386506]
+[2024-05-26 21:59:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 21:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khoj-assistant
+[2024-05-26 21:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatcluster
+[2024-05-26 21:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beets-xtractor
+[2024-05-26 21:59:13] INFO root fetch - processPackages [scatcluster]: New version: [0.0.63] Old Version: [0.0.62]
+[2024-05-26 21:59:13] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-05-26 21:59:13] INFO root fetch - processPackages [beets-xtractor]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-26 21:59:13] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/ca/16/3bf70b879383e48f5aeaa63b6461ca4c41dbf0944795ceafc72179d715aa/scatcluster-0.0.62.tar.gz
+[2024-05-26 21:59:13] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-05-26 21:59:13] INFO root fetch - processPackages [beets-xtractor]: Downloading https://files.pythonhosted.org/packages/32/cc/e0583862a3097b0deb5081c0f22274ff76846adc3417d615909c08ea2093/beets-xtractor-0.4.1.tar.gz
+[2024-05-26 21:59:13] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/b2/5b/22a83c8b3c22c55a384e1682606e25d4feab6d0087b83b805fbc4232653a/scatcluster-0.0.63.tar.gz
+[2024-05-26 21:59:14] INFO root fetch - processPackages [beets-xtractor]: Downloading https://files.pythonhosted.org/packages/1f/6a/27cd48f7beb0469c1a2e067ddf00e31a1dacf33137896e347c745f10d194/beets_xtractor-0.4.2.tar.gz
+[2024-05-26 21:59:14] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-05-26 21:59:14] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 21:59:14] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.62.tar.gz tmp/scatcluster-0.0.63.tar.gz --markdown 20240526/s/scatcluster/0.0.62-0.0.63/README.md --exclude *.pyd
+[2024-05-26 21:59:14] INFO root fetch - processPackages [beets-xtractor]: executing diffoscope
+[2024-05-26 21:59:14] INFO root fetch - processPackages [beets-xtractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets-xtractor-0.4.1.tar.gz tmp/beets_xtractor-0.4.2.tar.gz --markdown 20240526/b/beets-xtractor/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-26 21:59:14] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-05-26 21:59:14] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240526/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-26 21:59:14] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.62.tar.gz]
+[2024-05-26 21:59:14] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.63.tar.gz]
+[2024-05-26 21:59:14] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 21:59:14] INFO root fetch - processPackages [beets-xtractor]: Remove: archive file [/home/abi/fetcher/tmp/beets-xtractor-0.4.1.tar.gz]
+[2024-05-26 21:59:14] INFO root fetch - processPackages [beets-xtractor]: Remove: archive file [/home/abi/fetcher/tmp/beets_xtractor-0.4.2.tar.gz]
+[2024-05-26 21:59:14] INFO root fetch - main [MainThread]: End processing [beets-xtractor]: success
+[2024-05-26 21:59:15] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-05-26 21:59:15] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-05-26 21:59:15] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-05-26 21:59:15] INFO root fetch - main [MainThread]: Store serial: [23386515]
