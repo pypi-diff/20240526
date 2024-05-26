@@ -4702,3 +4702,21 @@
 [2024-05-26 08:31:13] WARNING root fetch - processPackages [flask-template-cli]: Skipping, unable to determine old version
 [2024-05-26 08:31:13] INFO root fetch - main [MainThread]: End processing [flask-template-cli] error
 [2024-05-26 08:31:13] INFO root fetch - main [MainThread]: Store serial: [23380327]
+[2024-05-26 08:33:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380327]
+[2024-05-26 08:33:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 08:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nanosense
+[2024-05-26 08:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tracor
+[2024-05-26 08:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xingpyc
+[2024-05-26 08:33:22] INFO root fetch - processPackages [xingpyc]: New version: [0.1.888] Old Version: [0.1.88]
+[2024-05-26 08:33:22] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/7e/58/daceb25b1d849488e5967d32b940d702b6ac8b5fac1c4f3a0dfcc45ee86a/xingpyc-0.1.88.tar.gz
+[2024-05-26 08:33:22] WARNING root fetch - processPackages [tracor]: Skipping, unable to determine old version
+[2024-05-26 08:33:22] INFO root fetch - main [MainThread]: End processing [tracor] error
+[2024-05-26 08:33:22] WARNING root fetch - processPackages [nanosense]: Skipping, unable to determine old version
+[2024-05-26 08:33:22] INFO root fetch - main [MainThread]: End processing [nanosense] error
+[2024-05-26 08:33:22] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/5d/b5/23cb1f9eb0c21cff9026e42f365984616219d430d372f938277f8b70a036/xingpyc-0.1.888.tar.gz
+[2024-05-26 08:33:22] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-26 08:33:22] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.88.tar.gz tmp/xingpyc-0.1.888.tar.gz --markdown 20240526/x/xingpyc/0.1.88-0.1.888/README.md --exclude *.pyd
+[2024-05-26 08:33:23] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.88.tar.gz]
+[2024-05-26 08:33:23] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.888.tar.gz]
+[2024-05-26 08:33:23] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-26 08:33:23] INFO root fetch - main [MainThread]: Store serial: [23380340]
