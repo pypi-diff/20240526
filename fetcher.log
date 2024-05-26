@@ -7419,3 +7419,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:57:17] INFO root fetch - processPackages [sherlock-project]: Remove: archive file [/home/abi/fetcher/tmp/sherlock_project-0.14.4.tar.gz]
 [2024-05-26 10:57:17] INFO root fetch - main [MainThread]: End processing [sherlock-project]: success
 [2024-05-26 10:57:17] INFO root fetch - main [MainThread]: Store serial: [23381475]
+[2024-05-26 10:59:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23381475]
+[2024-05-26 10:59:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 10:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GraphRetrieval
+[2024-05-26 10:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-cast
+[2024-05-26 10:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkdocs-statblock-plugin
+[2024-05-26 10:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LexBuilder
+[2024-05-26 10:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: open-meteo-solar-forecast
+[2024-05-26 10:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cadprox
+[2024-05-26 10:59:28] INFO root fetch - processPackages [cadprox]: New version: [4.9] Old Version: [4.8]
+[2024-05-26 10:59:28] INFO root fetch - processPackages [LexBuilder]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-26 10:59:28] INFO root fetch - processPackages [GraphRetrieval]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-26 10:59:28] WARNING root fetch - processPackages [open-meteo-solar-forecast]: Skipping, unable to determine old version
+[2024-05-26 10:59:28] INFO root fetch - main [MainThread]: End processing [open-meteo-solar-forecast] error
+[2024-05-26 10:59:29] INFO root fetch - processPackages [mkdocs-statblock-plugin]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-26 10:59:29] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/04/4e/8f675179efd7d0f79d313bc53da939ed028e0d4788721b67fbfb7d153e6a/cadprox-4.8.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [LexBuilder]: Downloading https://files.pythonhosted.org/packages/f6/93/b5eece4dfa7768c24ea50e6c1f0de25aa493302c77a467461ad1cfd0a433/lexbuilder-1.1.0.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [django-cast]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-26 10:59:29] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/67/b8/d4b94b307ed4822ec6efc73ec99d32c6e2e962d30b7bc0bf6d87fe235bce/graphretrieval-0.1.9.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [mkdocs-statblock-plugin]: Downloading https://files.pythonhosted.org/packages/fd/50/314a0d4ecbc6bf5a94a8b715848aba950afc775b9bf601374464858c69ef/mkdocs_statblock_plugin-0.1.4.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [django-cast]: Downloading https://files.pythonhosted.org/packages/08/d0/6455a8c6cc1a455997e400140263ce181dbcef2b961935fa657f84fa4304/django-cast-0.2.8.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [LexBuilder]: Downloading https://files.pythonhosted.org/packages/48/af/e4fcbbb8c6bc2983a66531a07d229ef5bba876620b14d43c527c9118b630/LexBuilder-1.2.0.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/2e/be/dd28313fd6eb504a45a2d60417a52b3d23594b9d82276f950fd137690561/cadprox-4.9.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [LexBuilder]: executing diffoscope
+[2024-05-26 10:59:29] INFO root fetch - processPackages [LexBuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lexbuilder-1.1.0.tar.gz tmp/LexBuilder-1.2.0.tar.gz --markdown 20240526/L/LexBuilder/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-26 10:59:29] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/ba/12/2e6aad31df1930b323a86ba074900428b79f0401b69c7b3ab1b4114916e9/graphretrieval-0.2.0.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 10:59:29] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-4.8.tar.gz tmp/cadprox-4.9.tar.gz --markdown 20240526/c/cadprox/4.8-4.9/README.md --exclude *.pyd
+[2024-05-26 10:59:29] INFO root fetch - processPackages [mkdocs-statblock-plugin]: Downloading https://files.pythonhosted.org/packages/bc/d5/d32d61bad3715156347a079c770a9e6d6b7261b555f1a7902db3c16d069a/mkdocs_statblock_plugin-0.1.5.tar.gz
+[2024-05-26 10:59:29] INFO root fetch - processPackages [GraphRetrieval]: executing diffoscope
+[2024-05-26 10:59:29] INFO root fetch - processPackages [GraphRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphretrieval-0.1.9.tar.gz tmp/graphretrieval-0.2.0.tar.gz --markdown 20240526/G/GraphRetrieval/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-26 10:59:29] INFO root fetch - processPackages [mkdocs-statblock-plugin]: executing diffoscope
+[2024-05-26 10:59:29] INFO root fetch - processPackages [mkdocs-statblock-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_statblock_plugin-0.1.4.tar.gz tmp/mkdocs_statblock_plugin-0.1.5.tar.gz --markdown 20240526/m/mkdocs-statblock-plugin/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-26 10:59:29] INFO root fetch - processPackages [django-cast]: Downloading https://files.pythonhosted.org/packages/1e/ba/729f0c86f18455387a69c10dd88886e8da0093c7771abb6bd65065a7b70c/django-cast-0.2.9.tar.gz
+[2024-05-26 10:59:30] INFO root fetch - processPackages [LexBuilder]: Remove: archive file [/home/abi/fetcher/tmp/lexbuilder-1.1.0.tar.gz]
+[2024-05-26 10:59:30] INFO root fetch - processPackages [LexBuilder]: Remove: archive file [/home/abi/fetcher/tmp/LexBuilder-1.2.0.tar.gz]
+[2024-05-26 10:59:30] INFO root fetch - main [MainThread]: End processing [LexBuilder]: success
+[2024-05-26 10:59:30] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.9.tar.gz]
+[2024-05-26 10:59:30] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.2.0.tar.gz]
+[2024-05-26 10:59:30] INFO root fetch - main [MainThread]: End processing [GraphRetrieval]: success
+[2024-05-26 10:59:30] INFO root fetch - processPackages [mkdocs-statblock-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_statblock_plugin-0.1.4.tar.gz]
+[2024-05-26 10:59:30] INFO root fetch - processPackages [mkdocs-statblock-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_statblock_plugin-0.1.5.tar.gz]
+[2024-05-26 10:59:30] INFO root fetch - main [MainThread]: End processing [mkdocs-statblock-plugin]: success
+[2024-05-26 10:59:30] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.8.tar.gz]
+[2024-05-26 10:59:30] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.9.tar.gz]
+[2024-05-26 10:59:30] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 10:59:33] INFO root fetch - processPackages [django-cast]: executing diffoscope
+[2024-05-26 10:59:33] INFO root fetch - processPackages [django-cast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cast-0.2.8.tar.gz tmp/django-cast-0.2.9.tar.gz --markdown 20240526/d/django-cast/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-26 10:59:35] INFO root fetch - processPackages [django-cast]: Remove: archive file [/home/abi/fetcher/tmp/django-cast-0.2.8.tar.gz]
+[2024-05-26 10:59:35] INFO root fetch - processPackages [django-cast]: Remove: archive file [/home/abi/fetcher/tmp/django-cast-0.2.9.tar.gz]
+[2024-05-26 10:59:35] INFO root fetch - main [MainThread]: End processing [django-cast]: success
+[2024-05-26 10:59:35] INFO root fetch - main [MainThread]: Store serial: [23381492]
