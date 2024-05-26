@@ -22265,3 +22265,60 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:51:47] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.5.tar.gz]
 [2024-05-26 23:51:47] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
 [2024-05-26 23:51:47] INFO root fetch - main [MainThread]: Store serial: [23388094]
+[2024-05-26 23:53:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23388094]
+[2024-05-26 23:53:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyTheranostics
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sql-lsp
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vancouver-watching
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: roofAI
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: string-utils-practice
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vizrecurse
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openai-commands
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ebrow
+[2024-05-26 23:53:57] WARNING root fetch - processPackages [vizrecurse]: Skipping, unable to determine old version
+[2024-05-26 23:53:57] INFO root fetch - main [MainThread]: End processing [vizrecurse] error
+[2024-05-26 23:53:57] INFO root fetch - processPackages [openai-commands]: New version: [3.9.1] Old Version: [3.8.1]
+[2024-05-26 23:53:57] INFO root fetch - processPackages [vancouver-watching]: New version: [3.360.1] Old Version: [3.354.1]
+[2024-05-26 23:53:57] INFO root fetch - processPackages [roofAI]: New version: [4.33.1] Old Version: [4.32.1]
+[2024-05-26 23:53:57] INFO root fetch - processPackages [ebrow]: New version: [0.1.79] Old Version: [0.1.78]
+[2024-05-26 23:53:57] INFO root fetch - processPackages [openai-commands]: Downloading https://files.pythonhosted.org/packages/23/08/d8280760dc1ad37f5322e2d83e6969a1410e489cae94bf151812d743a021/openai_commands-3.8.1.tar.gz
+[2024-05-26 23:53:57] WARNING root fetch - processPackages [PyTheranostics]: Skipping, unable to determine old version
+[2024-05-26 23:53:57] INFO root fetch - main [MainThread]: End processing [PyTheranostics] error
+[2024-05-26 23:53:57] WARNING root fetch - processPackages [string-utils-practice]: Skipping, unable to determine old version
+[2024-05-26 23:53:57] INFO root fetch - main [MainThread]: End processing [string-utils-practice] error
+[2024-05-26 23:53:57] INFO root fetch - processPackages [sql-lsp]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-26 23:53:57] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/f4/f4/e2f0fe8f3eac0bc88e715ce038ec4df2bb2597e33095259b09d99553814f/vancouver_watching-3.354.1.tar.gz
+[2024-05-26 23:53:57] INFO root fetch - processPackages [roofAI]: Downloading https://files.pythonhosted.org/packages/39/7d/c2e6216a466453225569dbf4202fccbbe5a827e95ba716d9a2978d1074b7/roofai-4.32.1.tar.gz
+[2024-05-26 23:53:58] INFO root fetch - processPackages [ebrow]: Downloading https://files.pythonhosted.org/packages/4d/95/23e9e1616bf5028a6c6e5d904dcc021019ea3462c7aa9459318f78e86b5b/ebrow-0.1.78.tar.gz
+[2024-05-26 23:53:58] INFO root fetch - processPackages [sql-lsp]: Downloading https://files.pythonhosted.org/packages/a3/aa/917ae9938b2830fcf1b6d855742566447abe7fe6be2144e3a9dda92184d8/sql_lsp-0.0.4.tar.gz
+[2024-05-26 23:53:58] INFO root fetch - processPackages [openai-commands]: Downloading https://files.pythonhosted.org/packages/88/58/218b1976d0226fb8ab277716e78060b49741b5c83c33477e4be64e8ccb42/openai_commands-3.9.1.tar.gz
+[2024-05-26 23:53:58] INFO root fetch - processPackages [roofAI]: Downloading https://files.pythonhosted.org/packages/7a/07/ee00ed07951cebf2e78ec0d15436ff8827e57710d04e12d50d0c5467e196/roofai-4.33.1.tar.gz
+[2024-05-26 23:53:58] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/e0/a4/c359a070266226b51947a6c22f4f92151a699de8076bc54c2c6ae46be971/vancouver_watching-3.360.1.tar.gz
+[2024-05-26 23:53:58] INFO root fetch - processPackages [ebrow]: Downloading https://files.pythonhosted.org/packages/98/90/ac64fc61f195c02518d833b916f30cef6de4ecf7db49799872636e58609b/ebrow-0.1.79.tar.gz
+[2024-05-26 23:53:58] INFO root fetch - processPackages [openai-commands]: executing diffoscope
+[2024-05-26 23:53:58] INFO root fetch - processPackages [openai-commands]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_commands-3.8.1.tar.gz tmp/openai_commands-3.9.1.tar.gz --markdown 20240526/o/openai-commands/3.8.1-3.9.1/README.md --exclude *.pyd
+[2024-05-26 23:53:58] INFO root fetch - processPackages [roofAI]: executing diffoscope
+[2024-05-26 23:53:58] INFO root fetch - processPackages [roofAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roofai-4.32.1.tar.gz tmp/roofai-4.33.1.tar.gz --markdown 20240526/r/roofAI/4.32.1-4.33.1/README.md --exclude *.pyd
+[2024-05-26 23:53:58] INFO root fetch - processPackages [vancouver-watching]: executing diffoscope
+[2024-05-26 23:53:58] INFO root fetch - processPackages [vancouver-watching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vancouver_watching-3.354.1.tar.gz tmp/vancouver_watching-3.360.1.tar.gz --markdown 20240526/v/vancouver-watching/3.354.1-3.360.1/README.md --exclude *.pyd
+[2024-05-26 23:53:58] INFO root fetch - processPackages [sql-lsp]: Downloading https://files.pythonhosted.org/packages/d5/be/e8c07211bd1c8fbc8f1bf79ad13a37b362ebbccf4a28ca723e7fe0bc0a38/sql_lsp-0.0.5.tar.gz
+[2024-05-26 23:53:58] INFO root fetch - processPackages [sql-lsp]: executing diffoscope
+[2024-05-26 23:53:58] INFO root fetch - processPackages [sql-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql_lsp-0.0.4.tar.gz tmp/sql_lsp-0.0.5.tar.gz --markdown 20240526/s/sql-lsp/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-26 23:53:58] INFO root fetch - processPackages [ebrow]: executing diffoscope
+[2024-05-26 23:53:58] INFO root fetch - processPackages [ebrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebrow-0.1.78.tar.gz tmp/ebrow-0.1.79.tar.gz --markdown 20240526/e/ebrow/0.1.78-0.1.79/README.md --exclude *.pyd
+[2024-05-26 23:53:59] INFO root fetch - processPackages [openai-commands]: Remove: archive file [/home/abi/fetcher/tmp/openai_commands-3.8.1.tar.gz]
+[2024-05-26 23:53:59] INFO root fetch - processPackages [openai-commands]: Remove: archive file [/home/abi/fetcher/tmp/openai_commands-3.9.1.tar.gz]
+[2024-05-26 23:53:59] INFO root fetch - processPackages [roofAI]: Remove: archive file [/home/abi/fetcher/tmp/roofai-4.32.1.tar.gz]
+[2024-05-26 23:53:59] INFO root fetch - processPackages [roofAI]: Remove: archive file [/home/abi/fetcher/tmp/roofai-4.33.1.tar.gz]
+[2024-05-26 23:53:59] INFO root fetch - main [MainThread]: End processing [openai-commands]: success
+[2024-05-26 23:53:59] INFO root fetch - main [MainThread]: End processing [roofAI]: success
+[2024-05-26 23:53:59] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.354.1.tar.gz]
+[2024-05-26 23:53:59] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.360.1.tar.gz]
+[2024-05-26 23:53:59] INFO root fetch - main [MainThread]: End processing [vancouver-watching]: success
+[2024-05-26 23:53:59] INFO root fetch - processPackages [sql-lsp]: Remove: archive file [/home/abi/fetcher/tmp/sql_lsp-0.0.4.tar.gz]
+[2024-05-26 23:53:59] INFO root fetch - processPackages [sql-lsp]: Remove: archive file [/home/abi/fetcher/tmp/sql_lsp-0.0.5.tar.gz]
+[2024-05-26 23:53:59] INFO root fetch - main [MainThread]: End processing [sql-lsp]: success
+[2024-05-26 23:54:00] INFO root fetch - processPackages [ebrow]: Remove: archive file [/home/abi/fetcher/tmp/ebrow-0.1.78.tar.gz]
+[2024-05-26 23:54:00] INFO root fetch - processPackages [ebrow]: Remove: archive file [/home/abi/fetcher/tmp/ebrow-0.1.79.tar.gz]
+[2024-05-26 23:54:00] INFO root fetch - main [MainThread]: End processing [ebrow]: success
+[2024-05-26 23:54:00] INFO root fetch - main [MainThread]: Store serial: [23388117]
