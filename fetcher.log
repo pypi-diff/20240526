@@ -13874,3 +13874,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 17:44:54] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
 [2024-05-26 17:44:54] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-05-26 17:44:54] INFO root fetch - main [MainThread]: Store serial: [23384416]
+[2024-05-26 17:46:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384416]
+[2024-05-26 17:47:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 17:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: affixapi
+[2024-05-26 17:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-26 17:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agixtsdk
+[2024-05-26 17:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: random-slugs
+[2024-05-26 17:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-alpaca-api
+[2024-05-26 17:47:03] INFO root fetch - processPackages [random-slugs]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-05-26 17:47:03] INFO root fetch - processPackages [agixtsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 17:47:03] INFO root fetch - processPackages [py-alpaca-api]: New version: [0.5.8] Old Version: [0.5.6]
+[2024-05-26 17:47:03] INFO root fetch - processPackages [random-slugs]: Downloading https://files.pythonhosted.org/packages/7b/c1/72d118a00cbf5976b6d7d32bba6b07c25fc32fefa6ed64e4035ebbe9237e/random_slugs-1.0.0.tar.gz
+[2024-05-26 17:47:03] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/64/51/16740684028f6d50dbe0f6a7e30fee24260c8a14b702a6167f193b8615dd/py_alpaca_api-0.5.6.tar.gz
+[2024-05-26 17:47:03] INFO root fetch - processPackages [affixapi]: New version: [1.1.79] Old Version: [1.1.78]
+[2024-05-26 17:47:03] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/fc/f4/85d852d47773fa6751a3ed8d3ca02e654579a0a110cdc23896aebd954b2c/agixtsdk-0.0.8.tar.gz
+[2024-05-26 17:47:03] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 17:47:03] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 17:47:04] INFO root fetch - processPackages [affixapi]: Downloading https://files.pythonhosted.org/packages/13/b9/6dc35a12bbb5aba598e6f8571184a096317f07b5f6831bdaf1e9d7812cc9/affixapi-1.1.78.tar.gz
+[2024-05-26 17:47:04] INFO root fetch - processPackages [random-slugs]: Downloading https://files.pythonhosted.org/packages/5d/86/0a92775a37a45d22c45452f243841c696cd9f8bd7f50e3bc913e9d6f4152/random_slugs-1.0.2.tar.gz
+[2024-05-26 17:47:04] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/77/cb/b1e6b2da3e0660295b13e6c98dd45fb3d803f001087f7be5c9064eb5d43e/py_alpaca_api-0.5.8.tar.gz
+[2024-05-26 17:47:04] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/74/75/1048551801b0e2aa197b36b7a2d249437127d0d21a98a3aea7016e0929b9/agixtsdk-0.0.9.tar.gz
+[2024-05-26 17:47:04] INFO root fetch - processPackages [py-alpaca-api]: executing diffoscope
+[2024-05-26 17:47:04] INFO root fetch - processPackages [py-alpaca-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_api-0.5.6.tar.gz tmp/py_alpaca_api-0.5.8.tar.gz --markdown 20240526/p/py-alpaca-api/0.5.6-0.5.8/README.md --exclude *.pyd
+[2024-05-26 17:47:04] INFO root fetch - processPackages [random-slugs]: executing diffoscope
+[2024-05-26 17:47:04] INFO root fetch - processPackages [random-slugs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/random_slugs-1.0.0.tar.gz tmp/random_slugs-1.0.2.tar.gz --markdown 20240526/r/random-slugs/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-05-26 17:47:04] INFO root fetch - processPackages [agixtsdk]: executing diffoscope
+[2024-05-26 17:47:04] INFO root fetch - processPackages [agixtsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixtsdk-0.0.8.tar.gz tmp/agixtsdk-0.0.9.tar.gz --markdown 20240526/a/agixtsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 17:47:04] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 17:47:04] INFO root fetch - processPackages [affixapi]: Downloading https://files.pythonhosted.org/packages/d2/fd/ea3de12ae99b50e0dfae1becf1b62c68d8f7b036bfafeee825ae3c482266/affixapi-1.1.79.tar.gz
+[2024-05-26 17:47:04] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 17:47:04] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 17:47:04] INFO root fetch - processPackages [affixapi]: executing diffoscope
+[2024-05-26 17:47:04] INFO root fetch - processPackages [affixapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affixapi-1.1.78.tar.gz tmp/affixapi-1.1.79.tar.gz --markdown 20240526/a/affixapi/1.1.78-1.1.79/README.md --exclude *.pyd
+[2024-05-26 17:47:04] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.8.tar.gz]
+[2024-05-26 17:47:04] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.9.tar.gz]
+[2024-05-26 17:47:04] INFO root fetch - main [MainThread]: End processing [agixtsdk]: success
+[2024-05-26 17:47:04] INFO root fetch - processPackages [random-slugs]: Remove: archive file [/home/abi/fetcher/tmp/random_slugs-1.0.0.tar.gz]
+[2024-05-26 17:47:04] INFO root fetch - processPackages [random-slugs]: Remove: archive file [/home/abi/fetcher/tmp/random_slugs-1.0.2.tar.gz]
+[2024-05-26 17:47:04] INFO root fetch - main [MainThread]: End processing [random-slugs]: success
+[2024-05-26 17:47:04] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.5.6.tar.gz]
+[2024-05-26 17:47:04] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.5.8.tar.gz]
+[2024-05-26 17:47:04] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
+[2024-05-26 17:47:05] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 17:47:05] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 17:47:05] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 17:47:05] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.78.tar.gz]
+[2024-05-26 17:47:05] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.79.tar.gz]
+[2024-05-26 17:47:05] INFO root fetch - main [MainThread]: End processing [affixapi]: success
+[2024-05-26 17:47:05] INFO root fetch - main [MainThread]: Store serial: [23384431]
