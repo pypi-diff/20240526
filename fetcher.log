@@ -4588,3 +4588,27 @@
 [2024-05-26 08:16:10] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.1.tar.gz]
 [2024-05-26 08:16:10] INFO root fetch - main [MainThread]: End processing [promptulate]: success
 [2024-05-26 08:16:10] INFO root fetch - main [MainThread]: Store serial: [23380288]
+[2024-05-26 08:18:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380288]
+[2024-05-26 08:18:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 08:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cbpi4-BM-PID-SmartBoilWithPump
+[2024-05-26 08:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlpx
+[2024-05-26 08:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AsadStack
+[2024-05-26 08:18:18] INFO root fetch - processPackages [nlpx]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-26 08:18:18] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/c6/17/9ba871ba6f96c1ea1b6ec41f70a133bc39c73bfbb98f4a24f3e0450ecc90/nlpx-1.1.6.tar.gz
+[2024-05-26 08:18:18] INFO root fetch - processPackages [cbpi4-BM-PID-SmartBoilWithPump]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 08:18:18] WARNING root fetch - processPackages [AsadStack]: Skipping, unable to determine old version
+[2024-05-26 08:18:18] INFO root fetch - main [MainThread]: End processing [AsadStack] error
+[2024-05-26 08:18:18] INFO root fetch - processPackages [cbpi4-BM-PID-SmartBoilWithPump]: Downloading https://files.pythonhosted.org/packages/7a/7a/ad7e0a97d490b50934ad84a2ae9bf3c4bfa91612bcb25f66838d66085eee/cbpi4-BM_PID_SmartBoilWithPump-0.1.6.tar.gz
+[2024-05-26 08:18:19] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/47/f7/3ad6e7a958a5e65afe0e125f7e5ab06dab37b2141855b52c3bc0213a5bc6/nlpx-1.1.7.tar.gz
+[2024-05-26 08:18:19] INFO root fetch - processPackages [nlpx]: executing diffoscope
+[2024-05-26 08:18:19] INFO root fetch - processPackages [nlpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpx-1.1.6.tar.gz tmp/nlpx-1.1.7.tar.gz --markdown 20240526/n/nlpx/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-26 08:18:19] INFO root fetch - processPackages [cbpi4-BM-PID-SmartBoilWithPump]: Downloading https://files.pythonhosted.org/packages/83/c2/e9a171faf8c4c74a81bcfd15cf5c4a5f5163a19194d31be57efe741dc71d/cbpi4-BM_PID_SmartBoilWithPump-0.1.7.tar.gz
+[2024-05-26 08:18:19] INFO root fetch - processPackages [cbpi4-BM-PID-SmartBoilWithPump]: executing diffoscope
+[2024-05-26 08:18:19] INFO root fetch - processPackages [cbpi4-BM-PID-SmartBoilWithPump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbpi4-BM_PID_SmartBoilWithPump-0.1.6.tar.gz tmp/cbpi4-BM_PID_SmartBoilWithPump-0.1.7.tar.gz --markdown 20240526/c/cbpi4-BM-PID-SmartBoilWithPump/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 08:18:19] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.6.tar.gz]
+[2024-05-26 08:18:19] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.7.tar.gz]
+[2024-05-26 08:18:19] INFO root fetch - main [MainThread]: End processing [nlpx]: success
+[2024-05-26 08:18:19] INFO root fetch - processPackages [cbpi4-BM-PID-SmartBoilWithPump]: Remove: archive file [/home/abi/fetcher/tmp/cbpi4-BM_PID_SmartBoilWithPump-0.1.6.tar.gz]
+[2024-05-26 08:18:19] INFO root fetch - processPackages [cbpi4-BM-PID-SmartBoilWithPump]: Remove: archive file [/home/abi/fetcher/tmp/cbpi4-BM_PID_SmartBoilWithPump-0.1.7.tar.gz]
+[2024-05-26 08:18:19] INFO root fetch - main [MainThread]: End processing [cbpi4-BM-PID-SmartBoilWithPump]: success
+[2024-05-26 08:18:19] INFO root fetch - main [MainThread]: Store serial: [23380292]
