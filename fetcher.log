@@ -9723,3 +9723,38 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:34:45] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.5.25.tar.gz]
 [2024-05-26 13:34:45] INFO root fetch - main [MainThread]: End processing [torchsnapshot-nightly]: success
 [2024-05-26 13:34:45] INFO root fetch - main [MainThread]: Store serial: [23382525]
+[2024-05-26 13:36:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382525]
+[2024-05-26 13:36:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 13:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: continuo
+[2024-05-26 13:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchserve-nightly
+[2024-05-26 13:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-archiver-nightly
+[2024-05-26 13:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-workflow-archiver-nightly
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torchserve-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/8c/43/921f1201a16b139e5df27112c5f8b7328ee4289bfc10ce1f76883a5ba87d/torchserve_nightly-2024.5.8-py3-none-any.whl
+[2024-05-26 13:36:59] INFO root fetch - processPackages [continuo]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/38/34/a73ff276b5dc5c3f2e6e02c0282c2f5aedce8951e022f3add74d284d17a6/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/39/78/71d3bda9b58dfb022af392de084f78f15d848683db00d19d604fd076ecff/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl
+[2024-05-26 13:36:59] INFO root fetch - processPackages [continuo]: Downloading https://files.pythonhosted.org/packages/ac/8e/cc13e57e976c9117d5eb5442b943b1d8124f2ab09ec560abd6bcd1536ebe/continuo-0.2.2.tar.gz
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/5c/3d/7e9f420b3d052022aab0ce6e49d396d1d147acccfc51748d2cfa54ae3390/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/55/73/d6cac6137d8889445aa6a2fbae4644d9528d66859fb2e8149098c685de95/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-05-26 13:36:59] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 24333047>=10485760
+[2024-05-26 13:36:59] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240526/t/torch-model-archiver-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2024-05-26 13:36:59] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240526/t/torch-workflow-archiver-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-26 13:36:59] INFO root fetch - processPackages [continuo]: Downloading https://files.pythonhosted.org/packages/2e/fc/51df6df2a31cb0a269ae14009e2a8c582467574f8a4676c72ff2822e2cc7/continuo-0.3.0.tar.gz
+[2024-05-26 13:37:00] INFO root fetch - processPackages [continuo]: executing diffoscope
+[2024-05-26 13:37:00] INFO root fetch - processPackages [continuo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/continuo-0.2.2.tar.gz tmp/continuo-0.3.0.tar.gz --markdown 20240526/c/continuo/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-26 13:37:00] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-26 13:37:00] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-26 13:37:00] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2024-05-26 13:37:00] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-26 13:37:00] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-26 13:37:00] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2024-05-26 13:37:00] INFO root fetch - processPackages [continuo]: Remove: archive file [/home/abi/fetcher/tmp/continuo-0.2.2.tar.gz]
+[2024-05-26 13:37:00] INFO root fetch - processPackages [continuo]: Remove: archive file [/home/abi/fetcher/tmp/continuo-0.3.0.tar.gz]
+[2024-05-26 13:37:00] INFO root fetch - main [MainThread]: End processing [continuo]: success
+[2024-05-26 13:37:00] INFO root fetch - main [MainThread]: Store serial: [23382547]
