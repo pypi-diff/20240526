@@ -4092,3 +4092,9 @@
 [2024-05-26 07:26:18] INFO root fetch - processPackages [tinytuya]: Remove: archive file [/home/abi/fetcher/tmp/tinytuya-1.9.1-py2.py3-none-any.whl.zip]
 [2024-05-26 07:26:18] INFO root fetch - main [MainThread]: End processing [tinytuya]: success
 [2024-05-26 07:26:18] INFO root fetch - main [MainThread]: Store serial: [23379982]
+[2024-05-26 07:28:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379982]
+[2024-05-26 07:28:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 07:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: new-gfpgan
+[2024-05-26 07:28:26] ERROR root fetch - processPackages [new-gfpgan]: Unable to get metadata: No such project 'new-gfpgan'
+[2024-05-26 07:28:26] INFO root fetch - main [MainThread]: End processing [new-gfpgan] error
+[2024-05-26 07:28:26] INFO root fetch - main [MainThread]: Store serial: [23379998]
