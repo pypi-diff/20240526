@@ -1291,3 +1291,15 @@
 [2024-05-26 02:31:52] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
 [2024-05-26 02:31:52] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
 [2024-05-26 02:31:52] INFO root fetch - main [MainThread]: Store serial: [23378682]
+[2024-05-26 02:33:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378682]
+[2024-05-26 02:34:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 02:34:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainlite
+[2024-05-26 02:34:00] INFO root fetch - processPackages [chainlite]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 02:34:01] INFO root fetch - processPackages [chainlite]: Downloading https://files.pythonhosted.org/packages/fe/24/60011c0bc1dbadd7325d99dc7e8ae38082545ed2f1a8240d5a662c7781f9/chainlite-0.1.6.tar.gz
+[2024-05-26 02:34:01] INFO root fetch - processPackages [chainlite]: Downloading https://files.pythonhosted.org/packages/df/fb/ae44455c3d54c5f3258cde246c0466e64b6eb6585796886dde7781ee5d4d/chainlite-0.1.7.tar.gz
+[2024-05-26 02:34:01] INFO root fetch - processPackages [chainlite]: executing diffoscope
+[2024-05-26 02:34:01] INFO root fetch - processPackages [chainlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlite-0.1.6.tar.gz tmp/chainlite-0.1.7.tar.gz --markdown 20240526/c/chainlite/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 02:34:01] INFO root fetch - processPackages [chainlite]: Remove: archive file [/home/abi/fetcher/tmp/chainlite-0.1.6.tar.gz]
+[2024-05-26 02:34:01] INFO root fetch - processPackages [chainlite]: Remove: archive file [/home/abi/fetcher/tmp/chainlite-0.1.7.tar.gz]
+[2024-05-26 02:34:01] INFO root fetch - main [MainThread]: End processing [chainlite]: success
+[2024-05-26 02:34:01] INFO root fetch - main [MainThread]: Store serial: [23378685]
