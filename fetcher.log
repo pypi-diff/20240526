@@ -2081,3 +2081,15 @@
 [2024-05-26 03:47:50] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.1.tar.gz]
 [2024-05-26 03:47:50] INFO root fetch - main [MainThread]: End processing [lenlp]: success
 [2024-05-26 03:47:50] INFO root fetch - main [MainThread]: Store serial: [23379097]
+[2024-05-26 03:49:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379097]
+[2024-05-26 03:49:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 03:49:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2024-05-26 03:49:59] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-26 03:49:59] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-26 03:49:59] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-26 03:49:59] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-26 03:49:59] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240526/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-26 03:49:59] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-26 03:49:59] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-26 03:49:59] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-26 03:49:59] INFO root fetch - main [MainThread]: Store serial: [23379099]
