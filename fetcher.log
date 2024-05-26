@@ -11156,3 +11156,54 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:24:24] INFO root fetch - processPackages [light-database]: Remove: archive file [/home/abi/fetcher/tmp/light_database-0.2.0-cp311-cp311-win_amd64.whl.zip]
 [2024-05-26 15:24:24] INFO root fetch - main [MainThread]: End processing [light-database]: success
 [2024-05-26 15:24:24] INFO root fetch - main [MainThread]: Store serial: [23383201]
+[2024-05-26 15:26:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383201]
+[2024-05-26 15:26:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bipsea
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zodchy-fastapi
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: madato
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ab-test-advanced-toolkit
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smaht-submitr
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pi-awning-webthing
+[2024-05-26 15:26:49] INFO root fetch - processPackages [pi-awning-webthing]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ab-test-advanced-toolkit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 15:26:49] INFO root fetch - processPackages [smaht-submitr]: New version: [0.8.2.1b9] Old Version: [0.8.2.1b8]
+[2024-05-26 15:26:49] INFO root fetch - processPackages [zodchy-fastapi]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-26 15:26:49] INFO root fetch - processPackages [bipsea]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-26 15:26:49] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/f3/91/ba07c9e27dbb568d0143cb8eab18a7b153f080c095d6be2a900c7fd69332/pi_awning_webthing-0.3.8.tar.gz
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Downloading https://files.pythonhosted.org/packages/d8/42/ab004b4ccd6255554b61e818ddbed6d3124273a7fb9d64d2805cb852d1bf/ab_test_advanced_toolkit-0.0.8.tar.gz
+[2024-05-26 15:26:49] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/94/70/b34d2d34c394fc3e3b347e32bec8900b8b8643db5842d59991c4e84ea528/smaht_submitr-0.8.2.1b8.tar.gz
+[2024-05-26 15:26:49] WARNING root fetch - processPackages [madato]: Skipping, unable to determine old version
+[2024-05-26 15:26:49] INFO root fetch - main [MainThread]: End processing [madato] error
+[2024-05-26 15:26:49] INFO root fetch - processPackages [bipsea]: Downloading https://files.pythonhosted.org/packages/cd/76/6e591ace4f14bdf5a1a7e5a9e6a1a41fe58ce5dc3d708286d747edcbc77c/bipsea-0.1.tar.gz
+[2024-05-26 15:26:49] INFO root fetch - processPackages [zodchy-fastapi]: Downloading https://files.pythonhosted.org/packages/16/cd/0a825770abeac839bc7c83f3f8736b461b23e00e9e0045be9d64cb8d2b6a/zodchy_fastapi-0.3.0.tar.gz
+[2024-05-26 15:26:49] INFO root fetch - processPackages [pi-awning-webthing]: Downloading https://files.pythonhosted.org/packages/91/62/519a2d978d40a7a873ea8499be051ed177b37aec922cf02800d789a8f3f2/pi_awning_webthing-0.3.9.tar.gz
+[2024-05-26 15:26:49] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Downloading https://files.pythonhosted.org/packages/83/21/c8975e01e119d8bd94b24149ac6babca6fd2e5707a3bf6814a00df981294/ab_test_advanced_toolkit-0.0.9.tar.gz
+[2024-05-26 15:26:50] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/49/5f/4a0cbcc953b126fd89e8d3c5beafcab7cf195845995d05395f40952ad23c/smaht_submitr-0.8.2.1b9.tar.gz
+[2024-05-26 15:26:50] INFO root fetch - processPackages [pi-awning-webthing]: executing diffoscope
+[2024-05-26 15:26:50] INFO root fetch - processPackages [pi-awning-webthing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_awning_webthing-0.3.8.tar.gz tmp/pi_awning_webthing-0.3.9.tar.gz --markdown 20240526/p/pi-awning-webthing/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-26 15:26:50] INFO root fetch - processPackages [ab-test-advanced-toolkit]: executing diffoscope
+[2024-05-26 15:26:50] INFO root fetch - processPackages [ab-test-advanced-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ab_test_advanced_toolkit-0.0.8.tar.gz tmp/ab_test_advanced_toolkit-0.0.9.tar.gz --markdown 20240526/a/ab-test-advanced-toolkit/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 15:26:50] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-05-26 15:26:50] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.8.2.1b8.tar.gz tmp/smaht_submitr-0.8.2.1b9.tar.gz --markdown 20240526/s/smaht-submitr/0.8.2.1b8-0.8.2.1b9/README.md --exclude *.pyd
+[2024-05-26 15:26:50] INFO root fetch - processPackages [bipsea]: Downloading https://files.pythonhosted.org/packages/43/1a/57e704e068a391c69c929b8b5feaadb42a0706b7440210d318b07408c600/bipsea-0.1.1.tar.gz
+[2024-05-26 15:26:50] INFO root fetch - processPackages [zodchy-fastapi]: Downloading https://files.pythonhosted.org/packages/41/9d/a5a1bf1f8ab0b9c9857b503986b9a4f37f2654cbc7e8414915265d0f651d/zodchy_fastapi-0.3.1.tar.gz
+[2024-05-26 15:26:50] INFO root fetch - processPackages [bipsea]: executing diffoscope
+[2024-05-26 15:26:50] INFO root fetch - processPackages [bipsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bipsea-0.1.tar.gz tmp/bipsea-0.1.1.tar.gz --markdown 20240526/b/bipsea/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-26 15:26:50] INFO root fetch - processPackages [zodchy-fastapi]: executing diffoscope
+[2024-05-26 15:26:50] INFO root fetch - processPackages [zodchy-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodchy_fastapi-0.3.0.tar.gz tmp/zodchy_fastapi-0.3.1.tar.gz --markdown 20240526/z/zodchy-fastapi/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-26 15:26:50] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.8.tar.gz]
+[2024-05-26 15:26:50] INFO root fetch - processPackages [pi-awning-webthing]: Remove: archive file [/home/abi/fetcher/tmp/pi_awning_webthing-0.3.9.tar.gz]
+[2024-05-26 15:26:50] INFO root fetch - main [MainThread]: End processing [pi-awning-webthing]: success
+[2024-05-26 15:26:50] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/ab_test_advanced_toolkit-0.0.8.tar.gz]
+[2024-05-26 15:26:50] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/ab_test_advanced_toolkit-0.0.9.tar.gz]
+[2024-05-26 15:26:50] INFO root fetch - main [MainThread]: End processing [ab-test-advanced-toolkit]: success
+[2024-05-26 15:26:51] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.1.tar.gz]
+[2024-05-26 15:26:51] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.1.1.tar.gz]
+[2024-05-26 15:26:51] INFO root fetch - main [MainThread]: End processing [bipsea]: success
+[2024-05-26 15:26:51] INFO root fetch - processPackages [zodchy-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_fastapi-0.3.0.tar.gz]
+[2024-05-26 15:26:51] INFO root fetch - processPackages [zodchy-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_fastapi-0.3.1.tar.gz]
+[2024-05-26 15:26:51] INFO root fetch - main [MainThread]: End processing [zodchy-fastapi]: success
+[2024-05-26 15:26:51] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.2.1b8.tar.gz]
+[2024-05-26 15:26:51] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.2.1b9.tar.gz]
+[2024-05-26 15:26:51] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-05-26 15:26:51] INFO root fetch - main [MainThread]: Store serial: [23383259]
