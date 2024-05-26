@@ -4893,3 +4893,33 @@
 [2024-05-26 08:48:36] INFO root fetch - processPackages [mypylib]: Remove: archive file [/home/abi/fetcher/tmp/mypylib-0.2.8.tar.gz]
 [2024-05-26 08:48:36] INFO root fetch - main [MainThread]: End processing [mypylib]: success
 [2024-05-26 08:48:36] INFO root fetch - main [MainThread]: Store serial: [23380408]
+[2024-05-26 08:50:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380408]
+[2024-05-26 08:50:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 08:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-05-26 08:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xssbase
+[2024-05-26 08:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapegraphai
+[2024-05-26 08:50:45] INFO root fetch - processPackages [scrapegraphai]: New version: [1.5.0b4] Old Version: [1.5.0b3]
+[2024-05-26 08:50:45] INFO root fetch - processPackages [xssbase]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-26 08:50:45] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/2e/34/bfbf8269022eb1491f93fc46439bee7b9ee8371cba731279fdf7380d7f79/scrapegraphai-1.5.0b3.tar.gz
+[2024-05-26 08:50:45] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 08:50:45] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-05-26 08:50:45] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/e5/20/3ac84e5c3b601b393da7f757a72f8336e6ea45dbc54ecd63db8383161da6/xssbase-1.0.1.tar.gz
+[2024-05-26 08:50:46] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 08:50:46] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/32/8e/1f840ea33baf12d7ce5cc8cf60e874270c047da9c8a8103d54de34966571/xssbase-1.0.2.tar.gz
+[2024-05-26 08:50:46] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 08:50:46] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 08:50:46] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/9d/4b/2c0807a27bcfe16f14874bc003b81e0f633772e84be5866d67505ff31eef/scrapegraphai-1.5.0b4.tar.gz
+[2024-05-26 08:50:46] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 08:50:46] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-1.0.1.tar.gz tmp/xssbase-1.0.2.tar.gz --markdown 20240526/x/xssbase/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-26 08:50:46] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-26 08:50:46] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.5.0b3.tar.gz tmp/scrapegraphai-1.5.0b4.tar.gz --markdown 20240526/s/scrapegraphai/1.5.0b3-1.5.0b4/README.md --exclude *.pyd
+[2024-05-26 08:50:46] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.1.tar.gz]
+[2024-05-26 08:50:46] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.2.tar.gz]
+[2024-05-26 08:50:46] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 08:50:46] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-05-26 08:50:46] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 08:50:46] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 08:50:48] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b3.tar.gz]
+[2024-05-26 08:50:48] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b4.tar.gz]
+[2024-05-26 08:50:48] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-26 08:50:48] INFO root fetch - main [MainThread]: Store serial: [23380422]
