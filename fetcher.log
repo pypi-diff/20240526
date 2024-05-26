@@ -3232,3 +3232,24 @@
 [2024-05-26 05:53:28] INFO root fetch - processPackages [python-wizard]: Remove: archive file [/home/abi/fetcher/tmp/python_wizard-0.1.1.tar.gz]
 [2024-05-26 05:53:28] INFO root fetch - main [MainThread]: End processing [python-wizard]: success
 [2024-05-26 05:53:28] INFO root fetch - main [MainThread]: Store serial: [23379537]
+[2024-05-26 05:55:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379537]
+[2024-05-26 05:55:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 05:55:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blackboxai
+[2024-05-26 05:55:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omnijp
+[2024-05-26 05:55:37] INFO root fetch - processPackages [blackboxai]: New version: [3.2] Old Version: [3.1]
+[2024-05-26 05:55:37] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/17/13/5be8ce9759f86a49840a9a089f42d317046151eb26d7e44feb567b02ec47/blackboxai-3.1.tar.gz
+[2024-05-26 05:55:37] INFO root fetch - processPackages [omnijp]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-05-26 05:55:37] INFO root fetch - processPackages [omnijp]: Downloading https://files.pythonhosted.org/packages/27/6b/9138e736e756ad17b66a3959ffe89404f5060f002e10741b6ab8f9ac1004/omnijp-2.2.0.tar.gz
+[2024-05-26 05:55:37] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/7b/49/2944594225c1eb1b9bf094ec63a71539c42a8ebbb8bd30ef9dbb3322270c/blackboxai-3.2.tar.gz
+[2024-05-26 05:55:37] INFO root fetch - processPackages [blackboxai]: executing diffoscope
+[2024-05-26 05:55:37] INFO root fetch - processPackages [blackboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackboxai-3.1.tar.gz tmp/blackboxai-3.2.tar.gz --markdown 20240526/b/blackboxai/3.1-3.2/README.md --exclude *.pyd
+[2024-05-26 05:55:37] INFO root fetch - processPackages [omnijp]: Downloading https://files.pythonhosted.org/packages/71/ad/fc70539f9c36f5620cbe0ec6bcfa7f46d14efe35e872981a5b101f8058a5/omnijp-2.3.0.tar.gz
+[2024-05-26 05:55:38] INFO root fetch - processPackages [omnijp]: executing diffoscope
+[2024-05-26 05:55:38] INFO root fetch - processPackages [omnijp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnijp-2.2.0.tar.gz tmp/omnijp-2.3.0.tar.gz --markdown 20240526/o/omnijp/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-05-26 05:55:38] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-3.1.tar.gz]
+[2024-05-26 05:55:38] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-3.2.tar.gz]
+[2024-05-26 05:55:38] INFO root fetch - main [MainThread]: End processing [blackboxai]: success
+[2024-05-26 05:55:38] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.2.0.tar.gz]
+[2024-05-26 05:55:38] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.3.0.tar.gz]
+[2024-05-26 05:55:38] INFO root fetch - main [MainThread]: End processing [omnijp]: success
+[2024-05-26 05:55:38] INFO root fetch - main [MainThread]: Store serial: [23379561]
