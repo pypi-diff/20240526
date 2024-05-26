@@ -3312,3 +3312,15 @@
 [2024-05-26 06:02:07] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.6.4.tar.gz]
 [2024-05-26 06:02:07] INFO root fetch - main [MainThread]: End processing [twikit]: success
 [2024-05-26 06:02:07] INFO root fetch - main [MainThread]: Store serial: [23379584]
+[2024-05-26 06:04:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379584]
+[2024-05-26 06:04:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 06:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: os-toolkit
+[2024-05-26 06:04:16] INFO root fetch - processPackages [os-toolkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 06:04:16] INFO root fetch - processPackages [os-toolkit]: Downloading https://files.pythonhosted.org/packages/15/b1/4b588c9bd1f7a8d88a42dbf8f23774a056aa7ed032bb8daa755db623ad3b/os_toolkit-0.1.0.tar.gz
+[2024-05-26 06:04:16] INFO root fetch - processPackages [os-toolkit]: Downloading https://files.pythonhosted.org/packages/c2/96/31b05cc574d386c1e567dc8613ea4352f09980b1d43e2c28a17ad70ae215/os_toolkit-0.1.1.tar.gz
+[2024-05-26 06:04:16] INFO root fetch - processPackages [os-toolkit]: executing diffoscope
+[2024-05-26 06:04:16] INFO root fetch - processPackages [os-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os_toolkit-0.1.0.tar.gz tmp/os_toolkit-0.1.1.tar.gz --markdown 20240526/o/os-toolkit/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 06:04:17] INFO root fetch - processPackages [os-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/os_toolkit-0.1.0.tar.gz]
+[2024-05-26 06:04:17] INFO root fetch - processPackages [os-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/os_toolkit-0.1.1.tar.gz]
+[2024-05-26 06:04:17] INFO root fetch - main [MainThread]: End processing [os-toolkit]: success
+[2024-05-26 06:04:17] INFO root fetch - main [MainThread]: Store serial: [23379587]
