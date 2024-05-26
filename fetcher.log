@@ -2742,3 +2742,12 @@
 [2024-05-26 05:01:32] INFO root fetch - processPackages [blueness]: Remove: archive file [/home/abi/fetcher/tmp/blueness-3.9.1.tar.gz]
 [2024-05-26 05:01:32] INFO root fetch - main [MainThread]: End processing [blueness]: success
 [2024-05-26 05:01:32] INFO root fetch - main [MainThread]: Store serial: [23379379]
+[2024-05-26 05:03:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379379]
+[2024-05-26 05:03:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 05:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timeSeriesForecastpkgpy
+[2024-05-26 05:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psalm
+[2024-05-26 05:03:41] WARNING root fetch - processPackages [psalm]: Skipping, unable to determine old version
+[2024-05-26 05:03:41] INFO root fetch - main [MainThread]: End processing [psalm] error
+[2024-05-26 05:03:41] WARNING root fetch - processPackages [timeSeriesForecastpkgpy]: Skipping, unable to determine old version
+[2024-05-26 05:03:41] INFO root fetch - main [MainThread]: End processing [timeSeriesForecastpkgpy] error
+[2024-05-26 05:03:41] INFO root fetch - main [MainThread]: Store serial: [23379385]
