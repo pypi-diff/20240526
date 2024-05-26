@@ -16482,3 +16482,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:24:18] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.5.tar.gz]
 [2024-05-26 20:24:18] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-vpc-bucket]: success
 [2024-05-26 20:24:18] INFO root fetch - main [MainThread]: Store serial: [23385692]
+[2024-05-26 20:26:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385692]
+[2024-05-26 20:26:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 20:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notebooks-and-scripts
+[2024-05-26 20:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chess-transformer
+[2024-05-26 20:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sakee
+[2024-05-26 20:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: afeng-py-tools
+[2024-05-26 20:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ns-search-saved-export
+[2024-05-26 20:26:26] INFO root fetch - processPackages [notebooks-and-scripts]: New version: [4.458.1] Old Version: [4.455.1]
+[2024-05-26 20:26:26] INFO root fetch - processPackages [ns-search-saved-export]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-26 20:26:26] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 20:26:26] INFO root fetch - processPackages [ns-search-saved-export]: Downloading https://files.pythonhosted.org/packages/12/1a/7d73f7bab413149e9f2ea184b7e21d308e4c9711c5384b70f1779527a796/ns_search_saved_export-0.1.2.tar.gz
+[2024-05-26 20:26:26] WARNING root fetch - processPackages [chess-transformer]: Skipping, unable to determine old version
+[2024-05-26 20:26:26] INFO root fetch - main [MainThread]: End processing [chess-transformer] error
+[2024-05-26 20:26:26] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/49/3f/ced9c8bc8e2aeb1cbc22773d003337ba70aa503f0f3122ff413f5edccdfb/notebooks_and_scripts-4.455.1.tar.gz
+[2024-05-26 20:26:26] INFO root fetch - processPackages [sakee]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 20:26:26] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-05-26 20:26:27] INFO root fetch - processPackages [sakee]: Downloading https://files.pythonhosted.org/packages/10/db/fa7fabaae34dad28843e65959f9ef3329193519482b78c99b242072c8fd7/sakee-0.1.6.tar.gz
+[2024-05-26 20:26:27] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-05-26 20:26:27] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/22/c7/f42f80e3b4a5fbc520f96aa561df61519da36247144e876a73ecdced1796/notebooks_and_scripts-4.458.1.tar.gz
+[2024-05-26 20:26:27] INFO root fetch - processPackages [ns-search-saved-export]: Downloading https://files.pythonhosted.org/packages/c1/d9/8a70c11e79ba50b057505221a65822a16673ce6e5263e6f4d962ab7c45a8/ns_search_saved_export-0.1.3.tar.gz
+[2024-05-26 20:26:27] INFO root fetch - processPackages [notebooks-and-scripts]: executing diffoscope
+[2024-05-26 20:26:27] INFO root fetch - processPackages [notebooks-and-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebooks_and_scripts-4.455.1.tar.gz tmp/notebooks_and_scripts-4.458.1.tar.gz --markdown 20240526/n/notebooks-and-scripts/4.455.1-4.458.1/README.md --exclude *.pyd
+[2024-05-26 20:26:27] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-05-26 20:26:27] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240526/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 20:26:27] INFO root fetch - processPackages [ns-search-saved-export]: executing diffoscope
+[2024-05-26 20:26:27] INFO root fetch - processPackages [ns-search-saved-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ns_search_saved_export-0.1.2.tar.gz tmp/ns_search_saved_export-0.1.3.tar.gz --markdown 20240526/n/ns-search-saved-export/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-26 20:26:27] INFO root fetch - processPackages [sakee]: Downloading https://files.pythonhosted.org/packages/af/13/d2e416e122c1cd4862d87e7e2b9a89705e4ce5e0104cb2a50a91d0f7157b/sakee-0.1.7.tar.gz
+[2024-05-26 20:26:27] INFO root fetch - processPackages [sakee]: executing diffoscope
+[2024-05-26 20:26:27] INFO root fetch - processPackages [sakee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sakee-0.1.6.tar.gz tmp/sakee-0.1.7.tar.gz --markdown 20240526/s/sakee/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 20:26:27] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.455.1.tar.gz]
+[2024-05-26 20:26:27] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.458.1.tar.gz]
+[2024-05-26 20:26:27] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
+[2024-05-26 20:26:28] INFO root fetch - processPackages [ns-search-saved-export]: Remove: archive file [/home/abi/fetcher/tmp/ns_search_saved_export-0.1.2.tar.gz]
+[2024-05-26 20:26:28] INFO root fetch - processPackages [ns-search-saved-export]: Remove: archive file [/home/abi/fetcher/tmp/ns_search_saved_export-0.1.3.tar.gz]
+[2024-05-26 20:26:28] INFO root fetch - main [MainThread]: End processing [ns-search-saved-export]: success
+[2024-05-26 20:26:28] INFO root fetch - processPackages [sakee]: Remove: archive file [/home/abi/fetcher/tmp/sakee-0.1.6.tar.gz]
+[2024-05-26 20:26:28] INFO root fetch - processPackages [sakee]: Remove: archive file [/home/abi/fetcher/tmp/sakee-0.1.7.tar.gz]
+[2024-05-26 20:26:28] INFO root fetch - main [MainThread]: End processing [sakee]: success
+[2024-05-26 20:26:28] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-05-26 20:26:28] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-05-26 20:26:28] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-05-26 20:26:28] INFO root fetch - main [MainThread]: Store serial: [23385710]
