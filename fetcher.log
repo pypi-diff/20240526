@@ -15420,3 +15420,36 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 19:16:22] INFO root fetch - processPackages [irispie]: Remove: archive file [/home/abi/fetcher/tmp/irispie-0.9.0.tar.gz]
 [2024-05-26 19:16:22] INFO root fetch - main [MainThread]: End processing [irispie]: success
 [2024-05-26 19:16:22] INFO root fetch - main [MainThread]: Store serial: [23385107]
+[2024-05-26 19:18:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385107]
+[2024-05-26 19:18:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 19:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-htmx-utils
+[2024-05-26 19:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydts
+[2024-05-26 19:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ludic
+[2024-05-26 19:18:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: infn-ophyd-hal
+[2024-05-26 19:18:31] INFO root fetch - processPackages [infn-ophyd-hal]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-05-26 19:18:31] INFO root fetch - processPackages [infn-ophyd-hal]: Downloading https://files.pythonhosted.org/packages/3d/c6/5e133706fa3d7773a8213eb7e647b12c3a2bb534fdea0018c940e27ce230/infn_ophyd_hal-1.0.0.tar.gz
+[2024-05-26 19:18:31] WARNING root fetch - processPackages [django-htmx-utils]: Skipping, unable to determine old version
+[2024-05-26 19:18:31] INFO root fetch - main [MainThread]: End processing [django-htmx-utils] error
+[2024-05-26 19:18:31] INFO root fetch - processPackages [ludic]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-26 19:18:31] INFO root fetch - processPackages [pydts]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-26 19:18:31] INFO root fetch - processPackages [infn-ophyd-hal]: Downloading https://files.pythonhosted.org/packages/ba/35/b02e6e7914ed540029809f93557afee1fee9bf45043c410beb4011d60362/infn_ophyd_hal-1.0.2.tar.gz
+[2024-05-26 19:18:31] INFO root fetch - processPackages [ludic]: Downloading https://files.pythonhosted.org/packages/6c/df/2decbea2b1fa2168173749d5ab828dc74840c667fce52568c037876a5993/ludic-0.4.4.tar.gz
+[2024-05-26 19:18:31] INFO root fetch - processPackages [pydts]: Downloading https://files.pythonhosted.org/packages/f3/b9/ef6f0e3f883635e7c93d39f6e2245a28efde0f21ed404244c36458d05bda/pydts-0.8.8.tar.gz
+[2024-05-26 19:18:31] INFO root fetch - processPackages [infn-ophyd-hal]: executing diffoscope
+[2024-05-26 19:18:31] INFO root fetch - processPackages [infn-ophyd-hal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infn_ophyd_hal-1.0.0.tar.gz tmp/infn_ophyd_hal-1.0.2.tar.gz --markdown 20240526/i/infn-ophyd-hal/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-05-26 19:18:31] INFO root fetch - processPackages [ludic]: Downloading https://files.pythonhosted.org/packages/92/e8/fa6784a6ae79112922cb279ca2ca9d2c67f5604245e665ad28476695b71b/ludic-0.4.5.tar.gz
+[2024-05-26 19:18:32] INFO root fetch - processPackages [pydts]: Downloading https://files.pythonhosted.org/packages/2c/c6/17c8fe859a95073ec7c8316d29b98c941a9b016cedfc19c4521eb69e3f11/pydts-0.8.9.tar.gz
+[2024-05-26 19:18:32] INFO root fetch - processPackages [ludic]: executing diffoscope
+[2024-05-26 19:18:32] INFO root fetch - processPackages [ludic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ludic-0.4.4.tar.gz tmp/ludic-0.4.5.tar.gz --markdown 20240526/l/ludic/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-26 19:18:32] INFO root fetch - processPackages [infn-ophyd-hal]: Remove: archive file [/home/abi/fetcher/tmp/infn_ophyd_hal-1.0.0.tar.gz]
+[2024-05-26 19:18:32] INFO root fetch - processPackages [infn-ophyd-hal]: Remove: archive file [/home/abi/fetcher/tmp/infn_ophyd_hal-1.0.2.tar.gz]
+[2024-05-26 19:18:32] INFO root fetch - main [MainThread]: End processing [infn-ophyd-hal]: success
+[2024-05-26 19:18:32] INFO root fetch - processPackages [pydts]: executing diffoscope
+[2024-05-26 19:18:32] INFO root fetch - processPackages [pydts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydts-0.8.8.tar.gz tmp/pydts-0.8.9.tar.gz --markdown 20240526/p/pydts/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-26 19:18:32] INFO root fetch - processPackages [ludic]: Remove: archive file [/home/abi/fetcher/tmp/ludic-0.4.4.tar.gz]
+[2024-05-26 19:18:32] INFO root fetch - processPackages [ludic]: Remove: archive file [/home/abi/fetcher/tmp/ludic-0.4.5.tar.gz]
+[2024-05-26 19:18:32] INFO root fetch - main [MainThread]: End processing [ludic]: success
+[2024-05-26 19:18:33] INFO root fetch - processPackages [pydts]: Remove: archive file [/home/abi/fetcher/tmp/pydts-0.8.8.tar.gz]
+[2024-05-26 19:18:33] INFO root fetch - processPackages [pydts]: Remove: archive file [/home/abi/fetcher/tmp/pydts-0.8.9.tar.gz]
+[2024-05-26 19:18:33] INFO root fetch - main [MainThread]: End processing [pydts]: success
+[2024-05-26 19:18:33] INFO root fetch - main [MainThread]: Store serial: [23385121]
