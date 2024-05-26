@@ -5625,3 +5625,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:39:39] INFO root fetch - processPackages [data-manipulation]: Remove: archive file [/home/abi/fetcher/tmp/data_manipulation-0.9.tar.gz]
 [2024-05-26 09:39:39] INFO root fetch - main [MainThread]: End processing [data-manipulation]: success
 [2024-05-26 09:39:39] INFO root fetch - main [MainThread]: Store serial: [23380680]
+[2024-05-26 09:41:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380680]
+[2024-05-26 09:41:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 09:41:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-05-26 09:41:49] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.59]
+[2024-05-26 09:41:49] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/28/72/8b33ab4499887d6c0896c33e6a39610d42daab4427a1f76f81d7eb6608f8/scatcluster-0.0.59.tar.gz
+[2024-05-26 09:41:49] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 09:41:49] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 09:41:49] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.59.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.59-0.0.6/README.md --exclude *.pyd
+[2024-05-26 09:41:50] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.59.tar.gz]
+[2024-05-26 09:41:50] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 09:41:50] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 09:41:50] INFO root fetch - main [MainThread]: Store serial: [23380686]
