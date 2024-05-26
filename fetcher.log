@@ -11776,3 +11776,29 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:59:49] INFO root fetch - processPackages [django-prose-editor]: Remove: archive file [/home/abi/fetcher/tmp/django_prose_editor-0.4.0.tar.gz]
 [2024-05-26 15:59:49] INFO root fetch - main [MainThread]: End processing [django-prose-editor]: success
 [2024-05-26 15:59:49] INFO root fetch - main [MainThread]: Store serial: [23383573]
+[2024-05-26 16:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383573]
+[2024-05-26 16:02:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 16:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: a9x-webstatistics
+[2024-05-26 16:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dscontexai
+[2024-05-26 16:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MaaFw
+[2024-05-26 16:02:17] INFO root fetch - processPackages [dscontexai]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-05-26 16:02:17] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/07/ba/8f43fb8484d2273901107528f4d077361a19ad4ccbf641d7bd3f4f18f9ef/dscontexai-0.0.3.tar.gz
+[2024-05-26 16:02:17] INFO root fetch - processPackages [MaaFw]: New version: [1.8.0b2] Old Version: [1.8.0b1]
+[2024-05-26 16:02:17] INFO root fetch - processPackages [a9x-webstatistics]: New version: [0.2] Old Version: [0.1.9]
+[2024-05-26 16:02:18] INFO root fetch - processPackages [MaaFw]: Downloading https://files.pythonhosted.org/packages/8a/04/aa9c6bc40968d25817a854c8c899aac988b89ab8ba3c7d1ffed57bd7088a/MaaFw-1.8.0b1-py3-none-win_arm64.whl
+[2024-05-26 16:02:18] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/d1/48/63cfa492e91c19c869faebe4e00f9d747847692a56cffb3154cd9e2e41ef/a9x_webstatistics-0.1.9.tar.gz
+[2024-05-26 16:02:18] WARNING root fetch - processPackages [MaaFw]: Skipping package: exceeds size limit 12038535>=10485760
+[2024-05-26 16:02:18] INFO root fetch - main [MainThread]: End processing [MaaFw] error
+[2024-05-26 16:02:18] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/94/d9/a91652e8739fb952e46cc9bdb4234e6d0702adbf48fe6eaf28d6b2c211e3/dscontexai-0.1.0.tar.gz
+[2024-05-26 16:02:18] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 16:02:18] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.0.3.tar.gz tmp/dscontexai-0.1.0.tar.gz --markdown 20240526/d/dscontexai/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-05-26 16:02:18] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/d5/3d/1ecb7130ad98f5fef1291e9a9345cb5c1f17c16cddb82ab43a760f7ccfb5/a9x_webstatistics-0.2.tar.gz
+[2024-05-26 16:02:18] INFO root fetch - processPackages [a9x-webstatistics]: executing diffoscope
+[2024-05-26 16:02:18] INFO root fetch - processPackages [a9x-webstatistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a9x_webstatistics-0.1.9.tar.gz tmp/a9x_webstatistics-0.2.tar.gz --markdown 20240526/a/a9x-webstatistics/0.1.9-0.2/README.md --exclude *.pyd
+[2024-05-26 16:02:18] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.3.tar.gz]
+[2024-05-26 16:02:18] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.1.0.tar.gz]
+[2024-05-26 16:02:18] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 16:02:19] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.1.9.tar.gz]
+[2024-05-26 16:02:19] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.2.tar.gz]
+[2024-05-26 16:02:19] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics]: success
+[2024-05-26 16:02:19] INFO root fetch - main [MainThread]: Store serial: [23383587]
