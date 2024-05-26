@@ -16665,3 +16665,42 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:33:06] INFO root fetch - processPackages [bxa]: Remove: archive file [/home/abi/fetcher/tmp/bxa-4.1.3.tar.gz]
 [2024-05-26 20:33:06] INFO root fetch - main [MainThread]: End processing [bxa]: success
 [2024-05-26 20:33:06] INFO root fetch - main [MainThread]: Store serial: [23385765]
+[2024-05-26 20:35:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385765]
+[2024-05-26 20:35:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 20:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agenpy
+[2024-05-26 20:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatcluster
+[2024-05-26 20:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chess-transformer
+[2024-05-26 20:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pretix-sumup-payment
+[2024-05-26 20:35:15] INFO root fetch - processPackages [chess-transformer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-26 20:35:15] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.59]
+[2024-05-26 20:35:15] INFO root fetch - processPackages [pretix-sumup-payment]: New version: [1.1.4] Old Version: [1.1.2]
+[2024-05-26 20:35:15] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/28/72/8b33ab4499887d6c0896c33e6a39610d42daab4427a1f76f81d7eb6608f8/scatcluster-0.0.59.tar.gz
+[2024-05-26 20:35:15] INFO root fetch - processPackages [agenpy]: New version: [0.1.2] Old Version: [0.1]
+[2024-05-26 20:35:15] INFO root fetch - processPackages [chess-transformer]: Downloading https://files.pythonhosted.org/packages/05/d1/036328fd1f1d35c5a46a379b3d6440d419928174faef66c5a0a2e7370f8a/chess_transformer-0.1.0.tar.gz
+[2024-05-26 20:35:15] INFO root fetch - processPackages [agenpy]: Downloading https://files.pythonhosted.org/packages/8c/6f/0c8351994183a1bee07524198027df051d9330c91589ce4c5bacf2c819c5/agenpy-0.1.tar.gz
+[2024-05-26 20:35:15] INFO root fetch - processPackages [pretix-sumup-payment]: Downloading https://files.pythonhosted.org/packages/c8/bf/9e450b49da3dfff4566d17ea556059c95c0f0435b7bae2a50eab917558ea/pretix-sumup-payment-1.1.2.tar.gz
+[2024-05-26 20:35:15] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 20:35:15] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 20:35:15] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.59.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.59-0.0.6/README.md --exclude *.pyd
+[2024-05-26 20:35:15] INFO root fetch - processPackages [chess-transformer]: Downloading https://files.pythonhosted.org/packages/8d/f2/58d38e98b5ec8c3ff1a84d0cc67c952c9a19c3a73247db5d36614f0cb2af/chess_transformer-0.1.1.tar.gz
+[2024-05-26 20:35:15] INFO root fetch - processPackages [agenpy]: Downloading https://files.pythonhosted.org/packages/00/e2/6528a899aa875a3ceb985d7dafefcffc0da80dcb91849a32b3d24883ebb7/agenpy-0.1.2.tar.gz
+[2024-05-26 20:35:15] INFO root fetch - processPackages [chess-transformer]: executing diffoscope
+[2024-05-26 20:35:15] INFO root fetch - processPackages [chess-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_transformer-0.1.0.tar.gz tmp/chess_transformer-0.1.1.tar.gz --markdown 20240526/c/chess-transformer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-26 20:35:15] INFO root fetch - processPackages [pretix-sumup-payment]: Downloading https://files.pythonhosted.org/packages/00/0e/c53bdd38f3e832b1e41119680192c15976f28637a96b44c1eebb9e27e0bc/pretix_sumup_payment-1.1.4.tar.gz
+[2024-05-26 20:35:15] INFO root fetch - processPackages [agenpy]: executing diffoscope
+[2024-05-26 20:35:15] INFO root fetch - processPackages [agenpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agenpy-0.1.tar.gz tmp/agenpy-0.1.2.tar.gz --markdown 20240526/a/agenpy/0.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 20:35:15] INFO root fetch - processPackages [pretix-sumup-payment]: executing diffoscope
+[2024-05-26 20:35:15] INFO root fetch - processPackages [pretix-sumup-payment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-sumup-payment-1.1.2.tar.gz tmp/pretix_sumup_payment-1.1.4.tar.gz --markdown 20240526/p/pretix-sumup-payment/1.1.2-1.1.4/README.md --exclude *.pyd
+[2024-05-26 20:35:16] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.59.tar.gz]
+[2024-05-26 20:35:16] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 20:35:16] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 20:35:16] INFO root fetch - processPackages [agenpy]: Remove: archive file [/home/abi/fetcher/tmp/agenpy-0.1.tar.gz]
+[2024-05-26 20:35:16] INFO root fetch - processPackages [agenpy]: Remove: archive file [/home/abi/fetcher/tmp/agenpy-0.1.2.tar.gz]
+[2024-05-26 20:35:16] INFO root fetch - main [MainThread]: End processing [agenpy]: success
+[2024-05-26 20:35:16] INFO root fetch - processPackages [chess-transformer]: Remove: archive file [/home/abi/fetcher/tmp/chess_transformer-0.1.0.tar.gz]
+[2024-05-26 20:35:16] INFO root fetch - processPackages [chess-transformer]: Remove: archive file [/home/abi/fetcher/tmp/chess_transformer-0.1.1.tar.gz]
+[2024-05-26 20:35:16] INFO root fetch - main [MainThread]: End processing [chess-transformer]: success
+[2024-05-26 20:35:16] INFO root fetch - processPackages [pretix-sumup-payment]: Remove: archive file [/home/abi/fetcher/tmp/pretix-sumup-payment-1.1.2.tar.gz]
+[2024-05-26 20:35:16] INFO root fetch - processPackages [pretix-sumup-payment]: Remove: archive file [/home/abi/fetcher/tmp/pretix_sumup_payment-1.1.4.tar.gz]
+[2024-05-26 20:35:16] INFO root fetch - main [MainThread]: End processing [pretix-sumup-payment]: success
+[2024-05-26 20:35:16] INFO root fetch - main [MainThread]: Store serial: [23385777]
