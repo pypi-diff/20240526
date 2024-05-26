@@ -4746,3 +4746,15 @@
 [2024-05-26 08:35:33] INFO root fetch - processPackages [skpro]: Remove: archive file [/home/abi/fetcher/tmp/skpro-2.3.1.tar.gz]
 [2024-05-26 08:35:33] INFO root fetch - main [MainThread]: End processing [skpro]: success
 [2024-05-26 08:35:33] INFO root fetch - main [MainThread]: Store serial: [23380349]
+[2024-05-26 08:37:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380349]
+[2024-05-26 08:37:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 08:37:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mypylib
+[2024-05-26 08:37:42] INFO root fetch - processPackages [mypylib]: New version: [0.2.7] Old Version: [0.2.5]
+[2024-05-26 08:37:42] INFO root fetch - processPackages [mypylib]: Downloading https://files.pythonhosted.org/packages/9d/7f/37978ef4a8649ee47797caf748dfc981f6bdc5d6a458174b0a84e69570d7/mypylib-0.2.5.tar.gz
+[2024-05-26 08:37:42] INFO root fetch - processPackages [mypylib]: Downloading https://files.pythonhosted.org/packages/d8/32/4301943d3e52a7807614cd5eb3c3ecced64abe1c0aea4de097035c4d9b60/mypylib-0.2.7.tar.gz
+[2024-05-26 08:37:43] INFO root fetch - processPackages [mypylib]: executing diffoscope
+[2024-05-26 08:37:43] INFO root fetch - processPackages [mypylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypylib-0.2.5.tar.gz tmp/mypylib-0.2.7.tar.gz --markdown 20240526/m/mypylib/0.2.5-0.2.7/README.md --exclude *.pyd
+[2024-05-26 08:37:43] INFO root fetch - processPackages [mypylib]: Remove: archive file [/home/abi/fetcher/tmp/mypylib-0.2.5.tar.gz]
+[2024-05-26 08:37:43] INFO root fetch - processPackages [mypylib]: Remove: archive file [/home/abi/fetcher/tmp/mypylib-0.2.7.tar.gz]
+[2024-05-26 08:37:43] INFO root fetch - main [MainThread]: End processing [mypylib]: success
+[2024-05-26 08:37:43] INFO root fetch - main [MainThread]: Store serial: [23380354]
