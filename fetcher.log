@@ -4427,3 +4427,15 @@
 [2024-05-26 08:00:55] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.3-py3-none-any.whl.zip]
 [2024-05-26 08:00:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2024-05-26 08:00:55] INFO root fetch - main [MainThread]: Store serial: [23380184]
+[2024-05-26 08:03:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380184]
+[2024-05-26 08:03:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 08:03:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qspace
+[2024-05-26 08:03:05] INFO root fetch - processPackages [qspace]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 08:03:05] INFO root fetch - processPackages [qspace]: Downloading https://files.pythonhosted.org/packages/a7/88/adbf31acfdbae9c9f28adef312728d705ea2d02b072f56ee91d6937de157/qspace-0.0.5.tar.gz
+[2024-05-26 08:03:05] INFO root fetch - processPackages [qspace]: Downloading https://files.pythonhosted.org/packages/0e/a0/820876c092c0e6299a17f9cae6d99c03f3b91dac9f2c2478e877468938af/qspace-0.0.6.tar.gz
+[2024-05-26 08:03:05] INFO root fetch - processPackages [qspace]: executing diffoscope
+[2024-05-26 08:03:05] INFO root fetch - processPackages [qspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qspace-0.0.5.tar.gz tmp/qspace-0.0.6.tar.gz --markdown 20240526/q/qspace/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 08:03:06] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.5.tar.gz]
+[2024-05-26 08:03:06] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.6.tar.gz]
+[2024-05-26 08:03:06] INFO root fetch - main [MainThread]: End processing [qspace]: success
+[2024-05-26 08:03:06] INFO root fetch - main [MainThread]: Store serial: [23380187]
