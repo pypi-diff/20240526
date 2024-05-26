@@ -10110,3 +10110,38 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:11:02] INFO root fetch - processPackages [GenAIRR]: Remove: archive file [/home/abi/fetcher/tmp/genairr-0.1.3.tar.gz]
 [2024-05-26 14:11:02] INFO root fetch - main [MainThread]: End processing [GenAIRR]: success
 [2024-05-26 14:11:02] INFO root fetch - main [MainThread]: Store serial: [23382725]
+[2024-05-26 14:13:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382725]
+[2024-05-26 14:13:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-26 14:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyventim
+[2024-05-26 14:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reportXlsx
+[2024-05-26 14:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opensr-test
+[2024-05-26 14:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lapa-database-structure
+[2024-05-26 14:13:15] INFO root fetch - processPackages [opensr-test]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-05-26 14:13:15] INFO root fetch - processPackages [pyventim]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-26 14:13:15] INFO root fetch - processPackages [reportXlsx]: New version: [0.3.4] Old Version: [0.3.2]
+[2024-05-26 14:13:15] INFO root fetch - processPackages [lapa-database-structure]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 14:13:15] INFO root fetch - processPackages [pyventim]: Downloading https://files.pythonhosted.org/packages/28/a0/72672e0a570e7c5530a449b7c2b832e3a2854ae89f38cf42963d8a4a10ea/pyventim-0.1.1.tar.gz
+[2024-05-26 14:13:15] INFO root fetch - processPackages [reportXlsx]: Downloading https://files.pythonhosted.org/packages/8b/93/357c63eae2e55a261f64fd80cd677e7a46bcc8eb8b48245d731dfd3ecb4a/reportXlsx-0.3.2.tar.gz
+[2024-05-26 14:13:15] INFO root fetch - processPackages [opensr-test]: Downloading https://files.pythonhosted.org/packages/e0/12/8da10b165fc01b8863cd7f9ac3c98c3b713caf76b290ae6ef3679422fd0a/opensr_test-0.9.0.tar.gz
+[2024-05-26 14:13:15] INFO root fetch - processPackages [lapa-database-structure]: Downloading https://files.pythonhosted.org/packages/b7/e1/a5c07c4eed48e0dda2e9143180963d07a936bbf658c769b388422e506720/lapa_database_structure-0.0.8.tar.gz
+[2024-05-26 14:13:16] WARNING root fetch - processPackages [reportXlsx]: Skipping package: exceeds size limit 15594184>=10485760
+[2024-05-26 14:13:16] INFO root fetch - main [MainThread]: End processing [reportXlsx] error
+[2024-05-26 14:13:16] INFO root fetch - processPackages [pyventim]: Downloading https://files.pythonhosted.org/packages/b9/9c/09428434a8d4c45f62cf5f31be57213810d7c628e55e475cd947daf0b1f0/pyventim-0.2.0.tar.gz
+[2024-05-26 14:13:16] INFO root fetch - processPackages [opensr-test]: Downloading https://files.pythonhosted.org/packages/eb/cd/3b63110e87764bc735a9615256f7910c23de73bd6c6faddb565fc08e6f59/opensr_test-1.0.0.tar.gz
+[2024-05-26 14:13:16] INFO root fetch - processPackages [lapa-database-structure]: Downloading https://files.pythonhosted.org/packages/1a/3e/42e4e371470e2caa35ed9fd1f763e4f463b6d29b554e208f1589743ce80c/lapa_database_structure-0.0.9.tar.gz
+[2024-05-26 14:13:16] INFO root fetch - processPackages [pyventim]: executing diffoscope
+[2024-05-26 14:13:16] INFO root fetch - processPackages [pyventim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyventim-0.1.1.tar.gz tmp/pyventim-0.2.0.tar.gz --markdown 20240526/p/pyventim/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-26 14:13:16] INFO root fetch - processPackages [opensr-test]: executing diffoscope
+[2024-05-26 14:13:16] INFO root fetch - processPackages [opensr-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opensr_test-0.9.0.tar.gz tmp/opensr_test-1.0.0.tar.gz --markdown 20240526/o/opensr-test/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-05-26 14:13:16] INFO root fetch - processPackages [lapa-database-structure]: executing diffoscope
+[2024-05-26 14:13:16] INFO root fetch - processPackages [lapa-database-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_database_structure-0.0.8.tar.gz tmp/lapa_database_structure-0.0.9.tar.gz --markdown 20240526/l/lapa-database-structure/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 14:13:17] INFO root fetch - processPackages [lapa-database-structure]: Remove: archive file [/home/abi/fetcher/tmp/lapa_database_structure-0.0.8.tar.gz]
+[2024-05-26 14:13:17] INFO root fetch - processPackages [lapa-database-structure]: Remove: archive file [/home/abi/fetcher/tmp/lapa_database_structure-0.0.9.tar.gz]
+[2024-05-26 14:13:17] INFO root fetch - main [MainThread]: End processing [lapa-database-structure]: success
+[2024-05-26 14:13:17] INFO root fetch - processPackages [pyventim]: Remove: archive file [/home/abi/fetcher/tmp/pyventim-0.1.1.tar.gz]
+[2024-05-26 14:13:17] INFO root fetch - processPackages [pyventim]: Remove: archive file [/home/abi/fetcher/tmp/pyventim-0.2.0.tar.gz]
+[2024-05-26 14:13:17] INFO root fetch - main [MainThread]: End processing [pyventim]: success
+[2024-05-26 14:13:17] INFO root fetch - processPackages [opensr-test]: Remove: archive file [/home/abi/fetcher/tmp/opensr_test-0.9.0.tar.gz]
+[2024-05-26 14:13:17] INFO root fetch - processPackages [opensr-test]: Remove: archive file [/home/abi/fetcher/tmp/opensr_test-1.0.0.tar.gz]
+[2024-05-26 14:13:17] INFO root fetch - main [MainThread]: End processing [opensr-test]: success
+[2024-05-26 14:13:17] INFO root fetch - main [MainThread]: Store serial: [23382736]
