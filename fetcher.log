@@ -9842,3 +9842,45 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 13:46:02] INFO root fetch - processPackages [onceuponai]: Remove: archive file [/home/abi/fetcher/tmp/onceuponai-0.0.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-26 13:46:02] INFO root fetch - main [MainThread]: End processing [onceuponai]: success
 [2024-05-26 13:46:02] INFO root fetch - main [MainThread]: Store serial: [23382588]
+[2024-05-26 13:48:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382588]
+[2024-05-26 13:48:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 13:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AdroitFisherman
+[2024-05-26 13:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matematikk
+[2024-05-26 13:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strawberry-graphql-django
+[2024-05-26 13:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Modul-Wrapper
+[2024-05-26 13:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tsdae
+[2024-05-26 13:48:15] WARNING root fetch - processPackages [Modul-Wrapper]: Skipping, unable to determine old version
+[2024-05-26 13:48:15] INFO root fetch - main [MainThread]: End processing [Modul-Wrapper] error
+[2024-05-26 13:48:16] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 13:48:16] INFO root fetch - processPackages [AdroitFisherman]: New version: [0.0.28] Old Version: [0.0.27]
+[2024-05-26 13:48:16] INFO root fetch - processPackages [tsdae]: New version: [1.1.0] Old Version: [1.0.33]
+[2024-05-26 13:48:16] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 13:48:16] INFO root fetch - processPackages [strawberry-graphql-django]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-26 13:48:16] INFO root fetch - processPackages [AdroitFisherman]: Downloading https://files.pythonhosted.org/packages/cf/c5/d6596cf8084a4ab3683515f29c9401410b57916eb64e05f4dee9540d46f1/AdroitFisherman-0.0.27.tar.gz
+[2024-05-26 13:48:16] INFO root fetch - processPackages [tsdae]: Downloading https://files.pythonhosted.org/packages/82/07/ba43c39307dbe24756ff89ef6c83584bde25325f1ffe07c9ca1500b7536b/tsdae-1.0.33.tar.gz
+[2024-05-26 13:48:16] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 13:48:16] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/84/8d/02584438b57b9d8c0141a779dd091b2f10126fe1f369ea1852d45afa3eec/strawberry_graphql_django-0.9.4.tar.gz
+[2024-05-26 13:48:16] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 13:48:16] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 13:48:16] INFO root fetch - processPackages [AdroitFisherman]: Downloading https://files.pythonhosted.org/packages/19/64/636f97e832d8e497b2d244b956ebfb0970b5c230e6044e5e45f544a64fc4/AdroitFisherman-0.0.28.tar.gz
+[2024-05-26 13:48:16] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/34/c7/6761d3816f5a7cf02928b5d035b4ed20b4e6d2a12ec6a4cf9400ce4d7cbb/strawberry_graphql_django-0.9.5.tar.gz
+[2024-05-26 13:48:16] INFO root fetch - processPackages [AdroitFisherman]: executing diffoscope
+[2024-05-26 13:48:16] INFO root fetch - processPackages [AdroitFisherman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AdroitFisherman-0.0.27.tar.gz tmp/AdroitFisherman-0.0.28.tar.gz --markdown 20240526/A/AdroitFisherman/0.0.27-0.0.28/README.md --exclude *.pyd
+[2024-05-26 13:48:16] INFO root fetch - processPackages [tsdae]: Downloading https://files.pythonhosted.org/packages/33/15/16fc5578f33ffbe9c5404142db433eff4613a23fceaf6b93155ac191347c/tsdae-1.1.0.tar.gz
+[2024-05-26 13:48:16] INFO root fetch - processPackages [strawberry-graphql-django]: executing diffoscope
+[2024-05-26 13:48:16] INFO root fetch - processPackages [strawberry-graphql-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_graphql_django-0.9.4.tar.gz tmp/strawberry_graphql_django-0.9.5.tar.gz --markdown 20240526/s/strawberry-graphql-django/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-26 13:48:17] INFO root fetch - processPackages [AdroitFisherman]: Remove: archive file [/home/abi/fetcher/tmp/AdroitFisherman-0.0.27.tar.gz]
+[2024-05-26 13:48:17] INFO root fetch - processPackages [AdroitFisherman]: Remove: archive file [/home/abi/fetcher/tmp/AdroitFisherman-0.0.28.tar.gz]
+[2024-05-26 13:48:17] INFO root fetch - main [MainThread]: End processing [AdroitFisherman]: success
+[2024-05-26 13:48:17] INFO root fetch - processPackages [tsdae]: executing diffoscope
+[2024-05-26 13:48:17] INFO root fetch - processPackages [tsdae]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsdae-1.0.33.tar.gz tmp/tsdae-1.1.0.tar.gz --markdown 20240526/t/tsdae/1.0.33-1.1.0/README.md --exclude *.pyd
+[2024-05-26 13:48:17] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.4.tar.gz]
+[2024-05-26 13:48:17] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.5.tar.gz]
+[2024-05-26 13:48:17] INFO root fetch - main [MainThread]: End processing [strawberry-graphql-django]: success
+[2024-05-26 13:48:17] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 13:48:17] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 13:48:17] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 13:48:17] INFO root fetch - processPackages [tsdae]: Remove: archive file [/home/abi/fetcher/tmp/tsdae-1.0.33.tar.gz]
+[2024-05-26 13:48:17] INFO root fetch - processPackages [tsdae]: Remove: archive file [/home/abi/fetcher/tmp/tsdae-1.1.0.tar.gz]
+[2024-05-26 13:48:17] INFO root fetch - main [MainThread]: End processing [tsdae]: success
+[2024-05-26 13:48:17] INFO root fetch - main [MainThread]: Store serial: [23382602]
