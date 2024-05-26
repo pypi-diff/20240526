@@ -5637,3 +5637,9 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:41:50] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
 [2024-05-26 09:41:50] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
 [2024-05-26 09:41:50] INFO root fetch - main [MainThread]: Store serial: [23380686]
+[2024-05-26 09:43:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380686]
+[2024-05-26 09:44:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 09:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myicemammoth-common
+[2024-05-26 09:44:00] WARNING root fetch - processPackages [myicemammoth-common]: Skipping, unable to determine old version
+[2024-05-26 09:44:00] INFO root fetch - main [MainThread]: End processing [myicemammoth-common] error
+[2024-05-26 09:44:00] INFO root fetch - main [MainThread]: Store serial: [23380692]
