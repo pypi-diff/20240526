@@ -5940,3 +5940,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:05:57] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240525.tar.gz]
 [2024-05-26 10:05:57] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-05-26 10:05:57] INFO root fetch - main [MainThread]: Store serial: [23380823]
+[2024-05-26 10:08:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380823]
+[2024-05-26 10:08:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 10:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-05-26 10:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2024-05-26 10:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GraphRetrieval
+[2024-05-26 10:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docugami-langchain
+[2024-05-26 10:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xssbase
+[2024-05-26 10:08:08] INFO root fetch - processPackages [GraphRetrieval]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-26 10:08:08] INFO root fetch - processPackages [xssbase]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-26 10:08:08] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.59]
+[2024-05-26 10:08:08] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240525] Old Version: [0.4.5.dev20240524]
+[2024-05-26 10:08:08] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/de/50/e23baa05db1d1b20b9759f3c31a92cdae4c5b6a0fd66459bfe844398d0fe/graphretrieval-0.1.6.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [docugami-langchain]: New version: [0.0.9rc9] Old Version: [0.0.9rc8]
+[2024-05-26 10:08:08] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/c1/df/d8ca231b2b522466f8b8ff911044174bb4ec3b3205f3c9b24a234e1bb828/pyglove-0.4.5.dev20240524.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/1a/8f/61c381b9b738b40c1e4ed1cda536e6b6e51eafbc4df3e6293503f8a5ad2a/xssbase-1.0.3.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/28/72/8b33ab4499887d6c0896c33e6a39610d42daab4427a1f76f81d7eb6608f8/scatcluster-0.0.59.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/2d/82/2d13050a1c94760818565c09bfbddb6b1c5e72e7dd098faada8a8b560a19/docugami_langchain-0.0.9rc8.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [GraphRetrieval]: Downloading https://files.pythonhosted.org/packages/10/9a/b4d9f1c3168fe7569f236209756d08359278d84baca5b96e913673686092/graphretrieval-0.1.7.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-05-26 10:08:08] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.59.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240526/s/scatcluster/0.0.59-0.0.6/README.md --exclude *.pyd
+[2024-05-26 10:08:08] INFO root fetch - processPackages [xssbase]: Downloading https://files.pythonhosted.org/packages/b0/4a/7bfa8b8259d21fcc996d2d6f86dc897af86f4b8769240a48c6e27eaf861b/xssbase-1.0.4.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/4f/37/814aacfe410f42e98b17c5f25fca6c4854983c01250579483c748544b910/pyglove-0.4.5.dev20240525.tar.gz
+[2024-05-26 10:08:08] INFO root fetch - processPackages [GraphRetrieval]: executing diffoscope
+[2024-05-26 10:08:08] INFO root fetch - processPackages [GraphRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphretrieval-0.1.6.tar.gz tmp/graphretrieval-0.1.7.tar.gz --markdown 20240526/G/GraphRetrieval/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-26 10:08:08] INFO root fetch - processPackages [xssbase]: executing diffoscope
+[2024-05-26 10:08:08] INFO root fetch - processPackages [xssbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xssbase-1.0.3.tar.gz tmp/xssbase-1.0.4.tar.gz --markdown 20240526/x/xssbase/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-26 10:08:08] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-05-26 10:08:08] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240524.tar.gz tmp/pyglove-0.4.5.dev20240525.tar.gz --markdown 20240526/p/pyglove/0.4.5.dev20240524-0.4.5.dev20240525/README.md --exclude *.pyd
+[2024-05-26 10:08:08] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/f2/b2/d83b55cc8691eecf7a64a63a120a668c5ff1f8edee1994b69cf50d8ed91b/docugami_langchain-0.0.9rc9.tar.gz
+[2024-05-26 10:08:09] INFO root fetch - processPackages [docugami-langchain]: executing diffoscope
+[2024-05-26 10:08:09] INFO root fetch - processPackages [docugami-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugami_langchain-0.0.9rc8.tar.gz tmp/docugami_langchain-0.0.9rc9.tar.gz --markdown 20240526/d/docugami-langchain/0.0.9rc8-0.0.9rc9/README.md --exclude *.pyd
+[2024-05-26 10:08:09] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.59.tar.gz]
+[2024-05-26 10:08:09] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-05-26 10:08:09] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-05-26 10:08:09] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.6.tar.gz]
+[2024-05-26 10:08:09] INFO root fetch - processPackages [GraphRetrieval]: Remove: archive file [/home/abi/fetcher/tmp/graphretrieval-0.1.7.tar.gz]
+[2024-05-26 10:08:09] INFO root fetch - main [MainThread]: End processing [GraphRetrieval]: success
+[2024-05-26 10:08:09] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.3.tar.gz]
+[2024-05-26 10:08:09] INFO root fetch - processPackages [xssbase]: Remove: archive file [/home/abi/fetcher/tmp/xssbase-1.0.4.tar.gz]
+[2024-05-26 10:08:09] INFO root fetch - main [MainThread]: End processing [xssbase]: success
+[2024-05-26 10:08:09] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.9rc8.tar.gz]
+[2024-05-26 10:08:09] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.9rc9.tar.gz]
+[2024-05-26 10:08:09] INFO root fetch - main [MainThread]: End processing [docugami-langchain]: success
+[2024-05-26 10:08:10] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240524.tar.gz]
+[2024-05-26 10:08:10] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240525.tar.gz]
+[2024-05-26 10:08:10] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-05-26 10:08:10] INFO root fetch - main [MainThread]: Store serial: [23380838]
