@@ -22217,3 +22217,51 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 23:49:34] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.3.1.tar.gz]
 [2024-05-26 23:49:34] INFO root fetch - main [MainThread]: End processing [abcli]: success
 [2024-05-26 23:49:34] INFO root fetch - main [MainThread]: Store serial: [23388079]
+[2024-05-26 23:51:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23388079]
+[2024-05-26 23:51:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 23:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abcli
+[2024-05-26 23:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funky-modifiers
+[2024-05-26 23:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PQAnalysis
+[2024-05-26 23:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blue-plugin
+[2024-05-26 23:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymkv2
+[2024-05-26 23:51:44] INFO root fetch - processPackages [funky-modifiers]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-26 23:51:44] INFO root fetch - processPackages [abcli]: New version: [9.31.1] Old Version: [9.3.1]
+[2024-05-26 23:51:44] INFO root fetch - processPackages [blue-plugin]: New version: [3.59.1] Old Version: [3.58.1]
+[2024-05-26 23:51:44] INFO root fetch - processPackages [PQAnalysis]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-26 23:51:44] INFO root fetch - processPackages [pymkv2]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-26 23:51:44] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/47/83/14e27eeb332ca1ef7ab5ae8354254044aee76daa6f82ce025e21b8dd135b/funky_modifiers-0.3.1.tar.gz
+[2024-05-26 23:51:44] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/27/0f/c18b5fa4712b3f6bcc42462d85618b5a3c37cc5d4c765462ebfab12d9c8f/abcli-9.3.1.tar.gz
+[2024-05-26 23:51:44] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/02/f0/4d11aac9e0bf1c022187acda5d6aba827dd7f80d54177c622bbf4b2a95cf/blue_plugin-3.58.1.tar.gz
+[2024-05-26 23:51:44] INFO root fetch - processPackages [pymkv2]: Downloading https://files.pythonhosted.org/packages/72/3e/4527868cf94e16e17b5c58aafc120c2bbda6a2f267a27888db1240f21292/pymkv2-2.0.2.tar.gz
+[2024-05-26 23:51:44] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/10/e6/62e6a4ae55a90887c732ca9373abbb1f5b7e868311f65668decf6eb7568a/abcli-9.31.1.tar.gz
+[2024-05-26 23:51:44] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/b4/d2/4176ed3fdc2029d3262cfeb30ee9520466a7d25dcfc2338129ada67237fe/blue_plugin-3.59.1.tar.gz
+[2024-05-26 23:51:44] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/d6/76/3e3b9c4b3b32b54bbf1b48b788fcaa2bb622645f342a52d9c75fe9a0c227/funky_modifiers-0.3.2.tar.gz
+[2024-05-26 23:51:44] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/4d/62/d287338c6dd74f39fa3bcc1be753a01b052c1a02e71c3864794ec99ea542/pqanalysis-1.0.4.tar.gz
+[2024-05-26 23:51:44] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-26 23:51:44] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-9.3.1.tar.gz tmp/abcli-9.31.1.tar.gz --markdown 20240526/a/abcli/9.3.1-9.31.1/README.md --exclude *.pyd
+[2024-05-26 23:51:44] INFO root fetch - processPackages [blue-plugin]: executing diffoscope
+[2024-05-26 23:51:44] INFO root fetch - processPackages [blue-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_plugin-3.58.1.tar.gz tmp/blue_plugin-3.59.1.tar.gz --markdown 20240526/b/blue-plugin/3.58.1-3.59.1/README.md --exclude *.pyd
+[2024-05-26 23:51:45] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-26 23:51:45] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.3.1.tar.gz tmp/funky_modifiers-0.3.2.tar.gz --markdown 20240526/f/funky-modifiers/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-26 23:51:45] INFO root fetch - processPackages [pymkv2]: Downloading https://files.pythonhosted.org/packages/af/3a/366d5f4cf872e28d0aa2689ca7397a99e9b43168cd179e61a6fc75a5c9ae/pymkv2-2.0.3.tar.gz
+[2024-05-26 23:51:45] INFO root fetch - processPackages [pymkv2]: executing diffoscope
+[2024-05-26 23:51:45] INFO root fetch - processPackages [pymkv2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymkv2-2.0.2.tar.gz tmp/pymkv2-2.0.3.tar.gz --markdown 20240526/p/pymkv2/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-26 23:51:45] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/c7/03/9a302f461c3f88c772809e85f8bb7fc7bc876d9f8ab885aaea2b3906ba3d/pqanalysis-1.0.5.tar.gz
+[2024-05-26 23:51:45] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.58.1.tar.gz]
+[2024-05-26 23:51:45] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.59.1.tar.gz]
+[2024-05-26 23:51:45] INFO root fetch - main [MainThread]: End processing [blue-plugin]: success
+[2024-05-26 23:51:45] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.3.1.tar.gz]
+[2024-05-26 23:51:45] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.3.2.tar.gz]
+[2024-05-26 23:51:45] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-26 23:51:45] INFO root fetch - processPackages [PQAnalysis]: executing diffoscope
+[2024-05-26 23:51:45] INFO root fetch - processPackages [PQAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqanalysis-1.0.4.tar.gz tmp/pqanalysis-1.0.5.tar.gz --markdown 20240526/P/PQAnalysis/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-26 23:51:45] INFO root fetch - processPackages [pymkv2]: Remove: archive file [/home/abi/fetcher/tmp/pymkv2-2.0.2.tar.gz]
+[2024-05-26 23:51:45] INFO root fetch - processPackages [pymkv2]: Remove: archive file [/home/abi/fetcher/tmp/pymkv2-2.0.3.tar.gz]
+[2024-05-26 23:51:45] INFO root fetch - main [MainThread]: End processing [pymkv2]: success
+[2024-05-26 23:51:45] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.3.1.tar.gz]
+[2024-05-26 23:51:45] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-9.31.1.tar.gz]
+[2024-05-26 23:51:45] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-26 23:51:47] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.4.tar.gz]
+[2024-05-26 23:51:47] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.5.tar.gz]
+[2024-05-26 23:51:47] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
+[2024-05-26 23:51:47] INFO root fetch - main [MainThread]: Store serial: [23388094]
