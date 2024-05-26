@@ -1342,3 +1342,29 @@
 [2024-05-26 02:38:22] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao_nightly-2024.5.25-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-26 02:38:22] INFO root fetch - main [MainThread]: End processing [torchao-nightly]: success
 [2024-05-26 02:38:22] INFO root fetch - main [MainThread]: Store serial: [23378706]
+[2024-05-26 02:40:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378706]
+[2024-05-26 02:40:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 02:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: annonition
+[2024-05-26 02:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compose-go
+[2024-05-26 02:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agixtsdk
+[2024-05-26 02:40:31] INFO root fetch - processPackages [annonition]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-26 02:40:31] INFO root fetch - processPackages [agixtsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 02:40:31] INFO root fetch - processPackages [annonition]: Downloading https://files.pythonhosted.org/packages/70/24/1be44116d72dc7c914fc48b42f28ac3a6f0891d479447271a55dc2906ad1/annonition-0.0.9.tar.gz
+[2024-05-26 02:40:31] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/fc/f4/85d852d47773fa6751a3ed8d3ca02e654579a0a110cdc23896aebd954b2c/agixtsdk-0.0.8.tar.gz
+[2024-05-26 02:40:31] INFO root fetch - processPackages [compose-go]: New version: [2.27.1] Old Version: [2.27.0]
+[2024-05-26 02:40:31] INFO root fetch - processPackages [annonition]: Downloading https://files.pythonhosted.org/packages/9b/48/f0223e1213ab064918d329943e1226422e01330c56fec88b35bfcfa752ff/annonition-0.1.0.tar.gz
+[2024-05-26 02:40:32] INFO root fetch - processPackages [compose-go]: Downloading https://files.pythonhosted.org/packages/f1/cb/dd92cfd6de046d167ded122a2f69b1458a0683a50545788ccdfcae50e8e1/compose_go-2.27.0.tar.gz
+[2024-05-26 02:40:32] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/74/75/1048551801b0e2aa197b36b7a2d249437127d0d21a98a3aea7016e0929b9/agixtsdk-0.0.9.tar.gz
+[2024-05-26 02:40:32] WARNING root fetch - processPackages [compose-go]: Skipping package: exceeds size limit 18294764>=10485760
+[2024-05-26 02:40:32] INFO root fetch - main [MainThread]: End processing [compose-go] error
+[2024-05-26 02:40:32] INFO root fetch - processPackages [annonition]: executing diffoscope
+[2024-05-26 02:40:32] INFO root fetch - processPackages [annonition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/annonition-0.0.9.tar.gz tmp/annonition-0.1.0.tar.gz --markdown 20240526/a/annonition/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-26 02:40:32] INFO root fetch - processPackages [agixtsdk]: executing diffoscope
+[2024-05-26 02:40:32] INFO root fetch - processPackages [agixtsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixtsdk-0.0.8.tar.gz tmp/agixtsdk-0.0.9.tar.gz --markdown 20240526/a/agixtsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 02:40:32] INFO root fetch - processPackages [annonition]: Remove: archive file [/home/abi/fetcher/tmp/annonition-0.0.9.tar.gz]
+[2024-05-26 02:40:32] INFO root fetch - processPackages [annonition]: Remove: archive file [/home/abi/fetcher/tmp/annonition-0.1.0.tar.gz]
+[2024-05-26 02:40:32] INFO root fetch - main [MainThread]: End processing [annonition]: success
+[2024-05-26 02:40:32] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.8.tar.gz]
+[2024-05-26 02:40:32] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.9.tar.gz]
+[2024-05-26 02:40:32] INFO root fetch - main [MainThread]: End processing [agixtsdk]: success
+[2024-05-26 02:40:32] INFO root fetch - main [MainThread]: Store serial: [23378715]
