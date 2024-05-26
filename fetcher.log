@@ -6095,3 +6095,35 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 10:19:08] INFO root fetch - processPackages [custom-viz-lib]: Remove: archive file [/home/abi/fetcher/tmp/custom_viz_lib-1.0.0.tar.gz]
 [2024-05-26 10:19:08] INFO root fetch - main [MainThread]: End processing [custom-viz-lib]: success
 [2024-05-26 10:19:08] INFO root fetch - main [MainThread]: Store serial: [23380920]
+[2024-05-26 10:21:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380920]
+[2024-05-26 10:21:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 10:23:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380920]
+[2024-05-26 10:23:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 10:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khu-llm-toolkit
+[2024-05-26 10:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textual-mandelbrot
+[2024-05-26 10:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weaver-ai-tools
+[2024-05-26 10:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-moonphases
+[2024-05-26 10:23:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: icemammoth-common
+[2024-05-26 10:23:23] WARNING root fetch - processPackages [weaver-ai-tools]: Skipping, unable to determine old version
+[2024-05-26 10:23:23] INFO root fetch - main [MainThread]: End processing [weaver-ai-tools] error
+[2024-05-26 10:23:24] INFO root fetch - processPackages [khu-llm-toolkit]: New version: [0.1.7] Old Version: [0.1.6a0]
+[2024-05-26 10:23:24] INFO root fetch - processPackages [textual-mandelbrot]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-26 10:23:24] WARNING root fetch - processPackages [apiverve-moonphases]: Skipping, unable to determine old version
+[2024-05-26 10:23:24] INFO root fetch - main [MainThread]: End processing [apiverve-moonphases] error
+[2024-05-26 10:23:24] WARNING root fetch - processPackages [icemammoth-common]: Skipping, unable to determine old version
+[2024-05-26 10:23:24] INFO root fetch - main [MainThread]: End processing [icemammoth-common] error
+[2024-05-26 10:23:24] INFO root fetch - processPackages [khu-llm-toolkit]: Downloading https://files.pythonhosted.org/packages/a7/61/7b4f4b6b8c812fc912dfcc72d8c698144ac03895abd2382e28e5acacc8c2/khu_llm_toolkit-0.1.6a0.tar.gz
+[2024-05-26 10:23:24] INFO root fetch - processPackages [textual-mandelbrot]: Downloading https://files.pythonhosted.org/packages/d7/56/434144c3bc2f2ecd7d16955a3df706caf85dd8f3632e6574164e43ac89fc/textual-mandelbrot-0.8.0.tar.gz
+[2024-05-26 10:23:24] INFO root fetch - processPackages [textual-mandelbrot]: Downloading https://files.pythonhosted.org/packages/2a/bf/88c8fa18526d9749f23bbf754a65f9f902db018aa8049208656d0fa4c4a6/textual_mandelbrot-0.8.1.tar.gz
+[2024-05-26 10:23:24] INFO root fetch - processPackages [khu-llm-toolkit]: Downloading https://files.pythonhosted.org/packages/1b/ee/84aa8624d107c3436212346d7c10fcc90c8b9ac7fa87f166f056e427dfd5/khu_llm_toolkit-0.1.7.tar.gz
+[2024-05-26 10:23:24] INFO root fetch - processPackages [textual-mandelbrot]: executing diffoscope
+[2024-05-26 10:23:24] INFO root fetch - processPackages [textual-mandelbrot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-mandelbrot-0.8.0.tar.gz tmp/textual_mandelbrot-0.8.1.tar.gz --markdown 20240526/t/textual-mandelbrot/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-26 10:23:24] INFO root fetch - processPackages [khu-llm-toolkit]: executing diffoscope
+[2024-05-26 10:23:24] INFO root fetch - processPackages [khu-llm-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khu_llm_toolkit-0.1.6a0.tar.gz tmp/khu_llm_toolkit-0.1.7.tar.gz --markdown 20240526/k/khu-llm-toolkit/0.1.6a0-0.1.7/README.md --exclude *.pyd
+[2024-05-26 10:23:25] INFO root fetch - processPackages [textual-mandelbrot]: Remove: archive file [/home/abi/fetcher/tmp/textual-mandelbrot-0.8.0.tar.gz]
+[2024-05-26 10:23:25] INFO root fetch - processPackages [textual-mandelbrot]: Remove: archive file [/home/abi/fetcher/tmp/textual_mandelbrot-0.8.1.tar.gz]
+[2024-05-26 10:23:25] INFO root fetch - main [MainThread]: End processing [textual-mandelbrot]: success
+[2024-05-26 10:23:25] INFO root fetch - processPackages [khu-llm-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/khu_llm_toolkit-0.1.6a0.tar.gz]
+[2024-05-26 10:23:25] INFO root fetch - processPackages [khu-llm-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/khu_llm_toolkit-0.1.7.tar.gz]
+[2024-05-26 10:23:25] INFO root fetch - main [MainThread]: End processing [khu-llm-toolkit]: success
+[2024-05-26 10:23:25] INFO root fetch - main [MainThread]: Store serial: [23380937]
