@@ -10344,3 +10344,29 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 14:29:06] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.2.0.tar.gz]
 [2024-05-26 14:29:06] INFO root fetch - main [MainThread]: End processing [gliner]: success
 [2024-05-26 14:29:06] INFO root fetch - main [MainThread]: Store serial: [23382819]
+[2024-05-26 14:31:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382819]
+[2024-05-26 14:31:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 14:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SimleVoiceAssistant
+[2024-05-26 14:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cadziu
+[2024-05-26 14:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2024-05-26 14:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: frida-start
+[2024-05-26 14:31:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: contact-group-local
+[2024-05-26 14:31:20] WARNING root fetch - processPackages [cadziu]: Skipping, unable to determine old version
+[2024-05-26 14:31:20] INFO root fetch - main [MainThread]: End processing [cadziu] error
+[2024-05-26 14:31:20] INFO root fetch - processPackages [contact-group-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 14:31:20] WARNING root fetch - processPackages [SimleVoiceAssistant]: Skipping, unable to determine old version
+[2024-05-26 14:31:20] INFO root fetch - main [MainThread]: End processing [SimleVoiceAssistant] error
+[2024-05-26 14:31:20] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/63/e5/ff261731db98a38a39f4657a4cd1e04b2a998f175a7af36c640220ff9b00/contact-group-local-0.0.8.tar.gz
+[2024-05-26 14:31:20] WARNING root fetch - processPackages [frida-start]: Skipping, unable to determine old version
+[2024-05-26 14:31:20] INFO root fetch - main [MainThread]: End processing [frida-start] error
+[2024-05-26 14:31:20] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240526.12.29.80612] Old Version: [20240524.14.57.405447]
+[2024-05-26 14:31:20] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/e5/45/6647c5d4d7787efea521aa0ad492450fc23df4ab5e160304f83a1964a167/certora-cli-alpha-master-20240524.14.57.405447.tar.gz
+[2024-05-26 14:31:21] INFO root fetch - processPackages [contact-group-local]: Downloading https://files.pythonhosted.org/packages/84/cc/f78576331b2ff0f497f4640872d65b71ec33ae804f6a44bb2f10f1957687/contact-group-local-0.0.9.tar.gz
+[2024-05-26 14:31:21] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14595137>=10485760
+[2024-05-26 14:31:21] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-05-26 14:31:21] INFO root fetch - processPackages [contact-group-local]: executing diffoscope
+[2024-05-26 14:31:21] INFO root fetch - processPackages [contact-group-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-group-local-0.0.8.tar.gz tmp/contact-group-local-0.0.9.tar.gz --markdown 20240526/c/contact-group-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 14:31:21] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.8.tar.gz]
+[2024-05-26 14:31:21] INFO root fetch - processPackages [contact-group-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-group-local-0.0.9.tar.gz]
+[2024-05-26 14:31:21] INFO root fetch - main [MainThread]: End processing [contact-group-local]: success
+[2024-05-26 14:31:21] INFO root fetch - main [MainThread]: Store serial: [23382839]
