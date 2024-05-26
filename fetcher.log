@@ -1204,3 +1204,51 @@
 [2024-05-26 02:27:33] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
 [2024-05-26 02:27:33] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
 [2024-05-26 02:27:33] INFO root fetch - main [MainThread]: Store serial: [23378650]
+[2024-05-26 02:29:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378650]
+[2024-05-26 02:29:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-26 02:29:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-api-core
+[2024-05-26 02:29:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-web-core
+[2024-05-26 02:29:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: honeypoke-extractor
+[2024-05-26 02:29:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-library-objects
+[2024-05-26 02:29:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-05-26 02:29:41] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-26 02:29:41] INFO root fetch - processPackages [honeypoke-extractor]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-05-26 02:29:41] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 02:29:41] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-05-26 02:29:41] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-05-26 02:29:41] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 02:29:41] INFO root fetch - processPackages [honeypoke-extractor]: Downloading https://files.pythonhosted.org/packages/9a/42/822524bcae22d2147c1fcd6eac6ca544970d502262ac8ec88d35783809e0/honeypoke_extractor-0.1.0.tar.gz
+[2024-05-26 02:29:41] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-05-26 02:29:41] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-05-26 02:29:41] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/5d/9d/2398efc534be1a806373637db31588bc65727faee8d3d4ad1e210310552e/sweetrpg-api-core-0.0.98.tar.gz
+[2024-05-26 02:29:42] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-05-26 02:29:42] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240526/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-26 02:29:42] INFO root fetch - processPackages [honeypoke-extractor]: Downloading https://files.pythonhosted.org/packages/78/8a/eae45cbbc9e0a60916fa18278088cce6fe0d8588d51c1bf0c53355b1ba1c/honeypoke_extractor-0.1.2.tar.gz
+[2024-05-26 02:29:42] INFO root fetch - processPackages [honeypoke-extractor]: executing diffoscope
+[2024-05-26 02:29:42] INFO root fetch - processPackages [honeypoke-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeypoke_extractor-0.1.0.tar.gz tmp/honeypoke_extractor-0.1.2.tar.gz --markdown 20240526/h/honeypoke-extractor/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240526/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/bf/6c/3cd8f95074a8f63967790523ccf02ffe9aef45c9c675b0a443c0371e8e04/sweetrpg-api-core-0.0.99.tar.gz
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240526/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2024-05-26 02:29:42] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20240526/s/sweetrpg-api-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 02:29:42] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-05-26 02:29:42] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-05-26 02:29:42] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-05-26 02:29:43] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-05-26 02:29:43] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-05-26 02:29:43] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-26 02:29:43] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-05-26 02:29:43] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-05-26 02:29:43] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-05-26 02:29:43] INFO root fetch - processPackages [honeypoke-extractor]: Remove: archive file [/home/abi/fetcher/tmp/honeypoke_extractor-0.1.0.tar.gz]
+[2024-05-26 02:29:43] INFO root fetch - processPackages [honeypoke-extractor]: Remove: archive file [/home/abi/fetcher/tmp/honeypoke_extractor-0.1.2.tar.gz]
+[2024-05-26 02:29:43] INFO root fetch - main [MainThread]: End processing [honeypoke-extractor]: success
+[2024-05-26 02:29:43] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.98.tar.gz]
+[2024-05-26 02:29:43] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
+[2024-05-26 02:29:43] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2024-05-26 02:29:43] INFO root fetch - main [MainThread]: Store serial: [23378670]
