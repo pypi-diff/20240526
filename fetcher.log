@@ -9188,3 +9188,17 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 12:45:22] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.3.8.tar.gz]
 [2024-05-26 12:45:22] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
 [2024-05-26 12:45:22] INFO root fetch - main [MainThread]: Store serial: [23382252]
+[2024-05-26 12:47:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382252]
+[2024-05-26 12:47:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-26 12:49:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23382252]
+[2024-05-26 12:49:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 12:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: workutils
+[2024-05-26 12:49:40] INFO root fetch - processPackages [workutils]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-26 12:49:40] INFO root fetch - processPackages [workutils]: Downloading https://files.pythonhosted.org/packages/a4/5c/6419a7fff2fc4f0478f44a362c0daee4c16cd529bc1269bbb38ed8c3e509/workutils-0.0.7.tar.gz
+[2024-05-26 12:49:41] INFO root fetch - processPackages [workutils]: Downloading https://files.pythonhosted.org/packages/99/4f/6524401241713605cf3f72176b90444e8a921f3b035319f32380c0ca2fa3/workutils-0.0.8.tar.gz
+[2024-05-26 12:49:41] INFO root fetch - processPackages [workutils]: executing diffoscope
+[2024-05-26 12:49:41] INFO root fetch - processPackages [workutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/workutils-0.0.7.tar.gz tmp/workutils-0.0.8.tar.gz --markdown 20240526/w/workutils/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-26 12:49:41] INFO root fetch - processPackages [workutils]: Remove: archive file [/home/abi/fetcher/tmp/workutils-0.0.7.tar.gz]
+[2024-05-26 12:49:41] INFO root fetch - processPackages [workutils]: Remove: archive file [/home/abi/fetcher/tmp/workutils-0.0.8.tar.gz]
+[2024-05-26 12:49:41] INFO root fetch - main [MainThread]: End processing [workutils]: success
+[2024-05-26 12:49:41] INFO root fetch - main [MainThread]: Store serial: [23382269]
