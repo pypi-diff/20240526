@@ -18477,3 +18477,84 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 22:13:35] INFO root fetch - processPackages [tccli]: Remove: archive file [/home/abi/fetcher/tmp/tccli-3.0.999.1.tar.gz]
 [2024-05-26 22:13:35] INFO root fetch - main [MainThread]: End processing [tccli]: success
 [2024-05-26 22:13:35] INFO root fetch - main [MainThread]: Store serial: [23386602]
+[2024-05-26 22:15:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23386602]
+[2024-05-26 22:15:45] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pokemon-card-recognizer
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ollama-chat
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clipspy
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: invoicely
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pip2deb
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: matematikk
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pianosdk
+[2024-05-26 22:15:45] INFO root fetch - processPackages [pip2deb]: New version: [1.2] Old Version: [1.1]
+[2024-05-26 22:15:45] INFO root fetch - processPackages [zenaura]: New version: [0.9.83] Old Version: [0.9.82]
+[2024-05-26 22:15:45] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 22:15:45] INFO root fetch - processPackages [pokemon-card-recognizer]: New version: [0.0.1.3.8.3] Old Version: [0.0.1.3.8.2]
+[2024-05-26 22:15:45] WARNING root fetch - processPackages [invoicely]: Skipping, unable to determine old version
+[2024-05-26 22:15:45] INFO root fetch - main [MainThread]: End processing [invoicely] error
+[2024-05-26 22:15:45] INFO root fetch - processPackages [pianosdk]: New version: [16.188.1] Old Version: [16.182.0]
+[2024-05-26 22:15:45] INFO root fetch - processPackages [ollama-chat]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-26 22:15:45] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-26 22:15:45] INFO root fetch - processPackages [clipspy]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-26 22:15:45] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 22:15:45] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ba/8f/97b46e4de49a527fa185a857df0a7d66b6f6bb6fd91e256352b542f1b75f/zenaura-0.9.82.tar.gz
+[2024-05-26 22:15:45] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/86/ba/954b5b2e5eca45db53d862385a5611313a66702efeae4a86839a86ebd423/pip2deb-1.1.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-26 22:15:46] INFO root fetch - processPackages [pokemon-card-recognizer]: Downloading https://files.pythonhosted.org/packages/fa/e9/ff2985872e4e2de5b85dd79d3a27b501054ab33f4c5c8a48bdb459283c03/pokemon_card_recognizer-0.0.1.3.8.2.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [pianosdk]: Downloading https://files.pythonhosted.org/packages/bc/e2/53864c7264202e65b1dffbab1201fed0dd37a4d3254c4fcac8c615cd1f8b/pianosdk-16.182.0.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-26 22:15:46] WARNING root fetch - processPackages [pokemon-card-recognizer]: Skipping package: exceeds size limit 20177606>=10485760
+[2024-05-26 22:15:46] INFO root fetch - main [MainThread]: End processing [pokemon-card-recognizer] error
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [ollama-chat]: Downloading https://files.pythonhosted.org/packages/4f/76/786953faeae9cc66490d375a64f1c68682c6cc90629180e2cdb2f491ee5e/ollama_chat-0.9.4.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [clipspy]: Downloading https://files.pythonhosted.org/packages/24/fb/f059172eba38a1bf35bd437713b4b3070ea2c80c87c1f447f55567414002/clipspy-1.0.3.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [pip2deb]: Downloading https://files.pythonhosted.org/packages/83/97/957bd2abae6826f8205ad01ce01ba9b9cbe8d8720e2f8119c9c5f1f1ba68/pip2deb-1.2.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/56/42/af4c24888887e573348746819ff2f645adfbb2163693d34373ab3dc13e37/zenaura-0.9.83.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [pianosdk]: Downloading https://files.pythonhosted.org/packages/49/85/5b1ea402bf3c91786a75a29d16eebb33ed5246525777c8dcf8193c30b1fa/pianosdk-16.188.1.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 22:15:46] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240526/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-26 22:15:46] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240526/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-26 22:15:46] INFO root fetch - processPackages [pip2deb]: executing diffoscope
+[2024-05-26 22:15:46] INFO root fetch - processPackages [pip2deb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip2deb-1.1.tar.gz tmp/pip2deb-1.2.tar.gz --markdown 20240526/p/pip2deb/1.1-1.2/README.md --exclude *.pyd
+[2024-05-26 22:15:46] INFO root fetch - processPackages [ollama-chat]: Downloading https://files.pythonhosted.org/packages/3e/f9/9ccacabc19c1ae3687c0345310a26aa93424e43f03bc2dbe2403c5b5d1ec/ollama_chat-0.9.5.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-05-26 22:15:46] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.82.tar.gz tmp/zenaura-0.9.83.tar.gz --markdown 20240526/z/zenaura/0.9.82-0.9.83/README.md --exclude *.pyd
+[2024-05-26 22:15:46] INFO root fetch - processPackages [clipspy]: Downloading https://files.pythonhosted.org/packages/5c/df/898982356541af065119211c0d8ae204ffec3e7053886fe4092fe0dc7e49/clipspy-1.0.4.tar.gz
+[2024-05-26 22:15:46] INFO root fetch - processPackages [pianosdk]: executing diffoscope
+[2024-05-26 22:15:46] INFO root fetch - processPackages [pianosdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pianosdk-16.182.0.tar.gz tmp/pianosdk-16.188.1.tar.gz --markdown 20240526/p/pianosdk/16.182.0-16.188.1/README.md --exclude *.pyd
+[2024-05-26 22:15:46] INFO root fetch - processPackages [ollama-chat]: executing diffoscope
+[2024-05-26 22:15:46] INFO root fetch - processPackages [ollama-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ollama_chat-0.9.4.tar.gz tmp/ollama_chat-0.9.5.tar.gz --markdown 20240526/o/ollama-chat/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-26 22:15:46] INFO root fetch - processPackages [clipspy]: executing diffoscope
+[2024-05-26 22:15:46] INFO root fetch - processPackages [clipspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipspy-1.0.3.tar.gz tmp/clipspy-1.0.4.tar.gz --markdown 20240526/c/clipspy/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-26 22:15:47] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.1.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - processPackages [pip2deb]: Remove: archive file [/home/abi/fetcher/tmp/pip2deb-1.2.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - main [MainThread]: End processing [pip2deb]: success
+[2024-05-26 22:15:47] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-26 22:15:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-26 22:15:47] INFO root fetch - processPackages [ollama-chat]: Remove: archive file [/home/abi/fetcher/tmp/ollama_chat-0.9.4.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - processPackages [ollama-chat]: Remove: archive file [/home/abi/fetcher/tmp/ollama_chat-0.9.5.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - main [MainThread]: End processing [ollama-chat]: success
+[2024-05-26 22:15:47] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.82.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.83.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-05-26 22:15:47] INFO root fetch - processPackages [clipspy]: Remove: archive file [/home/abi/fetcher/tmp/clipspy-1.0.3.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - processPackages [clipspy]: Remove: archive file [/home/abi/fetcher/tmp/clipspy-1.0.4.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - main [MainThread]: End processing [clipspy]: success
+[2024-05-26 22:15:47] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 22:15:47] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 22:15:48] INFO root fetch - processPackages [pianosdk]: Remove: archive file [/home/abi/fetcher/tmp/pianosdk-16.182.0.tar.gz]
+[2024-05-26 22:15:48] INFO root fetch - processPackages [pianosdk]: Remove: archive file [/home/abi/fetcher/tmp/pianosdk-16.188.1.tar.gz]
+[2024-05-26 22:15:48] INFO root fetch - main [MainThread]: End processing [pianosdk]: success
+[2024-05-26 22:15:48] INFO root fetch - main [MainThread]: Store serial: [23386657]
