@@ -12784,3 +12784,66 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:54:10] INFO root fetch - processPackages [goit-phone-book-bot]: Remove: archive file [/home/abi/fetcher/tmp/goit_phone_book_bot-0.1.4.tar.gz]
 [2024-05-26 16:54:10] INFO root fetch - main [MainThread]: End processing [goit-phone-book-bot]: success
 [2024-05-26 16:54:10] INFO root fetch - main [MainThread]: Store serial: [23383948]
+[2024-05-26 16:56:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383948]
+[2024-05-26 16:56:18] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-26 16:56:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-26 16:56:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grimo
+[2024-05-26 16:56:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libbot
+[2024-05-26 16:56:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: myst-libre
+[2024-05-26 16:56:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-tmx
+[2024-05-26 16:56:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: beets-bpmanalyser
+[2024-05-26 16:56:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eventum-plugins
+[2024-05-26 16:56:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bota
+[2024-05-26 16:56:19] INFO root fetch - processPackages [libbot]: New version: [3.2.0] Old Version: [3.1.0]
+[2024-05-26 16:56:19] INFO root fetch - processPackages [bota]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 16:56:19] WARNING root fetch - processPackages [grimo]: Skipping, unable to determine old version
+[2024-05-26 16:56:19] INFO root fetch - main [MainThread]: End processing [grimo] error
+[2024-05-26 16:56:19] INFO root fetch - processPackages [myst-libre]: New version: [0.0.post1] Old Version: [0.0.0]
+[2024-05-26 16:56:19] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-26 16:56:19] INFO root fetch - processPackages [beets-bpmanalyser]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-26 16:56:19] INFO root fetch - processPackages [python-tmx]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-26 16:56:19] WARNING root fetch - processPackages [eventum-plugins]: Skipping, unable to determine old version
+[2024-05-26 16:56:19] INFO root fetch - main [MainThread]: End processing [eventum-plugins] error
+[2024-05-26 16:56:19] INFO root fetch - processPackages [myst-libre]: Downloading https://files.pythonhosted.org/packages/1e/45/b910d02edc9a8d2906ee08bb50b26d7c2b811c7af5446b6b93c3fccba752/myst_libre-0.0.0.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [libbot]: Downloading https://files.pythonhosted.org/packages/ec/66/a381b281466eaccefa0c0129547d97fa5cc4891970e6c44b9782654a85f6/libbot-3.1.0.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/20/a9/4f637666fa83c508695967d807e33c729d659786a5de468b4289f5bff8b4/bota-4.0.8.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [python-tmx]: Downloading https://files.pythonhosted.org/packages/38/22/ff44faa28fb19570adf170b807b5df904c0aea762233d8d9a0dbf554b4ea/python-tmx-0.1.4.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [beets-bpmanalyser]: Downloading https://files.pythonhosted.org/packages/7b/9b/cdb52e07f1a64433a002353499ad41239a4145b78ea6caa31829c8e0556b/beets-bpmanalyser-1.5.8.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [myst-libre]: Downloading https://files.pythonhosted.org/packages/96/65/7ba9bb22bcdf62cd3af9edbb1ae1c5a6be7e048e3dcccc8d22d777afb5b6/myst_libre-0.0.post1.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [libbot]: Downloading https://files.pythonhosted.org/packages/9a/2c/c845eb2e264678cfdefdcc8f5524672f8e112361ad5d12e3ac819595a430/libbot-3.2.0.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/a4/5f/24c14d0a7d609507557baf5369feaca8b3459d111f35e9258e9d0396f9a8/bota-4.0.9.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [myst-libre]: executing diffoscope
+[2024-05-26 16:56:19] INFO root fetch - processPackages [myst-libre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myst_libre-0.0.0.tar.gz tmp/myst_libre-0.0.post1.tar.gz --markdown 20240526/m/myst-libre/0.0.0-0.0.post1/README.md --exclude *.pyd
+[2024-05-26 16:56:19] INFO root fetch - processPackages [bota]: executing diffoscope
+[2024-05-26 16:56:19] INFO root fetch - processPackages [bota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bota-4.0.8.tar.gz tmp/bota-4.0.9.tar.gz --markdown 20240526/b/bota/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 16:56:19] INFO root fetch - processPackages [libbot]: executing diffoscope
+[2024-05-26 16:56:19] INFO root fetch - processPackages [libbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libbot-3.1.0.tar.gz tmp/libbot-3.2.0.tar.gz --markdown 20240526/l/libbot/3.1.0-3.2.0/README.md --exclude *.pyd
+[2024-05-26 16:56:19] INFO root fetch - processPackages [python-tmx]: Downloading https://files.pythonhosted.org/packages/59/8e/cb77417fb6665b63113b2ee7e424d3fb4b4aec056a9580f1722a02ffa32f/python_tmx-0.1.5.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-26 16:56:19] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240526/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-26 16:56:19] INFO root fetch - processPackages [beets-bpmanalyser]: Downloading https://files.pythonhosted.org/packages/fc/8a/9e7f7fd3b87ba0d1a5c50f66c436444f8a21c6baeef792a9395e5d358a9a/beets_bpmanalyser-1.5.9.tar.gz
+[2024-05-26 16:56:19] INFO root fetch - processPackages [python-tmx]: executing diffoscope
+[2024-05-26 16:56:19] INFO root fetch - processPackages [python-tmx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-tmx-0.1.4.tar.gz tmp/python_tmx-0.1.5.tar.gz --markdown 20240526/p/python-tmx/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-26 16:56:19] INFO root fetch - processPackages [beets-bpmanalyser]: executing diffoscope
+[2024-05-26 16:56:19] INFO root fetch - processPackages [beets-bpmanalyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets-bpmanalyser-1.5.8.tar.gz tmp/beets_bpmanalyser-1.5.9.tar.gz --markdown 20240526/b/beets-bpmanalyser/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-26 16:56:20] INFO root fetch - processPackages [myst-libre]: Remove: archive file [/home/abi/fetcher/tmp/myst_libre-0.0.0.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - processPackages [myst-libre]: Remove: archive file [/home/abi/fetcher/tmp/myst_libre-0.0.post1.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - main [MainThread]: End processing [myst-libre]: success
+[2024-05-26 16:56:20] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.8.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - main [MainThread]: End processing [bota]: success
+[2024-05-26 16:56:20] INFO root fetch - processPackages [libbot]: Remove: archive file [/home/abi/fetcher/tmp/libbot-3.1.0.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - processPackages [libbot]: Remove: archive file [/home/abi/fetcher/tmp/libbot-3.2.0.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - main [MainThread]: End processing [libbot]: success
+[2024-05-26 16:56:20] INFO root fetch - processPackages [python-tmx]: Remove: archive file [/home/abi/fetcher/tmp/python-tmx-0.1.4.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - processPackages [python-tmx]: Remove: archive file [/home/abi/fetcher/tmp/python_tmx-0.1.5.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - main [MainThread]: End processing [python-tmx]: success
+[2024-05-26 16:56:20] INFO root fetch - processPackages [beets-bpmanalyser]: Remove: archive file [/home/abi/fetcher/tmp/beets-bpmanalyser-1.5.8.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - processPackages [beets-bpmanalyser]: Remove: archive file [/home/abi/fetcher/tmp/beets_bpmanalyser-1.5.9.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - main [MainThread]: End processing [beets-bpmanalyser]: success
+[2024-05-26 16:56:20] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-26 16:56:20] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-26 16:56:20] INFO root fetch - main [MainThread]: Store serial: [23383973]
