@@ -1513,3 +1513,24 @@
 [2024-05-26 02:58:16] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Remove: archive file [/home/abi/fetcher/tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz]
 [2024-05-26 02:58:16] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
 [2024-05-26 02:58:16] INFO root fetch - main [MainThread]: Store serial: [23378836]
+[2024-05-26 03:00:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378836]
+[2024-05-26 03:00:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maestro-compose
+[2024-05-26 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-curl
+[2024-05-26 03:00:25] INFO root fetch - processPackages [maestro-compose]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-26 03:00:25] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-26 03:00:25] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-05-26 03:00:25] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/57/3a/9d626825c81119728fc0c2fd1804df417ba85eb193ef5dc28451e59a021d/maestro_compose-0.1.1.tar.gz
+[2024-05-26 03:00:25] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-05-26 03:00:25] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/46/21/f8f434a0ed687fbc453482479a786c1712b369056ccd76164f2bbb99c435/maestro_compose-0.1.2.tar.gz
+[2024-05-26 03:00:25] INFO root fetch - processPackages [maestro-compose]: executing diffoscope
+[2024-05-26 03:00:25] INFO root fetch - processPackages [maestro-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestro_compose-0.1.1.tar.gz tmp/maestro_compose-0.1.2.tar.gz --markdown 20240526/m/maestro-compose/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-26 03:00:25] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-05-26 03:00:25] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240526/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-26 03:00:26] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.1.tar.gz]
+[2024-05-26 03:00:26] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.2.tar.gz]
+[2024-05-26 03:00:26] INFO root fetch - main [MainThread]: End processing [maestro-compose]: success
+[2024-05-26 03:00:26] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-05-26 03:00:26] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-05-26 03:00:26] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-05-26 03:00:26] INFO root fetch - main [MainThread]: Store serial: [23378839]
