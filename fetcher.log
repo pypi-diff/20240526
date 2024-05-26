@@ -5832,3 +5832,9 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 09:55:01] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.41-py39-none-win_amd64.whl.zip]
 [2024-05-26 09:55:01] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
 [2024-05-26 09:55:01] INFO root fetch - main [MainThread]: Store serial: [23380777]
+[2024-05-26 09:57:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380777]
+[2024-05-26 09:57:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 09:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tracor
+[2024-05-26 09:57:11] WARNING root fetch - processPackages [tracor]: Skipping, unable to determine old version
+[2024-05-26 09:57:11] INFO root fetch - main [MainThread]: End processing [tracor] error
+[2024-05-26 09:57:11] INFO root fetch - main [MainThread]: Store serial: [23380780]
