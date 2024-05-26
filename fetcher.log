@@ -16998,3 +16998,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 20:52:43] INFO root fetch - processPackages [django-otp-webauthn]: Remove: archive file [/home/abi/fetcher/tmp/django_otp_webauthn-0.1.1.tar.gz]
 [2024-05-26 20:52:43] INFO root fetch - main [MainThread]: End processing [django-otp-webauthn]: success
 [2024-05-26 20:52:43] INFO root fetch - main [MainThread]: Store serial: [23385894]
+[2024-05-26 20:54:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23385894]
+[2024-05-26 20:54:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 20:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MedatechUK.Landlord
+[2024-05-26 20:54:53] INFO root fetch - processPackages [MedatechUK.Landlord]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-26 20:54:53] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/46/27/40d1292cdd2d1643bcb215fecacc4e409e02cbc9d75398f67ad9eb4cae20/medatechuk_landlord-0.0.3.tar.gz
+[2024-05-26 20:54:53] INFO root fetch - processPackages [MedatechUK.Landlord]: Downloading https://files.pythonhosted.org/packages/cd/21/dfc40ff05fc9ff9a16d6214022e6450b1e6b3a6474603fcc2e4845e3d631/medatechuk_landlord-0.0.4.tar.gz
+[2024-05-26 20:54:53] INFO root fetch - processPackages [MedatechUK.Landlord]: executing diffoscope
+[2024-05-26 20:54:53] INFO root fetch - processPackages [MedatechUK.Landlord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medatechuk_landlord-0.0.3.tar.gz tmp/medatechuk_landlord-0.0.4.tar.gz --markdown 20240526/M/MedatechUK.Landlord/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-26 20:54:54] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.3.tar.gz]
+[2024-05-26 20:54:54] INFO root fetch - processPackages [MedatechUK.Landlord]: Remove: archive file [/home/abi/fetcher/tmp/medatechuk_landlord-0.0.4.tar.gz]
+[2024-05-26 20:54:54] INFO root fetch - main [MainThread]: End processing [MedatechUK.Landlord]: success
+[2024-05-26 20:54:54] INFO root fetch - main [MainThread]: Store serial: [23385898]
