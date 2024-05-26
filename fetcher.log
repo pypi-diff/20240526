@@ -14137,3 +14137,15 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 18:00:11] INFO root fetch - processPackages [django-glue]: Remove: archive file [/home/abi/fetcher/tmp/django_glue-0.6.0.tar.gz]
 [2024-05-26 18:00:11] INFO root fetch - main [MainThread]: End processing [django-glue]: success
 [2024-05-26 18:00:11] INFO root fetch - main [MainThread]: Store serial: [23384501]
+[2024-05-26 18:02:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23384501]
+[2024-05-26 18:02:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 18:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c64img
+[2024-05-26 18:02:20] INFO root fetch - processPackages [c64img]: New version: [3.5] Old Version: [3.2]
+[2024-05-26 18:02:20] INFO root fetch - processPackages [c64img]: Downloading https://files.pythonhosted.org/packages/3a/01/f3f210bcbf048799963a7322c6a6be859d7c26b6ede175eccbb2aa186c00/c64img-3.2.tar.gz
+[2024-05-26 18:02:20] INFO root fetch - processPackages [c64img]: Downloading https://files.pythonhosted.org/packages/6d/1b/b3fbd0b1dbf5b977609fc1e967ea1670273af99f44b995ef6af5b8ab525d/c64img-3.5.tar.gz
+[2024-05-26 18:02:20] INFO root fetch - processPackages [c64img]: executing diffoscope
+[2024-05-26 18:02:20] INFO root fetch - processPackages [c64img]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c64img-3.2.tar.gz tmp/c64img-3.5.tar.gz --markdown 20240526/c/c64img/3.2-3.5/README.md --exclude *.pyd
+[2024-05-26 18:02:21] INFO root fetch - processPackages [c64img]: Remove: archive file [/home/abi/fetcher/tmp/c64img-3.2.tar.gz]
+[2024-05-26 18:02:21] INFO root fetch - processPackages [c64img]: Remove: archive file [/home/abi/fetcher/tmp/c64img-3.5.tar.gz]
+[2024-05-26 18:02:21] INFO root fetch - main [MainThread]: End processing [c64img]: success
+[2024-05-26 18:02:21] INFO root fetch - main [MainThread]: Store serial: [23384504]
