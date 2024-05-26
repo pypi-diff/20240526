@@ -4326,3 +4326,24 @@
 [2024-05-26 07:47:57] INFO root fetch - processPackages [neginver]: Remove: archive file [/home/abi/fetcher/tmp/neginver-0.0.5.tar.gz]
 [2024-05-26 07:47:57] INFO root fetch - main [MainThread]: End processing [neginver]: success
 [2024-05-26 07:47:57] INFO root fetch - main [MainThread]: Store serial: [23380144]
+[2024-05-26 07:50:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380144]
+[2024-05-26 07:50:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-26 07:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2024-05-26 07:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qspace
+[2024-05-26 07:50:05] INFO root fetch - processPackages [qspace]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-26 07:50:05] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-26 07:50:05] INFO root fetch - processPackages [qspace]: Downloading https://files.pythonhosted.org/packages/e2/5b/d2f39cf3251f831a87173bab403ece62d2dcd6b229a3f5775ac7ca33eb76/qspace-0.0.2.tar.gz
+[2024-05-26 07:50:05] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-26 07:50:05] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-26 07:50:06] INFO root fetch - processPackages [qspace]: Downloading https://files.pythonhosted.org/packages/a4/91/07f827a03bd4c454dab5402cbd9a43754d123a1cafcce8560dc06d27f19d/qspace-0.0.4.tar.gz
+[2024-05-26 07:50:06] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-26 07:50:06] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240526/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-26 07:50:06] INFO root fetch - processPackages [qspace]: executing diffoscope
+[2024-05-26 07:50:06] INFO root fetch - processPackages [qspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qspace-0.0.2.tar.gz tmp/qspace-0.0.4.tar.gz --markdown 20240526/q/qspace/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-26 07:50:06] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-26 07:50:06] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-26 07:50:06] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-26 07:50:06] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.2.tar.gz]
+[2024-05-26 07:50:06] INFO root fetch - processPackages [qspace]: Remove: archive file [/home/abi/fetcher/tmp/qspace-0.0.4.tar.gz]
+[2024-05-26 07:50:06] INFO root fetch - main [MainThread]: End processing [qspace]: success
+[2024-05-26 07:50:06] INFO root fetch - main [MainThread]: Store serial: [23380159]
