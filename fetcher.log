@@ -12418,3 +12418,90 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 16:40:01] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.1.tar.gz]
 [2024-05-26 16:40:01] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-26 16:40:01] INFO root fetch - main [MainThread]: Store serial: [23383807]
+[2024-05-26 16:42:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383807]
+[2024-05-26 16:42:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: z-units
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: machine-learning-package
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contacts-assistant
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bota
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cosmix-launcher
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dscontexai
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zettel-org
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: findblas
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ar
+[2024-05-26 16:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: elm-messenger
+[2024-05-26 16:42:31] INFO root fetch - processPackages [contacts-assistant]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-26 16:42:31] INFO root fetch - processPackages [bota]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-26 16:42:31] INFO root fetch - processPackages [findblas]: New version: [0.1.9] Old Version: [0.1.8.1]
+[2024-05-26 16:42:31] INFO root fetch - processPackages [dscontexai]: New version: [0.1.0] Old Version: [0.0.6]
+[2024-05-26 16:42:31] INFO root fetch - processPackages [z-units]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-26 16:42:31] INFO root fetch - processPackages [cosmix-launcher]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-26 16:42:31] INFO root fetch - processPackages [zettel-org]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-26 16:42:31] WARNING root fetch - processPackages [machine-learning-package]: Skipping, unable to determine old version
+[2024-05-26 16:42:31] INFO root fetch - main [MainThread]: End processing [machine-learning-package] error
+[2024-05-26 16:42:31] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/33/9f/108164fb8e65a632c839913b99da06157f0acb9d53884bc0a3e99ba6a572/contacts_assistant-0.0.8.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [ar]: New version: [0.9] Old Version: [0.8]
+[2024-05-26 16:42:31] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/20/a9/4f637666fa83c508695967d807e33c729d659786a5de468b4289f5bff8b4/bota-4.0.8.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [elm-messenger]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-26 16:42:31] INFO root fetch - processPackages [findblas]: Downloading https://files.pythonhosted.org/packages/64/5e/57028b7be8732b098e9615f7e0a3ce45823ed735df12c3adcf38fe04b72d/findblas-0.1.8.1.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/bb/0a/46040414cf0d8c4745bc5bdae0c22ace790552fda65e4a56cad2630be66d/dscontexai-0.0.6.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [z-units]: Downloading https://files.pythonhosted.org/packages/d4/27/8bd623e42d53314c9e82edcc8b9a1557b59490fd33837c60e83233a5fbed/z_units-0.1.5.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [cosmix-launcher]: Downloading https://files.pythonhosted.org/packages/df/ed/55d9e15ffae3f1dab2421073bae99324b19a6ee8972b5ada4d9360639ab6/cosmix_launcher-1.0.8.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [zettel-org]: Downloading https://files.pythonhosted.org/packages/6d/5f/315cd9dba5bd254b3a51ecafc12fbcfd4160f6abcbf8729b5a08def4a1bc/zettel_org-0.7.3.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [ar]: Downloading https://files.pythonhosted.org/packages/bf/3b/22a244da0f2f1496515f7dc0f48819260f0c7d7f31619baf15071c3baa6f/ar-0.8.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [bota]: Downloading https://files.pythonhosted.org/packages/a4/5f/24c14d0a7d609507557baf5369feaca8b3459d111f35e9258e9d0396f9a8/bota-4.0.9.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [elm-messenger]: Downloading https://files.pythonhosted.org/packages/4e/d4/c81b9072c4d84e03a1c813f6d385a96dbeba2f90b63fe1b6225e279c85a0/elm_messenger-0.3.6.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [findblas]: Downloading https://files.pythonhosted.org/packages/a3/6b/9b76af2a6096b1fea8c77cdede7093536a39099fcab9a5348c41ba058413/findblas-0.1.9.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [contacts-assistant]: Downloading https://files.pythonhosted.org/packages/58/95/997a96ce86f7fd842856d5dba30e9987ba9891456196e2a073db3dab5750/contacts_assistant-0.0.9.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [dscontexai]: Downloading https://files.pythonhosted.org/packages/94/d9/a91652e8739fb952e46cc9bdb4234e6d0702adbf48fe6eaf28d6b2c211e3/dscontexai-0.1.0.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [bota]: executing diffoscope
+[2024-05-26 16:42:31] INFO root fetch - processPackages [bota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bota-4.0.8.tar.gz tmp/bota-4.0.9.tar.gz --markdown 20240526/b/bota/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-26 16:42:31] INFO root fetch - processPackages [findblas]: executing diffoscope
+[2024-05-26 16:42:31] INFO root fetch - processPackages [findblas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findblas-0.1.8.1.tar.gz tmp/findblas-0.1.9.tar.gz --markdown 20240526/f/findblas/0.1.8.1-0.1.9/README.md --exclude *.pyd
+[2024-05-26 16:42:31] INFO root fetch - processPackages [cosmix-launcher]: Downloading https://files.pythonhosted.org/packages/e6/90/d24e0b3a642f1fb1c3e85d4c2841378146d1b94ed9a6c3fdb22b4cad2f77/cosmix_launcher-1.0.9.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [dscontexai]: executing diffoscope
+[2024-05-26 16:42:31] INFO root fetch - processPackages [dscontexai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscontexai-0.0.6.tar.gz tmp/dscontexai-0.1.0.tar.gz --markdown 20240526/d/dscontexai/0.0.6-0.1.0/README.md --exclude *.pyd
+[2024-05-26 16:42:31] INFO root fetch - processPackages [contacts-assistant]: executing diffoscope
+[2024-05-26 16:42:31] INFO root fetch - processPackages [contacts-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contacts_assistant-0.0.8.tar.gz tmp/contacts_assistant-0.0.9.tar.gz --markdown 20240526/c/contacts-assistant/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-26 16:42:31] INFO root fetch - processPackages [zettel-org]: Downloading https://files.pythonhosted.org/packages/1c/ca/a553ec61f15999b2847ef26806cf164501b0005054fe59c0475da25edfe8/zettel_org-0.7.4.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [ar]: Downloading https://files.pythonhosted.org/packages/99/2d/44982b5f22978d30536bcb2693a3041f23c34181f09b4ac308db0da7c5ad/ar-0.9.tar.gz
+[2024-05-26 16:42:31] INFO root fetch - processPackages [z-units]: Downloading https://files.pythonhosted.org/packages/e4/b9/734ba1dfbd3d2059875f742a33747b3d731d9aaa570b5f9d3ef97eee6b38/z_units-0.1.6.tar.gz
+[2024-05-26 16:42:32] INFO root fetch - processPackages [cosmix-launcher]: executing diffoscope
+[2024-05-26 16:42:32] INFO root fetch - processPackages [cosmix-launcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmix_launcher-1.0.8.tar.gz tmp/cosmix_launcher-1.0.9.tar.gz --markdown 20240526/c/cosmix-launcher/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-26 16:42:32] INFO root fetch - processPackages [elm-messenger]: Downloading https://files.pythonhosted.org/packages/d6/6b/92e5a14fe61219a3e4399f8e89e76651703b21309ae474cadcb3740fc712/elm_messenger-0.3.7.tar.gz
+[2024-05-26 16:42:32] INFO root fetch - processPackages [ar]: executing diffoscope
+[2024-05-26 16:42:32] INFO root fetch - processPackages [ar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ar-0.8.tar.gz tmp/ar-0.9.tar.gz --markdown 20240526/a/ar/0.8-0.9/README.md --exclude *.pyd
+[2024-05-26 16:42:32] INFO root fetch - processPackages [z-units]: executing diffoscope
+[2024-05-26 16:42:32] INFO root fetch - processPackages [z-units]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z_units-0.1.5.tar.gz tmp/z_units-0.1.6.tar.gz --markdown 20240526/z/z-units/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-26 16:42:32] INFO root fetch - processPackages [zettel-org]: executing diffoscope
+[2024-05-26 16:42:32] INFO root fetch - processPackages [zettel-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zettel_org-0.7.3.tar.gz tmp/zettel_org-0.7.4.tar.gz --markdown 20240526/z/zettel-org/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-05-26 16:42:32] INFO root fetch - processPackages [elm-messenger]: executing diffoscope
+[2024-05-26 16:42:32] INFO root fetch - processPackages [elm-messenger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elm_messenger-0.3.6.tar.gz tmp/elm_messenger-0.3.7.tar.gz --markdown 20240526/e/elm-messenger/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-26 16:42:32] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.8.tar.gz]
+[2024-05-26 16:42:32] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
+[2024-05-26 16:42:32] INFO root fetch - main [MainThread]: End processing [bota]: success
+[2024-05-26 16:42:32] INFO root fetch - processPackages [findblas]: Remove: archive file [/home/abi/fetcher/tmp/findblas-0.1.8.1.tar.gz]
+[2024-05-26 16:42:32] INFO root fetch - processPackages [findblas]: Remove: archive file [/home/abi/fetcher/tmp/findblas-0.1.9.tar.gz]
+[2024-05-26 16:42:32] INFO root fetch - main [MainThread]: End processing [findblas]: success
+[2024-05-26 16:42:32] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.0.6.tar.gz]
+[2024-05-26 16:42:32] INFO root fetch - processPackages [dscontexai]: Remove: archive file [/home/abi/fetcher/tmp/dscontexai-0.1.0.tar.gz]
+[2024-05-26 16:42:32] INFO root fetch - main [MainThread]: End processing [dscontexai]: success
+[2024-05-26 16:42:33] INFO root fetch - processPackages [ar]: Remove: archive file [/home/abi/fetcher/tmp/ar-0.8.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - processPackages [ar]: Remove: archive file [/home/abi/fetcher/tmp/ar-0.9.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - main [MainThread]: End processing [ar]: success
+[2024-05-26 16:42:33] INFO root fetch - processPackages [cosmix-launcher]: Remove: archive file [/home/abi/fetcher/tmp/cosmix_launcher-1.0.8.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - processPackages [cosmix-launcher]: Remove: archive file [/home/abi/fetcher/tmp/cosmix_launcher-1.0.9.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - main [MainThread]: End processing [cosmix-launcher]: success
+[2024-05-26 16:42:33] INFO root fetch - processPackages [elm-messenger]: Remove: archive file [/home/abi/fetcher/tmp/elm_messenger-0.3.6.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - processPackages [elm-messenger]: Remove: archive file [/home/abi/fetcher/tmp/elm_messenger-0.3.7.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - main [MainThread]: End processing [elm-messenger]: success
+[2024-05-26 16:42:33] INFO root fetch - processPackages [z-units]: Remove: archive file [/home/abi/fetcher/tmp/z_units-0.1.5.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - processPackages [z-units]: Remove: archive file [/home/abi/fetcher/tmp/z_units-0.1.6.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - main [MainThread]: End processing [z-units]: success
+[2024-05-26 16:42:33] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.8.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - processPackages [contacts-assistant]: Remove: archive file [/home/abi/fetcher/tmp/contacts_assistant-0.0.9.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - main [MainThread]: End processing [contacts-assistant]: success
+[2024-05-26 16:42:33] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.7.3.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.7.4.tar.gz]
+[2024-05-26 16:42:33] INFO root fetch - main [MainThread]: End processing [zettel-org]: success
+[2024-05-26 16:42:33] INFO root fetch - main [MainThread]: Store serial: [23383837]
