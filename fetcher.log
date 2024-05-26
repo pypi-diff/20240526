@@ -11575,3 +11575,69 @@ subprocess.CalledProcessError: Command '['xxd {}']' returned non-zero exit statu
 [2024-05-26 15:49:41] INFO root fetch - processPackages [bota]: Remove: archive file [/home/abi/fetcher/tmp/bota-4.0.9.tar.gz]
 [2024-05-26 15:49:41] INFO root fetch - main [MainThread]: End processing [bota]: success
 [2024-05-26 15:49:41] INFO root fetch - main [MainThread]: Store serial: [23383487]
+[2024-05-26 15:52:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23383487]
+[2024-05-26 15:52:08] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyDEMATEL
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matematikk
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: puddleglum
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: z2m-log-parser
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: locust
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: NinjaTools
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wellbeing-calculator
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mongo-api-client
+[2024-05-26 15:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: quarkstudio
+[2024-05-26 15:52:09] INFO root fetch - processPackages [matematikk]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-26 15:52:09] WARNING root fetch - processPackages [puddleglum]: Skipping, unable to determine old version
+[2024-05-26 15:52:09] INFO root fetch - main [MainThread]: End processing [puddleglum] error
+[2024-05-26 15:52:09] INFO root fetch - processPackages [z2m-log-parser]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-26 15:52:09] INFO root fetch - processPackages [mongo-api-client]: New version: [0.2] Old Version: [0.1]
+[2024-05-26 15:52:09] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-05-26 15:52:09] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/b9/0f/0e2ea1c838d839f658d451461a2f978947f6ab41a8f4e102104cc5b587a8/matematikk-0.0.98.tar.gz
+[2024-05-26 15:52:09] WARNING root fetch - processPackages [pyDEMATEL]: Skipping, unable to determine old version
+[2024-05-26 15:52:09] INFO root fetch - main [MainThread]: End processing [pyDEMATEL] error
+[2024-05-26 15:52:09] WARNING root fetch - processPackages [wellbeing-calculator]: Skipping, unable to determine old version
+[2024-05-26 15:52:09] INFO root fetch - main [MainThread]: End processing [wellbeing-calculator] error
+[2024-05-26 15:52:09] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-05-26 15:52:09] INFO root fetch - processPackages [quarkstudio]: New version: [6.6.7.0] Old Version: [6.6.2.21]
+[2024-05-26 15:52:09] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/9c/5f/91d15fdd3b13a9e9aec83d06e169e82de897ace698a7e4e455834b911a74/z2m_log_parser-0.0.5.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [mongo-api-client]: Downloading https://files.pythonhosted.org/packages/28/00/f697fe9c40957be8045522a96ce8b2d27b8879b5d03d4c81fd53cded1bc0/mongo-api-client-0.1.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [matematikk]: Downloading https://files.pythonhosted.org/packages/ba/d1/907a2303ec8d0c4c2f01a0d2f9fd6e3de3387f6c25c32de3800152e437fb/matematikk-0.0.99.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [NinjaTools]: Downloading https://files.pythonhosted.org/packages/ca/7f/a36a5538a5100fa15d02bbd755fd23241035a68e6019b99cb8d273c32a61/NinjaTools-0.8.9.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/1b/7a/2ddc240da8724a4e7ea8c215381ab3952381d9fbd393742fba258c232693/quarkstudio-6.6.2.21-cp312-none-win_amd64.whl
+[2024-05-26 15:52:09] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [matematikk]: executing diffoscope
+[2024-05-26 15:52:09] INFO root fetch - processPackages [matematikk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matematikk-0.0.98.tar.gz tmp/matematikk-0.0.99.tar.gz --markdown 20240526/m/matematikk/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-26 15:52:09] INFO root fetch - processPackages [z2m-log-parser]: Downloading https://files.pythonhosted.org/packages/0e/8c/82aadba479a4faa70f3613ff2556d7539e72971e9ec6783ede1b0f11f7f5/z2m_log_parser-0.0.6.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [mongo-api-client]: Downloading https://files.pythonhosted.org/packages/d7/69/32c9a95258a34e1365a61f081442f50a64fe56270d08d5bf5d7716d5e048/mongo-api-client-0.2.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [z2m-log-parser]: executing diffoscope
+[2024-05-26 15:52:09] INFO root fetch - processPackages [z2m-log-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z2m_log_parser-0.0.5.tar.gz tmp/z2m_log_parser-0.0.6.tar.gz --markdown 20240526/z/z2m-log-parser/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-26 15:52:09] INFO root fetch - processPackages [NinjaTools]: Downloading https://files.pythonhosted.org/packages/36/c3/2d22ecaadfc1cbe57118895684bc799aa1ff33706a5a09e130728af4cd83/NinjaTools-0.9.0.tar.gz
+[2024-05-26 15:52:09] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-05-26 15:52:09] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240526/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-05-26 15:52:09] INFO root fetch - processPackages [mongo-api-client]: executing diffoscope
+[2024-05-26 15:52:09] INFO root fetch - processPackages [mongo-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongo-api-client-0.1.tar.gz tmp/mongo-api-client-0.2.tar.gz --markdown 20240526/m/mongo-api-client/0.1-0.2/README.md --exclude *.pyd
+[2024-05-26 15:52:09] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/9f/fb/dde7107df5ab3ca2adae086da6d1029df52cfd70612c50ca3c3167b2f971/quarkstudio-6.6.7.0-cp310-none-win_amd64.whl
+[2024-05-26 15:52:09] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2024-05-26 15:52:09] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20240526/N/NinjaTools/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-05-26 15:52:10] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.5.tar.gz]
+[2024-05-26 15:52:10] INFO root fetch - processPackages [z2m-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/z2m_log_parser-0.0.6.tar.gz]
+[2024-05-26 15:52:10] INFO root fetch - main [MainThread]: End processing [z2m-log-parser]: success
+[2024-05-26 15:52:10] INFO root fetch - processPackages [mongo-api-client]: Remove: archive file [/home/abi/fetcher/tmp/mongo-api-client-0.1.tar.gz]
+[2024-05-26 15:52:10] INFO root fetch - processPackages [mongo-api-client]: Remove: archive file [/home/abi/fetcher/tmp/mongo-api-client-0.2.tar.gz]
+[2024-05-26 15:52:10] INFO root fetch - main [MainThread]: End processing [mongo-api-client]: success
+[2024-05-26 15:52:10] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2024-05-26 15:52:10] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.6.2.21-cp312-none-win_amd64.whl.zip tmp/quarkstudio-6.6.7.0-cp310-none-win_amd64.whl.zip --markdown 20240526/q/quarkstudio/6.6.2.21-6.6.7.0/README.md --exclude *.pyd
+[2024-05-26 15:52:10] INFO root fetch - processPackages [NinjaTools]: Remove: archive file [/home/abi/fetcher/tmp/NinjaTools-0.8.9.tar.gz]
+[2024-05-26 15:52:10] INFO root fetch - processPackages [NinjaTools]: Remove: archive file [/home/abi/fetcher/tmp/NinjaTools-0.9.0.tar.gz]
+[2024-05-26 15:52:10] INFO root fetch - main [MainThread]: End processing [NinjaTools]: success
+[2024-05-26 15:52:10] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.98.tar.gz]
+[2024-05-26 15:52:10] INFO root fetch - processPackages [matematikk]: Remove: archive file [/home/abi/fetcher/tmp/matematikk-0.0.99.tar.gz]
+[2024-05-26 15:52:10] INFO root fetch - main [MainThread]: End processing [matematikk]: success
+[2024-05-26 15:52:11] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.2.21-cp312-none-win_amd64.whl.zip]
+[2024-05-26 15:52:11] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.7.0-cp310-none-win_amd64.whl.zip]
+[2024-05-26 15:52:11] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
+[2024-05-26 15:52:11] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-05-26 15:52:11] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-05-26 15:52:11] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-05-26 15:52:11] INFO root fetch - main [MainThread]: Store serial: [23383514]
