@@ -4720,3 +4720,29 @@
 [2024-05-26 08:33:23] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.888.tar.gz]
 [2024-05-26 08:33:23] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
 [2024-05-26 08:33:23] INFO root fetch - main [MainThread]: Store serial: [23380340]
+[2024-05-26 08:35:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23380340]
+[2024-05-26 08:35:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-26 08:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skpro
+[2024-05-26 08:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cryodrgn
+[2024-05-26 08:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cadprox
+[2024-05-26 08:35:31] INFO root fetch - processPackages [skpro]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-26 08:35:31] INFO root fetch - processPackages [cryodrgn]: New version: [3.3.2] Old Version: [3.3.1]
+[2024-05-26 08:35:31] INFO root fetch - processPackages [cadprox]: New version: [4.3] Old Version: [4.2]
+[2024-05-26 08:35:31] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/63/dd/efd4c3e416fa938c7da483119616270ef4de3dd51879c0c7dce3e7a56e46/cadprox-4.2.tar.gz
+[2024-05-26 08:35:31] INFO root fetch - processPackages [cryodrgn]: Downloading https://files.pythonhosted.org/packages/18/9a/1d5ddedf2a40765bf9050569ae86865b7567931278e33118f3780f3efaf3/cryodrgn-3.3.1.tar.gz
+[2024-05-26 08:35:31] WARNING root fetch - processPackages [cryodrgn]: Skipping package: exceeds size limit 37434233>=10485760
+[2024-05-26 08:35:31] INFO root fetch - main [MainThread]: End processing [cryodrgn] error
+[2024-05-26 08:35:31] INFO root fetch - processPackages [skpro]: Downloading https://files.pythonhosted.org/packages/6f/24/59d6801110fe9528e67ce9c071854b306931ee265c52a3bfe7ca0e49c44c/skpro-2.3.0.tar.gz
+[2024-05-26 08:35:32] INFO root fetch - processPackages [cadprox]: Downloading https://files.pythonhosted.org/packages/b9/19/0dfa54b51f844d8b9ed62f1a1ddc5ade6bc49a5c95b87eb641bb753801a3/cadprox-4.3.tar.gz
+[2024-05-26 08:35:32] INFO root fetch - processPackages [cadprox]: executing diffoscope
+[2024-05-26 08:35:32] INFO root fetch - processPackages [cadprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cadprox-4.2.tar.gz tmp/cadprox-4.3.tar.gz --markdown 20240526/c/cadprox/4.2-4.3/README.md --exclude *.pyd
+[2024-05-26 08:35:32] INFO root fetch - processPackages [skpro]: Downloading https://files.pythonhosted.org/packages/1e/f9/bbf7a6f03baf987336102733eb78898e7f93668a0716b29888bac27cbf42/skpro-2.3.1.tar.gz
+[2024-05-26 08:35:32] INFO root fetch - processPackages [skpro]: executing diffoscope
+[2024-05-26 08:35:32] INFO root fetch - processPackages [skpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skpro-2.3.0.tar.gz tmp/skpro-2.3.1.tar.gz --markdown 20240526/s/skpro/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-26 08:35:32] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.2.tar.gz]
+[2024-05-26 08:35:32] INFO root fetch - processPackages [cadprox]: Remove: archive file [/home/abi/fetcher/tmp/cadprox-4.3.tar.gz]
+[2024-05-26 08:35:32] INFO root fetch - main [MainThread]: End processing [cadprox]: success
+[2024-05-26 08:35:33] INFO root fetch - processPackages [skpro]: Remove: archive file [/home/abi/fetcher/tmp/skpro-2.3.0.tar.gz]
+[2024-05-26 08:35:33] INFO root fetch - processPackages [skpro]: Remove: archive file [/home/abi/fetcher/tmp/skpro-2.3.1.tar.gz]
+[2024-05-26 08:35:33] INFO root fetch - main [MainThread]: End processing [skpro]: success
+[2024-05-26 08:35:33] INFO root fetch - main [MainThread]: Store serial: [23380349]
