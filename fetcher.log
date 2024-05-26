@@ -2141,3 +2141,15 @@
 [2024-05-26 03:52:09] INFO root fetch - processPackages [tiingo]: Remove: archive file [/home/abi/fetcher/tmp/tiingo-0.9.0.tar.gz]
 [2024-05-26 03:52:09] INFO root fetch - main [MainThread]: End processing [tiingo]: success
 [2024-05-26 03:52:09] INFO root fetch - main [MainThread]: Store serial: [23379115]
+[2024-05-26 03:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23379115]
+[2024-05-26 03:54:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-26 03:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: getmeta
+[2024-05-26 03:54:18] INFO root fetch - processPackages [getmeta]: New version: [2024.5.25] Old Version: [0.6.3]
+[2024-05-26 03:54:18] INFO root fetch - processPackages [getmeta]: Downloading https://files.pythonhosted.org/packages/ed/bb/bbe0eec2bf5199a2c4113579ee9a187c1aa05e9526d77c1b026cd0b8192c/getmeta-0.6.3.tar.gz
+[2024-05-26 03:54:18] INFO root fetch - processPackages [getmeta]: Downloading https://files.pythonhosted.org/packages/51/45/d11ab05f81fb5fc4c0d00772f9fee035bcf08cbb6e2bb20737ac375d8004/getmeta-2024.5.25.tar.gz
+[2024-05-26 03:54:19] INFO root fetch - processPackages [getmeta]: executing diffoscope
+[2024-05-26 03:54:19] INFO root fetch - processPackages [getmeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240526:/home/abi/fetcher/20240526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getmeta-0.6.3.tar.gz tmp/getmeta-2024.5.25.tar.gz --markdown 20240526/g/getmeta/0.6.3-2024.5.25/README.md --exclude *.pyd
+[2024-05-26 03:54:19] INFO root fetch - processPackages [getmeta]: Remove: archive file [/home/abi/fetcher/tmp/getmeta-0.6.3.tar.gz]
+[2024-05-26 03:54:19] INFO root fetch - processPackages [getmeta]: Remove: archive file [/home/abi/fetcher/tmp/getmeta-2024.5.25.tar.gz]
+[2024-05-26 03:54:19] INFO root fetch - main [MainThread]: End processing [getmeta]: success
+[2024-05-26 03:54:19] INFO root fetch - main [MainThread]: Store serial: [23379118]
